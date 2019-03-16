@@ -1,0 +1,95 @@
+.video-card
+  $padding: 2rem
+
+  width: 35rem
+  box-shadow: 0 10px 20px $box-shadow-primary, 0 6px 6px $box-shadow-secondary
+  padding-bottom: 1em
+  border-radius: $standard-border-radius
+  overflow: hidden
+  margin: 3rem 0rem
+
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  transition: all 250ms
+  
+  &:hover 
+    @media (hover: hover) 
+      transform: translateY(-5px)
+  
+  > a
+    text-decoration: none
+    color: $text-color
+
+  .video-header
+
+    .thumb-container
+      width: 100%
+      height: auto
+      position: relative
+
+      .video-badge
+        position: absolute
+        right: 0
+        bottom: 0
+        background: $ct-green
+        color: #FFF
+        @include text-style('title')
+        font-size: 2rem
+        padding: .5em .5em .5em .6em
+        border-radius: $standard-border-radius 0em 0em
+
+    .video-thumbnail
+      width: 35rem
+      height: 35rem * 9 / 16
+      background-size: cover
+      background-position: center
+
+    h3
+      font-size: 2rem
+      padding: 1.25em .5em .4em 1em
+      margin: 0
+      text-align: left
+
+    .video-date
+      color: $secondary-color
+      font-size: 1.5rem
+      padding: 0em 1.25em
+
+  .video-description
+    padding: 0 1.25em 1.5em 1.25em
+    flex: 1
+
+    ul
+      padding-left: 1.5em
+
+  .buttons
+    display: flex
+    justify-content: space-between
+    padding: 0em $padding ($padding / 2)
+
+    @media (max-width: $mobile)
+      flex-wrap: wrap
+
+    a
+      @extend .cta-button
+      font-size: 1.5rem
+      background: $ct-purple
+      color: #FFF
+      flex-grow: 2
+      margin-left: 0.25em
+      margin-right: 0.25em
+      padding: 15px
+
+      @media (max-width: $mobile)
+        margin: 0
+
+      &:first-child
+        margin-left: 0
+
+      &:last-child
+        margin-right: 0
+
+      @media (max-width: $mobile)
+        flex-basis: 100%
+        margin-top: 0.5em

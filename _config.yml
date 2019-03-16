@@ -1,0 +1,143 @@
+#
+# Jekyll Configuraton for https://codingtrain.github.io/Rainwbow-Code/
+#
+#  ToDo for Jekyll v3.7:
+#    - move collections into a subfolder using collections_dir: <path>
+#    - set layout series-index for relevant files automatically (using a glob pattern).
+#
+
+
+# --- Site Settings ---
+
+# The site's title.
+title: The Coding Train // Code Repository
+
+# Location from where the site will be served (repository name for GitHub Pages).
+baseurl: /
+
+# Name of the GitHub repository (used for generating links to GitHub).
+repository: CodingTrain/website
+
+# Prefix for download links (downloads only the relevant code from GitHub).
+github_download_prefix: https://minhaskamal.github.io/DownGit/#/home?url=
+
+# Prefixes for editor.p5js.org
+web_editor_sketch_prefix: https://editor.p5js.org/codingtrain/sketches/
+web_editor_fullscreen_prefix: https://editor.p5js.org/full/
+
+# Suffixes for auto-detecting the video's code that's available for download/preview.
+#
+# name          string  Name of the code variation.
+# folder        string  Name of the folder relative to the video's repository.
+# live_example  boolean Wether this variation should be used as the live example.
+#                       The first match is used. If the video has the `web_editor`
+#                       property, a link to the P5 Web Editor will be used instead.
+code_variations:
+  - name: "P5.JS"
+    folder: "P5"
+    live_example: true
+  - name: "Processing"
+    folder: "Processing"
+  - name: "JavaScript"
+    folder: "JavaScript"
+  - name: "Node.js"
+    folder: "Node"
+
+# Links to other platforms.
+links:
+
+  # Link to YouTube.
+  youtube: https://youtube.com/alswnet/
+
+  # Link to Patreon.
+  patreon: https://patreon.com/alswnet
+
+  # Link to the merch store.
+  merch: https://www.designbyhumans.com/shop/codingtrain/
+
+  # Link to the Amazon store.
+  amazon: https://www.amazon.com/shop/thecodingtrain
+
+
+
+# --- Build Settings ---
+
+# Use Kramdown as the preferred Markdown parser.
+markdown: kramdown
+
+# Exclude code for Node.js and Q_and_A
+exclude: [ 'Node', 'Q_and_A', 'unit_testing', 'node_modules', 'vendor/bundle/', 'vendor/cache/', 'vendor/gems/', 'vendor/ruby/']
+
+# Include future videos (used for 'Upcoming Streams' section).
+future: true
+
+# Use EDT as the site's timezone.
+timezone: America/New_York
+
+# Compress HTML for production builds.
+compress_html: { ignore: { envs: ['development'] } }
+
+# Search for SASS files inside assets/css.
+sass: { sass_dir: 'assets/css' }
+
+# Use jekyll-redirect-from to allow redirections
+plugins:
+  - jekyll-redirect-from
+
+
+# --- Jekyll Locations ---
+layouts_dir:  _jekyll/layouts
+includes_dir: _jekyll/includes
+
+
+
+# --- Collections ---
+collections:
+  Streams:          { output: true }
+  CodingChallenges: { output: true }
+  Tutorials:        { output: true }
+  GuestTutorials:   { output: true }
+  Courses:          { output: true }
+
+
+
+# --- Defaults ---
+
+defaults:
+
+  # Streams
+  - scope:              { path: "", type: "Streams" }
+    values:
+      layout:           "video"
+      video_type:       "stream"
+      can_contribute:   false
+
+  # Coding Challenges
+  - scope:              { path: "", type: "CodingChallenges" }
+    values:
+      layout:           "video"
+      video_type:       "coding challenge"
+      video_type_short: "challenge"
+      can_contribute:   true
+
+  # Tutorials
+  - scope:              { path: "", type: "Tutorials" }
+    values:
+      layout:           "video"
+      video_type:       "tutorial"
+      can_contribute:   false
+
+  # Guest Tutorials
+  - scope:              { path: "", type: "GuestTutorials" }
+    values:
+      layout:           "video"
+      video_type:       "guest tutorial"
+      video_type_short: "tutorial"
+      can_contribute:   false
+
+  # Courses
+  - scope:              { path: "", type: "Courses" }
+    values:
+      layout:           "video"
+      video_type:       "session"
+      can_contribute:   false
