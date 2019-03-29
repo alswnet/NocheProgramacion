@@ -11,7 +11,9 @@ footer
       padding: 40px
       flex-basis: 100%
       text-align: center
-      @include text-style('title')
+
+      +text-style("title")
+
       text-decoration: none
       color: #FFF
       margin: 0
@@ -19,7 +21,6 @@ footer
       span
         display: inline-block
         font-size: 18px
-
         transition: all 150ms $timing-function
         transform: scale(1)
 
@@ -27,12 +28,11 @@ footer
         span
           transform: scale(1.2)
 
-      &.nature-of-code
+      &.link-facebook
+        background: $ct-blue
+
+      &.link-youtube
         background: $ct-red
 
-      &.learning-processing
+      &.link-instagram
         background: $ct-yellow
-        color: $text-color
-
-      &.shiffman-net
-        background: $ct-blue
