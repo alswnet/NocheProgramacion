@@ -106,6 +106,7 @@ collections:
   Tutorials:        { output: true }
   GuestTutorials:   { output: true }
   Courses:          { output: true }
+  RetoProgramacion: { output: true }
 
 
 
@@ -148,4 +149,12 @@ defaults:
     values:
       layout:           "video"
       video_type:       "session"
+      can_contribute:   false
+
+  # Reto Programacion
+  - scope:              { path: "", type: "RetoProgramacion" }
+    values:
+      layout:           "video"
+      video_type:       "reto programacion"
+      video_type_short: "reto"
       can_contribute:   false

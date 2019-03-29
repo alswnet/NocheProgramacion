@@ -1,0 +1,15 @@
+{
+  "name": "focolocal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chepecarlos",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^2.18.8",
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
