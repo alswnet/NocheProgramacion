@@ -180,6 +180,12 @@ layout: base
     {% include 3-modules/link-list.html links=page.links title=linksTitle %}
     {% endif %}
 
+    {% comment %} Lista de Piesas. {% endcomment %}
+    {% if page.piezas %}
+    {% capture piesasTitle %}Piesas que se mencionaron en el {{ page.video_type }}{% endcapture %}
+    {% include 3-modules/link-list.html links=page.piezas title=piesasTitle %}
+    {% endif %}
+
     {% comment %} Links of discussed books/articles/papers. {% endcomment %}
     {% if page.books %}
     {% include 3-modules/link-list.html links=page.books title='Books and Papers' %}

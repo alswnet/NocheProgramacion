@@ -54,6 +54,10 @@ links:
   # Tienda de ALSW
   tienda:                     http://alsw.net/tienda
 
+  # Productos de alsw
+  # TODO: Cambiar cuando este el nuevo servidor
+  pieza:                      http://165.227.74.84/tienda/
+
   # Link to YouTube.
   youtube:                    https://youtube.com/alswnet
 
