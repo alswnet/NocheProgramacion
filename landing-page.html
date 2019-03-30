@@ -8,21 +8,21 @@ permalink: /
 {% assign nextStream = out_sortedVideos | where_exp: 'stream', 'stream.date >= site.time' | first %}
 
 {% comment %} Get latest coding challenges. {% endcomment %}
-{% include 1-tools/sort-videos.html videos=site.CodingChallenges reverse=true %}
+{% include 1-tools/sort-videos.html videos=site.RetoProgramacion reverse=true %}
 
 {% comment %} Use the latest coding challenge if a stream hasn't been scheduled yet. {% endcomment %}
 {% if nextStream == null %}
-  {% assign offset = 1 %}
-  {% assign nextStream = out_sortedVideos | first %}
+{% assign offset = 1 %}
+{% assign nextStream = out_sortedVideos | first %}
 {% else %}
-  {% assign offset = 0 %}
+{% assign offset = 0 %}
 {% endif %}
 
 {% assign featuredVideos = '' | split: '' %}
 
 {% comment %} Add latest coding challenges to featured videos array. {% endcomment %}
 {% for challenge in out_sortedVideos limit:2 offset:offset %}
-  {% assign featuredVideos = featuredVideos | push: challenge %}
+{% assign featuredVideos = featuredVideos | push: challenge %}
 {% endfor %}
 
 {% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
@@ -46,13 +46,13 @@ permalink: /
 
   </div>
 
-  <h2>Latest Videos</h2>
+  <h2>Ultimos videos</h2>
   <div class="featured-videos">
     {% include 3-modules/video-list.html sortedVideos=featuredVideos %}
-    <a href="{{ site.links.youtube }}" target="_blank" class="more-videos">Watch more videos</a>
+    <a href="{{ site.links.youtube }}" target="_blank" class="more-videos">Mirar mas video</a>
   </div>
 
-  <h2>Support The Coding Train</h2>
+  <h2>Apoya a ALSW</h2>
   <div class="support">
     {% capture patreonLogo %}{% include 4-vector-graphics/patreon.svg %}{% endcapture %}
     {% include 3-modules/hero-item.html image=patreonLogo title='Consider supporting?' content='Join the Coding Train
@@ -65,6 +65,13 @@ permalink: /
 
     {% capture amazonStoreImage %}<img alt='The Coding Train Amazon Store' src="{{ '/assets/images/amazon-store.png' | relative_url }}" />{%
     endcapture %}
+    {% include 3-modules/hero-item.html image=amazonStoreImage title="Love to read?" content='Find
+    books and other products featured on The Coding Train!' url=site.links.amazon cta='Shop for Books and more'
+    class='amazon-store' %}
+  </div>
+
+  <h2>Codigo Sitio Web</h2>
+  <div>
     {% include 3-modules/hero-item.html image=amazonStoreImage title="Love to read?" content='Find
     books and other products featured on The Coding Train!' url=site.links.amazon cta='Shop for Books and more'
     class='amazon-store' %}

@@ -10,19 +10,19 @@
 # --- Site Settings ---
 
 # The site's title.
-title: Noche Programacion // ALSW
+title:                        Noche Programacion // ALSW
 
 # Location from where the site will be served (repository name for GitHub Pages).
-baseurl: /
+baseurl:                      /
 
 # Name of the GitHub repository (used for generating links to GitHub).
-repository: alswnet/NocheProgramacion
+repository:                   alswnet/NocheProgramacion
 
 # Prefix for download links (downloads only the relevant code from GitHub).
-github_download_prefix: https://minhaskamal.github.io/DownGit/#/home?url=
+github_download_prefix:       https://minhaskamal.github.io/DownGit/#/home?url=
 
 # Prefixes for editor.p5js.org
-web_editor_sketch_prefix: https://editor.p5js.org/codingtrain/sketches/
+web_editor_sketch_prefix:     https://editor.p5js.org/codingtrain/sketches/
 web_editor_fullscreen_prefix: https://editor.p5js.org/full/
 
 # Suffixes for auto-detecting the video's code that's available for download/preview.
@@ -33,71 +33,66 @@ web_editor_fullscreen_prefix: https://editor.p5js.org/full/
 #                       The first match is used. If the video has the `web_editor`
 #                       property, a link to the P5 Web Editor will be used instead.
 code_variations:
-  - name: "P5.JS"
-    folder: "P5"
-    live_example: true
-  - name: "Processing"
-    folder: "Processing"
-  - name: "JavaScript"
-    folder: "JavaScript"
-  - name: "Node.js"
-    folder: "Node"
-  - name: "Arduino"
-    folder: "Arduino"
+  - name:                     "P5.JS"
+    folder:                   "P5"
+    live_example:             true
+  - name:                     "Processing"
+    folder:                   "Processing"
+  - name:                     "JavaScript"
+    folder:                   "JavaScript"
+  - name:                     "Node.js"
+    folder:                   "Node"
+  - name:                     "Arduino"
+    folder:                   "Arduino"
 
 # Links to other platforms.
 links:
 
   # link de ALSW.
-  alsw: http://alsw.net
+  alsw:                       http://alsw.net
 
   # Tienda de ALSW
-  tienda: http://alsw.net/tienda
+  tienda:                     http://alsw.net/tienda
 
   # Link to YouTube.
-  youtube: https://youtube.com/alswnet
+  youtube:                    https://youtube.com/alswnet
 
   # Link to Patreon.
-  patreon: https://patreon.com/alswnet
+  patreon:                    https://patreon.com/alswnet
 
   # Link to the merch store.
-  merch: https://www.designbyhumans.com/shop/codingtrain/
+  merch:                      https://www.designbyhumans.com/shop/codingtrain/
 
   # Link to the Amazon store.
-  amazon: https://www.amazon.com/shop/thecodingtrain
-
-
+  amazon:                     https://www.amazon.com/shop/thecodingtrain
 
 # --- Build Settings ---
 
 # Use Kramdown as the preferred Markdown parser.
-markdown: kramdown
+markdown:                     kramdown
 
 # Exclude code for Node.js and Q_and_A
-exclude: [ 'Node', 'Q_and_A', 'unit_testing', 'node_modules', 'vendor/bundle/', 'vendor/cache/', 'vendor/gems/', 'vendor/ruby/']
+exclude:                      [ 'Node', 'Q_and_A', 'unit_testing', 'node_modules', 'vendor/bundle/', 'vendor/cache/', 'vendor/gems/', 'vendor/ruby/']
 
 # Include future videos (used for 'Upcoming Streams' section).
-future: true
+future:                       true
 
 # Use EDT as the site's timezone.
-timezone: America/New_York
+timezone:                     America/New_York
 
 # Compress HTML for production builds.
 compress_html: { ignore: { envs: ['development'] } }
 
 # Search for SASS files inside assets/css.
-sass: { sass_dir: 'assets/css' }
+sass: { sass_dir:             'assets/css' }
 
 # Use jekyll-redirect-from to allow redirections
 plugins:
   - jekyll-redirect-from
 
-
 # --- Jekyll Locations ---
-layouts_dir:  _jekyll/layouts
-includes_dir: _jekyll/includes
-
-
+layouts_dir:                  _jekyll/layouts
+includes_dir:                 _jekyll/includes
 
 # --- Collections ---
 collections:
@@ -107,8 +102,7 @@ collections:
   GuestTutorials:   { output: true }
   Courses:          { output: true }
   RetoProgramacion: { output: true }
-
-
+  Cursos:           { output: true }
 
 # --- Defaults ---
 
@@ -117,44 +111,51 @@ defaults:
   # Streams
   - scope:              { path: "", type: "Streams" }
     values:
-      layout:           "video"
-      video_type:       "stream"
-      can_contribute:   false
+      layout:                 "video"
+      video_type:             "stream"
+      can_contribute:         false
 
   # Coding Challenges
   - scope:              { path: "", type: "CodingChallenges" }
     values:
-      layout:           "video"
-      video_type:       "coding challenge"
-      video_type_short: "challenge"
-      can_contribute:   true
+      layout:                 "video"
+      video_type:             "coding challenge"
+      video_type_short:       "challenge"
+      can_contribute:         true
 
   # Tutorials
   - scope:              { path: "", type: "Tutorials" }
     values:
-      layout:           "video"
-      video_type:       "tutorial"
-      can_contribute:   false
+      layout:                 "video"
+      video_type:             "tutorial"
+      can_contribute:         false
 
   # Guest Tutorials
   - scope:              { path: "", type: "GuestTutorials" }
     values:
-      layout:           "video"
-      video_type:       "guest tutorial"
-      video_type_short: "tutorial"
-      can_contribute:   false
+      layout:                 "video"
+      video_type:             "guest tutorial"
+      video_type_short:       "tutorial"
+      can_contribute:         false
 
   # Courses
   - scope:              { path: "", type: "Courses" }
     values:
-      layout:           "video"
-      video_type:       "session"
-      can_contribute:   false
+      layout:                 "video"
+      video_type:             "session"
+      can_contribute:         false
 
   # Reto Programacion
   - scope:              { path: "", type: "RetoProgramacion" }
     values:
-      layout:           "video"
-      video_type:       "reto programacion"
-      video_type_short: "reto"
-      can_contribute:   false
+      layout:                 "video"
+      video_type:             "reto programacion"
+      video_type_short:       "reto"
+      can_contribute:         false
+
+  # Courses
+  - scope:              { path: "", type: "Cursos" }
+    values:
+      layout:                 "video"
+      video_type:             "cursos"
+      can_contribute:         false
