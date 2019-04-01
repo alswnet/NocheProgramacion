@@ -44,6 +44,8 @@ code_variations:
     folder:                   "Node"
   - name:                     "Arduino"
     folder:                   "Arduino"
+  - name:                     "Diagrama"
+    folder:                   "Diagrama"
 
 # Links to other platforms.
 links:

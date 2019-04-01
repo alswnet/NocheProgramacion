@@ -75,10 +75,10 @@ layout: base
 
         {% comment %} If there are multiple variations (or one variation and the web_editor), render the dropdown. {% endcomment %}
         {% elsif numberOfVariations != 0 %}
-        {% include 3-modules/code-variation-dropdown.html title="View Code" baseURL=repositoryBaseURL variations=codeVariations web_editor=page.web_editor %}
+        {% include 3-modules/code-variation-dropdown.html title="Mirar Codigo y/o Diagrama" baseURL=repositoryBaseURL variations=codeVariations web_editor=page.web_editor %}
 
         {% assign downloadBaseURL = site.github_download_prefix | append: repositoryBaseURL %}
-        {% include 3-modules/code-variation-dropdown.html title="Download Code" baseURL=downloadBaseURL variations=codeVariations %}
+        {% include 3-modules/code-variation-dropdown.html title="Descargar Codigo y/o Diagrama" baseURL=downloadBaseURL variations=codeVariations %}
         {% endif %}
 
         {% comment %} If there's no repository and the web_editor is set. {% endcomment %}
@@ -88,10 +88,10 @@ layout: base
 
         {% comment %} Render the single "VIEW" and "DOWNLOAD" buttons. {% endcomment %}
         {% if repositoryURL != null %}
-        <a href="{{ repositoryURL }}" target="_blank">Ver Codigo</a>
+        <a href="{{ repositoryURL }}" target="_blank">Ver Codigo y/o Diagrama</a>
         {% endif %}
         {% if downloadURL != null %}
-        <a href="{{ downloadURL }}" target="_blank">Descargar Codigo</a>
+        <a href="{{ downloadURL }}" target="_blank">Descargar Codigo y/o Diagrama</a>
         {% endif %}
 
 
