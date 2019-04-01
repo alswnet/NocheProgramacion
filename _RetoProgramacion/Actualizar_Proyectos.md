@@ -20,4 +20,4 @@ videos:
     video_id: "4kdcprnf9Wo"
 ---
 
-Pequeñas mejoras a los proyectos
+Mejorando proyectos interesantes con mejorar que lo hacen muy usables

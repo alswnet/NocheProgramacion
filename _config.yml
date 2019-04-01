@@ -55,7 +55,7 @@ links:
   tienda:                     http://alsw.net/tienda
 
   # Productos de alsw
-  # TODO: Cambiar cuando este el nuevo servidor
+  # TODO:                     Cambiar cuando este el nuevo servidor
   pieza:                      http://165.227.74.84/tienda/
 
   # Link to YouTube.
@@ -70,6 +70,9 @@ links:
   # Link to the Amazon store.
   amazon:                     https://www.amazon.com/shop/thecodingtrain
 
+  # Link to Donacion
+  streamlabs:                 https://streamlabs.com/alswtv
+
 # --- Build Settings ---
 
 # Use Kramdown as the preferred Markdown parser.
@@ -81,8 +84,8 @@ exclude:                      [ 'Node', 'Q_and_A', 'unit_testing', 'node_modules
 # Include future videos (used for 'Upcoming Streams' section).
 future:                       true
 
-# Use EDT as the site's timezone.
-timezone:                     America/New_York
+# Use El Salvador as the site's timezone.
+timezone:                     America/El_Salvador
 
 # Compress HTML for production builds.
 compress_html: { ignore: { envs: ['development'] } }
@@ -107,6 +110,7 @@ collections:
   Courses:          { output: true }
   RetoProgramacion: { output: true }
   Cursos:           { output: true }
+  Tutoriales:       { output: true }
 
 # --- Defaults ---
 
@@ -161,5 +165,13 @@ defaults:
   - scope:              { path: "", type: "Cursos" }
     values:
       layout:                 "video"
-      video_type:             "cursos"
+      video_type:             "curso"
+      can_contribute:         false
+
+  # Tutorials
+  - scope:              { path: "", type: "Tutoriales" }
+    values:
+      layout:                 "video"
+      video_type:             "tutoriales"
+      video_type_short:       "tutorial"
       can_contribute:         false

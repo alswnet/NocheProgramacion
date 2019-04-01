@@ -29,6 +29,14 @@ permalink: /
 {% include 1-tools/sort-videos.html videos=site.Streams reverse=true %}
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
 
+{% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
+{% include 1-tools/sort-videos.html videos=site.Tutoriales reverse=true %}
+{% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
+
+{% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
+{% include 1-tools/sort-videos.html videos=site.Cursos reverse=true %}
+{% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
+
 <div class="landing-page">
   <div class="welcome-message">
     <div class="learn-to-code">
@@ -55,25 +63,17 @@ permalink: /
   <h2>Apoya a ALSW</h2>
   <div class="support">
     {% capture patreonLogo %}{% include 4-vector-graphics/patreon.svg %}{% endcapture %}
-    {% include 3-modules/hero-item.html image=patreonLogo title='Consider supporting?' content='Join the Coding Train
-    community with a YouTube membership or Patreon subscription!' url=site.links.patreon cta='Become a Patron' class='patreon' %}
+    {% include 3-modules/hero-item.html image=patreonLogo title='Necesitamos tu Apoyo' content='Unete a la comunidad de ALSW para que juntos podemos crear aun mas proyectos' url=site.links.patreon cta='Conviertete en Patreon' class='patreon'
+    %}
 
     {% capture merchStoreImage %}<img alt='The Coding Train Merchandise Store' src="{{ '/assets/images/merch-store.png' | relative_url }}" />{%
     endcapture %}
-    {% include 3-modules/hero-item.html image=merchStoreImage title='Coding Train Store'
-    content='Visit Design by Humans for a variety of Coding Train merchandise.' url=site.links.merch cta='Shop for Merchandise' class='merch-store' %}
+    {% include 3-modules/hero-item.html image=merchStoreImage title='Tienda ALSW'
+    content='Visit Design by Humans for a variety of Coding Train merchandise.' url=site.links.tienda cta='Compra en Tienda' class='merch-store' %}
 
     {% capture amazonStoreImage %}<img alt='The Coding Train Amazon Store' src="{{ '/assets/images/amazon-store.png' | relative_url }}" />{%
     endcapture %}
-    {% include 3-modules/hero-item.html image=amazonStoreImage title="Love to read?" content='Find
-    books and other products featured on The Coding Train!' url=site.links.amazon cta='Shop for Books and more'
-    class='amazon-store' %}
-  </div>
-
-  <h2>Codigo Sitio Web</h2>
-  <div>
-    {% include 3-modules/hero-item.html image=amazonStoreImage title="Love to read?" content='Find
-    books and other products featured on The Coding Train!' url=site.links.amazon cta='Shop for Books and more'
+    {% include 3-modules/hero-item.html image=amazonStoreImage title="Invitanos un Cafe con Leche" content='No existe donacion pequeña, ' url=site.links.streamlabs cta='Donacion por streamlabs'
     class='amazon-store' %}
   </div>
 </div>
