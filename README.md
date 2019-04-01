@@ -1,12 +1,19 @@
 # NocheProgramacion
 
+
+# Horario NocheProgramacion
+
+Son todos lo Viernes  se Trasmite "NocheProgramacion" a 7:00 pm ( UTC-6 ) hora de San Salvador, El Salvador.
+[Puedes usar esta Calculadora para encontrar la hora de tu pais](https://www.thetimezoneconverter.com/?t=7%3A00%20pm&tz=El%20Salvador&)
+
 # Codigo Pagina Web
 
 El codigo del Sitio Web esta Basado en el trabajo de La comunidad de [The Coding Train](https://github.com/CodingTrain) y [shiffman](https://shiffman.net/) miembro junta directores [Processing Foundation](https://processing.org/) y Profesor en [Escuela de Artes Tisch de la Universidad de Nueva York](https://tisch.nyu.edu/).
 
 Este Sitio Web es [Fork](https://en.wikipedia.org/wiki/Fork_(software_development)) del Sitio Wev de [TheCodingTrain](https://thecodingtrain.com/) que se refiere que tomamos el codigo de base y lo adaptamos a las necesidades de ALSW si te gussta lo que hacemos ve al canal de Youtube de [The Coding Train](https://www.youtube.com/user/shiffman)
 
-[Codigo Github ](https://github.com/CodingTrain/website)
+Repositorio de Github: [The Coding Train](https://github.com/CodingTrain/website)
+
 
 # Reconoce Automaticamente Codigo
 
