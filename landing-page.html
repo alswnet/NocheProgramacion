@@ -66,14 +66,13 @@ permalink: /
     {% include 3-modules/hero-item.html image=patreonLogo title='Necesitamos tu Apoyo' content='Unete a la comunidad de ALSW para que juntos podemos crear aun mas proyectos' url=site.links.patreon cta='Conviertete en Patreon' class='patreon'
     %}
 
-    {% capture merchStoreImage %}<img alt='The Coding Train Merchandise Store' src="{{ '/assets/images/merch-store.png' | relative_url }}" />{%
+    {% capture merchStoreImage %}<img alt='Tienda de ALSW' src="{{ '/assets/images/Logo-ALSW.png' | relative_url }}" />{%
     endcapture %}
     {% include 3-modules/hero-item.html image=merchStoreImage title='Tienda ALSW'
-    content='Visit Design by Humans for a variety of Coding Train merchandise.' url=site.links.tienda cta='Compra en Tienda' class='merch-store' %}
+    content='Necesitas Arduino, Sensores, Led, Botones o Ayuda en tu Proyecto; visita nuestra Tienda En El Salvador y te ayudaremos hacer un proyecto Epico' url=site.links.tienda cta='Compra en Tienda' class='merch-store' %}
 
-    {% capture amazonStoreImage %}<img alt='The Coding Train Amazon Store' src="{{ '/assets/images/amazon-store.png' | relative_url }}" />{%
-    endcapture %}
-    {% include 3-modules/hero-item.html image=amazonStoreImage title="Invitanos un Cafe con Leche" content='No existe donacion pequeña, ' url=site.links.streamlabs cta='Donacion por streamlabs'
-    class='amazon-store' %}
+    {% capture coffee %}{% include 4-vector-graphics/coffee.svg %}{% endcapture %}
+    {% include 3-modules/hero-item.html image=coffee title="Invitanos un Cafe con Leche"
+    content='Cada donacion nos deja segir creando y compartiendo mas proyectos epicos, GRACIAS' url=site.links.streamlabs cta='Donacion por streamla' class='amazon-store' %}
   </div>
 </div>
