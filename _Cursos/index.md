@@ -2,5 +2,4 @@
 title: Cursos
 layout: series-index
 ---
-
-Aqui esta los cursos o playlist disponibles hechos por ChepeCarlos.
+Proyectos complejos, mini-cursos, playlists o lo que este por venir; todo se encuentra aquí. Pasa y encuentra lo que desees.
