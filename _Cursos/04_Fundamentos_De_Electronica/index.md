@@ -4,4 +4,4 @@ series_number: 4
 layout: series-index
 ---
 
-Los fundamenos nos dejan entende, entendemos para poder encontrar errores, asi crear proyectos mas complejos 
+Al comprender algo puedes combinar cosas, encontrar errores o hacer cosas aún más complejas. Con este mini-curso podrás dominar lo básico del arte de la electrónica.
