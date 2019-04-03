@@ -3,5 +3,4 @@ title: RedBot
 series_number: 5
 layout: series-index
 ---
-
-Acompaños a crear un pequeño robot usando Arduino, Android y Bluetooth
+En esta serie de vídeos hicimos un robot controlado por tu telefóno, ¿Cómo lo hicimos? 
