@@ -1,5 +1,5 @@
 ---
 title: "Fundamentos de Arduino"
-series_number: 7
+series_number: 6
 layout: series-index
 ---
