@@ -1,5 +1,5 @@
 ---
-title: "Sensor Capacitivo Arduino"
+title: "Sensor capacitivo con arduino"
 video_number: 001
 date: 2014-10-24
 video_id: cjz_4ZptgqM

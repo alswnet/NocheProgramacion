@@ -2,10 +2,10 @@
 
 Video Editatos y listo para que las personas pueda aprender algo nuevo
 
-1. [ ] [Sensor capacitivo con arduino](cjz_4ZptgqM) 2014-10-24
-2. [ ] [Instalacion Raspberry Pi- Noobs](okoq7jB9JlQ) 2015-02-03
-3. [ ] [Bluetooth HC-05 con arduino](hJ6fE5jEQE0) 2015-06-20
-4. [ ] [¿Que es Rss?](Fa5eW6dwqg0) 2015-06-27
+1. [X] [Sensor capacitivo con arduino](cjz_4ZptgqM) 2014-10-24
+2. [X] [Instalacion Raspberry Pi - Noobs](okoq7jB9JlQ) 2015-02-03
+3. [X] [Bluetooth HC-05 con arduino](hJ6fE5jEQE0) 2015-06-20
+4. [X] [¿Que es Rss?](Fa5eW6dwqg0) 2015-06-27
 5. [ ] [Spacebrew con Arduino Yun](t3W-_fKpXKU) 2015-06-30
 6. [ ] [Usando Git y Github](JSYltOsC-7Y) 2015-07-9
 7. [ ] [Arduino con wifi ESP8266](et8N7APQDR8)2015-10-19

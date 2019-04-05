@@ -1,9 +1,9 @@
 ---
 title: "Bluetooth HC-05 con Arduinp"
-video_number: 002
+video_number: 003
 date: 2015-06-20
 video_id: hJ6fE5jEQE0
-repository: NP_002_Bluetooth_HC-05_arduino
+repository: NP_003_Bluetooth_HC-05_arduino
 
 links:
   - title: "Bluetooth Terminal"
