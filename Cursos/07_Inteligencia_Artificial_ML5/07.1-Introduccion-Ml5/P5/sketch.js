@@ -1,7 +1,6 @@
 var Camara;
 var BotonesEntrenar;
 
-
 function setup() {
   createCanvas(320, 240);
   background(255, 0, 0);
