@@ -35,7 +35,6 @@ web_editor_fullscreen_prefix: https://editor.p5js.org/full/
 code_variations:
   - name:                     "P5.JS"
     folder:                   "P5"
-    live_example:             true
   - name:                     "Processing"
     folder:                   "Processing"
   - name:                     "JavaScript"
