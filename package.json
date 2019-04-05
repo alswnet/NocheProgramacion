@@ -1,7 +1,7 @@
 {
-  "name": "coding-train-website",
+  "name": "nocheprogramacion",
   "version": "0.0.1",
-  "description": "Coding Train Website",
+  "description": "Sitio Web NocheProgramacion",
   "main": "none",
   "dependencies": {},
   "devDependencies": {
@@ -19,18 +19,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodingTrain/website.git"
+    "url": "git+https://github.com/alswnet/NocheProgramacion.git"
   },
   "keywords": [
-    "coding",
-    "train",
-    "tutorials",
-    "beginner"
+    "Arduino",
+    "ESP8266",
+    "P5"
+    "tutoriales",
+    "cursos"
   ],
-  "author": "The Coding Train Community",
-  "license": "MIT",
+  "author": "ALSW",
+  "license": "GPL",
   "bugs": {
-    "url": "https://github.com/CodingTrain/website/issues"
+    "url": "https://github.com/alswnet/NocheProgramacion/issues"
   },
-  "homepage": "https://github.com/CodingTrain/website#readme"
+  "homepage": "https://github.com/alswnet/NocheProgramacion#readme"
 }

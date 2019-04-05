@@ -25,7 +25,16 @@ Reconoce codigo y los agrega a la Web siempre que esten el folde correcto
 -   Node.js > Node
 -   Diagrama > Diagrama
 
-Categorias de Links
+## Informacion video
+
+title: "String"
+video_number: numbre
+date: 1988-07-17
+video_id: String
+can_contribute: boolean
+repository: boolean
+
+## Categorias de Links
 
 - parts
 - links
@@ -34,7 +43,7 @@ Categorias de Links
 - videos
 - tools
 
-Informacion de Links
+## Informacion de Links
 
 -   title string  > Titulo del link
 -   video_id string > ID video Youtube
@@ -45,7 +54,18 @@ Informacion de Links
 -   source string  > URL base del codigo donde se encontro el link
 -   pieza string > ID producto de a ALSW
 
-Ejemplo
+## Sexion Extra
+
+custom_sections:
+
+  - title: "Mombre Senccion"
+    items:
+      - title: "Twitter"
+        url: "https://twitter.com/ALSW"
+      - title: "Pwebsite"
+        url: "http://www.alsw.net
+
+## Ejemplo
 
 links:
   - title: "Libreria de Sensor Capacitivo"

@@ -1,1 +1,0 @@
-This test file has common words as well as strange ones.  Concordance.  concordance, concordance concordance.  Hockey.

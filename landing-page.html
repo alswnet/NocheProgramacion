@@ -34,7 +34,7 @@ permalink: /
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
 
 {% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
-{% include 1-tools/sort-videos.html videos=site.Cursos reverse=true %}
+{% include 1-tools/sort-videos.html videos=site.Cursos %}
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
 
 <div class="landing-page">
