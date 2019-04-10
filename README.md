@@ -1,6 +1,5 @@
 # NocheProgramacion
 
-
 # Horario NocheProgramacion
 
 Son todos lo Viernes  se Trasmite "NocheProgramacion" a 7:00 pm ( UTC-6 ) hora de San Salvador, El Salvador.
@@ -14,7 +13,6 @@ Este Sitio Web es [Fork](https://en.wikipedia.org/wiki/Fork_(software_developmen
 
 Repositorio de Github: [The Coding Train](https://github.com/CodingTrain/website)
 
-
 # Reconoce Automaticamente Codigo
 
 Reconoce codigo y los agrega a la Web siempre que esten el folde correcto
@@ -26,6 +24,52 @@ Reconoce codigo y los agrega a la Web siempre que esten el folde correcto
 -   JavaScript > JavaScript
 -   Node.js > Node
 -   Diagrama > Diagrama
+
+## Informacion video
+
+title: "String"
+video_number: numbre
+date: 1988-07-17
+video_id: String
+can_contribute: boolean
+repository: boolean
+
+## Categorias de Links
+
+- parts
+- links
+- piezas
+- books
+- videos
+- tools
+
+## Informacion de Links
+
+-   title string  > Titulo del link
+-   video_id string > ID video Youtube
+-   playlist_id string > ID Playlist Youtubr
+-   url string > Link a pagina Externa
+-   author[.name] string|Author > Nombre usuario
+-   author.url string > URL del Autor
+-   source string  > URL base del codigo donde se encontro el link
+-   pieza string > ID producto de a ALSW
+
+## Sexion Extra
+
+custom_sections:
+
+  - title: "Mombre Senccion"
+    items:
+      - title: "Twitter"
+        url: "https://twitter.com/ALSW"
+      - title: "Pwebsite"
+        url: "http://www.alsw.net
+
+## Ejemplo
+
+links:
+  - title: "Libreria de Sensor Capacitivo"
+    url: "https://playground.arduino.cc/Main/CapacitiveSensor/"
 
 # Link Sociales
 

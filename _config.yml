@@ -35,7 +35,6 @@ web_editor_fullscreen_prefix: https://editor.p5js.org/full/
 code_variations:
   - name:                     "P5.JS"
     folder:                   "P5"
-    live_example:             true
   - name:                     "Processing"
     folder:                   "Processing"
   - name:                     "JavaScript"
@@ -81,7 +80,7 @@ links:
 markdown:                     kramdown
 
 # Exclude code for Node.js and Q_and_A
-exclude:                      [ 'Node', 'Q_and_A', 'unit_testing', 'node_modules', 'vendor/bundle/', 'vendor/cache/', 'vendor/gems/', 'vendor/ruby/']
+exclude:                      [ 'Node', 'Recursos', 'Q_and_A', 'unit_testing', 'node_modules', 'vendor/bundle/', 'vendor/cache/', 'vendor/gems/', 'vendor/ruby/']
 
 # Include future videos (used for 'Upcoming Streams' section).
 future:                       true
@@ -106,10 +105,6 @@ includes_dir:                 _jekyll/includes
 # --- Collections ---
 collections:
   Streams:          { output: true }
-  CodingChallenges: { output: true }
-  Tutorials:        { output: true }
-  GuestTutorials:   { output: true }
-  Courses:          { output: true }
   RetoProgramacion: { output: true }
   Cursos:           { output: true }
   Tutoriales:       { output: true }
@@ -125,36 +120,6 @@ defaults:
       video_type:             "stream"
       can_contribute:         false
 
-  # Coding Challenges
-  - scope:              { path: "", type: "CodingChallenges" }
-    values:
-      layout:                 "video"
-      video_type:             "coding challenge"
-      video_type_short:       "challenge"
-      can_contribute:         true
-
-  # Tutorials
-  - scope:              { path: "", type: "Tutorials" }
-    values:
-      layout:                 "video"
-      video_type:             "tutorial"
-      can_contribute:         false
-
-  # Guest Tutorials
-  - scope:              { path: "", type: "GuestTutorials" }
-    values:
-      layout:                 "video"
-      video_type:             "guest tutorial"
-      video_type_short:       "tutorial"
-      can_contribute:         false
-
-  # Courses
-  - scope:              { path: "", type: "Courses" }
-    values:
-      layout:                 "video"
-      video_type:             "session"
-      can_contribute:         false
-
   # Reto Programacion
   - scope:              { path: "", type: "RetoProgramacion" }
     values:
@@ -163,14 +128,14 @@ defaults:
       video_type_short:       "reto"
       can_contribute:         false
 
-  # Courses
+  # Cursos
   - scope:              { path: "", type: "Cursos" }
     values:
       layout:                 "video"
       video_type:             "curso"
       can_contribute:         false
 
-  # Tutorials
+  # Tutoriales
   - scope:              { path: "", type: "Tutoriales" }
     values:
       layout:                 "video"

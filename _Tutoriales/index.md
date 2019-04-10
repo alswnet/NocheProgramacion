@@ -4,4 +4,4 @@ layout: series-index
 reverse: true
 ---
 
-Los video que son tutoriales
+Aqui puedes encontrar algo nuevo que aprender y hacer proyectos Epicos 

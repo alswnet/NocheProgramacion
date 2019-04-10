@@ -34,17 +34,17 @@ permalink: /
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
 
 {% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
-{% include 1-tools/sort-videos.html videos=site.Cursos reverse=true %}
+{% include 1-tools/sort-videos.html videos=site.Cursos %}
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
 
 <div class="landing-page">
   <div class="welcome-message">
     <div class="learn-to-code">
       <h1>Noche</h1>
-      <h1>Programacion</h1>
+      <h1>Programación</h1>
       <h3>con ChepeCarlos de ALSW</h3>
       <p>Aquí se recopilan todos nuestros proyectos; algunos simples, otros complicados pero todos divertidos.</p>
-      <p>NocheProgramación son todos los Viernes a 7:00 pm hora de El Salvador(GMT-6), para ver tu hora local clickea <a href="https://www.thetimezoneconverter.com/?t=7%3A00pm&tz=El%20Salvador" target="_blank"> Aquí </a></p>
+      <p>NocheProgramación son todos los Viernes de 7:00 pm hora de El Salvador(GMT-6), para ver tu hora local haz click <a href="https://www.thetimezoneconverter.com/?t=7%3A00pm&tz=El%20Salvador" target="_blank"> AQUÍ </a></p>
       <div class="ctas">
         <a href="{{ site.links.youtube }}?sub_confirmation=1" target="_blank" class="youtube">Suscribete a Youtube</a>
         <a href="{{ site.links.patreon }}" target="_blank" class="patreon">Conviertete Patreon</a>
@@ -55,7 +55,7 @@ permalink: /
 
   </div>
 
-  <h2>Ultimos videos</h2>
+  <h2>Últimos videos</h2>
   <div class="featured-videos">
     {% include 3-modules/video-list.html sortedVideos=featuredVideos %}
     <a href="{{ site.links.youtube }}" target="_blank" class="more-videos">Mirar mas video</a>
