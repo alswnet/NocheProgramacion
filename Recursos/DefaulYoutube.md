@@ -6,7 +6,7 @@ Encuentra código, librerías y material de apoyo en:
 ----------### Nuestras Redes Sociales ###----------
 
 Suscribete a nuestro canal!
-https://www.youtube.com/user/alswnet/
+http://youtube.com/alswnet?sub_confirmation=1
 
 Unete en Facebook!
 https://www.facebook.com/alswnet/
@@ -54,7 +54,7 @@ La musica de " " es:
 # Video: https://youtu.be/5eR1iOEp1oU
 # Descarga gratis / Stream: http://ncs.io/Konnichiwa
 
-Programas usados en la edicion de video y striming:
+Los programas utilizados en la edicion de video y streaming:
 # Sistema Operativo: Linux mint
 # Grabar y editar escenas de video: OBS. OBS-DNI,  OBS-linuxbrowser, OBS-websocket
 # Editor de :Gromit-MPX
@@ -63,5 +63,3 @@ Programas usados en la edicion de video y striming:
 # Editor de videos: KDNLIVE
 
 Si te gusto este vídeo y aprendiste algo nuevo recuerda en darle like y compartirlo, si todavia no estas suscrito, suscribete y disfruta de nuestra amplia variedad de contenido, gracias por vernos y nos vemos en un proximo video!!! :) ;)
-
-Si te gusto el vídeo y aprendiste algo nuevo recuerda una el botón secreto de Like y subscribir, Gracias por vernos y nos vemos en próximo vídeo Gracias :)
