@@ -57,9 +57,9 @@ La musica de " " es:
 Los programas utilizados en la edicion de video y streaming:
 # Sistema Operativo: Linux mint
 # Grabar y editar escenas de video: OBS. OBS-DNI,  OBS-linuxbrowser, OBS-websocket
-# Editor de :Gromit-MPX
+# Editor de Pantalla :Gromit-MPX y openboard
 # Editor de imagenes: GIMP
-# Editor de imagenes:INKSCAPE
+# Editor de imagenes: INKSCAPE
 # Editor de videos: KDNLIVE
 
 Si te gusto este vídeo y aprendiste algo nuevo recuerda en darle like y compartirlo, si todavia no estas suscrito, suscribete y disfruta de nuestra amplia variedad de contenido, gracias por vernos y nos vemos en un proximo video!!! :) ;)
