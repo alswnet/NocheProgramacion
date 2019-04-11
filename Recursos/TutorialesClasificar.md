@@ -44,15 +44,3 @@ Video Editatos y listo para que las personas pueda aprender algo nuevo
 40. [ ] [ Un proyecto secreto con el ★MEGA DISPLAY★](K1reMi_a8cQ)2018-04-02
 41. [ ] [ ★ 3 códigos épicos ★ usando arduino, un led y un botón](4XXAbRFVA7I)2018-07-07
 42. [ ] [ Inteligencia Artificial | Construyendo una neurona con brain.js](IYnxx5BUk5A)2018-07-27
-
-
-# Cursos Fundamentos de arduino
-
-Curso a ser agregado a curso de ALSW
-
-* [parte 1](cAx9zNmpIVw)2015-12-11
-* [parte 2](DbRNMvZ2VCw)2015-12-18
-* [parte 3](AKo46-5yn38)2016-01-29
-* [parte 4](Q3xBRtJzo0s)2016-03-07
-* [Parte 5](AP8m-9aiRfM)2016-08-20
-* [parte 6](AeGtpHZ8szU)2016-09-24
