@@ -57,5 +57,5 @@ Striming o video no editados o procesados
 49. [ ] [Armar PC con Linux para edición video](uuMqJO76xGo)2019-02-27
 50. [ ] [Funtamentos Básicos de Inteligencia Artificial](OGDOzo0ozPA)2019-03-01
 51. [ ] [¿Calculando PI con Código?](qbTBTZ7rzDo)2019-03-15
-52. [ ] [Actualizando Proyectos | Chatbot y Marcador Inteligente](rrUdZz9lTnY)2019-03-22
-53. [ ] [Crea tu Página con Jekyll](XRRO-x_HHBg)2019-04-05
+52. [X] [Actualizando Proyectos | Chatbot y Marcador Inteligente](rrUdZz9lTnY)2019-03-22
+53. [X] [Crea tu Página con Jekyll](XRRO-x_HHBg)2019-04-05
