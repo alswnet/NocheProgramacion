@@ -40,7 +40,10 @@ Video Editatos y listo para que las personas pueda aprender algo nuevo
 36. [ ] [3 formas de usar FTDI con Arduino](4-YA9dxVYBE)2017-11-18
 37. [ ] [Firefox Se el primero en probarlo](B9S-k6CuIU0)2018-02-12
 38. [ ] [Youtube-ld Descarga videos de youtube en linux](qfl2IzDsG7U)2018-03-10
-39. [ ] [ 10 Video de Inteligecia Artificial recomandado por ChepeCarlos](FFZUFg3LrR8)2918-03-25
-40. [ ] [ Un proyecto secreto con el ★MEGA DISPLAY★](K1reMi_a8cQ)2018-04-02
-41. [ ] [ ★ 3 códigos épicos ★ usando arduino, un led y un botón](4XXAbRFVA7I)2018-07-07
-42. [ ] [ Inteligencia Artificial | Construyendo una neurona con brain.js](IYnxx5BUk5A)2018-07-27
+39. [ ] [10 Video de Inteligecia Artificial recomandado por ChepeCarlos](FFZUFg3LrR8)2918-03-25
+40. [ ] [Un proyecto secreto con el ★MEGA DISPLAY★](K1reMi_a8cQ)2018-04-02
+41. [ ] [3 códigos épicos, usando arduino, un led y un botón](4XXAbRFVA7I)2018-07-07
+42. [ ] [Construyendo una neurona con brain.js](IYnxx5BUk5A)2018-07-27
+43. [ ] [Sistema Casero de seguridad con ESP8266, MQTT y NodeJS](MbjP8TNS7g)2018-10-31
+44. [ ] [Como installar Arduino IDE en Linux (Debian, Ubuntu, Linux Mint)](vHd-eEcLw-s)2018-12-06
+45. [ ] [Como empezar tu empresa con Nathan Seidle, Sparkfun](aKE51m_3A2k)2019-01-30
