@@ -3,21 +3,21 @@
 
 Striming o video no editados o procesados
 
-1. [ ] [Los mejores arduinos del 2015](ylTOJLHV5gI)2015-12-19
-2. [ ] [Unboxing Sparkfun Shapeoko 3 Deluxe Kit-ALSW](ggHH_cgsH1E)2016-05-03
-3. [ ] [Lulzbot Mini 3D Printer Unboxing ; Setup & First Print](B2v6KVbLUU4)2016-08-13
-4. [ ] [Creando algo Épico para la Lulzbot Mini](zIH-5XgnTic)2016-12-11
-5. [ ] [Tutorial para usar Blutooth HC-05 con Arduino y Servomotores](i7UQ4wDf2p8)2017-02-10
-6. [ ] [Usando comandos AT con el Bluetooth HC-05](zZtIcgNtli8)2017-02-18
-7. [ ] [Trivia Game con Arduino | Parte 1](qR5fUygHToM)2017-03-1
-8. [ ] [Trivia Game con Arduino | Parte 2](XLOSdEYDUz8)2017-03-8
-9. [ ] [Modelando 3D | programas libres](p0-8KJXlqTk)2017-03-10
-10. [ ] [Blynk | una manera muy fácil de trabajar IOT](8BbYKbiOt-w)2017-03-15
-11. [ ] [UNBOXING | Un Nintendo Switch para todo](pqVxF7Ji5TM)2017-03-25
-12. [ ] [ARDUINO A CONTROL REMOTO | DIRECTO](xMntFqEY-7M)2017-03-29
-13. [ ] [MODELADO 3D EN FREECAD | ACCESORIOS PARA NINTENDO SWITCH](MDUoSDUt3Q8)2017-04-05
-14. [ ] [ALERTA POR EMAIL CON ARDUINO Y PYTHON Parte 1](GsjlnuPXSfw)2017-04-19
-14. [ ] [ALERTA POR EMAIL CON ARDUINO Y PYTHON PArte 2](0kgmZFuzlWc)2017-04-26
+1. [X] [Los mejores arduinos del 2015](ylTOJLHV5gI)2015-12-19
+2. [X] [Unboxing Sparkfun Shapeoko 3 Deluxe Kit](ggHH_cgsH1E)2016-05-03
+3. [X] [Lulzbot Mini 3D Printer Unboxing](B2v6KVbLUU4)2016-08-13
+4. [X] [Creando algo Épico para la Lulzbot Mini](zIH-5XgnTic)2016-12-11
+5. [X] [Tutorial para usar Blutooth HC-05 con Arduino y Servomotores](i7UQ4wDf2p8)2017-02-10
+6. [X] [Usando comandos AT con el Bluetooth HC-05](zZtIcgNtli8)2017-02-18
+7. [X] [Trivia Game con Arduino | Parte 1](qR5fUygHToM)2017-03-01
+8. [X] [Trivia Game con Arduino | Parte 2](XLOSdEYDUz8)2017-03-08
+9. [X] [Modelando 3D | programas libres](p0-8KJXlqTk)2017-03-10
+10. [X] [Blynk | una manera muy fácil de trabajar IOT](8BbYKbiOt-w)2017-03-15
+11. [X] [UNBOXING | Un Nintendo Switch para todo](pqVxF7Ji5TM)2017-03-25
+12. [X] [ARDUINO A CONTROL REMOTO](xMntFqEY-7M)2017-03-29
+13. [X] [MODELADO 3D EN FREECAD | ACCESORIOS PARA NINTENDO SWITCH](MDUoSDUt3Q8)2017-04-05
+14. [X] [ALERTA POR EMAIL CON ARDUINO Y PYTHON Parte 1](GsjlnuPXSfw)2017-04-19
+15. [X] [ALERTA POR EMAIL CON ARDUINO Y PYTHON PArte 2](0kgmZFuzlWc)2017-04-26
 15.1 [ ] [ EMERGENCY CODE | OPTIMIZANDO CÓDIGO DE ARDUINO](F-1thv52sGk)2017-05-02
 15.2 [ ] [ EMERGENCY CODE | OPTIMIZANDO CÓDIGO DE ARDUINO](04t57e8HNyc)2017-05-02
 16. [ ] [ SISTEMA DE ALERTA POR EMAIL CON RASPBERRY PI](3E5PNx1Op20)2017-05-3
