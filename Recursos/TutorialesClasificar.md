@@ -33,17 +33,17 @@ Video Editatos y listo para que las personas pueda aprender algo nuevo
 29. [X] [Arbolito de navidad con WiFi ESP8266](tXYtJy1MRWQ)2016-12-23
 30. [X] [Uso de la librería SETISA_iBUS](1KdUYVedJ9Y)2016-12-23
 31. [X] [Makey Makey & Arduino Touch Board](uqxGJPzHXkU)2016-12-23
-32. [ ] [Electrocardiograma con Arduino 101](Pb1VbgsZWQU)2017-01-26
-33. [ ] [Guía inicial para uso de Lulzbot Mini](pWAQtRJpot0)2017-02-04
-34. [ ] [PCB Épicos a bajo costo OSHPark](J4FE_6EJsLw)2017-03-18
-35. [ ] [Protocolos de Comunicación: UART y I2C](M26AVVu96sA)2017-04-07
-36. [ ] [3 formas de usar FTDI con Arduino](4-YA9dxVYBE)2017-11-18
-37. [ ] [Firefox Se el primero en probarlo](B9S-k6CuIU0)2018-02-12
-38. [ ] [Youtube-ld Descarga videos de youtube en linux](qfl2IzDsG7U)2018-03-10
-39. [ ] [10 Video de Inteligecia Artificial recomandado por ChepeCarlos](FFZUFg3LrR8)2918-03-25
-40. [ ] [Un proyecto secreto con el ★MEGA DISPLAY★](K1reMi_a8cQ)2018-04-02
-41. [ ] [3 códigos épicos, usando arduino, un led y un botón](4XXAbRFVA7I)2018-07-07
-42. [ ] [Construyendo una neurona con brain.js](IYnxx5BUk5A)2018-07-27
-43. [ ] [Sistema Casero de seguridad con ESP8266, MQTT y NodeJS](MbjP8TNS7g)2018-10-31
-44. [ ] [Como installar Arduino IDE en Linux (Debian, Ubuntu, Linux Mint)](vHd-eEcLw-s)2018-12-06
-45. [ ] [Como empezar tu empresa con Nathan Seidle, Sparkfun](aKE51m_3A2k)2019-01-30
+32. [X] [Electrocardiograma con Arduino 101](Pb1VbgsZWQU)2017-01-26
+33. [X] [Guía inicial para uso de Lulzbot Mini](pWAQtRJpot0)2017-02-04
+34. [X] [PCB Épicos a bajo costo OSHPark](J4FE_6EJsLw)2017-03-18
+35. [X] [Protocolos de Comunicación: UART y I2C](M26AVVu96sA)2017-04-07
+36. [X] [3 formas de usar FTDI con Arduino](4-YA9dxVYBE)2017-11-18
+37. [X] [Firefox Se el primero en probarlo](B9S-k6CuIU0)2018-02-12
+38. [X] [Youtube-ld Descarga videos de youtube en linux](qfl2IzDsG7U)2018-03-10
+39. [X] [10 Video de Inteligecia Artificial](FFZUFg3LrR8)2018-03-25
+40. [X] [Centrol de Display 8 Segmentos](K1reMi_a8cQ)2018-04-02
+41. [X] [3 códigos épicos, usando arduino, un led y un botón](4XXAbRFVA7I)2018-07-07
+42. [X] [Construyendo una neurona con brain.js](IYnxx5BUk5A)2018-07-27
+43. [X] [Sistema Casero de seguridad](MbjP8TNS7g)2018-10-31
+44. [X] [Como installar Arduino IDE en Linux](vHd-eEcLw-s)2018-12-06
+45. [X] [Como empezar tu empresa con Nathan Seidle, Sparkfun](aKE51m_3A2k)2019-01-30
