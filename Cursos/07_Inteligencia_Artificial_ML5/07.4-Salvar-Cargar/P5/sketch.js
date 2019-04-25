@@ -36,7 +36,6 @@ function setup() {
 
   createP("Entrena usando TexBox")
 
-
   InputTexbox = createInput("Cosa 2");
 
   BotonTexBox = createButton("Entrenar con " + InputTexbox.value())
@@ -51,16 +50,13 @@ function setup() {
 
   Texto = createP("Modelo no Listo, esperando");
 
-
   BotonesEntrenar = selectAll(".BotonEntrenar");
 
   for (var B = 0; B < BotonesEntrenar.length; B++) {
     BotonesEntrenar[B].style("margin", "5px");
     BotonesEntrenar[B].style("padding", "6px");
     BotonesEntrenar[B].mousePressed(PresionandoBoton);
-
   }
-
 }
 
 function PresionandoBoton() {
@@ -88,14 +84,12 @@ function clasificar() {
       Texto.html("Es un " + result.label);
       clasificar();
     }
-
   })
 }
 
 function EntrenarTexBox() {
   const Imagen = modelo.infer(Camara);
   knn.addExample(Imagen, InputTexbox.value());
-
 }
 
 function GuardadNeurona() {
@@ -120,8 +114,6 @@ function draw() {
     Clasificando = true;
   }
 }
-
-
 
 // Temporary save code until ml5 version 0.2.2
 const save = (knn, name) => {
