@@ -1,11 +1,46 @@
-var Camara;
-var BotonesEntrenar;
-var knn;
-var modelo;
-var Texto;
-var Clasificando = false;
-var InputTexbox;
-var BotonTexBox;
+let Camara;
+let BotonesEntrenar;
+let knn;
+let modelo;
+let Texto;
+let Clasificando = false;
+let InputTexbox;
+let BotonTexBox;
+
+// Esta informacion se tiene que cambiar dependiendo tu cuenta
+// y el Broker MQTT que utilices
+let BrokerMQTT = 'broker.shiftr.io';
+let PuertoMQTT = 80;
+let ClienteIDMQTT = "MQTT-P5";
+let UsuarioMQTT = 'chepecarlos';
+let ContrasenaMQTT = 'secretoespecial';
+
+client = new Paho.MQTT.Client(BrokerMQTT, PuertoMQTT, ClienteIDMQTT);
+
+client.connect({
+  onSuccess: MQTTConectado,
+  userName: UsuarioMQTT,
+  password: ContrasenaMQTT
+});
+
+function MQTTConectado() {
+  console.log("MQTT Conectado");
+  //client.subscribe("ALSW/foco1estado");
+}
+
+client.onConnectionLost = MQTTDesconectado;
+client.onMessageArrived = MQTTMensaje;
+
+function MQTTDesconectado(responseObject) {
+  if (responseObject.errorCode !== 0) {
+    console.log("Problemas MQTT Desconectado :" + responseObject.errorMessage);
+  }
+}
+
+function MQTTMensaje(message) {
+  console.log("Topic: " + message.destinationName);
+  console.log("Mensaje: " + message.payloadString);
+}
 
 function setup() {
   createCanvas(320, 240);
@@ -19,23 +54,22 @@ function setup() {
 
   createP('Presiona Botones para entrenar');
 
-  var BotonArduino = createButton("Arduino");
+  let BotonArduino = createButton("Arduino");
   BotonArduino.class("BotonEntrenar");
 
-  var BotonRedboard = createButton("Redboard");
+  let BotonRedboard = createButton("Redboard");
   BotonRedboard.class("BotonEntrenar");
 
-  var BotonESP8266 = createButton("ESP8266");
+  let BotonESP8266 = createButton("ESP8266");
   BotonESP8266.class("BotonEntrenar");
 
-  var BotonESP32 = createButton("ESP32");
+  let BotonESP32 = createButton("ESP32");
   BotonESP32.class("BotonEntrenar");
 
-  var BotonNada = createButton("Nada");
+  let BotonNada = createButton("Nada");
   BotonNada.class("BotonEntrenar");
 
   createP("Entrena usando TexBox")
-
 
   InputTexbox = createInput("Cosa 2");
 
@@ -44,27 +78,24 @@ function setup() {
 
   createP("Guarda o Carga tu Neurona");
 
-  var BotonGuardar = createButton("Guardar");
+  let BotonGuardar = createButton("Guardar");
   BotonGuardar.mousePressed(GuardadNeurona);
-  var BotonCargar = createButton("Cargar");
+  let BotonCargar = createButton("Cargar");
   BotonCargar.mousePressed(CargarNeurona);
 
   Texto = createP("Modelo no Listo, esperando");
 
-
   BotonesEntrenar = selectAll(".BotonEntrenar");
 
-  for (var B = 0; B < BotonesEntrenar.length; B++) {
+  for (let B = 0; B < BotonesEntrenar.length; B++) {
     BotonesEntrenar[B].style("margin", "5px");
     BotonesEntrenar[B].style("padding", "6px");
     BotonesEntrenar[B].mousePressed(PresionandoBoton);
-
   }
-
 }
 
 function PresionandoBoton() {
-  var NombreBoton = this.elt.innerHTML;
+  let NombreBoton = this.elt.innerHTML;
   console.log("Entrenando con " + NombreBoton);
   EntrenarKnn(NombreBoton);
 }
@@ -86,16 +117,17 @@ function clasificar() {
       console.error();
     } else {
       Texto.html("Es un " + result.label);
-      clasificar();
+      let message = new Paho.MQTT.Message(result.label);
+      message.destinationName = "ALSW/clasificadorimagenes";
+      client.send(message);
+      //clasificar();
     }
-
   })
 }
 
 function EntrenarTexBox() {
   const Imagen = modelo.infer(Camara);
   knn.addExample(Imagen, InputTexbox.value());
-
 }
 
 function GuardadNeurona() {
@@ -116,12 +148,11 @@ function draw() {
   image(Camara, 0, 0, 320, 240);
   BotonTexBox.html("Entrenar con " + InputTexbox.value());
   if (knn.getNumLabels() > 0 && !Clasificando) {
-    clasificar();
+    //clasificar();
+    setInterval(clasificar, 500);
     Clasificando = true;
   }
 }
-
-
 
 // Temporary save code until ml5 version 0.2.2
 const save = (knn, name) => {

@@ -82,7 +82,7 @@ function clasificar() {
       console.error();
     } else {
       Texto.html("Es un " + result.label);
-      clasificar();
+      //clasificar();
     }
   })
 }
@@ -110,7 +110,8 @@ function draw() {
   image(Camara, 0, 0, 320, 240);
   BotonTexBox.html("Entrenar con " + InputTexbox.value());
   if (knn.getNumLabels() > 0 && !Clasificando) {
-    clasificar();
+    //clasificar();
+    setInterval(clasificar, 500);
     Clasificando = true;
   }
 }
