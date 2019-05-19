@@ -118,7 +118,7 @@ function clasificar() {
     } else {
       Texto.html("Es un " + result.label);
       let message = new Paho.MQTT.Message(result.label);
-      message.destinationName = "ALSW/clasificadorimagenes";
+      message.destinationName = "ALSW/ml5/clasificar";
       client.send(message);
       //clasificar();
     }
