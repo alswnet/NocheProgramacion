@@ -11,6 +11,8 @@ links:
     url: "https://ml5js.org/"
   - title: "TenserFlow"
     url: "https://www.tensorflow.org/"
+  - title: "Curso ML5 y Arduino"
+    url: "https://nocheprogramacion.com/Cursos/07_Inteligencia_Artificial_ML5/"
 ---
 
 Nuestra comferencia sobre como unir ML5 y Arduino que hemos compartido en diferentes universidades
