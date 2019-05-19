@@ -81,6 +81,12 @@ Alguno enlaces que puede ser del interes para mantener contacto con nosotros:
 -   [Pagina ALSW](http://alsw.net)
 -   [Grupo ChepeCarlosClub](http://www.facebook.com/groups/chepecarlosclub/)
 
+## Prueva Servidor
+
+```
+$ bundle exec jekyll serve
+```
+
 # Contribuidores
 
 -   [ChepeCarlos](https://github.com/chepecarlos) (chepecarlos@alswblog.org)
