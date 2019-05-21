@@ -176,13 +176,13 @@ layout: base
 
     {% comment %} List of discussed links. {% endcomment %}
     {% if page.links %}
-    {% capture linksTitle %}Links que se menciono en el {{ page.video_type }}{% endcapture %}
+    {% capture linksTitle %}Links que se mencionaron en el {{ page.video_type }}{% endcapture %}
     {% include 3-modules/link-list.html links=page.links title=linksTitle %}
     {% endif %}
 
     {% comment %} Lista de Piesas. {% endcomment %}
     {% if page.piezas %}
-    {% capture piesasTitle %}Piesas que se mencionaron en el {{ page.video_type }}{% endcapture %}
+    {% capture piesasTitle %}Piezas que se mencionaron en el {{ page.video_type }}{% endcapture %}
     {% include 3-modules/link-list.html links=page.piezas title=piesasTitle %}
     {% endif %}
 
@@ -199,7 +199,7 @@ layout: base
 
     {% comment %} Links of discussed tools. {% endcomment %}
     {% if page.tools %}
-    {% capture toolsTitle %}Heramientas que se menciono en el {{ page.video_type }}{% endcapture %}
+    {% capture toolsTitle %}Heramientas que se mencionaron en el {{ page.video_type }}{% endcapture %}
     {% include 3-modules/link-list.html links=page.tools title=toolsTitle %}
     {% endif %}
 
