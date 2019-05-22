@@ -3,10 +3,6 @@ layout: base
 permalink: /
 ---
 
-{% comment %} Get the next stream. {% endcomment %}
-{% include 1-tools/sort-videos.html videos=site.Streams future=true reverse=true %}
-{% assign nextStream = out_sortedVideos | where_exp: 'stream', 'stream.date >= site.time' | first %}
-
 {% comment %} Get latest coding challenges. {% endcomment %}
 {% include 1-tools/sort-videos.html videos=site.RetoProgramacion reverse=true %}
 
@@ -21,20 +17,16 @@ permalink: /
 {% assign featuredVideos = '' | split: '' %}
 
 {% comment %} Add latest coding challenges to featured videos array. {% endcomment %}
-{% for challenge in out_sortedVideos limit:2 offset:offset %}
+{% for challenge in out_sortedVideos limit:3 offset:offset %}
 {% assign featuredVideos = featuredVideos | push: challenge %}
 {% endfor %}
-
-{% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
-{% include 1-tools/sort-videos.html videos=site.Streams reverse=true %}
-{% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
 
 {% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
 {% include 1-tools/sort-videos.html videos=site.Tutoriales reverse=true %}
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
 
 {% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
-{% include 1-tools/sort-videos.html videos=site.Cursos %}
+{% include 1-tools/sort-videos.html videos=site.Cursos reverse=true %}
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
 
 <div class="landing-page">
