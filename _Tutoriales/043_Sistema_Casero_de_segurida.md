@@ -1,9 +1,9 @@
----
-title: "Sistema Casero de seguridad"
+--- 
+title: "Sistema Casero De Seguridad"
 video_number: 43
 date: 2018-10-31
 video_id: gMbjP8TNS7g
----
+repository: 043_Sistema_Casero_de_segurida
 
 tools:
  - title: "Arduino IDE"
@@ -33,4 +33,4 @@ piezas:
   - title: "Calabaza"
 
 ---
-Para este halloween crearemos un proyecto muy especial, en el cual haremos una calabaza inteligente, la cual te reportartá a tu celular cuando alguien entre a tu casa o quiera robar tus dulces... usaremos el poder del esp8266 para crear un sistema de alarma inteligente, mandando un mensaje mediante el protocolo MQTT en un servidor con NodeJS. ¡Hoy crearemos el sistema de seguridad definitivo para una fiesta de halloween!
+Para este halloween crearemos un proyecto muy especial, en el cual haremos una calabaza inteligente, la cual te reportartá a tu celular cuando alguien entre a tu casa o quiera robar tus dulces... Usaremos el poder del esp8266 para crear un sistema de alarma inteligente, mandando un mensaje mediante el protocolo MQTT en un servidor con NodeJS. ¡Hoy crearemos el sistema de seguridad definitivo para una fiesta de halloween!
