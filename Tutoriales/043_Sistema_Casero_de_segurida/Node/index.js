@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = '628314253:AAGLK_Z1Rr9Mt5OxW2TKHVuJdhId18n0rr0';
+const token = 'XXX';//Token de Github
 const bot = new TelegramBot(token, {
   polling: true
 });
@@ -7,8 +7,7 @@ const bot = new TelegramBot(token, {
 var mqtt = require('mqtt')
 var client = mqtt.connect('mqtt://broker.mqttdashboard.com')
 
-
-var IdSecreto = 30085334;
+var IdSecreto = 1234567;
 
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
@@ -23,5 +22,4 @@ client.on('connect', function() {
 client.on('message', function(topic, message) {
   bot.sendMessage(IdSecreto, 'Mi amo alquien llego ' + message.toString());
   console.log(message.toString())
-
 })
