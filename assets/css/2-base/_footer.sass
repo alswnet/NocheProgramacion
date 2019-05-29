@@ -11,9 +11,7 @@ footer
       padding: 40px
       flex-basis: 100%
       text-align: center
-
-      +text-style("title")
-
+      @include text-style('title')
       text-decoration: none
       color: #FFF
       margin: 0
@@ -24,15 +22,15 @@ footer
         transition: all 150ms $timing-function
         transform: scale(1)
 
-      &:hover
+      &:hover, &:focus
         span
           transform: scale(1.2)
 
       &.link-facebook
-        background: $ct-blue
+        background: $ct-Facebook
 
       &.link-youtube
-        background: $ct-red
+        background: $ct-Youtube
 
       &.link-instagram
         background: $ct-yellow
