@@ -2,11 +2,9 @@
 import java.util.*;
 import ketai.ui.*;
 import ketai.net.bluetooth.*;
-import ketai.sensors.*;
 
 //Variables de BT
 KetaiBluetooth Kbt;
-KetaiSensor Ksen;
 ArrayList listaDisp;
 String nombreDisp;
 String mensaje="";
@@ -33,8 +31,6 @@ void setup() {
 
   //Inicializa las clases de bluetooth y sensores
   Kbt = new KetaiBluetooth(this);
-  Ksen = new KetaiSensor(this);
-  Ksen.start();
 
 
   //Obtiene la lista de dispositivos bluetooth emparejados
@@ -74,7 +70,7 @@ void DibujarGUI() {
 
   textSize(32);
   fill(255, 200, 0);
-  text("Densidad: "+CantidadLectura+" Bateria: "+Bateria+"V Velocidad: "+Velocidad+"ms", 10, 30); 
+  text("Densidad: "+CantidadLectura+" Bateria: "+Bateria+"V Velocidad: "+Velocidad+"ms Frame: "+int(frameRate), 10, 30); 
 
 
   stroke(0);
@@ -90,10 +86,13 @@ void DibujarGUI() {
   rect(AreaDibujo, height/5, width/10, height/5);
   fill(255, 200, 0);
   rect(AreaDibujo, 2*height/5, width/10, height/5);
+  fill(255, 200, 100);
+  rect(AreaDibujo, 3*height/5, width/10, height/5);
+  fill(255, 200, 200);
+  rect(AreaDibujo, 4*height/5, width/10, height/5);
 }
 
 void DibujarLinea() {
-
 
   //linea verde con grosor de 5 pixeles
   stroke(0, 255, 0);
@@ -128,7 +127,7 @@ void BuscarNumero() {
     } else if (mensaje.indexOf("B") == 0) {
       try {
         int Numero = Integer.parseInt(Paquete.substring(1));
-        Bateria = Numero/100;
+        Bateria = (float(Numero)/512)*5;
         println("Paquete Bateria: "+Bateria);
       } 
       catch(Exception e) {
@@ -139,7 +138,7 @@ void BuscarNumero() {
     }
     mensaje = mensaje.substring(FinPaquete+1);
     FinPaquete = mensaje.indexOf(";");
-  };
+  }
 }
 
 void onKetaiListSelection(KetaiList klist) {
@@ -165,7 +164,15 @@ void onBluetoothDataEvent(String who, byte[] data) {
   }
 }
 
-
+void EnviarVelocidad() {
+  if (Velocidad < 0) {
+    Velocidad = 0;
+  }
+  if (BTActivo) {
+    String Buffer = "V"+Velocidad+";";//; = String.format("V%d;", Velocidad );
+    Kbt.writeToDeviceName(nombreDisp, Buffer.getBytes());
+  }
+}
 
 void mousePressed() {
   if (mouseX > AreaDibujo) {
@@ -188,6 +195,12 @@ void mousePressed() {
       CantidadLectura = CantidadLectura - 10;
       InicializarPantalla();
       BTActivo = false;
+    } else if ( mouseY < 4 * height/5) {
+      Velocidad = Velocidad + 1;
+      EnviarVelocidad();
+    } else {
+      Velocidad = Velocidad - 1;
+      EnviarVelocidad();
     }
   }
 }
