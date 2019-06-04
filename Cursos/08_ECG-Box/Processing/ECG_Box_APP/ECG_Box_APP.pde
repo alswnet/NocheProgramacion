@@ -10,11 +10,16 @@ KetaiSensor Ksen;
 ArrayList listaDisp;
 String nombreDisp;
 
+
+//
+int AreaDibujo;
 void setup() {
   //Se asegura de que no se pueda girar la pantalla y la abarca a
   //totalidad
   orientation(LANDSCAPE);
   size(displayWidth, displayHeight);
+
+  AreaDibujo = width-width/10;
 
   //Inicializa las clases de bluetooth y sensores
   Kbt = new KetaiBluetooth(this);
@@ -35,7 +40,7 @@ void setup() {
 
 void draw() {
   fill(255, 0, 0);
-  rect(100, 40, 100, 100);
+  rect(AreaDibujo, 0, width/10, height/5);
 }
 
 
@@ -56,8 +61,7 @@ void onKetaiListSelection(KetaiList klist) {
 
 String mensaje="";
 //Call back method to manage data received
-void onBluetoothDataEvent(String who, byte[] data)
-{
+void onBluetoothDataEvent(String who, byte[] data) {
   mensaje+=new String(data);
   print(mensaje);
   mensaje="";
@@ -66,8 +70,12 @@ void onBluetoothDataEvent(String who, byte[] data)
 
 
 void mousePressed() {
-  //Detecta clicks sobre el boton de conexion
-  //Crea una nueva lista de seleccion en pantalla para que el
-  //usuario elija un dispositivo bluetooth
-  KetaiList klist = new KetaiList(this, listaDisp);
+  if (mouseX > AreaDibujo) {
+    if (mouseY < height/5) {
+      //Detecta clicks sobre el boton de conexion
+      //Crea una nueva lista de seleccion en pantalla para que el
+      //usuario elija un dispositivo bluetooth
+      KetaiList klist = new KetaiList(this, listaDisp);
+    }
+  }
 }
