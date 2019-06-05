@@ -1,45 +1,41 @@
-let Camara;
-let BotonesEntrenar;
-let knn;
-let modelo;
-let Texto;
-let Clasificando = false;
-let InputTexbox;
-let BotonTexBox;
+var Camara;
+var BotonesEntrenar;
+var knn;
+var modelo;
+var Texto;
+var Clasificando = false;
+var InputTexbox;
+var BotonTexBox;
 
-// Esta informacion se tiene que cambiar dependiendo tu cuenta
-// y el Broker MQTT que utilices
 let BrokerMQTT = 'broker.shiftr.io';
 let PuertoMQTT = 80;
 let ClienteIDMQTT = "MQTT-P5";
-let UsuarioMQTT = 'chepecarlos';
-let ContrasenaMQTT = 'secretoespecial';
+let UsuarioMQTT = "chepecarlos4";
+let ContrasenaMQTT = "secretoamor";
 
 client = new Paho.MQTT.Client(BrokerMQTT, PuertoMQTT, ClienteIDMQTT);
 
+client.onConnectionLost = MQTTPerder;
+client.onMessageArrived = MQTTMensaje;
+
 client.connect({
-  onSuccess: MQTTConectado,
+  onSuccess: CuandoConectadoMQTT,
   userName: UsuarioMQTT,
   password: ContrasenaMQTT
 });
 
-function MQTTConectado() {
-  console.log("MQTT Conectado");
-  //client.subscribe("ALSW/foco1estado");
-}
-
-client.onConnectionLost = MQTTDesconectado;
-client.onMessageArrived = MQTTMensaje;
-
-function MQTTDesconectado(responseObject) {
+function MQTTPerder(responseObject) {
   if (responseObject.errorCode !== 0) {
-    console.log("Problemas MQTT Desconectado :" + responseObject.errorMessage);
+    console.log("MQTT Perdio coneccion Error:" + responseObject.errorMessage);
   }
 }
 
 function MQTTMensaje(message) {
-  console.log("Topic: " + message.destinationName);
-  console.log("Mensaje: " + message.payloadString);
+  console.log("Mensaje recibido:" + message.payloadString);
+}
+
+function CuandoConectadoMQTT() {
+  console.log("MQTT Conectado");
 }
 
 function setup() {
@@ -54,19 +50,19 @@ function setup() {
 
   createP('Presiona Botones para entrenar');
 
-  let BotonArduino = createButton("Arduino");
+  var BotonArduino = createButton("Arduino");
   BotonArduino.class("BotonEntrenar");
 
-  let BotonRedboard = createButton("Redboard");
+  var BotonRedboard = createButton("Redboard");
   BotonRedboard.class("BotonEntrenar");
 
-  let BotonESP8266 = createButton("ESP8266");
+  var BotonESP8266 = createButton("ESP8266");
   BotonESP8266.class("BotonEntrenar");
 
-  let BotonESP32 = createButton("ESP32");
+  var BotonESP32 = createButton("ESP32");
   BotonESP32.class("BotonEntrenar");
 
-  let BotonNada = createButton("Nada");
+  var BotonNada = createButton("Nada");
   BotonNada.class("BotonEntrenar");
 
   createP("Entrena usando TexBox")
@@ -78,16 +74,16 @@ function setup() {
 
   createP("Guarda o Carga tu Neurona");
 
-  let BotonGuardar = createButton("Guardar");
+  var BotonGuardar = createButton("Guardar");
   BotonGuardar.mousePressed(GuardadNeurona);
-  let BotonCargar = createButton("Cargar");
+  var BotonCargar = createButton("Cargar");
   BotonCargar.mousePressed(CargarNeurona);
 
   Texto = createP("Modelo no Listo, esperando");
 
   BotonesEntrenar = selectAll(".BotonEntrenar");
 
-  for (let B = 0; B < BotonesEntrenar.length; B++) {
+  for (var B = 0; B < BotonesEntrenar.length; B++) {
     BotonesEntrenar[B].style("margin", "5px");
     BotonesEntrenar[B].style("padding", "6px");
     BotonesEntrenar[B].mousePressed(PresionandoBoton);
@@ -95,7 +91,7 @@ function setup() {
 }
 
 function PresionandoBoton() {
-  let NombreBoton = this.elt.innerHTML;
+  var NombreBoton = this.elt.innerHTML;
   console.log("Entrenando con " + NombreBoton);
   EntrenarKnn(NombreBoton);
 }
@@ -117,8 +113,8 @@ function clasificar() {
       console.error();
     } else {
       Texto.html("Es un " + result.label);
-      let message = new Paho.MQTT.Message(result.label);
-      message.destinationName = "ALSW/ml5/clasificar";
+      message = new Paho.MQTT.Message(result.label);
+      message.destinationName = "ALSW/Clasificar";
       client.send(message);
       //clasificar();
     }

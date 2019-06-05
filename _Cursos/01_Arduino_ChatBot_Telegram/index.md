@@ -4,4 +4,4 @@ series_number: 1
 layout: series-index
 ---
 
-En esta serie de vídeos combinaremos un bot de telegram con Nodjs, descubre cómo lo hicimos.
+En este curso veremos como controlar un arduino a distancia desde el celular por mensajeria de telegram.
