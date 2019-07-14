@@ -5,6 +5,10 @@ date: 2019-07-12
 video_id: 4xVzfu0ejBg
 repository: 058_Como_usar_LDR_con_arduino
 
+links:
+  - title: "Libreria EEPROM"
+    pieza: "https://www.arduino.cc/en/Tutorial/EEPROMWrite"
+
 piezas:
   - title: "RedBoard (Arduino Uno Compatible)"
     pieza: "redboard"
