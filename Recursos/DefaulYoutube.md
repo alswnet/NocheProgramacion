@@ -54,6 +54,11 @@ La musica de " " es:
 # Video: https://youtu.be/5eR1iOEp1oU
 # Descarga gratis / Stream: http://ncs.io/Konnichiwa
 
+# Music from https://filmmusic.io
+# "Honey Bee" by Kevin MacLeod (https://incompetech.com)
+# "RetroFuture Clean" by Kevin MacLeod (https://incompetech.com)
+# License: CC BY (http://creativecommons.org/licenses/by/4.0/)
+
 Los programas utilizados en la edicion de video y streaming:
 # Sistema Operativo: Linux mint
 # Grabar y editar escenas de video: OBS. OBS-DNI,  OBS-linuxbrowser, OBS-websocket
