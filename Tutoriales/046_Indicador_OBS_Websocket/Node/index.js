@@ -33,7 +33,7 @@ client.on('message', function(topic, message) {
   }
 })
 
-let MaquinaOBS = "Umaru-Lenovo-ideapad-FLEX-6-14IKB.local:4444";
+let MaquinaOBS = "localhost:4444";
 const obs = new OBSWebSocket();
 
 let BuscandoOBS = false;
