@@ -7,7 +7,7 @@ repository: 058_Como_usar_LDR_con_arduino
 
 links:
   - title: "Libreria EEPROM"
-    pieza: "https://www.arduino.cc/en/Tutorial/EEPROMWrite"
+    url: "https://www.arduino.cc/en/Tutorial/EEPROMWrite"
 
 piezas:
   - title: "RedBoard (Arduino Uno Compatible)"
