@@ -103,7 +103,6 @@ includes_dir:                 _jekyll/includes
 
 # --- Collections ---
 collections:
-  Streams:          { output: true }
   RetoProgramacion: { output: true }
   Cursos:           { output: true }
   Tutoriales:       { output: true }
@@ -111,13 +110,6 @@ collections:
 # --- Defaults ---
 
 defaults:
-
-  # Streams
-  - scope:              { path: "", type: "Streams" }
-    values:
-      layout:                 "video"
-      video_type:             "stream"
-      can_contribute:         false
 
   # Reto Programacion
   - scope:              { path: "", type: "RetoProgramacion" }

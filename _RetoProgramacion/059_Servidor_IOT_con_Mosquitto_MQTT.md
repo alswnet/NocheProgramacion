@@ -30,5 +30,5 @@ piezas:
   - title: "Resistencia 330ohm"
     pieza: "resistencia-de-330-ohm-0-25w"
   - title: "Resistencia 1K"
-    pieza: "resistencia-de-1k-ohm-0-25w
+    pieza: "resistencia-de-1k-ohm-0-25w"
 ---

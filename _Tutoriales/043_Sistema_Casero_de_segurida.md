@@ -1,4 +1,4 @@
---- 
+---
 title: "Sistema Casero De Seguridad"
 video_number: 43
 date: 2018-10-31
@@ -33,4 +33,5 @@ piezas:
   - title: "Calabaza"
 
 ---
-Para este halloween crearemos un proyecto muy especial, en el cual haremos una calabaza inteligente, la cual te reportartá a tu celular cuando alguien entre a tu casa o quiera robar tus dulces... Usaremos el poder del esp8266 para crear un sistema de alarma inteligente, mandando un mensaje mediante el protocolo MQTT en un servidor con NodeJS. ¡Hoy crearemos el sistema de seguridad definitivo para una fiesta de halloween!
+
+Video especial de halloween una Calabaza Seguridad inteligente 
