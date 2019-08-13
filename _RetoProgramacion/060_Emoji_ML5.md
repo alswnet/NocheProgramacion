@@ -13,3 +13,5 @@ links:
   - title: "Post Blog poseNet"
     url: "https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5"
 ---
+
+Vamos a enseñarles como unir inteligencia artificial con poseNet para poner emojis en tu cara. 
