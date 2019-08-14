@@ -1,5 +1,6 @@
 .mobilenav-toggle
   display: none
+  box-shadow: none
   justify-content: space-around
   align-items: center
   flex-direction: column
@@ -16,6 +17,7 @@
 
   @media (max-width: $mobile)
     display: flex
+    cursor: pointer
 
   span
     width: 80%
@@ -26,7 +28,7 @@
     transition: all 375ms $timing-function
 
 .navigation
-  position: absolute
+  position: fixed
   top: 0
   width: 100%
   z-index: 9000
