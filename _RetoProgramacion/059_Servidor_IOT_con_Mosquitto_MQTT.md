@@ -1,8 +1,8 @@
 ---
 title: "Servidor Iot con Mosquitto(MQTT)"
 video_number: 58
-date: 2019-07-12
-video_id: 4xVzfu0ejBg
+date: 2019-07-26
+video_id: 3Lq246fHGBg
 
 links:
   - title: "MQTT.org"
@@ -32,3 +32,5 @@ piezas:
   - title: "Resistencia 1K"
     pieza: "resistencia-de-1k-ohm-0-25w"
 ---
+
+Como poder levantar tu propio broker IOT para MQTT

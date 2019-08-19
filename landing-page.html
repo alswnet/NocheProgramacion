@@ -17,7 +17,7 @@ permalink: /
 {% assign featuredVideos = '' | split: '' %}
 
 {% comment %} Add latest coding challenges to featured videos array. {% endcomment %}
-{% for challenge in out_sortedVideos limit:3 offset:offset %}
+{% for challenge in out_sortedVideos limit:4 offset:offset %}
 {% assign featuredVideos = featuredVideos | push: challenge %}
 {% endfor %}
 
