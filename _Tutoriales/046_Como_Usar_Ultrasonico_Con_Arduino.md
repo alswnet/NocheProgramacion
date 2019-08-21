@@ -11,11 +11,11 @@ links:
 
 
 piezas:
-  - title: "Arduino uno"
+  - title: "Arduino Uno R3"
     pieza: "Arduino Uno R3"
   - title: "Redboard"
     pieza: "RedBoard"
-  - title: "Ultrasonico"
+  - title: "Sensor Ultrasonico HC-SR04"
     pieza: "Sensor Ultrasonico HC-SR04"   
 ---
 
