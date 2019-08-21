@@ -12,7 +12,7 @@ links:
 
 piezas:
   - title: "Arduino uno"
-	pieza: "Arduino Uno R3"
+    pieza: "Arduino Uno R3"
   - title: "Redboard"
     pieza: "RedBoard"
   - title: "Ultrasonico"
