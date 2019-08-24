@@ -4,3 +4,4 @@ video_number: 17
 date: 2017-05-03
 video_id: 3E5PNx1Op20
 ---
+Como adición al proyecto original, hoy veremos como enlazarlo con Rasperry Pi.
