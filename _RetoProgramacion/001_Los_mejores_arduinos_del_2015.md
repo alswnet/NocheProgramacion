@@ -5,4 +5,4 @@ date: 2015-12-19
 video_id: ylTOJLHV5gI
 ---
 
-Nuestra lista de los placas de desarrollo favorita del 2015 
+Nuestra lista de los placas de desarrollo favoritas del 2015.

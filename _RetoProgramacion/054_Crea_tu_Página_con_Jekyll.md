@@ -9,4 +9,4 @@ links:
     url: "https://jekyllrb.com/"
 ---
 
-Hoy veremos crear un Sitio Web en Jekyll haciéndolo de manera fácil y sencilo.
+Hoy veremos como crear un Sitio Web en Jekyll haciéndolo de manera fácil y sencilla.

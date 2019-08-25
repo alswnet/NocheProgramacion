@@ -14,4 +14,4 @@ videos:
     video_id: "4kdcprnf9Wo"
 ---
 
-Mejorando proyectos interesantes con mejorar que lo hacen muy usables
+Estamos haciendo mejores cosas, síguenos.

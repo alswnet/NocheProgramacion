@@ -6,4 +6,4 @@ video_id: MCpi0903_7E
 repository: 042_UNIENDO ALEXA_Y_EL_ESP32_o_ESP8266
 ---
 
-En súper divertido poder controlar su proyectos de arduino por comandos de voz por Alexa
+En súper divertido poder controlar tus proyectos de Arduino por comandos de voz por Alexa.
