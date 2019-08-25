@@ -2,6 +2,7 @@ import processing.serial.*;
 
 Serial MiPuerto;
 float D1, D2;
+float M1, M2;
 
 void setup() {
   //printArray(Serial.list());
@@ -9,11 +10,36 @@ void setup() {
   MiPuerto.bufferUntil('\n');
   size(400, 600);
   ellipseMode(CENTER);
+  M1 = 50;
+  M2 = 50;
 }
 
 void draw() {
+  background(0);
+  fill(255, 255, 0);
+  float PM1 = map(M1, 0, 100, 0, height);
+  ellipse(width/4, PM1, width/4, width/4);
+  float PM2 = map(M2, 0, 100, 0, height);
+  ellipse((3*width)/4, PM2, width/4, width/4);
+} 
+
+void mousePressed() {
+  MoverCirculo();
 }
 
+void mouseDragged() {
+  MoverCirculo();
+}
+
+void MoverCirculo() {
+  if (mouseX<width/2) {
+    M1 = map(mouseY, 0, height, 0, 100);
+    MiPuerto.write("M1/"+M1+"\n");
+  } else {
+    M2 = map(mouseY, 0, height, 0, 100);
+    MiPuerto.write("M2/"+M2+"\n");
+  }
+}
 void serialEvent(Serial p) {
   String Mensaje = MiPuerto.readString();
   String[] PaqueteMensaje =  splitTokens(Mensaje, "/\n\r");

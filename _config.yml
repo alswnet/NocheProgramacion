@@ -1,9 +1,8 @@
 #
-# Jekyll Configuraton for https://codingtrain.github.io/Rainwbow-Code/
+# Jekyll Configuraton for https://NocheProgramacion.com
 #
 #  ToDo for Jekyll v3.7:
-#    - move collections into a subfolder using collections_dir: <path>
-#    - set layout series-index for relevant files automatically (using a glob pattern).
+#    - Agregar presentaciones Sozi
 #
 
 

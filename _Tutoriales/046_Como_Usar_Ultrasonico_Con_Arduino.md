@@ -3,11 +3,13 @@ title: "Tutorial HC-SR04 sensor ultrasonico"
 video_number: 46
 date: 2019-08-21
 video_id: SzzdP8IvQr4
-repository: 046_Como_Usar_Sensor_Ultrasonico
+repository: 046_Como_Usar_Ultrasonico_Con_Arduino
 
 links:
   - title: "Arduino"
     url: "https://www.arduino.cc/en/Main/Software"
+  - title: "pulseIn"
+    url: "https://www.arduino.cc/reference/en/language/functions/advanced-io/pulsein/"
 
 
 piezas:
