@@ -3,6 +3,7 @@ const int PinTrigger1 = 6;
 const int PinEcho2 = 5;
 const int PinTrigger2 = 4;
 int M1, M2;
+
 void setup() {
   Serial.begin(9600);
   pinMode(PinEcho1, INPUT);
@@ -28,6 +29,9 @@ void loop() {
 }
 
 void DecodificarSerial() {
+  // Mensaje de la forma M1/30
+  // Donde M1 Es motor 1
+  // 30 el valor
   String Mensaje = Serial.readStringUntil('\n');
   int PosicionPleca = Mensaje.indexOf('/');
   int PosicionSaltoLinea = Mensaje.length();
