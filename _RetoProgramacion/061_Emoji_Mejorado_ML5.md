@@ -3,7 +3,7 @@ title: "Inteligencia del lado oscuro haciendo filtros con la fuerza"
 video_number: 61
 date: 2019-08-16
 video_id: B0PGLqD5e4I
-repository: 061_Emoji_Mejorado_ML5
+repository: 061_Emoji_Mejorado_ML5_2
 
 links:
   - title: "ML5"
@@ -15,4 +15,3 @@ links:
 ---
 
 Al igual que el stream pasado usaremos inteligencia para poner emojis en tu cara pero usaremos la fuerza para unas pequeñas mejoras.
-
