@@ -3,7 +3,7 @@ title: "Inteligencia del lado oscuro haciendo filtros con la fuerza"
 video_number: 61
 date: 2019-08-16
 video_id: B0PGLqD5e4I
-repository: 061_Emoji_Mejorado_ML5_2
+repository: 061_Emoji_ML5_2
 
 links:
   - title: "ML5"
