@@ -12,7 +12,7 @@ links:
 
 piezas:
   - title: "Arduino Microview"
-  - pieza: "arduino-microview"
+    pieza: "arduino-microview"
   - title: "(O también puede ser) Arduino Uno r3"
     pieza: "arduino-uno-r3"
   - title: "Redboard"
@@ -30,7 +30,6 @@ piezas:
   - title: "Capacitor de 100 microfaradios"
     pieza: "capacitor-electrolitico-de-100uf-25v"
   - title: "Transistor 7bl33"
-    pieza: ""
   - title: "Electrodos"
     pieza: "electrodos"
   - title: "Cables para electrodos"
