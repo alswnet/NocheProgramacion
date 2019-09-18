@@ -1,5 +1,5 @@
-//Pines de los motores 
-int MotorD[2] = {13.12};
+//Pines de los motores
+int MotorD[2] = {13, 12};
 int MotorI[2] = {9, 10};
 int PwmD = 6;
 int PwmI = 5;
@@ -17,8 +17,8 @@ void setup() {
 }
 
 void loop() {
-  VelocidadMotor(MotorD, PwmD, 255);//ejemplo de Motor Derecho
-  VelocidadMotor(MotorI, PwmI, 255);//ejemplo de Motor Izquierdo
+  VelocidadMotor(MotorD, PwmD, 250);//ejemplo de Motor Derecho
+  VelocidadMotor(MotorI, PwmI, 250);//ejemplo de Motor Izquierdo
 }
 
 //Funcion para Poner una velocidad a un motor
