@@ -40,4 +40,4 @@ piezas:
 
 ---
 
-Crea un pequeño proyecto de salud utilizando un arduino, un bluetooth y una bateria, con esto demostraremos que tan fácil es crear un electrocardiograma utilizando partes muy simples.
+Crea un pequeño proyecto de salud utilizando un arduino, un bluetooth y una batería, con esto demostraremos que tan fácil es crear un electrocardiograma utilizando partes muy simples.
