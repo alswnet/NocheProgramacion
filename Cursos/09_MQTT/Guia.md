@@ -10,6 +10,7 @@
 	* Instalar hardware Extra, Heramientas>>Placas>>Gestos de Tarjetas..
 	* Buscar e instalar ESP8266 y ESP32
 	* Instalar [Driver FTDI](https://alsw.net/heramientas-para-trabajar-arduino/) y reiniciar la pc
+	* Instalar MQTT de Librerias  
 2. Instalar ATON
 	* Descargar [Aton IDE](https://atom.io/)
 	* Instalar Plugin Extra, Edit>>Preferencia>>Install
