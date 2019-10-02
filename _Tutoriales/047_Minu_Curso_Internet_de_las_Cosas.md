@@ -28,8 +28,8 @@ En este mini Curso aprenderán como comunicar un Arduino (ESP32 o ESP8266) con u
 	* Buscar e instalar ESP8266 y ESP32
 	* Instalar [Driver FTDI](https://alsw.net/heramientas-para-trabajar-arduino/) y reiniciar la pc
 	* Instalar MQTT de Librerias  
-2. Instalar **ATON**
-	* Descargar [Aton IDE](https://atom.io/)
+2. Instalar **ATOM**
+	* Descargar [AtoM IDE](https://atom.io/)
 	* Instalar Plugin Extra, Edit>>Preferencia>>Install
 		* atom-beautify
 		* aton-live-server
@@ -40,7 +40,7 @@ En este mini Curso aprenderán como comunicar un Arduino (ESP32 o ESP8266) con u
 3. **Navegador**
 	*	Firefox o Google Chrome
 4. Git
-  * Descargar (Git)[https://git-scm.com/]
+  * Descargar [Git](https://git-scm.com/)
 5. Aceeso a **WiFi**
 	* Pueto
 		* 80 y 8080
