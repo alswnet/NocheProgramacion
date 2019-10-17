@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.2.1/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body style="text-align:center">
+
+  <H1>Sistema Reconomiento de imagenes
+  </H1>
+  <div style="width:100%">
+    <div id="cambas" style="float:left;width:50%">
+    </div>
+    <div style="float:right;width:50%">
+      <h2>Control Entrenamiento Neurona</h2>
+      <p>Entrenar usando Boton</p>
+      <div>
+        <input type="button" name="Arduino" value="Arduino" class="BotonEntrenar"></input>
+        <input type="button" name="RedBoard" value="RedBoard" class="BotonEntrenar"></input>
+        <input type="button" name="ESP8266" value="ES8266" class="BotonEntrenar"></input>
+        <input type="button" name="ESP32" value="ES32" class="BotonEntrenar"></input>
+        <input type="button" name="Nada" value="Nada" class="BotonEntrenar"></input>
+      </div>
+      <p>Entrenar usando TexBox</p>
+      <div>
+        <input type="text" name="Texto" placeholder="Cosa 2" id="InputText"></input>
+        <input type="button" name="Entrenar" value="Entrenar" id="BtEntrenar"></input>
+      </div>
+      <p>Cargar o Salvar Neurona</p>
+      <div>
+        <input type="button" name="Cargar" value="Cargar" id="BtCargar">
+        <input type="button" name="Salvar" value="Salvar" id="BtSalvar">
+      </div>
+      <p id="EstadoNeurona">Estado Neurona: Esperando</p>
+      <p>Aprende a hacer el proyecto aqui: <a href="https://nocheprogramacion.com/Cursos/07_Inteligencia_Artificial_ML5/">NocheProgramacion.com</a> </p>
+</body>
+
+</html>
