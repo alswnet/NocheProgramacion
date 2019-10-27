@@ -7,7 +7,7 @@ repository: 046_Como_Usar_Ultrasonico_Con_Arduino
 
 links:
   - title: "Arduino"
-    url: "https://www.arduino.cc/en/Main/Software"
+    url: "https://www.arduino.cc/en/Main/Software:
   - title: "pulseIn"
     url: "https://www.arduino.cc/reference/en/language/functions/advanced-io/pulsein/"
 
