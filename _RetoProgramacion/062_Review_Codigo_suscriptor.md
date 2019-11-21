@@ -3,7 +3,7 @@ title: "Review de codigo de suscriptor"
 video_number: 62
 date: 2019-11-20
 video_id: TUyQ9GEcwcI
-repository: 062_Review_Codigo_suscriptor
+repository: 062_Review_Codigo_Suscriptor
 
 links:
   - title: "Comentario"
@@ -13,4 +13,4 @@ links:
 
 ---
 
-
+En esta ocasion veremos un código enviado por un suscriptor y corregiremos algunas cosas y aprenderemos en el proceso, ¡Manda el tuyo y podría aparecer en un stream futuro!
