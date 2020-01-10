@@ -1,11 +1,11 @@
 const TelegramBot = require('node-telegram-bot-api');
 var mqtt = require('mqtt')
 
-const token = '999487663:AAFDUcdqWYPDH_NHC0Gv6cEGXmU84rdq33U'; //Cambiar por el token de telegram
+const token = 'XXX'; //Cambiar por el token de telegram
 const bot = new TelegramBot(token, {
   polling: true
 });
-var IdMiChat = 000; //cambiar por tu ID del chat
+
 var client = mqtt.connect('mqtt://NavidadALSW2:SubcribanseAALSWenYoutube@broker.shiftr.io')
 
 bot.on('message', (msg) => {
@@ -19,6 +19,6 @@ bot.on('message', (msg) => {
   } else if (Mensaje.indexOf("apagar") >= 0) {
     console.log("apagar el led");
     bot.sendMessage(chatId, 'Apagare el led');
-    client.publish('/ALSW/foco/Navidad', '1')
+    client.publish('/ALSW/foco/Navidad', '0')
   }
 });
