@@ -1,6 +1,6 @@
 ---
 title: "Tomar Foto Terminal"
-video_number: 49
+video_number: 48
 date: 2020-01-17
 video_id: OqOQpYK0gcs
 repository: 
