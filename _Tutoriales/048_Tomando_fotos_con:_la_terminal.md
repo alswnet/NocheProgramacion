@@ -6,9 +6,9 @@ video_id: OqOQpYK0gcs
 repository: 
 
 links:
-  - title: ""
+  - title: "Tomar foto con Raspberry"
     url: "https://www.raspberrypi.org/documentation/usage/webcams/"
-  - title: ""
+  - title: "Documentacion de fswebcam"
     url: "https://manpages.debian.org/jessie/fswebcam/fswebcam.1.en.html"
 
 ---
