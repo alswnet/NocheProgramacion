@@ -83,6 +83,11 @@ Alguno enlaces que puede ser del interes para mantener contacto con nosotros:
 
 ## Prueva Servidor
 
+Installar en Linux
+
+`sudo apt install ruby-bundler`
+
+
 ```
 $ bundle exec jekyll serve
 ```

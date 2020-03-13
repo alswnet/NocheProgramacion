@@ -44,7 +44,7 @@ void loop() {
   if (!client.connected()) {
     Conectando();
   }
-  
+
   ActualizarLed();
   ActualizarBoton();
   MandarData();
