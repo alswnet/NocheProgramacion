@@ -3,8 +3,9 @@ layout: base
 permalink: /
 ---
 
-{% comment %} Get latest coding challenges. {% endcomment %}
-{% include 1-tools/sort-videos.html videos=site.RetoProgramacion reverse=true %}
+{% comment %} Obtener los ultimis turoriales {% endcomment %}
+{% include 1-tools/sort-videos.html videos=site.Tutoriales reverse=true %}
+
 
 {% comment %} Use the latest coding challenge if a stream hasn't been scheduled yet. {% endcomment %}
 {% if nextStream == null %}
@@ -17,17 +18,20 @@ permalink: /
 {% assign featuredVideos = '' | split: '' %}
 
 {% comment %} Add latest coding challenges to featured videos array. {% endcomment %}
-{% for challenge in out_sortedVideos limit:4 offset:offset %}
+{% for challenge in out_sortedVideos limit:6 offset:offset %}
 {% assign featuredVideos = featuredVideos | push: challenge %}
 {% endfor %}
 
-{% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
+
+{% comment %} Get lastest stream and add it to the featured videos array.
 {% include 1-tools/sort-videos.html videos=site.Tutoriales reverse=true %}
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
+{% endcomment %}
 
-{% comment %} Get lastest stream and add it to the featured videos array. {% endcomment %}
+{% comment %} Get lastest stream and add it to the featured videos array.
 {% include 1-tools/sort-videos.html videos=site.Cursos reverse=false %}
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
+{% endcomment %}
 
 <div class="landing-page">
   <div class="welcome-message">
