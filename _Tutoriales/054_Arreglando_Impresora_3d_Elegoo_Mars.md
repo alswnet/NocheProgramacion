@@ -3,7 +3,6 @@ title: "Arreglando Impresora 3D Elegoo Mars"
 video_number: 54
 date: 2020-05-04
 video_id: mw4XDohSDVE
-https://youtu.be/mw4XDohSDVE
 
 links:
   - title: "Impresora Elegoo Mars"
