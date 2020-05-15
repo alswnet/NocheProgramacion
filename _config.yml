@@ -42,6 +42,8 @@ code_variations:
     folder:                   "Node"
   - name:                     "Arduino"
     folder:                   "Arduino"
+  - name:                     "Python"
+    folder:                   "Python"
   - name:                     "Diagrama"
     folder:                   "Diagrama"
 
