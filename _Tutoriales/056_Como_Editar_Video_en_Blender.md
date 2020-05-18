@@ -1,5 +1,5 @@
 ---
-title: "Los 5 Mejores Plugins para Atom Editor"
+title: "Como Editar Video en Blender"
 video_number: 56
 date: 2020-05-11
 video_id: B2vVddfFhoA
