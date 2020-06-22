@@ -4,13 +4,12 @@ video_number: 60
 date: 2020-06-22
 video_id: sLpnENxVKg0
 
-
 links:
-- title: "digitalocean"
+ - title: "digitalocean"
     url: "https://www.digitalocean.com/"
-- title: "Tutorial de Wordpress"
+ - title: "Tutorial de Wordpress"
     url: "https://marketplace.digitalocean.com/apps/wordpress#getting-started"
-- title: "Dominios Gratuitos"
+ - title: "Dominios Gratuitos"
     url: "https://freemyip.com/"
 
 ---
