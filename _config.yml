@@ -46,6 +46,8 @@ code_variations:
     folder:                   "Python"
   - name:                     "Diagrama"
     folder:                   "Diagrama"
+  - name:                     "HTML"
+    folder:                   "HTML"
 
 # Links to other platforms.
 links:
