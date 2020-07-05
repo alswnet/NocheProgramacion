@@ -116,12 +116,13 @@ collections:
   RetoProgramacion: { output: true }
   Cursos:           { output: true }
   Tutoriales:       { output: true }
+  Guides:           { output: true }
+  mas:              { output: true }
 
 # --- Defaults ---
 
 defaults:
 
-  # Reto Programacion
   - scope:              { path: "", type: "RetoProgramacion" }
     values:
       layout:                 "video"
@@ -129,14 +130,12 @@ defaults:
       video_type_short:       "reto"
       can_contribute:         false
 
-  # Cursos
   - scope:              { path: "", type: "Cursos" }
     values:
       layout:                 "video"
       video_type:             "curso"
       can_contribute:         false
 
-  # Tutoriales
   - scope:              { path: "", type: "Tutoriales" }
     values:
       layout:                 "video"
@@ -144,6 +143,11 @@ defaults:
       video_type_short:       "tutorial"
       can_contribute:         false
 
-  - scope: { path: "", type: "Guides" }
+  - scope: { path: "", type:  "Guides" }
     values:
-      layout: "guide"
+      layout:                 "guide"
+
+  - scope: { path: "", type:  "mas" }
+    values:
+      video_type:             "Video"
+      layout:                 "video"

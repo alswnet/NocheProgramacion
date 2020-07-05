@@ -33,10 +33,10 @@
     {% endif %}
 
     {% assign variationURL = include.baseURL | append: '/' | append: include.variation.folder %}
-    <li><a href="{{ variationURL }}" target="_blank" aria-label="View {{ include.variation.lang }} Code">Ver codigo OnLine</a></li>
+    <li><a href="{{ variationURL }}" target="_blank" aria-label="View {{ include.variation.lang }} Code">Ver OnLine</a></li>
 
     {% assign downloadFrom = include.downloadURL | append: '/' | append: include.variation.folder %}
-    <li><a href="{{ downloadFrom }}" target="_blank" aria-label="Download {{ include.variation.lang }} Code">Descargar Codigo</a></li>
+    <li><a href="{{ downloadFrom }}" target="_blank" aria-label="Download {{ include.variation.lang }} Code">Descargar</a></li>
 
   </ul>
 
