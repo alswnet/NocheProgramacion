@@ -70,11 +70,11 @@ links:
   # Link to the merch store.
   merch:                      https://www.designbyhumans.com/shop/codingtrain/
 
-  # Link to the Amazon store.
-  amazon:                     https://www.amazon.com/shop/thecodingtrain
+  # Link de discord
+  discord:                    https://discord.gg/ReRapub
 
-  # Link to Donacion
-  streamlabs:                 https://streamlabs.com/alswtv
+  # Link de Donaciones
+  paypal:                     https://www.paypal.me/alswnet
 
 # --- Build Settings ---
 
