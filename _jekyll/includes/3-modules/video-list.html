@@ -1,61 +1,64 @@
 {% comment %}
-A list of videos that will be displayed as video cards.
-If a video limit is given, a button that leads to all videos will be displayed
-at the bottom.
+  A list of videos that will be displayed as video cards.
+  If a video limit is given, a button that leads to all videos will be displayed
+  at the bottom.
 
-Parameters:
-videos Video[] Array of unsorted videos (you can also pass the same filters as with sort-videos).
-sortedVideos Video[] Array of sorted videos (only the reverse option will be applied, nothing else).
-limit int Maximum number of videos to display (causes a 'watch all videos' button to be included at the bottom).
-reverse bool Wether the order of the passed videos should be flipped.
-class string A CSS class that sould be applied to the video-list container.
+  Parameters:
+    videos Video[]        Array of unsorted videos (you can also pass the same filters as with sort-videos).
+    sortedVideos Video[]  Array of sorted videos (only the reverse option will be applied, nothing else).
+    limit int             Maximum number of videos to display (causes a 'watch all videos' button to be included at the bottom).
+    reverse bool          Wether the order of the passed videos should be flipped.
+    class string          A CSS class that sould be applied to the video-list container.
+    future bool Wether to include future videos (default: false).
 {% endcomment %}
 
 
 {% comment %} Use the sorted videos if they are given. {% endcomment %}
 {% if include.sortedVideos %}
-{% assign int_sortedVideos = include.sortedVideos %}
+  {% assign int_sortedVideos = include.sortedVideos %}
 
-{% comment %} Reverse sorted videos if necessary. {% endcomment %}
-{% if include.reverse %}
-{% assign int_sortedVideos = int_sortedVideos | reverse %}
-{% endif %}
+  {% comment %} Reverse sorted videos if necessary. {% endcomment %}
+  {% if include.reverse %}
+    {% assign int_sortedVideos = int_sortedVideos | reverse %}
+  {% endif %}
 
-{% comment %} Remove all videos that aren't linked to YouTube unless this list displays future videos. {% endcomment %}
-{% unless include.future %}
-{% assign int_sortedVideos = int_sortedVideos | where_exp: 'video', 'video.video_id' %}
-{% endunless %}
+  {% comment %} Remove all videos that aren't linked to YouTube unless this list displays future videos. {% endcomment %}
+  {% unless include.future %}
+    {% assign int_sortedVideos = int_sortedVideos | where_exp: 'video', 'video.video_id' %}
+  {% endunless %}
 
 {% comment %} Otherwise use videos and sort them based on the given filters. {% endcomment %}
 {% else %}
 
-{% comment %} Sort videos using the sort-video tool. {% endcomment %}
-{% include 1-tools/sort-videos.html videos=include.videos reverse=include.reverse seriesPath=include.seriesPath seriesPage=include.seriesPage future=include.future %}
-{% assign int_sortedVideos = out_sortedVideos %}
+  {% comment %} Sort videos using the sort-video tool. {% endcomment %}
+  {% include 1-tools/sort-videos.html videos=include.videos reverse=include.reverse seriesPath=include.seriesPath seriesPage=include.seriesPage future=include.future %}
+  {% assign int_sortedVideos = out_sortedVideos %}
 
 {% endif %}
 
 <div class="video-list {{ include.class }}">
-  <div class="videos">
+  <ul class="videos">
 
     {% comment %} Include a video card for every video and apply limit (if given). {% endcomment %}
     {% for video in int_sortedVideos limit:include.limit %}
-    {% include 3-modules/video-card.html video=video %}
+      <li>
+      {% include 3-modules/video-card.html video=video %}
+      </li>
     {% endfor %}
 
-  </div>
+  </ul>
 
   {% comment %} Display the 'watch all videos' button if a limit was given. {% endcomment %}
   {% if include.limit %}
 
-  {% comment %} Find the current series/collection's id. {% endcomment %}
-  {% assign currentSeriesOrCollectionId = page.id | remove: 'index' %}
-  {% assign seriesId = int_sortedVideos.first.id | remove: currentSeriesOrCollectionId | split: '/' | first | prepend: currentSeriesOrCollectionId %}
+    {% comment %} Find the current series/collection's id. {% endcomment %}
+    {% assign currentSeriesOrCollectionId = page.id | remove: 'index' %}
+    {% assign seriesId = int_sortedVideos.first.id | remove: currentSeriesOrCollectionId | split: '/' | first | prepend: currentSeriesOrCollectionId %}
 
-  {% unless seriesId contains int_sortedVideos.first.collection %}
-  {% assign seriesId = int_sortedVideos.first.collection | prepend: '/' %}
-  {% endunless %}
+    {% unless seriesId contains int_sortedVideos.first.collection %}
+      {% assign seriesId = int_sortedVideos.first.collection | prepend: '/' %}
+    {% endunless %}
 
-  <a href="{{ seriesId | relative_url }}" class="watch-all-button">Mira todos {{ int_sortedVideos.first.video_type }}s</a>
+    <a href="{{ seriesId | relative_url }}" class="watch-all-button">Mira todos {{ int_sortedVideos.first.video_type }}s</a>
   {% endif %}
 </div>

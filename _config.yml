@@ -5,7 +5,6 @@
 #    - Agregar presentaciones Sozi
 #
 
-
 # --- Site Settings ---
 
 # The site's title.
@@ -18,6 +17,7 @@ baseurl:                      /
 repository:                   alswnet/NocheProgramacion
 
 # Prefix for download links (downloads only the relevant code from GitHub).
+# TODO implementar DownGit de ALSW
 github_download_prefix:       https://minhaskamal.github.io/DownGit/#/home?url=
 
 # Prefixes for editor.p5js.org
@@ -67,9 +67,6 @@ links:
   # Link to Patreon.
   patreon:                    https://patreon.com/alswnet
 
-  # Link to the merch store.
-  merch:                      https://www.designbyhumans.com/shop/codingtrain/
-
   # Link de discord
   discord:                    https://discord.gg/ReRapub
 
@@ -82,7 +79,17 @@ links:
 markdown:                     kramdown
 
 # Exclude code for Node.js and Q_and_A
-exclude:                      [ 'Node', 'Recursos', 'Q_and_A', 'unit_testing', 'node_modules', 'vendor/bundle/', 'vendor/cache/', 'vendor/gems/', 'vendor/ruby/']
+exclude:
+  [
+    "Node",
+    "Q_and_A",
+    "unit_testing",
+    "node_modules",
+    "vendor/bundle/",
+    "vendor/cache/",
+    "vendor/gems/",
+    "vendor/ruby/",
+  ]
 
 # Include future videos (used for 'Upcoming Streams' section).
 future:                       true
@@ -94,7 +101,7 @@ timezone:                     America/El_Salvador
 compress_html: { ignore: { envs: ['development'] } }
 
 # Search for SASS files inside assets/css.
-sass: { sass_dir:             'assets/css' }
+sass: { sass_dir:             "assets/css" }
 
 # Use jekyll-redirect-from to allow redirections
 plugins:
@@ -136,3 +143,7 @@ defaults:
       video_type:             "tutoriales"
       video_type_short:       "tutorial"
       can_contribute:         false
+
+  - scope: { path: "", type: "Guides" }
+    values:
+      layout: "guide"

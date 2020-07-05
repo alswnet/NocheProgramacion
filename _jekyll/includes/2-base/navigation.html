@@ -1,20 +1,60 @@
-<input type="checkbox" id="nav-toggle">
-<label for="nav-toggle" class="mobilenav-toggle">
+<button id="menu-button" class="mobilenav-toggle" tabindex="0" aria-haspopup="true" aria-controls="global-nav">
   <span></span>
   <span></span>
   <span></span>
-</label>
+</button>
+<nav class="navigation" id="global-nav" aria-label="Main navigation">
+  <ul class="links">
 
-<div class="navigation">
-  <nav>
-    <ul class="links">
-        <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
-        <li><a href="{{ '/RetoProgramacion' | relative_url }}">Retos Programacion</a></li>
-        <li><a href="{{ '/Tutoriales' | relative_url }}">Tutoriales</a></li>
-        <li><a href="{{ '/Cursos' | relative_url }}">Cursos</a></li>
-        <li><a href="{{ site.links.alsw }}" target="_blank">ALSW</a></li>
-        <li><a href="{{ site.links.tienda }}" target="_blank">Tienda</a></li>
-        <li><a href="{{ site.github.repository_url }}" target="_blank">Github</a></li>
-    </ul>
-  </nav>
-</div>
+    <li><a class="top-link" href="{{ '/' | relative_url }}" id="home">Inicio</a></li>
+
+    <li><a href="{{ '/Tutoriales' | relative_url }}">Tutoriales</a></li>
+
+
+    <li>
+      <button class="submenu-button top-link" aria-haspopup="true"
+        for="beginners-submenu"><span>Cursos</span></button>
+      <div class="submenu" id="beginners-submenu">
+        <ul class="links">
+          <li><a href="{{ '/Cursos/01_Arduino_ChatBot_Telegram' | relative_url }}">ChatBot con Arduino</a></li>
+          <li><a href="{{ '/Cursos/07_Inteligencia_Artificial_ML5' | relative_url }}">Inteligencia Artificial con ML5</a></li>
+          <li><a href="{{ '/Cursos/08_Processing_y_Arduino' | relative_url }}">Processing y Arduino</a></li>
+          <li><a href="{{ '/Cursos/09_Curso_de_Freecad' | relative_url }}">FreeCAD</a></li>
+          <li><a href="{{ '/Cursos/05_RedBot_App/' | relative_url }}">RedBotApp con Arduino</a></li>
+          <li><a href="{{ '/Cursos' | relative_url }}">Todos los Cursos</a></li>
+        </ul>
+      </div>
+    </li>
+
+
+    <li>
+      <button class="submenu-button top-link" aria-haspopup="true" for="more-submenu"><span>Mas</span></button>
+      <div class="submenu" id="more-submenu">
+        <ul class="links">
+          <li><a href="{{ site.links.alsw }}" target="_blank">ALSW</a></li>
+          <li><a href="{{ site.links.tienda }}" target="_blank">Tienda</a></li>
+          <!-- <li><a href="{{ '/Streams' | relative_url }}">Streams</a></li> -->
+          <li><a href="{{ '/more/faq/' | relative_url }}">Frequently Asked Questions</a></li>
+          <li><a href="{{ '/more/workflow' | relative_url }}">Workflow</a></li>
+          <li><a href="{{ '/more/archive' | relative_url }}">Archive</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <button class="submenu-button top-link" aria-haspopup="true"
+        for="contribute-submenu"><span>Apoya</span></button>
+      <div class="submenu" id="contribute-submenu">
+        <ul class="links">
+          <li><a href="{{ '/Guides/community-contribution-guide' | relative_url }}">Community Contribution Guide</a>
+          </li>
+          <li><a href="{{ site.github.repository_url }}" target="_blank">Github</a></li>
+          <li><a href="{{ '/Guides' | relative_url }}">All Guides</a></li>
+          <li><a href="{{ site.links.patreon }}">Patreon</a></li>
+          <li><a href="{{ site.links.paypal }}">Paypal</a></li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+</nav>
