@@ -1,5 +1,6 @@
 ---
 title: "Inteligente Artificial con ML5"
+subtitle: Reconocimiento de imagenes
 series_number: 7
 layout: series-index
 ---

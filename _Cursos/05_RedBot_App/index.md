@@ -1,5 +1,6 @@
 ---
 title: RedBot APP
+subtitle: Prqueño Robot de Arduino, controlado por Android
 series_number: 5
 layout: series-index
 ---

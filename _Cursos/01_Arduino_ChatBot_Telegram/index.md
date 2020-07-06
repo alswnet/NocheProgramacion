@@ -1,5 +1,6 @@
 ---
 title: Arduino ChatBot con Telegram
+subtitle: Controla Arduino desde el celular
 series_number: 1
 layout: series-index
 ---

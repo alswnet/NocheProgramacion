@@ -1,5 +1,6 @@
 ---
 title: "ArteInteractivo: Processing y Arduino"
+subtitle: Comunicacion Arduino y processing
 series_number: 8
 layout: series-index
 ---
