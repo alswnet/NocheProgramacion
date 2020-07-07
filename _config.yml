@@ -141,7 +141,7 @@ defaults:
       layout:                 "video"
       video_type:             "tutoriales"
       video_type_short:       "tutorial"
-      can_contribute:         false
+      can_contribute:         true
 
   - scope: { path: "", type:  "Guides" }
     values:

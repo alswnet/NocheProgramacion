@@ -22,7 +22,7 @@ layout: base
 
   {% comment %} Video subtitle. {% endcomment %}
   <div class="subtitle">
-    {{ course.title | default: series.title }} {{ page.video_type }}
+    {{ course.title | default: series.title }} {{ page.video_type_short }}
     #{% if series.series_number %}{{ series.series_number }}.{% endif %}{{ page.video_number }}
   </div>
 
@@ -53,7 +53,7 @@ layout: base
       {% if page.topics %}
         {% include 3-modules/link-list.html links=page.topics title='Topics' class='topics' %}
       {% endif %}
-      
+
     </div>
   </div>
 
@@ -112,7 +112,7 @@ layout: base
         {% endif %}
 
         {% comment %} Include the list of community contributions. {% endcomment %}
-        {% include 3-modules/link-list.html links=contributionsVideo.contributions title='Community Contributions' %}
+        {% include 3-modules/link-list.html links=contributionsVideo.contributions title='Contribucion Comunitaria' %}
 
         {% comment %} Generate a URL to edit this video's file directly on GitHub. {% endcomment %}
         {% assign addContributionURL = site.github.repository_url | append: '/edit/' | append: site.github.source.branch | append: '/' | append: contributionsVideo.path %}
@@ -120,14 +120,13 @@ layout: base
         {% comment %} Display a message depending on wether there have been made community contributions already. {% endcomment %}
         {% if contributionsVideo.contributions %}
           <p>
-            You can also <a href="{{ addContributionURL }}" target="_blank">add your own version!</a>
-            (<a href="{% link _Guides/community-contribution-guide.md %}">See how</a>)
+            Tu tambien puedes agregar <a href="{{ addContributionURL }}" target="_blank">tu propia vercion!</a>
+            (<a href="{% link _Guides/Guia_Contribucion_Comunitaria.md %}">Mira como</a>)
           </p>
         {% else %}
           <p>
-            It seems like there haven't been made any variations based on this {{ page.video_type | downcase }} by the community yet.
-            Be the first and <a href="{{ addContributionURL }}" target="_blank">add your own</a>!
-            If you don't know how, take a look at <a href="{% link _Guides/community-contribution-guide.md %}">this guide</a>.
+            Al parece que no se han hecho variaciones basadas en este {{ page.video_type_short | downcase }} por la comunidad aun. Se el primero en <a href="{{ addContributionURL }}" target="_blank">agregar la tuya</a>!<br>
+            Si no sabes cómo, mira <a href="{% link _Guides/Guia_Contribucion_Comunitaria.md %}">esta guia</a>.
           </p>
         {% endif %}
       </div>
@@ -141,19 +140,19 @@ layout: base
 
     {% comment %} List of related parts. {% endcomment %}
     {% if page.parts %}
-      {% capture partsTitle %}Otra partes de este {{ page.video_type | downcase}}{% endcapture %}
+      {% capture partsTitle %}Otra partes de este {{ page.video_type_short | downcase}}{% endcapture %}
       {% include 3-modules/link-list.html links=page.parts title=partsTitle %}
     {% endif %}
 
     {% comment %} List of discussed links. {% endcomment %}
     {% if page.links %}
-      {% capture linksTitle %}Links que se mencionaron en el {{ page.video_type | downcase }}{% endcapture %}
+      {% capture linksTitle %}Links de referencia del {{ page.video_type_short | downcase }}{% endcapture %}
       {% include 3-modules/link-list.html links=page.links title=linksTitle %}
     {% endif %}
 
     {% comment %} Lista de Piesas. {% endcomment %}
     {% if page.piezas %}
-      {% capture piesasTitle %}Piezas que se mencionaron en el {{ page.video_type | downcase }}{% endcapture %}
+      {% capture piesasTitle %}Piezas que se mencionaron en el {{ page.video_type_short | downcase }}{% endcapture %}
       {% include 3-modules/link-list.html links=page.piezas title=piesasTitle %}
     {% endif %}
 
@@ -164,13 +163,13 @@ layout: base
 
     {% comment %} Links of discussed videos. {% endcomment %}
     {% if page.videos %}
-      {% capture videosTitle %}Video que menciono en el {{ page.video_type | downcase }}{% endcapture %}
+      {% capture videosTitle %}Video que menciono en el {{ page.video_type_short | downcase }}{% endcapture %}
       {% include 3-modules/link-list.html links=page.videos title=videosTitle %}
     {% endif %}
 
     {% comment %} Links of discussed tools. {% endcomment %}
     {% if page.tools %}
-      {% capture toolsTitle %}Heramientas que se mencionaron en el {{ page.video_type | downcase }}{% endcapture %}
+      {% capture toolsTitle %}Heramientas que se mencionaron en el {{ page.video_type_short | downcase }}{% endcapture %}
       {% include 3-modules/link-list.html links=page.tools title=toolsTitle %}
     {% endif %}
 

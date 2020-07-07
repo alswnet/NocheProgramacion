@@ -1,5 +1,5 @@
 ---
-title: "Guides"
+title: "Guias"
 ---
 
 {% assign guides = site.Guides | where_exp: 'guide', 'guide.url != page.url' %}
