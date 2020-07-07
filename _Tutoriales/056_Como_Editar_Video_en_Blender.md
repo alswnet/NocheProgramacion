@@ -14,4 +14,4 @@ links:
 
 ---
 
-Te eseñamos paso a paso a editar video como nosotro lo hacemos en ALSW
+Te enseñamos paso a paso a editar un video como nosotros lo hacemos en ALSW, con un sofware muy potente y muy util para la creación de videos.
