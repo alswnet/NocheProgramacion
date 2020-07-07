@@ -17,8 +17,7 @@ baseurl:                      /
 repository:                   alswnet/NocheProgramacion
 
 # Prefix for download links (downloads only the relevant code from GitHub).
-# TODO implementar DownGit de ALSW
-github_download_prefix:       https://minhaskamal.github.io/DownGit/#/home?url=
+github_download_prefix:       https://alswne.github.io/DownGit/#/home?url=
 
 # Prefixes for editor.p5js.org
 web_editor_sketch_prefix:     https://editor.p5js.org/codingtrain/sketches/
