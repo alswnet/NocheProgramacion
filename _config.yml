@@ -116,7 +116,7 @@ collections:
   RetoProgramacion: { output: true }
   Cursos:           { output: true }
   Tutoriales:       { output: true }
-  Guides:           { output: true }
+  Guias:           { output: true }
   mas:              { output: true }
 
 # --- Defaults ---
@@ -143,7 +143,7 @@ defaults:
       video_type_short:       "tutorial"
       can_contribute:         true
 
-  - scope: { path: "", type:  "Guides" }
+  - scope: { path: "", type:  "Guias" }
     values:
       layout:                 "guide"
 

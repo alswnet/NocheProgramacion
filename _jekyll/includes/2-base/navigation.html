@@ -26,6 +26,33 @@
       </div>
     </li>
 
+    <!--
+      <li><a href="{{ site.links.alsw }}" target="_blank">ALSW</a></li>
+    -->
+
+    <li>
+      <button class="submenu-button top-link" aria-haspopup="true"
+        for="contribute-submenu"><span>Contribuye</span></button>
+      <div class="submenu" id="contribute-submenu">
+        <ul class="links">
+          <li><a href="{{ '/Guias/Guia_Contribucion_Comunitaria' | relative_url }}">Guia de Contribucion Comunitaria</a>
+          </li>
+          <li><a href="{{ '/Guias' | relative_url }}">Todas Guias</a></li>
+          <li><a href="{{ site.github.repository_url }}" target="_blank">Github</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <button class="submenu-button top-link" aria-haspopup="true"
+        for="Apoya-submenu"><span>Apoya</span></button>
+      <div class="submenu" id="Apoya-submenu">
+        <ul class="links">
+          <li><a href="{{ site.links.patreon }}">Patreon</a></li>
+          <li><a href="{{ site.links.paypal }}">Paypal</a></li>
+        </ul>
+      </div>
+    </li>
 
     <li>
       <button class="submenu-button top-link" aria-haspopup="true" for="more-submenu"><span>Mas</span></button>
@@ -35,22 +62,6 @@
           <li><a href="{{ '/mas/faq' | relative_url }}">Preguntas Frecuentes</a></li>
           <li><a href="{{ '/workflow' | relative_url }}">Flujo de Trabajo</a></li>
           <li><a href="{{ '/RetoProgramacion' | relative_url }}">EnVivos</a></li>
-        </ul>
-      </div>
-    </li>
-
-    <li><a href="{{ site.links.alsw }}" target="_blank">ALSW</a></li>
-
-    <li>
-      <button class="submenu-button top-link" aria-haspopup="true"
-        for="contribute-submenu"><span>Apoya</span></button>
-      <div class="submenu" id="contribute-submenu">
-        <ul class="links">
-          <li><a href="{{ '/Guides/Guia_Contribucion_Comunitaria' | relative_url }}">Guia de Contribucion Comunitaria</a>
-          </li>
-          <li><a href="{{ site.github.repository_url }}" target="_blank">Github</a></li>
-          <li><a href="{{ site.links.patreon }}">Patreon</a></li>
-          <li><a href="{{ site.links.paypal }}">Paypal</a></li>
         </ul>
       </div>
     </li>
