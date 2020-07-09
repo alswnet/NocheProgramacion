@@ -62,7 +62,7 @@
   {% comment %} CTAs (link to YouTube and internal video page or livestream). {% endcomment %}
   <div class="buttons">
     {% if include.video.date > site.time %}
-      <a href="https://www.youtube.com/thecodingtrain/live"
+      <a href="https://youtu.be/{{ include.video.video_id }}"
          target="blank"
          aria-label="Tune in Live: {{ include.video.title | xml_escape }}"
       >
