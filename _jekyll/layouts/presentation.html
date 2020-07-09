@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+{% comment %} Find this video's course (may be null). {% endcomment %}
+{% include 1-tools/series-for-video.html video=series %}
+{% assign course = out_series %}
+
+{% comment %} Video subtitle. {% endcomment %}
+<div class="subtitle">
+  {{ course.title | default: series.title }} {{ page.video_type_short }}
+  #{% if series.series_number %}{{ series.series_number }}.{% endif %}{{ page.video_number }}
+</div>
+
+<div class="presentation">
+  {{ content }}
+</div>
+
+
+<a href="{{ page.repository | relative_url}}"> hola </a>
+<br>
+
+
+<!-- <img src="http://127.0.0.1:4000/Presentaciones/ROS/Presentacion.svg" alt="Kiwi standing on oval"> -->
+< <div class="presentacion">
+  <object data="http://127.0.0.1:4000/Presentaciones/ROS/Presentacion.svg" type="image/svg+xml">
+      Error este navegador no soporta SVG use Firefox o Chrome
+  </object>
+</div>
+
+
+<div class="subtitle">
+Ultima modificacion en {{page.date | date: '%d %b %Y'}}
+</div>
+
+{% comment %} List of discussed links. {% endcomment %}
+{% if page.links %}
+{% capture linksTitle %}Links de referencia del {{ page.video_type_short | downcase }}{% endcapture %}
+{% include 3-modules/link-list.html links=page.links title=linksTitle %}
+{% endif %}

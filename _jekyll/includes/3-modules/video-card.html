@@ -16,7 +16,7 @@
        aria-label="To the {{ include.video.video_type_short | default: include.video.video_type }}: {{ include.video.title | xml_escape }}"
     >
   {% else %}
-    <a href="https://www.youtube.com/alswnet/live"
+    <a href="https://youtu.be/{{ include.video.video_id }}"
        target="blank"
        aria-label="Tune in Live: {{ include.video.title | xml_escape }}"
     >
