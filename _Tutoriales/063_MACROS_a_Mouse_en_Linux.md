@@ -4,6 +4,22 @@ video_number: 63
 date: 2020-07-08
 video_id: LkuZz5FgYT4
 
+topics:
+  - title: "Introduccion"
+    time: "00:00"
+  - title: "Tutorial Base"
+    time: "00:36"
+  - title: "Instalar programar"
+    time: "01:00"
+  - title: "Averiguar cuales son los botones"
+    time: "01:32"
+  - title: "Editar las configuraciones"
+    time: "02:26"
+  - title: "Documentacion de las teclas"
+    time: "04:38"
+  - title: "Como Activar las macros"
+    time: "07:03"
+
 links:
  - title: "Tutorial Base Macros Mouse"
    url: "https://linuxgamecast.com/2019/09/customizing-mouse-buttons-with-linux/"

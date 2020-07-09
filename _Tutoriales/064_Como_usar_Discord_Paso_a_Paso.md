@@ -4,11 +4,31 @@ video_number: 64
 date: 2020-07-10
 video_id: Cx_Udga-huk
 
+topics:
+  - title: "Introduccion"
+    time: "00:00"
+  - title: "Interface de Discord"
+    time: "03:25"
+  - title: "Entrar a llamada"
+    time: "05:55"
+  - title: "Configurar cuenta"
+    time: "07:08"
+  - title: "Como instalar Discord"
+    time: "07:40"
+  - title: "Crear una cuenta Discord"
+    time: "08:44"
+  - title: "Autenticar cuenta de Discord"
+    time: "09:46"
+  - title: "Entrar a Servidores en Discord"
+    time: "10:23"
+  - title: "Crear un servidor en Discord"
+    time: "12:11"
+
 links:
  - title: "Discord"
    url: "https://discord.com/"
  - title: "Discord de ALSW"
-   url: "https://discord.gg/ReRapub"
+   url: "https://discord.gg/ReRapub"   
 ---
 
 Hoy les quiero mostrar como usar Discord desde como usarlo para hacer una video llamada y como crear tu propio servidor
