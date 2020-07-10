@@ -1,5 +1,5 @@
 ---
-title: "Freecad de 0 a 100"
+title: "Freecad de Paso a Paso"
 subtitle: Modela piezas 3D desde Cero
 series_number: 9
 layout: series-index

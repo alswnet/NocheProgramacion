@@ -1,7 +1,7 @@
 ---
 title: "Como Editar Video en Blender"
 subtitle: Crea Contenido Video con Software Libre
-series_number: 10
+series_number: 11
 layout: series-index
 ---
 
