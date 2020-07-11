@@ -90,6 +90,8 @@ exclude:
     "vendor/ruby/",
   ]
 
+keep_files: ["Tutoriales"]
+
 # Include future videos (used for 'Upcoming Streams' section).
 future:                       true
 
@@ -105,6 +107,7 @@ sass: { sass_dir:             "assets/css" }
 # Use jekyll-redirect-from to allow redirections
 plugins:
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 # --- Jekyll Locations ---
 layouts_dir:                  _jekyll/layouts
@@ -116,6 +119,7 @@ collections:
   Cursos:           { output: true }
   Tutoriales:       { output: true }
   Guias:           { output: true }
+  Presentaciones:   { output: true }
   mas:              { output: true }
 
 # --- Defaults ---
@@ -145,6 +149,12 @@ defaults:
   - scope: { path: "", type:  "Guias" }
     values:
       layout:                 "guide"
+
+  - scope: { path: "", type:    "Presentaciones" }
+    values:
+      video_type:             "Presentaciones"
+      video_type_short:       "Presentacion"
+      layout:                 "presentation"
 
   - scope: { path: "", type:  "mas" }
     values:
