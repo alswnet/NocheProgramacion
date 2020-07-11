@@ -72,6 +72,9 @@ links:
   # Link de Donaciones
   paypal:                     https://www.paypal.me/alswnet
 
+twitter:
+  username: alswnet
+
 # --- Build Settings ---
 
 # Use Kramdown as the preferred Markdown parser.
