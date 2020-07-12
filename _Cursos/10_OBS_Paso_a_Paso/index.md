@@ -1,7 +1,7 @@
 ---
 title: "OBS Paso a Paso"
 subtitle: Aprende hacer Directos y Grabacion
-series_number: 11
+series_number: 10
 layout: series-index
 ---
 
