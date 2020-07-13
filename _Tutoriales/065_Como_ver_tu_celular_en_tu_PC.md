@@ -25,4 +25,4 @@ links:
    url: "https://github.com/Genymobile/scrcpy"
 ---
 
-Quieres aprender a controlar o ver tu celular en la PC, en este tutorial te compiremos un programa que es facil de usar, libre y mejor gratis llamado Scrcpy
+Quieres aprender a controlar o ver tu celular en la PC, en este tutorial te compartiremos un programa que es fácil de usar, libre y  lo mejor gratis llamado Scrcpy
