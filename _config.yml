@@ -72,6 +72,7 @@ links:
   # Link de Donaciones
   paypal:                     https://www.paypal.me/alswnet
 
+# SEO data for twitter
 twitter:
   username: alswnet
 
@@ -93,7 +94,7 @@ exclude:
     "vendor/ruby/",
   ]
 
-keep_files: ["Tutoriales"]
+# keep_files: ["Presentaciones"]
 
 # Include future videos (used for 'Upcoming Streams' section).
 future:                       true
@@ -121,9 +122,10 @@ collections:
   RetoProgramacion: { output: true }
   Cursos:           { output: true }
   Tutoriales:       { output: true }
-  Guias:           { output: true }
+  Guias:            { output: true }
   Presentaciones:   { output: true }
   mas:              { output: true }
+  invitados:        { output: true }
 
 # --- Defaults ---
 
@@ -140,7 +142,7 @@ defaults:
     values:
       layout:                 "video"
       video_type:             "curso"
-      can_contribute:         false
+      can_contribute:         true
 
   - scope:              { path: "", type: "Tutoriales" }
     values:
@@ -158,6 +160,14 @@ defaults:
       video_type:             "Presentaciones"
       video_type_short:       "Presentacion"
       layout:                 "presentation"
+
+  # Guest Tutorials
+  - scope: { path: "", type: "invitados" }
+    values:
+      layout: "video"
+      video_type: "Invitados"
+      video_type_short: "Invitado"
+      can_contribute: true
 
   - scope: { path: "", type:  "mas" }
     values:
