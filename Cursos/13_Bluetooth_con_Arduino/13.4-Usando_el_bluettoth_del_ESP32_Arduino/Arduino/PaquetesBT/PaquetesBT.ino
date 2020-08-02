@@ -1,6 +1,10 @@
-#include <SoftwareSerial.h>
-SoftwareSerial BTSerial(2, 3);
+#include "BluetoothSerial.h"
 
+#if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
+#error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
+#endif
+
+BluetoothSerial SerialBT;
 int Led1 = 5;
 int Led2 = 6;
 int Nivel1 = 0;
@@ -8,18 +12,18 @@ int Nivel2 = 0;
 
 void setup() {
   Serial.begin(9600);
-  BTSerial.begin(9600);
-  pinMode(Led1, OUTPUT);
-  pinMode(Led2, OUTPUT);
-  analogWrite(Led1, Nivel1);
-  analogWrite(Led2, Nivel2);
+  SerialBT.begin("ESP32test");
+//  pinMode(Led1, OUTPUT);
+//  pinMode(Led2, OUTPUT);
+//  analogWrite(Led1, Nivel1);
+//  analogWrite(Led2, Nivel2);
 }
 
 void loop() {
-  if (BTSerial.available()) {
+  if (SerialBT.available()) {
     DecodificarSerial();
-    analogWrite(Led1, Nivel1);
-    analogWrite(Led2, Nivel2);
+    //    analogWrite(Led1, Nivel1);
+    //    analogWrite(Led2, Nivel2);
   }
 }
 
@@ -28,7 +32,7 @@ void DecodificarSerial() {
   // L1 es valor
   // 100 es numero
 
-  String Mensaje = BTSerial.readStringUntil('\n');
+  String Mensaje = SerialBT.readStringUntil('\n');
   Serial.print("Mensaje : ");
   Serial.println(Mensaje);
   int PosicionPleca = Mensaje.indexOf('/');
