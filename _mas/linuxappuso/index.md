@@ -1,0 +1,148 @@
+---
+title: "Las App que uso en mi Linux"
+subtitle: Editor, Shell, and more
+layout: faq
+redirect_from:
+  - /linuxappuso
+
+sections:
+  - title: "OS"
+  - title: "Programacion"
+  - title: "Modelado 3D"
+  - title: "Edicion Imagenes"
+  - title: "Edicion Audio"
+  - title: "Chat"
+  - title: "Tutoriales"
+  - title: "Striming"
+  - title: "Heramientas"
+  - title: "Juegos"
+  - title: "Web APP"
+  - title: "Extras"
+
+faq:
+  - question: "Atom"
+    section: "Programacion"
+    links:
+      - title: "Pagina Atom IDE"
+        url: "https://atom.io/"
+  - question: "Meld"
+    section: "Programacion"
+    links:
+      - title: "Pagina Meld"
+        url: "https://meldmerge.org/"
+  - question: "Git"
+    section: "Programacion"
+  - question: "Gitg"
+    section: "Programacion"
+  - question: "Arduino IDE"
+    section: "Programacion"
+  - question: "Processing IDE"
+    section: "Programacion"
+  - question: "FreeCAD"
+    section: "Modelado 3D"
+  - question: "Blender"
+    section: "Modelado 3D"
+  - question: "Gimp"
+    sectiJuegoson: "Edicion Imagenes"
+  - question: "Inskcape"
+    section: "Edicion Imagenes"
+  - question: "Audacity"
+    section: "Edicion Audio"
+  - question: "PulseEffects"
+    section: "Edicion Audio"
+  - question: "Discord"
+    section: "Chat"
+  - question: "Fredi"
+    section: "Chat"
+  - question: "Gromit-MPX"
+    section: "Tutoriales"
+    answer: "Dibuja en la pantalla"
+    links:
+      - title: "Pagina Gromit-mpx"
+        url: "https://github.com/bk138/gromit-mpx"
+  - question: "Shutter"
+    section: "Tutoriales"
+  - question: "Imagenary Teleprompter"
+    section: "Tutoriales"
+  - question: "Scrcpy"
+    section: "Tutoriales"
+    answer: "Permite controlar y hacer espejo de tu celular Android en tu pc"
+    links:
+      - title: "Tutorial de Scrcpy"
+        url: Tutoriales/065_Como_ver_tu_celular_en_tu_PC
+      - title: "Pagina Scrcpy"
+        url: "https://github.com/Genymobile/scrcpy"
+  - question: "OBS-Studio"
+    section: "Striming"
+  - question: "Steamlabels"
+    section: "Striming"
+  - question: "GreenWithEnvy"
+    section: "Heramientas"
+  - question: "GtkStressTesting"
+    section: "Heramientas"
+  - question: "Htop"
+    section: "Heramientas"
+  - question: "Gparted"
+    section: "Heramientas"
+  - question: "Synaptic"
+    section: "Heramientas"
+  - question: "Gtk-ChThema"
+    section: "Heramientas"
+  - question: "QT5 Settings"
+    section: "Heramientas"
+  - question: "DolpJuegoshin"
+    section: "Heramientas"
+  - question: "FileZilla"
+    section: "Heramientas"
+  - question: "Quake Terminal"
+    section: "Heramientas"
+  - question: "Steam"
+    section: "Juegos"
+  - question: "Pioneers"
+    section: "Juegos"
+  - question: "OpenRazer"
+    section: "Juegos"
+    links:
+      - title: "OpenRazer"
+        url: "https://openrazer.github.io/"
+      - title: "polychromatic"
+        url: "https://polychromatic.app/"
+  - question: "Linux mint 19.3"
+    section: "OS"
+  - question: "Cinnamon 4.4"
+    section: "OS"
+  - question: "Veyon"
+    section: "Extras"
+  - question: "qcomicbook"
+    section: "Extras"
+  - question: "Habitica"
+    section: "Web APP"
+    links:
+      - title: "OpenRazer"
+        url: "https://habitica.com"
+  - question: ""
+    section: "Web APP"
+  - question: ""
+    section: "Web APP"
+  - question: "xvkbd"
+    section: "Heramientas"
+    answer: "Agrega macros a tus botones extra de tus raton o teclado"
+    links:
+      - title: "Tutorial xvkbd"
+        url: /Tutoriales/063_MACROS_a_Mouse_en_Linux
+  - question: ""
+    section: ""
+  - question: ""
+    section: ""
+  - question: ""
+    section: ""
+
+---
+
+Las app que uso en mi pc con linux mint :) para que tomen inspiracion. Ire agregando mas aplicaciones interesantes a la lista
+
+### Recomendaciones ?
+
+Tiene una recomendacion para probar alguna dejala aqui Link
+
+# APP's
