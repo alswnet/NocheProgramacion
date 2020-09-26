@@ -1,0 +1,35 @@
+{
+  "Entrenar": [{
+    "Etiqueta": "Arduino",
+    "Imagen": [{
+      "archivo": "Entrenar/Arduino/2020-09-25-121547.jpg"
+    }, {
+      "archivo": "Entrenar/Arduino/2020-09-25-121554.jpg"
+    }, {
+      "archivo": "Entrenar/Arduino/2020-09-25-121601.jpg"
+    }, {
+      "archivo": "Entrenar/Arduino/2020-09-25-121608.jpg"
+    }, {
+      "archivo": "Entrenar/Arduino/2020-09-25-121614.jpg"
+    }, {
+      "archivo": "Entrenar/Arduino/2020-09-25-121620.jpg"
+    }, {
+      "archivo": "Entrenar/Arduino/2020-09-25-121628.jpg"
+    }, {
+      "archivo": "Entrenar/Arduino/2020-09-25-121635.jpg"
+    }, {
+      "archivo": "Entrenar/Arduino/2020-09-25-121641.jpg"
+    }, {
+      "archivo": "Entrenar/Arduino/2020-09-25-122130.jpg"
+    }]
+  }, {
+    "Etiqueta": "Nada",
+    "Imagen": [{
+      "archivo": "Entrenar/Nada/2020-09-25-121310.jpg"
+    }, {
+      "archivo": "Entrenar/Nada/2020-09-25-121314.jpg"
+    }, {
+      "archivo": "Entrenar/Nada/2020-09-25-121319.jpg"
+    }]
+  }]
+}
