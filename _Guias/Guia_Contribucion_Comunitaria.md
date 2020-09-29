@@ -36,23 +36,23 @@ Dentro de la página de NocheProgramacion busca cual quieres agregar tu contribu
 
 Muy bien, !Ya estás en el lugar correcto! Bienvenido es la página de código que quieres agregar tu contribución, el codigo que ves es YAML ( el codigo que esta entre `---`), estan en un editor de texto web dentro de github, donde puedes agregar tu contribucción.  
 
-El código es similar a este que es el tutorial numero 57 el de Python, MQTT y Arduino
+El código es similar a este que es el Curso numero 7.1 de Introduccion a ML5
 
 ``` markdown
 ---
-title: "Proyecto IOT: Python, MQTT y Arduino"
-video_number: 57
-date: 2020-05-17
-video_id: LSrDIklFiJ8
-repository: 057_Proyecto_IOT_Python_MQTT_y_Arduino
+title: "Introduccion ML5"
+video_number: 1
+date: 2019-04-04
+video_id: IHTeKlIzO5M
+repository: 07_Inteligencia_Artificial_ML5/07.1-Introduccion-Ml5
 
 contributions:
-  - title: "Enviando conección local MQTT"
+  - title: "Demo Ml5 con Materialize y nuevas librerias"
     author:
       name: "ChepeCarlos"
       url: "http://chepecarlos.com"
-    url: "https://codingtrain.github.io/Rainbow-Code"
-    source: "https://github.com/codingtrain/Rainbow-Code"
+    url: "https://alswnet.github.io/DemoML5/"
+    source: "https://github.com/alswnet/DemoML5"
 ---
 
 Hoy les ayudare como poder unir Python y arduino con el poder de MQTT
@@ -65,8 +65,8 @@ En este ya hay una contribucción debajo de `contributions`, para agregar la tuy
     author:
       name: "Tu nombre (Se mostrara en la página)"
       url: "(Opcional) Link a tu página o cuenta social (Para que cuentren mas trabajo tuyo)"
-      url: "Link de tu proyecto corriendo preferencia dentro del navegador o video o gif"
-      source: "Link de tu código como un repositorio o paginaweb donde se puede ver tu versión del código fuente"
+    url: "Link de tu proyecto corriendo preferencia dentro del navegador o video o gif"
+    source: "Link de tu código como un repositorio o paginaweb donde se puede ver tu versión del código fuente"
 ```
 
 si no esta lo puede agregar la sección poniendo al principio `contributions:` al final antes de `---`

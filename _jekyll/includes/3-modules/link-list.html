@@ -65,9 +65,9 @@
 
         {% comment %} Link to the destination's author. {% endcomment %}
         {% if include.suggestion %}
-          {% assign by_phrasing = "suggested by" %}
+          {% assign by_phrasing = "sugerido por" %}
         {% else %}
-          {% assign by_phrasing = "by" %}
+          {% assign by_phrasing = "por" %}
         {% endif %}
 
         {% if link.author %}
@@ -81,7 +81,7 @@
 
         {% comment %} Link to the source code. {% endcomment %}
         {% if link.source %}
-          (<a href="{{ link.source }}" target="_blank">Source Code</a>)
+          (<a href="{{ link.source }}" target="_blank">Codigo Fuente</a>)
         {% endif %}
       </li>
     {% endfor %}
