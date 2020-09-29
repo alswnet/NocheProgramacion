@@ -136,7 +136,7 @@ defaults:
       layout:                 "video"
       video_type:             "reto programacion"
       video_type_short:       "reto"
-      can_contribute:         false
+      can_contribute:         true
 
   - scope:              { path: "", type: "Cursos" }
     values:
