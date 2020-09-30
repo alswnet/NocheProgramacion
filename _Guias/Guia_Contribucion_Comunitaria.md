@@ -36,7 +36,7 @@ Dentro de la página de NocheProgramacion busca a cual quieres agregar tu contri
 
 Muy bien, !Ya estás en el lugar correcto! Bienvenido es la página del código que quieres agregar tu contribución, el codigo que ves es YAML ( el codigo que esta entre `---`), estan en un editor de texto web dentro de github, donde puedes agregar tu contribucción.  
 
-El código es similar a este que es el Curso numero 7.1 de Introduccion a ML5
+El código es similar a este que es el [Curso 7.1 de Introduccion a ML5]({{ site.baseurl }}{% link _Cursos/07_Inteligencia_Artificial_ML5/7.1-Introduccion-ML5.md %})
 
 ``` markdown
 ---
