@@ -27,27 +27,27 @@ topics:
     time: "11:10"
 
 links:
-  - Titulo: Github Page
+  - title: Github Page
     url: https://pages.github.com/
-  - Titulo: (ingles) Que es Github Page
+  - title: (ingles) Que es Github Page
     url: https://www.youtube.com/watch?v=2MsN8gpT6jY
-  - Titulo: Jekyll
+  - title: Jekyll
     url: https://jekyllrb.com/
-  - Titulo: Pagina Estatigas generadas Jekyll
+  - title: Pagina Estatigas generadas Jekyll
     url: https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll
-  - Titulo: Compar dominio
+  - title: Compar dominio
     url: https://internetbs.ne
-  - Titulo: Dominio propio en Github Page
+  - title: Dominio propio en Github Page
     url: https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site
-  - Titulo: NocheProgramacion
+  - title: NocheProgramacion
     url: https://nocheprogramacion.com/
-  - Titulo: ChepeCarlos
+  - title: ChepeCarlos
     url: https://ChepeCarlos.com/
-  - Titulo: DemoML5
+  - title: DemoML5
     url: https://alswnet.github.io/DemoML5/
-  - Titulo: FindingTube
+  - title: FindingTube
     url: https://alswnet.github.io/FindingTube/
 
 ---
 
-Un exelente lugar para subir tus Sitios web, ya seas para proyectos personales o comunidad o empresarial
+Un exelente lugar para subir tus
