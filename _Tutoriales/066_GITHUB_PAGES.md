@@ -1,7 +1,7 @@
 ---
 title: "GITHUB PAGES - Hosting Gratis"
 video_number: 66
-date: 2020-09-01
+date: 2020-10-02
 video_id: mDYVpJh-XQ8
 
 topics:
@@ -50,4 +50,4 @@ links:
 
 ---
 
-Un exelente lugar para subir tus Sitios web, ya seas para proyectos personales o comunidad o empresarial 
+Un exelente lugar para subir tus Sitios web, ya seas para proyectos personales o comunidad o empresarial
