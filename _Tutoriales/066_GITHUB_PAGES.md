@@ -50,4 +50,4 @@ links:
 
 ---
 
-Un exelente lugar para subir tus
+Un exelente lugar para subir tus Sitios web, ya seas para proyectos personales o comunidad o empresarial 
