@@ -1,5 +1,5 @@
 ---
-title: "Seguridad para Servidores Linux"
+title: "6 Ventajas De Usar Linux En Robótica Parte 2"
 video_number: 3
 date: 2020-08-26
 video_id: 8Oj9TVOy5js
