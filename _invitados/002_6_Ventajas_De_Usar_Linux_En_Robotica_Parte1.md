@@ -3,6 +3,7 @@ title: "6 Ventajas De Usar Linux En Robótica Parte 1"
 video_number: 2
 date: 2020-08-26
 video_id: H2fhTZvz9IY
+repository: 002_6_Ventajas_De_Usar_Linux_En_Robotica
 
 custom_sections:
   - title: "Contactos de Curso de Robotica"
