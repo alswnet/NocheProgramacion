@@ -1,12 +1,12 @@
-name: Build and FeaturePeek
+name: Compilando y Verificando
 on: [push, pull_request]
 jobs:
   jekyll:
-    name: "Build and Ping FeaturePeek"
+    name: "Compilando y verificando Jekyll"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Set up Ruby 2.6
+      - name: Configurar Ruby 2.6
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6.x
@@ -16,14 +16,14 @@ jobs:
           key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gem-
-      - name: Installing ruby gems
+      - name: Installar ruby gems
         run: |
           bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
-      - name: Building Site
+      - name: Compilando Sitio con Jekyll
         run: |
           bundle exec jekyll build
-      - name: Running htmlproofer
+      - name: Corriendo htmlproofer
         run: |
           bundle exec htmlproofer ./_site --assume-extension --check-html --disable-external --url-ignore "/#.*/"
-      - name: Ping FeaturePeek
-        run: bash <(curl -s https://peek.run/ci) 
+      # - name: Ping FeaturePeek
+      #   run: bash <(curl -s https://peek.run/ci)
