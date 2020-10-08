@@ -15,6 +15,15 @@ custom_sections:
       - title: "Facebook"
         url: "https://www.facebook.com/roboticafacil"
 
+contributions:
+  - title: "Presentación Curso de Robotica"
+    author: "Andres Nino"
+      name: "Andres Nino"
+      url: "https://www.cursoderobotica.com"
+    url: "https://www.canva.com/design/DAEAySw3f74/7Pnxryvkcil8GxhN15Mn9Q/view?utm_content=DAEAySw3f74&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+    source: "NA"
+
+
 ---
 
 No sabes por donde empezar?, te contaremos porqué debes usar Linux para empezar en este mundo de la Robotica, con éste video ¿Por que usar Robotica con Linux? con un amigo de Curso de Robotica
