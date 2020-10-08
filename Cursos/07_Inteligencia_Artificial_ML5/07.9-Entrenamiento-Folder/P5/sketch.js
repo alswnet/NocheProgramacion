@@ -1,5 +1,3 @@
-p5.disableFriendlyErrors = true;
-
 var Camara;
 var RelacionCamara;
 var CartaMensaje;
@@ -181,9 +179,12 @@ function ProcesarArchivo(data) {
 
 function EntrenarArchivo(Etiqueta, Archivo) {
   loadImage(Archivo, img => {
+    // createImg(Archivo);
     image(img, 0, 0);
     redraw();
     var Imagen = modelo.infer(sketchCanvas);
+    console.log("Entrenando " + Archivo);
     knn.addExample(Imagen, Etiqueta);
+    // knn.addImage(img, Etiqueta);
   });
 }
