@@ -14,6 +14,12 @@ custom_sections:
         url: "https://www.instagram.com/cursoderobotica/"
       - title: "Facebook"
         url: "https://www.facebook.com/roboticafacil"
+      - title: "Sitio web"
+        url: "https://www.cursoderobotica.com"
+  - title: "Presentación Curso de Robotica"
+    items:
+      - title: "Presentacion en Canva"
+        url: "https://www.canva.com/design/DAEAySw3f74/7Pnxryvkcil8GxhN15Mn9Q/view?utm_content=DAEAySw3f7"
 
 ---
 
