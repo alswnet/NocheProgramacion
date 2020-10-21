@@ -1,12 +1,14 @@
+/*jshint esversion: 6 */
 var Camara;
 var RelacionCamara;
 var CartaMensaje;
 var Clasificando = false;
 var CargandoNeurona = false;
+var EntrenandoFolder = false;
 var knn;
 var modelo;
 var ListaFotos = [];
-var sketchCanvas
+var sketchCanvas;
 
 function setup() {
   var ObtenerCanva = document.getElementById('micanva');
@@ -48,23 +50,24 @@ function setup() {
 }
 
 function draw() {
-  // background("#b2dfdb");
+  if (!EntrenandoFolder) {
+    background("#b2dfdb");
+    image(Camara, 0, 0, width, height);
 
-  // image(Camara, 0, 0, width, height);
+    if (knn.getNumLabels() > 0 && !Clasificando) {
+      console.log("Empezar a clasificar");
+      setInterval(clasificar, 500);
+      Clasificando = true;
+    }
 
-  if (knn.getNumLabels() > 0 && !Clasificando) {
-    console.log("Empezar a clasificar");
-    setInterval(clasificar, 500);
-    Clasificando = true;
-  }
-
-  var RelacionCamara2 = Camara.height / Camara.width;
-  if (RelacionCamara != RelacionCamara2) {
-    var Ancho = width;
-    var Alto = Ancho * RelacionCamara2;
-    RelacionCamara = RelacionCamara2;
-    console.log("Cambiando " + Ancho + " - " + Alto);
-    resizeCanvas(Ancho, Alto, true);
+    var RelacionCamara2 = Camara.height / Camara.width;
+    if (RelacionCamara != RelacionCamara2) {
+      var Ancho = width;
+      var Alto = Ancho * RelacionCamara2;
+      RelacionCamara = RelacionCamara2;
+      console.log("Cambiando " + Ancho + " - " + Alto);
+      resizeCanvas(Ancho, Alto, true);
+    }
   }
 }
 
@@ -99,7 +102,7 @@ function clasificar() {
         console.log("Error en clasificar");
         console.error();
       } else {
-        console.log(result);
+        // console.log(result);
         var Etiqueta;
         var Confianza;
         if (!CargandoNeurona) {
@@ -157,9 +160,9 @@ function CargarNeurona() {
 
 function CargarFolder() {
   noLoop();
+  EntrenandoFolder = true;
   console.log("Cargando del Folder");
   CartaMensaje.innerText = "Cargando desde Folder";
-  // noLoop();
   loadJSON('./data/EntrenarFolder.json', ProcesarArchivo);
 }
 
@@ -191,8 +194,8 @@ function EntrenarArchivo() {
     console.log(Etiqueta, Direccion);
     clearInterval(EntrenarArchivo);
     loadImage(Direccion, img => {
-      image(img, 0, 0);
-      //redraw();
+      image(img, 0, 0, width, height);
+      redraw();
       console.log("Cargada: " + Direccion);
       CartaMensaje.innerText = "Entrenar " + Direccion;
       var InferImagen = modelo.infer(sketchCanvas);
@@ -201,6 +204,7 @@ function EntrenarArchivo() {
     }, error => console.log("Error" + error));
   } else {
     CartaMensaje.innerText = "Termino de Entrenar desde folder";
-    // loop();
+    EntrenandoFolder = false;
+    loop();
   }
 }
