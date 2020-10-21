@@ -196,8 +196,7 @@ function EntrenarArchivo() {
     loadImage(Direccion, img => {
       image(img, 0, 0, width, height);
       redraw();
-      console.log("Cargada: " + Direccion);
-      CartaMensaje.innerText = "Entrenar " + Direccion;
+      CartaMensaje.innerText = "Entrenar: " + Etiqueta + " - " + Direccion;
       var InferImagen = modelo.infer(sketchCanvas);
       knn.addExample(InferImagen, Etiqueta);
       setTimeout(EntrenarArchivo, 500);
