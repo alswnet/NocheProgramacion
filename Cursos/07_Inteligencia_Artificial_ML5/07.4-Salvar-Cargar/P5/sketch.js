@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 var Camara;
 var BotonesEntrenar;
 var knn;
@@ -34,11 +35,11 @@ function setup() {
   var BotonNada = createButton("Nada");
   BotonNada.class("BotonEntrenar");
 
-  createP("Entrena usando TexBox")
+  createP("Entrena usando TexBox");
 
   InputTexbox = createInput("Cosa 2");
 
-  BotonTexBox = createButton("Entrenar con " + InputTexbox.value())
+  BotonTexBox = createButton("Entrenar con " + InputTexbox.value());
   BotonTexBox.mousePressed(EntrenarTexBox);
 
   createP("Guarda o Carga tu Neurona");
@@ -84,7 +85,7 @@ function clasificar() {
       Texto.html("Es un " + result.label);
       //clasificar();
     }
-  })
+  });
 }
 
 function EntrenarTexBox() {
@@ -103,7 +104,7 @@ function CargarNeurona() {
   knn.load("./modelo.json", function() {
     console.log("Neurona Cargada knn");
     Texto.html("Neurona cargana de archivo");
-  })
+  });
 }
 
 function draw() {

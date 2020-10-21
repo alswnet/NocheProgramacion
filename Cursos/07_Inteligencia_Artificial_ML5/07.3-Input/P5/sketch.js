@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 var Camara;
 var BotonesEntrenar;
 var knn;
@@ -34,11 +35,11 @@ function setup() {
   var BotonNada = createButton("Nada");
   BotonNada.class("BotonEntrenar");
 
-  createP("Entrena usando TexBox")
+  createP("Entrena usando TexBox");
 
   InputTexbox = createInput("Cosa 2");
 
-  BotonTexBox = createButton("Entrenar con " + InputTexbox.value())
+  BotonTexBox = createButton("Entrenar con " + InputTexbox.value());
   BotonTexBox.mousePressed(EntrenarTexBox);
 
   Texto = createP("Modelo no Listo, esperando");
@@ -77,7 +78,7 @@ function clasificar() {
       Texto.html("Es un " + result.label);
       //clasificar();
     }
-  })
+  });
 }
 
 function EntrenarTexBox() {

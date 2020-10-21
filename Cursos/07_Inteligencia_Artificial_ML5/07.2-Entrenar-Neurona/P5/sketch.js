@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 var Camara;
 var BotonesEntrenar;
 var knn;
@@ -68,7 +69,7 @@ function clasificar() {
       Texto.html("Es un " + result.label);
       //clasificar();
     }
-  })
+  });
 }
 
 function draw() {
