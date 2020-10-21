@@ -5,8 +5,8 @@ var Clasificando = false;
 var CargandoNeurona = false;
 var knn;
 var modelo;
-var sketchCanvas;
-var dataFile;
+var ListaFotos = [];
+var sketchCanvas
 
 function setup() {
   var ObtenerCanva = document.getElementById('micanva');
@@ -43,13 +43,14 @@ function setup() {
 
   var FolderBoton = select("#FolderBoton");
   FolderBoton.mousePressed(CargarFolder);
+
   //CargarNeurona();
 }
 
 function draw() {
-  background("#b2dfdb");
+  // background("#b2dfdb");
 
-  image(Camara, 0, 0, width, height);
+  // image(Camara, 0, 0, width, height);
 
   if (knn.getNumLabels() > 0 && !Clasificando) {
     console.log("Empezar a clasificar");
@@ -98,7 +99,7 @@ function clasificar() {
         console.log("Error en clasificar");
         console.error();
       } else {
-        // console.log(result);
+        console.log(result);
         var Etiqueta;
         var Confianza;
         if (!CargandoNeurona) {
@@ -155,6 +156,7 @@ function CargarNeurona() {
 }
 
 function CargarFolder() {
+  noLoop();
   console.log("Cargando del Folder");
   CartaMensaje.innerText = "Cargando desde Folder";
   // noLoop();
@@ -162,29 +164,43 @@ function CargarFolder() {
 }
 
 function ProcesarArchivo(data) {
-  dataFile = data;
   var Etiquetas = data.Entrenar;
-  for (var i = 0; i < Etiquetas.length; i++) {
-    var EtiquetaActual = Etiquetas[i];
-    var NombreEtiqueta = EtiquetaActual.Etiqueta;
-    var DirImagenes = EtiquetaActual.Imagen;
-    for (var j = 0; j < DirImagenes.length; j++) {
-      var DirTemporal = DirImagenes[j].archivo;
-      console.log(NombreEtiqueta + " - " + DirTemporal);
-      CartaMensaje.innerText = "Entrenando con: " + NombreEtiqueta + " - " + DirTemporal;
-      EntrenarArchivo(NombreEtiqueta, DirTemporal);
-    }
-  }
+
+  Etiquetas.forEach((Etiqueta, i) => {
+    var EtiquetaActual = Etiqueta.Etiqueta;
+    var DirectorioActual = Etiqueta.Directorio;
+    var ImagenesActuales = Etiqueta.Imagenes;
+    ImagenesActuales.forEach((item, i) => {
+      // console.log(EtiquetaActual,DirectorioActual, item);
+      var Areglo = {
+        "Etiqueta": EtiquetaActual,
+        "Direcion": DirectorioActual + "/" + item
+      };
+      ListaFotos.push(Areglo);
+    });
+  });
+
+  setTimeout(EntrenarArchivo, 500);
 }
 
-function EntrenarArchivo(Etiqueta, Archivo) {
-  loadImage(Archivo, img => {
-    // createImg(Archivo);
-    image(img, 0, 0);
-    redraw();
-    var Imagen = modelo.infer(sketchCanvas);
-    console.log("Entrenando " + Archivo);
-    knn.addExample(Imagen, Etiqueta);
-    // knn.addImage(img, Etiqueta);
-  });
+function EntrenarArchivo() {
+  if (ListaFotos.length > 0) {
+    var ImagenActual = ListaFotos.pop();
+    var Etiqueta = ImagenActual.Etiqueta;
+    var Direccion = ImagenActual.Direcion;
+    console.log(Etiqueta, Direccion);
+    clearInterval(EntrenarArchivo);
+    loadImage(Direccion, img => {
+      image(img, 0, 0);
+      //redraw();
+      console.log("Cargada: " + Direccion);
+      CartaMensaje.innerText = "Entrenar " + Direccion;
+      var InferImagen = modelo.infer(sketchCanvas);
+      knn.addExample(InferImagen, Etiqueta);
+      setTimeout(EntrenarArchivo, 500);
+    }, error => console.log("Error" + error));
+  } else {
+    CartaMensaje.innerText = "Termino de Entrenar desde folder";
+    // loop();
+  }
 }

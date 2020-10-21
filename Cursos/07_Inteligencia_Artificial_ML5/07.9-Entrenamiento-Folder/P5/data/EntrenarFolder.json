@@ -1,35 +1,11 @@
 {
   "Entrenar": [{
     "Etiqueta": "Arduino",
-    "Imagen": [{
-      "archivo": "Entrenar/Arduino/2020-09-25-121547.jpg"
-    }, {
-      "archivo": "Entrenar/Arduino/2020-09-25-121554.jpg"
-    }, {
-      "archivo": "Entrenar/Arduino/2020-09-25-121601.jpg"
-    }, {
-      "archivo": "Entrenar/Arduino/2020-09-25-121608.jpg"
-    }, {
-      "archivo": "Entrenar/Arduino/2020-09-25-121614.jpg"
-    }, {
-      "archivo": "Entrenar/Arduino/2020-09-25-121620.jpg"
-    }, {
-      "archivo": "Entrenar/Arduino/2020-09-25-121628.jpg"
-    }, {
-      "archivo": "Entrenar/Arduino/2020-09-25-121635.jpg"
-    }, {
-      "archivo": "Entrenar/Arduino/2020-09-25-121641.jpg"
-    }, {
-      "archivo": "Entrenar/Arduino/2020-09-25-122130.jpg"
-    }]
+    "Directorio": "entrenar/arduino",
+    "Imagenes": ["001.jpg", "002.jpg", "003.jpg", "004.jpg", "005.jpg", "006.jpg", "007.jpg", "008.jpg", "009.jpg", "010.jpg"]
   }, {
     "Etiqueta": "Nada",
-    "Imagen": [{
-      "archivo": "Entrenar/Nada/2020-09-25-121310.jpg"
-    }, {
-      "archivo": "Entrenar/Nada/2020-09-25-121314.jpg"
-    }, {
-      "archivo": "Entrenar/Nada/2020-09-25-121319.jpg"
-    }]
+    "Directorio": "entrenar/nada",
+    "Imagenes": ["001.jpg", "002.jpg", "003.jpg"]
   }]
 }
