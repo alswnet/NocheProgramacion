@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const TelegramBot = require('node-telegram-bot-api');
 
 const token = 'xxx';//Cambiar por el token de telegram

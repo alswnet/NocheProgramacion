@@ -14,49 +14,50 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
-  Serial.begin(9600);
-  Serial.println("Empezando el sistema");
+        Serial.begin(9600);
+        // Serial.println("Empezando el sistema");
 
-  dht.begin();
+        dht.begin();
 }
 
 void loop() {
-  if (Serial.available()) {
-    char Mensaje = Serial.read();
-    if (Mensaje == 't' || Mensaje == 'T') {
-      float t =  CalculoAmbiente(Temperatura);
-      Serial.print("T;");
-      Serial.println(t);
-    } else  if (Mensaje == 'h' || Mensaje == 'H') {
-      float h =  CalculoAmbiente(Humedad);
-      Serial.print("H;");
-      Serial.println(h);
-    } else  if (Mensaje == 'c' || Mensaje == 'C') {
-      float c =  CalculoAmbiente(Calor);
-      Serial.print("C;");
-      Serial.println(c);
-    }
-  }
+        if (Serial.available()) {
+                char Mensaje = Serial.read();
+                if (Mensaje == 't' || Mensaje == 'T') {
+                        float t =  CalculoAmbiente(Temperatura);
+                        Serial.print("T;");
+                        Serial.println(t);
+                } else if (Mensaje == 'h' || Mensaje == 'H') {
+                        float h =  CalculoAmbiente(Humedad);
+                        Serial.print("H;");
+                        Serial.println(h);
+                } else if (Mensaje == 'a' || Mensaje == 'A') {
+                        float c =  CalculoAmbiente(Calor);
+                        Serial.print("A;");
+                        Serial.println(c);
+                }
+        }
 
 }
 
+
 float CalculoAmbiente(int opcion) {
 
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
+        float h = dht.readHumidity();
+        float t = dht.readTemperature();
 
-  if (isnan(h) || isnan(t)) {
-    Serial.println("Error Sensor Temperatura");
-    return -1;
-  }
+        if (isnan(h) || isnan(t)) {
+                Serial.println("Error Sensor Temperatura");
+                return -1;
+        }
 
-  if (opcion == Temperatura) {
-    return t;
-  } else if (opcion == Humedad) {
-    return h;
-  } else if (opcion == Calor) {
-    float hic = dht.computeHeatIndex(t, h, false);
-    return hic;
-  }
-  return -1;
+        if (opcion == Temperatura) {
+                return t;
+        } else if (opcion == Humedad) {
+                return h;
+        } else if (opcion == Calor) {
+                float hic = dht.computeHeatIndex(t, h, false);
+                return hic;
+        }
+        return -1;
 }

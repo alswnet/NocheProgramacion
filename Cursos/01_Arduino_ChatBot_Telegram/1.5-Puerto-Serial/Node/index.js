@@ -1,10 +1,11 @@
+/*jshint esversion: 6 */
 const TelegramBot = require('node-telegram-bot-api');
 
 const token = 'xxx';//Cambiar por el token de telegram
 const bot = new TelegramBot(token, {
   polling: true
 });
-var IdMiChat = 000;//cambiar por tu ID del chat
+var IdMiChat = 123;//cambiar por tu ID del chat
 
 var SerialPort = require('serialport');
 var MiPuerto = new SerialPort('/dev/ttyUSB0', {
