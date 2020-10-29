@@ -1,0 +1,20 @@
+{
+  "name": "monitortemperatura",
+  "version": "1.0.0",
+  "description": "Monitoriar temperatura y lo envia por chatbot",
+  "main": "Ambiente.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chatbot",
+    "arduino",
+    "nodejs"
+  ],
+  "author": "chepecarlos",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.50.0",
+    "serialport": "^9.0.2"
+  }
+}
