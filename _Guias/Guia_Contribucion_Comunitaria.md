@@ -6,7 +6,7 @@ Agrega tu codigo a NocheProgramacion.com para que todo el mundo pueda aprender d
 
 ## ¡Aquí te lo dejo en Video por si te gusta más de esa forma!
 
-[![Cómo agregar tu contribución](http://i3.ytimg.com/vi/nGAHSes_0Nk/hqdefault.jpg)](https://youtu.be/nGAHSes_0Nk)
+[![Cómo agregar tu contribución](https://i3.ytimg.com/vi/nGAHSes_0Nk/hqdefault.jpg)](https://youtu.be/nGAHSes_0Nk)
 
 [Cómo agregar tu contribución a la pagina NocheProgramacion](https://youtu.be/nGAHSes_0Nk)
 
