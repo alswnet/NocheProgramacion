@@ -1,7 +1,7 @@
 ---
 title: "Obtimizando Sistema Riego con Arduino"
 video_number: 68
-date: 2020-10-30
+date: 2020-11-03
 video_id: CKkyL8lsFbg
 repository: 068_Obtimizando_Sistema_Riego_con_Arduino
 
