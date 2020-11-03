@@ -270,12 +270,16 @@ faq:
         url: "https://addons.mozilla.org/es/firefox/addon/lastpass-password-manager/"
       - title: "LastPass Google Chrome"
         url: "https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=es"
-
+  - question: "Cambian ALT para agarar ventanas"
+    section: "OS"
+    answer: "Es muy util poder tomar y mover la ventana con ALT, pero para algunos problemas que usan mas comando es bueno desactivarlo o cambiarlo con <Super>"
+    links:
+      - title: "gsettings set org.cinnamon.desktop.wm.preferences mouse-button-modifier '<Super>'"
 ---
 
 Las app que uso en mi pc con linux mint :) para que tomen inspiracion. Ire agregando mas aplicaciones interesantes a la lista
 
-### Recomendaciones ?
+### Recomendaciones de app interesantes ?
 
 Tiene una recomendacion para probar alguna dejala aqui Link
 
