@@ -9,3 +9,6 @@ config.js
 _site/
 .sass-cache/
 .jekyll-metadata
+
+### Token ###
+*Token.js
