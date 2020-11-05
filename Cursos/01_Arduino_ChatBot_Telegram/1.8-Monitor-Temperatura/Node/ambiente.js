@@ -9,7 +9,7 @@ const bot = new TelegramBot(Contastes.token, {
 });
 
 var SerialPort = require('serialport');
-const Readline = require('@serialport/parser-readline')
+const Readline = require('@serialport/parser-readline');
 var MiPuerto = new SerialPort('/dev/ttyACM0', {
   baudRate: 9600,
   autoOpen: true
@@ -47,10 +47,10 @@ MiParse.on('data', function(data) {
   console.log("Lo que entro es " + data);
   var Mensaje = data.split(';');
   if (Mensaje[0] == 'T') {
-    bot.sendMessage(Cliente, 'La temperatura es ' + Mensaje[1]);
+    bot.sendMessage(Cliente, 'La temperatura es ' + Mensaje[1] + "°C");
   } else if (Mensaje[0] == 'H') {
-    bot.sendMessage(Cliente, 'La Humedad es ' + Mensaje[1]);
+    bot.sendMessage(Cliente, 'La Humedad es ' + Mensaje[1] + "%");
   } else if (Mensaje[0] == 'A') {
-    bot.sendMessage(Cliente, 'La Temperatura Aparente es ' + Mensaje[1]);
+    bot.sendMessage(Cliente, 'La Temperatura Aparente es ' + Mensaje[1] + "°C");
   }
 });
