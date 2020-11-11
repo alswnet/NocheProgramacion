@@ -23,7 +23,7 @@ bot.on('message', (msg) => {
   const chatId = msg.chat.id;
   Cliente = chatId;
   var Mensaje = msg.text;
-  console.log("El ID del char" + chatId + " con el mensaje " + Mensaje);
+  console.log("El ID del char: " + chatId +" Usuario: "+ msg.chat.first_name + " con  el mensaje: " + Mensaje);
   if (Mensaje == "Temperatura" || Mensaje == 'T' || Mensaje == 't') {
     console.log("Pidiendo la Temperatura");
     bot.sendMessage(chatId, 'Pidiendo la temperatura');
@@ -37,7 +37,7 @@ bot.on('message', (msg) => {
     bot.sendMessage(chatId, 'Pidiendo la Temperatura Aparente');
     MiPuerto.write("a");
   } else {
-    bot.sendMessage(chatId, 'No entiendo lo que me pides');
+    bot.sendMessage(chatId, 'No entiendo el mensaje');
   }
 });
 
