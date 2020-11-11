@@ -128,6 +128,7 @@ collections:
   Presentaciones:   { output: true }
   mas:              { output: true }
   invitados:        { output: true }
+  Grabaciones:      { output: true }
 
 # --- Defaults ---
 
@@ -152,6 +153,13 @@ defaults:
       video_type:             "tutoriales"
       video_type_short:       "tutorial"
       can_contribute:         true
+
+  - scope:              { path: "", type: "Grabaciones" }
+    values:
+      layout:                 "video"
+      video_type:             "grabaciones"
+      video_type_short:       "grabacion"
+      can_contribute:         false
 
   - scope: { path: "", type:  "Guias" }
     values:
