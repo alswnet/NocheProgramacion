@@ -22,13 +22,13 @@
 
     {% comment %} Variation web editor button. If web_editor is defined for the variation. {% endcomment %}
     {% if include.variation.web_editor %}
-      <li><a href="{{ site.web_editor_sketch_prefix | append: include.variation.web_editor }}" target="_blank" aria-label="View p5.js Code in the p5.js Web Editor">Web Editor</a></li>
+      <li><a href="{{ site.web_editor_sketch_prefix | append: include.variation.web_editor }}" target="_blank" aria-label="View p5.js Code in the p5.js Web Editor">Editor Web</a></li>
     {% endif %}
 
     {% comment %} General web editor button. If web_editor is defined for the page and p5.js is a the lang is p5js. {% endcomment %}
     {% if include.variation.lang == "p5js" and page.web_editor %}
       {% unless include.variation.name %}
-        <li><a href="{{ site.web_editor_sketch_prefix | append: page.web_editor }}" target="_blank" aria-label="View p5.js Code in the p5.js Web Editor">Web Editor</a></li>
+        <li><a href="{{ site.web_editor_sketch_prefix | append: page.web_editor }}" target="_blank" aria-label="View p5.js Code in the p5.js Web Editor">Editor Web</a></li>
       {% endunless %}
     {% endif %}
 

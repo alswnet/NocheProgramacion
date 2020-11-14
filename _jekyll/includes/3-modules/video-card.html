@@ -16,7 +16,7 @@
        aria-label="To the {{ include.video.video_type_short | default: include.video.video_type }}: {{ include.video.title | xml_escape }}"
     >
   {% else %}
-    <a href="https://youtu.be/{{ include.video.video_id }}"
+    <a href="https://www.youtube.com/alswnet/live"
        target="blank"
        aria-label="Tune in Live: {{ include.video.title | xml_escape }}"
     >
@@ -62,11 +62,11 @@
   {% comment %} CTAs (link to YouTube and internal video page or livestream). {% endcomment %}
   <div class="buttons">
     {% if include.video.date > site.time %}
-      <a href="https://youtu.be/{{ include.video.video_id }}"
+      <a href="https://www.youtube.com/alswnet/live"
          target="blank"
          aria-label="Tune in Live: {{ include.video.title | xml_escape }}"
       >
-        Entra a Live<span class="sr-only">: {{ include.video.title | xml_escape }}</span>
+        Entra a Envivo<span class="sr-only">: {{ include.video.title | xml_escape }}</span>
       </a>
     {% else %}
       <a href="https://youtu.be/{{ include.video.video_id }}"
