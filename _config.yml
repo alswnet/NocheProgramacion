@@ -20,8 +20,8 @@ repository:                   alswnet/NocheProgramacion
 github_download_prefix:       https://alswnet.github.io/DownGit/#/home?url=
 
 # Prefixes for editor.p5js.org
-web_editor_sketch_prefix:     https://editor.p5js.org/codingtrain/sketches/
-web_editor_fullscreen_prefix: https://editor.p5js.org/full/
+web_editor_sketch_prefix:     https://editor.p5js.org/chepecarlos/sketches/
+web_editor_fullscreen_prefix: https://editor.p5js.org/chepecarlos/full/
 
 # Suffixes for auto-detecting the video's code that's available for download/preview.
 #
@@ -31,7 +31,7 @@ web_editor_fullscreen_prefix: https://editor.p5js.org/full/
 #                       The first match is used. If the video has the `web_editor`
 #                       property, a link to the P5 Web Editor will be used instead.
 code_variations:
-  - lang: "p5.js"
+  - lang: "p5js"
     folder: "P5"
   - lang: "Processing"
     folder: "Processing"
