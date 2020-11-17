@@ -1,7 +1,7 @@
 ---
 title: "Revied Codigo: Python y Arduino"
 video_number: 3
-date: 2020-11-17
+date: 2020-11-17T17:30:00-06:00
 video_id: cE5LNjwl8Vs
 ---
 
