@@ -221,13 +221,13 @@ faq:
         url: "https://openrazer.github.io"
       - title: "Pagina polychromatic"
         url: "https://polychromatic.app"
-  - question: "Linux mint 19.3"
+  - question: "Linux Mint 20 Ulyana"
     section: "OS"
     answer: "La distribución de Gnu/Linux que uso hace unos años, me gustas por los paquetes y configuracion que trae con defecto, por funciona fuera de la caja, Linux mint es basada en ubuntu que es basada en Debian. Intento siempre estar la ultima vercion disponible"
     links:
       - title: "Pagina de Linux mint"
         url: "https://linuxmint.com"
-  - question: "Cinnamon 4.4"
+  - question: "Cinnamon 4.6"
     section: "OS"
     answer: "Mi escritorio por defecto en mis pc, amo que cinnamon sea similar a Gnome 2.x + Compiz, descansa en paz Compiz y emeral, me escanta las heramientas que trae para trabajar con multiples escritorio y ventanas"
     links:
