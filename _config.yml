@@ -129,6 +129,7 @@ collections:
   mas:              { output: true }
   invitados:        { output: true }
   Grabaciones:      { output: true }
+  redirects:        { output: true }
 
 # --- Defaults ---
 
@@ -183,3 +184,8 @@ defaults:
     values:
       video_type:             "Video"
       layout:                 "video"
+
+  # Redirects
+  - scope: { path: "", type: "redirect" }
+    values:
+      layout: "external-redirect"

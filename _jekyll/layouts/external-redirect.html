@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+<div class="redirect">
+  <p>Redirigiéndote a {{ page.title }}...</p>
+  <a href="{{ page.redirect_to }}">Haga clic aquí si tiene los redireccionamientos desactivados</a>
+  <script>
+    function redirect() {
+      window.location.replace("{{ page.redirect_to }}");
+    }
+    setTimeout(redirect, 200);
+  </script>
+</div>
