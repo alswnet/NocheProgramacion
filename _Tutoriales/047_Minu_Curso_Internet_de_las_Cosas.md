@@ -3,6 +3,7 @@ title: "Mini-Curso de Internet de las cosas Full-ALSW"
 video_number: 47
 date: 2019-08-21
 video_id: qpOZfdLLfPU
+web_editor: EZAqGHI9V
 repository: 047_Minu_Curso_Internet_de_las_Cosas
 
 piezas:
