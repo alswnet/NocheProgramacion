@@ -4,7 +4,7 @@ video_number: 70
 date: 2020-12-09
 video_id: 7KQe_NQ4O8Y
 
-ttopics:
+topics:
   - title: Inicio
     time: '00:00'
   - title: Historia de la Web
