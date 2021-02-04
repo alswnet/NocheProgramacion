@@ -8,19 +8,19 @@
 # --- Site Settings ---
 
 # The site's title.
-title:                        Noche Programacion // ALSW
+title: Noche Programacion // ALSW
 
 # Location from where the site will be served (repository name for GitHub Pages).
-baseurl:                      /
+baseurl: /
 
 # Name of the GitHub repository (used for generating links to GitHub).
-repository:                   alswnet/NocheProgramacion
+repository: alswnet/NocheProgramacion
 
 # Prefix for download links (downloads only the relevant code from GitHub).
-github_download_prefix:       https://alswnet.github.io/DownGit/#/home?url=
+github_download_prefix: https://alswnet.github.io/DownGit/#/home?url=
 
 # Prefixes for editor.p5js.org
-web_editor_sketch_prefix:     https://editor.p5js.org/chepecarlos/sketches/
+web_editor_sketch_prefix: https://editor.p5js.org/chepecarlos/sketches/
 web_editor_fullscreen_prefix: https://editor.p5js.org/chepecarlos/full/
 
 # Suffixes for auto-detecting the video's code that's available for download/preview.
@@ -62,17 +62,17 @@ links:
   # Productos de alsw
   pieza:                      https://alsw.net/tienda/
 
-  # Link to YouTube.
-  youtube:                    https://youtube.com/alswnet
+  # Link de YouTube.
+  youtube: https://youtube.com/alswnet
 
-  # Link to Patreon.
-  patreon:                    https://patreon.com/alswnet
+  # Link de Patreon.
+  patreon: https://patreon.com/alswnet
 
   # Link de discord
-  discord:                    https://discord.gg/ReRapub
+  discord: https://discord.gg/ReRapub
 
   # Link de Donaciones
-  paypal:                     https://www.paypal.me/alswnet
+  paypal: https://www.paypal.me/alswnet
 
 # SEO data for twitter
 twitter:
@@ -81,7 +81,7 @@ twitter:
 # --- Build Settings ---
 
 # Use Kramdown as the preferred Markdown parser.
-markdown:                     kramdown
+markdown: kramdown
 
 # Exclude code for Node.js and Q_and_A
 exclude:
@@ -99,16 +99,16 @@ exclude:
 # keep_files: ["Presentaciones"]
 
 # Include future videos (used for 'Upcoming Streams' section).
-future:                       true
+future: true
 
 # Use El Salvador as the site's timezone.
-timezone:                     America/El_Salvador
+timezone: America/El_Salvador
 
 # Compress HTML for production builds.
-compress_html: { ignore: { envs: ['development'] } }
+compress_html: { ignore: { envs: ["development"] } }
 
 # Search for SASS files inside assets/css.
-sass: { sass_dir:             "assets/css" }
+sass: { sass_dir: "assets/css" }
 
 # Use jekyll-redirect-from to allow redirections
 plugins:
@@ -116,12 +116,12 @@ plugins:
   - jekyll-seo-tag
 
 # --- Jekyll Locations ---
-layouts_dir:                  _jekyll/layouts
-includes_dir:                 _jekyll/includes
+layouts_dir: _jekyll/layouts
+includes_dir: _jekyll/includes
 
 # --- Collections ---
 collections:
-  RetoProgramacion: { output: true }
+  RetoProgramacion: { output: true }
   Cursos:           { output: true }
   Tutoriales:       { output: true }
   Guias:            { output: true }
