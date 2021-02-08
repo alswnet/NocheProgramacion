@@ -3,19 +3,32 @@
   "version": "0.0.1",
   "description": "Sitio Web NocheProgramacion",
   "main": "none",
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "^4.19.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.19.0",
     "eslint-config-p5js": "^1.0.1",
-    "eslint-config-prettier": "^2.10.0",
-    "eslint-plugin-prettier": "^2.7.0",
-    "prettier": "^1.16.4",
-    "replace-in-file": "^3.4.4"
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "octocat": "^1.2.1",
+    "prettier": "^1.19.1",
+    "replace-in-file": "^6.2.0",
+    "yaml-front-matter": "^4.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint CodingChallenges/CC_001_StarField_p5.js/*.js",
-    "test-html": "bundle exec htmlproofer ./_site --assume-extension --check-html --disable-external --url-ignore '/#.*/'"
+    "lint": "npm run lint-cc && npm run lint-cabana && npm run lint-beginners && npm run lint-tutorials && npm run lint-courses",
+    "test-html": "bundle exec htmlproofer ./_site --assume-extension --check-html --disable-external --url-ignore '/#.*/'",
+    "lint-cc": "./node_modules/.bin/eslint ./CodingChallenges/",
+    "lint-cabana": "./node_modules/.bin/eslint ./challenges/coding-in-the-cabana/",
+    "lint-beginners": "./node_modules/.bin/eslint ./beginners",
+    "lint-tutorials": "./node_modules/.bin/eslint ./Tutorials/",
+    "lint-courses": "./node_modules/.bin/eslint ./Courses/",
+    "lint-fix": "npm run lint-cc-fix && npm run lint-cabana-fix && npm run lint-tutorials-fix && npm run lint-courses-fix",
+    "lint-cc-fix": "./node_modules/.bin/eslint ./CodingChallenges/ --fix",
+    "lint-cabana-fix": "./node_modules/.bin/eslint ./CodingInTheCabana/ --fix",
+    "lint-Tutoriales-fix": "./node_modules/.bin/eslint ./Tutoriales/ --fix",
+    "lint-courses-fix": "./node_modules/.bin/eslint ./Courses/ --fix",
+    "yt-descriptions": "node ./_scripts/generate-youtube-descriptions.js"
   },
   "repository": {
     "type": "git",

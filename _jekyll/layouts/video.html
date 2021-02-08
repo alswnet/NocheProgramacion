@@ -22,7 +22,7 @@ layout: base
 
   {% comment %} Video subtitle. {% endcomment %}
   <div class="subtitle">
-    {{ course.title | default: series.title }} {{ page.video_type_short }}
+    {{ course.title | default: series.title }} {{ page.video_type }}
     #{% if series.series_number %}{{ series.series_number }}.{% endif %}{{ page.video_number }}
   </div>
 
