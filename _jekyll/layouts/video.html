@@ -120,12 +120,12 @@ layout: base
         {% comment %} Display a message depending on wether there have been made community contributions already. {% endcomment %}
         {% if contributionsVideo.contributions %}
           <p>
-            Tu tambien puedes agregar <a href="{{ addContributionURL }}" target="_blank">tu propia vercion</a>!
+            Tu tambien puedes agregar <a href="{{ addContributionURL }}" target="_blank">tu propia version</a>!
             (<a href="{% link _Guias/Guia_Contribucion_Comunitaria.md %}">Mira como</a>)
           </p>
         {% else %}
           <p>
-            Al parecer, aun no se han hecho variaciones basadas en este {{ page.video_type_short | downcase }} por la comunidad. Se el primero en agregar <a href="{{ addContributionURL }}" target="_blank">tu propia vercion</a>!<br>
+            Al parecer, aun no se han hecho variaciones basadas en este {{ page.video_type_short | downcase }} por la comunidad. Se el primero en agregar <a href="{{ addContributionURL }}" target="_blank">tu propia version</a>!<br>
             Si no sabes cómo, mira <a href="{% link _Guias/Guia_Contribucion_Comunitaria.md %}">esta guia</a>.
           </p>
         {% endif %}
