@@ -25,7 +25,7 @@ MiMQTT.on_subscribe = SubcribiendoMQTT
 MiMQTT.on_log = LogMQTT
 
 MiMQTT.username_pw_set("ALSWSexy", "SubcribanseAALSWenYoutube")
-MiMQTT.connect("broker.shiftr.io", 1883)
+MiMQTT.connect("public.cloud.shiftr.io", 1883)
 
 MiMQTT.publish("LED", "Apagar")
 time.sleep(5)
