@@ -30,7 +30,9 @@ Pronto :)
 
 ## Comandos Disponibles para Todos
 
-### FondoOBS Juego de la vida
+### Fondo-OBS Juego de la vida
+
+Pronto Video de Juego de la vida en Youtube
 
 #### reiniciar
 
