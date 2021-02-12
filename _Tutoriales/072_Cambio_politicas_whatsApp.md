@@ -1,0 +1,17 @@
+---
+title: "Cambio de Politicas de WhatsApp"
+video_number: 72
+date: 2021-01-16
+video_id: vZjmfHzWdC0
+
+topics:
+  - title: Inicio
+    time: '00:00'
+
+videos:
+  - title: "Curso de ChatBot"
+    author: "ALSW"
+    url: "/Cursos/01_Arduino_ChatBot_Telegram/"
+---
+
+Un Reportaje de Noticieron Hecho Canal 12 El Salvador  de las nuevas politicas de Whatapp la seguridad, comparitr informacion y a donde se estan migrando las personas.  

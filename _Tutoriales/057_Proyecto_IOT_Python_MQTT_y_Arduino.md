@@ -10,4 +10,4 @@ links:
    url: "https://pypi.org/project/paho-mqtt/"
 ---
 
-Hoy les ayudare con poder unir Python y arduino con el poder de MQTT
+Hoy les ayudare como poder unir Python y arduino con el poder de MQTT

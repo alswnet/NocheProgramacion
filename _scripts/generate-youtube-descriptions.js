@@ -33,7 +33,10 @@ function getPlaylist(file) {
 function getVideoData() {
 
   const directories = [
-    '_Tutoriales'
+    '_Tutoriales',
+    '_Cursos',
+    '_RetoProgramacion',
+    '_Grabaciones'
   ];
 
   let files = [];
@@ -60,14 +63,16 @@ function getVideoData() {
 
 function primeDirectory(dir) {
 
-  fs.rmdirSync(dir, { recursive: true }, (err) => {
+  fs.rmdirSync(dir, {
+    recursive: true
+  }, (err) => {
     if (err) {
-        throw err;
+      throw err;
     }
   });
 
   fs.mkdirSync(dir, err => {
-    if(err) {
+    if (err) {
       throw err;
     }
   });
@@ -97,7 +102,7 @@ function getVideoID(url) {
 
 function writeDescriptions(videos) {
 
-  primeDirectory('./descriptions');
+  primeDirectory('./descripciones');
 
   for (let i = 0; i < videos.length; i++) {
 
@@ -113,7 +118,9 @@ function writeDescriptions(videos) {
 
     // Code
     if (data.repository || data.web_editor) {
-      description += `\n💻 Code: https://thecodingtrain.com/${pageURL}.html\n`;
+      description += `\n💻 Codigo: https://thecodingtrain.com/${pageURL}.html\n`;
+    } else {
+      description += `\n🖥 Articulo: https://thecodingtrain.com/${pageURL}.html\n`;
     }
 
     // Next Video / Playlist
@@ -131,29 +138,54 @@ function writeDescriptions(videos) {
     if (playlist || nextID) {
       description += '\n';
       if (nextID) {
-        description += `🎥 Next video: https://youtu.be/${nextID}\n`;
+        description += `🎥 Siquiente video: https://youtu.be/${nextID}\n`;
       }
       if (playlist) {
-        description += `🎥 All videos: https://www.youtube.com/playlist?list=${playlist}\n`;
+        description += `🎥 Playlist: https://www.youtube.com/playlist?list=${playlist}\n`;
+      }
+    }
+
+    // Timestamps
+    if (data.topics) {
+      description += "\nIndice:\n";
+      for (let i = 0; i < data.topics.length; ++i) {
+        description += `${data.topics[i].time} ${data.topics[i].title}\n`
       }
     }
 
     // Links
     if (data.links) {
-      description += "\nLinks discussed in this video:\n";
+      description += "\nLink reference del video:\n";
       for (let i = 0; i < data.links.length; ++i) {
         const url = data.links[i].url;
         if (/https?:\/\/.*/.test(url)) { // starts with http:// or https://
           description += `🔗 ${data.links[i].title}: ${url}\n`
         } else { // assume relative link in thecodingtrain.com
-          description += `🔗 ${data.links[i].title}: https://thecodingtrain.com${url}\n`
+          description += `🔗 ${data.links[i].title}: https://nocheprogramacion.com/${url}\n`
+        }
+      }
+    }
+
+    // Links
+    if (data.piezas) {
+      description += "\nComponentes electronicos mencionado video:\n";
+      for (let i = 0; i < data.piezas.length; ++i) {
+        const url = data.piezas[i].url;
+        if (url) {
+          if (/https?:\/\/.*/.test(url)) { // starts with http:// or https://
+            description += `🤖 ${data.piezas[i].title}: ${url}\n`
+          } else { // assume relative link in thecodingtrain.com
+            description += `🤖 ${data.piezas[i].title}: https://nocheprogramacion.com${url}\n`
+          }
+        } else{
+            description += `🤖 ${data.piezas[i].title}\n`
         }
       }
     }
 
     // Videos
     if (data.videos) {
-      description += "\nOther videos mentioned in this video:\n";
+      description += "\nOtros video mencionados en video:\n";
       for (let i = 0; i < data.videos.length; ++i) {
         if (data.videos[i].video_id) {
           description += `🎥 ${data.videos[i].title}: https://youtu.be/${data.videos[i].video_id}\n`
@@ -163,46 +195,30 @@ function writeDescriptions(videos) {
       }
     }
 
-    // Timestamps
-    if (data.topics) {
-      description += "\nTimestamps:\n";
-      for (let i = 0; i < data.topics.length; ++i) {
-        description += `${data.topics[i].time} ${data.topics[i].title}\n`
-      }
-    }
+
 
     // General Links
     description += `
-🚂 Website: http://thecodingtrain.com/
-👾 Share Your Creation! https://thecodingtrain.com/Guides/community-contribution-guide.html
-🚩 Suggest Topics: https://github.com/CodingTrain/Rainbow-Topics
-💡 GitHub: https://github.com/CodingTrain
-💬 Discord: https://discord.gg/hPuGy2g
-💖 Membership: http://youtube.com/thecodingtrain/join
-🛒 Store: https://standard.tv/codingtrain
-📚 Books: https://www.amazon.com/shop/thecodingtrain
-🖋️ Twitter: https://twitter.com/thecodingtrain
-📸 Instagram: https://www.instagram.com/the.coding.train/
+🚂 SitioWeb: http://nocheprogramacion.com/
+👾 Comparte tu Creacion! https://nocheprogramacion.com/Guias/Guia_Contribucion_Comunitaria
+🚩 Sugierre Temas: https://github.com/alswnet/NocheProgramacion/issues/new
+💡 GitHub: https://github.com/alswnet
+💬 Discord: https://nocheprogramacion.com/discord
+💖 Membrecia: http://youtube.com/alswnet/join
+🌎 Noticias: https://programacion.news
+🖋️ Twitter: https://twitter.com/alswnet
+📸 Instagram: https://www.instagram.com/alswnet
 
-🎥 Coding Challenges: https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH
-🎥 Intro to Programming: https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA
+Esta descripción fue auto-generada. Si ves algún problema, por favor reportarlo en https://github.com/alswnet/NocheProgramacion/issues/new`;
 
-🔗 p5.js: https://p5js.org
-🔗 p5.js Web Editor: https://editor.p5js.org/
-🔗 Processing: https://processing.org
-
-📄 Code of Conduct: https://github.com/CodingTrain/Code-of-Conduct
-
-This description was auto-generated. If you see a problem, please open an issue: https://github.com/CodingTrain/website/issues/new`;
-
-    fs.writeFileSync(`descriptions/${data.video_id}.txt`, description);
+    fs.writeFileSync(`descripciones/${data.video_id}.txt`, description);
   }
 
 }
 
 (() => {
 
-  console.log("💫 Generating YouTube Descriptions 💫")
+  console.log("💫 Generador de Description de Youtube 💫")
 
   writeDescriptions(getVideoData());
 
