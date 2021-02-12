@@ -56,6 +56,9 @@ links:
   # link de ALSW.
   alsw:                       https://alsw.net
 
+  # link de ProgramacionNews
+  noticias: https://programacion.news/
+
   # Tienda de ALSW
   tienda:                     https://alsw.net/tienda
 
