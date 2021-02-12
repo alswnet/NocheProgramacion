@@ -7,6 +7,10 @@ video_id: vZjmfHzWdC0
 topics:
   - title: Inicio
     time: '00:00'
+  - title: Reportaje en Canal 12
+    time: '00:48'
+  - title: Entrevista Completa
+    time: '04:26'
 
 videos:
   - title: "Curso de ChatBot"
