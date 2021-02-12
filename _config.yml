@@ -54,16 +54,16 @@ code_variations:
 links:
 
   # link de ALSW.
-  alsw:                       https://alsw.net
+  alsw: https://alsw.net
 
   # link de ProgramacionNews
   noticias: https://programacion.news/
 
   # Tienda de ALSW
-  tienda:                     https://alsw.net/tienda
+  tienda: https://alsw.net/tienda
 
   # Productos de alsw
-  pieza:                      https://alsw.net/tienda/
+  pieza: https://alsw.net/tienda/
 
   # Link de YouTube.
   youtube: https://youtube.com/alswnet
@@ -72,7 +72,7 @@ links:
   patreon: https://patreon.com/alswnet
 
   # Link de discord
-  discord: https://discord.gg/ReRapub
+  discord: https://nocheprogramacion.com/discord
 
   # Link de Donaciones
   paypal: https://www.paypal.me/alswnet
