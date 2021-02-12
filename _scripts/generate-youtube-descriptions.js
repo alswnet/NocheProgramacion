@@ -177,8 +177,8 @@ function writeDescriptions(videos) {
           } else { // assume relative link in thecodingtrain.com
             description += `🤖 ${data.piezas[i].title}: https://nocheprogramacion.com${url}\n`
           }
-        } else{
-            description += `🤖 ${data.piezas[i].title}\n`
+        } else {
+          description += `🤖 ${data.piezas[i].title}\n`
         }
       }
     }
@@ -190,21 +190,25 @@ function writeDescriptions(videos) {
         if (data.videos[i].video_id) {
           description += `🎥 ${data.videos[i].title}: https://youtu.be/${data.videos[i].video_id}\n`
         } else if (data.videos[i].url) {
-          description += `🎥 ${data.videos[i].title}: ${getVideoID(data.videos[i].url)}\n`
+          const url = data.videos[i].url;
+          if (/https?:\/\/.*/.test(url)) { // starts with http:// or https://
+            description += `🎥 ${data.videos[i].title}: ${url}\n`
+          } else { // assume relative link in thecodingtrain.com
+            description += `🎥 ${data.videos[i].title}: https://nocheprogramacion.com${url}\n`
+          }
         }
       }
     }
 
-
-
     // General Links
     description += `
-🚂 SitioWeb: http://nocheprogramacion.com/
-👾 Comparte tu Creacion! https://nocheprogramacion.com/Guias/Guia_Contribucion_Comunitaria
-🚩 Sugierre Temas: https://github.com/alswnet/NocheProgramacion/issues/new
+🚂 Sitio Web: http://nocheprogramacion.com
+👾 Comparte tu creación! https://nocheprogramacion.com/Guias/Guia_Contribucion_Comunitaria
+🚩 Sugerir Temas: https://github.com/alswnet/NocheProgramacion/issues/new
 💡 GitHub: https://github.com/alswnet
 💬 Discord: https://nocheprogramacion.com/discord
 💖 Membrecia: http://youtube.com/alswnet/join
+💰 Paypal: https://paypal.me/alswnet
 🌎 Noticias: https://programacion.news
 🖋️ Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet
