@@ -1,5 +1,7 @@
 ---
 title: "Guia de Donacion"
+redirect_from:
+  - "/donar"
 ---
 
 Gracias por consideras apoyar monetariamente a ALSW en la creación de contenido educativo aquí te damos un par de opciones que puedes seleccionar, de antemano **GRACIAS**

@@ -1,5 +1,7 @@
 ---
 title: "Guia de Contribucion Comunitaria"
+redirect_from:
+  - "/tucodigo"
 ---
 
 Agrega tu codigo a NocheProgramacion.com para que todo el mundo pueda aprender de el.

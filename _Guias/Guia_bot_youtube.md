@@ -61,4 +61,4 @@ colores disponibles:
 
 ## Errores o ideas
 
-Reporta error en el funcionamiento de los comandos o tiene alguna idea que podamos hacer en futuro reportala aqui [Aqui](https://github.com/alswnet/NocheProgramacion/issues)
+Reporta error en el funcionamiento de los comandos o tiene alguna idea que podamos hacer en futuro reportala aqui [Aqui](https://github.com/alswnet/NocheProgramacion/issues/new)
