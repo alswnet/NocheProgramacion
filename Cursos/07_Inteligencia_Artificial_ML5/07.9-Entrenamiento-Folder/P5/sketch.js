@@ -11,9 +11,9 @@ var ListaFoto = [];
 var sketchCanvas;
 
 function setup() {
-  var ObtenerCanva = document.getElementById('micanva');
+  var ObtenerCanva = document.getElementById("micanva");
   var AnchoCanvas = ObtenerCanva.offsetWidth;
-  CartaMensaje = document.getElementById('CartaMensaje');
+  CartaMensaje = document.getElementById("CartaMensaje");
   CartaMensaje.innerText = "Cargando APP...";
   Camara = createCapture(VIDEO);
   // Camara.size(1280, 720);
@@ -23,7 +23,7 @@ function setup() {
   sketchCanvas = createCanvas(AnchoCanvas, AltoCanvas);
   sketchCanvas.parent("micanva");
 
-  modelo = ml5.featureExtractor('MobileNet', ModeloListo);
+  modelo = ml5.featureExtractor("MobileNet", ModeloListo);
   knn = ml5.KNNClassifier();
 
   BotonesEntrenar = selectAll(".BotonEntrenar");
@@ -73,7 +73,7 @@ function draw() {
 }
 
 function windowResized() {
-  var ObtenerCanva = document.getElementById('micanva');
+  var ObtenerCanva = document.getElementById("micanva");
   var Ancho = ObtenerCanva.offsetWidth;
   var Alto = Ancho * RelacionCamara;
   resizeCanvas(Ancho, Alto);
@@ -168,7 +168,6 @@ function CargarFolder() {
 }
 
 function ProcesarArchivo(data) {
-
   var Etiquetas = data.Entrenar;
   Etiquetas.forEach((Etiqueta, i) => {
     var EtiquetaActual = Etiqueta.Etiqueta;
@@ -176,8 +175,8 @@ function ProcesarArchivo(data) {
     var ImagenesActuales = Etiqueta.Imagenes;
     ImagenesActuales.forEach((item, i) => {
       var Areglo = {
-        "Etiqueta": EtiquetaActual,
-        "Direcion": DirectorioEtiqueta + "/" + item
+        Etiqueta: EtiquetaActual,
+        Direcion: DirectorioEtiqueta + "/" + item
       };
       ListaFoto.push(Areglo);
     });
@@ -202,5 +201,4 @@ function EntrenarArchivo() {
     EntrenarFolder = false;
     loop();
   }
-
 }

@@ -13,10 +13,10 @@ function setup() {
   Camara.size(320, 240);
   Camara.hide();
 
-  modelo = ml5.featureExtractor('MobileNet', ModeloListo);
+  modelo = ml5.featureExtractor("MobileNet", ModeloListo);
   knn = ml5.KNNClassifier();
 
-  createP('Presiona Botones para entrenar');
+  createP("Presiona Botones para entrenar");
 
   var BotonArduino = createButton("Arduino");
   BotonArduino.class("BotonEntrenar");

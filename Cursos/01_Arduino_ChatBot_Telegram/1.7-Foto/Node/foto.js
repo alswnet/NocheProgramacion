@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 var NodeWebcam = require("node-webcam");
-const TelegramBot = require('node-telegram-bot-api');
+const TelegramBot = require("node-telegram-bot-api");
 
 var opts = {
   width: 1280,
@@ -9,14 +9,14 @@ var opts = {
   delay: 0,
   saveShots: true,
   output: "jpeg",
-  device: '/dev/video1',
+  device: "/dev/video1",
   callbackReturn: "location",
   verbose: true
 };
 
 var Webcam = NodeWebcam.create(opts);
 
-const token = '';
+const token = "";
 
 const bot = new TelegramBot(token, {
   polling: true
@@ -26,9 +26,9 @@ Webcam.list(function(list) {
   console.log(list);
 });
 
-bot.on('message', (msg) => {
+bot.on("message", msg => {
   const chatId = msg.chat.id;
-  bot.sendMessage(chatId, 'Tomando Foto');
+  bot.sendMessage(chatId, "Tomando Foto");
   Webcam.capture("Foto", function(err, data) {
     bot.sendPhoto(chatId, "Foto.jpg", {
       caption: "Foto Oculta"
