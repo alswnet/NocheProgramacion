@@ -98,5 +98,5 @@ function ConectnadoOBS() {
     })
     .catch(err => {
       console.log(err);
-    });;
+    });
 }

@@ -3,7 +3,7 @@ title: "Sensor capacitivo con arduino"
 video_number: 1
 date: 2014-10-24
 video_id: cjz_4ZptgqM
-repository: NP_001_Sensor_Capacitivo_Arduino
+repository: 001_Sensor_Capacitivo_Arduino
 
 links:
   - title: "Libreria de Sensor Capacitivo"
