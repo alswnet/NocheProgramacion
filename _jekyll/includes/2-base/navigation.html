@@ -11,8 +11,7 @@
 
 
     <li>
-      <button class="submenu-button top-link" aria-haspopup="true"
-        for="beginners-submenu"><span>Cursos</span></button>
+      <button class="submenu-button top-link" aria-haspopup="true" for="beginners-submenu"><span>Cursos</span></button>
       <div class="submenu" id="beginners-submenu">
         <ul class="links">
           <li><a href="{{ '/Cursos/01_Arduino_ChatBot_Telegram' | relative_url }}">ChatBot con Arduino</a></li>
@@ -35,26 +34,14 @@
     -->
 
     <li>
-      <button class="submenu-button top-link" aria-haspopup="true"
-        for="contribute-submenu"><span>Contribuye</span></button>
+      <button class="submenu-button top-link" aria-haspopup="true" for="contribute-submenu"><span>Contribuye</span></button>
       <div class="submenu" id="contribute-submenu">
         <ul class="links">
-          <li><a href="{{ '/Guias/Guia_Contribucion_Comunitaria' | relative_url }}">Agrega tu codigo</a>
-          </li>
+          <li><a href="{{ '/Guias/Guia_Contribucion_Comunitaria' | relative_url }}">Agrega tu codigo</a></li>
+          <li><a href="{{ '/Guias/Guia_Apoyo' | relative_url }}">Apoya</a</li>
+          <li><a href="{{ '/Guias/Guia_Donacion' | relative_url }}">Donar</a></li>
+          <li><a href="{{ site.github.repository_url }}/issues/new" target="_blank">Reportar Problema o Sugerencia</a></li>
           <li><a href="{{ '/Guias' | relative_url }}">Todas Guias</a></li>
-          <li><a href="{{ site.github.repository_url }}/issues"  target="_blank">Reportar Problema o Sugerencia</a></li>
-          <li><a href="{{ site.github.repository_url }}" target="_blank">Github</a></li>
-        </ul>
-      </div>
-    </li>
-
-    <li>
-      <button class="submenu-button top-link" aria-haspopup="true"
-        for="Apoya-submenu"><span>Apoya</span></button>
-      <div class="submenu" id="Apoya-submenu">
-        <ul class="links">
-          <li><a href="{{ site.links.patreon }}">Patreon</a></li>
-          <li><a href="{{ site.links.paypal }}">Paypal</a></li>
         </ul>
       </div>
     </li>
@@ -68,6 +55,7 @@
           <li><a href="{{ '/linuxappuso' | relative_url}}">Las Linux App que uso</a></li>
           <li><a href="{{ '/RetoProgramacion' | relative_url }}">EnVivos</a></li>
           <li><a href="{{ '/invitados' | relative_url }}">Invitados</a></li>
+          <li><a href="{{ site.github.repository_url }}" target="_blank">Github</a></li>
         </ul>
       </div>
     </li>
