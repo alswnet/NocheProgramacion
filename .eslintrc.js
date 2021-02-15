@@ -4,16 +4,16 @@ module.exports = {
     amd: true,
     es6: true
   },
-  extends: ['eslint:recommended', 'p5js', 'p5js/dom', 'p5js/sound'],
+  extends: ['eslint:recommended', 'p5js', 'p5js/sound'],
   plugins: ['prettier'],
   rules: {
 
     'prettier/prettier': ['error', {
-      singleQuote: true
+      singleQuote: false
     }],
 
     'no-cond-assign': ['error', 'except-parens'],
-    
+
     'no-use-before-define': ['error', {
       'classes': false,
       'functions': false
@@ -30,7 +30,6 @@ module.exports = {
     // eqeqeq: ['error', 'smart'],
 
     // "semi": ['error', 'always'],
-
     "linebreak-style": ['error', 'unix'],
 
     'no-unused-vars': 'off',
@@ -55,7 +54,7 @@ module.exports = {
     "ecmaVersion": 11,
   },
   'overrides': [
-    
+
     // These are overrides for files where changes would make it hard for those coming from the video to understand.
 
     {
@@ -75,6 +74,6 @@ module.exports = {
         'no-use-before-define': 'off',
       },
     },
-  
+
   ],
 };
