@@ -11,8 +11,7 @@ int limite = 100;
 //Cámbialo dependiendo de tu circuito, usa el puerto serial para ver que valor es el mas indicado
 
 
-void setup()
-{
+void setup(){
   SensorC.set_CS_AutocaL_Millis(0xFFFFFFFF);
   //Inicializa el sensor y desactiva la autocorrecion
 
@@ -20,8 +19,7 @@ void setup()
   pinMode(led, OUTPUT);
 }
 
-void loop()
-{
+void loop(){
   long Valor =  SensorC.capacitiveSensor(30);
   //toma el dato del sensor en el tiempo establecido
 

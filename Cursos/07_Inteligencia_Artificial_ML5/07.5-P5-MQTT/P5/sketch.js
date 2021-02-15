@@ -8,7 +8,7 @@ var Clasificando = false;
 var InputTexbox;
 var BotonTexBox;
 
-let BrokerMQTT = 'broker.shiftr.io';
+let BrokerMQTT = "broker.shiftr.io";
 let PuertoMQTT = 80;
 let ClienteIDMQTT = "MQTT-P5";
 let UsuarioMQTT = "chepecarlos4";
@@ -47,14 +47,14 @@ function setup() {
   Camara.size(320, 240);
   Camara.hide();
 
-  modelo = ml5.featureExtractor('MobileNet', ModeloListo);
+  modelo = ml5.featureExtractor("MobileNet", ModeloListo);
   knn = ml5.KNNClassifier();
 
-  createP('Presiona Botones para entrenar');
+  createP("Presiona Botones para entrenar");
 
   var BotonArduino = createButton("Arduino");
   BotonArduino.class("BotonEntrenar");
-
+ambi
   var BotonRedboard = createButton("Redboard");
   BotonRedboard.class("BotonEntrenar");
 
@@ -169,25 +169,22 @@ const save = (knn, name) => {
     }
     return null;
   });
-  let fileName = 'myKNN.json';
+  let fileName = "myKNN.json";
   if (name) {
-    fileName = name.endsWith('.json') ? name : `${name}.json`;
+    fileName = name.endsWith(".json") ? name : `${name}.json`;
   }
-  saveFile(fileName, JSON.stringify({
-    dataset,
-    tensors
-  }));
+  saveFile(fileName, JSON.stringify({dataset, tensors}));
 };
 
 const saveFile = (name, data) => {
-  const downloadElt = document.createElement('a');
+  const downloadElt = document.createElement("a");
   const blob = new Blob([data], {
-    type: 'octet/stream'
+    type: "octet/stream"
   });
   const url = URL.createObjectURL(blob);
-  downloadElt.setAttribute('href', url);
-  downloadElt.setAttribute('download', name);
-  downloadElt.style.display = 'none';
+  downloadElt.setAttribute("href", url);
+  downloadElt.setAttribute("download", name);
+  downloadElt.style.display = "none";
   document.body.appendChild(downloadElt);
   downloadElt.click();
   document.body.removeChild(downloadElt);

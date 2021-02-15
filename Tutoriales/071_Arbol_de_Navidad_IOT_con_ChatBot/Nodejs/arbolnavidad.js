@@ -1,13 +1,13 @@
 /*jshint esversion: 6 */
-var Contastes = require('./Token');
+var Contastes = require("./Token");
 
-const TelegramBot = require('node-telegram-bot-api');
-const fs = require('fs');
+const TelegramBot = require("node-telegram-bot-api");
+const fs = require("fs");
 const NodeWebcam = require("node-webcam");
-var Jimp = require('jimp');
+var Jimp = require("jimp");
 
-var SerialPort = require('serialport');
-const Readline = require('@serialport/parser-readline');
+var SerialPort = require("serialport");
+const Readline = require("@serialport/parser-readline");
 var MiPuerto = new SerialPort(Contastes.puertoserial, {
   baudRate: 9600,
   autoOpen: true
@@ -18,7 +18,6 @@ MiPuerto.pipe(MiParse);
 const bot = new TelegramBot(Contastes.telegram_token, {
   polling: true
 });
-
 
 var opts = {
   width: 1280,
@@ -35,14 +34,13 @@ var opts = {
 var Webcam = NodeWebcam.create(opts);
 
 Webcam.list(function(list) {
-  console.log("Lista de camaras disponible:")
+  console.log("Lista de camaras disponible:");
   console.log(list);
 });
 
-
 console.log("Arbol de Navidad 2020");
 
-bot.on('message', (msg) => {
+bot.on("message", msg => {
   if (msg.from.is_bot) {
     console.log("Es un Bot");
   } else {
@@ -79,21 +77,21 @@ bot.on('message', (msg) => {
     } else if (EstaTexto(Mensaje, "inicio") || Mensaje == "/\start") {
       MensajeBienbenida(chatId);
     } else if (EstaTexto(Mensaje, "codigo") || Mensaje == "/\codigo") {
-      bot.sendMessage(chatId, 'Codigo fuente: https://github.com/alswnet/ArbolNavidad2020');
+      bot.sendMessage(chatId, "Codigo fuente: https://github.com/alswnet/ArbolNavidad2020");
     } else if (EstaTexto(Mensaje, "web") || Mensaje == "/\web") {
-      bot.sendMessage(chatId, 'Pagina web del proyecto: https://nocheprogramacion.com/arbolnavidad');
+      bot.sendMessage(chatId, "Pagina web del proyecto: https://nocheprogramacion.com/arbolnavidad");
     } else if (EstaTexto(Mensaje, "video") || Mensaje == "/\video") {
-      bot.sendMessage(chatId, 'Video proyecto: https://youtube.com/alswnet');
+      bot.sendMessage(chatId, "Video proyecto: https://youtube.com/alswnet");
     } else if (EstaTexto(Mensaje, "error") || Mensaje == "/\error") {
-      bot.sendMessage(chatId, 'Reporar Errores o problemas o ideas en: https://github.com/alswnet/ArbolNavidad2020/issues');
+      bot.sendMessage(chatId, "Reporar Errores o problemas o ideas en: https://github.com/alswnet/ArbolNavidad2020/issues");
     } else if (EstaTexto(Mensaje, "discord") || Mensaje == "/\discord") {
-      bot.sendMessage(chatId, 'Discord: https://nocheprogramacion.com/discord');
+      bot.sendMessage(chatId, "Discord: https://nocheprogramacion.com/discord");
     } else if (EstaTexto(Mensaje, "nocheprogramacion") || Mensaje == "tutorial" || Mensaje == "\/tutorial") {
-      bot.sendMessage(chatId, 'Tutoriales: https://nocheprogramacion.com');
+      bot.sendMessage(chatId, "Tutoriales: https://nocheprogramacion.com");
     } else if (EstaTexto(Mensaje, "programacionnews") || EstaTexto(Mensaje, "noticias") || Mensaje == "\/noticias") {
-      bot.sendMessage(chatId, 'Noticas: https://programacion.news');
+      bot.sendMessage(chatId, "Noticas: https://programacion.news");
     } else {
-      bot.sendMessage(chatId, 'No entiendo intenta con /ayuda o entra a https://nocheprogramacion.com/arbolnavidad');
+      bot.sendMessage(chatId, "No entiendo intenta con /ayuda o entra a https://nocheprogramacion.com/arbolnavidad");
     }
   }
 });
@@ -104,38 +102,38 @@ function SalvarUltimo(Mensaje) {
   var Fecha = FechaActual();
   var Texto = Mensaje.text;
   var data = {
-    'Nombre': Nombre,
-    'Fecha': Fecha,
-    'mensaje': Texto
+    Nombre: Nombre,
+    Fecha: Fecha,
+    mensaje: Texto
   }
 
   data = JSON.stringify(data);
-  fs.writeFileSync('Data/Ultimo.json', data);
+  fs.writeFileSync("Data/Ultimo.json", data);
 }
 
 function SalvarChat(Mensaje) {
-  var ID = Mensaje.chat.id
+  var ID = Mensaje.chat.id;
   var User = Mensaje.chat.username;
   var Lenguaje = Mensaje.language_code;
   var Nombre = Mensaje.chat.first_name;
   var Fecha = new Date(Mensaje.date * 1000);
   var Texto = Mensaje.text;
   var Salvar = {
-    'ID': ID,
-    'User': User,
-    'Nombre': Nombre,
-    'Fecha': Fecha,
-    'Texto': Texto,
-    'Lenguaje': Lenguaje
-  }
+    ID: ID,
+    User: User,
+    Nombre: Nombre,
+    Fecha: Fecha,
+    Texto: Texto,
+    Lenguaje: Lenguaje
+  };
 
-  fs.readFile('./Data/Historia.json', function(err, data) {
+  fs.readFile("./Data/Historia.json", function(err, data) {
     var json = JSON.parse(data);
     json.Historia.push(Salvar);
     fs.writeFile("./Data/Historia.json", JSON.stringify(json),
       function(err) {
         if (err) throw err;
-        console.log('The data was appended to file!');
+        console.log("The data was appended to file!");
       });
   });
 }
@@ -162,16 +160,16 @@ function MensajeBienbenida(ID) {
 }
 
 function ListaColor() {
-  let ArchivoColores = fs.readFileSync('Colores.json');
-  let Colores = JSON.parse(ArchivoColores)['Colores'];
+  let ArchivoColores = fs.readFileSync("Colores.json");
+  let Colores = JSON.parse(ArchivoColores)["Colores"];
   return Colores;
 }
 
 function MensajeListaColor(ID) {
   Colores = ListaColor();
-  var Mensaje = "Lista de *colores* disponibles:\n"
+  var Mensaje = "Lista de *colores* disponibles:\n";
   Colores.forEach((Color, i) => {
-    Mensaje += Color + "\n"
+    Mensaje += Color + "\n";
   });
   Mensaje += "*Ejemplo:*\n";
   Mensaje += "/color rojo";
@@ -185,10 +183,10 @@ function CambiarColorMatrix(ID, Mensaje) {
   Colores = ListaColor();
   MensajeColores = [];
   var TextoColor = "";
-  ParteMensaje = Mensaje.split(' ');
-  console.log(ParteMensaje)
+  ParteMensaje = Mensaje.split(" ");
+  console.log(ParteMensaje);
   if (ParteMensaje.length > 1) {
-    console.log("Empezando a procesar")
+    console.log("Empezando a procesar");
     for (var i = 1; i < ParteMensaje.length; i++) {
       Colores.forEach((Color, j) => {
         if (EstaTexto(ParteMensaje[i], Color)) {
@@ -198,14 +196,13 @@ function CambiarColorMatrix(ID, Mensaje) {
     }
   }
 
-
   if (MensajeColores.length > 0) {
     console.log("Enviando " + MensajeColores);
     TextoColor += "Se envio " + MensajeColores;
     MensajeMatrix(MensajeColores);
   } else {
     console.log("No suficiente valores");
-    TextoColor += "Lista de Color no esta en la lista intenta /listacolor"
+    TextoColor += "Lista de Color no esta en la lista intenta /listacolor";
   }
 
   bot.sendMessage(ID, TextoColor, {
@@ -214,15 +211,14 @@ function CambiarColorMatrix(ID, Mensaje) {
 }
 
 function CambiarColor(ID, Mensaje) {
-
   Colores = ListaColor();
   var Encontrado = false;
-  console.log(Mensaje, Colores.length)
+  console.log(Mensaje, Colores.length);
 
   for (var i = 0; i < Colores.length; i++) {
     console.log(i, Mensaje, Colores[i]);
     if (EstaTexto(Mensaje, Colores[i])) {
-      console.log("Color encontrado: " + Colores[i])
+      console.log("Color encontrado: " + Colores[i]);
       var TextoColor = "";
       if (MensajeSerial(Colores[i])) {
         TextoColor += "Cambiando el arbol a color:\n*";
@@ -238,9 +234,8 @@ function CambiarColor(ID, Mensaje) {
     }
   }
   if (!Encontrado) {
-    bot.sendMessage(ID, 'Color no esta en la lista intenta /listacolor');
+    bot.sendMessage(ID, "Color no esta en la lista intenta /listacolor");
   }
-
 }
 
 function MensajeMatrix(colores) {
@@ -267,7 +262,7 @@ function MensajeFoto(ID, Tiempo) {
   Webcam.capture(NombreImagen, function(err, data) {
     if (err) {
       console.log("Error con la camara");
-      bot.sendMessage(ID, 'Error con la camara, disculpa :( ');
+      bot.sendMessage(ID, "Error con la camara, disculpa :( ");
     } else {
       EditandoImagen(ID, NombreImagen);
       console.log("Foto Enviada " + NombreImagen);
@@ -276,50 +271,51 @@ function MensajeFoto(ID, Tiempo) {
 }
 
 async function EditandoImagen(ID, NombreImagen) {
-  console.log("EditandoImagen")
+  console.log("EditandoImagen");
   let ImagenBase = await Jimp.read(NombreImagen);
-  let Ultimo = fs.readFileSync('Data/Ultimo.json');
+  let Ultimo = fs.readFileSync("Data/Ultimo.json");
   Ultimo = JSON.parse(Ultimo);
-  let ImagenExtra = await Jimp.read("./Foto/Mascara.png")
+  let ImagenExtra = await Jimp.read("./Foto/Mascara.png");
   var Fuente = await Jimp.loadFont(Jimp.FONT_SANS_32_WHITE);
   await ImagenBase.resize(1080, Jimp.AUTO);
   ImagenExtra.composite(ImagenBase, 100, 120, {
     mode: Jimp.BLEND_DESTINATION_OVER,
     opacityDest: 1,
     opacitySource: 1
-  })
-  ImagenExtra.print(Fuente, 180, 655, "Nombre: " + Ultimo['Nombre'], 600);
-  ImagenExtra.print(Fuente, 180, 690, "Fecha: " + Ultimo['Fecha'], 600);
+  });
+  ImagenExtra.print(Fuente, 180, 655, "Nombre: " + Ultimo["Nombre"], 600);
+  ImagenExtra.print(Fuente, 180, 690, "Fecha: " + Ultimo["Fecha"], 600);
 
   await ImagenExtra.writeAsync(NombreImagen);
 
   bot.sendPhoto(ID, NombreImagen, {
-    caption: "Arbol configurado por " + Ultimo['Nombre'] + " a " + Ultimo['Fecha']
+    caption:
+      "Arbol configurado por " + Ultimo["Nombre"] + " a " + Ultimo["Fecha"]
   });
 }
 
 function FechaActual() {
-  var anno = (new Date()).getFullYear();
-  var mes = (new Date()).getMonth() + 1;
-  var dia = (new Date()).getDate();
-  var hora = (new Date()).getHours();
+  var FechaActual = new Date();
+  var anno = FechaActual.getFullYear();
+  var mes = FechaActual.getMonth() + 1;
+  var dia = FechaActual.getDate();
+  var hora = FechaActual.getHours();
   if (hora < 10) {
     hora = "0" + hora;
   }
-  var minuto = (new Date()).getMinutes();
+  var minuto = FechaActual.getMinutes();
   if (minuto < 10) {
     minuto = "0" + minuto;
   }
-  return hora + ":" + minuto + " " + dia + "/" + mes + "/" + anno
+  return hora + ":" + minuto + " " + dia + "/" + mes + "/" + anno;
 }
 
-
 function MensajeEstado(ID) {
-  let Ultimo = fs.readFileSync('Data/Ultimo.json');
+  let Ultimo = fs.readFileSync("Data/Ultimo.json");
   Ultimo = JSON.parse(Ultimo);
-  var Mensaje = "Ultima configuracion por: " + Ultimo['Nombre'] + "\n";
-  Mensaje += "Hora y Fecha: " + Ultimo['Fecha'] + "\n";
-  Mensaje += "Mensaje: " + Ultimo['mensaje'] + "\n";
+  var Mensaje = "Ultima configuracion por: " + Ultimo["Nombre"] + "\n";
+  Mensaje += "Hora y Fecha: " + Ultimo["Fecha"] + "\n";
+  Mensaje += "Mensaje: " + Ultimo["mensaje"] + "\n";
   Mensaje += "Puede tomarle foto con /foto";
   bot.sendMessage(ID, Mensaje, {
     parse_mode: "Markdown"
@@ -327,27 +323,26 @@ function MensajeEstado(ID) {
 }
 
 function MensajeAyuda(ID) {
-  var Mensaje = "El *Bot* tiene los siquientes comandos:\n"
+  var Mensaje = "El *Bot* tiene los siquientes comandos:\n";
   Mensaje += "/start  Mensaje de Bienbenida del Bot\n";
-  Mensaje += "/estado Devuelve estado actual del arbol colores y usuario\n"
+  Mensaje += "/estado Devuelve estado actual del arbol colores y usuario\n";
   Mensaje += "/foto Pedir foto del arbol actual\n";
   Mensaje += "/color {COLOR} Cambiar el color de arbol a un color de la lista\n";
-  Mensaje += "/matris {Color} {Color} ... {Color} Cambia el arbol en base a una secuencia de colores"
+  Mensaje += "/matris {Color} {Color} ... {Color} Cambia el arbol en base a una secuencia de colores";
   Mensaje += "/listacolor Muestra lista de colores para el arbol\n";
   Mensaje += "/tutorial Pedir sitio web de *Tutoriales* de ALSW\n";
   Mensaje += "/noticias Pedir sitio web de *Noticias* de ALSW\n";
-  Mensaje += "/discord Pedir Comunidad de *Discord* de ALSW\n"
+  Mensaje += "/discord Pedir Comunidad de *Discord* de ALSW\n";
   Mensaje += "/codigo Pedir codigo del proyecto\n";
   Mensaje += "/web Pedir pagina Web del proyectyo\n";
   Mensaje += "/video Pedir video del proyecto\n";
-  Mensaje += "/error Pedir sitio web para reportar errores\n"
+  Mensaje += "/error Pedir sitio web para reportar errores\n";
   Mensaje += "/ayuda  Para pedir ayuda de los comandos\n";
 
   bot.sendMessage(ID, Mensaje, {
     parse_mode: "Markdown"
   });
 }
-
 
 function MensajeDepuracion() {
   var Mensaje = "Se Cambio estado ";
@@ -356,9 +351,9 @@ function MensajeDepuracion() {
   });
 }
 
-MiParse.setEncoding('utf8');
+MiParse.setEncoding("utf8");
 
-MiParse.on('data', function(data) {
-  var Mensaje = data.split('/n');
+MiParse.on("data", function(data) {
+  var Mensaje = data.split("/n");
   console.log(Mensaje);
 });

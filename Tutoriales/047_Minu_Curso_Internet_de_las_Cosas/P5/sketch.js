@@ -2,8 +2,8 @@ let BotonActivar;
 let BotonApagar;
 let EstadoFondo = false;
 
-var client = mqtt.connect('wss://polloALSW:PolloSecreto@broker.shiftr.io', {
-  clientId: 'ControladorWeb'
+var client = mqtt.connect("wss://xxx:xxx@broker.shiftr.io", {
+  clientId: "ControladorWeb"
 });
 
 function draw() {
@@ -25,16 +25,15 @@ function setup() {
 
 function ApagarLed() {
   console.log("Apagnado Led");
-  client.publish('/ALSW/Led', '0');
+  client.publish("/ALSW/Led", "0");
 }
 
 function ActivarLed() {
   console.log("Encender Led");
-  client.publish('/ALSW/Led', '1');
+  client.publish("/ALSW/Led", "1");
 }
 
-
-client.on('connect', function() {
-  console.log('MQTT conectado');
-  client.subscribe('/ALSW/Boton');
+client.on("connect", function() {
+  console.log("MQTT conectado");
+  client.subscribe("/ALSW/Boton");
 });

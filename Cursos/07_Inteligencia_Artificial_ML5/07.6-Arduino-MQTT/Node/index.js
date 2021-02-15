@@ -1,11 +1,11 @@
 /*jshint esversion: 6 */
-let BrokerMQTT = 'mqtt://broker.shiftr.io';
+let BrokerMQTT = "mqtt://broker.shiftr.io";
 let PuertoMQTT = 1883;
 let ClienteIDMQTT = "MQTT-Nodejs";
 let UsuarioMQTT = "chepecarlos4";
 let ContrasenaMQTT = "secretoamor";
 
-const SerialPort = require('serialport');
+const SerialPort = require("serialport");
 const port = new SerialPort("/dev/ttyUSB0", {
   baudRate: 9600
 });
@@ -17,16 +17,16 @@ let Opciones = {
   password: ContrasenaMQTT
 };
 
-var mqtt = require('mqtt');
+var mqtt = require("mqtt");
 var client = mqtt.connect(BrokerMQTT, Opciones);
 
-client.on('connect', function() {
-  client.subscribe('/ALSW/Clasificar', function(err) {
+client.on("connect", function() {
+  client.subscribe("/ALSW/Clasificar", function(err) {
     console.log("MQTT Activado");
   });
 });
 
-client.on('message', function(topic, message) {
+client.on("message", function(topic, message) {
   let Mensaje = message.toString();
   if (Mensaje == "Encender") {
     console.log("Encender Foco");

@@ -8,7 +8,7 @@ function setup() {
   Camara.size(320, 240);
   Camara.hide();
 
-  createP('Presiona Botones para entrenar');
+  createP("Presiona Botones para entrenar");
 
   var BotonArduino = createButton("Arduino");
   BotonArduino.class("BotonEntrenar");
@@ -32,7 +32,6 @@ function setup() {
     BotonesEntrenar[B].style("padding", "6px");
     BotonesEntrenar[B].mousePressed(PresionandoBoton);
   }
-
 }
 
 function PresionandoBoton() {

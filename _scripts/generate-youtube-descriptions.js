@@ -203,12 +203,12 @@ function writeDescriptions(videos) {
     // General Links
     description += `
 🚂 Sitio Web: http://nocheprogramacion.com
-👾 Comparte tu creación! https://nocheprogramacion.com/Guias/Guia_Contribucion_Comunitaria
+👾 Comparte tu creación! https://nocheprogramacion.com/tucodigo
 🚩 Sugerir Temas: https://github.com/alswnet/NocheProgramacion/issues/new
 💡 GitHub: https://github.com/alswnet
 💬 Discord: https://nocheprogramacion.com/discord
-💖 Membrecia: http://youtube.com/alswnet/join
-💰 Paypal: https://paypal.me/alswnet
+💖 Apoyo: https://nocheprogramacion.com/apoyo
+💰 Donacion: https://nocheprogramacion.com/donar
 🌎 Noticias: https://programacion.news
 🖋️ Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet

@@ -7,9 +7,9 @@ var knn;
 var modelo;
 
 function setup() {
-  var ObtenerCanva = document.getElementById('micanva');
+  var ObtenerCanva = document.getElementById("micanva");
   var AnchoCanvas = ObtenerCanva.offsetWidth;
-  CartaMensaje = document.getElementById('CartaMensaje');
+  CartaMensaje = document.getElementById("CartaMensaje");
   CartaMensaje.innerText = "Cargando APP...";
   Camara = createCapture(VIDEO);
   // Camara.size(1280, 720);
@@ -19,7 +19,7 @@ function setup() {
   var sketchCanvas = createCanvas(AnchoCanvas, AltoCanvas);
   sketchCanvas.parent("micanva");
 
-  modelo = ml5.featureExtractor('MobileNet', ModeloListo);
+  modelo = ml5.featureExtractor("MobileNet", ModeloListo);
   knn = ml5.KNNClassifier();
 
   BotonesEntrenar = selectAll(".BotonEntrenar");
@@ -64,7 +64,7 @@ function draw() {
 }
 
 function windowResized() {
-  var ObtenerCanva = document.getElementById('micanva');
+  var ObtenerCanva = document.getElementById("micanva");
   var Ancho = ObtenerCanva.offsetWidth;
   var Alto = Ancho * RelacionCamara;
   resizeCanvas(Ancho, Alto);
