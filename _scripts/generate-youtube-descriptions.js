@@ -155,7 +155,7 @@ function writeDescriptions(videos) {
 
     // Links
     if (data.links) {
-      description += "\nLink reference del video:\n";
+      description += "\nLink referencie del video:\n";
       for (let i = 0; i < data.links.length; ++i) {
         const url = data.links[i].url;
         if (/https?:\/\/.*/.test(url)) { // starts with http:// or https://
@@ -212,6 +212,7 @@ function writeDescriptions(videos) {
 🌎 Noticias: https://programacion.news
 🖋️ Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet
+🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1
 
 Esta descripción fue auto-generada. Si ves algún problema, por favor reportarlo en https://github.com/alswnet/NocheProgramacion/issues/new`;
 
