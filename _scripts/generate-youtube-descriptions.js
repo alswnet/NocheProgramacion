@@ -1,6 +1,6 @@
-const fs = require('fs');
-const path = require('path');
-const yaml = require('yaml-front-matter');
+const fs = require("fs");
+const path = require("path");
+const yaml = require("yaml-front-matter");
 
 function findVideoFilesRecursive(dir, arrayOfFiles) {
   const files = fs.readdirSync(dir);
@@ -31,7 +31,6 @@ function getPlaylist(file) {
 }
 
 function getVideoData() {
-
   const directories = [
     '_Tutoriales',
     '_Cursos',
@@ -83,16 +82,12 @@ function getVideoID(url) {
   const location = url.substring(1, url.length);
   let page;
   try {
-    // link to page on the site
     page = fs.readFileSync(`./_${location}.md`, "UTF8");
   } catch (err) {
     try {
-      // link to series on site
       const files = fs.readdirSync(`./_${location}`);
-      // get first page in series
       page = fs.readFileSync(`./_${location}/${files[0]}.md`, "UTF8");
     } catch (e) {
-      // link to youtube playlist
       return url;
     }
   }
@@ -101,11 +96,9 @@ function getVideoID(url) {
 }
 
 function writeDescriptions(videos) {
-
-  primeDirectory('./descripciones');
+  primeDirectory("./descripciones");
 
   for (let i = 0; i < videos.length; i++) {
-
     const data = videos[i].data;
     const pageURL = videos[i].pageURL;
     const playlist = videos[i].playlist;
@@ -118,9 +111,9 @@ function writeDescriptions(videos) {
 
     // Code
     if (data.repository || data.web_editor) {
-      description += `\n💻 Codigo: https://thecodingtrain.com/${pageURL}.html\n`;
+      description += `\n💻 Codigo: https://nocheprogramacion.com/${pageURL}.html\n`;
     } else {
-      description += `\n🖥 Articulo: https://thecodingtrain.com/${pageURL}.html\n`;
+      description += `\n🖥 Articulo: https://nocheprogramacion.com/${pageURL}.html\n`;
     }
 
     // Next Video / Playlist
@@ -136,7 +129,7 @@ function writeDescriptions(videos) {
     }
 
     if (playlist || nextID) {
-      description += '\n';
+      description += `\n`;
       if (nextID) {
         description += `🎥 Siquiente video: https://youtu.be/${nextID}\n`;
       }
@@ -149,7 +142,7 @@ function writeDescriptions(videos) {
     if (data.topics) {
       description += "\nIndice:\n";
       for (let i = 0; i < data.topics.length; ++i) {
-        description += `${data.topics[i].time} ${data.topics[i].title}\n`
+        description += `${data.topics[i].time} ${data.topics[i].title}\n`;
       }
     }
 
@@ -158,10 +151,10 @@ function writeDescriptions(videos) {
       description += "\nLink referencie del video:\n";
       for (let i = 0; i < data.links.length; ++i) {
         const url = data.links[i].url;
-        if (/https?:\/\/.*/.test(url)) { // starts with http:// or https://
-          description += `🔗 ${data.links[i].title}: ${url}\n`
-        } else { // assume relative link in thecodingtrain.com
-          description += `🔗 ${data.links[i].title}: https://nocheprogramacion.com/${url}\n`
+        if (/https?:\/\/.*/.test(url)) {
+          description += `🔗 ${data.links[i].title}: ${url}\n`;
+        } else {
+          description += `🔗 ${data.links[i].title}: https://nocheprogramacion.com/${url}\n`;
         }
       }
     }
@@ -172,13 +165,13 @@ function writeDescriptions(videos) {
       for (let i = 0; i < data.piezas.length; ++i) {
         const url = data.piezas[i].url;
         if (url) {
-          if (/https?:\/\/.*/.test(url)) { // starts with http:// or https://
-            description += `🤖 ${data.piezas[i].title}: ${url}\n`
-          } else { // assume relative link in thecodingtrain.com
-            description += `🤖 ${data.piezas[i].title}: https://nocheprogramacion.com${url}\n`
+          if (/https?:\/\/.*/.test(url)) {
+            description += `🤖 ${data.piezas[i].title}: ${url}\n`;
+          } else {
+            description += `🤖 ${data.piezas[i].title}: https://nocheprogramacion.com${url}\n`;
           }
         } else {
-          description += `🤖 ${data.piezas[i].title}\n`
+          description += `🤖 ${data.piezas[i].title}\n`;
         }
       }
     }
@@ -188,13 +181,13 @@ function writeDescriptions(videos) {
       description += "\nOtros video mencionados en video:\n";
       for (let i = 0; i < data.videos.length; ++i) {
         if (data.videos[i].video_id) {
-          description += `🎥 ${data.videos[i].title}: https://youtu.be/${data.videos[i].video_id}\n`
+          description += `🎥 ${data.videos[i].title}: https://youtu.be/${data.videos[i].video_id}\n`;
         } else if (data.videos[i].url) {
           const url = data.videos[i].url;
-          if (/https?:\/\/.*/.test(url)) { // starts with http:// or https://
-            description += `🎥 ${data.videos[i].title}: ${url}\n`
-          } else { // assume relative link in thecodingtrain.com
-            description += `🎥 ${data.videos[i].title}: https://nocheprogramacion.com${url}\n`
+          if (/https?:\/\/.*/.test(url)) {
+            description += `🎥 ${data.videos[i].title}: ${url}\n`;
+          } else {
+            description += `🎥 ${data.videos[i].title}: https://nocheprogramacion.com${url}\n`;
           }
         }
       }
@@ -216,15 +209,22 @@ function writeDescriptions(videos) {
 
 Esta descripción fue auto-generada. Si ves algún problema, por favor reportarlo en https://github.com/alswnet/NocheProgramacion/issues/new`;
 
-    fs.writeFileSync(`descripciones/${data.video_id}.txt`, description);
-  }
+    let NombreArchivo = `${data.video_id}`;
+    if (data.video_number) {
+      NombreArchivo = `${data.video_number}_${NombreArchivo}`;
+    }
+    if (data.course_number) {
+      NombreArchivo = `${data.course_number}.${NombreArchivo}`;
+    }
 
+    let tipo = videos[i].pageURL.split("/")[0];
+    NombreArchivo = `${tipo}_${NombreArchivo}`;
+
+    fs.writeFileSync(`descripciones/${NombreArchivo}.txt`, description);
+  }
 }
 
 (() => {
-
-  console.log("💫 Generador de Description de Youtube 💫")
-
+  console.log("💫 Generador de Description de Youtube 💫");
   writeDescriptions(getVideoData());
-
 })();
