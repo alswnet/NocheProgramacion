@@ -205,9 +205,17 @@ function writeDescriptions(videos) {
 🌎 Noticias: https://programacion.news
 🖋️ Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet
-🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1
+🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1\n`;
 
-Esta descripción fue auto-generada. Si ves algún problema, por favor reportarlo en https://github.com/alswnet/NocheProgramacion/issues/new`;
+    if (data.tags) {
+      description += `\n#ALSW`;
+      for (let i = 0; i < data.tags.length; ++i) {
+        description += ` #` + data.tags[i];
+      }
+      description += `\n`;
+    }
+
+    description += `\nEsta descripción fue auto-generada. Si ves algún problema, por favor reportarlo en https://github.com/alswnet/NocheProgramacion/issues/new`;
 
     let NombreArchivo = `${data.video_id}`;
     if (data.video_number) {
