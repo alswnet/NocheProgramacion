@@ -4,6 +4,10 @@ video_number: 71
 date: 2020-12-19
 video_id: 2Wyt1yeKCFM
 repository: 071_Arbol_de_Navidad_IOT_con_ChatBot
+tags:
+  - telegram
+  - nodejs
+  - rasberrypi
 
 topics:
   - title: Inicio

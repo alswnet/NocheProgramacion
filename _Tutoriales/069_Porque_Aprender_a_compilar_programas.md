@@ -3,7 +3,9 @@ title: "Porque Aprender a compilar programas"
 video_number: 69
 date: 2020-12-04
 video_id: w4fFRfVoo-s
-
+tags:
+  - compilar
+  - git
 topics:
   - title: Inicio
     time: '00:00'

@@ -3,6 +3,8 @@ title: "Cambio de Politicas de WhatsApp"
 video_number: 72
 date: 2021-01-16
 video_id: vZjmfHzWdC0
+tags:
+  - whatsapp
 
 topics:
   - title: Inicio

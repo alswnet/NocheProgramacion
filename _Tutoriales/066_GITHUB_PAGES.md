@@ -3,7 +3,10 @@ title: "GITHUB PAGES - Hosting Gratis"
 video_number: 66
 date: 2020-10-02
 video_id: mDYVpJh-XQ8
-
+tags:
+  - github
+  - githubpage
+  - git
 topics:
   - title: "Introduccion"
     time: "00:00"
@@ -50,4 +53,4 @@ links:
 
 ---
 
-Un exelente lugar para subir tus Sitios web, ya seas para proyectos personales o comunidad o empresarial
+Necesitas un lugar donde subir tu pagina web de tu proyecto de portafolio, inteligencia artificial,  IOT, o cual quier Sitio web, te recomendamos usar Github Page una manera Gratis de tenes hosting 
