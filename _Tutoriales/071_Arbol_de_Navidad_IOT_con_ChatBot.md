@@ -14,7 +14,7 @@ links:
     url: "https://nocheprogramacion.com/arbolnavidad"
 
 videos:
-  - title: "Video Esecial Navideño 2020"
+  - title: "Video Especial Navideño 2020"
     author: "ALSW"
     url: "https://www.youtube.com/watch?v=2Wyt1yeKCFM&list=PLWQQswW6kqpU9MU68MFOa6Q6pbQ1mdDJQ"
 
