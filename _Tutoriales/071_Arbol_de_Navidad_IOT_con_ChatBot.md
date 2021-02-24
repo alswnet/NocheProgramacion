@@ -4,14 +4,31 @@ video_number: 71
 date: 2020-12-19
 video_id: 2Wyt1yeKCFM
 repository: 071_Arbol_de_Navidad_IOT_con_ChatBot
+tags:
+  - arduino
+  - telegram
+  - nodejs
+  - rasberrypi
 
 topics:
   - title: Inicio
     time: '00:00'
+  - title: Creando un ChatBot
+    time: '00:37'
+  - title: Curso de ChatBot
+    time: '05:03'
+  - title: Codigo arduino
+    time: '05:50'
+  - title: Servidor Nodejs
+    time: '09:37'
+  - title: Terminando
+    time: '14:19'
 
 links:
   - title: "Pagina Web del Bot"
     url: "https://nocheprogramacion.com/arbolnavidad"
+  - title: "Curso de Chatbot"
+    url: "/Cursos/01_Arduino_ChatBot_Telegram/"
 
 videos:
   - title: "Video Especial Navideño 2020"

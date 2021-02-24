@@ -229,6 +229,7 @@ function writeDescriptions(videos) {
     NombreArchivo = `${tipo}_${NombreArchivo}`;
 
     fs.writeFileSync(`descripciones/${NombreArchivo}.txt`, description);
+    fs.writeFileSync(`descripciones/Zen_${data.video_id}.txt`, description);
   }
 }
 

@@ -3,6 +3,7 @@ title: Arduino ChatBot con Telegram
 subtitle: Controla Arduino desde el celular
 series_number: 1
 layout: series-index
+playlist_id: PLWQQswW6kqpUAMe-CaF5lT2sHax-sZjMy
 redirect_from:
   - /chatbot
 ---
