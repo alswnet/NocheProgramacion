@@ -105,11 +105,18 @@ function writeDescriptions(videos) {
 
     let description = "";
 
-    // Description
+    // Descripcion
     let content = data.__content;
     description += `${content.trim()}\n`;
 
-    // Code
+    // ADS
+    if (data.ads) {
+      for (let i = 0; i < data.ads.length; ++i) {
+        description += `\n${data.ads[i].title} ${data.ads[i].url}\n`;
+      }
+    }
+
+    // Codigo
     if (data.repository || data.web_editor) {
       description += `\n💻 Codigo: https://nocheprogramacion.com/${pageURL}.html\n`;
     } else {

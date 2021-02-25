@@ -138,6 +138,12 @@ layout: base
       {% include 3-modules/link-list.html links=page.community_references title=referenceTitle suggestion=true%}
     {% endif %}
 
+    {% comment %} List of ads. {% endcomment %}
+    {% if page.ads %}
+      {% capture adsTitle %}ADS:{% endcapture %}
+      {% include 3-modules/link-list.html links=page.ads title=adsTitle %}
+    {% endif %}
+
     {% comment %} List of related parts. {% endcomment %}
     {% if page.parts %}
       {% capture partsTitle %}Otra partes de este {{ page.video_type_short | downcase}}{% endcapture %}
