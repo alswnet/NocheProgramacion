@@ -1,0 +1,32 @@
+{% comment %}
+  TODO: Limpiar documentacion
+  This module is used to render a list of links from a given array of link
+  objects. Those link objects can contain the folllowing properties:
+    - title string                  The link's title.
+    - video_id string               A youtube video id.
+    - playlist_id string            A youtube playlist id.
+    - url string                    Internal or external URL.
+    - author[.name] string|Author   The author's name of the linked content.
+    - author.url string             The author's URL of the linked content.
+    - source string                 Link to the source code of the link's destination.
+    - web_editor                    Link to p5.js web editor destination.
+    - pieza A ALSW producto name_id
+
+  Parameters:
+    title string    The title of this list of links.
+    tags Tags[]     The link objects to display in the list.
+    class string    A CSS class that should be applied to the list's container.
+    suggestion boolean If `true` the link is a suggestion
+{% endcomment %}
+
+
+<div class="link-list {{ include.class | xml_escape }}">
+  <h3>{{ include.title | xml_escape }}</h3>
+  <ul>
+    {% for tag in include.tags %}
+      <li>
+        <a href="/tag/{{ tag }}">#{{ tag }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

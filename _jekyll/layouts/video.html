@@ -54,6 +54,9 @@ layout: base
         {% include 3-modules/link-list.html links=page.topics title='Indice' class='topics' %}
       {% endif %}
 
+      {% if page.tags %}
+        {% include 3-modules/tags-list.html tags=page.tags title='tags' class='tags' %}
+      {% endif %}
     </div>
   </div>
 
