@@ -2,7 +2,10 @@
 layout: base
 ---
 
-<h2>Todo el contenido de #{{page.tag-name}}</h2>
+{% comment %} Show the page's subtitle. {% endcomment %}
+<div class="subtitle">
+  {{ page.subtitle | xml_escape }}
+</div>
 
 {% assign tag_post = '' | split: '' %}
 
