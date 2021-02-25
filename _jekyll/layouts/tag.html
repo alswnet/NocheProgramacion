@@ -1,0 +1,23 @@
+---
+layout: base
+---
+
+<h2>Todo el contenido de #{{page.tag-name}}</h2>
+
+{% assign tag_post = '' | split: '' %}
+
+{% for post in site.Tutoriales %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.Cursos %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=tag_post reverse=true %}
+
+{% include 3-modules/video-list.html sortedVideos=out_sortedVideos %}

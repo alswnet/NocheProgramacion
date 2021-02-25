@@ -4,6 +4,8 @@ video_number: 1
 date: 2014-10-24
 video_id: cjz_4ZptgqM
 repository: 001_Sensor_Capacitivo_Arduino
+tags:
+  - arduino
 
 links:
   - title: "Libreria de Sensor Capacitivo"

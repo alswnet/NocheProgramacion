@@ -134,7 +134,9 @@ collections:
   invitados:        { output: true }
   Grabaciones:      { output: true }
   redirects:        { output: true }
-
+  tag:
+    output: true
+    permalink: tag/:path/
 # --- Defaults ---
 
 defaults:
