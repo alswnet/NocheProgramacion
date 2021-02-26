@@ -83,6 +83,8 @@ function writeTagsPage(tags, cantidad) {
   let description = `---
 layout: base
 title: "Nube de tags"
+redirect_from:
+  - /tag
 ---\n
 <div class="link-list">`;
   description += "<ul>\n";
@@ -92,7 +94,7 @@ title: "Nube de tags"
 \t</li>\n`
   }
   description += "</ul>\n</div>"
-  fs.writeFileSync(`tag.md`, description);
+  fs.writeFileSync(`_tag/nube_tag.md`, description);
 }
 
 function writeDescriptions(videos) {
