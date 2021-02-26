@@ -25,7 +25,8 @@ function getVideoData() {
     '_Tutoriales',
     '_Cursos',
     '_RetoProgramacion',
-    '_Grabaciones'
+    '_Grabaciones',
+    '_invitados'
   ];
 
   let files = [];
@@ -65,22 +66,39 @@ function primeDirectory(dir) {
 }
 
 
-function writeTags(tag) {
+function writeTags(tag, cantidad) {
   let description = `---
 layout: tag
 title: "#tags"
-subtitle: "videos sobre #tags"
+subtitle: "total videos sobre #tags"
 tag-name: tags
 ---`;
   description = description.replaceAll('tags', tag);
+  description = description.replaceAll('total', cantidad);
 
   fs.writeFileSync(`_tag/${tag}.md`, description);
+}
+
+function writeTagsPage(tags, cantidad) {
+  let description = `---
+layout: base
+title: "Nube de tags"
+---\n`;
+  description += "<ul>\n";
+  for (let i = 0; i < tags.length; i++) {
+    description += `<li>
+<a href="/tag/` + tags[i] + `">#` + tags[i] + ` [` + cantidad[i] + `]</a>
+</li>\n`
+  }
+  description += "</ul>"
+  fs.writeFileSync(`tag.md`, description);
 }
 
 function writeDescriptions(videos) {
   primeDirectory("./_tag");
 
-  tags = []
+  let tags = []
+  let cantidad = []
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
 
@@ -88,14 +106,19 @@ function writeDescriptions(videos) {
       for (let i = 0; i < data.tags.length; ++i) {
         if (!tags.includes(data.tags[i])) {
           tags.push(data.tags[i]);
+          cantidad.push(1)
+        } else {
+          indice = tags.indexOf(data.tags[i])
+          cantidad[indice] += 1;
         }
       }
     }
   }
 
   for (let i = 0; i < tags.length; i++) {
-    writeTags(tags[i])
+    writeTags(tags[i], cantidad[i]);
   }
+  writeTagsPage(tags, cantidad);
 }
 
 (() => {
