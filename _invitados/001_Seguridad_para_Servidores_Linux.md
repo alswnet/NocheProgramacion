@@ -3,6 +3,9 @@ title: "Seguridad para Servidores Linux"
 video_number: 1
 date: 2020-06-22
 video_id: sLpnENxVKg0
+tags:
+  - linux
+  - servidor
 
 topics:
   - title: "Introduccion"
