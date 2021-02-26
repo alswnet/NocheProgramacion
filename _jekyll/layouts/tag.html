@@ -21,6 +21,6 @@ layout: base
   {% endif %}
 {% endfor %}
 
-{% include 1-tools/sort-videos.html videos=tag_post reverse=true %}
+{% include 1-tools/sort-videos.html videos=tag_post sortByDate=true reverse=true %}
 
 {% include 3-modules/video-list.html sortedVideos=out_sortedVideos %}
