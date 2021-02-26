@@ -70,11 +70,11 @@ function writeTags(tag, cantidad) {
   let description = `---
 layout: tag
 title: "#tags"
-subtitle: "total videos sobre #tags"
+subtitle: "videos sobre #tags"
 tag-name: tags
 ---`;
   description = description.replaceAll('tags', tag);
-  description = description.replaceAll('total', cantidad);
+  // description = description.replaceAll('total', cantidad);
 
   fs.writeFileSync(`_tag/${tag}.md`, description);
 }
@@ -83,14 +83,15 @@ function writeTagsPage(tags, cantidad) {
   let description = `---
 layout: base
 title: "Nube de tags"
----\n`;
+---\n
+<div class="link-list">`;
   description += "<ul>\n";
   for (let i = 0; i < tags.length; i++) {
-    description += `<li>
-<a href="/tag/` + tags[i] + `">#` + tags[i] + ` [` + cantidad[i] + `]</a>
-</li>\n`
+    description += `\t<li>
+\t\t<a href="/tag/` + tags[i] + `">#` + tags[i] + ` [` + cantidad[i] + `]</a>
+\t</li>\n`
   }
-  description += "</ul>"
+  description += "</ul>\n</div>>"
   fs.writeFileSync(`tag.md`, description);
 }
 
