@@ -1,6 +1,8 @@
 ---
 layout: base
 title: "Nube de tags"
+redirect_from:
+  - /tag
 ---
 
 <div class="link-list"><ul>
@@ -92,4 +94,4 @@ title: "Nube de tags"
 		<a href="/tag/robotica">#robotica [2]</a>
 	</li>
 </ul>
-</div>>
+</div>

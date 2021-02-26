@@ -91,7 +91,7 @@ title: "Nube de tags"
 \t\t<a href="/tag/` + tags[i] + `">#` + tags[i] + ` [` + cantidad[i] + `]</a>
 \t</li>\n`
   }
-  description += "</ul>\n</div>>"
+  description += "</ul>\n</div>"
   fs.writeFileSync(`tag.md`, description);
 }
 
