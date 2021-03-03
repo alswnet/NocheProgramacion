@@ -3,6 +3,7 @@ title: "Inteligente Artificial con ML5"
 subtitle: Reconocimiento de imagenes
 series_number: 7
 layout: series-index
+playlist_id: PLWQQswW6kqpUFsEd8jXxVCNDvHN34uR24
 redirect_from:
   - /ml5
 ---

@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [21]</a>
+		<a href="/tag/arduino">#arduino [22]</a>
 	</li>
 	<li>
 		<a href="/tag/github">#github [2]</a>
@@ -16,7 +16,7 @@ redirect_from:
 		<a href="/tag/githubpage">#githubpage [1]</a>
 	</li>
 	<li>
-		<a href="/tag/git">#git [6]</a>
+		<a href="/tag/git">#git [5]</a>
 	</li>
 	<li>
 		<a href="/tag/compilar">#compilar [1]</a>
@@ -25,7 +25,7 @@ redirect_from:
 		<a href="/tag/telegram">#telegram [9]</a>
 	</li>
 	<li>
-		<a href="/tag/nodejs">#nodejs [1]</a>
+		<a href="/tag/nodejs">#nodejs [6]</a>
 	</li>
 	<li>
 		<a href="/tag/rasberrypi">#rasberrypi [1]</a>
@@ -34,13 +34,28 @@ redirect_from:
 		<a href="/tag/whatsapp">#whatsapp [1]</a>
 	</li>
 	<li>
+		<a href="/tag/pcb">#pcb [1]</a>
+	</li>
+	<li>
+		<a href="/tag/fritzing">#fritzing [1]</a>
+	</li>
+	<li>
+		<a href="/tag/youtube">#youtube [1]</a>
+	</li>
+	<li>
+		<a href="/tag/python">#python [1]</a>
+	</li>
+	<li>
+		<a href="/tag/chatbot">#chatbot [1]</a>
+	</li>
+	<li>
 		<a href="/tag/windows">#windows [1]</a>
 	</li>
 	<li>
-		<a href="/tag/meld">#meld [3]</a>
+		<a href="/tag/meld">#meld [2]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [5]</a>
+		<a href="/tag/linux">#linux [4]</a>
 	</li>
 	<li>
 		<a href="/tag/p5js">#p5js [8]</a>
