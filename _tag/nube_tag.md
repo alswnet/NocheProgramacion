@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [22]</a>
+		<a href="/tag/arduino">#arduino [23]</a>
 	</li>
 	<li>
 		<a href="/tag/github">#github [2]</a>
