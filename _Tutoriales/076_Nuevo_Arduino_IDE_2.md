@@ -1,6 +1,6 @@
 ---
 title: "Lo Nuevo Arduino IDE 2.0 (Beta)"
-video_number: 75
+video_number: 76
 date: 2021-03-05
 video_id: 9s8AX8F6uLo
 tags:
