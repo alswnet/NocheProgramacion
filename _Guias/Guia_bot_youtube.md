@@ -39,6 +39,7 @@ Pronto Video de Juego de la vida en Youtube
 Reinicia el automata celular y cambias el tamaño de las celulas
 
 > **Ejemplo: reiniciar**  
+>
 > reiniciar
 
 #### color
@@ -55,9 +56,19 @@ colores disponibles:
 * amarillo
 * naranja
 * morado
+* rosado
 
 > **Ejemplo: color**  
+>
 > Color morado
+
+### color hex
+
+Cambia las color de la celula con un color especifico usando formato Hexadecimal del formato desde #000000 a #ffffff
+
+> **Ejemplo: Verde Limon**
+>
+> Color #6dc36d
 
 ## Errores o ideas
 
