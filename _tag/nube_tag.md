@@ -10,13 +10,13 @@ redirect_from:
 		<a href="/tag/arduino">#arduino [22]</a>
 	</li>
 	<li>
-		<a href="/tag/github">#github [2]</a>
+		<a href="/tag/github">#github [3]</a>
 	</li>
 	<li>
 		<a href="/tag/githubpage">#githubpage [1]</a>
 	</li>
 	<li>
-		<a href="/tag/git">#git [5]</a>
+		<a href="/tag/git">#git [6]</a>
 	</li>
 	<li>
 		<a href="/tag/compilar">#compilar [1]</a>
@@ -40,12 +40,6 @@ redirect_from:
 		<a href="/tag/fritzing">#fritzing [1]</a>
 	</li>
 	<li>
-		<a href="/tag/youtube">#youtube [1]</a>
-	</li>
-	<li>
-		<a href="/tag/python">#python [1]</a>
-	</li>
-	<li>
 		<a href="/tag/iot">#iot [1]</a>
 	</li>
 	<li>
@@ -59,6 +53,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/linux">#linux [4]</a>
+	</li>
+	<li>
+		<a href="/tag/gitlab">#gitlab [1]</a>
 	</li>
 	<li>
 		<a href="/tag/p5js">#p5js [8]</a>
