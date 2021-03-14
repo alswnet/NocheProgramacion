@@ -18,7 +18,3 @@ function EventoMensaje(topic, message) {
 
 client.on('connect', EventoConectar)
 client.on('message', EventoMensaje)
-
-function draw() {
-
-}
