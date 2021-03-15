@@ -25,7 +25,7 @@ redirect_from:
 		<a href="/tag/telegram">#telegram [9]</a>
 	</li>
 	<li>
-		<a href="/tag/nodejs">#nodejs [8]</a>
+		<a href="/tag/nodejs">#nodejs [9]</a>
 	</li>
 	<li>
 		<a href="/tag/rasberrypi">#rasberrypi [1]</a>
@@ -38,6 +38,18 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/fritzing">#fritzing [1]</a>
+	</li>
+	<li>
+		<a href="/tag/youtube">#youtube [2]</a>
+	</li>
+	<li>
+		<a href="/tag/python">#python [3]</a>
+	</li>
+	<li>
+		<a href="/tag/mqtt">#mqtt [4]</a>
+	</li>
+	<li>
+		<a href="/tag/javascript">#javascript [1]</a>
 	</li>
 	<li>
 		<a href="/tag/iot">#iot [1]</a>

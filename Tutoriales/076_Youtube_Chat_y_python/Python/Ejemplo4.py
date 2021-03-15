@@ -1,5 +1,5 @@
 import pytchat
-Video_id = "ID_Video"
+Video_id = "123456"
 chat = pytchat.create(video_id=Video_id)
 while chat.is_alive():
     for c in chat.get().sync_items():

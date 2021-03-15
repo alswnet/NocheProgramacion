@@ -2,7 +2,7 @@ import pytchat
 import os
 import json
 
-Video_id = "ID_Video"
+Video_id = "123456"
 chat = pytchat.create(video_id=Video_id)
 
 
