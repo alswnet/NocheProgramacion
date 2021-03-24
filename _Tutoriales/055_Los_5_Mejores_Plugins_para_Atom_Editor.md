@@ -3,6 +3,32 @@ title: "Los 5 Mejores Plugins para Atom Editor"
 video_number: 55
 date: 2020-05-08
 video_id: BCcneFIucG8
+tags:
+  - atom
+  - programacion
+  - atomide
+
+topics:
+  - title: "Introduccion"
+    time: "00:00"
+  - title: "Como instalar Plugin en atom"
+    time: "01:17"
+  - title: "teletype"
+    time: "01:58"
+  - title: "atom-beautify"
+    time: "02:58"
+  - title: "aton-live-server"
+    time: "04:08"
+  - title: "file-icons"
+    time: "05:34"
+  - title: "Minimap"
+    time: "06:17"
+  - title: "todo-show"
+    time: "07:19"
+  - title: "highlight-selected"
+    time: "09:02"
+  - title: "Despedida"
+    time: "09:47"
 
 links:
   - title: "Pagina de Atom IDE"
@@ -25,7 +51,7 @@ links:
     url: "https://atom.io/packages/teletype"
   - title: "Todo Show"
     url: "https://atom.io/packages/todo-show"
-    
+
 ---
 
-Mis paquetes extras para el IDE que con trabajo todos dias
+Atom IDE es uno de los mejor entorno de desarrollo pero siempre se puede mejorar con los 5 mejores plugins para Atom IDE, cada uno de ellos mejora el programa y eficiencia, esperamos que este tutorial les sea útil para mejor Atom Editor
