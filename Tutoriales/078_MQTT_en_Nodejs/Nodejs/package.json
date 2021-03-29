@@ -1,0 +1,14 @@
+{
+  "name": "demomqtt",
+  "version": "1.0.0",
+  "description": "demo de mqtt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chepecarlos",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.2.6"
+  }
+}

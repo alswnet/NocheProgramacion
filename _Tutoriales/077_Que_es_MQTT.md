@@ -26,7 +26,7 @@ topics:
     time: '09:25'
   - title: Donde usan MQTT
     time: '10:22'
-  
+
 links:
   - title: "Pagina de MQTT"
     url: "https://mqtt.org/"
@@ -34,6 +34,8 @@ links:
     url: "https://mqtt.org/software/"
   - title: "Broker propio Mosquitto"
     url: "https://mosquitto.org/"
+  - title: "Tutoriales de MQTT"
+    url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO"
 ---
 
 MQTT la mejor herramienta para IOT que te permite mandar mensaje de manera facil, eficiente y bajo consumo en tu red de IOT, acompañanos a aprender que es mqtt
