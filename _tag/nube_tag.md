@@ -7,16 +7,25 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [23]</a>
+		<a href="/tag/arduino">#arduino [24]</a>
 	</li>
 	<li>
-		<a href="/tag/github">#github [3]</a>
+		<a href="/tag/atom">#atom [1]</a>
+	</li>
+	<li>
+		<a href="/tag/programacion">#programacion [1]</a>
+	</li>
+	<li>
+		<a href="/tag/atomide">#atomide [1]</a>
+	</li>
+	<li>
+		<a href="/tag/github">#github [5]</a>
 	</li>
 	<li>
 		<a href="/tag/githubpage">#githubpage [1]</a>
 	</li>
 	<li>
-		<a href="/tag/git">#git [6]</a>
+		<a href="/tag/git">#git [7]</a>
 	</li>
 	<li>
 		<a href="/tag/compilar">#compilar [1]</a>
@@ -46,13 +55,16 @@ redirect_from:
 		<a href="/tag/python">#python [3]</a>
 	</li>
 	<li>
-		<a href="/tag/mqtt">#mqtt [4]</a>
+		<a href="/tag/mqtt">#mqtt [5]</a>
+	</li>
+	<li>
+		<a href="/tag/iot">#iot [5]</a>
 	</li>
 	<li>
 		<a href="/tag/javascript">#javascript [1]</a>
 	</li>
 	<li>
-		<a href="/tag/iot">#iot [1]</a>
+		<a href="/tag/gist">#gist [1]</a>
 	</li>
 	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
@@ -113,6 +125,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/android">#android [4]</a>
+	</li>
+	<li>
+		<a href="/tag/cli">#cli [1]</a>
 	</li>
 	<li>
 		<a href="/tag/servidor">#servidor [1]</a>
