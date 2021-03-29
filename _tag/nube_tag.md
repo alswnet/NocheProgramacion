@@ -34,7 +34,7 @@ redirect_from:
 		<a href="/tag/telegram">#telegram [9]</a>
 	</li>
 	<li>
-		<a href="/tag/nodejs">#nodejs [9]</a>
+		<a href="/tag/nodejs">#nodejs [8]</a>
 	</li>
 	<li>
 		<a href="/tag/rasberrypi">#rasberrypi [1]</a>
