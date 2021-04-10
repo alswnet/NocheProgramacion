@@ -208,6 +208,7 @@ function writeDescriptions(videos) {
 🚩 Sugerir Temas: https://github.com/alswnet/NocheProgramacion/issues/new
 💡 GitHub: https://github.com/alswnet
 💬 Discord: https://nocheprogramacion.com/discord
+☕ Compranos un cafe: https://www.buymeacoffee.com/alswnet
 💖 Apoyo: https://nocheprogramacion.com/apoyo
 💰 Donacion: https://nocheprogramacion.com/donar
 🌎 Noticias: https://programacion.news
