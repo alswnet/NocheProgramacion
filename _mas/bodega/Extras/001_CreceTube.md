@@ -3,6 +3,8 @@ title: "Tome CreceTube"
 video_number: 1
 date: 2017-06-22
 video_id: g_C-QdjUe-M
+tags:
+  - crecetube
 
 links:
   - title: "Pagina de CreceTube"
@@ -29,7 +31,21 @@ links:
     url: "https://socialblade.com/youtube/c/inversionesenelmundo"
   - title: "Canal 2 Video: Inversiones En el Mundo"
     url: "https://www.youtube.com/watch?v=Vc2Gx1MvS6A&t=1s"
-  - title: ""
+  - title: "Testimonio 3: Recetas de Cocina Chefdemicasa"
     url: "https://socialblade.com/youtube/user/chefdemicasa"
+  - title: "Testimonio 4: Hector Bannon"
+    url: "https://socialblade.com/youtube/channel/UCRsG-HEeIazlHY1L8us7Nlw"
+  - title: "Testimonio 5: MyDoctorWellness"
+    url: "https://socialblade.com/youtube/user/kikezamora"
+  - title: "Testimonio 6: TutorialesNecesarios"
+    url: "https://socialblade.com/youtube/user/tutorialesnecesarios"
+  - title: "Testimonio 7: José Antonio Carreño"
+    url: "https://socialblade.com/youtube/channel/UCmA7h3ANfs2E2-yNGO8tOSQ"
+  - title: "Testimonio 7: José Antonio Carreño Twitter"
+    url : "https://twitter.com/joseantcarreno/status/1338915567605059584/photo/1"
+  - title: "Busca en Twitter"
+    url: "https://twitter.com/search?q=%23crecetube%20until%3A2020-12-31&src=typed_query"
 
 ---
+
+E tomado una gran decision para mi vida y para el canal, quiero compartirlo con toda la comunidad de Maker :)

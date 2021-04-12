@@ -36,7 +36,8 @@ function getVideoData() {
     '_Cursos',
     '_RetoProgramacion',
     '_Grabaciones',
-    '_invitados'
+    '_invitados',
+    '_mas/bodega'
   ];
 
   let files = [];
