@@ -99,6 +99,8 @@ function getVideoID(url) {
 
 function writeDescriptions(videos) {
   primeDirectory("./descripciones");
+  primeDirectory("./actualizado");
+
 
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
@@ -237,6 +239,10 @@ function writeDescriptions(videos) {
 
     let tipo = videos[i].pageURL.split("/")[0];
     NombreArchivo = `${tipo}_${NombreArchivo}`;
+
+    if(data.actualizado){
+      fs.writeFileSync(`actualizado/${data.video_id}.txt`, description);
+    }
 
     fs.writeFileSync(`descripciones/${NombreArchivo}.txt`, description);
     fs.writeFileSync(`descripciones/Zen_${data.video_id}.txt`, description);
