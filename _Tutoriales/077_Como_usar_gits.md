@@ -1,6 +1,6 @@
 ---
 title: "Como usar gist para compartir codigo"
-video_number: 81
+video_number: 77
 date: 2021-04-07
 video_id: RmQuRzzK4e8
 tags:

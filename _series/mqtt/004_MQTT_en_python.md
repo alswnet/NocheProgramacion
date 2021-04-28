@@ -1,9 +1,9 @@
 ---
 title: "Ejemplo MQTT Python"
-video_number: 80
+video_number: 4
 date: 2021-04-05
 video_id: T362losqJys
-repository: 080_MQTT_en_python
+repository: 004_MQTT_en_python
 tags:
   - mqtt
   - python
@@ -24,8 +24,6 @@ topics:
     time: '06:22'
 
 links:
-  - title: "Tutoriales de MQTT"
-    url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO"
   - title: "Libreria MQTT Python"
     url: "https://pypi.org/project/paho-mqtt/"
 

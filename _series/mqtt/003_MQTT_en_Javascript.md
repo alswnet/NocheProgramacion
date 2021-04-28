@@ -1,10 +1,10 @@
 ---
 title: "Ejemplo MQTT in Javascript"
-video_number: 79
+video_number: 3
 date: 2021-03-31
 video_id: YR_1uoiSLFM
 web_editor: m5TSEXx40
-repository: 079_MQTT_en_Javascript
+repository: 002_MQTT_en_Javascript
 tags:
   - mqtt
   - javascript
@@ -27,10 +27,8 @@ topics:
     time: '07:09'
 
 links:
-  - title: "Tutoriales de MQTT"
-    url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO"
   - title: "Usar MQTT en Nodejs"
-    url: Tutoriales/078_MQTT_en_Nodejs
+    url: "https://www.youtube.com/watch?v=27LGJlSv0Ww"
   - title: "Plugin Aton Live-Server"
     url: "https://www.youtube.com/watch?v=BCcneFIucG8"
   - title: "Libreria mqtt.js Javascript"

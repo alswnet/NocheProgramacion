@@ -85,16 +85,13 @@ redirect_from:
 		<a href="/tag/python">#python [2]</a>
 	</li>
 	<li>
+		<a href="/tag/gist">#gist [1]</a>
+	</li>
+	<li>
 		<a href="/tag/mqtt">#mqtt [5]</a>
 	</li>
 	<li>
 		<a href="/tag/iot">#iot [5]</a>
-	</li>
-	<li>
-		<a href="/tag/javascript">#javascript [1]</a>
-	</li>
-	<li>
-		<a href="/tag/gist">#gist [1]</a>
 	</li>
 	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
@@ -149,6 +146,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/editarvideo">#editarvideo [3]</a>
+	</li>
+	<li>
+		<a href="/tag/javascript">#javascript [1]</a>
 	</li>
 	<li>
 		<a href="/tag/cli">#cli [1]</a>

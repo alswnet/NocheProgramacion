@@ -11,6 +11,15 @@
     <li><a href="{{ '/Tutoriales' | relative_url }}">Tutoriales</a></li>
 
     <li>
+      <button class="submenu-button top-link" aria-haspopup="true" for="serie-menu"><span>Series</span></button>
+      <div class="submenu" id="serie-menu">
+        <ul class="links">
+          <li><a href="{{ '/mqtt' | relative_url }}">MQTT</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
       <button class="submenu-button top-link" aria-haspopup="true" for="beginners-submenu"><span>Cursos</span></button>
       <div class="submenu" id="beginners-submenu">
         <ul class="links">

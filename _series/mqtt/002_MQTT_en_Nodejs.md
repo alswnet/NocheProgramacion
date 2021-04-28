@@ -1,9 +1,9 @@
 ---
 title: "Tutorial MQTT en Nodejs"
-video_number: 78
+video_number: 2
 date: 2021-03-29
 video_id: 27LGJlSv0Ww
-repository: 078_MQTT_en_Nodejs
+repository: 001_MQTT_en_Nodejs
 tags:
   - mqtt
   - nodejs
@@ -26,8 +26,6 @@ topics:
     time: '15:29'
 
 links:
-  - title: "Tutoriales de MQTT"
-    url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO"
   - title: "Libreria MQTT nodejs"
     url: "https://www.npmjs.com/package/mqtt"
 

@@ -131,6 +131,7 @@ includes_dir: _jekyll/includes
 collections:
   RetoProgramacion: { output: true }
   Cursos:           { output: true }
+  series:           { output: true }
   Tutoriales:       { output: true }
   Guias:            { output: true }
   Presentaciones:   { output: true }
@@ -156,6 +157,13 @@ defaults:
     values:
       layout:                 "video"
       video_type:             "curso"
+      can_contribute:         true
+
+  - scope:              { path: "", type: "series" }
+    values:
+      layout:                 "video"
+      video_type:             "series"
+      video_type_short:       "serie"
       can_contribute:         true
 
   - scope:              { path: "", type: "Tutoriales" }

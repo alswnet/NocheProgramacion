@@ -1,6 +1,6 @@
 ---
 title: "Que es MQTT"
-video_number: 77
+video_number: 1
 date: 2021-03-23
 video_id: T1_w8-8Y5kc
 tags:
@@ -34,8 +34,6 @@ links:
     url: "https://mqtt.org/software/"
   - title: "Broker propio Mosquitto"
     url: "https://mosquitto.org/"
-  - title: "Tutoriales de MQTT"
-    url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO"
 
 actualizado: true
 ---
