@@ -47,6 +47,8 @@ links:
 videos:
   - title: "Grabacion en vivo de pm2"
     url: "/Grabaciones/002_Grabacion_de_Tutorial_pm2.html"
+
+actualizado: true
 ---
 
 Aprende una de las herramientas que mas te ayudaran en el desarrollo en Nodejs para el lanzamiento, monitoreo y actualización de aplicaciones

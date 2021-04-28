@@ -7,7 +7,28 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [24]</a>
+		<a href="/tag/arduino">#arduino [28]</a>
+	</li>
+	<li>
+		<a href="/tag/brainjs">#brainjs [1]</a>
+	</li>
+	<li>
+		<a href="/tag/ia">#ia [1]</a>
+	</li>
+	<li>
+		<a href="/tag/javascrip">#javascrip [1]</a>
+	</li>
+	<li>
+		<a href="/tag/esp32">#esp32 [2]</a>
+	</li>
+	<li>
+		<a href="/tag/esp8266">#esp8266 [2]</a>
+	</li>
+	<li>
+		<a href="/tag/esp8255">#esp8255 [1]</a>
+	</li>
+	<li>
+		<a href="/tag/arduinoide">#arduinoide [1]</a>
 	</li>
 	<li>
 		<a href="/tag/atom">#atom [1]</a>
@@ -17,6 +38,15 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/atomide">#atomide [1]</a>
+	</li>
+	<li>
+		<a href="/tag/Materialize">#Materialize [1]</a>
+	</li>
+	<li>
+		<a href="/tag/css">#css [1]</a>
+	</li>
+	<li>
+		<a href="/tag/discord">#discord [1]</a>
 	</li>
 	<li>
 		<a href="/tag/github">#github [5]</a>
@@ -34,7 +64,7 @@ redirect_from:
 		<a href="/tag/telegram">#telegram [9]</a>
 	</li>
 	<li>
-		<a href="/tag/nodejs">#nodejs [8]</a>
+		<a href="/tag/nodejs">#nodejs [9]</a>
 	</li>
 	<li>
 		<a href="/tag/rasberrypi">#rasberrypi [1]</a>
@@ -49,10 +79,10 @@ redirect_from:
 		<a href="/tag/fritzing">#fritzing [1]</a>
 	</li>
 	<li>
-		<a href="/tag/youtube">#youtube [2]</a>
+		<a href="/tag/youtube">#youtube [1]</a>
 	</li>
 	<li>
-		<a href="/tag/python">#python [3]</a>
+		<a href="/tag/python">#python [2]</a>
 	</li>
 	<li>
 		<a href="/tag/mqtt">#mqtt [5]</a>
@@ -82,16 +112,16 @@ redirect_from:
 		<a href="/tag/gitlab">#gitlab [1]</a>
 	</li>
 	<li>
+		<a href="/tag/bluetooth">#bluetooth [6]</a>
+	</li>
+	<li>
+		<a href="/tag/android">#android [6]</a>
+	</li>
+	<li>
 		<a href="/tag/p5js">#p5js [8]</a>
 	</li>
 	<li>
 		<a href="/tag/ml5">#ml5 [8]</a>
-	</li>
-	<li>
-		<a href="/tag/esp32">#esp32 [1]</a>
-	</li>
-	<li>
-		<a href="/tag/esp8266">#esp8266 [1]</a>
 	</li>
 	<li>
 		<a href="/tag/processing">#processing [5]</a>
@@ -121,12 +151,6 @@ redirect_from:
 		<a href="/tag/editarvideo">#editarvideo [3]</a>
 	</li>
 	<li>
-		<a href="/tag/bluetooth">#bluetooth [4]</a>
-	</li>
-	<li>
-		<a href="/tag/android">#android [4]</a>
-	</li>
-	<li>
 		<a href="/tag/cli">#cli [1]</a>
 	</li>
 	<li>
@@ -134,6 +158,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/robotica">#robotica [2]</a>
+	</li>
+	<li>
+		<a href="/tag/crecetube">#crecetube [1]</a>
 	</li>
 </ul>
 </div>

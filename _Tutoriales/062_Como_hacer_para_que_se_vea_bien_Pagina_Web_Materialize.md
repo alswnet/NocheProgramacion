@@ -1,10 +1,13 @@
 ---
-title: "Como hacer para que se vea bien Pagina Web? Materialize"
+title: "Pagina web Profesional con Materialize"
 video_number: 62
 date: 2020-06-26
 video_id: ZhvNr8Bx-Tg
 web_editor: cQxs1P_Ws
 repository: 062_Como_hacer_para_que_se_vea_bien_Pagina_Web_Materialize
+tags:
+  - Materialize
+  - css
 
 topics:
   - title: "Introduccion"
@@ -32,7 +35,9 @@ topics:
 
 links:
  - title: "Materialize"
-   url: "https://materializecss.com/"
+   url: "https://materializecss.com"
+
+actualizado: true
 ---
 
 Deseas aprender como hacer tu pagina web tengan un mejor aspecto, en este tutorial te compartiré una manera muy sencilla que tus pagina web se vean muy bien usando usando Materialize.

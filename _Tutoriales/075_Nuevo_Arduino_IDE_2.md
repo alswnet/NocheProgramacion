@@ -38,6 +38,7 @@ links:
   - title: "Las mejoras Arduino IDE 2.0"
     url: "https://github.com/arduino/arduino-ide/releases/tag/2.0.0-beta.3"
 
+actualizado: true
 ---
 
 Quiere ver lo nuevo que trae Arduino IDE 2.0 en nuevo beta con muchas mejoras desde autocompletado, mejor editor y muchas cosas mas

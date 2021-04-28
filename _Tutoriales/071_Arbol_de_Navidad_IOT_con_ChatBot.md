@@ -35,6 +35,7 @@ videos:
     author: "ALSW"
     url: "https://www.youtube.com/watch?v=2Wyt1yeKCFM&list=PLWQQswW6kqpU9MU68MFOa6Q6pbQ1mdDJQ"
 
+actualizado: true
 ---
 
 Aprende a crear un sistema de control de árbol de navidad con IOT utilizando un chatbot o sistema automatico por mensajería en este especial de Navidad

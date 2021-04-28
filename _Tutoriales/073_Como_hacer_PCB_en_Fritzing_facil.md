@@ -47,6 +47,8 @@ links:
     url: "https://github.com/adafruit/Fritzing-Library"
   - title: "Diseña parte de fritzing"
     url: "https://learn.sparkfun.com/tutorials/make-your-own-fritzing-parts"
+
+actualizado: true
 ---
 
 Aprende a como hacer PCB, diagramas y esquemas para tus tarea, proyecto en un software de diseño de PCB que es muy fácil y rápido de aprender

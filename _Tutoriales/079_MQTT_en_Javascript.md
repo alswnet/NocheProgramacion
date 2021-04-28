@@ -35,6 +35,8 @@ links:
     url: "https://www.youtube.com/watch?v=BCcneFIucG8"
   - title: "Libreria mqtt.js Javascript"
     url: "https://cdnjs.com/libraries/mqtt"
+
+actualizado: true
 ---
 
 Quiere enviar y recibir atrevas de MQTT en tu pagina web usando Javascript este Tutorial te dará todos los ejemplos necesarios para empezar

@@ -7,6 +7,7 @@ tags:
   - github
   - githubpage
   - git
+
 topics:
   - title: "Introduccion"
     time: "00:00"
@@ -51,6 +52,7 @@ links:
   - title: FindingTube
     url: https://alswnet.github.io/FindingTube/
 
+actualizado: true
 ---
 
-Necesitas un lugar donde subir tu pagina web de tu proyecto de portafolio, inteligencia artificial,  IOT, o cual quier Sitio web, te recomendamos usar Github Page una manera Gratis de tenes hosting 
+Necesitas un lugar donde subir tu pagina web de tu proyecto de portafolio, inteligencia artificial,  IOT, o cual quier Sitio web, te recomendamos usar Github Page una manera Gratis de tenes hosting

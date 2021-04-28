@@ -36,6 +36,8 @@ links:
     url: "https://mosquitto.org/"
   - title: "Tutoriales de MQTT"
     url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO"
+
+actualizado: true
 ---
 
 MQTT la mejor herramienta para IOT que te permite mandar mensaje de manera facil, eficiente y bajo consumo en tu red de IOT, acompañanos a aprender que es mqtt

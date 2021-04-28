@@ -28,6 +28,8 @@ links:
     url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO"
   - title: "Libreria MQTT Python"
     url: "https://pypi.org/project/paho-mqtt/"
+
+actualizado: true
 ---
 
 Hoy usaremos el poder de MQTT en Python, con ejemplos de recibir y mandar información desde nuestro código en tutorial paso a paso

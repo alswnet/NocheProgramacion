@@ -18,6 +18,8 @@ videos:
   - title: "Curso de ChatBot"
     author: "ALSW"
     url: "/Cursos/01_Arduino_ChatBot_Telegram/"
+
+actualizado: true
 ---
 
 Un Reportaje de Noticieron Hecho Canal 12 El Salvador  de las nuevas politicas de Whatapp la seguridad, comparitr informacion y a donde se estan migrando las personas.  

@@ -149,17 +149,11 @@ function writeDescriptions(videos) {
       }
     }
 
-    // Timestamps
-    if (data.topics) {
-      description += "\nIndice:\n";
-      for (let i = 0; i < data.topics.length; ++i) {
-        description += `${data.topics[i].time} ${data.topics[i].title}\n`;
-      }
-    }
+
 
     // Links
     if (data.links) {
-      description += "\nLink referencie del video:\n";
+      description += "\nLink referencie:\n";
       for (let i = 0; i < data.links.length; ++i) {
         const url = data.links[i].url;
         if (/https?:\/\/.*/.test(url)) {
@@ -203,7 +197,13 @@ function writeDescriptions(videos) {
         }
       }
     }
-
+    // Indice del video
+    if (data.topics) {
+      description += "\nIndice:\n";
+      for (let i = 0; i < data.topics.length; ++i) {
+        description += `${data.topics[i].time} ${data.topics[i].title}\n`;
+      }
+    }
     // General Links
     description += `
 🚂 Sitio Web: http://nocheprogramacion.com
@@ -240,7 +240,7 @@ function writeDescriptions(videos) {
     let tipo = videos[i].pageURL.split("/")[0];
     NombreArchivo = `${tipo}_${NombreArchivo}`;
 
-    if(data.actualizado){
+    if (data.actualizado) {
       fs.writeFileSync(`actualizado/${data.video_id}.txt`, description);
     }
 

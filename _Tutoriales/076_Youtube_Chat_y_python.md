@@ -29,6 +29,8 @@ topics:
 links:
   - title: "Libreria dee pytchat"
     url: "https://pypi.org/project/pytchat/"
+
+actualizado: true
 ---
 
 Quiere poder hacer acciones especiales cuando manden comando o mensaje de Youtube hoy te compartimos como hacerlo en python con una librería muy fácil

@@ -34,6 +34,7 @@ links:
   - title: "Pagina de Gits"
     url: "https://gist.github.com/"
 
+actualizado: true
 ---
 
 Quiere compartir codigo por internet de manera que sea mas facil de entener tu codigo, script o funcion pasalo usando gits, una manera rapida y eficiente de compartir codigo por la web

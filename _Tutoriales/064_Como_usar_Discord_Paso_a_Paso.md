@@ -3,6 +3,8 @@ title: "Como usar Discord Paso a Paso?"
 video_number: 64
 date: 2020-07-10
 video_id: Cx_Udga-huk
+tags:
+  - discord
 
 topics:
   - title: "Introduccion"
@@ -28,7 +30,9 @@ links:
  - title: "Discord"
    url: "https://discord.com/"
  - title: "Discord de ALSW"
-   url: "https://discord.gg/ReRapub"   
+   url: "https://nocheprogramacion.com/discord"   
+
+actualizado: true
 ---
 
-Hoy les quiero mostrar como usar Discord desde como usarlo para hacer una video llamada y como crear tu propio servidor
+Hoy les quiero mostrar como usar Discord desde como usarlo para hacer una video llamada y como crear tu propio servidor, entre otras cosas que les ayudara. Especial para trabajar desde casa.

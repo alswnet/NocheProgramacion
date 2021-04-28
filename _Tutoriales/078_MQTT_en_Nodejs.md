@@ -30,6 +30,8 @@ links:
     url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO"
   - title: "Libreria MQTT nodejs"
     url: "https://www.npmjs.com/package/mqtt"
+
+actualizado: true
 ---
 
 Quiera aprender a enviar y recibir data por mqtt es este tutorial te enseñamos a usar la librería MQTT.js que te permitirá usar fácil esta gran protocolo iot  
