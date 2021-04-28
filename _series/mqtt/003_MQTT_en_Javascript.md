@@ -4,7 +4,7 @@ video_number: 3
 date: 2021-03-31
 video_id: YR_1uoiSLFM
 web_editor: m5TSEXx40
-repository: 002_MQTT_en_Javascript
+repository: mqtt/003_MQTT_en_Javascript
 tags:
   - mqtt
   - javascript

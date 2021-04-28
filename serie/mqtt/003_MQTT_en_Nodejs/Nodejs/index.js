@@ -1,6 +1,5 @@
-var client = mqtt.connect("ws://test.mosquitto.org:8080/mqtt");
-//Si lo usas en hosting para usar encriptado https
-// var client = mqtt.connect("wss://test.mosquitto.org:8081/mqtts")
+var mqtt = require("mqtt");
+var client = mqtt.connect("mqtt://test.mosquitto.org");
 
 function EventoConectar() {
   client.subscribe("ALSW/#", function(err) {

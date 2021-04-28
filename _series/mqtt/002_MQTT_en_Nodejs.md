@@ -3,7 +3,7 @@ title: "Tutorial MQTT en Nodejs"
 video_number: 2
 date: 2021-03-29
 video_id: 27LGJlSv0Ww
-repository: 001_MQTT_en_Nodejs
+repository: mqtt/002_MQTT_en_Nodejs
 tags:
   - mqtt
   - nodejs
