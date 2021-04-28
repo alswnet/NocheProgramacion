@@ -9,6 +9,12 @@ layout: base
 
 {% assign tag_post = '' | split: '' %}
 
+{% for post in site.series %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
 {% for post in site.invitados %}
   {% if post.tags contains page.tag-name %}
     {% assign tag_post = tag_post | push: post %}
