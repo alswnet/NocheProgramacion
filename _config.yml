@@ -7,7 +7,7 @@
 
 # --- Site Settings ---
 
-# The site's title.
+# Titulo de pagina Web
 title: Noche Programacion // ALSW
 
 # Location from where the site will be served (repository name for GitHub Pages).
@@ -50,7 +50,7 @@ code_variations:
   - lang: "Presentacion"
     folder: "Presentacion"
 
-# Links to other platforms.
+# Link a otro plataformas.
 links:
 
   # link de ALSW.
@@ -77,6 +77,9 @@ links:
   # Link de Donaciones
   paypal: https://www.paypal.me/alswnet
 
+  # Donaciones
+  donar: https://www.buymeacoffee.com/alswnet
+
 # SEO data for twitter
 twitter:
   username: alswnet
@@ -97,7 +100,8 @@ exclude:
     "vendor/cache/",
     "vendor/gems/",
     "vendor/ruby/",
-    "descripciones"
+    "descripciones",
+    "actualizado"
   ]
 
 # keep_files: ["Presentaciones"]
