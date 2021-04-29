@@ -1,6 +1,5 @@
 ---
 title: "Instalar y configurar Git en Linux"
-course_number: 2
 video_number: 3
 date: 2021-02-23
 video_id: 5zM5cv1Gz34
@@ -8,6 +7,7 @@ tags:
   - git
   - linux
   - meld
+  - github
 
 topics:
   - title: Introduccion

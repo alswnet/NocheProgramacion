@@ -1,10 +1,9 @@
 ---
 title: "Como conectar Bluetooth a Arduino"
-course_number: 13
 video_number: 1
 date: 2020-06-31
 video_id: Dg33caiaEzY
-repository: 13_Bluetooth_con_Arduino/13.1-Como_conecar_bluetooth_a_arduino
+repository: bluetooth_con_arduino/001_Como_conecar_bluetooth_a_arduino
 tags:
   - arduino
   - bluetooth
@@ -29,6 +28,8 @@ topics:
 links:
   - title: "App Bluetooth Terminal, Juan Sebastian Ochoa Zambrano"
     url: "https://play.google.com/store/apps/details?id=ptah.apps.bluetoothterminal"
+  - title: "Puerto Serial Emulado"
+    url: "https://www.arduino.cc/en/Reference/SoftwareSerial"
 
 actualizado: true
 ---

@@ -1,6 +1,5 @@
 ---
 title: "Introducción a git"
-course_number: 2
 video_number: 1
 date: 2021-02-18
 video_id: DbuoqYQ5VKM

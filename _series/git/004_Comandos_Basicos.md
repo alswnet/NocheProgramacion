@@ -1,6 +1,5 @@
 ---
 title: "Comando basico de Git"
-course_number: 2
 video_number: 4
 date: 2021-03-10
 video_id: evDa835ObTo

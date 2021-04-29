@@ -1,10 +1,9 @@
 ---
 title: "Como usar el modulo Bluetooth con Arduino - Avanzado"
-course_number: 13
 video_number: 3
 date: 2020-08-07
 video_id: yXHO9IJGzWw
-repository: 13_Bluetooth_con_Arduino/13.3-La_Manera_correcta_de_controlar_arduino_por_bluetooth
+repository: bluetooth_con_arduino/003_La_Manera_correcta_de_controlar_arduino_por_bluetooth
 tags:
   - arduino
   - bluetooth
@@ -41,6 +40,8 @@ topics:
 links:
   - title: "App Bluetooth Terminal, Juan Sebastian Ochoa Zambrano"
     url: "https://play.google.com/store/apps/details?id=ptah.apps.bluetoothterminal"
+  - title: "Puerto Serial Emulado"
+    url: "https://www.arduino.cc/en/Reference/SoftwareSerial"
 
 actualizado: true
 ---

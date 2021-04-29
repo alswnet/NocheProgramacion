@@ -1,6 +1,5 @@
 ---
 title: "Instalar y configurar Git en Windows"
-course_number: 2
 video_number: 2
 date: 2021-02-19
 video_id: jChUn5oaSW8
@@ -8,6 +7,7 @@ tags:
   - git
   - windows
   - meld
+  - github
 
 topics:
   - title: Inicio

@@ -1,10 +1,9 @@
 ---
 title: "Como Controlando un Led con Bluetooth en Arduino"
-course_number: 13
 video_number: 2
 date: 2020-08-05
 video_id: 1U2aCtLhS4o
-repository: 13_Bluetooth_con_Arduino/13.2-Como_controlar_un_arduino_por_bluetooth
+repository: bluetooth_con_arduino/002_Como_controlar_un_arduino_por_bluetooth
 tags:
   - arduino
   - bluetooth
@@ -29,6 +28,8 @@ topics:
 links:
   - title: "App Bluetooth Terminal, Juan Sebastian Ochoa Zambrano"
     url: "https://play.google.com/store/apps/details?id=ptah.apps.bluetoothterminal"
+  - title: "Puerto Serial Emulado"
+    url: "https://www.arduino.cc/en/Reference/SoftwareSerial"
 
 actualizado: true
 ---
