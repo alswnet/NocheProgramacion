@@ -57,7 +57,7 @@ faq:
       - title: "Curso robot con Arduino Bluetooth"
         url: Cursos/05_RedBot_App/
       - title: "Curso de Bluetooth con Arduino"
-        url: Cursos/13_Bluetooth_con_Arduino/
+        url: /bluetooth
       - title: "Pagina de Arduino IDE"
         url: "https://www.arduino.cc/en/main/software"
   - question: "Processing IDE"
@@ -93,7 +93,7 @@ faq:
     answer: "Una aplicacion para diseñar piesas 3D para proyectos tecnicos"
     links:
       - title: "Curso de FreeCAD"
-        url: Cursos/09_Curso_de_Freecad/
+        url: freecad
       - title: "Pagina de FreeCAD"
         url: "https://www.freecadweb.org/"
   - question: "Blender"
@@ -223,7 +223,7 @@ faq:
         url: "https://polychromatic.app"
   - question: "Linux Mint 20 Ulyana"
     section: "OS"
-    answer: "La distribución de Gnu/Linux que uso hace unos años, me gustas por los paquetes y configuracion que trae con defecto, por funciona fuera de la caja, Linux mint es basada en ubuntu que es basada en Debian. Intento siempre estar la ultima vercion disponible"
+    answer: "La distribución de Gnu/Linux que uso hace unos años, me gustas por los paquetes y configuracion que trae con defecto, por funciona fuera de la caja, Linux mint es basada en ubuntu que es basada en Debian. Intento siempre estar la ultima version disponible"
     links:
       - title: "Pagina de Linux mint"
         url: "https://linuxmint.com"
