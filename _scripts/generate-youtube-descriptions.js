@@ -11,8 +11,11 @@ function findVideoFilesRecursive(dir, arrayOfFiles) {
     if (fs.statSync(`${dir}/${file}`).isDirectory()) {
       arrayOfFiles = findVideoFilesRecursive(`${dir}/${file}`, arrayOfFiles);
     } else {
-      if (file !== 'index.md' && file.substring(file.length - 3, file.length) === '.md') {
-        arrayOfFiles.push(path.join(dir, '/', file));
+      if (
+        file !== "index.md" &&
+        file.substring(file.length - 3, file.length) === ".md"
+      ) {
+        arrayOfFiles.push(path.join(dir, "/", file));
       }
     }
   }
@@ -21,7 +24,7 @@ function findVideoFilesRecursive(dir, arrayOfFiles) {
 }
 
 function getPlaylist(file) {
-  const series = file.substring(0, file.lastIndexOf('/')) + '/index.md';
+  const series = file.substring(0, file.lastIndexOf("/")) + "/index.md";
   const content = fs.readFileSync(series);
   const parsed = yaml.loadFront(content);
   if (parsed.playlist_id) {
@@ -32,13 +35,13 @@ function getPlaylist(file) {
 
 function getVideoData() {
   const directories = [
-    '_Tutoriales',
-    '_Cursos',
-    '_series',
-    '_RetoProgramacion',
-    '_Grabaciones',
-    '_invitados',
-    '_mas/bodega'
+    "_Tutoriales",
+    "_Cursos",
+    "_series",
+    "_RetoProgramacion",
+    "_Grabaciones",
+    "_invitados",
+    "_mas/bodega"
   ];
 
   let files = [];
@@ -49,14 +52,14 @@ function getVideoData() {
   const videos = [];
 
   for (const file of files) {
-    const content = fs.readFileSync(`./${file}`, 'UTF8');
+    const content = fs.readFileSync(`./${file}`, "UTF8");
     const parsed = yaml.loadFront(content);
     let url = file.substring(1);
     url = url.substring(0, url.length - 3);
     videos.push({
       pageURL: url,
       data: parsed,
-      playlist: getPlaylist(file),
+      playlist: getPlaylist(file)
     });
   }
 
@@ -64,21 +67,23 @@ function getVideoData() {
 }
 
 function primeDirectory(dir) {
-
-  fs.rmdirSync(dir, {
-    recursive: true
-  }, (err) => {
-    if (err) {
-      throw err;
+  fs.rmdirSync(
+    dir,
+    {
+      recursive: true
+    },
+    err => {
+      if (err) {
+        throw err;
+      }
     }
-  });
+  );
 
   fs.mkdirSync(dir, err => {
     if (err) {
       throw err;
     }
   });
-
 }
 
 function getVideoID(url) {
@@ -101,7 +106,6 @@ function getVideoID(url) {
 function writeDescriptions(videos) {
   primeDirectory("./descripciones");
   primeDirectory("./actualizado");
-
 
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
@@ -131,7 +135,13 @@ function writeDescriptions(videos) {
     // Next Video / Playlist
     let nextID;
     if (i !== videos.length - 1) {
-      if (pageURL.substring(0, pageURL.lastIndexOf('/')) === videos[i + 1].pageURL.substring(0, videos[i + 1].pageURL.lastIndexOf('/'))) {
+      if (
+        pageURL.substring(0, pageURL.lastIndexOf("/")) ===
+        videos[i + 1].pageURL.substring(
+          0,
+          videos[i + 1].pageURL.lastIndexOf("/")
+        )
+      ) {
         nextID = videos[i + 1].data.video_id;
       } else {
         nextID = false;
@@ -149,8 +159,6 @@ function writeDescriptions(videos) {
         description += `🎥 Playlist: https://www.youtube.com/playlist?list=${playlist}\n`;
       }
     }
-
-
 
     // Links
     if (data.links) {
