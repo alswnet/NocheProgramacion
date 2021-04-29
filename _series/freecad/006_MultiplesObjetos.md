@@ -1,6 +1,5 @@
 ---
 title: "Revoluciones"
-course_number: 9
 video_number: 6
 date: 2020-04-15
 video_id: mEm7R_ND8aA

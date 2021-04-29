@@ -1,6 +1,5 @@
 ---
 title: "Operaciones booleanas"
-course_number: 9
 video_number: 2
 date: 2019-11-22
 video_id: tkBkhtaZcHk

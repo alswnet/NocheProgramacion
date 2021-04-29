@@ -1,6 +1,5 @@
 ---
 title: "Croquis"
-course_number: 9
 video_number: 3
 date: 2019-11-29
 video_id: X8_hQ_ajQ9M

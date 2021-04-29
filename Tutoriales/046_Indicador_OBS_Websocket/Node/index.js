@@ -84,7 +84,8 @@ obs.on("error", err => {
 
 function ConectnadoOBS() {
   console.log("Buscando OBS");
-  obs.connect({
+  obs
+    .connect({
       address: MaquinaOBS
     })
     .then(() => {

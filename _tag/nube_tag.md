@@ -49,7 +49,7 @@ redirect_from:
 		<a href="/tag/discord">#discord [1]</a>
 	</li>
 	<li>
-		<a href="/tag/github">#github [5]</a>
+		<a href="/tag/github">#github [7]</a>
 	</li>
 	<li>
 		<a href="/tag/githubpage">#githubpage [1]</a>
@@ -97,18 +97,6 @@ redirect_from:
 		<a href="/tag/chatbot">#chatbot [1]</a>
 	</li>
 	<li>
-		<a href="/tag/windows">#windows [1]</a>
-	</li>
-	<li>
-		<a href="/tag/meld">#meld [2]</a>
-	</li>
-	<li>
-		<a href="/tag/linux">#linux [4]</a>
-	</li>
-	<li>
-		<a href="/tag/gitlab">#gitlab [1]</a>
-	</li>
-	<li>
 		<a href="/tag/bluetooth">#bluetooth [6]</a>
 	</li>
 	<li>
@@ -146,6 +134,18 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/editarvideo">#editarvideo [3]</a>
+	</li>
+	<li>
+		<a href="/tag/windows">#windows [1]</a>
+	</li>
+	<li>
+		<a href="/tag/meld">#meld [2]</a>
+	</li>
+	<li>
+		<a href="/tag/linux">#linux [4]</a>
+	</li>
+	<li>
+		<a href="/tag/gitlab">#gitlab [1]</a>
 	</li>
 	<li>
 		<a href="/tag/javascript">#javascript [1]</a>

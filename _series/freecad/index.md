@@ -1,7 +1,6 @@
 ---
-title: "Freecad de Paso a Paso"
+title: "Freecad"
 subtitle: Modela piezas 3D desde Cero
-series_number: 9
 layout: series-index
 playlist_id: PLWQQswW6kqpUrvXvRX7V3o-B8UiQ0atGj
 redirect_from:

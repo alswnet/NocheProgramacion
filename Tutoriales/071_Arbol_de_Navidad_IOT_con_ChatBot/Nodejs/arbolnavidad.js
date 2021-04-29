@@ -49,7 +49,7 @@ bot.on("message", msg => {
     var Mensaje = msg.text.toLowerCase();
 
     if (chatId == Contastes.chatidadmin) {
-      if (EstaTexto(Mensaje, "depuracion") || Mensaje == "/\depuracion") {
+      if (EstaTexto(Mensaje, "depuracion") || Mensaje == "/depuracion") {
         console.log("Cambiando modo depuracion");
         MensajeDepuracion();
       }
@@ -58,44 +58,63 @@ bot.on("message", msg => {
     if (EstaTexto(Mensaje, "foto") || Mensaje == "/\foto") {
       console.log("Preperando tomar foto");
       MensajeFoto(chatId, msg.date);
-    } else if (EstaTexto(Mensaje, "estado") || Mensaje == "/\estado") {
+    } else if (EstaTexto(Mensaje, "estado") || Mensaje == "/estado") {
       console.log("Pidiendo estado");
       MensajeEstado(chatId);
-    } else if (EstaTexto(Mensaje, "listacolor") || Mensaje == "/\listacolor") {
+    } else if (EstaTexto(Mensaje, "listacolor") || Mensaje == "/listacolor") {
       console.log("Mandando Lista de colores");
       MensajeListaColor(chatId);
-    } else if (EstaTexto(Mensaje, "matris") || Mensaje == "/\matris") {
+    } else if (EstaTexto(Mensaje, "matris") || Mensaje == "/matris") {
       console.log("Cambiando a color matris");
       SalvarUltimo(msg);
       CambiarColorMatrix(chatId, Mensaje);
-    } else if (EstaTexto(Mensaje, "color") || Mensaje == "/\color") {
+    } else if (EstaTexto(Mensaje, "color") || Mensaje == "/color") {
       console.log("Cambiando a color");
       SalvarUltimo(msg);
       CambiarColor(chatId, Mensaje);
-    } else if (EstaTexto(Mensaje, "ayuda") || Mensaje == "/\ayuda") {
-      MensajeAyuda(chatId)
-    } else if (EstaTexto(Mensaje, "inicio") || Mensaje == "/\start") {
+    } else if (EstaTexto(Mensaje, "ayuda") || Mensaje == "/ayuda") {
+      MensajeAyuda(chatId);
+    } else if (EstaTexto(Mensaje, "inicio") || Mensaje == "/start") {
       MensajeBienbenida(chatId);
-    } else if (EstaTexto(Mensaje, "codigo") || Mensaje == "/\codigo") {
-      bot.sendMessage(chatId, "Codigo fuente: https://github.com/alswnet/ArbolNavidad2020");
-    } else if (EstaTexto(Mensaje, "web") || Mensaje == "/\web") {
-      bot.sendMessage(chatId, "Pagina web del proyecto: https://nocheprogramacion.com/arbolnavidad");
+    } else if (EstaTexto(Mensaje, "codigo") || Mensaje == "/codigo") {
+      bot.sendMessage(
+        chatId,
+        "Codigo fuente: https://github.com/alswnet/ArbolNavidad2020"
+      );
+    } else if (EstaTexto(Mensaje, "web") || Mensaje == "/web") {
+      bot.sendMessage(
+        chatId,
+        "Pagina web del proyecto: https://nocheprogramacion.com/arbolnavidad"
+      );
     } else if (EstaTexto(Mensaje, "video") || Mensaje == "/\video") {
       bot.sendMessage(chatId, "Video proyecto: https://youtube.com/alswnet");
-    } else if (EstaTexto(Mensaje, "error") || Mensaje == "/\error") {
-      bot.sendMessage(chatId, "Reporar Errores o problemas o ideas en: https://github.com/alswnet/ArbolNavidad2020/issues");
-    } else if (EstaTexto(Mensaje, "discord") || Mensaje == "/\discord") {
+    } else if (EstaTexto(Mensaje, "error") || Mensaje == "/error") {
+      bot.sendMessage(
+        chatId,
+        "Reporar Errores o problemas o ideas en: https://github.com/alswnet/ArbolNavidad2020/issues"
+      );
+    } else if (EstaTexto(Mensaje, "discord") || Mensaje == "/discord") {
       bot.sendMessage(chatId, "Discord: https://nocheprogramacion.com/discord");
-    } else if (EstaTexto(Mensaje, "nocheprogramacion") || Mensaje == "tutorial" || Mensaje == "\/tutorial") {
+    } else if (
+      EstaTexto(Mensaje, "nocheprogramacion") ||
+      Mensaje == "tutorial" ||
+      Mensaje == "/tutorial"
+    ) {
       bot.sendMessage(chatId, "Tutoriales: https://nocheprogramacion.com");
-    } else if (EstaTexto(Mensaje, "programacionnews") || EstaTexto(Mensaje, "noticias") || Mensaje == "\/noticias") {
+    } else if (
+      EstaTexto(Mensaje, "programacionnews") ||
+      EstaTexto(Mensaje, "noticias") ||
+      Mensaje == "/noticias"
+    ) {
       bot.sendMessage(chatId, "Noticas: https://programacion.news");
     } else {
-      bot.sendMessage(chatId, "No entiendo intenta con /ayuda o entra a https://nocheprogramacion.com/arbolnavidad");
+      bot.sendMessage(
+        chatId,
+        "No entiendo intenta con /ayuda o entra a https://nocheprogramacion.com/arbolnavidad"
+      );
     }
   }
 });
-
 
 function SalvarUltimo(Mensaje) {
   var Nombre = Mensaje.chat.first_name;
@@ -105,7 +124,7 @@ function SalvarUltimo(Mensaje) {
     Nombre: Nombre,
     Fecha: Fecha,
     mensaje: Texto
-  }
+  };
 
   data = JSON.stringify(data);
   fs.writeFileSync("Data/Ultimo.json", data);
@@ -130,11 +149,10 @@ function SalvarChat(Mensaje) {
   fs.readFile("./Data/Historia.json", function(err, data) {
     var json = JSON.parse(data);
     json.Historia.push(Salvar);
-    fs.writeFile("./Data/Historia.json", JSON.stringify(json),
-      function(err) {
-        if (err) throw err;
-        console.log("The data was appended to file!");
-      });
+    fs.writeFile("./Data/Historia.json", JSON.stringify(json), function(err) {
+      if (err) throw err;
+      console.log("The data was appended to file!");
+    });
   });
 }
 

@@ -25,7 +25,9 @@ topics:
 
 links:
   - title: "Libreria MQTT Python"
-    url: "https://pypi.org/project/paho-mqtt/"
+    url: "https://pypi.org/project/paho-mqtt"
+  - title: "Broker de prueba Mosquitto"
+    url: "https://test.mosquitto.org"
 
 actualizado: true
 ---
