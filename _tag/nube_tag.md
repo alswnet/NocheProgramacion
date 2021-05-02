@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [28]</a>
+		<a href="/tag/arduino">#arduino [29]</a>
 	</li>
 	<li>
 		<a href="/tag/brainjs">#brainjs [1]</a>
@@ -38,6 +38,12 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/atomide">#atomide [1]</a>
+	</li>
+	<li>
+		<a href="/tag/mqtt">#mqtt [6]</a>
+	</li>
+	<li>
+		<a href="/tag/python">#python [3]</a>
 	</li>
 	<li>
 		<a href="/tag/Materialize">#Materialize [1]</a>
@@ -82,13 +88,7 @@ redirect_from:
 		<a href="/tag/youtube">#youtube [1]</a>
 	</li>
 	<li>
-		<a href="/tag/python">#python [2]</a>
-	</li>
-	<li>
 		<a href="/tag/gist">#gist [1]</a>
-	</li>
-	<li>
-		<a href="/tag/mqtt">#mqtt [5]</a>
 	</li>
 	<li>
 		<a href="/tag/iot">#iot [5]</a>
@@ -112,12 +112,6 @@ redirect_from:
 		<a href="/tag/processing">#processing [5]</a>
 	</li>
 	<li>
-		<a href="/tag/freecad">#freecad [7]</a>
-	</li>
-	<li>
-		<a href="/tag/svg">#svg [1]</a>
-	</li>
-	<li>
 		<a href="/tag/obs">#obs [3]</a>
 	</li>
 	<li>
@@ -134,6 +128,15 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/editarvideo">#editarvideo [3]</a>
+	</li>
+	<li>
+		<a href="/tag/freecad">#freecad [7]</a>
+	</li>
+	<li>
+		<a href="/tag/inskcape">#inskcape [1]</a>
+	</li>
+	<li>
+		<a href="/tag/svg">#svg [1]</a>
 	</li>
 	<li>
 		<a href="/tag/windows">#windows [1]</a>

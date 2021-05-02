@@ -10,7 +10,7 @@ sections:
   - title: "Produccion"
 
 faq:
-  - question: "I have never coded before, where can I start?"
+  - question: "Nunca e programado nada, Por donde empiezo?"
     section: "General"
     answer: "I suggest starting with my Code! Programming with p5.js series."
     links:

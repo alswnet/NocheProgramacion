@@ -27,7 +27,7 @@ topics:
     time: "05:09"
   - title: "Salvad Proyecto"
     time: "06:00"
-  - title: "info de piesas"
+  - title: "info de piezas"
     time: "06:25"
   - title: "Como hazer zoom"
     time: "07:32"

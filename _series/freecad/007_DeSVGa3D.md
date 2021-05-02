@@ -5,6 +5,7 @@ date: 2020-07-15
 video_id: YW-reBitpQw
 tags:
   - freecad
+  - inskcape
   - svg
 
 topics:
