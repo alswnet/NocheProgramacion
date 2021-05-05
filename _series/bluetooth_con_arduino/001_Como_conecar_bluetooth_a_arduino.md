@@ -31,6 +31,12 @@ links:
   - title: "Puerto Serial Emulado"
     url: "https://www.arduino.cc/en/Reference/SoftwareSerial"
 
+piezas:
+  - title: "Arduino Uno R3 o Compatible"
+  - title: "Modulo Bluetooth HC-05"
+  - title: "Jumper Macho-Macho"
+  - title: "Breadboard"
+
 actualizado: true
 ---
 

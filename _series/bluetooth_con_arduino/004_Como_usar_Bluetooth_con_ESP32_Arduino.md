@@ -25,6 +25,9 @@ links:
   - title: "App Bluetooth Terminal, Juan Sebastian Ochoa Zambrano"
     url: "https://play.google.com/store/apps/details?id=ptah.apps.bluetoothterminal"
 
+piezas:
+  - title: "ESP32 o Compatible"
+
 actualizado: true
 ---
 
