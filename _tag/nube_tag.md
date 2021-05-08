@@ -145,7 +145,7 @@ redirect_from:
 		<a href="/tag/meld">#meld [2]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [4]</a>
+		<a href="/tag/linux">#linux [5]</a>
 	</li>
 	<li>
 		<a href="/tag/gitlab">#gitlab [1]</a>
@@ -155,6 +155,12 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/cli">#cli [1]</a>
+	</li>
+	<li>
+		<a href="/tag/bash">#bash [1]</a>
+	</li>
+	<li>
+		<a href="/tag/terminal">#terminal [1]</a>
 	</li>
 	<li>
 		<a href="/tag/servidor">#servidor [1]</a>

@@ -34,6 +34,8 @@ links:
 piezas:
   - title: "Arduino Uno R3 o Compatible"
   - title: "Modulo Bluetooth HC-05"
+  - title: "Led"
+  - title: "Resistencia 330 ohms"
   - title: "Jumper Macho-Macho"
   - title: "Breadboard"
 
