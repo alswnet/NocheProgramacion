@@ -1,0 +1,43 @@
+---
+title: "Conexión de 2 ESP32 con MQTT"
+video_number: 4
+date: 2021-05-13
+video_id: anISHJ6aiiM
+repository: 004_Conexion_2_ESP32_con_MQTT
+tags:
+  - mqtt
+  - esp32
+  - esp8266
+
+links:
+  - title: "Instalar ESP32 Arduino"
+    url: "https://github.com/espressif/arduino-esp32"
+  - title: "Instalar ESP8266 Arduino"
+    url: "https://github.com/esp8266/Arduino"
+  - title: "Broker MQTT (Mosquitto)"
+    url: "https://test.mosquitto.org/"
+  - title: "Libreria MQTT Arduino"
+    url: "https://github.com/256dpi/arduino-mqtt"
+  - title: "Que es MQTT"
+    url: mqtt
+
+piezas:
+  - title: "ESP32 o ESP8266 Arduino o compatible"
+  - title: "Led"
+  - title: "Resistencia 330ohm"
+  - title: "Boton"
+  - title: "Resistencia 10K"
+  - title: "BreanBoard"
+
+custom_sections:
+  - title: "Contactos de Robotics Space NV"
+    items:
+      - title: "Youtube"
+        url: "https://www.youtube.com/channel/UCrdmN7Dz21JjRm7YeMlrhxg?sub_confirmation=1"
+      - title: "Facebook"
+        url: "https://www.facebook.com/RoboticsSpaceNV"
+      - title: "Sitio web"
+        url: "https://roboticsspacenv01.blogspot.com/"
+---
+
+En este taller aprenderás a conectar y enviar datos entre dos placas ESP32 empleando el protocolo MQTT
