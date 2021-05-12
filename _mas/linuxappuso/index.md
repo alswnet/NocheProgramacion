@@ -292,6 +292,9 @@ faq:
     answer: "Es muy util poder tomar y mover la ventana con ALT, pero para algunos problemas que usan mas comando es bueno desactivarlo o cambiarlo con <Super>"
     links:
       - title: "gsettings set org.cinnamon.desktop.wm.preferences mouse-button-modifier '<Super>'"
+  - question: "Pront"
+    section: "OS"
+    anwser: "Hola"
 ---
 
 Las app que uso en mi pc con linux mint :) para que tomen inspiracion. Ire agregando mas aplicaciones interesantes a la lista
@@ -299,5 +302,11 @@ Las app que uso en mi pc con linux mint :) para que tomen inspiracion. Ire agreg
 ### Recomendaciones de app interesantes ?
 
 Tiene una recomendacion para probar alguna dejala aqui Link
+
+### prompt en Terminal
+
+```bash
+PS1="\[\e[0;1m\]┌─(\[\e[31;1m\]\u@\H\[\e[0;1m\])»{\[\e[36;1m\]\w\[\e[0;1m\]}\n└──┤ \[\e[0m\]"
+```
 
 # APP's

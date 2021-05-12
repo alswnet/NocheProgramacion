@@ -206,6 +206,26 @@ function writeDescriptions(videos) {
         }
       }
     }
+
+    // Partes Extras
+    if (data.custom_sections) {
+      description += `\nLink Extras:\n`;
+      for (let i = 0; i < data.custom_sections.length; ++i) {
+        if (data.custom_sections[i].title) {
+          description += `✪ ${data.custom_sections[i].title}:\n`;
+          for (let j = 0; j < data.custom_sections[i].items.length; ++j) {
+            const url = data.custom_sections[i].items[j].url;
+            const title = data.custom_sections[i].items[j].title;
+            if (/https?:\/\/.*/.test(url)) {
+              description += `➤ ${title}: ${url}\n`;
+            } else {
+              description += `➤ ${title}: https://nocheprogramacion.com${url}\n`;
+            }
+          }
+        }
+      }
+    }
+
     // Indice del video
     if (data.topics) {
       description += "\nIndice:\n";
@@ -215,6 +235,7 @@ function writeDescriptions(videos) {
     }
     // General Links
     description += `
+👏🏽 Subcribete: https://www.youtube.com/alswnet?sub_confirmation=1
 🚂 Sitio Web: http://nocheprogramacion.com
 👾 Comparte tu creación! https://nocheprogramacion.com/tucodigo
 🚩 Sugerir Temas: https://github.com/alswnet/NocheProgramacion/issues/new
