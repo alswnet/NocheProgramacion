@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [29]</a>
+		<a href="/tag/arduino">#arduino [30]</a>
 	</li>
 	<li>
 		<a href="/tag/brainjs">#brainjs [1]</a>
@@ -19,10 +19,10 @@ redirect_from:
 		<a href="/tag/javascrip">#javascrip [1]</a>
 	</li>
 	<li>
-		<a href="/tag/esp32">#esp32 [2]</a>
+		<a href="/tag/esp32">#esp32 [4]</a>
 	</li>
 	<li>
-		<a href="/tag/esp8266">#esp8266 [2]</a>
+		<a href="/tag/esp8266">#esp8266 [4]</a>
 	</li>
 	<li>
 		<a href="/tag/esp8255">#esp8255 [1]</a>
@@ -40,7 +40,7 @@ redirect_from:
 		<a href="/tag/atomide">#atomide [1]</a>
 	</li>
 	<li>
-		<a href="/tag/mqtt">#mqtt [6]</a>
+		<a href="/tag/mqtt">#mqtt [9]</a>
 	</li>
 	<li>
 		<a href="/tag/python">#python [3]</a>
@@ -109,7 +109,7 @@ redirect_from:
 		<a href="/tag/ml5">#ml5 [8]</a>
 	</li>
 	<li>
-		<a href="/tag/processing">#processing [5]</a>
+		<a href="/tag/processing">#processing [6]</a>
 	</li>
 	<li>
 		<a href="/tag/obs">#obs [3]</a>
@@ -145,7 +145,7 @@ redirect_from:
 		<a href="/tag/meld">#meld [2]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [5]</a>
+		<a href="/tag/linux">#linux [4]</a>
 	</li>
 	<li>
 		<a href="/tag/gitlab">#gitlab [1]</a>
@@ -154,13 +154,10 @@ redirect_from:
 		<a href="/tag/javascript">#javascript [1]</a>
 	</li>
 	<li>
+		<a href="/tag/java">#java [1]</a>
+	</li>
+	<li>
 		<a href="/tag/cli">#cli [1]</a>
-	</li>
-	<li>
-		<a href="/tag/bash">#bash [1]</a>
-	</li>
-	<li>
-		<a href="/tag/terminal">#terminal [1]</a>
 	</li>
 	<li>
 		<a href="/tag/servidor">#servidor [1]</a>
