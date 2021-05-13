@@ -11,13 +11,15 @@
 
 #include <MQTT.h>
 
-const char ssid[] = "ALSW_ESTUDIO";
-const char pass[] = "Fullpower7##";
+const char ssid[] = "chepecarlos";
+const char pass[] = "alswnet07";
 
 WiFiClient net;
 MQTTClient client;
 
-unsigned long lastMillis = 0;
+int Led = 4;
+int Boton = 15;
+boolean Estado = false;
 
 void connect() {
   Serial.print("Conencando a wifi...");
@@ -27,7 +29,7 @@ void connect() {
   }
 
   Serial.print("\nConectando a mqtt ***");
-  while (!client.connect("Arduino_ESP")) {
+  while (!client.connect("Arduino_ESP" + random(0, 100))) {
     Serial.print("*");
     delay(1000);
   }
@@ -39,13 +41,30 @@ void connect() {
 }
 
 void MensajeMQTT(String &topic, String &payload) {
-  Serial.println("incoming: " + topic + " - " + payload);
+  Serial.println("Mensaje: " + topic + " - " + payload);
+  if (topic == "/ALSW/Led") {
+    if (payload == "encender") {
+      digitalWrite(Led, 1);
+      Serial.println("Encender Led");
+    }
+    else {
+      digitalWrite(Led, 0);
+      Serial.println("Apagar Led");
+    }
+  }
 }
 
 void setup() {
+  pinMode(Led, OUTPUT);
+  pinMode(Boton, INPUT);
   Serial.begin(115200);
+  Serial.println();
+  WiFi.persistent(false);
+  WiFi.disconnect();
+  WiFi.mode(WIFI_OFF);
+  WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, pass);
-  
+
   client.begin("test.mosquitto.org", net);
   client.onMessage(MensajeMQTT);
 
@@ -54,14 +73,26 @@ void setup() {
 
 void loop() {
   client.loop();
-  delay(10); 
-  
+  delay(10);
+
   if (!client.connected()) {
     connect();
   }
 
-  if (millis() - lastMillis > 1000) {
-    lastMillis = millis();
-    client.publish("/ALSW/demo", "world");
+  if (digitalRead(Boton)) {
+    Estado = !Estado;
+    Serial.print("Cambiando estado ");
+    Serial.println(Estado);
+    if (Estado) {
+      client.publish("/ALSW/Led", "encender");
+    }
+    else {
+      client.publish("/ALSW/Led", "apagar");
+    }
+
+    do {
+      delay(50);
+    } while (digitalRead(Boton));
+    delay(100);
   }
 }

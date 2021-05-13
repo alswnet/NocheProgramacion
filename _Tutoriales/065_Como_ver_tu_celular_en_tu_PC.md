@@ -3,6 +3,9 @@ title: "Como ver tu celular en tu PC? - Scrcpy"
 video_number: 65
 date: 2020-07-13
 video_id: J3jB44ukDYc
+tags:
+  - scrcpy
+  - ControlaCelularPC
 
 topics:
   - title: "Inicio"
@@ -18,11 +21,13 @@ topics:
   - title: "Comandos extras"
     time: "03:48"
   - title: "Modo bajo recurso"
-    time: "04:31 "
+    time: "04:31"
 
 links:
  - title: "scrcpy"
    url: "https://github.com/Genymobile/scrcpy"
+
+actualizado: true
 ---
 
-Quieres aprender a controlar o ver tu celular en la PC, en este tutorial te compartiremos un programa que es fácil de usar, libre y  lo mejor gratis llamado Scrcpy
+Quieres aprender a controlar o ver tu celular en la PC, en este tutorial te compartiremos un programa que es fácil de usar, libre y lo mejor gratis llamado Scrcpy
