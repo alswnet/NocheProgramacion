@@ -8,15 +8,53 @@ tags:
   - esp8266
   - arduino
 
+topics:
+  - title: "Inicio"
+    time: "00:00"
+  - title: "1 Arduino IDE Oficial"
+    time: "00:57"
+  - title: "2 Instala via Git"
+    time: "01:43"
+  - title: "3 Driver FTDI"
+    time: "02:25"
+  - title: "4 Permisos en Linux"
+    time: "03:00"
+  - title: "5 Activar Depuracion Compilacion"
+    time: "03:22"
+  - title: "6 Librerias"
+    time: "04:10"
+  - title: "7 Tamaño Codigo"
+    time: "04:41"
+  - title: "8 Depurar ESP"
+    time: "05:39"
+  - title: "9 Github Issues"
+    time: "07:08"
+  - title: "10 Discord de ALSW"
+    time: "08:31"
+
 piezas:
-  - title: "ESP8266"
-  - title: "ESP32"
+  - title: "Arduino ESP8266"
+  - title: "Arduino ESP32"
 
 links:
+  - title: "Descargar Arduino IDE"
+    url: "https://www.arduino.cc/en/software"
   - title: "Arduino ESP8266"
     url: "https://github.com/esp8266/Arduino"
   - title: "Arduino ESP32"
     url: "https://github.com/espressif/arduino-esp32"
+  - title: "Driver FTDI Windos"
+    url: "https://ftdichip.com/drivers/vcp-drivers/"
+  - title: "Instalar Arduino IDE en Linux"
+    url: "https://youtu.be/vHd-eEcLw-s"
+  - title: "Errores con Arduino ESP32"
+    url: "https://github.com/espressif/arduino-esp32/issues"
+  - title: "Errores con Arduino ESP8266"
+    url: "https://github.com/esp8266/Arduino/issues"
+  - title: "Foro o Discord ALSW"
+    url: "https://nocheprogramacion.com/discord"
+
+actualizado: true
 ---
 
 Tu, al igual que nosotros, en algún momento del desarrollo de un proyecto con ESP32 o ESP8266 te surgen problemas con el IDE de arduino o la computadora misma, este video es para que aprendas a solventar dichos problemas.
