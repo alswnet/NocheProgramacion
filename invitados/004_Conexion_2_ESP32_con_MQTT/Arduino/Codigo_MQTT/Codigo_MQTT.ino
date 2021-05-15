@@ -1,5 +1,3 @@
-// Tutorial: https://nocheprogramacion.com/invitados/004_Conexion_2_ESP32_con_MQTT.html
-// Video: https://www.youtube.com/watch?v=anISHJ6aiiM
 
 #if defined(ESP32)
 #include <WiFi.h>
@@ -11,17 +9,18 @@
 
 #include <MQTT.h>
 
-const char ssid[] = "chepecarlos";
-const char pass[] = "alswnet07";
+const char ssid[] = "ALSW_ESTUDIO";
+const char pass[] = "Fullpower7##";
 
 WiFiClient net;
 MQTTClient client;
 
-int Led = 4;
-int Boton = 15;
+int Led = 5;
+int Boton = 4;
 boolean Estado = false;
 
-void connect() {
+void conectarMQTT() {
+
   Serial.print("Conencando a wifi...");
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
@@ -35,13 +34,16 @@ void connect() {
   }
 
   Serial.println("\nConectado a MQTT!");
-
   client.subscribe("/ALSW/#");
-  // client.unsubscribe("/ALSW/#");
+
 }
 
 void MensajeMQTT(String &topic, String &payload) {
-  Serial.println("Mensaje: " + topic + " - " + payload);
+  Serial.print("Topico");
+  Serial.print(topic);
+  Serial.print(" - ");
+  Serial.println( payload);
+
   if (topic == "/ALSW/Led") {
     if (payload == "encender") {
       digitalWrite(Led, 1);
@@ -52,23 +54,21 @@ void MensajeMQTT(String &topic, String &payload) {
       Serial.println("Apagar Led");
     }
   }
+
 }
 
 void setup() {
+
   pinMode(Led, OUTPUT);
   pinMode(Boton, INPUT);
   Serial.begin(115200);
-  Serial.println();
-  WiFi.persistent(false);
-  WiFi.disconnect();
-  WiFi.mode(WIFI_OFF);
-  WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, pass);
 
   client.begin("test.mosquitto.org", net);
   client.onMessage(MensajeMQTT);
 
-  connect();
+  conectarMQTT();
+
 }
 
 void loop() {
@@ -76,7 +76,7 @@ void loop() {
   delay(10);
 
   if (!client.connected()) {
-    connect();
+    conectarMQTT();
   }
 
   if (digitalRead(Boton)) {
