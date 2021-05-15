@@ -1,8 +1,8 @@
 ---
 title: "Conexión de 2 ESP32 con MQTT"
 video_number: 4
-date: 2021-05-13
-video_id: anISHJ6aiiM
+date: 2021-05-14
+video_id: y9hIIQi54DA
 repository: 004_Conexion_2_ESP32_con_MQTT
 tags:
   - mqtt
@@ -38,6 +38,8 @@ custom_sections:
         url: "https://www.facebook.com/RoboticsSpaceNV"
       - title: "Sitio web"
         url: "https://roboticsspacenv01.blogspot.com/"
+      - title: "Instagram"
+        url: "https://www.instagram.com/roboticsspacenv/"
 ---
 
 En este taller aprenderás a conectar y enviar datos entre dos placas ESP32 empleando el protocolo MQTT
