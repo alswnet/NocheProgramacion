@@ -9,8 +9,8 @@
 
 #include <MQTT.h>
 
-const char ssid[] = "ALSW_ESTUDIO";
-const char pass[] = "Fullpower7##";
+const char ssid[] = "";
+const char pass[] = "";
 
 WiFiClient net;
 MQTTClient client;
