@@ -46,6 +46,7 @@ links:
   - title: "Busca en Twitter"
     url: "https://twitter.com/search?q=%23crecetube%20until%3A2020-12-31&src=typed_query"
 
+actualizado: true
 ---
 
 E tomado una gran decision para mi vida y para el canal, quiero compartirlo con toda la comunidad de Maker :)
