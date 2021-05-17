@@ -235,7 +235,7 @@ function writeDescriptions(videos) {
     }
     // General Links
     description += `
-👏🏽 Subcribete: https://www.youtube.com/alswnet?sub_confirmation=1
+👏🏽 Subscribe: https://www.youtube.com/alswnet?sub_confirmation=1
 🚂 Sitio Web: http://nocheprogramacion.com
 👾 Comparte tu creación! https://nocheprogramacion.com/tucodigo
 🚩 Sugerir Temas: https://github.com/alswnet/NocheProgramacion/issues/new
