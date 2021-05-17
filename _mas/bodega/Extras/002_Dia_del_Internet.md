@@ -33,7 +33,7 @@ links:
   - title: "Fanpage de la conexion.sv"
     url: "https://www.facebook.com/conexion.sv"
   - title: "Link Carlas"
-    url: ""
+    url: "https://www.facebook.com/conexion.sv/videos/497839908079291/"
 
 custom_sections:
   - title: "Contactos de Lito Ibarra"
@@ -48,4 +48,4 @@ custom_sections:
 actualizado: true
 ---
 
-Conocer una de las historia mas interesante del Inicio de internet en El Salvador, con Lito Ibarra el Padre del Internet en el Salvador. Acompáñenos a un mundo sin Wifi 
+Conocer una de las historia mas interesante del Inicio de internet en El Salvador, con Lito Ibarra el Padre del Internet en el Salvador. Acompáñenos a un mundo sin Wifi
