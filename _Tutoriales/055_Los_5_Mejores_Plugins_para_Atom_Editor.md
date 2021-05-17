@@ -52,6 +52,7 @@ links:
   - title: "Todo Show"
     url: "https://atom.io/packages/todo-show"
 
+actualizado: true
 ---
 
 Atom IDE es uno de los mejor entorno de desarrollo pero siempre se puede mejorar con los 5 mejores plugins para Atom IDE, cada uno de ellos mejora el programa y eficiencia, esperamos que este tutorial les sea útil para mejor Atom Editor

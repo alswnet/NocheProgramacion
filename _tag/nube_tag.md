@@ -22,6 +22,15 @@ redirect_from:
 		<a href="/tag/linux">#linux [5]</a>
 	</li>
 	<li>
+		<a href="/tag/debian">#debian [1]</a>
+	</li>
+	<li>
+		<a href="/tag/ubuntu">#ubuntu [1]</a>
+	</li>
+	<li>
+		<a href="/tag/linuxmint">#linuxmint [1]</a>
+	</li>
+	<li>
 		<a href="/tag/esp32">#esp32 [4]</a>
 	</li>
 	<li>

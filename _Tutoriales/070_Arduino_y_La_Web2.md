@@ -3,6 +3,9 @@ title: "Arduino y La Web 2.0"
 video_number: 70
 date: 2020-12-09
 video_id: 7KQe_NQ4O8Y
+tags:
+  - arduino
+  - iot
 
 topics:
   - title: Inicio
@@ -29,6 +32,8 @@ topics:
     time: '07:20'
   - title: HTTP 8 Metodos
     time: '07:42'
+
+actualizado: true
 ---
 
 Una conferencia que es muy importante que quiere empezar en el mundo del IOT o internet de las cosas con una recapitulación de como se hacían las cosas antes con la Web 2.0 y arduino

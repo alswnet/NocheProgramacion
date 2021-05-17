@@ -6,6 +6,7 @@ video_id: w4fFRfVoo-s
 tags:
   - compilar
   - git
+
 topics:
   - title: Inicio
     time: '00:00'
@@ -31,6 +32,8 @@ topics:
     time: '05:34'
   - title: Restaurar
     time: '05:43'
+
+actualizado: true
 ---
 
 Acompañanos a aprender como se compila un programa, con un ejemplo paso a paso de las cosas que se necesitan entender para empezar en el mundo del desarrollo.
