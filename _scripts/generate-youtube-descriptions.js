@@ -254,10 +254,10 @@ function writeDescriptions(videos) {
       for (let i = 0; i < data.tags.length; ++i) {
         description += ` #` + data.tags[i];
       }
-      description += `\n`;
+      // description += `\n`;
     }
 
-    description += `\nEsta descripción fue auto-generada. Si ves algún problema, por favor reportarlo en https://github.com/alswnet/NocheProgramacion/issues/new`;
+    // description += `\nEsta descripción fue auto-generada. Si ves algún problema, por favor reportarlo en https://github.com/alswnet/NocheProgramacion/issues/new`;
 
     let NombreArchivo = `${data.video_id}`;
     if (data.video_number) {
