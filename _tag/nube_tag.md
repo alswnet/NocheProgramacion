@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [32]</a>
+		<a href="/tag/arduino">#arduino [33]</a>
 	</li>
 	<li>
 		<a href="/tag/brainjs">#brainjs [1]</a>
@@ -52,7 +52,7 @@ redirect_from:
 		<a href="/tag/atomide">#atomide [1]</a>
 	</li>
 	<li>
-		<a href="/tag/mqtt">#mqtt [10]</a>
+		<a href="/tag/mqtt">#mqtt [11]</a>
 	</li>
 	<li>
 		<a href="/tag/python">#python [3]</a>
@@ -85,7 +85,7 @@ redirect_from:
 		<a href="/tag/compilar">#compilar [1]</a>
 	</li>
 	<li>
-		<a href="/tag/iot">#iot [6]</a>
+		<a href="/tag/iot">#iot [7]</a>
 	</li>
 	<li>
 		<a href="/tag/telegram">#telegram [9]</a>
@@ -146,6 +146,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/editarvideo">#editarvideo [3]</a>
+	</li>
+	<li>
+		<a href="/tag/bucle">#bucle [1]</a>
 	</li>
 	<li>
 		<a href="/tag/freecad">#freecad [7]</a>
