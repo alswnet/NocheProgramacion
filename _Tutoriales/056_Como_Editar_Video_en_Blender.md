@@ -3,6 +3,9 @@ title: "Como Editar Video en Blender"
 video_number: 56
 date: 2020-05-11
 video_id: B2vVddfFhoA
+tags:
+  - blender
+  - EditarVideo
 
 topics:
   - title: "Introduccion"
@@ -39,14 +42,16 @@ topics:
     time: "45:47"
 
 links:
-  - titue: "Nuevo Curso de Edicion Video con Blende"
+  - title: "Nuevo Curso de Edicion Video con Blende"
     url: "https://nocheprogramacion.com/Cursos/11_Como_Editar_Video_Blender/"
-  - title: "Blender"
+  - title: "Pagina Blender"
     url:  "https://www.blender.org/"
-  - title: "Audacity"
+  - title: "Pagina Audacity"
     url:  "https://www.audacityteam.org/"
   - title: "Manual Blender Power Sequencer"
     url:  "https://www.gdquest.com/docs/power-sequencer/getting-started/"
+
+actualizado: true
 ---
 
-Te enseñamos paso a paso a editar un video como nosotros lo hacemos en ALSW, con un sofware muy potente y muy util para la creación de videos.
+Aprende paso a paso como editar video usando Blender, este tutorial especial te enseñaremos como nosotros editamos nuestros video para este canal de Youtube de ALSW. Te enseñaremos todo los trucos y técnicas para editar video en Blender
