@@ -247,6 +247,7 @@ function writeDescriptions(videos) {
 🌎 Noticias: https://programacion.news
 🖋️ Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet
+🔭 Telegram: https://t.me/alswnet
 🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1`;
 
     if (data.tags) {
