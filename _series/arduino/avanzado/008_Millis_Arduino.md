@@ -3,6 +3,8 @@ title: "Aprende que Significa Millis en ARDUINO"
 video_number: 8
 date: 2021-05-25
 video_id: LTwYvn8erZg
+repository: arduino/avanzado/008_millis
+
 tags:
   - arduino
   - millis
