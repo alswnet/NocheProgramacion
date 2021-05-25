@@ -45,6 +45,8 @@ links:
     url: "https://github.com/espressif/arduino-esp32"
   - title: "Driver FTDI Windos"
     url: "https://ftdichip.com/drivers/vcp-drivers/"
+  - title: "Driver CH340 Windos"
+    url: "http://www.wch.cn/downloads/CH341SER_ZIP.html"
   - title: "Instalar Arduino IDE en Linux"
     url: "https://youtu.be/vHd-eEcLw-s"
   - title: "Errores con Arduino ESP32"
