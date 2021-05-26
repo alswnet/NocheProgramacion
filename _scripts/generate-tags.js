@@ -22,13 +22,14 @@ function findVideoFilesRecursive(dir, arrayOfFiles) {
 
 function getVideoData() {
   const directories = [
-    '_Tutoriales',
-    '_Cursos',
-    '_series',
-    '_RetoProgramacion',
-    '_Grabaciones',
-    '_invitados',
-    '_mas/bodega'
+    "_Tutoriales",
+    "_Cursos",
+    "_series",
+    "_shorts",
+    "_RetoProgramacion",
+    "_Grabaciones",
+    "_invitados",
+    "_mas/bodega"
   ];
 
   let files = [];

@@ -139,6 +139,7 @@ collections:
   invitados:        { output: true }
   Grabaciones:      { output: true }
   redirects:        { output: true }
+  shorts:           { output: true }
   tag:
     output: true
     permalink: tag/:path/
@@ -171,6 +172,13 @@ defaults:
       layout:                 "video"
       video_type:             "tutoriales"
       video_type_short:       "tutorial"
+      can_contribute:         true
+
+  - scope:              { path: "", type: "shorts" }
+    values:
+      layout:                 "video"
+      video_type:             "shorts"
+      video_type_short:       "short"
       can_contribute:         true
 
   - scope:              { path: "", type: "Grabaciones" }

@@ -37,6 +37,7 @@ function getVideoData() {
   const directories = [
     "_Tutoriales",
     "_Cursos",
+    "_shorts",
     "_series",
     "_RetoProgramacion",
     "_Grabaciones",
