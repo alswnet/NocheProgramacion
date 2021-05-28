@@ -11,8 +11,8 @@ function findVideoFilesRecursive(dir, arrayOfFiles) {
     if (fs.statSync(`${dir}/${file}`).isDirectory()) {
       arrayOfFiles = findVideoFilesRecursive(`${dir}/${file}`, arrayOfFiles);
     } else {
-      if (file !== 'index.md' && file.substring(file.length - 3, file.length) === '.md') {
-        arrayOfFiles.push(path.join(dir, '/', file));
+      if (file !== "index.md" && file.endsWith(".md")) {
+        arrayOfFiles.push(path.join(dir, "/", file));
       }
     }
   }
@@ -40,10 +40,10 @@ function getVideoData() {
   const videos = [];
 
   for (const file of files) {
-    const content = fs.readFileSync(`./${file}`, 'UTF8');
+    const content = fs.readFileSync(`./${file}`, "UTF8");
     const parsed = yaml.loadFront(content);
     videos.push({
-      data: parsed,
+      data: parsed
     });
   }
 
@@ -51,7 +51,6 @@ function getVideoData() {
 }
 
 function primeDirectory(dir) {
-
   fs.rmdirSync(dir, {
     recursive: true
   }, (err) => {
@@ -65,7 +64,6 @@ function primeDirectory(dir) {
       throw err;
     }
   });
-
 }
 
 
@@ -76,7 +74,7 @@ title: "#tags"
 subtitle: "videos sobre #tags"
 tag-name: tags
 ---`;
-  description = description.replaceAll('tags', tag);
+  description = description.replaceAll("tags", tag);
   // description = description.replaceAll('total', cantidad);
 
   fs.writeFileSync(`_tag/${tag}.md`, description);
@@ -94,17 +92,17 @@ redirect_from:
   for (let i = 0; i < tags.length; i++) {
     description += `\t<li>
 \t\t<a href="/tag/` + tags[i] + `">#` + tags[i] + ` [` + cantidad[i] + `]</a>
-\t</li>\n`
+\t</li>\n`;
   }
-  description += "</ul>\n</div>"
+  description += "</ul>\n</div>";
   fs.writeFileSync(`_tag/nube_tag.md`, description);
 }
 
 function writeDescriptions(videos) {
   primeDirectory("./_tag");
 
-  let tags = []
-  let cantidad = []
+  let tags = [];
+  let cantidad = [];
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
 
@@ -112,9 +110,9 @@ function writeDescriptions(videos) {
       for (let i = 0; i < data.tags.length; ++i) {
         if (!tags.includes(data.tags[i])) {
           tags.push(data.tags[i]);
-          cantidad.push(1)
+          cantidad.push(1);
         } else {
-          indice = tags.indexOf(data.tags[i])
+          indice = tags.indexOf(data.tags[i]);
           cantidad[indice] += 1;
         }
       }
