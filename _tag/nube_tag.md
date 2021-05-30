@@ -7,7 +7,19 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [34]</a>
+		<a href="/tag/arduino">#arduino [37]</a>
+	</li>
+	<li>
+		<a href="/tag/lcd">#lcd [1]</a>
+	</li>
+	<li>
+		<a href="/tag/ftdi">#ftdi [1]</a>
+	</li>
+	<li>
+		<a href="/tag/linux">#linux [7]</a>
+	</li>
+	<li>
+		<a href="/tag/youtube">#youtube [2]</a>
 	</li>
 	<li>
 		<a href="/tag/brainjs">#brainjs [1]</a>
@@ -17,9 +29,6 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/javascrip">#javascrip [1]</a>
-	</li>
-	<li>
-		<a href="/tag/linux">#linux [5]</a>
 	</li>
 	<li>
 		<a href="/tag/debian">#debian [1]</a>
@@ -40,7 +49,7 @@ redirect_from:
 		<a href="/tag/esp8255">#esp8255 [1]</a>
 	</li>
 	<li>
-		<a href="/tag/arduinoide">#arduinoide [1]</a>
+		<a href="/tag/arduinoide">#arduinoide [2]</a>
 	</li>
 	<li>
 		<a href="/tag/atom">#atom [1]</a>
@@ -68,6 +77,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/css">#css [1]</a>
+	</li>
+	<li>
+		<a href="/tag/macro">#macro [1]</a>
 	</li>
 	<li>
 		<a href="/tag/discord">#discord [1]</a>
@@ -100,7 +112,7 @@ redirect_from:
 		<a href="/tag/nodejs">#nodejs [9]</a>
 	</li>
 	<li>
-		<a href="/tag/rasberrypi">#rasberrypi [1]</a>
+		<a href="/tag/rasberrypi">#rasberrypi [2]</a>
 	</li>
 	<li>
 		<a href="/tag/whatsapp">#whatsapp [1]</a>
@@ -110,9 +122,6 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/fritzing">#fritzing [1]</a>
-	</li>
-	<li>
-		<a href="/tag/youtube">#youtube [1]</a>
 	</li>
 	<li>
 		<a href="/tag/gist">#gist [1]</a>
@@ -179,6 +188,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/java">#java [1]</a>
+	</li>
+	<li>
+		<a href="/tag/shorts">#shorts [2]</a>
 	</li>
 	<li>
 		<a href="/tag/cli">#cli [1]</a>
