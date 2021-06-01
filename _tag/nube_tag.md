@@ -16,7 +16,7 @@ redirect_from:
 		<a href="/tag/ftdi">#ftdi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [7]</a>
+		<a href="/tag/linux">#linux [9]</a>
 	</li>
 	<li>
 		<a href="/tag/youtube">#youtube [2]</a>
@@ -91,13 +91,13 @@ redirect_from:
 		<a href="/tag/ControlaCelularPC">#ControlaCelularPC [1]</a>
 	</li>
 	<li>
-		<a href="/tag/github">#github [7]</a>
+		<a href="/tag/github">#github [8]</a>
 	</li>
 	<li>
 		<a href="/tag/githubpage">#githubpage [1]</a>
 	</li>
 	<li>
-		<a href="/tag/git">#git [7]</a>
+		<a href="/tag/git">#git [8]</a>
 	</li>
 	<li>
 		<a href="/tag/compilar">#compilar [1]</a>
@@ -127,6 +127,9 @@ redirect_from:
 		<a href="/tag/gist">#gist [1]</a>
 	</li>
 	<li>
+		<a href="/tag/obs">#obs [5]</a>
+	</li>
+	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
 	</li>
 	<li>
@@ -143,9 +146,6 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/processing">#processing [6]</a>
-	</li>
-	<li>
-		<a href="/tag/obs">#obs [3]</a>
 	</li>
 	<li>
 		<a href="/tag/obsstudio">#obsstudio [1]</a>
