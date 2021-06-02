@@ -1,8 +1,8 @@
 ---
 title: "Comandos Basicos de Bash"
-video_number: 13
+video_number: 14
 date: 2021-05-07
-video_id: l9h6Hhc4nvA
+video_id: eaAGbKcK3F8
 links:
   - title: "Para Windos usar Git Bash"
     url: "git"
