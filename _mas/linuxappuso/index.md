@@ -174,7 +174,7 @@ faq:
     answer: "Has striming o grabacione de juegos, tutoriales o clases"
     links:
       - title: "Curso de OBS"
-        url: Cursos/10_OBS_Paso_a_Paso/
+        url: obs
       - title: "OBS Studio"
         url: "https://obsproject.com/es/download"
       - title: "OBS WebSoket"
@@ -292,9 +292,12 @@ faq:
     answer: "Es muy util poder tomar y mover la ventana con ALT, pero para algunos problemas que usan mas comando es bueno desactivarlo o cambiarlo con <Super>"
     links:
       - title: "gsettings set org.cinnamon.desktop.wm.preferences mouse-button-modifier '<Super>'"
-  - question: "Pront"
-    section: "OS"
-    anwser: "Hola"
+  - question: "Heramienta Monitoreo"
+    section: "Heramientas"
+    anwser: "fgrt"
+    links:
+      - title: "Github bpytop"
+        url: "https://github.com/aristocratos/bpytop"
 ---
 
 Las app que uso en mi pc con linux mint :) para que tomen inspiracion. Ire agregando mas aplicaciones interesantes a la lista
@@ -303,7 +306,7 @@ Las app que uso en mi pc con linux mint :) para que tomen inspiracion. Ire agreg
 
 Tiene una recomendacion para probar alguna dejala aqui Link
 
-### prompt en Terminal
+### Prompt en Terminal
 
 ```bash
 PS1="\[\e[0;1m\]┌─(\[\e[31;1m\]\u@\H\[\e[0;1m\])»{\[\e[36;1m\]\w\[\e[0;1m\]}\n└──┤ \[\e[0m\]"
