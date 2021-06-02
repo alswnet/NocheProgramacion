@@ -1,12 +1,11 @@
 ---
 title: "Controla tu OBS forma remoto"
-course_number: 10
 video_number: 8
 date: 2020-03-15
 video_id: eGKdZptGydc
 tags:
   - obs
-  - websocket
+  - obswebsocket
 
 links:
   - title: "OBS Estudio"
@@ -22,4 +21,4 @@ links:
 
 ---
 
-Automaziar es algo genial por que no hacerlo tambien por el programa para grabar o hacer en vivo
+OBS Estudio uno de los programas mas utilices para hacer Striming o Grabaciones de tutoriales, juegos y muchas cosas, Les quiero enseñar algo que me encanta que es poder controlar OBS por diferentes medio ya sea por una pagina web Retoma o uno de los grande secretos por medio de nuestro propio codigo, espero les guste este video.
