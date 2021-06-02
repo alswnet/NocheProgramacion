@@ -45,6 +45,7 @@ custom_sections:
       - title: "Twitter"
         url: "https://twitter.com/neomish"
 
+actualizado: true
 ---
 
 No sabes donde empezar para poner seguridad a tu primer servidor con Linux, enseñando las buenas practicar al instalar tu servidor linux con ubuntu Server o derivados, con el apoyo de un Experto  
