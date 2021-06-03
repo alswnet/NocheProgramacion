@@ -1,6 +1,5 @@
 ---
 title: "Como Configuracion OBS para Directos y Grabacion"
-course_number: 10
 video_number: 1
 date: 2020-06-24
 video_id: 2LZaYlllWxo
@@ -33,7 +32,7 @@ topics:
     time: "19:44"
   - title: "Visor de Multiples Esena"
     time: "21:05"
-  - title: "Configurar Trasmicion y GrabacionConfigurar Trasmicion y Grabacion"
+  - title: "Configurar Trasmicion y Grabacion"
     time: "21:42"
   - title: "Añadir Evento subcripcion"
     time: "28:22"

@@ -15,6 +15,12 @@ layout: base
   {% endif %}
 {% endfor %}
 
+{% for post in site.shorts %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
 {% for post in site.invitados %}
   {% if post.tags contains page.tag-name %}
     {% assign tag_post = tag_post | push: post %}

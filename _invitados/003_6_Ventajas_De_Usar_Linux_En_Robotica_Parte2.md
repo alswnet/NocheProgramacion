@@ -36,6 +36,7 @@ custom_sections:
       - title: "Presentacion en Canva"
         url: "https://www.canva.com/design/DAEAySw3f74/7Pnxryvkcil8GxhN15Mn9Q/view?utm_content=DAEAySw3f7"
 
+actualizado: true
 ---
 
-No sabes por donde empezar?, te contaremos porqué debes usar Linux para empezar en este mundo de la Robotica, con éste video ¿Por que usar Robotica con Linux? con un amigo de  @Curso de Robotica  
+No sabes por donde empezar? te contaremos porqué debes usar Linux para empezar en este mundo de la Robotica, con éste video ¿Por que usar Robotica con Linux? con un amigo de Curso de Robotica  

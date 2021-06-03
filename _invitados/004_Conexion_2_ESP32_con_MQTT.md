@@ -40,6 +40,8 @@ custom_sections:
         url: "https://roboticsspacenv01.blogspot.com/"
       - title: "Instagram"
         url: "https://www.instagram.com/roboticsspacenv/"
+
+actualizado: false
 ---
 
 En este taller aprenderás a conectar y enviar datos entre dos placas ESP32 empleando el protocolo MQTT
