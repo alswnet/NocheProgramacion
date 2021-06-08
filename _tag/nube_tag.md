@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [38]</a>
+		<a href="/tag/arduino">#arduino [40]</a>
 	</li>
 	<li>
 		<a href="/tag/lcd">#lcd [2]</a>
@@ -16,10 +16,10 @@ redirect_from:
 		<a href="/tag/ftdi">#ftdi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [10]</a>
+		<a href="/tag/linux">#linux [11]</a>
 	</li>
 	<li>
-		<a href="/tag/youtube">#youtube [2]</a>
+		<a href="/tag/youtube">#youtube [3]</a>
 	</li>
 	<li>
 		<a href="/tag/brainjs">#brainjs [1]</a>
@@ -29,6 +29,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/javascrip">#javascrip [1]</a>
+	</li>
+	<li>
+		<a href="/tag/esp8266">#esp8266 [5]</a>
 	</li>
 	<li>
 		<a href="/tag/debian">#debian [1]</a>
@@ -43,13 +46,16 @@ redirect_from:
 		<a href="/tag/esp32">#esp32 [4]</a>
 	</li>
 	<li>
-		<a href="/tag/esp8266">#esp8266 [4]</a>
-	</li>
-	<li>
 		<a href="/tag/esp8255">#esp8255 [1]</a>
 	</li>
 	<li>
 		<a href="/tag/arduinoide">#arduinoide [2]</a>
+	</li>
+	<li>
+		<a href="/tag/foldingathome">#foldingathome [1]</a>
+	</li>
+	<li>
+		<a href="/tag/salud">#salud [1]</a>
 	</li>
 	<li>
 		<a href="/tag/atom">#atom [2]</a>
@@ -73,6 +79,18 @@ redirect_from:
 		<a href="/tag/python">#python [3]</a>
 	</li>
 	<li>
+		<a href="/tag/git">#git [10]</a>
+	</li>
+	<li>
+		<a href="/tag/github">#github [9]</a>
+	</li>
+	<li>
+		<a href="/tag/windows">#windows [2]</a>
+	</li>
+	<li>
+		<a href="/tag/tips">#tips [1]</a>
+	</li>
+	<li>
 		<a href="/tag/Materialize">#Materialize [1]</a>
 	</li>
 	<li>
@@ -91,19 +109,16 @@ redirect_from:
 		<a href="/tag/ControlaCelularPC">#ControlaCelularPC [1]</a>
 	</li>
 	<li>
-		<a href="/tag/github">#github [8]</a>
+		<a href="/tag/android">#android [7]</a>
 	</li>
 	<li>
 		<a href="/tag/githubpage">#githubpage [1]</a>
 	</li>
 	<li>
-		<a href="/tag/git">#git [8]</a>
-	</li>
-	<li>
 		<a href="/tag/compilar">#compilar [1]</a>
 	</li>
 	<li>
-		<a href="/tag/iot">#iot [6]</a>
+		<a href="/tag/iot">#iot [7]</a>
 	</li>
 	<li>
 		<a href="/tag/telegram">#telegram [9]</a>
@@ -127,16 +142,13 @@ redirect_from:
 		<a href="/tag/gist">#gist [1]</a>
 	</li>
 	<li>
-		<a href="/tag/comando">#comando [1]</a>
+		<a href="/tag/comando">#comando [2]</a>
 	</li>
 	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
 	</li>
 	<li>
 		<a href="/tag/bluetooth">#bluetooth [6]</a>
-	</li>
-	<li>
-		<a href="/tag/android">#android [6]</a>
 	</li>
 	<li>
 		<a href="/tag/p5js">#p5js [8]</a>
@@ -164,9 +176,6 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/svg">#svg [1]</a>
-	</li>
-	<li>
-		<a href="/tag/windows">#windows [1]</a>
 	</li>
 	<li>
 		<a href="/tag/meld">#meld [2]</a>
