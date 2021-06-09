@@ -229,7 +229,7 @@ function writeDescriptions(videos) {
 
     // Indice del video
     if (data.topics) {
-      description += "\nIndice:\n";
+      description += "\n🕓 Indice:\n";
       for (let i = 0; i < data.topics.length; ++i) {
         description += `${data.topics[i].time} ${data.topics[i].title}\n`;
       }
