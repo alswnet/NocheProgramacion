@@ -229,7 +229,7 @@ function writeDescriptions(videos) {
 
     // Indice del video
     if (data.topics) {
-      description += "\nIndice:\n";
+      description += "\n🕓 Indice:\n";
       for (let i = 0; i < data.topics.length; ++i) {
         description += `${data.topics[i].time} ${data.topics[i].title}\n`;
       }
@@ -251,13 +251,13 @@ function writeDescriptions(videos) {
 🔭 Telegram: https://t.me/alswnet
 🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1`;
 
-    if (data.tags) {
-      description += `\n\n#ALSW`;
-      for (let i = 0; i < data.tags.length; ++i) {
-        description += ` #` + data.tags[i];
-      }
-      // description += `\n`;
-    }
+    // if (data.tags) {
+    //   description += `\n\n#ALSW`;
+    //   for (let i = 0; i < data.tags.length; ++i) {
+    //     description += ` #` + data.tags[i];
+    //   }
+    //   // description += `\n`;
+    // }
 
     // description += `\nEsta descripción fue auto-generada. Si ves algún problema, por favor reportarlo en https://github.com/alswnet/NocheProgramacion/issues/new`;
 
