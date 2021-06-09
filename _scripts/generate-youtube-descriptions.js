@@ -104,7 +104,32 @@ function getVideoID(url) {
   return `https://youtu.be/${parsed_content.video_id}`;
 }
 
+function DosDecimales(Numero, Cantidad) {
+  return Numero + " " + parseFloat((100 * Numero) / Cantidad).toFixed(2) + "%";
+}
+
+function AgregarSeoMostar(data, descripcion) {
+  // TODO: no Activar si hay ads
+  let Saltos = descripcion.split(/\n/);
+  let CantidadSaltos = Saltos.length;
+  let LongitudTotal = descripcion.length;
+
+  if (CantidadSaltos <= 2 && LongitudTotal <= 90) {
+    return true;
+  }
+  return false;
+}
+
 function writeDescriptions(videos) {
+  let CantidadLinks = 0;
+  let CantidadIndice = 0;
+  let CantidadPiesas = 0;
+  let CantidadCostun = 0;
+  let CantidadAds = 0;
+  let CantidadVideo = 0;
+  let CantidadSeoMostar = 0;
+  let NuevoSistema = 0;
+
   primeDirectory("./descripciones");
   primeDirectory("./actualizado");
 
@@ -116,11 +141,18 @@ function writeDescriptions(videos) {
     let description = "";
 
     // Descripcion
-    let content = data.__content;
-    description += `${content.trim()}\n`;
+    let content = data.__content.trim();
+    description += `${content}\n`;
+
+    // SeoMostar
+    if (AgregarSeoMostar(data, description)) {
+      CantidadSeoMostar++;
+      description += `\n👇 👇 👇\n`;
+    }
 
     // ADS
     if (data.ads) {
+      CantidadAds++;
       for (let i = 0; i < data.ads.length; ++i) {
         description += `\n${data.ads[i].title} ${data.ads[i].url}\n`;
       }
@@ -163,6 +195,7 @@ function writeDescriptions(videos) {
 
     // Links
     if (data.links) {
+      CantidadLinks++;
       description += "\nLink referencie:\n";
       for (let i = 0; i < data.links.length; ++i) {
         const url = data.links[i].url;
@@ -174,8 +207,9 @@ function writeDescriptions(videos) {
       }
     }
 
-    // Links
+    // Link de piesas
     if (data.piezas) {
+      CantidadPiesas++;
       description += "\nComponentes electronicos mencionado video:\n";
       for (let i = 0; i < data.piezas.length; ++i) {
         const url = data.piezas[i].url;
@@ -193,6 +227,7 @@ function writeDescriptions(videos) {
 
     // Videos
     if (data.videos) {
+      CantidadVideo++;
       description += "\nOtros video mencionados en video:\n";
       for (let i = 0; i < data.videos.length; ++i) {
         if (data.videos[i].video_id) {
@@ -210,7 +245,8 @@ function writeDescriptions(videos) {
 
     // Partes Extras
     if (data.custom_sections) {
-      description += `\nLink Extras:\n`;
+      CantidadCostun++;
+      description += `\nLink:\n`;
       for (let i = 0; i < data.custom_sections.length; ++i) {
         if (data.custom_sections[i].title) {
           description += `✪ ${data.custom_sections[i].title}:\n`;
@@ -229,12 +265,13 @@ function writeDescriptions(videos) {
 
     // Indice del video
     if (data.topics) {
+      CantidadIndice++;
       description += "\n🕓 Indice:\n";
       for (let i = 0; i < data.topics.length; ++i) {
         description += `${data.topics[i].time} ${data.topics[i].title}\n`;
       }
     }
-    // General Links
+    // Links Generales
     description += `
 👏🏽 Subscribe: https://www.youtube.com/alswnet?sub_confirmation=1
 🚂 Sitio Web: http://nocheprogramacion.com
@@ -269,16 +306,26 @@ function writeDescriptions(videos) {
       NombreArchivo = `${data.course_number}.${NombreArchivo}`;
     }
 
-    let tipo = videos[i].pageURL.split("/")[0];
-    NombreArchivo = `${tipo}_${NombreArchivo}`;
-
     if (data.actualizado) {
+      NuevoSistema++;
       fs.writeFileSync(`actualizado/${data.video_id}.txt`, description);
     }
+
+    let tipo = videos[i].pageURL.split("/")[0];
+    NombreArchivo = `${tipo}_${NombreArchivo}`;
 
     fs.writeFileSync(`descripciones/${NombreArchivo}.txt`, description);
     fs.writeFileSync(`descripciones/Zen_${data.video_id}.txt`, description);
   }
+  console.log("Cantidad total: " + videos.length);
+  console.log(`Links: ${DosDecimales(CantidadLinks, videos.length)}`);
+  console.log(`Indices: ${DosDecimales(CantidadIndice, videos.length)}`);
+  console.log(`Piezas: ${DosDecimales(CantidadPiesas, videos.length)}`);
+  console.log(`Extras: ${DosDecimales(CantidadCostun, videos.length)}`);
+  console.log(`Videos: ${DosDecimales(CantidadVideo, videos.length)}`);
+  console.log(`Ads: ${DosDecimales(CantidadAds, videos.length)}`);
+  console.log(`SeoMostar: ${DosDecimales(CantidadSeoMostar, videos.length)}`);
+  console.log(`Nuevo Sistema: ${DosDecimales(NuevoSistema, videos.length)}`);
 }
 
 (() => {
