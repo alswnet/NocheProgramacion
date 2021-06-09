@@ -68,23 +68,32 @@ function getVideoData() {
 }
 
 function primeDirectory(dir) {
-  fs.rmdirSync(
-    dir,
-    {
-      recursive: true
-    },
-    err => {
-      if (err) {
-        throw err;
-      }
-    }
-  );
+  fs.readdir(dir, (err, files) => {
+    if (err) throw err;
 
-  fs.mkdirSync(dir, err => {
-    if (err) {
-      throw err;
+    for (const file of files) {
+      fs.unlink(path.join(dir, file), err => {
+        if (err) throw err;
+      });
     }
   });
+  // fs.rmdirSync(
+  //   dir,
+  //   {
+  //     recursive: true
+  //   },
+  //   err => {
+  //     if (err) {
+  //       throw err;
+  //     }
+  //   }
+  // );
+  //
+  // fs.mkdirSync(dir, err => {
+  //   if (err) {
+  //     throw err;
+  //   }
+  // });
 }
 
 function getVideoID(url) {
@@ -108,16 +117,21 @@ function DosDecimales(Numero, Cantidad) {
   return Numero + " " + parseFloat((100 * Numero) / Cantidad).toFixed(2) + "%";
 }
 
-function AgregarSeoMostar(data, descripcion) {
+function AgregarSeoMostar(descripcion) {
   // TODO: no Activar si hay ads
   let Saltos = descripcion.split(/\n/);
   let CantidadSaltos = Saltos.length;
   let LongitudTotal = descripcion.length;
-
-  if (CantidadSaltos <= 2 && LongitudTotal <= 90) {
-    return true;
+  if (CantidadSaltos <= 2) {
+    if (LongitudTotal <= 1) {
+      return 2;
+    } else if (LongitudTotal <= 90) {
+      return 1;
+    } else if (LongitudTotal <= 90 * 2) {
+      return 0;
+    }
   }
-  return false;
+  return -1;
 }
 
 function writeDescriptions(videos) {
@@ -128,6 +142,7 @@ function writeDescriptions(videos) {
   let CantidadAds = 0;
   let CantidadVideo = 0;
   let CantidadSeoMostar = 0;
+  let CantidadSeoMostarActivo = 0;
   let NuevoSistema = 0;
 
   primeDirectory("./descripciones");
@@ -145,9 +160,14 @@ function writeDescriptions(videos) {
     description += `${content}\n`;
 
     // SeoMostar
-    if (AgregarSeoMostar(data, description)) {
+    let Saltos = AgregarSeoMostar(description);
+    if (Saltos >= 0) {
       CantidadSeoMostar++;
-      description += `\n👇 👇 👇\n`;
+      if (data.actualizado) CantidadSeoMostarActivo++;
+      if (Saltos >= 1) {
+        description += `\n`;
+      }
+      description += `👇 👇 👇\n`;
     }
 
     // ADS
@@ -246,7 +266,7 @@ function writeDescriptions(videos) {
     // Partes Extras
     if (data.custom_sections) {
       CantidadCostun++;
-      description += `\nLink:\n`;
+      description += `\nLink Extras:\n`;
       for (let i = 0; i < data.custom_sections.length; ++i) {
         if (data.custom_sections[i].title) {
           description += `✪ ${data.custom_sections[i].title}:\n`;
@@ -325,6 +345,7 @@ function writeDescriptions(videos) {
   console.log(`Videos: ${DosDecimales(CantidadVideo, videos.length)}`);
   console.log(`Ads: ${DosDecimales(CantidadAds, videos.length)}`);
   console.log(`SeoMostar: ${DosDecimales(CantidadSeoMostar, videos.length)}`);
+  console.log(`SeoMostar Activos: ${DosDecimales(CantidadSeoMostarActivo, videos.length)}`);
   console.log(`Nuevo Sistema: ${DosDecimales(NuevoSistema, videos.length)}`);
 }
 
