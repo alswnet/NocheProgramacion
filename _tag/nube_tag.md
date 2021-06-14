@@ -16,7 +16,7 @@ redirect_from:
 		<a href="/tag/ftdi">#ftdi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [11]</a>
+		<a href="/tag/linux">#linux [13]</a>
 	</li>
 	<li>
 		<a href="/tag/youtube">#youtube [3]</a>
@@ -79,10 +79,10 @@ redirect_from:
 		<a href="/tag/python">#python [3]</a>
 	</li>
 	<li>
-		<a href="/tag/git">#git [10]</a>
+		<a href="/tag/git">#git [11]</a>
 	</li>
 	<li>
-		<a href="/tag/github">#github [9]</a>
+		<a href="/tag/github">#github [10]</a>
 	</li>
 	<li>
 		<a href="/tag/windows">#windows [2]</a>
@@ -139,10 +139,10 @@ redirect_from:
 		<a href="/tag/fritzing">#fritzing [1]</a>
 	</li>
 	<li>
-		<a href="/tag/gist">#gist [1]</a>
+		<a href="/tag/gist">#gist [2]</a>
 	</li>
 	<li>
-		<a href="/tag/comando">#comando [2]</a>
+		<a href="/tag/comando">#comando [4]</a>
 	</li>
 	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
@@ -214,13 +214,13 @@ redirect_from:
 		<a href="/tag/shorts">#shorts [2]</a>
 	</li>
 	<li>
-		<a href="/tag/cli">#cli [1]</a>
-	</li>
-	<li>
 		<a href="/tag/servidor">#servidor [1]</a>
 	</li>
 	<li>
 		<a href="/tag/robotica">#robotica [2]</a>
+	</li>
+	<li>
+		<a href="/tag/cli">#cli [1]</a>
 	</li>
 	<li>
 		<a href="/tag/crecetube">#crecetube [1]</a>
