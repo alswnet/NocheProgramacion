@@ -67,33 +67,12 @@ function getVideoData() {
   return videos;
 }
 
-function primeDirectory(dir) {
-  fs.readdir(dir, (err, files) => {
-    if (err) throw err;
-
-    for (const file of files) {
-      fs.unlink(path.join(dir, file), err => {
-        if (err) throw err;
-      });
-    }
+async function primeDirectory(dir) {
+  fs.readdirSync(dir).forEach(file => {
+    fs.unlinkSync(path.join(dir, file), err => {
+      if (err) throw err;
+    });
   });
-  // fs.rmdirSync(
-  //   dir,
-  //   {
-  //     recursive: true
-  //   },
-  //   err => {
-  //     if (err) {
-  //       throw err;
-  //     }
-  //   }
-  // );
-  //
-  // fs.mkdirSync(dir, err => {
-  //   if (err) {
-  //     throw err;
-  //   }
-  // });
 }
 
 function getVideoID(url) {
@@ -134,7 +113,7 @@ function AgregarSeoMostar(descripcion) {
   return -1;
 }
 
-function writeDescriptions(videos) {
+async function writeDescriptions(videos) {
   let CantidadLinks = 0;
   let CantidadIndice = 0;
   let CantidadPiesas = 0;
@@ -145,8 +124,8 @@ function writeDescriptions(videos) {
   let CantidadSeoMostarActivo = 0;
   let NuevoSistema = 0;
 
-  primeDirectory("./descripciones");
-  primeDirectory("./actualizado");
+  await primeDirectory("./descripciones");
+  await primeDirectory("./actualizado");
 
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
@@ -206,7 +185,7 @@ function writeDescriptions(videos) {
     if (playlist || nextID) {
       description += `\n`;
       if (nextID) {
-        description += `🎥 Siquiente video: https://youtu.be/${nextID}\n`;
+        description += `🎥 Siguiente video: https://youtu.be/${nextID}\n`;
       }
       if (playlist) {
         description += `🎥 Playlist: https://www.youtube.com/playlist?list=${playlist}\n`;
