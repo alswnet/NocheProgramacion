@@ -51,18 +51,10 @@ function getVideoData() {
 }
 
 function primeDirectory(dir) {
-  fs.rmdirSync(dir, {
-    recursive: true
-  }, (err) => {
-    if (err) {
-      throw err;
-    }
-  });
-
-  fs.mkdirSync(dir, err => {
-    if (err) {
-      throw err;
-    }
+  fs.readdirSync(dir).forEach(file => {
+    fs.unlinkSync(path.join(dir, file), err => {
+      if (err) throw err;
+    });
   });
 }
 
@@ -123,6 +115,7 @@ function writeDescriptions(videos) {
     writeTags(tags[i], cantidad[i]);
   }
   writeTagsPage(tags, cantidad);
+  console.log("Cantidad tags " + tags.length)
 }
 
 (() => {
