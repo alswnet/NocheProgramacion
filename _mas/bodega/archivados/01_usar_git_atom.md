@@ -21,4 +21,4 @@ links:
 actualizado: true
 ---
 
-En este  video te enseñamos como utilizar github desde tu editor de código, en este caso, Atom. Esto te permite versionar tus proyectos y poder compartirlo con tus colegas.
+En este video te enseñamos como utilizar github desde tu editor de código, en este caso, Atom. Esto te permite versionar tus proyectos y poder compartirlo con tus colegas.

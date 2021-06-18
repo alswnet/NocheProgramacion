@@ -29,4 +29,8 @@ links:
     url: "https://arduino.github.io/arduino-cli/latest/getting-started/"
   - title: "Arduino-cli para Github Actions"
     url: "https://github.com/marketplace/actions/setup-arduino-cli"
+
+actualizado: false
 ---
+
+Subir un código a un arduino es fácil, pero si esta muy lejos o son muchos dispositivos en tus infraestructura, no temas; automaticemos la propagación de nuevas versiones de tu proyecto en todo los rincones del mundo con Arduino-cli y Github-Accion a un ENTER y Push de distancia

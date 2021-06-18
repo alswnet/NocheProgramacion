@@ -6,6 +6,7 @@ video_id: J3jB44ukDYc
 tags:
   - scrcpy
   - ControlaCelularPC
+  - android
 
 topics:
   - title: "Inicio"

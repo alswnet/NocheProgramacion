@@ -42,12 +42,13 @@ void ActualizarLed() {
       TiempoAnterior = TiempoActual;
       digitalWrite(LedActual, LOW);
       LedActual += Direcion;
-      if (LedActual >= LedInicial + CanitdadLed) {
+      if (LedActual >= LedInicial + CanitdadLed -1) {
         Direcion = Izquierda;
       } else if (LedActual <= LedInicial) {
         Direcion = Derecha;
       }
       digitalWrite(LedActual, HIGH);
+      Serial.println(LedActual);
     }
   }
 }

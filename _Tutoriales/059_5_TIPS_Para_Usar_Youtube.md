@@ -3,6 +3,9 @@ title: "5 TIPS Para Usar Youtube"
 video_number: 59
 date: 2020-06-06
 video_id: Tt8U5f3bLkY
+tags:
+  - youtube
+  - tips
 
 topics:
   - title: "Introduccion"
@@ -19,6 +22,14 @@ topics:
     time: "06:52"
   - title: "Atajos de Teclado"
     time: "08:11"
+
+links:
+  - title: "Convertir video a gifs"
+    url: "https://gifs.com/"
+  - title: "Youtube-dl"
+    url: "https://youtube-dl.org/"
+
+actualizado: true
 ---
 
-Nosotro usamos mucho youtube, estos 5 consejos esperamos que mejores tu experiencia
+Sientes que cada día usas mas YouTube, seria bueno que aprendas estos 5 Tips para usar YouTube, que mejorar tus experiencia al usar Youtube, cada uno de los tips los uso a diarios y disfrutalos :)

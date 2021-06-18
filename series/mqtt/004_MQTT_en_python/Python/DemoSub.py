@@ -2,14 +2,14 @@ import paho.mqtt.client as mqtt
 
 
 def on_connect(client, userdata, flags, rc):
-    print("Se conecto con mqtt "+str(rc))
+    print("Se conecto con mqtt " + str(rc))
     client.subscribe("ALSW/#")
 
 
 def on_message(client, userdata, msg):
     if msg.topic == "ALSW/temp":
         print(f"Temperatura es {str(msg.payload)}")
-    print(msg.topic+" "+str(msg.payload))
+    print(msg.topic + " " + str(msg.payload))
 
 
 client = mqtt.Client()

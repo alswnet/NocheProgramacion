@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [40]</a>
+		<a href="/tag/arduino">#arduino [41]</a>
 	</li>
 	<li>
 		<a href="/tag/lcd">#lcd [2]</a>
@@ -76,13 +76,13 @@ redirect_from:
 		<a href="/tag/mqtt">#mqtt [10]</a>
 	</li>
 	<li>
-		<a href="/tag/python">#python [3]</a>
+		<a href="/tag/python">#python [4]</a>
 	</li>
 	<li>
-		<a href="/tag/git">#git [11]</a>
+		<a href="/tag/git">#git [10]</a>
 	</li>
 	<li>
-		<a href="/tag/github">#github [10]</a>
+		<a href="/tag/github">#github [9]</a>
 	</li>
 	<li>
 		<a href="/tag/windows">#windows [2]</a>
@@ -139,10 +139,13 @@ redirect_from:
 		<a href="/tag/fritzing">#fritzing [1]</a>
 	</li>
 	<li>
-		<a href="/tag/gist">#gist [2]</a>
+		<a href="/tag/gist">#gist [1]</a>
 	</li>
 	<li>
 		<a href="/tag/comando">#comando [4]</a>
+	</li>
+	<li>
+		<a href="/tag/venv">#venv [1]</a>
 	</li>
 	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
@@ -163,7 +166,7 @@ redirect_from:
 		<a href="/tag/editarvideo">#editarvideo [3]</a>
 	</li>
 	<li>
-		<a href="/tag/millis">#millis [1]</a>
+		<a href="/tag/millis">#millis [2]</a>
 	</li>
 	<li>
 		<a href="/tag/bucle">#bucle [1]</a>

@@ -4,12 +4,15 @@ video_number: 43
 date: 2018-10-31
 video_id: gMbjP8TNS7g
 repository: 043_Sistema_Casero_de_segurida
+tags:
+  - arduino
+  - esp8266
 
 tools:
  - title: "Arduino IDE"
    url: "https://www.arduino.cc/en/Main/Software"
  - title: "NodeJS"
-   url: "https://nodejs.org/es/"
+   url: "https://nodejs.org/"
 
 links:
   - title: "Github"
@@ -34,4 +37,4 @@ piezas:
 
 ---
 
-Video especial de halloween una Calabaza Seguridad inteligente 
+Video especial de halloween una Calabaza Seguridad inteligente

@@ -12,6 +12,8 @@ links:
 
 piezas:
   - title: "ElGato Stream Deck"
+
+actualizado: false
 ---
 
 Aprende a ser mas eficiente con el poder machos y linux
