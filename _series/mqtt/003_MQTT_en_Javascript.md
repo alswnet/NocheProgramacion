@@ -27,16 +27,18 @@ topics:
     time: '07:09'
 
 links:
-  - title: "Usar MQTT en Nodejs"
-    url: "https://www.youtube.com/watch?v=27LGJlSv0Ww"
-  - title: "Plugin Aton Live-Server"
-    url: "https://www.youtube.com/watch?v=BCcneFIucG8"
   - title: "Libreria mqtt.js Javascript"
     url: "https://cdnjs.com/libraries/mqtt"
   - title: "Broker de prueba Mosquitto"
     url: "https://test.mosquitto.org"
 
+videos:
+  - title: "Usar MQTT en Nodejs"
+    url: "series/mqtt/002_MQTT_en_Nodejs"
+  - title: "Plugin Aton Live-Server"
+    url: "Tutoriales/055_Los_5_Mejores_Plugins_para_Atom_Editor"
+
 actualizado: true
 ---
 
-Quiere enviar y recibir atrevas de MQTT en tu pagina web usando Javascript este Tutorial te dará todos los ejemplos necesarios para empezar
+Quiere enviar y recibir atrevas de MQTT en tu pagina web usando JavaScript este Tutorial te dará todos los ejemplos necesarios para empezar
