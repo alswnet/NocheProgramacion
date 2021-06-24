@@ -76,20 +76,26 @@ async function primeDirectory(dir) {
 }
 
 function getVideoID(url) {
-  const location = url.substring(1, url.length);
+  // const location = url.substring(1, url.length);
+  const location = url;
   let page;
   try {
     page = fs.readFileSync(`./_${location}.md`, "UTF8");
   } catch (err) {
     try {
-      const files = fs.readdirSync(`./_${location}`);
-      page = fs.readFileSync(`./_${location}/${files[0]}.md`, "UTF8");
+      page = fs.readFileSync(`./_${location}/index.md`, "UTF8");
+      // const files = fs.readdirSync(`./_${location}`);
+      // page = fs.readFileSync(`./_${location}/${files[0]}.md`, "UTF8");
     } catch (e) {
       return url;
     }
   }
   const parsed_content = yaml.loadFront(page);
-  return `https://youtu.be/${parsed_content.video_id}`;
+  if (parsed_content.video_id) {
+    return `https://youtu.be/${parsed_content.video_id}`;
+  } else if (parsed_content.playlist_id) {
+    return `https://www.youtube.com/playlist?list=${parsed_content.playlist_id}`;
+  }
 }
 
 function DosDecimales(Numero, Cantidad) {
@@ -157,13 +163,6 @@ async function writeDescriptions(videos) {
       }
     }
 
-    // Codigo
-    if (data.repository || data.web_editor) {
-      description += `\n💻 Codigo: https://nocheprogramacion.com/${pageURL}.html\n`;
-    } else {
-      description += `\n🖥 Articulo: https://nocheprogramacion.com/${pageURL}.html\n`;
-    }
-
     // Next Video / Playlist
     let nextID;
     if (i !== videos.length - 1) {
@@ -190,6 +189,32 @@ async function writeDescriptions(videos) {
       if (playlist) {
         description += `🎥 Playlist: https://www.youtube.com/playlist?list=${playlist}\n`;
       }
+    }
+
+    // Videos
+    if (data.videos) {
+      CantidadVideo++;
+      description += "\nVideo mencionados:\n";
+      for (let i = 0; i < data.videos.length; ++i) {
+        if (data.videos[i].video_id) {
+          description += `🎞 ${data.videos[i].title}: https://youtu.be/${data.videos[i].video_id}\n`;
+        } else if (data.videos[i].url) {
+          let url = data.videos[i].url;
+          if (/https?:\/\/.*/.test(url)) {
+            description += `🎞 ${data.videos[i].title}: ${url}\n`;
+          } else {
+            url = getVideoID(data.videos[i].url);
+            description += `🎞 ${data.videos[i].title}: ${url}\n`;
+          }
+        }
+      }
+    }
+
+    // Codigo
+    if (data.repository || data.web_editor) {
+      description += `\n💻 Codigo: https://nocheprogramacion.com/${pageURL}.html\n`;
+    } else {
+      description += `\n🖥 Articulo: https://nocheprogramacion.com/${pageURL}.html\n`;
     }
 
     // Links
@@ -220,24 +245,6 @@ async function writeDescriptions(videos) {
           }
         } else {
           description += `🤖 ${data.piezas[i].title}\n`;
-        }
-      }
-    }
-
-    // Videos
-    if (data.videos) {
-      CantidadVideo++;
-      description += "\nOtros video mencionados en video:\n";
-      for (let i = 0; i < data.videos.length; ++i) {
-        if (data.videos[i].video_id) {
-          description += `🎥 ${data.videos[i].title}: https://youtu.be/${data.videos[i].video_id}\n`;
-        } else if (data.videos[i].url) {
-          const url = data.videos[i].url;
-          if (/https?:\/\/.*/.test(url)) {
-            description += `🎥 ${data.videos[i].title}: ${url}\n`;
-          } else {
-            description += `🎥 ${data.videos[i].title}: https://nocheprogramacion.com${url}\n`;
-          }
         }
       }
     }
