@@ -54,7 +54,7 @@ layout: base
 
         {% comment %} Display title, description and videos. {% endcomment %}
         <div class="series">
-          <h3>{% if seriesIndexPage.series_number %}{{ seriesIndexPage.video_type }} #{{ seriesIndexPage.series_number }}: {% endif %}{{ seriesIndexPage.title }}</h3>
+          <h1>{% if seriesIndexPage.series_number %}{{ seriesIndexPage.video_type }} #{{ seriesIndexPage.series_number }}: {% endif %}{{ seriesIndexPage.title }}</h1>
           <div class="subtitle">{{ seriesIndexPage.subtitle }}</div>
           <div class="description-excerpt">{{ seriesIndexPage.excerpt }}</div>
           {% include 3-modules/video-list.html videos=sortedVideos seriesPage=seriesIndexPage limit=3 reverse=seriesIndexPage.reverse future=true %}
