@@ -24,6 +24,8 @@ links:
     url: "https://foldingathome.org/alternative-downloads/"
   - title: "Codigo Fuente Folding@Home"
     url: "https://github.com/FoldingAtHome"
+
+videos:
   - title: "Video de Linus Tech Tips sobre Folding@Home"
     url: "https://www.youtube.com/watch?v=KU4qOebhkfs"
   - title: "Entrevista con Folding@Home"

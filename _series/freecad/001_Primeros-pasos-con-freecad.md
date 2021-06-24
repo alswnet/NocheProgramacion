@@ -39,10 +39,12 @@ topics:
 links:
   - title: "Descarga Freecad"
     url: "https://www.freecadweb.org/"
-  - title: "Referencia Juan Gonzalez Gomez"
-    url: "https://www.youtube.com/watch?v=2_DbFzFV9D4"
   - title: "Grupo FreeCad Español"
     url: "https://t.me/FreeCAD_Es"
+
+videos:
+  - title: "Referencia Juan Gonzalez Gomez"
+    url: "https://www.youtube.com/watch?v=2_DbFzFV9D4"
 
 actualizado: true
 ---

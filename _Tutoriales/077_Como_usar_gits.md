@@ -29,10 +29,12 @@ topics:
     time: '03:43'
 
 links:
-  - title: "Curso en Git"
-    url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpWAAo0XYaJ3JMyBhUqWSisM"
   - title: "Pagina de Gits"
     url: "https://gist.github.com/"
+
+videos:
+  - title: "Curso de Git"
+    url: "series/git"
 
 actualizado: true
 ---

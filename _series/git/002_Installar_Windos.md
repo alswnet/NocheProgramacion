@@ -52,6 +52,8 @@ links:
     url: "https://meldmerge.org/"
   - title: "PDF de Git"
     url: "https://training.github.com/"
+
+videos:
   - title: "Tutorial Git Grafico en Atom"
     url: "https://www.youtube.com/watch?v=bdCKk2GgJ8E"
 

@@ -42,10 +42,12 @@ topics:
 links:
   - title: "Referencia Millis"
     url: "https://www.arduino.cc/reference/en/language/functions/time/millis/"
+
+videos:
   - title: "Tutoriales Basicos Arduino"
-    url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpXb_D260uyv0f7b-in6Va6F"
+    url: "series/arduino/avanzado/"
   - title: "Tutoriales Avanzado Arduino"
-    url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpXsFl-4swllhvGLgIQH1ECo"
+    url: "series/arduino/basico"
 
 actualizado: true
 ---

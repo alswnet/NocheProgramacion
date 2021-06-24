@@ -33,8 +33,6 @@ topics:
 links:
   - title: Github Page
     url: https://pages.github.com/
-  - title: (ingles) Que es Github Page
-    url: https://www.youtube.com/watch?v=2MsN8gpT6jY
   - title: Jekyll
     url: https://jekyllrb.com/
   - title: Pagina Estatigas generadas Jekyll
@@ -51,6 +49,10 @@ links:
     url: https://alswnet.github.io/DemoML5/
   - title: FindingTube
     url: https://alswnet.github.io/FindingTube/
+
+videos:
+  - title: (ingles) Que es Github Page
+    url: https://www.youtube.com/watch?v=2MsN8gpT6jY
 
 actualizado: true
 ---

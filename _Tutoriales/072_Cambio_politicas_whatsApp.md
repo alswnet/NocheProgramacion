@@ -16,8 +16,7 @@ topics:
 
 videos:
   - title: "Curso de ChatBot"
-    author: "ALSW"
-    url: "/Cursos/01_Arduino_ChatBot_Telegram/"
+    url: "Cursos/01_Arduino_ChatBot_Telegram/"
 
 actualizado: true
 ---

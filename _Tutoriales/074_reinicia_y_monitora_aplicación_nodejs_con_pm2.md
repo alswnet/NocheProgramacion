@@ -35,8 +35,6 @@ topics:
     time: '23:47'
 
 links:
-  - title: "Servicio de Chatbot en Nodejs"
-    url: "/Cursos/01_Arduino_ChatBot_Telegram/1.8-Sistema-Temperatura"
   - title: "Bot De ChepeCarlosbot en Telegram"
     url: "https://t.me/chepecarlosbot"
   - title: "Pagina PM2"
@@ -46,7 +44,9 @@ links:
 
 videos:
   - title: "Grabacion en vivo de pm2"
-    url: "/Grabaciones/002_Grabacion_de_Tutorial_pm2.html"
+    url: "Grabaciones/002_Grabacion_de_Tutorial_pm2"
+  - title: "Servicio de Chatbot en Nodejs"
+    url: "Cursos/01_Arduino_ChatBot_Telegram/1.8-Sistema-Temperatura"
 
 actualizado: true
 ---

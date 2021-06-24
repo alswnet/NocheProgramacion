@@ -38,6 +38,8 @@ links:
     url: "https://www.python.org/"
   - title: "Virtualenv"
     url: "https://docs.python.org/3/library/venv.html"
+
+videos:
   - title: "Video Python: VENV Mac & Linux (Ingles)"
     url: "https://www.youtube.com/watch?v=Kg1Yvry_Ydk"
   - title: "Video Workflow: Python and Virtualenv (Ingles)"

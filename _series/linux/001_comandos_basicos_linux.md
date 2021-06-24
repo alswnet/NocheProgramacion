@@ -59,6 +59,8 @@ topics:
 links:
   - title: "Terminal Quake"
     url: "http://guake-project.org/"
+    
+videos:
   - title: "Git Bash para Windos"
     url: "https://www.youtube.com/watch?v=jChUn5oaSW8"
   - title: "exa el nuevo ls"
