@@ -2,6 +2,7 @@
 layout: base
 permalink: /
 ---
+{% comment %} Repara problema de la lista {% endcomment %}
 
 {% comment %} Get the next stream. {% endcomment %}
 {% include 1-tools/sort-videos.html videos=site.Grabaciones future=true reverse=true %}
@@ -31,6 +32,7 @@ permalink: /
 {% include 1-tools/sort-videos.html videos=site.Tutoriales reverse=true %}
 {% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
 {% endcomment %}
+
 
 {% comment %} Get lastest stream and add it to the featured videos array.
 {% include 1-tools/sort-videos.html videos=site.Cursos reverse=false %}
@@ -66,13 +68,13 @@ permalink: /
     {% include 3-modules/hero-item.html image=patreonLogo title='Necesitamos tu Apoyo' content='Ayudános a seguir creando contenido, cada aporte salva un "Proyecto de arduino"' url=site.links.patreon cta='Conviertete en Patreon' class='patreon'
     %}
 
-    {% capture merchStoreImage %}<img alt='Tienda de ALSW' src="{{ '/assets/images/Logo-ALSW.png' | relative_url }}" />{%
+    {% capture merchStoreImage %}<img alt='Pagina ALSW' src="{{ '/assets/images/Logo-ALSW.png' | relative_url }}" />{%
     endcapture %}
-    {% include 3-modules/hero-item.html image=merchStoreImage title='Tienda ALSW'
-    content='¿Necesitas Arduino, Sensores, Led, Botones o Ayuda en tu Proyecto? ¡Visita nuestra tienda en El Salvador y te ayudaremos a hacer un proyecto épico!' url=site.links.tienda cta='Compra en Tienda' class='merch-store' %}
+    {% include 3-modules/hero-item.html image=merchStoreImage title='ALSW'
+    content='Quiere empezar a aprender entra a nuestro Academia Virtual' url=site.links.alsw cta='Mira los Curso' class='merch-store' %}
 
     {% capture coffee %}{% include 4-vector-graphics/coffee.svg %}{% endcapture %}
     {% include 3-modules/hero-item.html image=coffee title="Invitanos un Café con Leche"
-    content='Toda ayuda cuenta, anímate' url=site.links.paypal cta='Donación por paypal' class='paypal' %}
+    content='Ayudanos a seguir creando y compartiendo mas contenido con una donacion directa, de antemano gracias por el apoyo' url=site.links.donar cta='Donar' class='paypal' %}
   </div>
 </div>
