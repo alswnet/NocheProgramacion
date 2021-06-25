@@ -122,6 +122,7 @@ sass: { sass_dir: "assets/css" }
 plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # --- Jekyll Locations ---
 layouts_dir: _jekyll/layouts
