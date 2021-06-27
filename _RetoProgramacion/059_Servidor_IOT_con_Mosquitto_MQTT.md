@@ -22,6 +22,10 @@ links:
   - title: "PubSub libreria MQTT"
     url:  "http://pubsubclient.knolleary.net/"
 
+videos:
+  - title: "Nueva Serie MQTT"
+    url: "series/mqtt"
+
 piezas:
   - title: "Sparkfun ESP8266 Thing Dev"
   - title: "Boton"
@@ -31,6 +35,8 @@ piezas:
     pieza: "resistencia-de-330-ohm-0-25w"
   - title: "Resistencia 1K"
     pieza: "resistencia-de-1k-ohm-0-25w"
+
+actualizado: true
 ---
 
-Como poder levantar tu propio broker IOT para MQTT
+Veremos como levantar tu propio server de MQTT con mosquitto, haremos pruebas con el esp8266.
