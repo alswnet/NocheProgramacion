@@ -292,7 +292,8 @@ async function writeDescriptions(videos) {
 🖋️ Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet
 🔭 Telegram: https://t.me/alswnet
-🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1`;
+🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1
+🎈 Twitch: https://www.twitch.tv/alswnet`;
 
     // if (data.tags) {
     //   description += `\n\n#ALSW`;
