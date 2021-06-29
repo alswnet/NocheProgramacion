@@ -85,9 +85,13 @@ function ModeloListo() {
 }
 
 function PresionandoBoton() {
-  var NombreBoton = this.elt.innerText;
-  console.log("Entrenando con " + NombreBoton);
-  EntrenarKnn(NombreBoton);
+  if (Clasificando) {
+    var NombreBoton = this.elt.innerText;
+    console.log("Entrenando con " + NombreBoton);
+    EntrenarKnn(NombreBoton);
+  } else {
+    console.log("Neurona no cargada");
+  }
 }
 
 function EntrenarKnn(ObjetoEntrenar) {
