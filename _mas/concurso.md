@@ -12,13 +12,13 @@ Pagina del Giveaway de ALSW para el año 2021, gracias a toda la comunidad y a t
 
 # Como Participar
 
-* Suscribirse al Canal de [ALSW en Youtube](https://youtube.com/alswnet?sub_confirmation=1)
-* Hacer uno o mas acciones de Puntos para mayor oportunidad en [Pagina de Gleam](https://gleam.io/IZRm6/giveaway-aniversario-alsw)
-* Llenar el formulario Google de [**Informacion de Contactos**](https://docs.google.com/forms/d/e/1FAIpQLSfcRIY4v-vjbCWlvydVwf-JoAhLEmeL_twsG5i_hRmCe2p-lQ/viewform?usp=sf_link)
+* Suscribirse al Canal de <a href="https://youtube.com/alswnet?sub_confirmation=1" target="_blank">ALSW en Youtube</a>
+* Hacer uno o mas acciones de Puntos para mayor oportunidad en <a href="https://gleam.io/IZRm6/giveaway-aniversario-alsw" target="_blank"> ALSW en Youtube</a>
+* Llenar el formulario Google de <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcRIY4v-vjbCWlvydVwf-JoAhLEmeL_twsG5i_hRmCe2p-lQ/viewform?usp=sf_link" target="_blank">**Informacion de Contactos**</a>
 
 # Premios
 
-* **2** x Gifs Card de [Sparkfun](https://www.sparkfun.com/) por **$25**
+* **2** x Gifs Card de <a href="https://www.sparkfun.com/" target="_blank">Sparkfun</a> por **$25**
 
 # Puntos de Participar
 
@@ -41,4 +41,4 @@ Gracias por participar, en el "Giveaway Aniversario de ALSW" la premiacion sera 
 
 Si quiere estar pendiente la premiacion sera aqui [Link Pendiente](https://youtube.com/alswnet?sub_confirmation=1)
 
-Comparte el Giveaway para que **MAKER** se unan a la comunidad de ALSW
+Comparte el Giveaway para que otros **MAKERS** se unan a la comunidad de ALSW
