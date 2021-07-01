@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 int CanitdadLed = 10;
 int LedInicial = 3;
 int Esperar = 100;

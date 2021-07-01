@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 #include <Wire.h>//Include the Wire library to talk I2C
 
 #define MCP4725_ADDR 0x60

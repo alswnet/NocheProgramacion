@@ -1,3 +1,8 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
+
 #define Derecha 1
 #define Izquierda -1
 

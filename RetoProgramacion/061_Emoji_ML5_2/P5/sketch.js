@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 let Camara;
 let poseNet;
 let poses = [];
@@ -10,10 +14,10 @@ let CanvasDibujos;
 
 function setup() {
   CanvasDibujos = createCanvas(640, 480);
-  emoji[0] = loadImage('./emoji.png', CargoImagen, ErrorImagen);
-  emoji[1] = loadImage('./Vader.png', CargoImagen, ErrorImagen);
-  emoji[2] = loadImage('./pup.png', CargoImagen, ErrorImagen);
-  emoji[3] = loadImage('./diablo.png', CargoImagen, ErrorImagen);
+  emoji[0] = loadImage("./emoji.png", CargoImagen, ErrorImagen);
+  emoji[1] = loadImage("./Vader.png", CargoImagen, ErrorImagen);
+  emoji[2] = loadImage("./pup.png", CargoImagen, ErrorImagen);
+  emoji[3] = loadImage("./diablo.png", CargoImagen, ErrorImagen);
 
   Camara = createCapture(VIDEO);
   Camara.size(width, height);
@@ -21,10 +25,9 @@ function setup() {
 
   poseNet = ml5.poseNet(Camara, ModeloListo);
 
-  poseNet.on('pose', function(results) {
+  poseNet.on("pose", function(results) {
     poses = results;
   });
-
 }
 
 function draw() {
@@ -37,7 +40,7 @@ function draw() {
 
 function ModeloListo() {
   console.log("Modelo Listo");
-  select('#status').html('Modelos listo');
+  select("#status").html("Modelos listo");
 }
 
 function CargoImagen() {
@@ -45,8 +48,7 @@ function CargoImagen() {
 }
 
 function ErrorImagen() {
-  console.log("error imagen ")
-
+  console.log("error imagen ");
 }
 
 function DibujarEmoji() {
@@ -65,12 +67,22 @@ function DibujarEmoji() {
     fill(255, 255, 0);
     noStroke();
     imageMode(CENTER);
-    let D = dist(PoseActual.rightEar.x, PoseActual.rightEar.y, PoseActual.leftEar.x, PoseActual.leftEar.y);
-    image(emoji[MiEmoji[i]], PoseActual.nose.x, PoseActual.nose.y, D * 1.92, D * 1.92);
+    let D = dist(
+      PoseActual.rightEar.x,
+      PoseActual.rightEar.y,
+      PoseActual.leftEar.x,
+      PoseActual.leftEar.y
+    );
+    image(
+      emoji[MiEmoji[i]],
+      PoseActual.nose.x,
+      PoseActual.nose.y,
+      D * 1.92,
+      D * 1.92
+    );
   }
   pop();
 }
-
 
 function drawKeypoints() {
   //console.log("Candida de personas" + poses.length);
@@ -79,7 +91,6 @@ function drawKeypoints() {
     for (let j = 0; j < pose.keypoints.length; j++) {
       let keypoint = pose.keypoints[j];
       if (keypoint.score > 0.5) {
-
         fill(255, 255, 0);
         noStroke();
         ellipse(keypoint.position.x, keypoint.position.y, 20, 20);
@@ -98,14 +109,19 @@ function drawSkeleton() {
       let partA = skeleton[j][0];
       let partB = skeleton[j][1];
       stroke(255, 0, 0);
-      line(partA.position.x, partA.position.y, partB.position.x, partB.position.y);
+      line(
+        partA.position.x,
+        partA.position.y,
+        partB.position.x,
+        partB.position.y
+      );
     }
   }
 }
 
 function keyPressed() {
-  if (key === 'a') {
+  if (key === "a") {
     console.log("Tomar foto ");
-    saveCanvas(CanvasDibujos, 'Emoji'+random(255), 'jpg');
+    saveCanvas(CanvasDibujos, "Emoji" + random(255), "jpg");
   }
 }

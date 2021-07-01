@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 const OBSWebSocket = require("obs-websocket-js");
 var mqtt = require("mqtt");
 

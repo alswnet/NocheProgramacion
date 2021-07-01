@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 import processing.serial.*;
 
 boolean[] EstadoBoton = {false, false, false, false};
@@ -8,7 +12,7 @@ int RadioBoton = 40;
 
 void setup() {
 
-  size(800, 400); 
+  size(800, 400);
   String NombrePuerto ="/dev/ttyUSB0";
   MiSerial = new Serial(this, NombrePuerto, 9600);
 }
@@ -39,7 +43,7 @@ void DibujarBoton(int x, int y, boolean Estado) {
 void PrecionarBoton(int x, int y, int Indice, char Letra) {
   float d = dist(x, y, mouseX, mouseY);
   if (d < RadioBoton) {
-    EstadoBoton[Indice] = !EstadoBoton[Indice];  
+    EstadoBoton[Indice] = !EstadoBoton[Indice];
     MiSerial.write(Letra);
   }
 }

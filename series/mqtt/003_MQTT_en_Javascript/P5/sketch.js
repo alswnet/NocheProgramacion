@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 var client = mqtt.connect("ws://test.mosquitto.org:8080/mqtt");
 //Si lo usas en hosting para usar encriptado https
 // var client = mqtt.connect("wss://test.mosquitto.org:8081/mqtts")

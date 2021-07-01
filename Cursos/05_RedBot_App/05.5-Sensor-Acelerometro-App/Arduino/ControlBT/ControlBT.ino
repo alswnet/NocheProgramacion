@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 //Pines de los motores
 int MotorD[2] = {9, 10};
 int MotorI[2] = {13, 12};

@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 #include <SoftwareSerial.h>//Se puede emular mas de un puerto serial
 
 SoftwareSerial BTSerial(3, 2); // RX | TX Poner los pines que usas

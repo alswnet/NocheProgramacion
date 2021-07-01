@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 // TODO: Ver pro que se apaga todo por error al apagar y encender rapido
 
 const TelegramBot = require("node-telegram-bot-api");

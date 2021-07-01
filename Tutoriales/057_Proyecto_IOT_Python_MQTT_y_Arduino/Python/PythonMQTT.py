@@ -1,9 +1,13 @@
+# Creado ChepeCarlos de ALSW
+# Tutorial Completo en https://nocheprogramacion.com
+# Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 import paho.mqtt.client as mqtt
 import time
 
 
 def ConectarMQTT(client, userdata, flags, rc):
-    print("Conencando al Servidor - "+str(rc))
+    print("Conencando al Servidor - " + str(rc))
     MiMQTT.subscribe("Boton")
 
 

@@ -1,8 +1,9 @@
-#include <EEPROM.h>
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
 
 int Led = 13;
 int LDR = A0;
-
 int Max, Min;
 
 #include <EEPROM.h>

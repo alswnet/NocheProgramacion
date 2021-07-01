@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 void setup() {
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
@@ -168,7 +172,7 @@ void loop() {
   digitalWrite(12, HIGH);
   digitalWrite(13, LOW);
   delay(500);
-  
+
   digitalWrite(3, LOW);
   digitalWrite(4, LOW);
   digitalWrite(5, LOW);

@@ -1,4 +1,8 @@
-//librerias 
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
+//librerias
 import java.util.*;
 import ketai.ui.*;
 import ketai.net.bluetooth.*;
@@ -70,7 +74,7 @@ void DibujarGUI() {
 
   textSize(32);
   fill(255, 200, 0);
-  text("Densidad: "+CantidadLectura+" Bateria: "+Bateria+"V Velocidad: "+Velocidad+"ms Frame: "+int(frameRate), 10, 30); 
+  text("Densidad: "+CantidadLectura+" Bateria: "+Bateria+"V Velocidad: "+Velocidad+"ms Frame: "+int(frameRate), 10, 30);
 
 
   stroke(0);
@@ -129,7 +133,7 @@ void BuscarNumero() {
         int Numero = Integer.parseInt(Paquete.substring(1));
         Bateria = (float(Numero)/512)*5;
         println("Paquete Bateria: "+Bateria);
-      } 
+      }
       catch(Exception e) {
         println("Error catch Bateria: "+Paquete);
       }

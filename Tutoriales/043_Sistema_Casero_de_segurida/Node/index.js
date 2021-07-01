@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 const TelegramBot = require("node-telegram-bot-api");
 const token = "XXX"; //Token de Github
 const bot = new TelegramBot(token, {

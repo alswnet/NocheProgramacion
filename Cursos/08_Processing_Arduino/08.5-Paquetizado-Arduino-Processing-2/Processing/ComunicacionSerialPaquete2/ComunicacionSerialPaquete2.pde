@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 import processing.serial.*;
 
 Serial MiPuerto;
@@ -21,7 +25,7 @@ void draw() {
   ellipse(width/4, PM1, width/4, width/4);
   float PM2 = map(M2, 0, 100, 0, height);
   ellipse((3*width)/4, PM2, width/4, width/4);
-} 
+}
 
 void mousePressed() {
   MoverCirculo();

@@ -1,3 +1,7 @@
+# Creado ChepeCarlos de ALSW
+# Tutorial Completo en https://nocheprogramacion.com
+# Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 import paho.mqtt.client as mqtt
 
 client = mqtt.Client()

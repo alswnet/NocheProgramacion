@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 let Camara;
 let poseNet;
 let poses = [];
@@ -5,17 +9,16 @@ let emoji;
 
 function setup() {
   createCanvas(640, 480);
-  emoji = loadImage('./emoji.png', CargoImagen, ErrorImagen);
+  emoji = loadImage("./emoji.png", CargoImagen, ErrorImagen);
   Camara = createCapture(VIDEO);
   Camara.size(width, height);
   Camara.hide();
 
   poseNet = ml5.poseNet(Camara, ModeloListo);
 
-  poseNet.on('pose', function(results) {
+  poseNet.on("pose", function(results) {
     poses = results;
   });
-
 }
 
 function draw() {
@@ -28,17 +31,15 @@ function draw() {
 
 function ModeloListo() {
   console.log("Modelo Listo");
-  select('#status').html('Modelos listo');
+  select("#status").html("Modelos listo");
 }
-
 
 function CargoImagen() {
   console.log("Cargare Imagen");
 }
 
 function ErrorImagen() {
-  console.log("error imagen ")
-
+  console.log("error imagen ");
 }
 
 function DibujarEmoji() {
@@ -52,7 +53,6 @@ function DibujarEmoji() {
   }
   pop();
 }
-
 
 function drawKeypoints() {
   //console.log("Candida de personas" + poses.length);
@@ -79,7 +79,12 @@ function drawSkeleton() {
       let partA = skeleton[j][0];
       let partB = skeleton[j][1];
       stroke(255, 0, 0);
-      line(partA.position.x, partA.position.y, partB.position.x, partB.position.y);
+      line(
+        partA.position.x,
+        partA.position.y,
+        partB.position.x,
+        partB.position.y
+      );
     }
   }
 }

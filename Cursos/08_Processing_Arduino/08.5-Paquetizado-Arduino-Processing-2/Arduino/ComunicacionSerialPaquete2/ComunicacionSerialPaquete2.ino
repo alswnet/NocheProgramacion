@@ -1,3 +1,7 @@
+// Creado ChepeCarlos de ALSW
+// Tutorial Completo en https://nocheprogramacion.com
+// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+
 const int PinEcho1 = 7;
 const int PinTrigger1 = 6;
 const int PinEcho2 = 5;
