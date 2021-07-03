@@ -28,12 +28,14 @@ topics:
     time: "12:15"
 
 links:
-  - title: "Serie MQTT"
-    url: "https://www.youtube.com/watch?v=T1_w8-8Y5kc&list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO"
   - title: "Librería MQTT Python"
     url: "https://pypi.org/project/paho-mqtt/"
   - title: "Libreria MQTT Arduino"
     url: "https://github.com/256dpi/arduino-mqtt"
+
+videos:
+  - title: "Nueva Serie MQTT"
+    url: series/mqtt
 
 actualizado: true
 ---
