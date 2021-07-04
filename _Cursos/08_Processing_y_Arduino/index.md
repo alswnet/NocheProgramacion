@@ -3,6 +3,7 @@ title: "ArteInteractivo: Processing y Arduino"
 subtitle: Comunicacion Arduino y processing
 series_number: 8
 layout: series-index
+playlist_id: PLWQQswW6kqpWWXMK3idgfBS8N2GaCaZFM
 redirect_from:
   - /processing
 ---
