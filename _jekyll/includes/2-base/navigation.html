@@ -8,6 +8,8 @@
 
     <li><a class="top-link" href="{{ '/' | relative_url }}" id="home">Inicio</a></li>
 
+    <li><a href="{{ '/sorteo' | relative_url }}">Sorteo</a></li>
+
     <li><a href="{{ '/Tutoriales' | relative_url }}">Tutoriales</a></li>
 
     <li>
@@ -36,7 +38,7 @@
       </div>
     </li>
 
-    <li><a href="{{ site.links.noticias }}" target="_blank">Noticias</a></li>
+
 
     <li><a href="{{  '/shorts' | relative_url }}">Shorts</a></li>
 
@@ -55,16 +57,17 @@
           <li><a href="{{ '/Guias' | relative_url }}">Todas Guias</a></li>
         </ul>
       </div>
-    </li>
-    <li><a href="{{ '/bot' | relative_url }}">Bot</a></li>
-    <li>
+
       <button class="submenu-button top-link" aria-haspopup="true" for="more-submenu"><span>Mas</span></button>
       <div class="submenu" id="more-submenu">
         <ul class="links">
+          <li><a href="{{ site.links.noticias }}" target="_blank">Noticias</a></li>
+          <li><a href="{{ '/bot' | relative_url }}">Bot</a></li>
           <li><a href="{{ '/tag' | relative_url }}">Nube Tags</a></li>
           <li><a href="{{ '/Grabaciones' | relative_url }}">Grabaciones</a></li>
           <li><a href="{{ '/RetoProgramacion' | relative_url }}">RetoProgramacion</a></li>
           <li><a href="{{ '/invitados' | relative_url }}">Invitados</a></li>
+          <li><a href="{{ '/bodega' | relative_url }}">Bodega</a></li>
           <li><a href="{{ '/mas/faq' | relative_url }}">Preguntas Frecuentes</a></li>
           <li><a href="{{ '/linuxappuso' | relative_url}}">Las Linux App que uso</a></li>
           <li><a href="{{ site.github.repository_url }}" target="_blank">Github</a></li>

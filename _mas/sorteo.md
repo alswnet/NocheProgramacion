@@ -7,25 +7,28 @@ redirect_from:
   - /sorteo
 ---
 
-[![Cómo agregar tu contribución](https://i3.ytimg.com/vi/nGAHSes_0Nk/hqdefault.jpg)](https://youtu.be/nGAHSes_0Nk)
+<center>
+<div id="video-player" class="video-player" data-videoid="uoTlKtrErb8"></div>
+</center>
 
 Pagina del Sorteo de ALSW para el año 2021, gracias a toda la comunidad y a ti por el gran año, esto es un pequeño agradecimiento
 
 # Como Participar
 
-* Suscribirse al Canal de <a href="https://youtube.com/alswnet?sub_confirmation=1" target="_blank">ALSW en Youtube</a>
-* Hacer uno o mas acciones de Puntos para aumentar la oportunidad de **Ganar** en [<a href="https://gleam.io/IZRm6/giveaway-aniversario-alsw" target="_blank">Pagina Glean</a>
-* Llenar el formulario Google de <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcRIY4v-vjbCWlvydVwf-JoAhLEmeL_twsG5i_hRmCe2p-lQ/viewform?usp=sf_link" target="_blank">**Informacion de Contactos**</a>
+-   Suscribirse al Canal de <a href="https://youtube.com/alswnet?sub_confirmation=1" target="_blank">ALSW en Youtube</a>
+-   Hacer uno o mas acciones de Puntos para aumentar la oportunidad de **Ganar** en <a href="https://gleam.io/IZRm6/giveaway-aniversario-alsw" target="_blank">Pagina Glean</a>
+-   Llenar el formulario Google de <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcRIY4v-vjbCWlvydVwf-JoAhLEmeL_twsG5i_hRmCe2p-lQ/viewform?usp=sf_link" target="_blank">**Informacion de Contactos**</a>
 
 # Premios
 
-* **2** x Gifs Card de <a href="https://www.sparkfun.com/" target="_blank">Sparkfun</a> por **$25**
+-   **2** x Gifs Card de <a href="https://www.sparkfun.com/" target="_blank">Sparkfun</a> por **$25**
 
 # Puntos de Participar
 
 Para participar tiene que realizar una o varias de las siguientes acciones
 
 <a class="e-widget no-button" href="https://gleam.io/IZRm6/giveaway-aniversario-alsw" rel="nofollow">Sorteo Aniversario ALSW</a>
+
 <script type="text/javascript" src="https://widget.gleamjs.io/e.js" async="true"></script>
 
 # Informacion de Contacto
