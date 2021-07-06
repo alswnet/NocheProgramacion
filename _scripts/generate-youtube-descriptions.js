@@ -129,6 +129,7 @@ async function writeDescriptions(videos) {
   let CantidadSeoMostar = 0;
   let CantidadSeoMostarActivo = 0;
   let NuevoSistema = 0;
+  let ActivadoAdsGlobal = false;
 
   await primeDirectory("./descripciones");
   await primeDirectory("./actualizado");
@@ -153,6 +154,18 @@ async function writeDescriptions(videos) {
         description += `\n`;
       }
       description += `👇 👇 👇\n`;
+    }
+
+    // ADS Global
+    const AdsGlobal = path.join(__dirname, "ads.txt");
+    try {
+      if (fs.existsSync(AdsGlobal)) {
+        ActivadoAdsGlobal = true;
+        let ADS = fs.readFileSync(AdsGlobal);
+        description += `\n${ADS}`;
+      }
+    } catch (err) {
+      console.error(err);
     }
 
     // ADS
@@ -285,9 +298,9 @@ async function writeDescriptions(videos) {
 🚩 Sugerir Temas: https://github.com/alswnet/NocheProgramacion/issues/new
 💡 GitHub: https://github.com/alswnet
 💬 Discord: https://nocheprogramacion.com/discord
-☕ Compranos un cafe: https://www.buymeacoffee.com/alswnet
+☕ Compranos un café: https://www.buymeacoffee.com/alswnet
 💖 Apoyo: https://nocheprogramacion.com/apoyo
-💰 Donacion: https://nocheprogramacion.com/donar
+💰 Donación: https://nocheprogramacion.com/donar
 🌎 Noticias: https://programacion.news
 🖋️ Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet
@@ -334,6 +347,7 @@ async function writeDescriptions(videos) {
   console.log(`SeoMostar: ${DosDecimales(CantidadSeoMostar, videos.length)}`);
   console.log(`SeoMostar Activos: ${DosDecimales(CantidadSeoMostarActivo, videos.length)}`);
   console.log(`Nuevo Sistema: ${DosDecimales(NuevoSistema, videos.length)}`);
+  console.log(`Ads Global: ${ActivadoAdsGlobal}`);
 }
 
 (() => {
