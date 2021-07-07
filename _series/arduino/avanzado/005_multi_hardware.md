@@ -1,7 +1,7 @@
 ---
 title: "Codigo Multi hardware para Arduino, ESP32 y ESP8266"
 video_number: 5
-date: 2021-077-07
+date: 2021-07-07
 video_id: QHdi4vpVWPU
 repository: arduino/avanzado/005_multi_mardware
 
