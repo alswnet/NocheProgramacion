@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [41]</a>
+		<a href="/tag/arduino">#arduino [44]</a>
 	</li>
 	<li>
 		<a href="/tag/lcd">#lcd [2]</a>
@@ -16,7 +16,7 @@ redirect_from:
 		<a href="/tag/ftdi">#ftdi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [13]</a>
+		<a href="/tag/linux">#linux [14]</a>
 	</li>
 	<li>
 		<a href="/tag/youtube">#youtube [3]</a>
@@ -31,7 +31,7 @@ redirect_from:
 		<a href="/tag/javascrip">#javascrip [1]</a>
 	</li>
 	<li>
-		<a href="/tag/esp8266">#esp8266 [5]</a>
+		<a href="/tag/esp8266">#esp8266 [7]</a>
 	</li>
 	<li>
 		<a href="/tag/debian">#debian [1]</a>
@@ -43,10 +43,10 @@ redirect_from:
 		<a href="/tag/linuxmint">#linuxmint [1]</a>
 	</li>
 	<li>
-		<a href="/tag/esp32">#esp32 [4]</a>
+		<a href="/tag/esp32">#esp32 [7]</a>
 	</li>
 	<li>
-		<a href="/tag/esp8255">#esp8255 [1]</a>
+		<a href="/tag/esp8255">#esp8255 [2]</a>
 	</li>
 	<li>
 		<a href="/tag/arduinoide">#arduinoide [2]</a>
@@ -73,7 +73,7 @@ redirect_from:
 		<a href="/tag/EditarVideo">#EditarVideo [1]</a>
 	</li>
 	<li>
-		<a href="/tag/mqtt">#mqtt [10]</a>
+		<a href="/tag/mqtt">#mqtt [13]</a>
 	</li>
 	<li>
 		<a href="/tag/python">#python [4]</a>
@@ -142,7 +142,7 @@ redirect_from:
 		<a href="/tag/gist">#gist [1]</a>
 	</li>
 	<li>
-		<a href="/tag/comando">#comando [4]</a>
+		<a href="/tag/comando">#comando [5]</a>
 	</li>
 	<li>
 		<a href="/tag/venv">#venv [1]</a>
@@ -151,7 +151,7 @@ redirect_from:
 		<a href="/tag/chatbot">#chatbot [1]</a>
 	</li>
 	<li>
-		<a href="/tag/bluetooth">#bluetooth [6]</a>
+		<a href="/tag/bluetooth">#bluetooth [7]</a>
 	</li>
 	<li>
 		<a href="/tag/p5js">#p5js [8]</a>
@@ -166,7 +166,7 @@ redirect_from:
 		<a href="/tag/editarvideo">#editarvideo [3]</a>
 	</li>
 	<li>
-		<a href="/tag/millis">#millis [2]</a>
+		<a href="/tag/millis">#millis [1]</a>
 	</li>
 	<li>
 		<a href="/tag/bucle">#bucle [1]</a>
@@ -233,6 +233,12 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/litoibarra">#litoibarra [1]</a>
+	</li>
+	<li>
+		<a href="/tag/sorteo">#sorteo [1]</a>
+	</li>
+	<li>
+		<a href="/tag/aniversario">#aniversario [1]</a>
 	</li>
 </ul>
 </div>
