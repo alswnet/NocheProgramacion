@@ -8,7 +8,7 @@ tags:
   - linux
   - robotica
 
-links:
+videos:
   - title: Parte 2 colaboracion
     url: https://www.youtube.com/watch?v=8Oj9TVOy5js
 

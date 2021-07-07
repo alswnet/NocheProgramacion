@@ -17,7 +17,7 @@ topics:
     time: '08:31'
   - title: Linux para todo
     time: '15:10'
-links:
+videos:
   - title: Parte 1 colaboracion
     url: https://www.youtube.com/watch?v=H2fhTZvz9IY
 custom_sections:
