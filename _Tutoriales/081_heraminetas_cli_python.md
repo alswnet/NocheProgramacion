@@ -3,7 +3,7 @@ title: "Crea tu herramientas cli en Python"
 video_number: 81
 date: 2021-07-09
 video_id: 06l9Jra97-A
-repository: 082_como_usar_systemctl
+repository: 081_heraminetas_cli_python
 tags:
   - python
   - cli
