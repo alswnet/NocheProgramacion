@@ -39,6 +39,12 @@ topics:
 links:
   - title: "Libreria argparse python"
     url: "https://docs.python.org/3/library/argparse.html"
+  - title: "Mi Heramienta CLI ElGatoALSW"
+    url: "https://github.com/chepecarlos/ElGatoALSW"
+  - title: "Mi Heramienta CLI Basket"
+    url: "https://github.com/chepecarlos/Basket"
+  - title: "Mi Heramienta CLI ToolTube"
+    url: "https://github.com/chepecarlos/tooltube"
 
 videos:
   - title: "Entorno Virtual en Python"
