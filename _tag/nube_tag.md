@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [44]</a>
+		<a href="/tag/arduino">#arduino [45]</a>
 	</li>
 	<li>
 		<a href="/tag/lcd">#lcd [2]</a>
@@ -16,7 +16,7 @@ redirect_from:
 		<a href="/tag/ftdi">#ftdi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [14]</a>
+		<a href="/tag/linux">#linux [15]</a>
 	</li>
 	<li>
 		<a href="/tag/youtube">#youtube [3]</a>
@@ -43,10 +43,10 @@ redirect_from:
 		<a href="/tag/linuxmint">#linuxmint [1]</a>
 	</li>
 	<li>
-		<a href="/tag/esp32">#esp32 [7]</a>
+		<a href="/tag/esp32">#esp32 [8]</a>
 	</li>
 	<li>
-		<a href="/tag/esp8255">#esp8255 [2]</a>
+		<a href="/tag/esp8255">#esp8255 [3]</a>
 	</li>
 	<li>
 		<a href="/tag/arduinoide">#arduinoide [2]</a>
@@ -73,10 +73,10 @@ redirect_from:
 		<a href="/tag/EditarVideo">#EditarVideo [1]</a>
 	</li>
 	<li>
-		<a href="/tag/mqtt">#mqtt [13]</a>
+		<a href="/tag/mqtt">#mqtt [12]</a>
 	</li>
 	<li>
-		<a href="/tag/python">#python [4]</a>
+		<a href="/tag/python">#python [5]</a>
 	</li>
 	<li>
 		<a href="/tag/git">#git [10]</a>
@@ -148,6 +148,9 @@ redirect_from:
 		<a href="/tag/venv">#venv [1]</a>
 	</li>
 	<li>
+		<a href="/tag/cli">#cli [3]</a>
+	</li>
+	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
 	</li>
 	<li>
@@ -170,6 +173,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/bucle">#bucle [1]</a>
+	</li>
+	<li>
+		<a href="/tag/wifi">#wifi [1]</a>
 	</li>
 	<li>
 		<a href="/tag/freecad">#freecad [7]</a>
@@ -221,9 +227,6 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/robotica">#robotica [2]</a>
-	</li>
-	<li>
-		<a href="/tag/cli">#cli [1]</a>
 	</li>
 	<li>
 		<a href="/tag/crecetube">#crecetube [1]</a>
