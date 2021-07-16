@@ -16,7 +16,7 @@ redirect_from:
 		<a href="/tag/ftdi">#ftdi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [15]</a>
+		<a href="/tag/linux">#linux [16]</a>
 	</li>
 	<li>
 		<a href="/tag/youtube">#youtube [3]</a>
@@ -148,7 +148,19 @@ redirect_from:
 		<a href="/tag/venv">#venv [1]</a>
 	</li>
 	<li>
-		<a href="/tag/cli">#cli [3]</a>
+		<a href="/tag/cli">#cli [4]</a>
+	</li>
+	<li>
+		<a href="/tag/gui">#gui [1]</a>
+	</li>
+	<li>
+		<a href="/tag/gtk">#gtk [1]</a>
+	</li>
+	<li>
+		<a href="/tag/servidores">#servidores [1]</a>
+	</li>
+	<li>
+		<a href="/tag/comandos">#comandos [2]</a>
 	</li>
 	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
@@ -194,9 +206,6 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/terminal">#terminal [1]</a>
-	</li>
-	<li>
-		<a href="/tag/comandos">#comandos [1]</a>
 	</li>
 	<li>
 		<a href="/tag/javascript">#javascript [1]</a>

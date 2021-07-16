@@ -1,6 +1,6 @@
 ---
 title: "Aprende a poner iconos en folder en linux mas Script Python "
-video_number: 81
+video_number: 82
 date: 2021-07-14
 video_id: M-bFfFpHydE
 repository: 082_icono_folder_linux
