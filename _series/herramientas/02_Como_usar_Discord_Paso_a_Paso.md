@@ -1,6 +1,6 @@
 ---
 title: "Como usar Discord Paso a Paso?"
-video_number: 64
+video_number: 2
 date: 2020-07-10
 video_id: Cx_Udga-huk
 tags:
@@ -29,7 +29,7 @@ topics:
 links:
  - title: "Discord"
    url: "https://discord.com/"
- - title: "Discord de ALSW"
+ - title: "Discord de Comunidad de ALSW"
    url: "https://nocheprogramacion.com/discord"   
 
 actualizado: true

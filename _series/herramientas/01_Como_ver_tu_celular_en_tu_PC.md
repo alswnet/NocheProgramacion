@@ -1,6 +1,6 @@
 ---
 title: "Como ver tu celular en tu PC? - Scrcpy"
-video_number: 65
+video_number: 1
 date: 2020-07-13
 video_id: J3jB44ukDYc
 tags:

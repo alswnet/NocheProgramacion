@@ -139,7 +139,7 @@ faq:
       - title: "Discord de la comunidad de ALSW"
         url: discord
       - title: "Tutorial de Discord"
-        url: Tutoriales/064_Como_usar_Discord_Paso_a_Paso
+        url: series/herramientas/02_Como_usar_Discord_Paso_a_Paso
       - title: "Pagina de Discord"
         url: "https://discord.com/"
   - question: "Gromit-MPX"
@@ -161,7 +161,7 @@ faq:
     answer: "Permite controlar y hacer espejo de tu celular Android en tu pc"
     links:
       - title: "Tutorial de Scrcpy"
-        url: Tutoriales/065_Como_ver_tu_celular_en_tu_PC
+        url: series/herramientas/01_Como_ver_tu_celular_en_tu_PC
       - title: "Pagina Scrcpy"
         url: "https://github.com/Genymobile/scrcpy"
   - question: "Barrier"
