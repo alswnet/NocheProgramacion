@@ -134,13 +134,6 @@ async function writedescripcions(videos) {
   Cantidad.Ads = 0;
   Cantidad.Video = 0;
   Cantidad.NuevoSistema = 0;
-  // let CantidadLinks = 0;
-  // let CantidadIndice = 0;
-  // let CantidadPiesas = 0;
-  // let CantidadCostun = 0;
-  // let CantidadAds = 0;
-  // let CantidadVideo = 0;
-  // let NuevoSistema = 0;
   let ActivadoAdsGlobal = false;
 
   await primeDirectory("./descripciones");
