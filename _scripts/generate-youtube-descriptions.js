@@ -98,36 +98,40 @@ function getVideoID(url) {
   }
 }
 
-function DosDecimales(Numero, Cantidad) {
+function DosDecimales(Numero, Cantidad, Activa) {
   return Numero + " " + parseFloat((100 * Numero) / Cantidad).toFixed(2) + "%";
 }
 
-function AgregarSeoMostar(descripcion) {
-  // TODO: no Activar si hay ads
-  let Saltos = descripcion.split(/\n/);
-  let CantidadSaltos = Saltos.length;
-  let LongitudTotal = descripcion.length;
-  if (CantidadSaltos <= 2) {
-    if (LongitudTotal <= 1) {
-      return 2;
-    } else if (LongitudTotal <= 90) {
-      return 1;
-    } else if (LongitudTotal <= 90 * 2) {
-      return 0;
+function AgregarSeoMostar(description, Cantidad, Actualizar) {
+  let Lineas = description.split(/\n/);
+  let LongitudLinea = 90;
+  if (description.length <= LongitudLinea * 2 && Lineas.length <= 1) {
+    description += `\n👇 👇 👇\n`;
+    if(Actualizar) Cantidad.SeoMostarActivo++;
+    Cantidad.SeoMostar++;
+  } else if (Lineas[0].length <= LongitudLinea * 2) {
+    let D = Lineas[0];
+    D += `\n👇 👇 👇\n`;
+    for (var i = 1; i < Lineas.length; i++) {
+      D += Lineas[i] + `\n`;
     }
+    description = D;
+    if(Actualizar) Cantidad.SeoMostarActivo++;
+    Cantidad.SeoMostar++;
   }
-  return -1;
+  return description;
 }
 
 async function writeDescriptions(videos) {
+  let Cantidad = new Object();
+  Cantidad.SeoMostar = 0;
+  Cantidad.SeoMostarActivo = 0;
   let CantidadLinks = 0;
   let CantidadIndice = 0;
   let CantidadPiesas = 0;
   let CantidadCostun = 0;
   let CantidadAds = 0;
   let CantidadVideo = 0;
-  let CantidadSeoMostar = 0;
-  let CantidadSeoMostarActivo = 0;
   let NuevoSistema = 0;
   let ActivadoAdsGlobal = false;
 
@@ -145,18 +149,8 @@ async function writeDescriptions(videos) {
     let content = data.__content.trim();
     description += `${content}\n`;
 
-    // SeoMostar
-    let Saltos = AgregarSeoMostar(description);
-    if (Saltos >= 0) {
-      CantidadSeoMostar++;
-      if (data.actualizado) CantidadSeoMostarActivo++;
-      if (Saltos >= 1) {
-        description += `\n`;
-      }
-      description += `👇 👇 👇\n`;
-    }
+    description = AgregarSeoMostar(description, Cantidad, data.actualizado);
 
-    // ADS Global
     const AdsGlobal = path.join(__dirname, "ads.txt");
     try {
       if (fs.existsSync(AdsGlobal)) {
@@ -344,8 +338,8 @@ async function writeDescriptions(videos) {
   console.log(`Extras: ${DosDecimales(CantidadCostun, videos.length)}`);
   console.log(`Videos: ${DosDecimales(CantidadVideo, videos.length)}`);
   console.log(`Ads: ${DosDecimales(CantidadAds, videos.length)}`);
-  console.log(`SeoMostar: ${DosDecimales(CantidadSeoMostar, videos.length)}`);
-  console.log(`SeoMostar Activos: ${DosDecimales(CantidadSeoMostarActivo, videos.length)}`);
+  console.log(`SeoMostar: ${DosDecimales(Cantidad.SeoMostar, videos.length)}`);
+  console.log(`SeoMostar Activos: ${DosDecimales(Cantidad.SeoMostarActivo, videos.length)}`);
   console.log(`Nuevo Sistema: ${DosDecimales(NuevoSistema, videos.length)}`);
   console.log(`Ads Global: ${ActivadoAdsGlobal}`);
 }
