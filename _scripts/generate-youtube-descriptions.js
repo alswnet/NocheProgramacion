@@ -105,18 +105,18 @@ function DosDecimales(Numero, Cantidad, Activa) {
 function AgregarSeoMostar(description, Cantidad, Actualizar) {
   let Lineas = description.split(/\n/);
   let LongitudLinea = 90;
-  if (description.length <= LongitudLinea * 2 && Lineas.length <= 1) {
-    description += `\n👇 👇 👇\n`;
-    if(Actualizar) Cantidad.SeoMostarActivo++;
+  if (description.length <= LongitudLinea * 2 && Lineas.length <= 2) {
+    description += `👇 👇 👇\n`;
+    if (Actualizar) Cantidad.SeoMostarActivo++;
     Cantidad.SeoMostar++;
   } else if (Lineas[0].length <= LongitudLinea * 2) {
     let D = Lineas[0];
-    D += `\n👇 👇 👇\n`;
+    D += `\n👇 👇 👇`;
     for (var i = 1; i < Lineas.length; i++) {
-      D += Lineas[i] + `\n`;
+      D += `\n` + Lineas[i];
     }
     description = D;
-    if(Actualizar) Cantidad.SeoMostarActivo++;
+    if (Actualizar) Cantidad.SeoMostarActivo++;
     Cantidad.SeoMostar++;
   }
   return description;
