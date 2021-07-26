@@ -76,7 +76,7 @@ redirect_from:
 		<a href="/tag/mqtt">#mqtt [12]</a>
 	</li>
 	<li>
-		<a href="/tag/python">#python [5]</a>
+		<a href="/tag/python">#python [6]</a>
 	</li>
 	<li>
 		<a href="/tag/git">#git [10]</a>
@@ -100,18 +100,6 @@ redirect_from:
 		<a href="/tag/macro">#macro [1]</a>
 	</li>
 	<li>
-		<a href="/tag/discord">#discord [1]</a>
-	</li>
-	<li>
-		<a href="/tag/scrcpy">#scrcpy [1]</a>
-	</li>
-	<li>
-		<a href="/tag/ControlaCelularPC">#ControlaCelularPC [1]</a>
-	</li>
-	<li>
-		<a href="/tag/android">#android [7]</a>
-	</li>
-	<li>
 		<a href="/tag/githubpage">#githubpage [1]</a>
 	</li>
 	<li>
@@ -127,7 +115,7 @@ redirect_from:
 		<a href="/tag/nodejs">#nodejs [9]</a>
 	</li>
 	<li>
-		<a href="/tag/rasberrypi">#rasberrypi [2]</a>
+		<a href="/tag/rasberrypi">#rasberrypi [3]</a>
 	</li>
 	<li>
 		<a href="/tag/whatsapp">#whatsapp [1]</a>
@@ -148,7 +136,7 @@ redirect_from:
 		<a href="/tag/venv">#venv [1]</a>
 	</li>
 	<li>
-		<a href="/tag/cli">#cli [4]</a>
+		<a href="/tag/cli">#cli [5]</a>
 	</li>
 	<li>
 		<a href="/tag/gui">#gui [1]</a>
@@ -163,10 +151,16 @@ redirect_from:
 		<a href="/tag/comandos">#comandos [2]</a>
 	</li>
 	<li>
+		<a href="/tag/speedtest">#speedtest [1]</a>
+	</li>
+	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
 	</li>
 	<li>
 		<a href="/tag/bluetooth">#bluetooth [7]</a>
+	</li>
+	<li>
+		<a href="/tag/android">#android [7]</a>
 	</li>
 	<li>
 		<a href="/tag/p5js">#p5js [8]</a>
@@ -205,6 +199,27 @@ redirect_from:
 		<a href="/tag/gitlab">#gitlab [1]</a>
 	</li>
 	<li>
+		<a href="/tag/scrcpy">#scrcpy [1]</a>
+	</li>
+	<li>
+		<a href="/tag/ControlaCelularPC">#ControlaCelularPC [1]</a>
+	</li>
+	<li>
+		<a href="/tag/discord">#discord [1]</a>
+	</li>
+	<li>
+		<a href="/tag/teclado">#teclado [1]</a>
+	</li>
+	<li>
+		<a href="/tag/mouse">#mouse [1]</a>
+	</li>
+	<li>
+		<a href="/tag/barrier">#barrier [1]</a>
+	</li>
+	<li>
+		<a href="/tag/deskreen">#deskreen [1]</a>
+	</li>
+	<li>
 		<a href="/tag/terminal">#terminal [1]</a>
 	</li>
 	<li>
@@ -229,7 +244,7 @@ redirect_from:
 		<a href="/tag/ndi">#ndi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/shorts">#shorts [2]</a>
+		<a href="/tag/shorts">#shorts [3]</a>
 	</li>
 	<li>
 		<a href="/tag/servidor">#servidor [1]</a>
@@ -247,10 +262,10 @@ redirect_from:
 		<a href="/tag/litoibarra">#litoibarra [1]</a>
 	</li>
 	<li>
-		<a href="/tag/sorteo">#sorteo [1]</a>
+		<a href="/tag/sorteo">#sorteo [2]</a>
 	</li>
 	<li>
-		<a href="/tag/aniversario">#aniversario [1]</a>
+		<a href="/tag/aniversario">#aniversario [2]</a>
 	</li>
 </ul>
 </div>
