@@ -3,7 +3,7 @@ title: "Supervisa tu servicio de INTERNET con Python y Speedtest"
 video_number: 84
 date: 2021-06-26
 video_id: TmK_v43TCj0
-repository: 081_heraminetas_cli_python
+repository: 084_supervisa_tu_servicio
 tags:
   - python
   - cli
