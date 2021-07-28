@@ -43,9 +43,11 @@ links:
     url: "https://github.com/esp8266/Arduino"
   - title: "Arduino ESP32"
     url: "https://github.com/espressif/arduino-esp32"
-  - title: "Driver FTDI Windos"
+  - title: "Driver FTDI Windows"
     url: "https://ftdichip.com/drivers/vcp-drivers/"
-  - title: "Driver CH340 Windos"
+  - title: "Driver CP210x Windows"
+    url: "https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers"
+  - title: "Driver CH340 Windows"
     url: "http://www.wch.cn/downloads/CH341SER_ZIP.html"
   - title: "Instalar Arduino IDE en Linux"
     url: "https://youtu.be/vHd-eEcLw-s"
@@ -59,4 +61,4 @@ links:
 actualizado: true
 ---
 
-Tu, al igual que nosotros, en algún momento del desarrollo de un proyecto con ESP32 o ESP8266 te surgen problemas con el IDE de arduino o la computadora misma, este video es para que aprendas a solventar dichos problemas.
+Tu al igual que nosotros, en algún momento del desarrollo de un proyecto con ESP32 o ESP8266 te surgen problemas con el IDE de arduino o la computadora misma, este video es para que aprendas a solventar dichos problemas.
