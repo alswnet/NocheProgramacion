@@ -33,6 +33,16 @@ function getPlaylist(file) {
   return false;
 }
 
+function getPlaylistName(file) {
+  const series = file.substring(0, file.lastIndexOf("/")) + "/index.md";
+  const content = fs.readFileSync(series);
+  const parsed = yaml.loadFront(content);
+  if (parsed.title) {
+    return parsed.title;
+  }
+  return false;
+}
+
 function getVideoData() {
   const directories = [
     "_Tutoriales",
@@ -60,7 +70,8 @@ function getVideoData() {
     videos.push({
       pageURL: url,
       data: parsed,
-      playlist: getPlaylist(file)
+      playlist: getPlaylist(file),
+      playlistName: getPlaylistName(file)
     });
   }
 
@@ -195,7 +206,8 @@ async function writedescripcions(videos) {
         descripcion += `🎥 Siguiente video: https://youtu.be/${nextID}\n`;
       }
       if (playlist) {
-        descripcion += `🎥 Playlist: https://www.youtube.com/playlist?list=${playlist}\n`;
+        const playlistName = videos[i].playlistName;
+        descripcion += `🎥 Playlist(${playlistName}): https://www.youtube.com/playlist?list=${playlist}\n`;
       }
     }
 
@@ -298,7 +310,7 @@ async function writedescripcions(videos) {
 💖 Apoyo: https://nocheprogramacion.com/apoyo
 💰 Donación: https://nocheprogramacion.com/donar
 🌎 Noticias: https://programacion.news
-🖋️ Twitter: https://twitter.com/alswnet
+🐦 Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet
 🔭 Telegram: https://t.me/alswnet
 🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1
