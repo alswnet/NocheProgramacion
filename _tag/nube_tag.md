@@ -73,7 +73,7 @@ redirect_from:
 		<a href="/tag/EditarVideo">#EditarVideo [1]</a>
 	</li>
 	<li>
-		<a href="/tag/mqtt">#mqtt [12]</a>
+		<a href="/tag/mqtt">#mqtt [14]</a>
 	</li>
 	<li>
 		<a href="/tag/python">#python [6]</a>
@@ -106,7 +106,7 @@ redirect_from:
 		<a href="/tag/compilar">#compilar [1]</a>
 	</li>
 	<li>
-		<a href="/tag/iot">#iot [7]</a>
+		<a href="/tag/iot">#iot [9]</a>
 	</li>
 	<li>
 		<a href="/tag/telegram">#telegram [9]</a>
@@ -136,10 +136,10 @@ redirect_from:
 		<a href="/tag/venv">#venv [1]</a>
 	</li>
 	<li>
-		<a href="/tag/cli">#cli [5]</a>
+		<a href="/tag/cli">#cli [6]</a>
 	</li>
 	<li>
-		<a href="/tag/gui">#gui [1]</a>
+		<a href="/tag/gui">#gui [2]</a>
 	</li>
 	<li>
 		<a href="/tag/gtk">#gtk [1]</a>
@@ -227,6 +227,9 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/java">#java [1]</a>
+	</li>
+	<li>
+		<a href="/tag/mosquitto">#mosquitto [1]</a>
 	</li>
 	<li>
 		<a href="/tag/obs">#obs [4]</a>

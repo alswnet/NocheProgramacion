@@ -52,6 +52,8 @@ links:
 videos:
   - title: "Que es MQTT?" 
     url: series/mqtt/001_Que_es_MQTT
+  - title: "Cliente Grafico de MQTT"
+    url: series/mqtt/007_MQTT_Explorer
 
 actualizado: true
 ---
