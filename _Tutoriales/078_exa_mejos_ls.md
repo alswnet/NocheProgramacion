@@ -53,3 +53,9 @@ actualizado: true
 ---
 
 exa es el nuevo y mas moderno comando ls para nuestro linux, es momento de actualizar y mejor nuestra flujo de trabajo en la terminal
+
+Instalar en Linux mint
+unzip exa-(vercion).zip
+cp bin/exa ~/.local/bin/exa
+sudo cp completions/exa.bash /etc/bash_completion.d/exa.bash
+sudo cp man/exa.1 /usr/share/man/man1/exa.1
