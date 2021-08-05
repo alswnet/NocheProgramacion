@@ -49,6 +49,10 @@ code_variations:
     folder: "HTML"
   - lang: "Presentacion"
     folder: "Presentacion"
+  - lang: "Script"
+    folder: "Script"
+  - lang: "PDF"
+    folder: "PDF"
 
 # Link a otro plataformas.
 links:
