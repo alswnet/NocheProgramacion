@@ -16,7 +16,7 @@ redirect_from:
 		<a href="/tag/ftdi">#ftdi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/linux">#linux [16]</a>
+		<a href="/tag/linux">#linux [15]</a>
 	</li>
 	<li>
 		<a href="/tag/youtube">#youtube [3]</a>
@@ -115,7 +115,7 @@ redirect_from:
 		<a href="/tag/nodejs">#nodejs [9]</a>
 	</li>
 	<li>
-		<a href="/tag/rasberrypi">#rasberrypi [3]</a>
+		<a href="/tag/rasberrypi">#rasberrypi [2]</a>
 	</li>
 	<li>
 		<a href="/tag/whatsapp">#whatsapp [1]</a>
@@ -130,7 +130,7 @@ redirect_from:
 		<a href="/tag/gist">#gist [1]</a>
 	</li>
 	<li>
-		<a href="/tag/comando">#comando [5]</a>
+		<a href="/tag/comando">#comando [4]</a>
 	</li>
 	<li>
 		<a href="/tag/venv">#venv [1]</a>
@@ -143,12 +143,6 @@ redirect_from:
 	</li>
 	<li>
 		<a href="/tag/gtk">#gtk [1]</a>
-	</li>
-	<li>
-		<a href="/tag/servidores">#servidores [1]</a>
-	</li>
-	<li>
-		<a href="/tag/comandos">#comandos [2]</a>
 	</li>
 	<li>
 		<a href="/tag/speedtest">#speedtest [1]</a>
@@ -223,6 +217,12 @@ redirect_from:
 		<a href="/tag/terminal">#terminal [1]</a>
 	</li>
 	<li>
+		<a href="/tag/comandos">#comandos [2]</a>
+	</li>
+	<li>
+		<a href="/tag/servidores">#servidores [1]</a>
+	</li>
+	<li>
 		<a href="/tag/javascript">#javascript [1]</a>
 	</li>
 	<li>
@@ -247,7 +247,10 @@ redirect_from:
 		<a href="/tag/ndi">#ndi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/shorts">#shorts [3]</a>
+		<a href="/tag/shorts">#shorts [2]</a>
+	</li>
+	<li>
+		<a href="/tag/null">#null [1]</a>
 	</li>
 	<li>
 		<a href="/tag/servidor">#servidor [1]</a>
