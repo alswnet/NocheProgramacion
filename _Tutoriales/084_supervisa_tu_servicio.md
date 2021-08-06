@@ -49,7 +49,7 @@ links:
 
 videos:
   - title: "Como crear Heramientas CLI en Python"
-    url: series/python/01_python_venv
+    url: series/python/02_heraminetas_cli_python
 
 actualizado: true
 ---
