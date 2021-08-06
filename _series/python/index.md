@@ -2,7 +2,7 @@
 title: "Python"
 subtitle: Lenguaje de interpettado con hincapie en legibilidad
 layout: series-index
-playlist_id: PLWQQswW6kqpXOXA_3nCnXQr-DTUqDnext
+playlist_id: PLWQQswW6kqpWfvywIMqEVMJeyQgd7v3DX
 redirect_from:
   - /python
 ---
