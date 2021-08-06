@@ -1,8 +1,9 @@
 ---
 title: "Aprende a usar Systemctl"
-video_number: 83
+video_number: 2
 date: 2021-03-16
 video_id: 4xIsPJWf9l0
+repository: linux/02_como_usar_systemctl
 tags:
   - linux
   - cli
@@ -47,7 +48,7 @@ links:
 
 videos:
   - title: "Comandos de Basico de Linux"
-    url: series/linux/001_comandos_basicos_linux
+    url: series/linux/01_comandos_basicos_linux
 
 actualizado: true
 ---

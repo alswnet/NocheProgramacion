@@ -1,6 +1,6 @@
 ---
 title: "Cómo activar entorno VIRTUAL Python"
-video_number: 80
+video_number: 01
 date: 2021-04-07
 video_id: jFWabWzxCT0
 tags:

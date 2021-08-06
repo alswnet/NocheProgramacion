@@ -1,9 +1,9 @@
 ---
 title: "Crea tu herramientas cli en Python"
-video_number: 81
+video_number: 02
 date: 2021-07-09
 video_id: 06l9Jra97-A
-repository: 081_heraminetas_cli_python
+repository: python/02_heraminetas_cli_python
 tags:
   - python
   - cli
@@ -48,7 +48,7 @@ links:
 
 videos:
   - title: "Entorno Virtual en Python"
-    url: Tutoriales/080_python_venv
+    url: series/python/01_python_venv
 
 actualizado: true
 ---
