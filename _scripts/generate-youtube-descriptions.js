@@ -298,20 +298,25 @@ async function writedescripcions(videos) {
         descripcion += `${data.topics[i].time} ${data.topics[i].title}\n`;
       }
     }
+    // TODO: Crear nuevo grupo de Telegram y Whatsapp ?
+    
     // Links Generales
     descripcion += `
 👏🏽 Subscribe: https://www.youtube.com/alswnet?sub_confirmation=1
+💖 Membreria: https://www.youtube.com/alswnet/join
 🚂 Sitio Web: http://nocheprogramacion.com
+💬 Discord: https://nocheprogramacion.com/discord
 👾 Comparte tu creación! https://nocheprogramacion.com/tucodigo
 🚩 Sugerir Temas: https://github.com/alswnet/NocheProgramacion/issues/new
 💡 GitHub: https://github.com/alswnet
-💬 Discord: https://nocheprogramacion.com/discord
-☕ Compranos un café: https://www.buymeacoffee.com/alswnet
+☕ Donar un café: https://www.buymeacoffee.com/alswnet
 💖 Apoyo: https://nocheprogramacion.com/apoyo
 💰 Donación: https://nocheprogramacion.com/donar
 🌎 Noticias: https://programacion.news
 🐦 Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet
+👍 Facebook: https://www.facebook.com/alswnet
+👥 Grupo Facebook: https://www.facebook.com/groups/chepecarlosclub
 🔭 Telegram: https://t.me/alswnet
 🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1
 🎈 Twitch: https://www.twitch.tv/alswnet`;
@@ -348,7 +353,7 @@ async function writedescripcions(videos) {
   console.log("Cantidad total videos: " + videos.length);
   console.log(`Links: ${DosDecimales(Cantidad.Links, videos.length)}`);
   console.log(`Indices: ${DosDecimales(Cantidad.Indice, videos.length)}`);
-  console.log(`Piezas: ${DosDecimales(Cantidad.piezas, videos.length)}`);
+  console.log(`Piezas: ${DosDecimales(Cantidad.Piezas, videos.length)}`);
   console.log(`Extras: ${DosDecimales(Cantidad.Costun, videos.length)}`);
   console.log(`Videos: ${DosDecimales(Cantidad.Video, videos.length)}`);
   console.log(`Codigo: ${DosDecimales(Cantidad.Codigo, videos.length)}`);
