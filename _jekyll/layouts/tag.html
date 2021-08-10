@@ -39,6 +39,12 @@ layout: base
   {% endif %}
 {% endfor %}
 
+{% for post in site.mas %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
 {% include 1-tools/sort-videos.html videos=tag_post sortByDate=true reverse=true %}
 
 {% include 3-modules/video-list.html sortedVideos=out_sortedVideos %}
