@@ -2,6 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const yaml = require("yaml-front-matter");
 
+// TODO: Traducir nombre de funciones 
+
 function findVideoFilesRecursive(dir, arrayOfFiles) {
   const files = fs.readdirSync(dir);
 
