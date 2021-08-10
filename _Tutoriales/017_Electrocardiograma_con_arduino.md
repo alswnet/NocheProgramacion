@@ -5,10 +5,10 @@ date: 2016-02-23
 video_id: 9Si4efa434U
 
 links:
+  - title: "Codigo Completo y Diagramas"
+    url: "https://github.com/alswnet/ECG-Box"
   - title: "Arduino"
     url: "https://www.arduino.cc/en/Main/Software"
-  - title: "Diagramas"
-    url: "https://github.com/alswnet/ECG-Box"
 
 piezas:
   - title: "Arduino Microview"
@@ -35,8 +35,7 @@ piezas:
   - title: "Cables para electrodos"
     pieza: "cable-para-electrodo"
 
-
-
+actualizado: true
 ---
 
-Crea un pequeño proyecto de salud utilizando un arduino, un bluetooth y una batería, con esto demostraremos que tan fácil es crear un electrocardiograma utilizando partes muy simples.
+Crea un pequeño proyecto de salud utilizando un arduino, bluetooth y batería, con esto demostraremos que tan fácil es crear un electrocardiograma utilizando partes muy simples.
