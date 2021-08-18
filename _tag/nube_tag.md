@@ -7,7 +7,7 @@ redirect_from:
 
 <div class="link-list"><ul>
 	<li>
-		<a href="/tag/arduino">#arduino [45]</a>
+		<a href="/tag/arduino">#arduino [47]</a>
 	</li>
 	<li>
 		<a href="/tag/lcd">#lcd [2]</a>
@@ -19,7 +19,7 @@ redirect_from:
 		<a href="/tag/linux">#linux [15]</a>
 	</li>
 	<li>
-		<a href="/tag/youtube">#youtube [3]</a>
+		<a href="/tag/youtube">#youtube [4]</a>
 	</li>
 	<li>
 		<a href="/tag/brainjs">#brainjs [1]</a>
@@ -70,7 +70,7 @@ redirect_from:
 		<a href="/tag/blender">#blender [4]</a>
 	</li>
 	<li>
-		<a href="/tag/EditarVideo">#EditarVideo [1]</a>
+		<a href="/tag/editarvideo">#editarvideo [4]</a>
 	</li>
 	<li>
 		<a href="/tag/mqtt">#mqtt [14]</a>
@@ -133,19 +133,19 @@ redirect_from:
 		<a href="/tag/comando">#comando [4]</a>
 	</li>
 	<li>
-		<a href="/tag/venv">#venv [1]</a>
-	</li>
-	<li>
-		<a href="/tag/cli">#cli [6]</a>
-	</li>
-	<li>
 		<a href="/tag/gui">#gui [2]</a>
 	</li>
 	<li>
 		<a href="/tag/gtk">#gtk [1]</a>
 	</li>
 	<li>
+		<a href="/tag/cli">#cli [6]</a>
+	</li>
+	<li>
 		<a href="/tag/speedtest">#speedtest [1]</a>
+	</li>
+	<li>
+		<a href="/tag/null">#null [3]</a>
 	</li>
 	<li>
 		<a href="/tag/chatbot">#chatbot [1]</a>
@@ -163,10 +163,7 @@ redirect_from:
 		<a href="/tag/ml5">#ml5 [8]</a>
 	</li>
 	<li>
-		<a href="/tag/processing">#processing [6]</a>
-	</li>
-	<li>
-		<a href="/tag/editarvideo">#editarvideo [3]</a>
+		<a href="/tag/processing">#processing [8]</a>
 	</li>
 	<li>
 		<a href="/tag/millis">#millis [1]</a>
@@ -226,7 +223,7 @@ redirect_from:
 		<a href="/tag/javascript">#javascript [1]</a>
 	</li>
 	<li>
-		<a href="/tag/java">#java [1]</a>
+		<a href="/tag/java">#java [3]</a>
 	</li>
 	<li>
 		<a href="/tag/mosquitto">#mosquitto [1]</a>
@@ -247,10 +244,10 @@ redirect_from:
 		<a href="/tag/ndi">#ndi [1]</a>
 	</li>
 	<li>
-		<a href="/tag/shorts">#shorts [2]</a>
+		<a href="/tag/venv">#venv [1]</a>
 	</li>
 	<li>
-		<a href="/tag/null">#null [1]</a>
+		<a href="/tag/shorts">#shorts [2]</a>
 	</li>
 	<li>
 		<a href="/tag/servidor">#servidor [1]</a>
