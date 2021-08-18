@@ -4,7 +4,7 @@ redirect_from:
   - "/bot"
 ---
 
-Comandos especiales para el chat de Youtube y Twitch de las trasmiciones de ALSW tantos **ProgramacionNews**, **Gameplay** y **Grabacion**
+Comandos especiales para el chat de Youtube y Twitch de las trasmiciones de ALSW: **ProgramacionNews**, **Gameplay** y **Grabacion**
 
 Puede usarlos aqui:
 
@@ -15,9 +15,9 @@ Puede usarlos aqui:
 ## Como usar comandos
 
 - Escribe los comandos dentro del chat de ALSW
-- bot no le importa si son mayusculas o minusculas
+- Al bot no le importa si son mayusculas o minusculas
 - Algunos comandos puede o necesitan parametros para funcionar como **color**
-- Puede que te toque enviar mensajes entre tiempos por poticias de **span** de Youtube o Twitch
+- Puede que te toque enviar mensajes entre tiempos por politicas de **span** de Youtube o Twitch
 
 > **Ejemplo: Reiniciar**
 >
@@ -25,9 +25,9 @@ Puede usarlos aqui:
 
 # Fondo OBS
 
-Fondo intreractivo y procesado en tiempo real el cual puede ser controado por comandos de chat.
+Fondo interactivo y procesado en tiempo real el cual puede ser controado por comandos de chat.
 
-EL fondo OBS esta echo en [P5.js](https://p5js.org) que es una libreria JavaScrips para crear animaciones, por lo cual es una pagina web que esta hostiada localmente en Rasberry Pi, recibe los mensajes por medio de MQTT para cambiar de color o animacion, los cuales se los envia por [ALSW_bot](https://github.com/alswnet/ALSW_Bot)
+EL fondo OBS esta hecho en [P5.js](https://p5js.org) que es una libreria JavaScrips para crear animaciones, por lo cual es una pagina web que esta hostiada localmente en Rasberry Pi, recibe los mensajes por medio de MQTT para cambiar de color o animacion, los cuales se envia por [ALSW_bot](https://github.com/alswnet/ALSW_Bot)
 
 - Codigo fuente de [FondoOBS en Github](https://github.com/alswnet/FondoOBS)
 - Demo Interactivo [Github Page](https://alswnet.github.io/FondoOBS/)
@@ -47,7 +47,7 @@ Pronto :')
 
 ### reiniciar
 
-Reinicia el Algoritmos, borra el fondo y inicializa los parametros del Algoritmos muchos generados por numeros aleatoreos
+Reinicia el Algoritmos, borra el fondo y inicializa los parametros de los Algoritmos, muchos generados por numeros aleatoreos
 
 > **Ejemplo: reiniciar**
 >
@@ -55,7 +55,7 @@ Reinicia el Algoritmos, borra el fondo y inicializa los parametros del Algoritmo
 
 ### Color Base
 
-Cambia el color base de Algoritmos.
+Cambia el color base de los Algoritmos.
 
 > **Ejemplo: Color Base a Rojo**
 >
@@ -63,7 +63,7 @@ Cambia el color base de Algoritmos.
 
 ### Color Linea
 
-Cambia el color linea de Algoritmos.
+Cambia el color linea de los Algoritmos.
 
 > **Ejemplo: Color Linea a Azul**
 >
@@ -71,7 +71,7 @@ Cambia el color linea de Algoritmos.
 
 ### Color Fondo
 
-Cambia el color Fondo de Algoritmos.
+Cambia el color Fondo de los Algoritmos.
 
 > **Ejemplo: Color Fondo a Morado en hex**
 >
@@ -105,7 +105,7 @@ colores disponibles:
 
 Lista Completa en [Colores.json](https://github.com/alswnet/FondoOBS/blob/master/Colores.json)
 
-> **Ejemplo: Color Fondo Agua**
+> **Ejemplo: Color Fondo Aqua**
 >
 > !colorfondo aqua
 
