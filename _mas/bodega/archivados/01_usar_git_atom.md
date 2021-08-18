@@ -15,8 +15,10 @@ links:
     url: "https://atom.io/"
   - title: "Pagina de github"
     url: "https://github.com/"
+
+videos:
   - title: "Plugin para Atom"
-    url: "https://www.youtube.com/watch?v=BCcneFIucG8"
+    url: "Tutoriales/055_Los_5_Mejores_Plugins_para_Atom_Editor"
 
 actualizado: true
 ---

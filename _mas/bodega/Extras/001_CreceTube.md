@@ -1,10 +1,11 @@
 ---
 title: "Compre CreceTube"
 video_number: 1
-date: 2017-06-22
+date: 2021-04-13
 video_id: g_C-QdjUe-M
 tags:
   - crecetube
+  - youtube
 
 links:
   - title: "Pagina de CreceTube"

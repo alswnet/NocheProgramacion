@@ -49,3 +49,5 @@ actualizado: true
 ---
 
 Aprende a crear entorno virtuales para tener mas ordenado los paquetes y dependencias de tus proyectos, veamos como crearlos y respaldarlos en este video
+
+sudo apt-get install python3-venv

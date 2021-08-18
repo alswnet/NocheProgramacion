@@ -15,3 +15,5 @@ actualizado: true
 ---
 
 Quiero compartir con la comunidad y segir feliz por un año mas de ALSW :) https://nocheprogramacion.com/sorteo
+
+Gracias por todo, espero que podemos hacer crecer mas la comunidad :D

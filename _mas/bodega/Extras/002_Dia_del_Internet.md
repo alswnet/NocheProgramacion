@@ -1,7 +1,7 @@
 ---
 title: "Conectó a un PAÍS a INTERNET | Entrevista a Lito Ibarra"
 video_number: 2
-date: 2017-06-22
+date: 2021-05-17
 video_id: dgS-D7xK_NA
 tags:
   - internet
@@ -9,23 +9,21 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: 1 Semana de Internet
-    time: '01:00'
+    time: "01:00"
   - title: Conectar Internet a EL Salvador
-    time: '01:41'
+    time: "01:41"
   - title: Explicar Que es Internet
-    time: '07:17'
+    time: "07:17"
   - title: Lito hace de todo
-    time: '10:08'
-  - title:  Dominion .sv
-    time: '13:02'
+    time: "10:08"
+  - title: Dominion .sv
+    time: "13:02"
   - title: Evento Dia Del Internet El Salvador
-    time: '17:35'
+    time: "17:35"
 
 links:
-  - title: "Reportaje Noticiero Hechos de El Salvador"
-    url: "https://www.youtube.com/watch?v=4YFdKz8L8uU"
   - title: "SVnet"
     url: "https://www.svnet.sv"
   - title: "Evento Dia Del Internet El Salvador"
@@ -34,6 +32,10 @@ links:
     url: "https://www.facebook.com/conexion.sv"
   - title: "Link Carlas"
     url: "https://www.facebook.com/conexion.sv/videos/497839908079291/"
+
+video:
+  - title: "Reportaje Noticiero Hechos de El Salvador"
+    url: "https://www.youtube.com/watch?v=4YFdKz8L8uU"
 
 custom_sections:
   - title: "Contactos de Lito Ibarra"

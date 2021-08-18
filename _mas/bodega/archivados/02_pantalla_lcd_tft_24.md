@@ -7,7 +7,7 @@ tags:
   - arduino
   - lcd
 
-links:
+videos:
   - title: "NUEVO VIDEO Arduino"
     url: "https://www.youtube.com/playlist?list=PLWQQswW6kqpXb_D260uyv0f7b-in6Va6F"
 
