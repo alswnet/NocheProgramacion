@@ -2,14 +2,16 @@ const fs = require("fs");
 const path = require("path");
 const yaml = require("yaml-front-matter");
 
-function findVideoFilesRecursive(dir, arrayOfFiles) {
+// TODO: Tags a miniscuas por defecto
+
+function BuscarVideoRecursivamente(dir, arrayOfFiles) {
   const files = fs.readdirSync(dir);
 
   arrayOfFiles = arrayOfFiles || [];
 
   for (const file of files) {
     if (fs.statSync(`${dir}/${file}`).isDirectory()) {
-      arrayOfFiles = findVideoFilesRecursive(`${dir}/${file}`, arrayOfFiles);
+      arrayOfFiles = BuscarVideoRecursivamente(`${dir}/${file}`, arrayOfFiles);
     } else {
       if (file !== "index.md" && file.endsWith(".md")) {
         arrayOfFiles.push(path.join(dir, "/", file));
@@ -20,8 +22,8 @@ function findVideoFilesRecursive(dir, arrayOfFiles) {
   return arrayOfFiles;
 }
 
-function getVideoData() {
-  const directories = [
+function ObtenerDataVideo() {
+  const Directorios = [
     "_Tutoriales",
     "_Cursos",
     "_series",
@@ -29,12 +31,12 @@ function getVideoData() {
     "_RetoProgramacion",
     "_Grabaciones",
     "_invitados",
-    "_mas/bodega"
+    "_mas/bodega",
   ];
 
   let files = [];
-  for (const dir of directories) {
-    findVideoFilesRecursive(dir, files);
+  for (const dir of Directorios) {
+    BuscarVideoRecursivamente(dir, files);
   }
 
   const videos = [];
@@ -43,7 +45,7 @@ function getVideoData() {
     const content = fs.readFileSync(`./${file}`, "UTF8");
     const parsed = yaml.loadFront(content);
     videos.push({
-      data: parsed
+      data: parsed,
     });
   }
 
@@ -51,46 +53,48 @@ function getVideoData() {
 }
 
 function primeDirectory(dir) {
-  fs.readdirSync(dir).forEach(file => {
-    fs.unlinkSync(path.join(dir, file), err => {
+  fs.readdirSync(dir).forEach((file) => {
+    fs.unlinkSync(path.join(dir, file), (err) => {
       if (err) throw err;
     });
   });
 }
 
+function CrearPaginaTags(tag, cantidad) {
+  let descripcion = `---\n`;
+  descripcion += `layout: tag\n`;
+  descripcion += `title: "#${tag}"\n`;
+  descripcion += `subtitle: "videos sobre #${tag}"\n`;
+  descripcion += `tag-name: ${tag}\n`;
+  descripcion += `---\n`;
 
-function writeTags(tag, cantidad) {
-  let description = `---
-layout: tag
-title: "#tags"
-subtitle: "videos sobre #tags"
-tag-name: tags
----`;
-  description = description.replaceAll("tags", tag);
-  // description = description.replaceAll('total', cantidad);
-
-  fs.writeFileSync(`_tag/${tag}.md`, description);
+  fs.writeFileSync(`_tag/${tag}.md`, descripcion);
 }
 
-function writeTagsPage(tags, cantidad) {
-  let description = `---
-layout: base
-title: "Nube de tags"
-redirect_from:
-  - /tag
----\n
-<div class="link-list">`;
-  description += "<ul>\n";
+function CrearNubeTags(tags, cantidad) {
+  let descripcion = `---\n`;
+  descripcion += `layout: base\n`;
+  descripcion += `title: "Nube de tags"\n`;
+  descripcion += `redirect_from:\n`;
+  descripcion += ` - /tag\n`;
+  descripcion += `---\n\n`;
+
+  descripcion += `<div class="link-list">\n`;
+  descripcion += `\t<ul>\n`;
+
   for (let i = 0; i < tags.length; i++) {
-    description += `\t<li>
-\t\t<a href="/tag/` + tags[i] + `">#` + tags[i] + ` [` + cantidad[i] + `]</a>
-\t</li>\n`;
+    descripcion += `\t\t<li>\n`;
+    descripcion += `\t\t\t<a href="/tag/${tags[i]}">#${tags[i]} [${cantidad[i]}]]</a>\n`;
+    descripcion += `\t\t</li>\n`;
   }
-  description += "</ul>\n</div>";
-  fs.writeFileSync(`_tag/nube_tag.md`, description);
+
+  descripcion += `\t</ul>\n`;
+  descripcion += `</div>\n`;
+
+  fs.writeFileSync(`_tag/nube_tag.md`, descripcion);
 }
 
-function writeDescriptions(videos) {
+function CrearTags(videos) {
   primeDirectory("./_tag");
 
   let tags = [];
@@ -100,25 +104,29 @@ function writeDescriptions(videos) {
 
     if (data.tags) {
       for (let i = 0; i < data.tags.length; ++i) {
-        if (!tags.includes(data.tags[i])) {
-          tags.push(data.tags[i]);
-          cantidad.push(1);
-        } else {
-          indice = tags.indexOf(data.tags[i]);
-          cantidad[indice] += 1;
+        TagActual = data.tags[i];
+        if (TagActual !== null) {
+          TagActual = TagActual.toLowerCase();
+          if (!tags.includes(TagActual)) {
+            tags.push(TagActual);
+            cantidad.push(1);
+          } else {
+            indice = tags.indexOf(TagActual);
+            cantidad[indice] += 1;
+          }
         }
       }
     }
   }
 
   for (let i = 0; i < tags.length; i++) {
-    writeTags(tags[i], cantidad[i]);
+    CrearPaginaTags(tags[i], cantidad[i]);
   }
-  writeTagsPage(tags, cantidad);
-  console.log("Cantidad tags " + tags.length)
+  CrearNubeTags(tags, cantidad);
+  console.log("Cantidad Paginas de tags " + tags.length);
 }
 
 (() => {
   console.log("💫 Generador de Tags 💫");
-  writeDescriptions(getVideoData());
+  CrearTags(ObtenerDataVideo());
 })();
