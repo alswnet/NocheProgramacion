@@ -96,3 +96,4 @@ $ bundle exec jekyll serve
 -   [Dennnnys](https://github.com/dennnnys) (denisaragon60@gmail.com)
 -   [Ferbrod](https://github.com/Ferbrod)(fercho200118303@gmail.com)
 -   [EdwinAlmira](https://github.com/EdwinAlmira)(ealopezalmira@gmail.com)
+-   [OtmaroMiguel](https://github.com/Otmaromiguel)(otmaromiguel4@gmail.com)
