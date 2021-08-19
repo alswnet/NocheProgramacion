@@ -106,7 +106,8 @@ exclude:
     "vendor/ruby/",
     "descripciones",
     "assets/template",
-    "actualizado"
+    "actualizado",
+    "_scripts"
   ]
 
 # keep_files: ["Presentaciones"]
