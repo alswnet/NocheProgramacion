@@ -14,8 +14,6 @@ tags:
 topics:
   - title: Introduccion
     time: '00:00'
-  - title: (Imagen ESP32 y ESP8266)
-    time: '00:10'
   - title: Que el ESP8266 o ESP32 Decida a cual red conectarse
     time: '00:50'
   - title: Codigo Multi Hardware ESP8266 y ESP32
