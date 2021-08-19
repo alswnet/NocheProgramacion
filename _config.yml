@@ -105,6 +105,7 @@ exclude:
     "vendor/gems/",
     "vendor/ruby/",
     "descripciones",
+    "assets/template",
     "actualizado"
   ]
 
