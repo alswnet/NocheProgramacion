@@ -11,16 +11,115 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [47]]</a>
 		</li>
 		<li>
-			<a href="/tag/lcd">#lcd [2]]</a>
-		</li>
-		<li>
-			<a href="/tag/ftdi">#ftdi [1]]</a>
-		</li>
-		<li>
 			<a href="/tag/linux">#linux [15]]</a>
 		</li>
 		<li>
+			<a href="/tag/mqtt">#mqtt [14]]</a>
+		</li>
+		<li>
+			<a href="/tag/git">#git [10]]</a>
+		</li>
+		<li>
+			<a href="/tag/github">#github [9]]</a>
+		</li>
+		<li>
+			<a href="/tag/iot">#iot [9]]</a>
+		</li>
+		<li>
+			<a href="/tag/telegram">#telegram [9]]</a>
+		</li>
+		<li>
+			<a href="/tag/nodejs">#nodejs [9]]</a>
+		</li>
+		<li>
+			<a href="/tag/esp32">#esp32 [8]]</a>
+		</li>
+		<li>
+			<a href="/tag/p5js">#p5js [8]]</a>
+		</li>
+		<li>
+			<a href="/tag/ml5">#ml5 [8]]</a>
+		</li>
+		<li>
+			<a href="/tag/processing">#processing [8]]</a>
+		</li>
+		<li>
+			<a href="/tag/esp8266">#esp8266 [7]]</a>
+		</li>
+		<li>
+			<a href="/tag/bluetooth">#bluetooth [7]]</a>
+		</li>
+		<li>
+			<a href="/tag/android">#android [7]]</a>
+		</li>
+		<li>
+			<a href="/tag/freecad">#freecad [7]]</a>
+		</li>
+		<li>
+			<a href="/tag/python">#python [6]]</a>
+		</li>
+		<li>
+			<a href="/tag/cli">#cli [6]]</a>
+		</li>
+		<li>
 			<a href="/tag/youtube">#youtube [4]]</a>
+		</li>
+		<li>
+			<a href="/tag/blender">#blender [4]]</a>
+		</li>
+		<li>
+			<a href="/tag/editarvideo">#editarvideo [4]]</a>
+		</li>
+		<li>
+			<a href="/tag/comando">#comando [4]]</a>
+		</li>
+		<li>
+			<a href="/tag/obs">#obs [4]]</a>
+		</li>
+		<li>
+			<a href="/tag/esp8255">#esp8255 [3]]</a>
+		</li>
+		<li>
+			<a href="/tag/java">#java [3]]</a>
+		</li>
+		<li>
+			<a href="/tag/lcd">#lcd [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/arduinoide">#arduinoide [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/atom">#atom [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/windows">#windows [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/rasberrypi">#rasberrypi [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/gui">#gui [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/meld">#meld [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/comandos">#comandos [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/shorts">#shorts [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/robotica">#robotica [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/sorteo">#sorteo [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/aniversario">#aniversario [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/ftdi">#ftdi [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/brainjs">#brainjs [1]]</a>
@@ -32,9 +131,6 @@ redirect_from:
 			<a href="/tag/javascrip">#javascrip [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [7]]</a>
-		</li>
-		<li>
 			<a href="/tag/debian">#debian [1]]</a>
 		</li>
 		<li>
@@ -44,49 +140,16 @@ redirect_from:
 			<a href="/tag/linuxmint">#linuxmint [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [8]]</a>
-		</li>
-		<li>
-			<a href="/tag/esp8255">#esp8255 [3]]</a>
-		</li>
-		<li>
-			<a href="/tag/arduinoide">#arduinoide [2]]</a>
-		</li>
-		<li>
 			<a href="/tag/foldingathome">#foldingathome [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/salud">#salud [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/atom">#atom [2]]</a>
-		</li>
-		<li>
 			<a href="/tag/programacion">#programacion [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/atomide">#atomide [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/blender">#blender [4]]</a>
-		</li>
-		<li>
-			<a href="/tag/editarvideo">#editarvideo [4]]</a>
-		</li>
-		<li>
-			<a href="/tag/mqtt">#mqtt [14]]</a>
-		</li>
-		<li>
-			<a href="/tag/python">#python [6]]</a>
-		</li>
-		<li>
-			<a href="/tag/git">#git [10]]</a>
-		</li>
-		<li>
-			<a href="/tag/github">#github [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/windows">#windows [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/tips">#tips [1]]</a>
@@ -107,18 +170,6 @@ redirect_from:
 			<a href="/tag/compilar">#compilar [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/telegram">#telegram [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/nodejs">#nodejs [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/rasberrypi">#rasberrypi [2]]</a>
-		</li>
-		<li>
 			<a href="/tag/whatsapp">#whatsapp [1]]</a>
 		</li>
 		<li>
@@ -131,37 +182,13 @@ redirect_from:
 			<a href="/tag/gist">#gist [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/comando">#comando [4]]</a>
-		</li>
-		<li>
-			<a href="/tag/gui">#gui [2]]</a>
-		</li>
-		<li>
 			<a href="/tag/gtk">#gtk [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/cli">#cli [6]]</a>
 		</li>
 		<li>
 			<a href="/tag/speedtest">#speedtest [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/chatbot">#chatbot [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/bluetooth">#bluetooth [7]]</a>
-		</li>
-		<li>
-			<a href="/tag/android">#android [7]]</a>
-		</li>
-		<li>
-			<a href="/tag/p5js">#p5js [8]]</a>
-		</li>
-		<li>
-			<a href="/tag/ml5">#ml5 [8]]</a>
-		</li>
-		<li>
-			<a href="/tag/processing">#processing [8]]</a>
 		</li>
 		<li>
 			<a href="/tag/millis">#millis [1]]</a>
@@ -173,16 +200,10 @@ redirect_from:
 			<a href="/tag/wifi">#wifi [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/freecad">#freecad [7]]</a>
-		</li>
-		<li>
 			<a href="/tag/inskcape">#inskcape [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/svg">#svg [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/meld">#meld [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/gitlab">#gitlab [1]]</a>
@@ -212,22 +233,13 @@ redirect_from:
 			<a href="/tag/terminal">#terminal [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/comandos">#comandos [2]]</a>
-		</li>
-		<li>
 			<a href="/tag/servidores">#servidores [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/javascript">#javascript [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/java">#java [3]]</a>
-		</li>
-		<li>
 			<a href="/tag/mosquitto">#mosquitto [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/obs">#obs [4]]</a>
 		</li>
 		<li>
 			<a href="/tag/obsstudio">#obsstudio [1]]</a>
@@ -245,13 +257,7 @@ redirect_from:
 			<a href="/tag/venv">#venv [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/shorts">#shorts [2]]</a>
-		</li>
-		<li>
 			<a href="/tag/servidor">#servidor [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/robotica">#robotica [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/crecetube">#crecetube [1]]</a>
@@ -261,12 +267,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/litoibarra">#litoibarra [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/sorteo">#sorteo [2]]</a>
-		</li>
-		<li>
-			<a href="/tag/aniversario">#aniversario [2]]</a>
 		</li>
 	</ul>
 </div>

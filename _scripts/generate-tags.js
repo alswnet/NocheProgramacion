@@ -2,19 +2,20 @@ const fs = require("fs");
 const path = require("path");
 const yaml = require("yaml-front-matter");
 
-// TODO: Tags a miniscuas por defecto
-
 function BuscarVideoRecursivamente(dir, arrayOfFiles) {
-  const files = fs.readdirSync(dir);
+  const Archivos = fs.readdirSync(dir);
 
   arrayOfFiles = arrayOfFiles || [];
 
-  for (const file of files) {
-    if (fs.statSync(`${dir}/${file}`).isDirectory()) {
-      arrayOfFiles = BuscarVideoRecursivamente(`${dir}/${file}`, arrayOfFiles);
+  for (const Archivo of Archivos) {
+    if (fs.statSync(`${dir}/${Archivo}`).isDirectory()) {
+      arrayOfFiles = BuscarVideoRecursivamente(
+        `${dir}/${Archivo}`,
+        arrayOfFiles
+      );
     } else {
-      if (file !== "index.md" && file.endsWith(".md")) {
-        arrayOfFiles.push(path.join(dir, "/", file));
+      if (Archivo !== "index.md" && Archivo.endsWith(".md")) {
+        arrayOfFiles.push(path.join(dir, "/", Archivo));
       }
     }
   }
@@ -34,25 +35,25 @@ function ObtenerDataVideo() {
     "_mas/bodega",
   ];
 
-  let files = [];
+  let Archivos = [];
   for (const dir of Directorios) {
-    BuscarVideoRecursivamente(dir, files);
+    BuscarVideoRecursivamente(dir, Archivos);
   }
 
   const videos = [];
 
-  for (const file of files) {
-    const content = fs.readFileSync(`./${file}`, "UTF8");
-    const parsed = yaml.loadFront(content);
+  for (const Archivo of Archivos) {
+    const contenido = fs.readFileSync(`./${Archivo}`, "UTF8");
+    const data = yaml.loadFront(contenido);
     videos.push({
-      data: parsed,
+      data: data,
     });
   }
 
   return videos;
 }
 
-function primeDirectory(dir) {
+function ReiniciarFolder(dir) {
   fs.readdirSync(dir).forEach((file) => {
     fs.unlinkSync(path.join(dir, file), (err) => {
       if (err) throw err;
@@ -71,7 +72,7 @@ function CrearPaginaTags(tag, cantidad) {
   fs.writeFileSync(`_tag/${tag}.md`, descripcion);
 }
 
-function CrearNubeTags(tags, cantidad) {
+function CrearNubeTags(ListaTags) {
   let descripcion = `---\n`;
   descripcion += `layout: base\n`;
   descripcion += `title: "Nube de tags"\n`;
@@ -82,11 +83,11 @@ function CrearNubeTags(tags, cantidad) {
   descripcion += `<div class="link-list">\n`;
   descripcion += `\t<ul>\n`;
 
-  for (let i = 0; i < tags.length; i++) {
+  ListaTags.forEach((tag) => {
     descripcion += `\t\t<li>\n`;
-    descripcion += `\t\t\t<a href="/tag/${tags[i]}">#${tags[i]} [${cantidad[i]}]]</a>\n`;
+    descripcion += `\t\t\t<a href="/tag/${tag.nombre}">#${tag.nombre} [${tag.cantidad}]]</a>\n`;
     descripcion += `\t\t</li>\n`;
-  }
+  });
 
   descripcion += `\t</ul>\n`;
   descripcion += `</div>\n`;
@@ -95,38 +96,48 @@ function CrearNubeTags(tags, cantidad) {
 }
 
 function CrearTags(videos) {
-  primeDirectory("./_tag");
+  ReiniciarFolder("./_tag");
 
-  let tags = [];
-  let cantidad = [];
+  let ListaTags = [];
+  let VideosConTags = 0;
+
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
 
     if (data.tags) {
+      VideosConTags++;
       for (let i = 0; i < data.tags.length; ++i) {
         TagActual = data.tags[i];
         if (TagActual !== null) {
           TagActual = TagActual.toLowerCase();
-          if (!tags.includes(TagActual)) {
-            tags.push(TagActual);
-            cantidad.push(1);
+
+          let ID = ListaTags.findIndex((i) => i.nombre === TagActual);
+
+          if (ID >= 0) {
+            ListaTags[ID].cantidad++;
           } else {
-            indice = tags.indexOf(TagActual);
-            cantidad[indice] += 1;
+            let SuperTag = new Object();
+            SuperTag.nombre = TagActual;
+            SuperTag.cantidad = 1;
+            ListaTags.push(SuperTag);
           }
         }
       }
     }
   }
 
-  for (let i = 0; i < tags.length; i++) {
-    CrearPaginaTags(tags[i], cantidad[i]);
-  }
-  CrearNubeTags(tags, cantidad);
-  console.log("Cantidad Paginas de tags " + tags.length);
+  ListaTags = ListaTags.sort(function (a, b) {
+    return b.cantidad - a.cantidad;
+  });
+  
+  ListaTags.forEach((tag) => CrearPaginaTags(tag.nombre, tag.cantidad));
+  CrearNubeTags(ListaTags);
+  
+  console.log(`Paginas de Tags: ${ListaTags.length} `);
+  console.log(`Articulos con tags:  ${VideosConTags}`);
 }
 
 (() => {
-  console.log("💫 Generador de Tags 💫");
+  console.log("💫 Generador de Tags de NocheProgramacion 💫");
   CrearTags(ObtenerDataVideo());
 })();
