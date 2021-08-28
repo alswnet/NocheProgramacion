@@ -17,7 +17,7 @@ links:
 piezas:
   - title: "ElGato Stream Deck"
 
-actualizado: false
+actualizado: true
 ---
 
 Hola amigos les quiero enseñar a usar el Stream Deck en linux usando una librería que es muy útil echa en Python.
