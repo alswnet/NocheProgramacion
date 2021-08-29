@@ -105,6 +105,8 @@ exclude:
     "vendor/ruby/",
     "descripciones",
     "actualizado",
+    "assets/template",
+    "scripts",
   ]
 
 # keep_files: ["Presentaciones"]
@@ -214,7 +216,7 @@ defaults:
     values:
       layout: "video"
       video_type: "Video"
-    
+
   # Colaboradores del Comunidad
   - scope: { path: "", type: "colaboradores" }
     values:
