@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+<div class="subtitle">
+    #{{ page.colaborador_id }} 
+    {% if page.nombre %}
+    | {{ page.nombre }}  
+    {% endif %}
+</div>
+
+<div class="video">
+    
+    <div class="links-and-books">
+        
+        {% comment %} Lista de datos personales {% endcomment %}
+        {% if page.personal %}
+        {% capture tiuloPersonal %}Datos personales de colaborador{% endcapture %}
+        {% include 3-modules/link-list.html links=page.personal title=tiuloPersonal %}
+        {% endif %}
+        
+        {% comment %} Lista de Link de Redes Sociales {% endcomment %}
+        {% if page.redes %}
+        {% capture tiuloRedes %}Link de redes sociales de colaborador{% endcapture %}
+        {% include 3-modules/link-list.html links=page.redes title=tiuloRedes %}
+        {% endif %}    
+    
+    </div>
+        
+</div>
+
+<div>
+    <h3>Lista video Colaborados</h3>
+    <p>
+        Muy pronto (En Desarrollo)
+    </p>
+</div>
+
+<h3>Biografia</h3>
+<div class="description">{{ content }}</div>
+
+Pagina de otro colaboradores <a href="{{ '/colaboradores' | relative_url }}">Link</a>

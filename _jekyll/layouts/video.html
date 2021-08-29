@@ -183,6 +183,12 @@ layout: base
       {% include 3-modules/link-list.html links=page.tools title=toolsTitle %}
     {% endif %}
 
+    {% comment %} Lista de Colaboradores. {% endcomment %}
+    {% if page.colaboradores %}
+      {% capture TituloColaboradores %}Lista de Colaboradores del {{ page.video_type_short | downcase }}{% endcapture %}
+      {% include 3-modules/link-list.html links=page.colaboradores title=TituloColaboradores %}
+    {% endif %}
+
     {% comment %} Custom link lists. {% endcomment %}
     {% for section in page.custom_sections %}
       {% include 3-modules/link-list.html links=section.items title=section.title class=section.class %}

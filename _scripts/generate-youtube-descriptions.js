@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const yaml = require("yaml-front-matter");
 
-// TODO: Traducir nombre de funciones 
+// TODO: Traducir nombre de funciones
 
 function findVideoFilesRecursive(dir, arrayOfFiles) {
   const files = fs.readdirSync(dir);
@@ -54,7 +54,7 @@ function getVideoData() {
     "_RetoProgramacion",
     "_Grabaciones",
     "_invitados",
-    "_mas/bodega"
+    "_mas/bodega",
   ];
 
   let files = [];
@@ -73,7 +73,7 @@ function getVideoData() {
       pageURL: url,
       data: parsed,
       playlist: getPlaylist(file),
-      playlistName: getPlaylistName(file)
+      playlistName: getPlaylistName(file),
     });
   }
 
@@ -81,8 +81,8 @@ function getVideoData() {
 }
 
 async function primeDirectory(dir) {
-  fs.readdirSync(dir).forEach(file => {
-    fs.unlinkSync(path.join(dir, file), err => {
+  fs.readdirSync(dir).forEach((file) => {
+    fs.unlinkSync(path.join(dir, file), (err) => {
       if (err) throw err;
     });
   });
@@ -137,6 +137,7 @@ function AgregarSeoMostar(descripcion, Cantidad, Actualizar) {
 
 async function writedescripcions(videos) {
   let Cantidad = new Object();
+  Cantidad.Colaboradores = 0;
   Cantidad.SeoMostar = 0;
   Cantidad.SeoMostarActivo = 0;
   Cantidad.Links = 0;
@@ -300,8 +301,18 @@ async function writedescripcions(videos) {
         descripcion += `${data.topics[i].time} ${data.topics[i].title}\n`;
       }
     }
+
+    // Agradecer a colaboradores
+    if (data.colaboradores) {
+      Cantidad.Colaboradores++;
+      descripcion += "\nVideo gracias a los Colaboradore:\n";
+      for (let i = 0; i < data.colaboradores.length; ++i) {
+        descripcion += `🧙🏼‍♂️${data.colaboradores[i].title} - ${data.colaboradores[i].colaborador}\n`;
+      }
+    }
+
     // TODO: Crear nuevo grupo de Telegram y Whatsapp ?
-    
+
     // Links Generales
     descripcion += `
 👏🏽 Subscribe: https://www.youtube.com/alswnet?sub_confirmation=1
@@ -353,6 +364,9 @@ async function writedescripcions(videos) {
     fs.writeFileSync(`descripciones/Zen_${data.video_id}.txt`, descripcion);
   }
   console.log("Cantidad total videos: " + videos.length);
+  console.log(
+    `Colaboradores: ${DosDecimales(Cantidad.Colaboradores, videos.length)}`
+  );
   console.log(`Links: ${DosDecimales(Cantidad.Links, videos.length)}`);
   console.log(`Indices: ${DosDecimales(Cantidad.Indice, videos.length)}`);
   console.log(`Piezas: ${DosDecimales(Cantidad.Piezas, videos.length)}`);
@@ -361,8 +375,15 @@ async function writedescripcions(videos) {
   console.log(`Codigo: ${DosDecimales(Cantidad.Codigo, videos.length)}`);
   console.log(`Ads: ${DosDecimales(Cantidad.Ads, videos.length)}`);
   console.log(`SeoMostar: ${DosDecimales(Cantidad.SeoMostar, videos.length)}`);
-  console.log(`SeoMostar Activos: ${DosDecimales(Cantidad.SeoMostarActivo, videos.length)}`);
-  console.log(`Nuevo Sistema: ${DosDecimales(Cantidad.NuevoSistema, videos.length)}`);
+  console.log(
+    `SeoMostar Activos: ${DosDecimales(
+      Cantidad.SeoMostarActivo,
+      videos.length
+    )}`
+  );
+  console.log(
+    `Nuevo Sistema: ${DosDecimales(Cantidad.NuevoSistema, videos.length)}`
+  );
   console.log(`Ads Global: ${ActivadoAdsGlobal}`);
 }
 
