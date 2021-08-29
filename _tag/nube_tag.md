@@ -8,10 +8,10 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [47]]</a>
+			<a href="/tag/arduino">#arduino [48]]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [15]]</a>
+			<a href="/tag/linux">#linux [18]]</a>
 		</li>
 		<li>
 			<a href="/tag/mqtt">#mqtt [14]]</a>
@@ -35,6 +35,9 @@ redirect_from:
 			<a href="/tag/esp32">#esp32 [8]]</a>
 		</li>
 		<li>
+			<a href="/tag/python">#python [8]]</a>
+		</li>
+		<li>
 			<a href="/tag/p5js">#p5js [8]]</a>
 		</li>
 		<li>
@@ -47,6 +50,9 @@ redirect_from:
 			<a href="/tag/esp8266">#esp8266 [7]]</a>
 		</li>
 		<li>
+			<a href="/tag/cli">#cli [7]]</a>
+		</li>
+		<li>
 			<a href="/tag/bluetooth">#bluetooth [7]]</a>
 		</li>
 		<li>
@@ -56,10 +62,7 @@ redirect_from:
 			<a href="/tag/freecad">#freecad [7]]</a>
 		</li>
 		<li>
-			<a href="/tag/python">#python [6]]</a>
-		</li>
-		<li>
-			<a href="/tag/cli">#cli [6]]</a>
+			<a href="/tag/comando">#comando [5]]</a>
 		</li>
 		<li>
 			<a href="/tag/youtube">#youtube [4]]</a>
@@ -71,13 +74,13 @@ redirect_from:
 			<a href="/tag/editarvideo">#editarvideo [4]]</a>
 		</li>
 		<li>
-			<a href="/tag/comando">#comando [4]]</a>
-		</li>
-		<li>
 			<a href="/tag/obs">#obs [4]]</a>
 		</li>
 		<li>
 			<a href="/tag/esp8255">#esp8255 [3]]</a>
+		</li>
+		<li>
+			<a href="/tag/windows">#windows [3]]</a>
 		</li>
 		<li>
 			<a href="/tag/java">#java [3]]</a>
@@ -90,9 +93,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/atom">#atom [2]]</a>
-		</li>
-		<li>
-			<a href="/tag/windows">#windows [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/rasberrypi">#rasberrypi [2]]</a>
@@ -119,6 +119,9 @@ redirect_from:
 			<a href="/tag/aniversario">#aniversario [2]]</a>
 		</li>
 		<li>
+			<a href="/tag/motores">#motores [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/ftdi">#ftdi [1]]</a>
 		</li>
 		<li>
@@ -138,6 +141,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/linuxmint">#linuxmint [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/streamdeck">#streamdeck [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/foldingathome">#foldingathome [1]]</a>
@@ -236,6 +242,9 @@ redirect_from:
 			<a href="/tag/servidores">#servidores [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/admin">#admin [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/javascript">#javascript [1]]</a>
 		</li>
 		<li>
@@ -255,6 +264,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/venv">#venv [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/mac">#mac [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/servidor">#servidor [1]]</a>
