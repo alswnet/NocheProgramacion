@@ -1,118 +1,36 @@
 const fs = require("fs");
 const path = require("path");
 const yaml = require("yaml-front-matter");
+const {
+  ObtenerDataVideo,
+  BuscarVideoRecursivamente,
+  ReiniciarFolder,
+} = require("./funciones");
 
-// TODO: Traducir nombre de funciones
-
-function findVideoFilesRecursive(dir, arrayOfFiles) {
-  const files = fs.readdirSync(dir);
-
-  arrayOfFiles = arrayOfFiles || [];
-
-  for (const file of files) {
-    if (fs.statSync(`${dir}/${file}`).isDirectory()) {
-      arrayOfFiles = findVideoFilesRecursive(`${dir}/${file}`, arrayOfFiles);
-    } else {
-      if (
-        file !== "index.md" &&
-        file.substring(file.length - 3, file.length) === ".md"
-      ) {
-        arrayOfFiles.push(path.join(dir, "/", file));
-      }
-    }
-  }
-
-  return arrayOfFiles;
-}
-
-function getPlaylist(file) {
-  const series = file.substring(0, file.lastIndexOf("/")) + "/index.md";
-  const content = fs.readFileSync(series);
-  const parsed = yaml.loadFront(content);
-  if (parsed.playlist_id) {
-    return parsed.playlist_id;
-  }
-  return false;
-}
-
-function getPlaylistName(file) {
-  const series = file.substring(0, file.lastIndexOf("/")) + "/index.md";
-  const content = fs.readFileSync(series);
-  const parsed = yaml.loadFront(content);
-  if (parsed.title) {
-    return parsed.title;
-  }
-  return false;
-}
-
-function getVideoData() {
-  const directories = [
-    "_Tutoriales",
-    "_Cursos",
-    "_shorts",
-    "_series",
-    "_RetoProgramacion",
-    "_Grabaciones",
-    "_invitados",
-    "_mas/bodega",
-  ];
-
-  let files = [];
-  for (const dir of directories) {
-    findVideoFilesRecursive(dir, files);
-  }
-
-  const videos = [];
-
-  for (const file of files) {
-    const content = fs.readFileSync(`./${file}`, "UTF8");
-    const parsed = yaml.loadFront(content);
-    let url = file.substring(1);
-    url = url.substring(0, url.length - 3);
-    videos.push({
-      pageURL: url,
-      data: parsed,
-      playlist: getPlaylist(file),
-      playlistName: getPlaylistName(file),
-    });
-  }
-
-  return videos;
-}
-
-async function primeDirectory(dir) {
-  fs.readdirSync(dir).forEach((file) => {
-    fs.unlinkSync(path.join(dir, file), (err) => {
-      if (err) throw err;
-    });
-  });
-}
-
-function getVideoID(url) {
-  // const location = url.substring(1, url.length);
-  const location = url;
-  let page;
+function ObtenerURLYoutube(url) {
+  //No entiendo pero funciona
+  let Pagina;
   try {
-    page = fs.readFileSync(`./_${location}.md`, "UTF8");
+    Pagina = fs.readFileSync(`./_${url}.md`, "UTF8");
   } catch (err) {
     try {
-      page = fs.readFileSync(`./_${location}/index.md`, "UTF8");
-      // const files = fs.readdirSync(`./_${location}`);
-      // page = fs.readFileSync(`./_${location}/${files[0]}.md`, "UTF8");
+      Pagina = fs.readFileSync(`./_${url}/index.md`, "UTF8");
     } catch (e) {
       return url;
     }
   }
-  const parsed_content = yaml.loadFront(page);
-  if (parsed_content.video_id) {
-    return `https://youtu.be/${parsed_content.video_id}`;
-  } else if (parsed_content.playlist_id) {
-    return `https://www.youtube.com/playlist?list=${parsed_content.playlist_id}`;
+
+  const Contenido = yaml.loadFront(Pagina);
+  if (Contenido.video_id) {
+    return `https://youtu.be/${Contenido.video_id}`;
+  } else if (Contenido.playlist_id) {
+    return `https://www.youtube.com/playlist?list=${Contenido.playlist_id}`;
   }
 }
 
-function DosDecimales(Numero, Cantidad, Activa) {
-  return Numero + " " + parseFloat((100 * Numero) / Cantidad).toFixed(2) + "%";
+function ImprimirData(Titulo, CantidadLink, CantidadTotal) {
+  Porcentaje = parseFloat((100 * CantidadLink) / CantidadTotal).toFixed(2);
+  console.log(`${Titulo}: ${CantidadLink} ${Porcentaje}%`);
 }
 
 function AgregarSeoMostar(descripcion, Cantidad, Actualizar) {
@@ -135,7 +53,9 @@ function AgregarSeoMostar(descripcion, Cantidad, Actualizar) {
   return descripcion;
 }
 
-async function writedescripcions(videos) {
+async function CrearDescripciones(videos) {
+  let CantidadVideos = videos.length;
+  let ActivadoAdsGlobal = false;
   let Cantidad = new Object();
   Cantidad.Colaboradores = 0;
   Cantidad.SeoMostar = 0;
@@ -148,10 +68,9 @@ async function writedescripcions(videos) {
   Cantidad.Ads = 0;
   Cantidad.Video = 0;
   Cantidad.NuevoSistema = 0;
-  let ActivadoAdsGlobal = false;
 
-  await primeDirectory("./descripciones");
-  await primeDirectory("./actualizado");
+  await ReiniciarFolder("./descripciones");
+  await ReiniciarFolder("./actualizado");
 
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
@@ -185,8 +104,9 @@ async function writedescripcions(videos) {
       }
     }
 
-    // Next Video / Playlist
-    let nextID;
+    // TODO: Mejor Algorititmo
+    // Siquiente Video / Playlist
+    let SiquienteVideo;
     if (i !== videos.length - 1) {
       if (
         pageURL.substring(0, pageURL.lastIndexOf("/")) ===
@@ -195,22 +115,22 @@ async function writedescripcions(videos) {
           videos[i + 1].pageURL.lastIndexOf("/")
         )
       ) {
-        nextID = videos[i + 1].data.video_id;
+        SiquienteVideo = videos[i + 1].data.video_id;
       } else {
-        nextID = false;
+        SiquienteVideo = false;
       }
     } else {
-      nextID = false;
+      SiquienteVideo = false;
     }
 
-    if (playlist || nextID) {
+    if (playlist || SiquienteVideo) {
       descripcion += `\n`;
-      if (nextID) {
-        descripcion += `🎥 Siguiente video: https://youtu.be/${nextID}\n`;
+      if (SiquienteVideo) {
+        descripcion += `🎥 Siguiente video: https://youtu.be/${SiquienteVideo}\n`;
       }
       if (playlist) {
-        const playlistName = videos[i].playlistName;
-        descripcion += `🎥 Playlist(${playlistName}): https://www.youtube.com/playlist?list=${playlist}\n`;
+        let NombrePlaylist = videos[i].playlistName;
+        descripcion += `🎥 Playlist(${NombrePlaylist}): https://www.youtube.com/playlist?list=${playlist}\n`;
       }
     }
 
@@ -226,7 +146,7 @@ async function writedescripcions(videos) {
           if (/https?:\/\/.*/.test(url)) {
             descripcion += `🎞 ${data.videos[i].title}: ${url}\n`;
           } else {
-            url = getVideoID(data.videos[i].url);
+            url = ObtenerURLYoutube(data.videos[i].url);
             descripcion += `🎞 ${data.videos[i].title}: ${url}\n`;
           }
         }
@@ -363,31 +283,24 @@ async function writedescripcions(videos) {
     fs.writeFileSync(`descripciones/${NombreArchivo}.txt`, descripcion);
     fs.writeFileSync(`descripciones/Zen_${data.video_id}.txt`, descripcion);
   }
-  console.log("Cantidad total videos: " + videos.length);
-  console.log(
-    `Colaboradores: ${DosDecimales(Cantidad.Colaboradores, videos.length)}`
-  );
-  console.log(`Links: ${DosDecimales(Cantidad.Links, videos.length)}`);
-  console.log(`Indices: ${DosDecimales(Cantidad.Indice, videos.length)}`);
-  console.log(`Piezas: ${DosDecimales(Cantidad.Piezas, videos.length)}`);
-  console.log(`Extras: ${DosDecimales(Cantidad.Costun, videos.length)}`);
-  console.log(`Videos: ${DosDecimales(Cantidad.Video, videos.length)}`);
-  console.log(`Codigo: ${DosDecimales(Cantidad.Codigo, videos.length)}`);
-  console.log(`Ads: ${DosDecimales(Cantidad.Ads, videos.length)}`);
-  console.log(`SeoMostar: ${DosDecimales(Cantidad.SeoMostar, videos.length)}`);
-  console.log(
-    `SeoMostar Activos: ${DosDecimales(
-      Cantidad.SeoMostarActivo,
-      videos.length
-    )}`
-  );
-  console.log(
-    `Nuevo Sistema: ${DosDecimales(Cantidad.NuevoSistema, videos.length)}`
-  );
+  console.log(`Cantidad total videos: ${CantidadVideos}`);
+  ImprimirData("Colaboradores", Cantidad.Colaboradores, CantidadVideos);
+  ImprimirData("Links", Cantidad.Links, CantidadVideos);
+  ImprimirData("Indices", Cantidad.Indice, CantidadVideos);
+  ImprimirData("Piezas", Cantidad.Piezas, CantidadVideos);
+  ImprimirData("Extras", Cantidad.Costun, CantidadVideos);
+  ImprimirData("Videos", Cantidad.Video, CantidadVideos);
+  ImprimirData("Codigo", Cantidad.Codigo, CantidadVideos);
+  ImprimirData("Ads", Cantidad.Ads, CantidadVideos);
+  ImprimirData("SeoMostar", Cantidad.SeoMostar, CantidadVideos);
+  ImprimirData("SeoMostar Activos", Cantidad.SeoMostarActivo, CantidadVideos);
+  ImprimirData("Nuevo Sistema", Cantidad.NuevoSistema, CantidadVideos);
   console.log(`Ads Global: ${ActivadoAdsGlobal}`);
 }
 
 (() => {
-  console.log("💫 Generador de descripcion de Youtube 💫");
-  writedescripcions(getVideoData());
+  console.log(
+    "💫 Generador de descripcion de NocheProgramacion para Youtube 💫"
+  );
+  CrearDescripciones(ObtenerDataVideo());
 })();
