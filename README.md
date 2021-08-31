@@ -1,9 +1,6 @@
 # NocheProgramacion
 
-# Horario NocheProgramacion
-
-Son todos lo Viernes  se Trasmite "NocheProgramacion" a 7:00 pm ( UTC-6 ) hora de San Salvador, El Salvador.
-[Puedes usar esta Calculadora para encontrar la hora de tu pais](https://www.thetimezoneconverter.com/?t=7%3A00%20pm&tz=El%20Salvador&)
+Sitio web de Tutoriales y Seria video de **ALSW**
 
 # Codigo Pagina Web
 
@@ -13,17 +10,36 @@ Este Sitio Web es [Fork](https://en.wikipedia.org/wiki/Fork_(software_developmen
 
 Repositorio de Github: [The Coding Train](https://github.com/CodingTrain/website)
 
-# Reconoce Automaticamente Codigo
+# Atributos Base de un Articulo (.md)
 
-Reconoce codigo y los agrega a la Web siempre que esten el folde correcto
+La información básica de los artículos para generar [pagina web](https://nocheprogramacion.com/series/mqtt/001_Que_es_MQTT.html) y [Descripcion Youtube](https://www.youtube.com/watch?v=T1_w8-8Y5kc)
 
--   Nombre_Web > Normbre_Folden
--   Ardunio > Arduino
--   P5.js > P5
--   Processing > Processing
--   JavaScript > JavaScript
--   Node.js > Node
--   Diagrama > Diagrama
+| Dato                                 | Etiqueta       | Ejemplo                 | Opcional |
+| ------------------------------------ | -------------- | ----------------------- | -------- |
+| Titulo                               | title          | Que es MQTT             |          |
+| Id Interno                           | video_number   | 1                       |          |
+| Fecha (Formato USA)                  | date           | 2021-03-23              |          |
+| ID de Youtube                        | video_id       | T1_w8-8Y5kc             |          |
+| Codigos y/o Diagramas                | repository     | mqtt/002_MQTT_en_Nodejs | True     |
+| Tags                                 | tags           | - mqtt - nodejs   - iot | True     |
+| Id Interno Curso                     | course_number  | 1                       | True     |
+| Agregar a generador de descripciones | actualizado    | true o false            | True     |
+| Puede subir sus propias verciones    | can_contribute | false                   | True     |
+
+# Reconoce Automáticamente Código
+
+Para agregar codigo a un articulo debe estas folder definido en **repository**
+
+| Tipo Codigo | Nombre Folder |
+| ----------- | ------------- |
+| Arduino     | Arduino       |
+| Python      | Python        |
+| P5.js       | P5            |
+| Processing  | Processing    |
+| Node.js     | Node          |
+| Diagrama    | Diagrama      |
+| Pagina web  | HTML          |
+| JavaScript  | JavaScript    |
 
 ## Informacion video
 
@@ -34,14 +50,32 @@ video_id: String
 can_contribute: boolean
 repository: boolean
 
-## Categorias de Links
+## Lista de Atributos de Articulo
 
-- parts
-- links
-- piezas
-- books
-- videos
-- tools
+| Tipo Atributo           | Categoria       |
+| ----------------------- | --------------- |
+| Link Referencia         | links           |
+| Otro contenidos de ALSW | videos          |
+| Circuitos               | piezas          |
+| Heramientas             | tools           |
+| Libros                  | books           |
+| Personalizados          | custom_sections |
+
+### Valores cada elemento de una lista
+
+| Datos  | Etiqueta | Ejemplo             | Opcional |
+| ------ | -------- | ------------------- | -------- |
+| Titulo | title    | Pagina de MQTT      |          |
+| Link   | url      | <https://mqtt.org/> | true     |
+
+| Indice del Video   | topics    |
+
+-   parts
+-   links
+-   piezas
+-   books
+-   videos
+-   tools
 
 ## Informacion de Links
 
@@ -58,26 +92,31 @@ repository: boolean
 
 custom_sections:
 
-  - title: "Mombre Senccion"
+-   title: "Mombre Senccion"
     items:
-      - title: "Twitter"
-        url: "https://twitter.com/ALSW"
-      - title: "Pwebsite"
-        url: "http://www.alsw.net
+    -   title: "Twitter"
+        url: "<https://twitter.com/ALSW>"
+    -   title: "Pwebsite"
+        url: "<http://www.alsw.net>
 
 ## Ejemplo
 
 links:
-  - title: "Libreria de Sensor Capacitivo"
-    url: "https://playground.arduino.cc/Main/CapacitiveSensor/"
+
+-   title: "Libreria de Sensor Capacitivo"
+    url: "<https://playground.arduino.cc/Main/CapacitiveSensor/>"
 
 # Link Sociales
 
 Alguno enlaces que puede ser del interes para mantener contacto con nosotros:
 
--   [Youtube ALSW](http://youtube.com/alswnet)
--   [Patreon ALSW](http://patreon.com/alswnet)
--   [Facebook ALSW](http://facebook.com/alswnet)
+-   [Youtube](http://youtube.com/alswnet)
+-   [Discord](https://nocheprogramacion.com/discord)
+-   [Donar Cafe](https://www.buymeacoffee.com/alswnet)
+-   [Patreon](http://patreon.com/alswnet)
+-   [Instagram](https://www.instagram.com/alswnet)
+-   [Twitter](https://twitter.com/alswnet)
+-   [Facebook](http://facebook.com/alswnet)
 -   [Grupo ChepeCarlosClub](http://www.facebook.com/groups/chepecarlosclub/)
 
 ## Prueva Servidor
@@ -87,6 +126,11 @@ Alguno enlaces que puede ser del interes para mantener contacto con nosotros:
 ```bash
 $ bundle exec jekyll serve
 ```
+
+# Horario NocheProgramacion
+
+Son todos lo Viernes  se Trasmite "NocheProgramacion" a 7:00 pm ( UTC-6 ) hora de San Salvador, El Salvador.
+[Puedes usar esta Calculadora para encontrar la hora de tu pais](https://www.thetimezoneconverter.com/?t=7%3A00%20pm&tz=El%20Salvador&)
 
 # Contribuidores
 
