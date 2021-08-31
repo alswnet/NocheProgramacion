@@ -4,6 +4,7 @@ subtitle: Editor, Shell, and more
 layout: faq
 redirect_from:
   - /linuxappuso
+  - /misapps
 
 sections:
   - title: "OS"
@@ -22,6 +23,24 @@ sections:
   - title: "Extras"
 
 faq:
+  - question: "Visual Studio Code"
+    section: "Programacion"
+    answer: "Texto"
+    links:
+      - title: "Pagina de Visual Studio Code"
+        url: "https://code.visualstudio.com/"
+      - title: "Descarga de Visual Studio Code"
+        url: "https://code.visualstudio.com/download"
+      - title: "Thema: Dracula Official"
+        url: "https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula"
+      - title: "Plugin Language pack es: Code Español" 
+        url: "https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-es"
+      - title: "Plugin Plattier: Auto Formato" 
+        url: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+      - title: "Plugin Better Comments: Comentarios"
+        url: "https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments"
+      - title: "Plugin Blender Development: Desarrollar Blende"
+        url: "https://marketplace.visualstudio.com/items?itemName=JacquesLucke.blender-development"
   - question: "Atom"
     section: "Programacion"
     answer: "El Entorno que uso por defecto para la mayoria de proyecto de programacion"
@@ -234,13 +253,15 @@ faq:
         url: "https://openrazer.github.io"
       - title: "Pagina polychromatic"
         url: "https://polychromatic.app"
-  - question: "Linux Mint 20 Ulyana"
+  - question: "Linux Mint 20.1 Ulyssa"
     section: "OS"
     answer: "La distribución de Gnu/Linux que uso hace unos años, me gustas por los paquetes y configuracion que trae con defecto, por funciona fuera de la caja, Linux mint es basada en ubuntu que es basada en Debian. Intento siempre estar la ultima version disponible"
     links:
       - title: "Pagina de Linux mint"
         url: "https://linuxmint.com"
-  - question: "Cinnamon 4.6"
+      - title: "Descarga de Linux Mint"
+        url: "https://linuxmint.com/download.php"
+  - question: "Cinnamon 4.8"
     section: "OS"
     answer: "Mi escritorio por defecto en mis pc, amo que cinnamon sea similar a Gnome 2.x + Compiz, descansa en paz Compiz y emeral, me escanta las heramientas que trae para trabajar con multiples escritorio y ventanas"
     links:

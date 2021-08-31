@@ -56,7 +56,6 @@ code_variations:
 
 # Link a otro plataformas.
 links:
-
   # link de ALSW.
   alsw: https://alsw.net
 
@@ -105,7 +104,9 @@ exclude:
     "vendor/gems/",
     "vendor/ruby/",
     "descripciones",
-    "actualizado"
+    "actualizado",
+    "assets/template",
+    "scripts",
   ]
 
 # keep_files: ["Presentaciones"]
@@ -135,73 +136,73 @@ includes_dir: _jekyll/includes
 # --- Collections ---
 collections:
   RetoProgramacion: { output: true }
-  Cursos:           { output: true }
-  series:           { output: true }
-  Tutoriales:       { output: true }
-  Guias:            { output: true }
-  Presentaciones:   { output: true }
-  mas:              { output: true }
-  invitados:        { output: true }
-  Grabaciones:      { output: true }
-  redirects:        { output: true }
-  shorts:           { output: true }
+  Cursos: { output: true }
+  series: { output: true }
+  Tutoriales: { output: true }
+  Guias: { output: true }
+  Presentaciones: { output: true }
+  mas: { output: true }
+  invitados: { output: true }
+  Grabaciones: { output: true }
+  redirects: { output: true }
+  shorts: { output: true }
+  colaboradores: { output: true }
   tag:
     output: true
     permalink: tag/:path/
 # --- Defaults ---
 
 defaults:
-
-  - scope:              { path: "", type: "RetoProgramacion" }
+  - scope: { path: "", type: "RetoProgramacion" }
     values:
-      layout:                 "video"
-      video_type:             "reto programacion"
-      video_type_short:       "reto"
-      can_contribute:         true
+      layout: "video"
+      video_type: "reto programacion"
+      video_type_short: "reto"
+      can_contribute: true
 
-  - scope:              { path: "", type: "Cursos" }
+  - scope: { path: "", type: "Cursos" }
     values:
-      layout:                 "video"
-      video_type:             "curso"
-      can_contribute:         true
+      layout: "video"
+      video_type: "curso"
+      can_contribute: true
 
-  - scope:              { path: "", type: "series" }
+  - scope: { path: "", type: "series" }
     values:
-      layout:                 "video"
-      video_type:             "series"
-      video_type_short:       "serie"
-      can_contribute:         true
+      layout: "video"
+      video_type: "series"
+      video_type_short: "serie"
+      can_contribute: true
 
-  - scope:              { path: "", type: "Tutoriales" }
+  - scope: { path: "", type: "Tutoriales" }
     values:
-      layout:                 "video"
-      video_type:             "tutoriales"
-      video_type_short:       "tutorial"
-      can_contribute:         true
+      layout: "video"
+      video_type: "tutoriales"
+      video_type_short: "tutorial"
+      can_contribute: true
 
-  - scope:              { path: "", type: "shorts" }
+  - scope: { path: "", type: "shorts" }
     values:
-      layout:                 "video"
-      video_type:             "shorts"
-      video_type_short:       "short"
-      can_contribute:         true
+      layout: "video"
+      video_type: "shorts"
+      video_type_short: "short"
+      can_contribute: true
 
-  - scope:              { path: "", type: "Grabaciones" }
+  - scope: { path: "", type: "Grabaciones" }
     values:
-      layout:                 "video"
-      video_type:             "grabaciones"
-      video_type_short:       "grabacion"
-      can_contribute:         false
+      layout: "video"
+      video_type: "grabaciones"
+      video_type_short: "grabacion"
+      can_contribute: false
 
-  - scope: { path: "", type:  "Guias" }
+  - scope: { path: "", type: "Guias" }
     values:
-      layout:                 "guide"
+      layout: "guide"
 
-  - scope: { path: "", type:    "Presentaciones" }
+  - scope: { path: "", type: "Presentaciones" }
     values:
-      video_type:             "Presentaciones"
-      video_type_short:       "Presentacion"
-      layout:                 "presentation"
+      video_type: "Presentaciones"
+      video_type_short: "Presentacion"
+      layout: "presentation"
 
   # Guest Tutorials
   - scope: { path: "", type: "invitados" }
@@ -211,10 +212,15 @@ defaults:
       video_type_short: "Invitado"
       can_contribute: true
 
-  - scope: { path: "", type:  "mas" }
+  - scope: { path: "", type: "mas" }
     values:
-      video_type:             "Video"
-      layout:                 "video"
+      layout: "video"
+      video_type: "Video"
+
+  # Colaboradores del Comunidad
+  - scope: { path: "", type: "colaboradores" }
+    values:
+      layout: "colaborador"
 
   # Redirects
   - scope: { path: "", type: "redirect" }

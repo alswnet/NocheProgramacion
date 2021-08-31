@@ -1,11 +1,15 @@
 ---
 title: 
 video_number: 
-date: 
+date:
 video_id: 
 repository: 
 tags:
   - 
+
+ads:
+  - title:
+    url:
 
 topics:
   - title: 
@@ -18,6 +22,28 @@ links:
 videos:
   - title: 
     url:
+
+piezas:
+  - title:
+    url:
+
+tools:
+  - title:
+    url:
+
+book:
+  - title:
+    url:
+
+parts:
+  - title:
+    url: 
+
+custom_sections:
+  - title: 
+    items:
+      - title:
+        url:
 
 actualizado: false
 ---

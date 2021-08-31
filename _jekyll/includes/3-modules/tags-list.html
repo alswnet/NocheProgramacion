@@ -23,9 +23,10 @@
 <div class="link-list {{ include.class | xml_escape }}">
   <h3>{{ include.title | xml_escape }}</h3>
   <ul>
-    {% for tag in include.tags %}
+    {% assign listatags = include.tags | sort %}
+    {% for tag in listatags %}
       <li>
-        <a href="/tag/{{ tag }}">#{{ tag }}</a>
+        <a href="/tag/{{ tag | downcase }}">#{{ tag | downcase }}</a>
       </li>
     {% endfor %}
   </ul>

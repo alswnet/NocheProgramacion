@@ -5,7 +5,7 @@ date: 2020-05-11
 video_id: B2vVddfFhoA
 tags:
   - blender
-  - EditarVideo
+  - editarvideo
 
 topics:
   - title: "Introduccion"
