@@ -29,9 +29,9 @@
     "lint-Tutoriales-fix": "./node_modules/.bin/eslint ./Tutoriales/ --fix",
     "lint-courses-fix": "./node_modules/.bin/eslint ./Courses/ --fix",
     "yt-actualizar": "npm run yt-generar-descripcion && npm run yt-actualizar-descripcion",
-    "yt-generar-descripcion": "node ./_scripts/generate-youtube-descriptions.js",
+    "yt-generar-descripcion": "node ./_scripts/generador-descripciones-youtube.js",
     "yt-actualizar-descripcion": "tooltube -d -r --folder actualizado --canal alswnet",
-    "tags-generate": "node ./_scripts/generate-tags.js"
+    "tags-generate": "node ./_scripts/generador-tags.js"
   },
   "repository": {
     "type": "git",
