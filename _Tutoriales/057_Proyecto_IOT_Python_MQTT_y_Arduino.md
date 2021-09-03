@@ -34,6 +34,8 @@ links:
     url: "https://github.com/256dpi/arduino-mqtt"
 
 videos:
+  - title: "Nuevo Video Python MQTT"
+    url: series/mqtt/004_MQTT_en_python
   - title: "Nueva Serie MQTT"
     url: series/mqtt
 
