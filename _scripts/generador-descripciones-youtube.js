@@ -98,7 +98,7 @@ async function CrearDescripciones(videos) {
 
     // ADS
     if (data.ads) {
-      CantidadAds++;
+      Cantidad.Ads++;
       for (let i = 0; i < data.ads.length; ++i) {
         descripcion += `\n${data.ads[i].title} ${data.ads[i].url}\n`;
       }
