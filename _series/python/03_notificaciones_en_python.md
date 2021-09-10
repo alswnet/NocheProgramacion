@@ -46,6 +46,10 @@ links:
   - title: "Pagina de Audacity"
     url: "https://www.audacityteam.org/"
 
+colaboradores:
+  - title: "Editor"
+    colaborador: ingjuan
+
 actualizado: true
 ---
 
