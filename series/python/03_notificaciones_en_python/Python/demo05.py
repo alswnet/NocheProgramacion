@@ -21,7 +21,6 @@ def EnviarNotificacion(mensaje, audio):
     NotigicacionBase.message = mensaje
     if audio is not None:
         NotigicacionBase.audio = path.join(direcion, audio)
-
     NotigicacionBase.send()
 
 
@@ -53,7 +52,7 @@ Mensajes = [
     }, {
         "mensaje": "Osi una cosa mas",
         "audio": "audio/Mas.wav",
-        "espera": 7
+        "espera": 5
     }, {
         "mensaje": "No se les olvide subcribirse a ALSW",
         "audio": "audio/Sub.wav",

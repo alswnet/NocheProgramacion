@@ -4,6 +4,7 @@
 
 from notifypy import Notify
 
+
 notification = Notify()
 notification.title = "Titulo"
 notification.message = "Hola Mundo"
