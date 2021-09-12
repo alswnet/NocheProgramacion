@@ -2,8 +2,8 @@
 title: "Aprende a hacer Notificaciones en Python con Notifypy"
 video_number: 3
 date: 2020-09-10
-video_id: f0YZaxusnRM 
-repository: 03_notificaciones_en_python
+video_id: f0YZaxusnRM
+repository: python/03_notificaciones_en_python
 tags:
   - python
   - linux
@@ -12,27 +12,27 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: Modulo Notify
-    time: '00:58'
+    time: "00:58"
   - title: Cómo instalar  notify-py
-    time: '01:30'
+    time: "01:30"
   - title: Crear notificación
-    time: '01:47'
+    time: "01:47"
   - title: Personalizar icono
-    time: '02:30'
+    time: "02:30"
   - title: Direcciones absolutas
-    time: '03:02'
+    time: "03:02"
   - title: Direcciones relativas
-    time: '03:36'
-  - title: Agregar voz 
-    time: '04:55'
+    time: "03:36"
+  - title: Agregar voz
+    time: "04:55"
   - title: Mejorar codigo
-    time: '05:55'
+    time: "05:55"
   - title: Despedida
-    time: '07:29'
+    time: "07:29"
   - title: Apoyanos
-    time: '07:33'
+    time: "07:33"
 
 links:
   - title: "Pagina web de notify-py"
