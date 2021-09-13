@@ -1,7 +1,7 @@
 ---
 title: "Aprende a hacer Notificaciones en Python con Notifypy"
 video_number: 3
-date: 2020-09-10
+date: 2021-09-10
 video_id: f0YZaxusnRM
 repository: python/03_notificaciones_en_python
 tags:
