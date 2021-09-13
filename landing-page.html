@@ -2,42 +2,54 @@
 layout: base
 permalink: /
 ---
-{% comment %} Repara problema de la lista {% endcomment %}
-
 {% comment %} Get the next stream. {% endcomment %}
 {% include 1-tools/sort-videos.html videos=site.Grabaciones future=true reverse=true %}
 {% assign nextStream = out_sortedVideos | where_exp: 'stream', 'stream.date >= site.time' | first %}
 
-{% comment %} Obtener los ultimis turoriales {% endcomment %}
-{% include 1-tools/sort-videos.html videos=site.Tutoriales reverse=true %}
+{% assign tag_post = '' | split: '' %}
+
+{% include 1-tools/sort-videos.html videos=site.shorts %}
+{% assign TodosVideos = out_sortedVideos %}
+
+{% include 1-tools/sort-videos.html videos=site.Tutoriales %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.series %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.mas %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.invitados %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=TodosVideos sortByDate=true reverse=true %}
+{% assign TodosVideos = out_sortedVideos %}
 
 
 {% comment %} Use the latest coding challenge if a stream hasn't been scheduled yet. {% endcomment %}
 {% if nextStream == null %}
-{% assign offset = 1 %}
-{% assign nextStream = out_sortedVideos | first %}
+  {% assign offset = 1 %}
+  {% assign nextStream = TodosVideos | first %}
 {% else %}
-{% assign offset = 0 %}
+  {% assign offset = 0 %}
 {% endif %}
 
 {% assign featuredVideos = '' | split: '' %}
 
 {% comment %} Add latest coding challenges to featured videos array. {% endcomment %}
-{% for challenge in out_sortedVideos limit:6 offset:offset %}
-{% assign featuredVideos = featuredVideos | push: challenge %}
+{% for challenge in TodosVideos limit:9 offset:offset %}
+    {% assign featuredVideos = featuredVideos | push: challenge %}
 {% endfor %}
 
-
-{% comment %} Get lastest stream and add it to the featured videos array.
-{% include 1-tools/sort-videos.html videos=site.Tutoriales reverse=true %}
-{% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
-{% endcomment %}
-
-
-{% comment %} Get lastest stream and add it to the featured videos array.
-{% include 1-tools/sort-videos.html videos=site.Cursos reverse=false %}
-{% assign featuredVideos = featuredVideos | push: out_sortedVideos[0] %}
-{% endcomment %}
 
 <div class="landing-page">
   <div class="welcome-message">
