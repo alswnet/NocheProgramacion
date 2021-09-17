@@ -107,6 +107,7 @@ exclude:
     "actualizado",
     "assets/template",
     "scripts",
+    "_scripts",
   ]
 
 # keep_files: ["Presentaciones"]

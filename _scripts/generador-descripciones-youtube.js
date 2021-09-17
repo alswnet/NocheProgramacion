@@ -254,7 +254,7 @@ async function CrearDescripciones(videos) {
 👍 Facebook: https://www.facebook.com/alswnet
 👥 Grupo Facebook: https://www.facebook.com/groups/chepecarlosclub
 🔭 Telegram: https://t.me/alswnet
-🕹 Canal VideoJuegos: https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1
+🕹 Canal VideoJuegos: https://nocheprogramacion.com/alsw2game
 🎈 Twitch: https://www.twitch.tv/alswnet`;
 
     // if (data.tags) {
