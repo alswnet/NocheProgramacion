@@ -233,18 +233,21 @@ async function CrearDescripciones(videos) {
 
     // TODO: Crear nuevo grupo de Telegram y Whatsapp ?
 
+    // Donar
+    descripcion += "\nApoyanos:";
+    descripcion += `
+💖 Membreria: https://www.youtube.com/alswnet/join
+☕ Donar un café: https://nocheprogramacion.com/cafe`;
+
     // Links Generales
+    descripcion += "\n\nLinks:";
     descripcion += `
 👏🏽 Subscribe: https://www.youtube.com/alswnet?sub_confirmation=1
-💖 Membreria: https://www.youtube.com/alswnet/join
-🚂 Sitio Web: http://nocheprogramacion.com
 💬 Discord: https://nocheprogramacion.com/discord
+🚂 Sitio Web: http://nocheprogramacion.com
 👾 Comparte tu creación! https://nocheprogramacion.com/tucodigo
 🚩 Sugerir Temas: https://github.com/alswnet/NocheProgramacion/issues/new
 💡 GitHub: https://github.com/alswnet
-☕ Donar un café: https://www.buymeacoffee.com/alswnet
-💖 Apoyo: https://nocheprogramacion.com/apoyo
-💰 Donación: https://nocheprogramacion.com/donar
 🌎 Noticias: https://programacion.news
 🐦 Twitter: https://twitter.com/alswnet
 📸 Instagram: https://www.instagram.com/alswnet
