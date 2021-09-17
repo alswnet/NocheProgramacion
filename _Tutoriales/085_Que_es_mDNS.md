@@ -1,8 +1,9 @@
 ---
 title: "Que es mDSN o Multicast DNS"
 video_number: 85
-date: 2021-08-17
+date: 2021-09-17
 video_id: _2dZVdjV4T4
+post_id: 392844618884045
 tags:
   - iot
   - dns
@@ -39,7 +40,7 @@ topics:
 links:
   - title: "Wikipedia mDNS"
     url: "https://en.wikipedia.org/wiki/Multicast_DNS"
-  - title: ""
+  - title: "Descarga de Bonjour para Windos"
     url: "https://support.apple.com/kb/DL999?locale=es_ES"
 
 colaboradores:
@@ -49,4 +50,4 @@ colaboradores:
 actualizado: true
 ---
 
-Aprende a usar mDNS o Multicast DNS una forma de usar nombre o direciones en tu red internet como si fueran domino olvdate de usar IP Estaticas y usa mDNS
+Aprende a usar mDNS o Multicast DNS una forma de usar nombre o direcciones en tu red internet como si fueran domino olvidate de usar IP Estáticas y usa mDNS
