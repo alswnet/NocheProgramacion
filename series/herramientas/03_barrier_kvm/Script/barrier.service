@@ -1,0 +1,12 @@
+[Unit]
+Description=Barrier Client daemon
+After=network.target
+
+[Service]
+User=chepecarlos
+Group=chepecarlos
+ExecStart=barrierc --name "Umaru" --display :0 --debug INFO -f Ryuk.local:24800
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

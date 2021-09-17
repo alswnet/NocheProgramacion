@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [48]]</a>
+			<a href="/tag/arduino">#arduino [49]]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [18]]</a>
@@ -20,10 +20,10 @@ redirect_from:
 			<a href="/tag/git">#git [10]]</a>
 		</li>
 		<li>
-			<a href="/tag/github">#github [9]]</a>
+			<a href="/tag/iot">#iot [10]]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [9]]</a>
+			<a href="/tag/github">#github [9]]</a>
 		</li>
 		<li>
 			<a href="/tag/telegram">#telegram [9]]</a>
@@ -110,6 +110,15 @@ redirect_from:
 			<a href="/tag/shorts">#shorts [2]]</a>
 		</li>
 		<li>
+			<a href="/tag/vscode">#vscode [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/programar">#programar [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/ide">#ide [2]]</a>
+		</li>
+		<li>
 			<a href="/tag/robotica">#robotica [2]]</a>
 		</li>
 		<li>
@@ -192,6 +201,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/speedtest">#speedtest [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/dns">#dns [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/red">#red [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/chatbot">#chatbot [1]]</a>

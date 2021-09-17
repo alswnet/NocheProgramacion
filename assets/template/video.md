@@ -1,26 +1,26 @@
 ---
-title: 
-video_number: 
-date:
-video_id: 
-repository: 
+title:
+video_number:
+date: 2021-12-31
+video_id:
+repository:
 tags:
-  - 
+  -
 
 ads:
   - title:
     url:
 
 topics:
-  - title: 
-    time: ''
+  - title:
+    time: ""
 
 links:
-  - title: 
-    url: 
+  - title:
+    url:
 
 videos:
-  - title: 
+  - title:
     url:
 
 piezas:
@@ -37,10 +37,14 @@ book:
 
 parts:
   - title:
-    url: 
+    url:
+
+colaboradores:
+  - title:
+    colaborador:
 
 custom_sections:
-  - title: 
+  - title:
     items:
       - title:
         url:
