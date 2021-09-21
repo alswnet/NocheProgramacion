@@ -23,6 +23,9 @@ redirect_from:
 			<a href="/tag/iot">#iot [10]]</a>
 		</li>
 		<li>
+			<a href="/tag/esp32">#esp32 [9]]</a>
+		</li>
+		<li>
 			<a href="/tag/github">#github [9]]</a>
 		</li>
 		<li>
@@ -32,13 +35,10 @@ redirect_from:
 			<a href="/tag/nodejs">#nodejs [9]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [8]]</a>
+			<a href="/tag/p5js">#p5js [9]]</a>
 		</li>
 		<li>
 			<a href="/tag/python">#python [8]]</a>
-		</li>
-		<li>
-			<a href="/tag/p5js">#p5js [8]]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [8]]</a>
@@ -77,13 +77,22 @@ redirect_from:
 			<a href="/tag/obs">#obs [4]]</a>
 		</li>
 		<li>
+			<a href="/tag/vscode">#vscode [4]]</a>
+		</li>
+		<li>
 			<a href="/tag/esp8255">#esp8255 [3]]</a>
+		</li>
+		<li>
+			<a href="/tag/programacion">#programacion [3]]</a>
 		</li>
 		<li>
 			<a href="/tag/windows">#windows [3]]</a>
 		</li>
 		<li>
 			<a href="/tag/java">#java [3]]</a>
+		</li>
+		<li>
+			<a href="/tag/ide">#ide [3]]</a>
 		</li>
 		<li>
 			<a href="/tag/lcd">#lcd [2]]</a>
@@ -104,19 +113,16 @@ redirect_from:
 			<a href="/tag/meld">#meld [2]]</a>
 		</li>
 		<li>
+			<a href="/tag/discord">#discord [2]]</a>
+		</li>
+		<li>
 			<a href="/tag/comandos">#comandos [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [2]]</a>
 		</li>
 		<li>
-			<a href="/tag/vscode">#vscode [2]]</a>
-		</li>
-		<li>
 			<a href="/tag/programar">#programar [2]]</a>
-		</li>
-		<li>
-			<a href="/tag/ide">#ide [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/robotica">#robotica [2]]</a>
@@ -159,9 +165,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/salud">#salud [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/programacion">#programacion [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/atomide">#atomide [1]]</a>
@@ -209,6 +212,9 @@ redirect_from:
 			<a href="/tag/red">#red [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/comparacion">#comparacion [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/chatbot">#chatbot [1]]</a>
 		</li>
 		<li>
@@ -234,9 +240,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/controlacelularpc">#controlacelularpc [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/discord">#discord [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/teclado">#teclado [1]]</a>
@@ -282,6 +285,21 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/mac">#mac [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/code">#code [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/raspberrypi">#raspberrypi [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/arm">#arm [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/instagram">#instagram [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/animacion">#animacion [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/servidor">#servidor [1]]</a>
