@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Servidor Local ALSW</title>
+    <style>
+        .pollo {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            background-color: #ccc;
+            border-radius: 34px;
+        }
+
+        .pollo.vivo {
+            background-color: #2196F3;
+        }
+
+        .pollo:hover {
+            background-color: #072a46;
+        }
+
+        .huevo {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            border-radius: 34px;
+            background-color: white;
+        }
+
+        .huevo.vivo {
+            left: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Servidor Local ALSW</h1>
+        Boton 1:<br>
+        <a href="index.html">
+            <span type="button" class="pollo vivo">
+                <span class="huevo vivo"></span>
+            </span>
+        </a>
+        <br>
+        Boton 2: <br>
+        <a href="index.html">
+            <span type="button" class="pollo muerto">
+                <span class="huevo muerto"></span>
+            </span>
+        </a>
+    </center>
+</body>
+
+</html>
