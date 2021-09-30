@@ -3,6 +3,7 @@
 
 <head>
     <title>Servidor Local ALSW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .pollo {
             position: relative;
@@ -13,7 +14,7 @@
             border-radius: 34px;
         }
 
-        .pollo.vivo {
+        .vivo .pollo {
             background-color: #2196F3;
         }
 
@@ -32,8 +33,8 @@
             background-color: white;
         }
 
-        .huevo.vivo {
-            left: 26px;
+        .vivo .huevo {
+            left: 28px;
         }
     </style>
 </head>
@@ -43,16 +44,19 @@
         <h1>Servidor Local ALSW</h1>
         Boton 1:<br>
         <a href="index.html">
-            <span type="button" class="pollo vivo">
-                <span class="huevo vivo"></span>
-            </span>
+            <div class="vivo">
+                <span class="pollo">
+                    <span class="huevo"></span>
+                </span>
+            </div>
         </a>
-        <br>
         Boton 2: <br>
         <a href="index.html">
-            <span type="button" class="pollo muerto">
-                <span class="huevo muerto"></span>
-            </span>
+            <div class="muerto">
+                <span class="pollo">
+                    <span class="huevo"></span>
+                </span>
+            </div>
         </a>
     </center>
 </body>
