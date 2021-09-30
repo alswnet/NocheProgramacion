@@ -36,6 +36,10 @@ piezas:
   - title: "Arduino ESP8266"
   - title: "Arduino ESP32"
 
+videos:
+  - title: "nueva Seria ESP32 y ESP8266"
+    url: series/arduino_esp
+
 links:
   - title: "Descargar Arduino IDE"
     url: "https://www.arduino.cc/en/software"
