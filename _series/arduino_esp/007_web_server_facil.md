@@ -3,7 +3,7 @@ title: "Crea un servidor Web con ESP32 y ESP8266 Facil"
 video_number: 7
 date: 2021-10-06
 video_id: bEk0DuKv_aQ
-post_id:
+post_id: 1249710385492523
 repository: arduino_esp/007_Web_Server_Facil
 tags:
   - arduino
@@ -71,6 +71,7 @@ videos:
   - title: "Github Page"
     url: Tutoriales/066_GITHUB_PAGES
   - title: "IF comprimido en arduino"
+    url: shorts/007_Operador_ternario
 
 piezas:
   - title: "ESP32"
