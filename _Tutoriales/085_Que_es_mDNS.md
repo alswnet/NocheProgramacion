@@ -8,6 +8,7 @@ tags:
   - iot
   - dns
   - red
+  - mdns
 
 topics:
   - title: Introduccion
