@@ -17,7 +17,7 @@ videos:
     url: Tutoriales/085_Que_es_mDNS
 
 piezas:
-  - title: "Raspberry Ii"
+  - title: "Raspberry Pi"
 
 colaboradores:
   - title: "Editor"
