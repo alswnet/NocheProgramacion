@@ -35,7 +35,39 @@ redirect_from:
 
 {% assign Ultimo = TodosVideos | first %}
 
-[{{ Ultimo.title | upcase }}](https://www.youtube.com/watch?v={{ Ultimo.video_id }})
+<div class="video-card">
+    <a href="https://youtu.be/{{ Ultimo.video_id }}">
+        <div class="video-header">
+            <div class="thumb-container">
+                <div
+                class="video-thumbnail"
+                    {% if Ultimo.video_id %}
+                    style="background-image: url(https://i.ytimg.com/vi/{{Ultimo.video_id}}/mqdefault.jpg)"
+                    {% else %}
+                    style="background-image: url({{ '/assets/images/streamcover.jpg' | relative_url }})"
+                    {% endif %}
+                >
+                </div>
+            </div>
+
+           <h3>{{ Ultimo.title | xml_escape }}</h3>
+
+            {% if Ultimo.date > site.time %}
+                <span class="video-date">{{ Ultimo.date | date: '%d %b %Y - %H:%M %Z' }}</span>
+            {% else %}
+                <span class="video-date">{{ Ultimo.date | date_to_string }}</span>
+            {% endif %}
+        </div>
+    </a>
+
+    <div class="buttons">
+        <a href="https://youtu.be/{{ Ultimo.video_id }}"
+            aria-label="Mira en Youtube:"
+        >
+            Mira en YouTube
+        </a>
+    </div>
+</div>
 
 ### Youtube
 
