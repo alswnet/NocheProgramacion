@@ -1,5 +1,5 @@
 ---
-title: "como usar mdns en ESP32 y ESP8266"
+title: "No uses IP usa mDNS web server con ESP32 y ESP8266"
 video_number: 8
 date: 2021-10-12
 video_id: 46BLISvOsrM
