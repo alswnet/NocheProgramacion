@@ -25,8 +25,8 @@ topics:
     time: "04:31"
 
 links:
- - title: "scrcpy"
-   url: "https://github.com/Genymobile/scrcpy"
+  - title: "scrcpy"
+    url: "https://github.com/Genymobile/scrcpy"
 
 actualizado: true
 ---

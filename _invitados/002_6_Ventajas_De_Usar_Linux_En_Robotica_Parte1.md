@@ -31,4 +31,4 @@ custom_sections:
 actualizado: false
 ---
 
-No sabes por donde empezar?, te contaremos porqué debes usar Linux para empezar en este mundo de la Robotica, con éste video ¿Por que usar Robotica con Linux? con un amigo de  @Curso de Robotica  
+No sabes por donde empezar?, te contaremos porqué debes usar Linux para empezar en este mundo de la Robotica, con éste video ¿Por que usar Robotica con Linux? con un amigo de @Curso de Robotica

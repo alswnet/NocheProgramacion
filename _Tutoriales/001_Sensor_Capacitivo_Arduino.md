@@ -22,8 +22,7 @@ piezas:
   - title: "Resistencia 330ohm"
     pieza: "resistencia-de-330-ohm-0-25w"
 
-    actualizado: true
+actualizado: true
 ---
 
 Que se puede hacer con 3 cables, 1 Resistencia, 1 Arduino y 1 Humano, un proyecto muy interesante.
-

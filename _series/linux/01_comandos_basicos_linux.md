@@ -10,56 +10,56 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: "Que es Terminal"
-    time: '00:32'
+    time: "00:32"
   - title: "Programa para terminal"
-    time: '01:29'
+    time: "01:29"
   - title: "Terminal Quake"
-    time: '01:58'
+    time: "01:58"
   - title: "Git Bash para Windos"
-    time: '02:05'
+    time: "02:05"
   - title: "Prompt terminal"
-    time: '03:04'
+    time: "03:04"
   - title: "Comando: pwd"
-    time: '04:41'
+    time: "04:41"
   - title: "Comando: ls"
-    time: '05:18'
+    time: "05:18"
   - title: "Comando: man"
-    time: '06:28'
+    time: "06:28"
   - title: "Comando: clear"
-    time: '07:15'
+    time: "07:15"
   - title: "Comando: cd"
-    time: '07:32'
+    time: "07:32"
   - title: "AutoCompletador Terminal"
-    time: '08:24'
+    time: "08:24"
   - title: "Comando: cp"
-    time: '11:33'
+    time: "11:33"
   - title: "Comando: cat"
-    time: '11:49'
+    time: "11:49"
   - title: "Comando: rm"
-    time: '12:05'
+    time: "12:05"
   - title: "Comando: mv"
-    time: '12:23'
+    time: "12:23"
   - title: "Comando: mkdir"
-    time: '13:03'
+    time: "13:03"
   - title: "Comando: rmdir"
-    time: '13:25'
+    time: "13:25"
   - title: "Comando: sudo"
-    time: '13:44'
+    time: "13:44"
   - title: "Comando: locate"
-    time: '14:49'
+    time: "14:49"
   - title: "Comando: roboot"
-    time: '15:06'
+    time: "15:06"
   - title: "Comando: shutdown"
-    time: '15:33'
+    time: "15:33"
   - title: "Resumen"
-    time: '15:48'
+    time: "15:48"
 
 links:
   - title: "Terminal Quake"
     url: "http://guake-project.org/"
-    
+
 videos:
   - title: "Git Bash para Windos"
     url: "https://www.youtube.com/watch?v=jChUn5oaSW8"

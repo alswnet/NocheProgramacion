@@ -10,13 +10,13 @@ tags:
 
 topics:
   - title: inicio
-    time: '00:00'
+    time: "00:00"
   - title: Acceso a codigo fuente
-    time: '01:44'
+    time: "01:44"
   - title: No virus
-    time: '08:31'
+    time: "08:31"
   - title: Linux para todo
-    time: '15:10'
+    time: "15:10"
 videos:
   - title: Parte 1 colaboracion
     url: https://www.youtube.com/watch?v=H2fhTZvz9IY
@@ -39,4 +39,6 @@ custom_sections:
 actualizado: true
 ---
 
-No sabes por donde empezar? te contaremos porqué debes usar Linux para empezar en este mundo de la Robotica, con éste video ¿Por que usar Robotica con Linux? con un amigo de Curso de Robotica  
+No sabes por donde empezar? te contaremos porqué debes usar Linux para empezar en este mundo de la Robotica,
+
+Con éste video ¿Por que usar Robotica con Linux? con un amigo de Curso de Robotica

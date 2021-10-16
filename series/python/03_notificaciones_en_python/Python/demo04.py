@@ -12,5 +12,5 @@ icono = "LogoALSW.png"
 audio = "HolaMundo.wav"
 direcion = path.abspath(path.dirname(__file__))
 notification.icon = path.join(direcion, icono)
-notification.audio =  path.join(direcion, audio)
+notification.audio = path.join(direcion, audio)
 notification.send()

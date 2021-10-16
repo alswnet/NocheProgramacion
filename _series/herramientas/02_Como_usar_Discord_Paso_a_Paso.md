@@ -27,10 +27,10 @@ topics:
     time: "12:11"
 
 links:
- - title: "Discord"
-   url: "https://discord.com/"
- - title: "Discord de Comunidad de ALSW"
-   url: "https://nocheprogramacion.com/discord"   
+  - title: "Discord"
+    url: "https://discord.com/"
+  - title: "Discord de Comunidad de ALSW"
+    url: "https://nocheprogramacion.com/discord"
 
 actualizado: true
 ---

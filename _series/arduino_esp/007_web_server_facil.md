@@ -65,9 +65,9 @@ videos:
   - title: "Millis Arduino"
     url: series/arduino/avanzado/008_millis_arduino
   - title: "Multi Hardware"
-    url: series/arduino_esp/005_multi_hardware
+    url: series/arduino_esp/004_multi_hardware
   - title: "Multi Wifi"
-    url: series/arduino_esp/006_multi_wifi
+    url: series/arduino_esp/005_multi_wifi
   - title: "Github Page"
     url: Tutoriales/066_GITHUB_PAGES
   - title: "IF comprimido en arduino"

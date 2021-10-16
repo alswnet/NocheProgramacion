@@ -4,10 +4,10 @@
 
 import argparse
 
-parser = argparse.ArgumentParser(description='App demo :)')
-parser.add_argument('--mensaje', '-m', help="Muestra mensaje esepcial %(prog)s", action="store_true")
-parser.add_argument('--sub', '-s', help="Cuantas veces lo peditas", type=int)
-parser.add_argument('--hola', '-H', help="Di hola a ")
+parser = argparse.ArgumentParser(description="App demo :)")
+parser.add_argument("--mensaje", "-m", help="Muestra mensaje esepcial %(prog)s", action="store_true")
+parser.add_argument("--sub", "-s", help="Cuantas veces lo peditas", type=int)
+parser.add_argument("--hola", "-H", help="Di hola a ")
 
 
 def TeQuiero():

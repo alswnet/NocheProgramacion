@@ -1,10 +1,9 @@
 ---
 title: "Codigo Multi hardware para Arduino, ESP32 y ESP8266"
-video_number: 5
+video_number: 4
 date: 2021-07-07
 video_id: QHdi4vpVWPU
-repository: arduino_esp/005_multi_hardware
-
+repository: arduino_esp/004_multi_hardware
 tags:
   - arduino
   - esp32
@@ -39,7 +38,7 @@ links:
 
 videos:
   - title: "Multi Red Wifi para ESP8266 y ESP32"
-    url: series/arduino_esp/006_multi_wifi
+    url: series/arduino_esp/005_multi_wifi
 
 actualizado: true
 ---

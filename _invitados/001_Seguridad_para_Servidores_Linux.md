@@ -32,12 +32,12 @@ topics:
     time: "53:51"
 
 links:
- - title: "digitalocean"
-   url: "https://www.digitalocean.com/"
- - title: "Tutorial de Wordpress"
-   url: "https://marketplace.digitalocean.com/apps/wordpress#getting-started"
- - title: "Dominios Gratuitos"
-   url: "https://freemyip.com/"
+  - title: "digitalocean"
+    url: "https://www.digitalocean.com/"
+  - title: "Tutorial de Wordpress"
+    url: "https://marketplace.digitalocean.com/apps/wordpress#getting-started"
+  - title: "Dominios Gratuitos"
+    url: "https://freemyip.com/"
 
 custom_sections:
   - title: "Contactos de ElGato"
@@ -48,4 +48,4 @@ custom_sections:
 actualizado: true
 ---
 
-No sabes donde empezar para poner seguridad a tu primer servidor con Linux, enseñando las buenas practicar al instalar tu servidor linux con ubuntu Server o derivados, con el apoyo de un Experto  
+No sabes donde empezar para poner seguridad a tu primer servidor con Linux, enseñando las buenas practicar al instalar tu servidor linux con ubuntu Server o derivados, con el apoyo de un Experto

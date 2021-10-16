@@ -12,35 +12,35 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: Que es systemctl
-    time: '01:56'
+    time: "01:56"
   - title: Servicio de prueba Mosquitto
-    time: '02:27'
+    time: "02:27"
   - title: Comando Estado systemctl status
-    time: '03:24'
+    time: "03:24"
   - title: Que haces cuento se reinicia la pc
-    time: '04:12'
+    time: "04:12"
   - title: AutoCompletado
-    time: '05:15'
+    time: "05:15"
   - title: Comando Pararar systemctl stop
-    time: '05:39'
+    time: "05:39"
   - title: Comando Encender systemctl start
-    time: '06:05'
+    time: "06:05"
   - title: Importante apagar servidores que no uses
-    time: '06:35'
+    time: "06:35"
   - title: Comando Desactivar systemctl disable
-    time: '06:53'
+    time: "06:53"
   - title: Comando Reactivar systemctl enable
-    time: '07:19'
+    time: "07:19"
   - title: Comando reiniciar systemctl restart y reload
-    time: '07:45'
+    time: "07:45"
   - title: Archivos de los servicios en linux
-    time: '09:01'
+    time: "09:01"
   - title: Ver servicios actuales
-    time: '10:29'
+    time: "10:29"
   - title: Despedida
-    time: '11:11'
+    time: "11:11"
 
 links:
   - title: "Pagina de documentacion de systemctl"

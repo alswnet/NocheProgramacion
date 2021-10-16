@@ -1,9 +1,9 @@
 ---
 title: "Conectar a múltiples redes WIFI con ESP32 y ESP8266 en Arduino"
-video_number: 6
+video_number: 5
 date: 2021-07-12
 video_id: JDX_JKst2zY
-repository: arduino_esp/006_multi_wifi
+repository: arduino_esp/005_multi_wifi
 
 tags:
   - arduino
@@ -51,7 +51,7 @@ links:
 
 videos:
   - title: "Multi Hardware para ESP8266 y ESP32"
-    url: series/arduino_esp/005_multi_hardware
+    url: series/arduino_esp/004_multi_hardware
   - title: "Problemas comunes con el ESP32 y ESP8266"
     url: Tutoriales/047_Solventar_Problemas_ESP8266_y_ESP32
 

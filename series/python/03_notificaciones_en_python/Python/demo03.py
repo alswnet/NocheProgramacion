@@ -12,4 +12,3 @@ icono = "LogoALSW.png"
 direcion = path.abspath(path.dirname(__file__))
 notification.icon = path.join(direcion, icono)
 notification.send()
-
