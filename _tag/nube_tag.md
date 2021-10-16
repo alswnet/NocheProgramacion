@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [52]]</a>
+			<a href="/tag/arduino">#arduino [56]]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [18]]</a>
@@ -17,19 +17,19 @@ redirect_from:
 			<a href="/tag/mqtt">#mqtt [14]]</a>
 		</li>
 		<li>
+			<a href="/tag/esp32">#esp32 [12]]</a>
+		</li>
+		<li>
 			<a href="/tag/iot">#iot [12]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [11]]</a>
+			<a href="/tag/git">#git [11]]</a>
 		</li>
 		<li>
-			<a href="/tag/git">#git [10]]</a>
+			<a href="/tag/esp8266">#esp8266 [11]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/github">#github [9]]</a>
+			<a href="/tag/github">#github [10]]</a>
 		</li>
 		<li>
 			<a href="/tag/telegram">#telegram [9]]</a>
@@ -39,6 +39,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/p5js">#p5js [9]]</a>
+		</li>
+		<li>
+			<a href="/tag/bluetooth">#bluetooth [8]]</a>
 		</li>
 		<li>
 			<a href="/tag/python">#python [8]]</a>
@@ -51,9 +54,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/cli">#cli [7]]</a>
-		</li>
-		<li>
-			<a href="/tag/bluetooth">#bluetooth [7]]</a>
 		</li>
 		<li>
 			<a href="/tag/android">#android [7]]</a>
@@ -83,6 +83,12 @@ redirect_from:
 			<a href="/tag/vscode">#vscode [4]]</a>
 		</li>
 		<li>
+			<a href="/tag/wifi">#wifi [3]]</a>
+		</li>
+		<li>
+			<a href="/tag/lcd">#lcd [3]]</a>
+		</li>
+		<li>
 			<a href="/tag/esp8255">#esp8255 [3]]</a>
 		</li>
 		<li>
@@ -95,7 +101,7 @@ redirect_from:
 			<a href="/tag/ide">#ide [3]]</a>
 		</li>
 		<li>
-			<a href="/tag/lcd">#lcd [2]]</a>
+			<a href="/tag/raspberrypi">#raspberrypi [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/arduinoide">#arduinoide [2]]</a>
@@ -108,6 +114,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/gui">#gui [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/mdns">#mdns [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/webserver">#webserver [2]]</a>
@@ -135,6 +144,18 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/aniversario">#aniversario [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/hc05">#hc05 [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/arduini">#arduini [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/mp3">#mp3 [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/teensy">#teensy [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/motores">#motores [1]]</a>
@@ -227,12 +248,6 @@ redirect_from:
 			<a href="/tag/bucle">#bucle [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/wifi">#wifi [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/mdns">#mdns [1]]</a>
-		</li>
-		<li>
 			<a href="/tag/inskcape">#inskcape [1]]</a>
 		</li>
 		<li>
@@ -294,9 +309,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/code">#code [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/raspberrypi">#raspberrypi [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/arm">#arm [1]]</a>

@@ -123,15 +123,15 @@ async function CrearDescripciones(videos) {
       SiquienteVideo = false;
     }
 
-    if (playlist || SiquienteVideo) {
-      descripcion += `\n`;
-      if (SiquienteVideo) {
-        descripcion += `🎥 Siguiente video: https://youtu.be/${SiquienteVideo}\n`;
-      }
-      if (playlist) {
-        let NombrePlaylist = videos[i].playlistName;
-        descripcion += `🎥 Playlist(${NombrePlaylist}): https://www.youtube.com/playlist?list=${playlist}\n`;
-      }
+    // Siquiente video
+    if (SiquienteVideo) {
+      descripcion += `\n🎥 Siguiente video: https://youtu.be/${SiquienteVideo}\n`;
+    }
+
+    // Serie
+    if (playlist) {
+      let NombrePlaylist = videos[i].playlistName;
+      descripcion += `\n🎥 Playlist(${NombrePlaylist}): https://www.youtube.com/playlist?list=${playlist}\n`;
     }
 
     // Videos
@@ -156,7 +156,7 @@ async function CrearDescripciones(videos) {
     // Codigo
     if (data.repository || data.web_editor) {
       Cantidad.Codigo++;
-      descripcion += `\n💻 Codigo: https://nocheprogramacion.com/${pageURL}.html\n`;
+      descripcion += `\n💻 Código: https://nocheprogramacion.com/${pageURL}.html\n`;
     } else {
       descripcion += `\n🖥 Articulo: https://nocheprogramacion.com/${pageURL}.html\n`;
     }
@@ -178,7 +178,7 @@ async function CrearDescripciones(videos) {
     // Link de piesas
     if (data.piezas) {
       Cantidad.Piezas++;
-      descripcion += "\nComponentes electronicos mencionado video:\n";
+      descripcion += "\nComponentes electrónicos:\n";
       for (let i = 0; i < data.piezas.length; ++i) {
         const url = data.piezas[i].url;
         if (url) {
@@ -223,20 +223,22 @@ async function CrearDescripciones(videos) {
     }
 
     // Agradecer a colaboradores
-    if (data.colaboradores) {
-      Cantidad.Colaboradores++;
-      descripcion += "\nVideo gracias a los Colaboradore:\n";
-      for (let i = 0; i < data.colaboradores.length; ++i) {
-        descripcion += `🧙🏼‍♂️${data.colaboradores[i].title} - ${data.colaboradores[i].colaborador}\n`;
+    if (data.actualizado) {
+      if (data.colaboradores) {
+        Cantidad.Colaboradores++;
+        descripcion += "\nVideo gracias a los Colaboradores:\n";
+        for (let i = 0; i < data.colaboradores.length; ++i) {
+          descripcion += `🧙🏼‍♂️ ${data.colaboradores[i].title} - ${data.colaboradores[i].colaborador}\n`;
+        }
       }
     }
 
     // TODO: Crear nuevo grupo de Telegram y Whatsapp ?
 
     // Donar
-    descripcion += "\nApoyanos:";
+    descripcion += "\nApóyanos:";
     descripcion += `
-💖 Membreria: https://www.youtube.com/alswnet/join
+💖 Membresía: https://www.youtube.com/alswnet/join
 ☕ Donar un café: https://nocheprogramacion.com/cafe`;
 
     // Links Generales
