@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [56]]</a>
+			<a href="/tag/arduino">#arduino [57]]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [18]]</a>
@@ -32,6 +32,9 @@ redirect_from:
 			<a href="/tag/github">#github [10]]</a>
 		</li>
 		<li>
+			<a href="/tag/bluetooth">#bluetooth [9]]</a>
+		</li>
+		<li>
 			<a href="/tag/telegram">#telegram [9]]</a>
 		</li>
 		<li>
@@ -39,9 +42,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/p5js">#p5js [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/bluetooth">#bluetooth [8]]</a>
 		</li>
 		<li>
 			<a href="/tag/python">#python [8]]</a>
@@ -246,6 +246,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/bucle">#bucle [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/mega">#mega [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/inskcape">#inskcape [1]]</a>
