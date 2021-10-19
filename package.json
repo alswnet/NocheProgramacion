@@ -1,6 +1,6 @@
 {
   "name": "nocheprogramacion",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Sitio Web NocheProgramacion",
   "main": "none",
   "devDependencies": {
@@ -30,6 +30,7 @@
     "lint-courses-fix": "./node_modules/.bin/eslint ./Courses/ --fix",
     "yt-actualizar": "npm run yt-generar-descripcion && npm run yt-actualizar-descripcion",
     "yt-generar-descripcion": "node ./_scripts/generador-descripciones-youtube.js",
+    "fb-generar-descripcion": "node ./_scripts/generador-descripciones-facebook.js",
     "yt-actualizar-descripcion": "tooltube -d -r --folder actualizado --canal alswnet",
     "tags-generate": "node ./_scripts/generador-tags.js",
     "generador-noche-programacion": "bundle exec jekyll serve"

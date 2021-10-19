@@ -25,4 +25,3 @@ Hola amigos les quiero enseñar a usar el Stream Deck en linux usando una librer
 con esta librería podrás controlar ElGato Stream Deck que por si misma es una herramienta genial pero solo tiene soporte Windos y Mac; pero lograremos usarla en nuestra distribución linux con facilidad.
 
 Esta herramienta les sera muy útil sin importar que programa usen y mas aun si son maker o creativos, para que la usarían ustedes?
-

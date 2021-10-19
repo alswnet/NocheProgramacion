@@ -3,6 +3,7 @@ title: "Que es Mejor en Arduino For o Ctrl+V"
 video_number: 86
 date: 2021-09-21
 video_id: kORTk7fuaqY
+post_id: 180880647494005
 repository: 086_Que_es_mejor
 tags:
   - arduino

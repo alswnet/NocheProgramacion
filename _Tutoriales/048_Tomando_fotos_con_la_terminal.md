@@ -10,6 +10,7 @@ links:
   - title: "Documentacion de fswebcam"
     url: "https://manpages.debian.org/jessie/fswebcam/fswebcam.1.en.html"
 
+actualizado: true
 ---
 
-Haremos algo un poco interesante, vamos a tomar fotos... desde la Terminal!!
+En este tutorial te explicamos como tomar foto desde tu terminal de comandos de tu distribución de Linux favorita, tanto con una o varias camaras.

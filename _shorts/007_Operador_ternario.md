@@ -23,4 +23,4 @@ colaboradores:
 actualizado: true
 ---
 
-Este truco te ayudara a hacer codigo mas eficiente y facil de entendder, el operador ternario esta en diferentes lenguajes y este pequeño ejemplo para Arduino se que te ayudara.
+Este truco te ayudara a hacer codigo mas eficiente y facil de entender, el operador ternario esta en diferentes lenguajes y este pequeño ejemplo para Arduino se que te ayudara.

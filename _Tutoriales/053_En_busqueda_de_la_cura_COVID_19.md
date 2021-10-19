@@ -36,4 +36,6 @@ videos:
 actualizado: true
 ---
 
-Creemos en ALSW que se puede apoyar a encontrar la solución a Pandemia actual desde diferentes sectores como maker, debemos apoyar como podamos hoy les quiero mostrar como poder apoyar con su pc para ayudar a confiticos, médicos e ingenios a encontrar la cura del COVID-19 y otras enfermedades con el programa Folding@Home que permite que sus computadoras reciba simulaciones, procesarlas y mandarla de vuelta para ser usada en campo medicina, gracias por apoyar y cuídense mis camaradas
+Creemos en ALSW que se puede apoyar a encontrar la solución a Pandemia
+
+Actual desde diferentes sectores como maker, debemos apoyar como podamos hoy les quiero mostrar como poder apoyar con su pc para ayudar a confiticos, médicos e ingenios a encontrar la cura del COVID-19 y otras enfermedades con el programa Folding@Home que permite que sus computadoras reciba simulaciones, procesarlas y mandarla de vuelta para ser usada en campo medicina, gracias por apoyar y cuídense mis camaradas

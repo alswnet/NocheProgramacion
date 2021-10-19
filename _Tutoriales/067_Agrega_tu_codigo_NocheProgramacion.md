@@ -6,8 +6,9 @@ video_id: nGAHSes_0Nk
 
 links:
   - title: Guia Contribucion Comunitaria
-    url: /Guias/Guia_Contribucion_Comunitaria
+    url: Guias/Guia_Contribucion_Comunitaria 
 
+actualizado: true
 ---
 
 Aprende a agregar tu propio codigo en nocheprogramacion
