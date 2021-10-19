@@ -44,7 +44,7 @@ links:
 
 videos:
   - title: "Grabacion en vivo de pm2"
-    url: "Grabaciones/002_Grabacion_de_Tutorial_pm2"
+    url: "grabaciones/002_Grabacion_de_Tutorial_pm2"
   - title: "Servicio de Chatbot en Nodejs"
     url: "Cursos/01_Arduino_ChatBot_Telegram/1.8-Sistema-Temperatura"
 
