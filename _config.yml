@@ -144,7 +144,7 @@ collections:
   Presentaciones: { output: true }
   mas: { output: true }
   invitados: { output: true }
-  Grabaciones: { output: true }
+  grabaciones: { output: true }
   redirects: { output: true }
   shorts: { output: true }
   colaboradores: { output: true }
@@ -188,7 +188,7 @@ defaults:
       video_type_short: "short"
       can_contribute: true
 
-  - scope: { path: "", type: "Grabaciones" }
+  - scope: { path: "", type: "grabaciones" }
     values:
       layout: "video"
       video_type: "grabaciones"

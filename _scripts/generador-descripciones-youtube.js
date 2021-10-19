@@ -5,28 +5,8 @@ const {
   ObtenerDataVideo,
   BuscarVideoRecursivamente,
   ReiniciarFolder,
+  ObtenerURLYoutube,
 } = require("./funciones");
-
-function ObtenerURLYoutube(url) {
-  //No entiendo pero funciona
-  let Pagina;
-  try {
-    Pagina = fs.readFileSync(`./_${url}.md`, "UTF8");
-  } catch (err) {
-    try {
-      Pagina = fs.readFileSync(`./_${url}/index.md`, "UTF8");
-    } catch (e) {
-      return url;
-    }
-  }
-
-  const Contenido = yaml.loadFront(Pagina);
-  if (Contenido.video_id) {
-    return `https://youtu.be/${Contenido.video_id}`;
-  } else if (Contenido.playlist_id) {
-    return `https://www.youtube.com/playlist?list=${Contenido.playlist_id}`;
-  }
-}
 
 function ImprimirData(Titulo, CantidadLink, CantidadTotal) {
   Porcentaje = parseFloat((100 * CantidadLink) / CantidadTotal).toFixed(2);
