@@ -14,13 +14,10 @@ void loop() {
   int Estado2 = digitalRead(Boton2) * 4;
   int Estado3 = digitalRead(Boton3) * 5;
 
-  Serial.print("Izquierda:");
   Serial.print(Estado1);
   Serial.print(",");
-  Serial.print("Centro:");
   Serial.print(Estado2);
   Serial.print(",");
-  Serial.print("Derecha:");
   Serial.print(Estado3);
   Serial.println();
   delay(100);

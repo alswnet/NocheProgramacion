@@ -11,10 +11,10 @@ void loop() {
   int PosicionDeseada = digitalRead(Boton) * 180;
   PosicionActual = (0.05 * PosicionDeseada) + (0.95 * PosicionActual);
 
-  Serial.print("Actual:");
+  Serial.print(millis());
+  Serial.print(",");
   Serial.print(PosicionActual);
   Serial.print(",");
-  Serial.print("Deseada:");
   Serial.print(PosicionDeseada);
   Serial.println();
   delay(100);
