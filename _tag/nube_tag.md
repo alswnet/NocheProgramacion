@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [57]]</a>
+			<a href="/tag/arduino">#arduino [58]]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [18]]</a>
@@ -17,16 +17,16 @@ redirect_from:
 			<a href="/tag/mqtt">#mqtt [14]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [12]]</a>
+			<a href="/tag/esp32">#esp32 [13]]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [12]]</a>
+			<a href="/tag/iot">#iot [13]]</a>
+		</li>
+		<li>
+			<a href="/tag/esp8266">#esp8266 [12]]</a>
 		</li>
 		<li>
 			<a href="/tag/git">#git [11]]</a>
-		</li>
-		<li>
-			<a href="/tag/esp8266">#esp8266 [11]]</a>
 		</li>
 		<li>
 			<a href="/tag/github">#github [10]]</a>
@@ -44,10 +44,10 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [9]]</a>
 		</li>
 		<li>
-			<a href="/tag/python">#python [8]]</a>
+			<a href="/tag/ml5">#ml5 [9]]</a>
 		</li>
 		<li>
-			<a href="/tag/ml5">#ml5 [8]]</a>
+			<a href="/tag/python">#python [8]]</a>
 		</li>
 		<li>
 			<a href="/tag/processing">#processing [8]]</a>
@@ -95,6 +95,9 @@ redirect_from:
 			<a href="/tag/windows">#windows [3]]</a>
 		</li>
 		<li>
+			<a href="/tag/webserver">#webserver [3]]</a>
+		</li>
+		<li>
 			<a href="/tag/java">#java [3]]</a>
 		</li>
 		<li>
@@ -102,6 +105,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/raspberrypi">#raspberrypi [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/ia">#ia [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/arduinoide">#arduinoide [2]]</a>
@@ -117,9 +123,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/mdns">#mdns [2]]</a>
-		</li>
-		<li>
-			<a href="/tag/webserver">#webserver [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/meld">#meld [2]]</a>
@@ -165,9 +168,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/brainjs">#brainjs [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/ia">#ia [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/javascrip">#javascrip [1]]</a>
@@ -248,6 +248,12 @@ redirect_from:
 			<a href="/tag/bucle">#bucle [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/ipestatica">#ipestatica [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/ip">#ip [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/mega">#mega [1]]</a>
 		</li>
 		<li>
@@ -285,6 +291,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/admin">#admin [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/machinelearning">#machinelearning [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/javascript">#javascript [1]]</a>
