@@ -1,9 +1,9 @@
 ---
 title: "Como usar Bluetooth con ESP32 Arduino"
-video_number: 4
+video_number: 5
 date: 2020-08-10
 video_id: nwuxZL9ktRk
-repository: bluetooth_con_arduino/004_Usando_el_bluettoth_del_ESP32_Arduino
+repository: bluetooth_con_arduino/005_Usando_el_bluettoth_del_ESP32_Arduino
 tags:
   - arduino
   - bluetooth
