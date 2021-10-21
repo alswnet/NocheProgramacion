@@ -59,4 +59,4 @@ colaboradores:
 actualizado: true
 ---
 
-Quiere que tu proyecto de Web Server no cambide de IP a cada rato, aprennde a como poner una IP Fija dentro de tu red para el ESP32 y ESP8266 de manera muy facil
+Quiere que tu proyecto de Web Server no cambide de IP a cada rato, aprende a como poner una IP Fija dentro de tu red para el ESP32 y ESP8266 de manera muy facil
