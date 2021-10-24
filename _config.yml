@@ -148,6 +148,7 @@ collections:
   redirects: { output: true }
   shorts: { output: true }
   colaboradores: { output: true }
+  ponencias: { output: true }
   tag:
     output: true
     permalink: tag/:path/
@@ -205,7 +206,13 @@ defaults:
       video_type_short: "Presentacion"
       layout: "presentation"
 
-  # Guest Tutorials
+  - scope: { path: "", type: "ponencias" }
+    values:
+      layout: "video"
+      video_type: "Ponencias"
+      video_type_short: "Ponencia"
+      can_contribute: true
+
   - scope: { path: "", type: "invitados" }
     values:
       layout: "video"

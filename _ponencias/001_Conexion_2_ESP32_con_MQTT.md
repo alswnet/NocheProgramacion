@@ -1,6 +1,6 @@
 ---
 title: "Conexión de 2 ESP32 con MQTT"
-video_number: 4
+video_number: 1
 date: 2021-05-14
 video_id: y9hIIQi54DA
 repository: 004_Conexion_2_ESP32_con_MQTT

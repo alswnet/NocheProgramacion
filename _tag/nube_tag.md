@@ -8,19 +8,19 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [58]]</a>
+			<a href="/tag/arduino">#arduino [59]]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [18]]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [14]]</a>
+			<a href="/tag/mqtt">#mqtt [15]]</a>
+		</li>
+		<li>
+			<a href="/tag/iot">#iot [14]]</a>
 		</li>
 		<li>
 			<a href="/tag/esp32">#esp32 [13]]</a>
-		</li>
-		<li>
-			<a href="/tag/iot">#iot [13]]</a>
 		</li>
 		<li>
 			<a href="/tag/esp8266">#esp8266 [12]]</a>
@@ -32,6 +32,12 @@ redirect_from:
 			<a href="/tag/github">#github [10]]</a>
 		</li>
 		<li>
+			<a href="/tag/p5js">#p5js [10]]</a>
+		</li>
+		<li>
+			<a href="/tag/ml5">#ml5 [10]]</a>
+		</li>
+		<li>
 			<a href="/tag/bluetooth">#bluetooth [9]]</a>
 		</li>
 		<li>
@@ -39,12 +45,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/nodejs">#nodejs [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/p5js">#p5js [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/ml5">#ml5 [9]]</a>
 		</li>
 		<li>
 			<a href="/tag/python">#python [8]]</a>
@@ -132,6 +132,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/comandos">#comandos [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/machinelearning">#machinelearning [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [2]]</a>
@@ -293,9 +296,6 @@ redirect_from:
 			<a href="/tag/admin">#admin [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/machinelearning">#machinelearning [1]]</a>
-		</li>
-		<li>
 			<a href="/tag/javascript">#javascript [1]]</a>
 		</li>
 		<li>
@@ -338,6 +338,9 @@ redirect_from:
 			<a href="/tag/servidor">#servidor [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/halloween">#halloween [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/crecetube">#crecetube [1]]</a>
 		</li>
 		<li>
@@ -345,6 +348,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/litoibarra">#litoibarra [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/arduinoday">#arduinoday [1]]</a>
 		</li>
 	</ul>
 </div>
