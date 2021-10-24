@@ -3,8 +3,6 @@ title: "Arduino Day Colombia 2021"
 video_number: 3
 date: 2021-10-23
 video_id: dOTP5_0nNMw
-post_id:
-repository:
 tags:
   - mqtt
   - iot
