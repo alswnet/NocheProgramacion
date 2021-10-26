@@ -17,13 +17,13 @@ redirect_from:
 			<a href="/tag/mqtt">#mqtt [15]]</a>
 		</li>
 		<li>
+			<a href="/tag/esp32">#esp32 [14]]</a>
+		</li>
+		<li>
 			<a href="/tag/iot">#iot [14]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [13]]</a>
-		</li>
-		<li>
-			<a href="/tag/esp8266">#esp8266 [12]]</a>
+			<a href="/tag/esp8266">#esp8266 [13]]</a>
 		</li>
 		<li>
 			<a href="/tag/git">#git [11]]</a>
@@ -77,6 +77,9 @@ redirect_from:
 			<a href="/tag/editarvideo">#editarvideo [4]]</a>
 		</li>
 		<li>
+			<a href="/tag/webserver">#webserver [4]]</a>
+		</li>
+		<li>
 			<a href="/tag/obs">#obs [4]]</a>
 		</li>
 		<li>
@@ -93,9 +96,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/windows">#windows [3]]</a>
-		</li>
-		<li>
-			<a href="/tag/webserver">#webserver [3]]</a>
 		</li>
 		<li>
 			<a href="/tag/java">#java [3]]</a>
@@ -255,6 +255,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/ip">#ip [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/eeprom">#eeprom [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/mega">#mega [1]]</a>
