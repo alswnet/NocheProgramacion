@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.7.1/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.2.8/mqtt.min.js"></script>
+
+    <!-- Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Se ve bien movil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+    <script src="control.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Cabezera -->
+        <div class="row">
+            <div class="col s12">
+                <div class="card teal darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Demo Clasificador de Imagenes de ALSW</span>
+                        <p>Neurona clasificadora de imagenes implementa en ML5, que puede ser entrenada desde el
+                            navegador Web usando el Adgoritmo de KNN o K vecinos mas sercados</p>
+                        <p>Ver tutorial completo para explicacion del codigo y como unir con Arduino por USB o IOT MQTT
+                        </p>
+                    </div>
+                    <div class="card-action  teal darken-4">
+                        <a class="white-text"
+                            href="https://nocheprogramacion.com/Cursos/07_Inteligencia_Artificial_ML5/">Curso en
+                            Proyecto</a>
+                        <a class="white-text" href="https://github.com/alswnet/DemoML5">Codigo Github</a>
+                        <a class="white-text"
+                            href="https://www.youtube.com/playlist?list=PLWQQswW6kqpUFsEd8jXxVCNDvHN34uR24">Youtube
+                            PlayList</a>
+                        <a class="white-text" href="#">Donar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Botones -->
+        <div class="section center-align">
+            <h5>Expreciones</h5>
+            <p>Enseña tu animo de una manera divertida, controla con la cara</p>
+            <div class="center-align">
+                <a class="waves-effect waves-light btn BotoneExprecion">Normal</a>
+                <a class="waves-effect waves-light btn BotoneExprecion">Feliz</a>
+                <a class="waves-effect waves-light btn BotoneExprecion">Enojado</a>
+            </div>
+        </div>
+        
+    </div>
+
+        <!-- Pie de pagina -->
+        <footer class="page-footer teal darken-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">ALSW</h5>
+                        <p class="grey-text text-lighten-4">Somos un grupo de emprendedores makers, nos apasiona la
+                            tecnologia, no solo conocer de ella, sino que tambien desarrollarla, estudiarla, modificarla
+                            y crearla.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Link</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/alswnet">Youtube</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="https://discord.gg/tECqBm">Discord </a></li>
+                            <li><a class="grey-text text-lighten-3"
+                                    href="https://github.com/alswnet/DemoML5/issues">Reportar Bug</a>
+                            <li><a class="grey-text text-lighten-3" href="https://github.com/alswnet/DemoML5">Codigo
+                                    Fuente</a></li>
+                            <li><a class="grey-text text-lighten-3"
+                                    href="https://nocheprogramacion.com/Cursos/07_Inteligencia_Artificial_ML5/">Curso
+                                    Completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright teal darken-3">
+                <div class="container">
+                    Por ChepeCarlos de ALSW
+                    <a class="grey-text text-lighten-4 right" href="https://chepecarlos.com/">Chepecarlos.com</a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>
