@@ -10,9 +10,11 @@ let Opciones = {
   inputResolution: 313,
 };
 
+let ExprecionColores = /^#[0-9a-f]{3,6}$/i;
 let ListaColores;
 let listaExpreciones;
 let EstadoFondo = "camara";
+let EstadoFondoColor;
 let EstadoExprecion;
 let EstadoDepuracio = false;
 let EstadoEsqueleto = true;
@@ -92,6 +94,7 @@ function setup() {
   // poseNet = ml5.poseNet(video, Opciones, modelLoaded);
   poseNet.on("pose", gotPoses);
   ConectarMQTT();
+  EstadoFondoColor = color(0, 0, 0);
 }
 
 function gotPoses(poses) {
@@ -118,8 +121,6 @@ function modelLoaded() {
 
 function draw() {
   DibujarFondo();
-  // background(0, 0, 0);
-  image(video, width / 2, height / 2);
 
   if (pose) {
     // textSize(20);
@@ -128,7 +129,7 @@ function draw() {
     if (EstadoEsqueleto) {
       FiltarPose();
       DibujarCabeza();
-      console.log("Dibujando Aqui ");
+      // console.log("Dibujando Aqui ");
 
       for (let i = 0; i < ListaHuezos.length; i++) {
         DibujarHuezo(
@@ -171,6 +172,11 @@ function draw() {
 }
 
 function DibujarFondo() {
+  if (EstadoFondo == "camara") {
+    image(video, width / 2, height / 2);
+  } else {
+    background(EstadoFondoColor);
+  }
   // EstadoFondo;
 }
 

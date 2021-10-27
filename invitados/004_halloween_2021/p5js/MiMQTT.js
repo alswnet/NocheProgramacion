@@ -28,7 +28,6 @@ function RecivirMensaje(topic, message) {
   console.log(`Topic[${topic}]: "${Mensaje}"`);
   let ListaTopic = topic.split("/");
   Base = ListaTopic.shift();
-  //   console.log(ListaTopic);
   if (Base == "alsw") {
     let Modelo = ListaTopic.shift();
     if (Modelo == "posenet") {
@@ -37,11 +36,12 @@ function RecivirMensaje(topic, message) {
         case "fondo":
           if (Mensaje == "camara") {
             EstadoFondo = "camara";
+            console.log("Activar camara");
           } else {
             EstadoFondo = "Color";
             EstadoFondoColor = ObtenerColor(Mensaje);
+            console.log(`Fondo de color ${EstadoFondoColor}`);
           }
-          console.log("Cambiando fondo");
           break;
         case "exprecion":
           for (let i = 0; i < listaExpreciones.length; i++) {
