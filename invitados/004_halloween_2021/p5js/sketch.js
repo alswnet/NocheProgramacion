@@ -4,11 +4,18 @@ let pose;
 let poseActual;
 
 let skeleton;
-let ImagenEsqueleto;
+let ImagenEsqueleto = Object();
 let ConfianzaMinima = 0.1;
 let Opciones = {
   inputResolution: 313,
 };
+
+let ListaColores;
+let listaExpreciones;
+let EstadoFondo = "camara";
+let EstadoExprecion;
+let EstadoDepuracio = false;
+let EstadoEsqueleto = true;
 
 let FuerzaFiltro = 0.08;
 let poseLista = [
@@ -41,12 +48,37 @@ let ListaHuezos = [
 ];
 
 function preload() {
-  ImagenEsqueleto = Object();
-  ImagenEsqueleto.Cabeza = loadImage("assets/cabeza.png");
+  console.log("PreCargando Imagenes");
+
+  ListaColores = loadJSON("Colores.json");
+  listaExpreciones = loadJSON("Expreciones.json", function () {
+    EstadoExprecion = listaExpreciones[0];
+
+    listaExpreciones.length = Object.values(listaExpreciones).length;
+    ImagenEsqueleto.Cabeza = [];
+    for (let i = 0; i < listaExpreciones.length; i++) {
+      let Imagen = `assets/exprecion/${listaExpreciones[i]}.png`;
+      // console.log(Imagen)
+      ImagenEsqueleto.Cabeza[listaExpreciones[i]] = loadImage(
+        `assets/exprecion/${listaExpreciones[i]}.png`
+      );
+    }
+  });
+  console.log(listaExpreciones.length);
+  for (let i = 0; i < listaExpreciones.length; i++) {
+    console.log(i);
+  }
+  console.log(ListaColores, listaExpreciones, EstadoExprecion);
+
+  // ImagenEsqueleto = Object();
   ImagenEsqueleto.Huezo = loadImage("assets/huezo.png");
   ImagenEsqueleto.Pecho = loadImage("assets/pecho.png");
   ImagenEsqueleto.Cadera = loadImage("assets/cadera.png");
   ImagenEsqueleto.Mano = loadImage("assets/mano.png");
+
+  console.log("Imagenes Precargadas");
+  // ImagenEsqueleto.Cabeza.feliz = loadImage("assets/exprecion/feliz.png");
+  // ImagenEsqueleto.Cabeza.enojado =  loadImage("assets/exprecion/enojado.png");
 }
 
 function setup() {
@@ -59,6 +91,7 @@ function setup() {
   console.log("Cargando Modelo");
   // poseNet = ml5.poseNet(video, Opciones, modelLoaded);
   poseNet.on("pose", gotPoses);
+  ConectarMQTT();
 }
 
 function gotPoses(poses) {
@@ -84,26 +117,30 @@ function modelLoaded() {
 }
 
 function draw() {
+  DibujarFondo();
   // background(0, 0, 0);
   image(video, width / 2, height / 2);
 
   if (pose) {
-    textSize(20);
+    // textSize(20);
     // textAlign(RIGHT);
     // text(pose.score, 100, 40);
-    FiltarPose();
-    DibujarCabeza();
+    if (EstadoEsqueleto) {
+      FiltarPose();
+      DibujarCabeza();
+      console.log("Dibujando Aqui ");
 
-    for (let i = 0; i < ListaHuezos.length; i++) {
-      DibujarHuezo(
-        poseActual[ListaHuezos[i][0]],
-        poseActual[ListaHuezos[i][1]]
-      );
+      for (let i = 0; i < ListaHuezos.length; i++) {
+        DibujarHuezo(
+          poseActual[ListaHuezos[i][0]],
+          poseActual[ListaHuezos[i][1]]
+        );
+      }
+
+      DibujarMano(poseActual.leftWrist, poseActual.leftElbow);
+      DibujarMano(poseActual.rightWrist, poseActual.rightElbow);
+      DibujarCuerpo();
     }
-
-    DibujarMano(poseActual.leftWrist, poseActual.leftElbow);
-    DibujarMano(poseActual.rightWrist, poseActual.rightElbow);
-    DibujarCuerpo();
 
     // poseActual.rightShoulder = AplicarFiltro(
     //   poseActual.rightShoulder,
@@ -114,21 +151,27 @@ function draw() {
     //   pose.rightElbow
     // );
 
-    // for (let i = 0; i < pose.keypoints.length; i++) {
-    //   let x = pose.keypoints[i].position.x;
-    //   let y = pose.keypoints[i].position.y;
-    //   fill(0, 255, 0);
-    //   ellipse(x, y, 16, 16);
-    // }
+    if (EstadoDepuracio) {
+      for (let i = 0; i < pose.keypoints.length; i++) {
+        let x = pose.keypoints[i].position.x;
+        let y = pose.keypoints[i].position.y;
+        fill(0, 255, 0);
+        ellipse(x, y, 16, 16);
+      }
 
-    // for (let i = 0; i < skeleton.length; i++) {
-    //   let a = skeleton[i][0];
-    //   let b = skeleton[i][1];
-    //   strokeWeight(2);
-    //   stroke(255);
-    //   line(a.position.x, a.position.y, b.position.x, b.position.y);
-    // }
+      for (let i = 0; i < skeleton.length; i++) {
+        let a = skeleton[i][0];
+        let b = skeleton[i][1];
+        strokeWeight(2);
+        stroke(255);
+        line(a.position.x, a.position.y, b.position.x, b.position.y);
+      }
+    }
   }
+}
+
+function DibujarFondo() {
+  // EstadoFondo;
 }
 
 function AplicarFiltro(PuntoActual, Punto) {
@@ -168,7 +211,8 @@ function DibujarCabeza() {
 
   translate(Naris.x, Naris.y);
   rotate(Angulo);
-  image(ImagenEsqueleto.Cabeza, 0, 0, Distancia, Distancia);
+
+  image(ImagenEsqueleto.Cabeza[EstadoExprecion], 0, 0, Distancia, Distancia);
   pop();
 
   // fill(255, 0, 0);
@@ -183,10 +227,21 @@ function DibujarMano(Muneca, Codo) {
     Muneca.confidence > ConfianzaMinima
   ) {
     push();
-    translate(Muneca.x, Muneca.y);
-    let Angulo = atan2(Muneca.y - Codo.y, Muneca.x - Codo.x) + 90;
-    rotate(Angulo);
-    image(ImagenEsqueleto.Mano, -100, -100, 200, 200);
+    let Angulo = atan2(Muneca.y - Codo.y, Muneca.x - Codo.x);
+    let C = Object;
+    C.magnitud = 30;
+    // angleMode(RADIANS);
+    C.x = C.magnitud * cos(Angulo);
+    C.y = C.magnitud * sin(Angulo);
+    fill(255, 0, 0);
+    ellipse(C.x, C.y, 20, 20);
+    // console.log(Angulo, C.x, C.y);
+
+    imageMode(CENTER);
+    translate(Muneca.x + C.x, Muneca.y + C.y);
+    line(C.x, C.y, 0, 0);
+    rotate(Angulo + 90);
+    image(ImagenEsqueleto.Mano, 0, 0, 100, 100);
     pop();
   }
 }
@@ -297,4 +352,12 @@ function DibujarCuerpo() {
   pop();
 
   pop();
+}
+
+function CambiarFondo(Fondo) {
+  switch (Operacion) {
+    case "normal":
+      EstadoFondo = "esqueleto";
+      break;
+  }
 }
