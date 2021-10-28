@@ -17,8 +17,10 @@ let EstadoExprecion;
 let EstadoDepuracio = false;
 let EstadoEsqueleto = true;
 
-let FuerzaFiltro = 0.08;
+let FuerzaFiltro = 0.06;
 let AnguloBraso;
+let TamanoHuezo = 100;
+
 let poseLista = [
   "leftShoulder",
   "rightShoulder",
@@ -48,8 +50,6 @@ let ListaHuezos = [
   ["leftAnkle", "leftKnee"],
 ];
 
-
-
 function preload() {
   console.log("PreCargando Imagenes");
 
@@ -64,12 +64,6 @@ function preload() {
       ImagenEsqueleto.Cabeza[listaExpreciones[i]] = loadImage(Imagen);
     }
   });
-
-  console.log(listaExpreciones.length);
-  for (let i = 0; i < listaExpreciones.length; i++) {
-    console.log(i);
-  }
-  console.log(ListaColores, listaExpreciones, EstadoExprecion);
 
   ImagenEsqueleto.Huezo = loadImage("assets/huezo.png");
   ImagenEsqueleto.Pecho = loadImage("assets/pecho.png");
@@ -208,6 +202,7 @@ function DibujarCabeza() {
   let Naris = poseActual.nose;
 
   let Distancia = dist(Izquierda.x, Izquierda.y, Derecha.x, Derecha.y) * 1.25;
+  TamanoHuezo = Distancia / 4;
   let Angulo = atan2(Izquierda.y - Derecha.y, Izquierda.x - Derecha.x);
 
   push();
@@ -237,7 +232,7 @@ function DibujarMano(Muneca, Codo, IdAngulo) {
     imageMode(CENTER);
     translate(Muneca.x + C.x, Muneca.y + C.y);
     rotate(Angulo + 90);
-    image(ImagenEsqueleto.Mano, 0, 0, 300, 300);
+    image(ImagenEsqueleto.Mano, 0, 0, 4 * TamanoHuezo, 4 * TamanoHuezo);
     AnguloBraso[IdAngulo] = Angulo;
     pop();
   }
@@ -257,7 +252,7 @@ function DibujarHuezo(Punto1, Punto2) {
     translate(CentroX, CentroY);
     rotate(Angulo);
     Distancia = Distancia * 0.8;
-    image(ImagenEsqueleto.Huezo, 0, 0, Distancia, 60);
+    image(ImagenEsqueleto.Huezo, 0, 0, Distancia, TamanoHuezo);
     pop();
   }
 }
