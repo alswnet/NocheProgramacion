@@ -17,6 +17,7 @@ let EstadoExprecion;
 let EstadoDepuracio = false;
 let EstadoEsqueleto = true;
 
+let MultiplicadorCabeza = 1.5;
 let FuerzaFiltro = 0.06;
 let AnguloBraso;
 let TamanoHuezo = 100;
@@ -92,8 +93,8 @@ function setup() {
 }
 
 function windowResized() {
-  console.log("Recargar Tamaño")
-  var ObtenerCanva = document.getElementById('micanva');
+  console.log("Recargar Tamaño");
+  var ObtenerCanva = document.getElementById("micanva");
   var Ancho = ObtenerCanva.offsetWidth;
   var Alto = Ancho * RelacionCamara;
   resizeCanvas(Ancho, Alto);
@@ -209,7 +210,8 @@ function DibujarCabeza() {
   let Derecha = poseActual.rightEar;
   let Naris = poseActual.nose;
 
-  let Distancia = dist(Izquierda.x, Izquierda.y, Derecha.x, Derecha.y) * 1.25;
+  let Distancia =
+    dist(Izquierda.x, Izquierda.y, Derecha.x, Derecha.y) * MultiplicadorCabeza;
   TamanoHuezo = Distancia / 4;
   let Angulo = atan2(Izquierda.y - Derecha.y, Izquierda.x - Derecha.x);
 
