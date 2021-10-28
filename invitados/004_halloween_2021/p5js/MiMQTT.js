@@ -55,7 +55,7 @@ function RecivirMensaje(topic, message) {
           break;
         case "depuracion":
           console.log(`Cambiando Depuracion a ${message}`);
-          if (Mensaje == "true") {
+          if (Mensaje == "activar") {
             EstadoDepuracio = true;
           } else {
             EstadoDepuracio = false;
@@ -63,7 +63,7 @@ function RecivirMensaje(topic, message) {
           break;
         case "esqueleto":
           console.log(`Cambiando Esqueleto a ${message}`);
-          if (Mensaje == "true") {
+          if (Mensaje == "activar") {
             EstadoEsqueleto = true;
           } else {
             EstadoEsqueleto = false;

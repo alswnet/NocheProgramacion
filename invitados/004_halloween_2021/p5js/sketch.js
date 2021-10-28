@@ -6,9 +6,7 @@ let poseActual;
 let skeleton;
 let ImagenEsqueleto = Object();
 let ConfianzaMinima = 0.1;
-let Opciones = {
-  inputResolution: 313,
-};
+let RelacionCamara;
 
 let ExprecionColores = /^#[0-9a-f]{3,6}$/i;
 let ListaColores;
@@ -60,7 +58,6 @@ function preload() {
     ImagenEsqueleto.Cabeza = [];
     for (let i = 0; i < listaExpreciones.length; i++) {
       let Imagen = `assets/exprecion/${listaExpreciones[i]}.png`;
-      // console.log(Imagen)
       ImagenEsqueleto.Cabeza[listaExpreciones[i]] = loadImage(
         `assets/exprecion/${listaExpreciones[i]}.png`
       );
@@ -72,36 +69,34 @@ function preload() {
   }
   console.log(ListaColores, listaExpreciones, EstadoExprecion);
 
-  // ImagenEsqueleto = Object();
   ImagenEsqueleto.Huezo = loadImage("assets/huezo.png");
   ImagenEsqueleto.Pecho = loadImage("assets/pecho.png");
   ImagenEsqueleto.Cadera = loadImage("assets/cadera.png");
   ImagenEsqueleto.Mano = loadImage("assets/mano.png");
-
-  console.log("Imagenes Precargadas");
-  // ImagenEsqueleto.Cabeza.feliz = loadImage("assets/exprecion/feliz.png");
-  // ImagenEsqueleto.Cabeza.enojado =  loadImage("assets/exprecion/enojado.png");
 }
 
 function setup() {
-  createCanvas(640, 480);
-  imageMode(CENTER);
-  angleMode(DEGREES);
+  var ObtenerCanva = document.getElementById("micanva");
   video = createCapture(VIDEO);
   video.hide();
+  var AnchoCanvas = ObtenerCanva.offsetWidth;
+  RelacionCamara = video.height / video.width;
+  var AltoCanvas = AnchoCanvas * RelacionCamara;
+  var sketchCanvas = createCanvas(AnchoCanvas, AltoCanvas);
+  sketchCanvas.parent("micanva");
+
+  imageMode(CENTER);
+  angleMode(DEGREES);
   poseNet = ml5.poseNet(video, modelLoaded);
   console.log("Cargando Modelo");
-  // poseNet = ml5.poseNet(video, Opciones, modelLoaded);
   poseNet.on("pose", gotPoses);
   ConectarMQTT();
   EstadoFondoColor = color(0, 0, 0);
 }
 
 function gotPoses(poses) {
-  //console.log(poses);
   if (poses.length > 0) {
     if (!pose) {
-      // poseActual = poses[0].pose;
       poseActual = Object();
       for (let i = 0; i < poseLista.length; i++) {
         poseActual[poseLista[i]] = Object();
@@ -120,17 +115,14 @@ function modelLoaded() {
 }
 
 function draw() {
+  AjuntarCamara();
   DibujarFondo();
 
   if (pose) {
-    // textSize(20);
-    // textAlign(RIGHT);
-    // text(pose.score, 100, 40);
+    imageMode(CENTER);
     if (EstadoEsqueleto) {
       FiltarPose();
       DibujarCabeza();
-      // console.log("Dibujando Aqui ");
-
       for (let i = 0; i < ListaHuezos.length; i++) {
         DibujarHuezo(
           poseActual[ListaHuezos[i][0]],
@@ -142,16 +134,7 @@ function draw() {
       DibujarMano(poseActual.rightWrist, poseActual.rightElbow);
       DibujarCuerpo();
     }
-
-    // poseActual.rightShoulder = AplicarFiltro(
-    //   poseActual.rightShoulder,
-    //   pose.rightShoulder
-    // );
-    // poseActual.rightElbow = AplicarFiltro(
-    //   poseActual.rightElbow,
-    //   pose.rightElbow
-    // );
-
+    
     if (EstadoDepuracio) {
       for (let i = 0; i < pose.keypoints.length; i++) {
         let x = pose.keypoints[i].position.x;
@@ -171,13 +154,25 @@ function draw() {
   }
 }
 
+function AjuntarCamara() {
+  var RelacionCamara2 = video.height / video.width;
+  if (RelacionCamara != RelacionCamara2) {
+    var Ancho = width;
+    var Alto = Ancho * RelacionCamara2;
+    RelacionCamara = RelacionCamara2;
+    console.log("Cambiando " + Ancho + " - " + Alto);
+    resizeCanvas(Ancho, Alto, true);
+  }
+}
+
 function DibujarFondo() {
   if (EstadoFondo == "camara") {
-    image(video, width / 2, height / 2);
+    background("#fff");
+    imageMode(CORNER);
+    image(video, 0, 0);
   } else {
     background(EstadoFondoColor);
   }
-  // EstadoFondo;
 }
 
 function AplicarFiltro(PuntoActual, Punto) {
@@ -220,11 +215,6 @@ function DibujarCabeza() {
 
   image(ImagenEsqueleto.Cabeza[EstadoExprecion], 0, 0, Distancia, Distancia);
   pop();
-
-  // fill(255, 0, 0);
-  // ellipse(Derecha.x, Derecha.y, 20, 20);
-  // ellipse(Izquierda.x, Izquierda.y, 20, 20);
-  // ellipse(Naris.x, Naris.y, 20, 20);
 }
 
 function DibujarMano(Muneca, Codo) {
@@ -235,19 +225,14 @@ function DibujarMano(Muneca, Codo) {
     push();
     let Angulo = atan2(Muneca.y - Codo.y, Muneca.x - Codo.x);
     let C = Object;
-    C.magnitud = 30;
-    // angleMode(RADIANS);
+    C.magnitud = 10;
     C.x = C.magnitud * cos(Angulo);
     C.y = C.magnitud * sin(Angulo);
-    fill(255, 0, 0);
-    ellipse(C.x, C.y, 20, 20);
-    // console.log(Angulo, C.x, C.y);
 
     imageMode(CENTER);
     translate(Muneca.x + C.x, Muneca.y + C.y);
-    line(C.x, C.y, 0, 0);
     rotate(Angulo + 90);
-    image(ImagenEsqueleto.Mano, 0, 0, 100, 100);
+    image(ImagenEsqueleto.Mano, 0, 0, 300, 300);
     pop();
   }
 }
@@ -257,32 +242,17 @@ function DibujarHuezo(Punto1, Punto2) {
     Punto1.confidence > ConfianzaMinima &&
     Punto2.confidence > ConfianzaMinima
   ) {
-    // line(Punto1.x, Punto2.y)
     push();
 
     let CentroX = (Punto1.x + Punto2.x) / 2;
     let CentroY = (Punto1.y + Punto2.y) / 2;
-    // console.log(CentroX, CentroY);
-    // let Distancia = CentroEntrePuntos(Punto1, Punto2);
-    // dist(Punto1.x, Punto1.y, Punto2.x, Punto2.y);
     let Distancia = dist(Punto1.x, Punto1.y, Punto2.x, Punto2.y);
     let Angulo = atan2(Punto1.y - Punto2.y, Punto1.x - Punto2.x);
-    // console.log(Angulo);
     translate(CentroX, CentroY);
     rotate(Angulo);
-    // fill("#0f0ff2");
-    // noStroke();
-    // stroke("#00ffff");
-    // strokeWeight(4);
-    // rect(0, 0, Distancia, 60);
     Distancia = Distancia * 0.8;
     image(ImagenEsqueleto.Huezo, 0, 0, Distancia, 60);
     pop();
-
-    // fill(255, 0, 0);
-    // ellipse(Punto1.x, Punto1.y, 20, 20);
-    // ellipse(Punto2.x, Punto2.y, 20, 20);
-    // ellipse(Naris.x, Naris.y, 20, 20);
   }
 }
 
@@ -333,15 +303,6 @@ function DibujarCuerpo() {
     Cadera.Izquierda.x - Cadera.Derecha.x
   );
 
-  // stroke(255, 0, 255);
-  // fill(237, 34, 93);
-  // beginShape();
-  // vertex(HombroIzquierda.x, HombroIzquierda.y);
-  // vertex(HombroDerecha.x, HombroDerecha.y);
-  // vertex(CaderaIzquierda.x, CaderaIzquierda.y);
-  // vertex(CaderaDerecha.x, CaderaDerecha.y);
-
-  // endShape();
   push();
   imageMode(CENTER);
 
@@ -358,12 +319,4 @@ function DibujarCuerpo() {
   pop();
 
   pop();
-}
-
-function CambiarFondo(Fondo) {
-  switch (Operacion) {
-    case "normal":
-      EstadoFondo = "esqueleto";
-      break;
-  }
 }
