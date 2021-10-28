@@ -1,62 +1,62 @@
 let BrokerMQTT = "wss://public:public@public.cloud.shiftr.io";
+let temaBase = "alsw/posenet";
 let clientMQTT;
-let temaBasel = "alsw/posenet";
 
 function setup() {
   noCanvas();
   ConectarMQTT();
 
-  let BotonesExprecions = selectAll(".BotoneExprecion");
+  let BotonesExprecions = selectAll(".BotonExprecion");
   for (let B = 0; B < BotonesExprecions.length; B++) {
-    BotonesExprecions[B].mousePressed(BotoneExprecion);
+    BotonesExprecions[B].mousePressed(BotonExprecion);
   }
 
-  let BotonesFondos = selectAll(".BotoneFondo");
+  let BotonesFondos = selectAll(".BotonFondo");
   for (let B = 0; B < BotonesFondos.length; B++) {
-    BotonesFondos[B].mousePressed(BotoneFondo);
+    BotonesFondos[B].mousePressed(BotonFondo);
   }
   
-  let BotonesEsqueleto = selectAll(".BotoneEsqueleto");
+  let BotonesEsqueleto = selectAll(".BotonEsqueleto");
   for (let B = 0; B < BotonesEsqueleto.length; B++) {
-    BotonesEsqueleto[B].mousePressed(BotoneEsqueleto);
+    BotonesEsqueleto[B].mousePressed(BotonEsqueleto);
   } 
   
-  let BotonesDepuracion = selectAll(".BotoneDepuracion");
+  let BotonesDepuracion = selectAll(".BotonDepuracion");
   for (let B = 0; B < BotonesDepuracion.length; B++) {
-    BotonesDepuracion[B].mousePressed(BotoneDepuracion);
+    BotonesDepuracion[B].mousePressed(BotonDepuracion);
   }
 
   let TexBoxBoton = select("#TextBoxColor");
   TexBoxBoton.mousePressed(BotonTextBox);
 }
 
-function BotoneExprecion() {
+function BotonExprecion() {
   var NombreBoton = this.elt.innerText.toLowerCase();
   console.log("Precionado " + NombreBoton);
-  clientMQTT.publish(`${temaBasel}/exprecion`, NombreBoton);
+  clientMQTT.publish(`${temaBase}/exprecion`, NombreBoton);
 }
 
-function BotoneFondo() {
+function BotonFondo() {
   var NombreBoton = this.elt.innerText.toLowerCase();
   console.log("Precionado " + NombreBoton);
-  clientMQTT.publish(`${temaBasel}/fondo`, NombreBoton);
+  clientMQTT.publish(`${temaBase}/fondo`, NombreBoton);
 }
 
-function BotoneEsqueleto() {
+function BotonEsqueleto() {
   var NombreBoton = this.elt.innerText.toLowerCase();
   console.log("Precionado " + NombreBoton);
-  clientMQTT.publish(`${temaBasel}/esqueleto`, NombreBoton);
+  clientMQTT.publish(`${temaBase}/esqueleto`, NombreBoton);
 }
-function BotoneDepuracion() {
+function BotonDepuracion() {
   var NombreBoton = this.elt.innerText.toLowerCase();
   console.log("Precionado " + NombreBoton);
-  clientMQTT.publish(`${temaBasel}/depuracion`, NombreBoton);
+  clientMQTT.publish(`${temaBase}/depuracion`, NombreBoton);
 }
 
 function BotonTextBox() {
   var EtiquetaTextBox = select("#TextBox").value().toLowerCase();
   console.log("Enviando color " + EtiquetaTextBox);
-  clientMQTT.publish(`${temaBasel}/fondo`, EtiquetaTextBox);
+  clientMQTT.publish(`${temaBase}/fondo`, EtiquetaTextBox);
 }
 
 function ConectarMQTT() {

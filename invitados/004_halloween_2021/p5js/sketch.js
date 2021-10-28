@@ -18,6 +18,7 @@ let EstadoDepuracio = false;
 let EstadoEsqueleto = true;
 
 let FuerzaFiltro = 0.08;
+let AnguloBraso;
 let poseLista = [
   "leftShoulder",
   "rightShoulder",
@@ -47,6 +48,8 @@ let ListaHuezos = [
   ["leftAnkle", "leftKnee"],
 ];
 
+
+
 function preload() {
   console.log("PreCargando Imagenes");
 
@@ -58,11 +61,10 @@ function preload() {
     ImagenEsqueleto.Cabeza = [];
     for (let i = 0; i < listaExpreciones.length; i++) {
       let Imagen = `assets/exprecion/${listaExpreciones[i]}.png`;
-      ImagenEsqueleto.Cabeza[listaExpreciones[i]] = loadImage(
-        `assets/exprecion/${listaExpreciones[i]}.png`
-      );
+      ImagenEsqueleto.Cabeza[listaExpreciones[i]] = loadImage(Imagen);
     }
   });
+
   console.log(listaExpreciones.length);
   for (let i = 0; i < listaExpreciones.length; i++) {
     console.log(i);
@@ -92,6 +94,7 @@ function setup() {
   poseNet.on("pose", gotPoses);
   ConectarMQTT();
   EstadoFondoColor = color(0, 0, 0);
+  AnguloBraso = [0, 0];
 }
 
 function gotPoses(poses) {
@@ -130,11 +133,12 @@ function draw() {
         );
       }
 
-      DibujarMano(poseActual.leftWrist, poseActual.leftElbow);
-      DibujarMano(poseActual.rightWrist, poseActual.rightElbow);
+      DibujarMano(poseActual.leftWrist, poseActual.leftElbow, 0);
+      DibujarMano(poseActual.rightWrist, poseActual.rightElbow, 1);
+
       DibujarCuerpo();
     }
-    
+
     if (EstadoDepuracio) {
       for (let i = 0; i < pose.keypoints.length; i++) {
         let x = pose.keypoints[i].position.x;
@@ -188,8 +192,6 @@ function CentroEntrePuntos(PuntoA, PuntoB) {
   return Punto;
 }
 
-function AnguloEntrePuntos(PuntoA, PuntoB) {}
-
 function FiltarPose() {
   for (let i = 0; i < poseLista.length; i++) {
     poseActual[poseLista[i]].confidence = pose[poseLista[i]].confidence;
@@ -217,13 +219,16 @@ function DibujarCabeza() {
   pop();
 }
 
-function DibujarMano(Muneca, Codo) {
+function DibujarMano(Muneca, Codo, IdAngulo) {
   if (
     Muneca.confidence > ConfianzaMinima &&
     Muneca.confidence > ConfianzaMinima
   ) {
     push();
-    let Angulo = atan2(Muneca.y - Codo.y, Muneca.x - Codo.x);
+    let AnguloPasado = AnguloBraso[IdAngulo];
+    let AnguloActual = atan2(Muneca.y - Codo.y, Muneca.x - Codo.x);
+    let Filtro = 0.02;
+    let Angulo = (1 - Filtro) * AnguloPasado + Filtro * AnguloActual;
     let C = Object;
     C.magnitud = 10;
     C.x = C.magnitud * cos(Angulo);
@@ -233,6 +238,7 @@ function DibujarMano(Muneca, Codo) {
     translate(Muneca.x + C.x, Muneca.y + C.y);
     rotate(Angulo + 90);
     image(ImagenEsqueleto.Mano, 0, 0, 300, 300);
+    AnguloBraso[IdAngulo] = Angulo;
     pop();
   }
 }
