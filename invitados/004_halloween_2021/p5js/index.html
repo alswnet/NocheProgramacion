@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html lang="es">
+
 <html>
 
 <head>
@@ -6,19 +8,145 @@
     <script src="https://unpkg.com/ml5@0.7.1/dist/ml5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.2.8/mqtt.min.js"></script>
 
-    <script language="javascript" type="text/javascript" src="MiMQTT.js"></script>
-
+    <!-- Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Se ve bien movil -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
 
+    <script src="control.js"></script>
+
 </head>
 
-<body>
+<body class="black">
+    <div class="deep-purple darken-3 container white-text">
 
-    <div id="micanva"> </div>
+        <!-- Cabezera -->
+        <div class="row">
+            <div class="col s12">
+                <div class="card deep-orange darken-4">
+                    <div class="card-content white-text">
+                        <span class="card-title">Machine Learning + Halloween = Esqueleto</span>
+                        <p>Utilizado un Esqueleto interactivo desde tu celular o computado es este controlado con tu
+                            cuerpo (1 Player) controlado con ml5, mqtt, p5js y posenet. Controlado con esta pagina de
+                            control y puedes habirlo en multiples dispositivos.</p>
 
-    <script src="sketch.js"></script>
+                    </div>
+                    <div class="card-action orange darken-4">
+                        <a class="white-text"
+                            href="https://nocheprogramacion.com/Cursos/07_Inteligencia_Artificial_ML5/">Video
+                            Tutorial</a>
+                        <a class="white-text" href="https://github.com/alswnet/DemoML5">Codigo</a>
+                        <a class="white-text"
+                            href="https://www.youtube.com/playlist?list=PLWQQswW6kqpUFsEd8jXxVCNDvHN34uR24">PlayList
+                            Halloween</a>
+                        <a class="white-text" href="https://nocheprogramacion.com/cafe">Donar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flow-text">
+
+
+            <div class="blue-grey darken-3 section center-align">
+                <p>Para activar la camara toca el Boton:</p>
+                <a href="esqueleto.html" target="_blank"
+                    class="red darken-4 waves-effect waves-light btn BotonExprecion">Activa Esqueleto PoseNet
+                    (Camara)</a>
+            </div>
+            <!-- Botons -->
+            <div class="section center-align">
+                <h5>Expreciones</h5>
+                <p>Enseña tu animo de una manera divertida, controla con la cara</p>
+                <div class="center-align ">
+                    <a class="orange darken-4 waves-effect waves-light btn BotonExprecion">Normal</a>
+                    <a class="orange darken-4 waves-effect waves-light btn BotonExprecion">Feliz</a>
+                    <a class="orange darken-4 waves-effect waves-light btn BotonExprecion">Enojado</a>
+                </div>
+            </div>
+
+            <div class="section center-align">
+                <h5>Fondo</h5>
+                <p>Cambia el fondo del sistema</p>
+                <div class="center-align">
+                    <a class="orange darken-4 waves-effect waves-light btn BotonFondo">camara</a>
+                    <a class="orange darken-4 waves-effect waves-light btn BotonFondo">verde</a>
+                    <a class="orange darken-4 waves-effect waves-light btn BotonFondo">negro</a>
+                    <a class="orange darken-4 waves-effect waves-light btn BotonFondo">random</a>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <i class="material-icons prefix">add_circle_outline</i>
+                <input id="TextBox" type="text" data-length="10">
+                <label for="TextBox">Escribe el color que quieres:</label>
+            </div>
+
+            <div class="center-align">
+                <a id="TextBoxColor" class="orange darken-4 waves-effect waves-light btn-large">Enviar color</a>
+            </div>
+
+            <div class="section center-align">
+                <h5>Esqueleto</h5>
+                <p>Activa o desactiva el esqueleto</p>
+                <div class="center-align">
+                    <a class="orange darken-4 waves-effect waves-light btn BotonEsqueleto">activar</a>
+                    <a class="orange darken-4 waves-effect waves-light btn BotonEsqueleto">desactivar</a>
+                </div>
+            </div>
+
+            <div class="section center-align">
+                <h5>Depuracion</h5>
+                <p>Activa o desactiva el depuracion PoneNet</p>
+                <div class="center-align">
+                    <a class="orange darken-4 waves-effect waves-light btn BotonDepuracion">activar</a>
+                    <a class="orange darken-4 waves-effect waves-light btn BotonDepuracion">desactivar</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">ALSW</h5>
+                    <p class="grey-text text-lighten-4">Vez el potencial de mundo y deseas modificarlo, bueno yo te
+                        enseñare lo mas minusioso posible como hacerlo con electronica y software .</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Link</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/alswnet">Youtube</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="https://discord.gg/tECqBm">Discord </a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://github.com/alswnet/DemoML5/issues">Reportar Bug</a>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/alswnet/DemoML5">Codigo
+                                Fuente</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://nocheprogramacion.com/Cursos/07_Inteligencia_Artificial_ML5/">Curso
+                                Completo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright deep-orange accent-4">
+            <div class="container">
+                Por ChepeCarlos de ALSW
+                <a class="grey-text text-lighten-4 right" href="https://chepecarlos.com/">Chepecarlos.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 
 </html>

@@ -91,6 +91,14 @@ function setup() {
   AnguloBraso = [0, 0];
 }
 
+function windowResized() {
+  console.log("Recargar Tamaño")
+  var ObtenerCanva = document.getElementById('micanva');
+  var Ancho = ObtenerCanva.offsetWidth;
+  var Alto = Ancho * RelacionCamara;
+  resizeCanvas(Ancho, Alto);
+}
+
 function gotPoses(poses) {
   if (poses.length > 0) {
     if (!pose) {
