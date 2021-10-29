@@ -58,7 +58,7 @@ custom_sections:
         url: https://www.instagram.com/cursoderobotica/
   - title: ElectroMatic 
     items:
-      - title: youtubr
+      - title: youtube
         url: https://www.youtube.com/channel/UCsdjjZK3OULlfIpTF7d9Vng
       - title: instagram
         url: https://www.instagram.com/electro.matic/
