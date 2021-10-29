@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [59]]</a>
+			<a href="/tag/arduino">#arduino [60]]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [18]]</a>
@@ -332,6 +332,9 @@ redirect_from:
 			<a href="/tag/secreto">#secreto [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/truco">#truco [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/instagram">#instagram [1]]</a>
 		</li>
 		<li>
@@ -339,6 +342,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/servidor">#servidor [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/maker">#maker [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/youtubers">#youtubers [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/halloween">#halloween [1]]</a>
