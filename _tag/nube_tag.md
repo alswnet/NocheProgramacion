@@ -14,7 +14,7 @@ redirect_from:
 			<a href="/tag/linux">#linux [18]]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [15]]</a>
+			<a href="/tag/mqtt">#mqtt [16]]</a>
 		</li>
 		<li>
 			<a href="/tag/esp32">#esp32 [14]]</a>
