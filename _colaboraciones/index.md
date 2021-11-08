@@ -1,5 +1,5 @@
 ---
-title: Invitados
+title: colaboraciones
 layout: series-index
 reverse: true
 ---
