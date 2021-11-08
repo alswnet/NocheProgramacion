@@ -143,7 +143,7 @@ collections:
   Guias: { output: true }
   Presentaciones: { output: true }
   mas: { output: true }
-  invitados: { output: true }
+  colaboraciones: { output: true }
   grabaciones: { output: true }
   redirects: { output: true }
   shorts: { output: true }
@@ -213,11 +213,11 @@ defaults:
       video_type_short: "Ponencia"
       can_contribute: true
 
-  - scope: { path: "", type: "invitados" }
+  - scope: { path: "", type: "colaboraciones" }
     values:
       layout: "video"
-      video_type: "Invitados"
-      video_type_short: "Invitado"
+      video_type: "colaboraciones"
+      video_type_short: "colaboracion"
       can_contribute: true
 
   - scope: { path: "", type: "mas" }
