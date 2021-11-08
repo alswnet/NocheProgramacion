@@ -10,8 +10,9 @@ function ObtenerDataVideo() {
     "_shorts",
     "_RetoProgramacion",
     "_grabaciones",
-    "_invitados",
+    "_colaboraciones",
     "_mas/bodega",
+    "_ponencias"
   ];
 
   let Archivos = [];

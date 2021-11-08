@@ -183,6 +183,7 @@ async function CrearDescripciones(videos) {
           for (let j = 0; j < data.custom_sections[i].items.length; ++j) {
             const url = data.custom_sections[i].items[j].url;
             const title = data.custom_sections[i].items[j].title;
+            descripcion += `  `;
             if (/https?:\/\/.*/.test(url)) {
               descripcion += `➤ ${title}: ${url}\n`;
             } else {
@@ -268,6 +269,7 @@ async function CrearDescripciones(videos) {
     fs.writeFileSync(`descripciones/${NombreArchivo}.txt`, descripcion);
     fs.writeFileSync(`descripciones/Zen_${data.video_id}.txt`, descripcion);
   }
+
   console.log(`Cantidad total videos: ${CantidadVideos}`);
   ImprimirData("Colaboradores", Cantidad.Colaboradores, CantidadVideos);
   ImprimirData("Links", Cantidad.Links, CantidadVideos);
