@@ -23,9 +23,9 @@ void setup() {
   Serial.begin(115200);
   Serial.println("\nIniciando multi Wifi");
 
-  wifiMulti.addAP("ALSW_ESTUDIO", "Fullpower7##");
-  wifiMulti.addAP("ssid_from_AP_2", "your_password_for_AP_2");
-  wifiMulti.addAP("ssid_from_AP_3", "your_password_for_AP_3");
+  wifiMulti.addAP("ssid_1", "contrasenna_1");
+  wifiMulti.addAP("ssid_2", "contrasenna_2");
+  wifiMulti.addAP("ssid_3", "contrasenna_3");
 
   WiFi.mode(WIFI_STA);
   Serial.print("Conectando a Wifi ..");

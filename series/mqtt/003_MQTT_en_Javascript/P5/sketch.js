@@ -8,7 +8,7 @@ var client = mqtt.connect("ws://test.mosquitto.org:8080/mqtt");
 
 function EventoConectar() {
   console.log("Conectado a MQTT");
-  client.subscribe("ALSW/#", function(err) {
+  client.subscribe("ALSW/#", function (err) {
     if (!err) {
       client.publish("ALSW/Temperatura", "30");
     }
