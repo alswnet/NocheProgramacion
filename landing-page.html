@@ -11,8 +11,15 @@ permalink: /
 {% include 1-tools/sort-videos.html videos=site.shorts %}
 {% assign TodosVideos = out_sortedVideos %}
 
+{% include 1-tools/sort-videos.html videos=site.ponencias %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
 {% include 1-tools/sort-videos.html videos=site.colaboraciones %}
-{% assign TodosVideos = out_sortedVideos %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
 
 {% include 1-tools/sort-videos.html videos=site.Tutoriales %}
 {% for video in out_sortedVideos %}
@@ -59,7 +66,6 @@ permalink: /
     <div class="learn-to-code">
       <h1>Noche Programación</h1>
       <h3>de ALSW</h3>
-      <p>Nuevo Texto aqui (Circulo de Oro de ALSW)</p>
       <p>Aquí se recopilan todos nuestros Tutoriales, Cursos, Proyectos; algunos simples, otros complicados pero todos divertidos.</p>
       <div class="ctas">
         <a href="{{ site.links.youtube }}?sub_confirmation=1" target="_blank" class="youtube">Suscribete a Youtube</a>
