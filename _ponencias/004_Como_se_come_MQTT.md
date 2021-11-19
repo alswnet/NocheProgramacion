@@ -64,4 +64,4 @@ colaboradores:
 actualizado: true
 ---
 
-Que es, como funciona, para que sirve MQTT, en esta conferencia con la comunidad de programadores y desarroladores Code Society te esteñamos todo lo que necesitas para empezar en IOT
+Que es, como funciona, para que sirve MQTT, conferencia con la comunidad de programadores y desarroladores Code Society te esteñamos todo lo que necesitas para empezar en IOT

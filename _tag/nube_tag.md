@@ -14,13 +14,13 @@ redirect_from:
 			<a href="/tag/linux">#linux [19]]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [16]]</a>
+			<a href="/tag/mqtt">#mqtt [17]]</a>
+		</li>
+		<li>
+			<a href="/tag/iot">#iot [16]]</a>
 		</li>
 		<li>
 			<a href="/tag/esp32">#esp32 [14]]</a>
-		</li>
-		<li>
-			<a href="/tag/iot">#iot [14]]</a>
 		</li>
 		<li>
 			<a href="/tag/esp8266">#esp8266 [13]]</a>
@@ -62,6 +62,9 @@ redirect_from:
 			<a href="/tag/freecad">#freecad [7]]</a>
 		</li>
 		<li>
+			<a href="/tag/shorts">#shorts [7]]</a>
+		</li>
+		<li>
 			<a href="/tag/comando">#comando [5]]</a>
 		</li>
 		<li>
@@ -98,6 +101,9 @@ redirect_from:
 			<a href="/tag/windows">#windows [3]]</a>
 		</li>
 		<li>
+			<a href="/tag/mdns">#mdns [3]]</a>
+		</li>
+		<li>
 			<a href="/tag/java">#java [3]]</a>
 		</li>
 		<li>
@@ -122,7 +128,10 @@ redirect_from:
 			<a href="/tag/gui">#gui [2]]</a>
 		</li>
 		<li>
-			<a href="/tag/mdns">#mdns [2]]</a>
+			<a href="/tag/dns">#dns [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/red">#red [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/meld">#meld [2]]</a>
@@ -135,9 +144,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/machinelearning">#machinelearning [2]]</a>
-		</li>
-		<li>
-			<a href="/tag/shorts">#shorts [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]]</a>
@@ -231,12 +237,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/speedtest">#speedtest [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/dns">#dns [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/red">#red [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/comparacion">#comparacion [1]]</a>
