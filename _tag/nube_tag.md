@@ -149,6 +149,9 @@ redirect_from:
 			<a href="/tag/programar">#programar [2]]</a>
 		</li>
 		<li>
+			<a href="/tag/truco">#truco [2]]</a>
+		</li>
+		<li>
 			<a href="/tag/robotica">#robotica [2]]</a>
 		</li>
 		<li>
@@ -341,7 +344,7 @@ redirect_from:
 			<a href="/tag/secreto">#secreto [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/truco">#truco [1]]</a>
+			<a href="/tag/seguridad">#seguridad [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/instagram">#instagram [1]]</a>
