@@ -11,6 +11,11 @@ permalink: /
 {% include 1-tools/sort-videos.html videos=site.shorts %}
 {% assign TodosVideos = out_sortedVideos %}
 
+{% include 1-tools/sort-videos.html videos=site.series %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
 {% include 1-tools/sort-videos.html videos=site.ponencias %}
 {% for video in out_sortedVideos %}
     {% assign TodosVideos = TodosVideos | push: video %}
@@ -26,20 +31,17 @@ permalink: /
     {% assign TodosVideos = TodosVideos | push: video %}
 {% endfor %}
 
-{% include 1-tools/sort-videos.html videos=site.series %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.mas %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
 {% include 1-tools/sort-videos.html videos=site.invitados %}
 {% for video in out_sortedVideos %}
     {% assign TodosVideos = TodosVideos | push: video %}
 {% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.extras %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
+<!-- TODO: Error se agrega doble algunos videos -->
 
 {% include 1-tools/sort-videos.html videos=TodosVideos sortByDate=true reverse=true %}
 {% assign TodosVideos = out_sortedVideos %}

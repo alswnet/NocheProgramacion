@@ -149,6 +149,7 @@ collections:
   shorts: { output: true }
   colaboradores: { output: true }
   ponencias: { output: true }
+  extras: { output: true }
   tag:
     output: true
     permalink: tag/:path/
@@ -218,6 +219,13 @@ defaults:
       layout: "video"
       video_type: "colaboraciones"
       video_type_short: "colaboracion"
+      can_contribute: true
+
+  - scope: { path: "", type: "extras" }
+    values:
+      layout: "video"
+      video_type: "extras"
+      video_type_short: "extra"
       can_contribute: true
 
   - scope: { path: "", type: "mas" }
