@@ -12,7 +12,8 @@ function ObtenerDataVideo() {
     "_grabaciones",
     "_colaboraciones",
     "_mas/bodega",
-    "_ponencias"
+    "_ponencias",
+    "_extras"
   ];
 
   let Archivos = [];

@@ -17,12 +17,12 @@ function AgregarSeoMostar(descripcion, Cantidad, Actualizar) {
   let Lineas = descripcion.split(/\n/);
   let LongitudLinea = 90;
   if (descripcion.length <= LongitudLinea * 2 && Lineas.length <= 2) {
-    descripcion += `👇 👇 👇\n`;
+    descripcion += `👇 👇 HAZ CLICK 👇 👇\n`;
     if (Actualizar) Cantidad.SeoMostarActivo++;
     Cantidad.SeoMostar++;
   } else if (Lineas[0].length <= LongitudLinea * 2) {
     let D = Lineas[0];
-    D += `\n👇 👇 👇`;
+    D += `\n👇 👇 HAZ CLICK 👇 👇`;
     for (var i = 1; i < Lineas.length; i++) {
       D += `\n` + Lineas[i];
     }
