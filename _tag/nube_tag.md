@@ -382,5 +382,11 @@ redirect_from:
 		<li>
 			<a href="/tag/reaccion">#reaccion [1]]</a>
 		</li>
+		<li>
+			<a href="/tag/apple">#apple [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/reparacion">#reparacion [1]]</a>
+		</li>
 	</ul>
 </div>
