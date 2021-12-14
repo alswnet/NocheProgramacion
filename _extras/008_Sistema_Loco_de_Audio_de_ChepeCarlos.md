@@ -7,9 +7,11 @@ tags:
   - linux
   - audio
   - pulse
+  - shorts
 
 videos:
-  - title: "Grabacion con otros Maker"
+  - title: Derecho de Reparacion - Electronica y cheves
+    url: colaboraciones/006_Derecho_de_Reparacion_-_Electronica_y_cheves
 
 colaboradores:
   - title: "Editor"

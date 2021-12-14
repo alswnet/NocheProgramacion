@@ -12,10 +12,8 @@ links:
     url: https://www.youtube.com/user/rossmanngroup
 
 videos:
-  - title: "Reunion Electrónica y Cheves #8"
-    url: https://www.youtube.com/watch?v=PCNy-OJbwxE
-  - title: "Grabacion Electronica y Cheves"
-    url: https://www.youtube.com/watch?v=PCNy-OJbwxE
+  - title: Derecho de Reparacion - Electronica y cheves
+    url: colaboraciones/006_Derecho_de_Reparacion_-_Electronica_y_cheves
   - title: "Que es Derecho a Reparacion MKBHD (ingles)"
     url: https://www.youtube.com/watch?v=RTbrXiIzUt4
   - title: "Necesitamos Derecho a Reparacion Linux Tech Tips"
@@ -28,4 +26,4 @@ colaboradores:
 actualizado: true
 ---
 
-Apple permetira repara tus productos, que pasa aqui algo es sospechoso
+Apple permitirá repara tus productos, que pasa aquí algo es sospechoso
