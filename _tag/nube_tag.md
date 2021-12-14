@@ -20,10 +20,10 @@ redirect_from:
 			<a href="/tag/iot">#iot [16]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [14]]</a>
+			<a href="/tag/shorts">#shorts [15]]</a>
 		</li>
 		<li>
-			<a href="/tag/shorts">#shorts [14]]</a>
+			<a href="/tag/esp32">#esp32 [14]]</a>
 		</li>
 		<li>
 			<a href="/tag/esp8266">#esp8266 [13]]</a>
@@ -153,6 +153,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/robotica">#robotica [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/apple">#apple [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/sorteo">#sorteo [2]]</a>
@@ -368,6 +371,9 @@ redirect_from:
 			<a href="/tag/halloween">#halloween [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/electronicaycheves">#electronicaycheves [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/arduinoday">#arduinoday [1]]</a>
 		</li>
 		<li>
@@ -380,13 +386,7 @@ redirect_from:
 			<a href="/tag/litoibarra">#litoibarra [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/superpollo">#superpollo [1]]</a>
-		</li>
-		<li>
 			<a href="/tag/reaccion">#reaccion [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/apple">#apple [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/reparacion">#reparacion [1]]</a>
