@@ -1,19 +1,27 @@
 ---
-title: "6 Ventajas De Usar Linux En Robótica Parte 1"
-video_number: 2
+title: "6 Ventajas De Usar Linux En Robótica Parte 2"
+video_number: 4
 date: 2020-08-26
-video_id: H2fhTZvz9IY
+video_id: 8Oj9TVOy5js
 repository: 002_6_Ventajas_De_Usar_Linux_En_Robotica
 tags:
   - linux
   - robotica
 
+topics:
+  - title: inicio
+    time: "00:00"
+  - title: Acceso a codigo fuente
+    time: "01:44"
+  - title: No virus
+    time: "08:31"
+  - title: Linux para todo
+    time: "15:10"
 videos:
-  - title: Parte 2 colaboracion
-    url: https://www.youtube.com/watch?v=8Oj9TVOy5js
-
+  - title: Parte 1 colaboracion
+    url: https://www.youtube.com/watch?v=H2fhTZvz9IY
 custom_sections:
-  - title: "Contactos de Curso de Robotica - Andres Nino"
+  - title: "Contactos de Curso de Robotica"
     items:
       - title: "Youtube"
         url: "https://www.youtube.com/channel/UCJCCmOEHvCRsoUkV0e8yPlQ"
@@ -28,7 +36,9 @@ custom_sections:
       - title: "Presentacion en Canva"
         url: "https://www.canva.com/design/DAEAySw3f74/7Pnxryvkcil8GxhN15Mn9Q/view?utm_content=DAEAySw3f7"
 
-actualizado: false
+actualizado: true
 ---
 
-No sabes por donde empezar?, te contaremos porqué debes usar Linux para empezar en este mundo de la Robotica, con éste video ¿Por que usar Robotica con Linux? con un amigo de @Curso de Robotica
+No sabes por donde empezar? te contaremos porqué debes usar Linux para empezar en este mundo de la Robotica,
+
+Con éste video ¿Por que usar Robotica con Linux? con un amigo de Curso de Robotica

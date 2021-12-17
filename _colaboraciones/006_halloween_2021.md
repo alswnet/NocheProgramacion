@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning + Halloween = Esqueleto con PoneNet y ML5"
-video_number: 5
+video_number: 6
 date: 2021-10-30
 video_id: TCuWjZjeLCk
 repository: 005_halloween_2021

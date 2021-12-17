@@ -359,6 +359,9 @@ redirect_from:
 			<a href="/tag/animacion">#animacion [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/sparkfun">#sparkfun [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/servidor">#servidor [1]]</a>
 		</li>
 		<li>
