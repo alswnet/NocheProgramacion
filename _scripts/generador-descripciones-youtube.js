@@ -16,6 +16,11 @@ function ImprimirData(Titulo, CantidadLink, CantidadTotal) {
 function AgregarSeoMostar(descripcion, Cantidad, Actualizar) {
   let Lineas = descripcion.split(/\n/);
   let LongitudLinea = 90;
+  
+  if (descripcion.length <= LongitudLinea) {
+    descripcion += `\n`;
+  }
+
   if (descripcion.length <= LongitudLinea * 2 && Lineas.length <= 2) {
     descripcion += `👇 👇 HAZ CLICK 👇 👇\n`;
     if (Actualizar) Cantidad.SeoMostarActivo++;
