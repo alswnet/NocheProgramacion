@@ -11,7 +11,7 @@ tags:
 
 videos:
   - title: Derecho de Reparacion - Electronica y cheves
-    url: colaboraciones/006_Derecho_de_Reparacion_-_Electronica_y_cheves
+    url: colaboraciones/007_Derecho_de_Reparacion_-_Electronica_y_cheves
 
 colaboradores:
   - title: "Editor"
