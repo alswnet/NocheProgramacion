@@ -11,7 +11,7 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [64]]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [21]]</a>
+			<a href="/tag/linux">#linux [22]]</a>
 		</li>
 		<li>
 			<a href="/tag/mqtt">#mqtt [17]]</a>
@@ -29,10 +29,10 @@ redirect_from:
 			<a href="/tag/esp8266">#esp8266 [13]]</a>
 		</li>
 		<li>
-			<a href="/tag/git">#git [11]]</a>
+			<a href="/tag/git">#git [12]]</a>
 		</li>
 		<li>
-			<a href="/tag/github">#github [10]]</a>
+			<a href="/tag/github">#github [11]]</a>
 		</li>
 		<li>
 			<a href="/tag/p5js">#p5js [10]]</a>
@@ -44,13 +44,13 @@ redirect_from:
 			<a href="/tag/bluetooth">#bluetooth [9]]</a>
 		</li>
 		<li>
+			<a href="/tag/python">#python [9]]</a>
+		</li>
+		<li>
 			<a href="/tag/telegram">#telegram [9]]</a>
 		</li>
 		<li>
 			<a href="/tag/nodejs">#nodejs [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/python">#python [8]]</a>
 		</li>
 		<li>
 			<a href="/tag/processing">#processing [8]]</a>

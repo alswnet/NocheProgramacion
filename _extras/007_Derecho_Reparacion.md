@@ -13,7 +13,7 @@ links:
 
 videos:
   - title: Derecho de Reparacion - Electronica y cheves
-    url: colaboraciones/006_Derecho_de_Reparacion_-_Electronica_y_cheves
+    url: colaboraciones/007_Derecho_de_Reparacion_-_Electronica_y_cheves
   - title: "Que es Derecho a Reparacion MKBHD (ingles)"
     url: https://www.youtube.com/watch?v=RTbrXiIzUt4
   - title: "Necesitamos Derecho a Reparacion Linux Tech Tips"
