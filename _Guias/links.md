@@ -15,6 +15,11 @@ redirect_from:
     {% assign TodosVideos = TodosVideos | push: video %}
 {% endfor %}
 
+{% include 1-tools/sort-videos.html videos=site.listas %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
 {% include 1-tools/sort-videos.html videos=site.series %}
 {% for video in out_sortedVideos %}
     {% assign TodosVideos = TodosVideos | push: video %}
@@ -26,6 +31,11 @@ redirect_from:
 {% endfor %}
 
 {% include 1-tools/sort-videos.html videos=site.invitados %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.extras %}
 {% for video in out_sortedVideos %}
     {% assign TodosVideos = TodosVideos | push: video %}
 {% endfor %}
@@ -69,6 +79,12 @@ redirect_from:
     </div>
 </div>
 
+## Extra
+
+{% assign Extra = site.collections | first %}
+
+ <h3>{{ Ultimo.title | xml_escape }}</h3>
+ 
 ### Youtube
 
 [youtube.com/alswnet](https://www.youtube.com/alswnet?sub_confirmation=1)

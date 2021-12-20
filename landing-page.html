@@ -11,6 +11,11 @@ permalink: /
 {% include 1-tools/sort-videos.html videos=site.shorts %}
 {% assign TodosVideos = out_sortedVideos %}
 
+{% include 1-tools/sort-videos.html videos=site.listas %}
+{% for video in out_sortedVideos %}
+    {% assign TodosVideos = TodosVideos | push: video %}
+{% endfor %}
+
 {% include 1-tools/sort-videos.html videos=site.series %}
 {% for video in out_sortedVideos %}
     {% assign TodosVideos = TodosVideos | push: video %}
