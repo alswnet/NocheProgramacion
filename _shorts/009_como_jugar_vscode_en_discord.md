@@ -7,6 +7,7 @@ tags:
   - discord
   - vscode
   - programacion
+  - shorts
 
 links:
   - title: "Extencion Discord Presence"

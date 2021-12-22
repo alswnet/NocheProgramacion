@@ -6,6 +6,7 @@ video_id: G90VXF0UXBw
 tags:
   - linux
   - comando
+  - shorts
 
 links:
   - title: "Documentacion de Which"

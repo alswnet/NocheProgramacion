@@ -71,8 +71,8 @@ links:
   # Link de YouTube.
   youtube: https://youtube.com/alswnet
 
-  # Link de Patreon.
-  patreon: https://patreon.com/alswnet
+  # Link de Miembros Youtube
+  miembro: https://www.youtube.com/alswnet/join
 
   # Link de discord
   discord: https://nocheprogramacion.com/discord
@@ -139,6 +139,7 @@ collections:
   RetoProgramacion: { output: true }
   Cursos: { output: true }
   series: { output: true }
+  listas: { output: true }
   Tutoriales: { output: true }
   Guias: { output: true }
   Presentaciones: { output: true }
@@ -174,6 +175,13 @@ defaults:
       layout: "video"
       video_type: "series"
       video_type_short: "serie"
+      can_contribute: true
+
+  - scope: { path: "", type: "listas" }
+    values:
+      layout: "video"
+      video_type: "listas"
+      video_type_short: "lista"
       can_contribute: true
 
   - scope: { path: "", type: "Tutoriales" }

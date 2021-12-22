@@ -8,13 +8,13 @@ tags:
   - ide
   - code
   - programacion
+  - shorts
 
 links:
   - title: "Pagina Web CodeSpaces"
     url: "https://github.com/features/codespaces"
   - title: "Documentacion de CodeSpace"
     url: "https://docs.github.com/en/codespaces/overview"
-
 
 colaboradores:
   - title: "Editor"
@@ -26,6 +26,7 @@ actualizado: true
 Un truco muy util para poder segir programando en tu proyecto sin importa que parte del mundo estes y si aun no estas con tu pc de trabajo.
 
 Pasos:
-1) Usarlo necesitas una cuenta en Github que es gratuita
-2) Abir en editor presionando '.' en la pagina del depositorio en github
-3) A Programar
+
+1. Usarlo necesitas una cuenta en Github que es gratuita
+2. Abir en editor presionando '.' en la pagina del depositorio en github
+3. A Programar

@@ -7,13 +7,14 @@ function ObtenerDataVideo() {
     "_Tutoriales",
     "_Cursos",
     "_series",
+    "_listas",
     "_shorts",
     "_RetoProgramacion",
     "_grabaciones",
     "_colaboraciones",
     "_mas/bodega",
     "_ponencias",
-    "_extras"
+    "_extras",
   ];
 
   let Archivos = [];

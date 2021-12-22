@@ -8,6 +8,7 @@ tags:
   - python
   - linux
   - github
+  - truco
 
 ads:
   - title: Unete a la comunidad de CodeSociety
@@ -96,6 +97,8 @@ topics:
 links:
   - title: Github Page
     url: https://pages.github.com/
+  - title: jekyll
+    url: https://jekyllrb.com/
   - title: Basket
     url: https://github.com/chepecarlos/Basket
 

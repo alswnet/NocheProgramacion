@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [64]]</a>
+			<a href="/tag/arduino">#arduino [67]]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [22]]</a>
@@ -26,10 +26,10 @@ redirect_from:
 			<a href="/tag/esp32">#esp32 [14]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [13]]</a>
+			<a href="/tag/git">#git [13]]</a>
 		</li>
 		<li>
-			<a href="/tag/git">#git [12]]</a>
+			<a href="/tag/esp8266">#esp8266 [13]]</a>
 		</li>
 		<li>
 			<a href="/tag/github">#github [11]]</a>
@@ -89,6 +89,9 @@ redirect_from:
 			<a href="/tag/obs">#obs [4]]</a>
 		</li>
 		<li>
+			<a href="/tag/truco">#truco [4]]</a>
+		</li>
+		<li>
 			<a href="/tag/wifi">#wifi [3]]</a>
 		</li>
 		<li>
@@ -146,10 +149,10 @@ redirect_from:
 			<a href="/tag/machinelearning">#machinelearning [2]]</a>
 		</li>
 		<li>
-			<a href="/tag/programar">#programar [2]]</a>
+			<a href="/tag/for">#for [2]]</a>
 		</li>
 		<li>
-			<a href="/tag/truco">#truco [2]]</a>
+			<a href="/tag/programar">#programar [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/robotica">#robotica [2]]</a>
@@ -336,6 +339,15 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/mac">#mac [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/random">#random [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/dotfile">#dotfile [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/bare">#bare [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/code">#code [1]]</a>

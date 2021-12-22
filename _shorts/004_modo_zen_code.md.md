@@ -7,6 +7,7 @@ tags:
   - vscode
   - programar
   - ide
+  - shorts
 
 links:
   - title: "Documentacion de Zen Mode"

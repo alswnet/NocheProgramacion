@@ -7,6 +7,7 @@ tags:
   - raspberrypi
   - arm
   - secreto
+  - shorts
 
 links:
   - title: "Tutorial Base"

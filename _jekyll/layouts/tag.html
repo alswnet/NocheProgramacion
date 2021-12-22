@@ -21,6 +21,18 @@ layout: base
   {% endif %}
 {% endfor %}
 
+{% for post in site.listas %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.extras %}
+  {% if post.tags contains page.tag-name %}
+    {% assign tag_post = tag_post | push: post %}
+  {% endif %}
+{% endfor %}
+
 {% for post in site.invitados %}
   {% if post.tags contains page.tag-name %}
     {% assign tag_post = tag_post | push: post %}
@@ -49,4 +61,6 @@ layout: base
 
 {% include 3-modules/video-list.html sortedVideos=out_sortedVideos %}
 
-<a href="{{ '/tag' | relative_url }}">Mirar mas tag</a>
+<div class="">
+  <a href="{{ '/tag' | relative_url }}">Mirar mas tag</a>
+</div>

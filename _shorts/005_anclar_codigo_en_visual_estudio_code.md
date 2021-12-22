@@ -7,6 +7,7 @@ tags:
   - vscode
   - programar
   - ide
+  - shorts
 
 links:
   - title: "Docuentacion Pin Tabs"

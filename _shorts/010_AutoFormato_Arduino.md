@@ -6,6 +6,7 @@ video_id: 4FrqXqO2opM
 tags:
   - arduino
   - truco
+  - shorts
 
 colaboradores:
   - title: "Editor"

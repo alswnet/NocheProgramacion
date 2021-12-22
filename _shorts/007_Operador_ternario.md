@@ -8,6 +8,7 @@ repository: 007_Operador_ternario
 tags:
   - arduino
   - programacion
+  - shorts
 
 links:
   - title: "Documentacion de Operador Ternario"
