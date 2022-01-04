@@ -39,8 +39,6 @@ topics:
     time: "14:45"
   - title: Como se ve Submodules en VS code
     time: "18:06"
-  - title: F_70472
-    time: "19:08"
   - title: 3.- La documentación es tu amiga
     time: "19:25"
   - title: Documentación oficial sin internet
