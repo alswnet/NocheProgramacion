@@ -1,7 +1,7 @@
 {
   "name": "nocheprogramacion",
-  "version": "0.0.5",
-  "description": "Sitio Web NocheProgramacion",
+  "version": "0.0.6",
+  "description": "Sitio Web Tutoriales NocheProgramacion de ALSW",
   "main": "none",
   "devDependencies": {
     "dotenv": "^10.0.0",
