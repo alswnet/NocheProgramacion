@@ -13,14 +13,10 @@ links:
 
 piezas:
   - title: "Arduino Uno R3"
-    pieza: "arduino-uno-r3"
   - title: "Resistencia 10M"
   - title: "Jumper Macho-Macho"
-    pieza: "cable-prototipado-m-m-40-unidades"
   - title: "Led"
-    pieza: "led-rojo-5mm"
   - title: "Resistencia 330ohm"
-    pieza: "resistencia-de-330-ohm-0-25w"
 
 actualizado: true
 ---

@@ -8,16 +8,16 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [67]]</a>
+			<a href="/tag/arduino">#arduino [76]]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [22]]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [17]]</a>
+			<a href="/tag/iot">#iot [17]]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [16]]</a>
+			<a href="/tag/mqtt">#mqtt [17]]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [15]]</a>
@@ -35,6 +35,9 @@ redirect_from:
 			<a href="/tag/github">#github [11]]</a>
 		</li>
 		<li>
+			<a href="/tag/python">#python [10]]</a>
+		</li>
+		<li>
 			<a href="/tag/p5js">#p5js [10]]</a>
 		</li>
 		<li>
@@ -42,9 +45,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/bluetooth">#bluetooth [9]]</a>
-		</li>
-		<li>
-			<a href="/tag/python">#python [9]]</a>
 		</li>
 		<li>
 			<a href="/tag/telegram">#telegram [9]]</a>
@@ -98,6 +98,9 @@ redirect_from:
 			<a href="/tag/lcd">#lcd [3]]</a>
 		</li>
 		<li>
+			<a href="/tag/sensor">#sensor [3]]</a>
+		</li>
+		<li>
 			<a href="/tag/esp8255">#esp8255 [3]]</a>
 		</li>
 		<li>
@@ -114,6 +117,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/raspberrypi">#raspberrypi [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/salud">#salud [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/ia">#ia [2]]</a>
@@ -179,6 +185,18 @@ redirect_from:
 			<a href="/tag/teensy">#teensy [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/imprecion3d">#imprecion3d [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/facebook">#facebook [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/navidad">#navidad [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/niños">#niños [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/motores">#motores [1]]</a>
 		</li>
 		<li>
@@ -204,9 +222,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/foldingathome">#foldingathome [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/salud">#salud [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/atomide">#atomide [1]]</a>
