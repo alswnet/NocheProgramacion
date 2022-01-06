@@ -33,7 +33,7 @@ La información básica de los artículos para generar [pagina web](https://noch
 
 # Reconoce Automáticamente Código
 
-Para agregar codigo a un articulo debe estas folder definido en **repository**
+Para agregar codigo a un articulo debe estar en el folder definido en **repository**
 
 | Tipo Codigo | Nombre Folder |
 | ----------- | ------------- |
@@ -46,7 +46,7 @@ Para agregar codigo a un articulo debe estas folder definido en **repository**
 | Pagina web  | HTML          |
 | JavaScript  | JavaScript    |
 
-## Informacion video
+## Información del video
 
 title: "String"
 video_number: numbre
@@ -113,7 +113,7 @@ links:
 
 # Link Sociales
 
-Alguno enlaces que puede ser del interes para mantener contacto con nosotros:
+Algunos enlaces que puede ser del interes para mantener contacto con nosotros:
 
 -   [Youtube](http://youtube.com/alswnet)
 -   [Discord](https://nocheprogramacion.com/discord)
@@ -124,7 +124,7 @@ Alguno enlaces que puede ser del interes para mantener contacto con nosotros:
 -   [Facebook](http://facebook.com/alswnet)
 -   [Grupo ChepeCarlosClub](http://www.facebook.com/groups/chepecarlosclub/)
 
-## Prueva Servidor
+## Prueva del Servidor
 
 [Instalacion Jekyll](https://jekyllrb.com/docs/installation/#requirements)
 
