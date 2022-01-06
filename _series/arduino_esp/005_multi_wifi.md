@@ -13,35 +13,35 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: Que el ESP8266 o ESP32 Decida a cual red conectarse
-    time: '00:50'
+    time: "00:50"
   - title: Codigo Multi Hardware ESP8266 y ESP32
-    time: '01:05'
+    time: "01:05"
   - title: Ejemplo Multi Wifi
-    time: '01:38'
+    time: "01:38"
   - title: Combinar ambos codigos
-    time: '02:17'
+    time: "02:17"
   - title: Poner Multiples redes para el ESP
-    time: '02:25'
+    time: "02:25"
   - title: Mis recomendaciones para redes con Multi Wifi
-    time: '03:00'
+    time: "03:00"
   - title: Codigo Multi Wifi y Multi Hardware
-    time: '03:31'
+    time: "03:31"
   - title: Diferencia entre ESP8266 y ESP32
-    time: '03:45'
+    time: "03:45"
   - title: setup del codigo
-    time: '05:18'
+    time: "05:18"
   - title: Que es WL_CONNECTED
-    time: '06:18'
+    time: "06:18"
   - title: Mostar en Serial Info de IP y Red
-    time: '07:34'
+    time: "07:34"
   - title: Codigo con Wifi y Sin Wifi
-    time: '07:45'
+    time: "07:45"
   - title: Funcion Actualizar Wifi
-    time: '08:00'
+    time: "08:00"
   - title: Probando ESP8266 y ESP32
-    time: '08:35'
+    time: "08:35"
 
 links:
   - title: "Modo Wifi ESP"

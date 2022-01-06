@@ -11,30 +11,29 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: Ejemplo MultiWifi
-    time: '01:12'
+    time: "01:12"
   - title: La idea básica
-    time: '01:57'
+    time: "01:57"
   - title: Como saber cual hardware usamos?
-    time: '02:07'
+    time: "02:07"
   - title: Ejemplo Básico de Escojer Multi Hardware
-    time: '02:25'
+    time: "02:25"
   - title: If especial
-    time: '03:20'
+    time: "03:20"
   - title: Probando con Arduino Uno
-    time: '04:02'
+    time: "04:02"
   - title: Probando para ESP8266
-    time: '04:24'
+    time: "04:24"
   - title: Ejemplo para ESP32
-    time: '04:56'
+    time: "04:56"
   - title: Unir Codigo para ESP8266 y ESP32
-    time: '05:26'
+    time: "05:26"
 
 links:
   - title: "Referencia Define"
     url: "https://www.arduino.cc/reference/en/language/structure/further-syntax/define/"
-
 
 videos:
   - title: "Multi Red Wifi para ESP8266 y ESP32"
