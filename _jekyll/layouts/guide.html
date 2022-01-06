@@ -2,6 +2,12 @@
 layout: base
 ---
 
+{% if page.subtitle %}
+<div class="subtitle">
+  {{ page.subtitle | xml_escape }}
+</div>
+{% endif %}
+
 <div class="guide">
   {{ content }}
 </div>
