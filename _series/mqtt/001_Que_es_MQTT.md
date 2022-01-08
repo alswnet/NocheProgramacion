@@ -9,23 +9,23 @@ tags:
 
 topics:
   - title: Inicio
-    time: '00:00'
+    time: "00:00"
   - title: Que es MQTT
-    time: '00:33'
+    time: "00:33"
   - title: Protocolo M2M
-    time: '01:46'
+    time: "01:46"
   - title: Como Funciona MQTT
-    time: '02:17'
+    time: "02:17"
   - title: Broker MQTT
-    time: '04:18'
+    time: "04:18"
   - title: Topic
-    time: '05:28'
+    time: "05:28"
   - title: Librerias MQTT
-    time: '08:24'
+    time: "08:24"
   - title: Ejemplo MQTT
-    time: '09:25'
+    time: "09:25"
   - title: Donde usan MQTT
-    time: '10:22'
+    time: "10:22"
 
 links:
   - title: "Pagina de MQTT"

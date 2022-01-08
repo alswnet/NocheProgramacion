@@ -4,7 +4,7 @@ video_number: 15
 date: 2016-02-04
 video_id: 3RXDO-slIGQ
 tags:
-    - arduino
+  - arduino
 
 piezas:
   - title: "Arduino Yun"

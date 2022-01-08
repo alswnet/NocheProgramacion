@@ -11,19 +11,19 @@ tags:
 
 topics:
   - title: Inicio
-    time: '00:00'
+    time: "00:00"
   - title: Libreria de MQTT
-    time: '00:39'
+    time: "00:39"
   - title: Creando Folder proyecto
-    time: '01:10'
+    time: "01:10"
   - title: Heramienta MQTT-Cli
-    time: '02:21'
+    time: "02:21"
   - title: Instalar MQTT en Nodejs
-    time: '08:01'
+    time: "08:01"
   - title: Ejemplo MQTT
-    time: '08:28'
+    time: "08:28"
   - title: Otro Eventos
-    time: '15:29'
+    time: "15:29"
 
 links:
   - title: "Libreria MQTT nodejs"
@@ -34,4 +34,4 @@ links:
 actualizado: true
 ---
 
-Quiera aprender a enviar y recibir data por mqtt es este tutorial te enseñamos a usar la librería MQTT.js que te permitirá usar fácil esta gran protocolo iot  
+Quiera aprender a enviar y recibir data por mqtt es este tutorial te enseñamos a usar la librería MQTT.js que te permitirá usar fácil esta gran protocolo iot

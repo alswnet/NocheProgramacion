@@ -12,33 +12,33 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: Descargar Libreria MQTT
-    time: '01:05'
+    time: "01:05"
   - title: Ejemplo MQTT
-    time: '01:42'
+    time: "01:42"
   - title: Explicacion Libreria MQTT
-    time: '02:23'
+    time: "02:23"
   - title: Broker MQTT
-    time: '03:05'
+    time: "03:05"
   - title: Problema Usuario MQTT
-    time: '03:29'
+    time: "03:29"
   - title: Funciones Basicas
-    time: '04:09'
+    time: "04:09"
   - title: Funcion Conectado
-    time: '04:22'
+    time: "04:22"
   - title: Funcion Sub
-    time: '04:30'
+    time: "04:30"
   - title: Funcion Desconectar
-    time: '05:39'
+    time: "05:39"
   - title: Funcion Pub
-    time: '05:47'
+    time: "05:47"
   - title: Escuchando MQTT por terminal
-    time: '06:49'
+    time: "06:49"
   - title: Enviando Tecla por MQTT
-    time: '07:07'
+    time: "07:07"
   - title: Repaso
-    time: '08:15'
+    time: "08:15"
 
 links:
   - title: "Descarga Processing"

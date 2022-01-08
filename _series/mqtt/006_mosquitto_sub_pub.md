@@ -11,33 +11,33 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: Instalar Mosquitto_sub y Mosquitto_Pub en Linux
-    time: '00:45'
+    time: "00:45"
   - title: Instalar Mosquitto_sub y Mosquitto_pub en Windows
-    time: '01:01'
-  - title: Prueba Mosquitto en dos terminal 
-    time: '02:06'
+    time: "01:01"
+  - title: Prueba Mosquitto en dos terminal
+    time: "02:06"
   - title: Documentacion Mosquitto_sub y Mosquitto_pub
-    time: '02:23'
+    time: "02:23"
   - title: Como usar Mosquitto_sub o subcribirse a mqtt
-    time: '02:34'
+    time: "02:34"
   - title: Como usar Mosquitto_pub o publicar en mqtt
-    time: '03:17'
+    time: "03:17"
   - title: Error Fatal de ChepeCarlos
-    time: '03:49'
+    time: "03:49"
   - title: Imprimir topic en mosquitto_sub
-    time: '04:25'
+    time: "04:25"
   - title: Activar modo depuracion de mosquitto_sub y mosquitto_pub
-    time: '04:40'
+    time: "04:40"
   - title: Agregar Contraseña y usuario a mosquitto_sub y mosquitto_pub
-    time: '05:56'
+    time: "05:56"
   - title: Poner nombre cliente a mosquitto_sub y mosquitto_sub
-    time: '06:30'
-  - title: Pruebas con mosquitto local 
-    time: '07:04'
+    time: "06:30"
+  - title: Pruebas con mosquitto local
+    time: "07:04"
   - title: Despedida
-    time: '08:01'
+    time: "08:01"
 
 links:
   - title: "Pagina de Mosquitto MQTT"
@@ -50,7 +50,7 @@ links:
     url: "https://mosquitto.org/man/mosquitto_pub-1.html"
 
 videos:
-  - title: "Que es MQTT?" 
+  - title: "Que es MQTT?"
     url: series/mqtt/001_Que_es_MQTT
   - title: "Cliente Grafico de MQTT"
     url: series/mqtt/007_MQTT_Explorer
@@ -61,4 +61,5 @@ actualizado: true
 Aprende a mandar y recivir mensajes en MQTT por terminal usando mosquitto_sub y mosquitto_pub en este tutorial que te enseñamos paso a paso en Windos, Linux y Raspberry pi
 
 Comando para Linux y Rasberry pi
+
 sudo apt install mosquitto-clients

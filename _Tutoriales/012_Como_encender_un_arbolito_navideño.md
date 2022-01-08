@@ -4,14 +4,14 @@ video_number: 12
 date: 2015-12-24
 video_id: fPahVpDwTMA
 tags:
-    - arduino
-    - python
-    - iot
-    - facebook
+  - arduino
+  - python
+  - iot
+  - facebook
 
 links:
-    - title: Codigo fuente del Arbol
-      url: https://github.com/alswnet/NeoArbol
+  - title: Codigo fuente del Arbol
+    url: https://github.com/alswnet/NeoArbol
 
 piezas:
   - title: "Arduino Yun"

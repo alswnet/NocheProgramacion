@@ -21,7 +21,7 @@ piezas:
   - title: "Led"
   - title: "Resistencia 330ohm"
   - title: "Modulo Bluetooth HC-05"
-  
+
 videos:
   - title: "Nueva Seria Bluetooth"
     url: series/bluetooth_con_arduino

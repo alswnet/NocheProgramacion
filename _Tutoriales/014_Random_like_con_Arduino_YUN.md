@@ -4,7 +4,7 @@ video_number: 14
 date: 2016-01-22
 video_id: UQjNaGUvkUw
 tags:
-    - arduino
+  - arduino
 
 piezas:
   - title: "Arduino Yun"

@@ -9,7 +9,7 @@ tags:
   - esp8266
 
 piezas:
-    - esp8266
+  - esp8266
 
 actualizado: true
 ---

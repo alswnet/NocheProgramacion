@@ -10,15 +10,10 @@ Si tienes deseo de apoyo de manera Monetaria lo puedes ver la informacion [AQUI]
 
 # Edicion Video
 
-
 # Creacion de Artes
-
 
 # Mantenimiento de Sitio web
 
-
-
 # Moderador
-
 
 # Otros

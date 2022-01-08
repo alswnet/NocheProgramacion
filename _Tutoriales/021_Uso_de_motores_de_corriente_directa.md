@@ -7,7 +7,7 @@ tags:
   - arduino
   - motores
 
-links: 
+links:
   - title: "Codigo de Motores"
     url: "https://gist.github.com/chepecarlos/8afb0afa05a001e0a4dbb23759011d62"
 

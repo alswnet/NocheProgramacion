@@ -12,19 +12,19 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: Libreria MQTT
-    time: '00:35'
+    time: "00:35"
   - title: Usar CDM
-    time: '00:52'
+    time: "00:52"
   - title: Ejemplo de MQTT en JavaScrip
-    time: '01:26'
+    time: "01:26"
   - title: Cambio para usar Web
-    time: '03:16'
+    time: "03:16"
   - title: Truco con Github
-    time: '04:05'
+    time: "04:05"
   - title: Salida
-    time: '07:09'
+    time: "07:09"
 
 links:
   - title: "Libreria mqtt.js Javascript"

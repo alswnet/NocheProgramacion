@@ -10,29 +10,29 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: Descarga MQTT Explorer
-    time: '00:47'
+    time: "00:47"
   - title: Instalar en Linux MQTT Explorer
-    time: '01:15'
+    time: "01:15"
   - title: Instalar en Windows MQTT Explorer
-    time: '01:29'
+    time: "01:29"
   - title: Conectarse test.mosquitto.org con MQTT Explorer
-    time: '01:47'
+    time: "01:47"
   - title: Que es $SYS en MQTT
-    time: '02:07'
+    time: "02:07"
   - title: Escuchar Topic o Subcribirse en MQTT
-    time: '02:32'
+    time: "02:32"
   - title: Enviar mensajes o pub en MQTT
-    time: '03:03'
+    time: "03:03"
   - title: Activar modo oscuro
-    time: '03:13'
+    time: "03:13"
   - title: Graficas de Mensajes MQTT
-    time: '04:01'
+    time: "04:01"
   - title: Conectarse a servidor propio
-    time: '05:56'
+    time: "05:56"
   - title: Despedida
-    time: '07:00'
+    time: "07:00"
 
 links:
   - title: "Pagina MQTT Explorer"
@@ -49,7 +49,6 @@ videos:
     url: series/mqtt/001_Que_es_MQTT
   - title: "Usar MQTT Terminal"
     url: series/mqtt/006_mosquitto_sub_pub
-    
 
 actualizado: true
 ---

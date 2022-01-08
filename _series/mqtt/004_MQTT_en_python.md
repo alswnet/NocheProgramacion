@@ -11,17 +11,17 @@ tags:
 
 topics:
   - title: Introduccion
-    time: '00:00'
+    time: "00:00"
   - title: Libreria MQTT para Python
-    time: '00:35'
+    time: "00:35"
   - title: Ejemplo Sub
-    time: '01:14'
+    time: "01:14"
   - title: Pequeña broma de chat
-    time: '02:12'
+    time: "02:12"
   - title: Ejemplo Pub
-    time: '05:03'
+    time: "05:03"
   - title: Despedida
-    time: '06:22'
+    time: "06:22"
 
 links:
   - title: "Libreria MQTT Python"

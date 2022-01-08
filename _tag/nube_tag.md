@@ -8,28 +8,22 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [76]]</a>
+			<a href="/tag/arduino">#arduino [68]]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [22]]</a>
+			<a href="/tag/linux">#linux [20]]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [17]]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [17]]</a>
-		</li>
-		<li>
 			<a href="/tag/shorts">#shorts [15]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [14]]</a>
+			<a href="/tag/git">#git [12]]</a>
 		</li>
 		<li>
-			<a href="/tag/git">#git [13]]</a>
-		</li>
-		<li>
-			<a href="/tag/esp8266">#esp8266 [13]]</a>
+			<a href="/tag/mqtt">#mqtt [12]]</a>
 		</li>
 		<li>
 			<a href="/tag/github">#github [11]]</a>
@@ -38,19 +32,25 @@ redirect_from:
 			<a href="/tag/python">#python [10]]</a>
 		</li>
 		<li>
+			<a href="/tag/esp32">#esp32 [10]]</a>
+		</li>
+		<li>
 			<a href="/tag/p5js">#p5js [10]]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [10]]</a>
 		</li>
 		<li>
-			<a href="/tag/bluetooth">#bluetooth [9]]</a>
+			<a href="/tag/esp8266">#esp8266 [9]]</a>
 		</li>
 		<li>
 			<a href="/tag/telegram">#telegram [9]]</a>
 		</li>
 		<li>
 			<a href="/tag/nodejs">#nodejs [9]]</a>
+		</li>
+		<li>
+			<a href="/tag/bluetooth">#bluetooth [8]]</a>
 		</li>
 		<li>
 			<a href="/tag/processing">#processing [8]]</a>
@@ -63,9 +63,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/freecad">#freecad [7]]</a>
-		</li>
-		<li>
-			<a href="/tag/comando">#comando [5]]</a>
 		</li>
 		<li>
 			<a href="/tag/vscode">#vscode [5]]</a>
@@ -92,7 +89,7 @@ redirect_from:
 			<a href="/tag/truco">#truco [4]]</a>
 		</li>
 		<li>
-			<a href="/tag/wifi">#wifi [3]]</a>
+			<a href="/tag/electronica">#electronica [4]]</a>
 		</li>
 		<li>
 			<a href="/tag/lcd">#lcd [3]]</a>
@@ -110,6 +107,9 @@ redirect_from:
 			<a href="/tag/mdns">#mdns [3]]</a>
 		</li>
 		<li>
+			<a href="/tag/comando">#comando [3]]</a>
+		</li>
+		<li>
 			<a href="/tag/java">#java [3]]</a>
 		</li>
 		<li>
@@ -117,6 +117,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/raspberrypi">#raspberrypi [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/wifi">#wifi [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/salud">#salud [2]]</a>
@@ -153,9 +156,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/machinelearning">#machinelearning [2]]</a>
-		</li>
-		<li>
-			<a href="/tag/for">#for [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]]</a>
@@ -245,9 +245,6 @@ redirect_from:
 			<a href="/tag/compilar">#compilar [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/whatsapp">#whatsapp [1]]</a>
-		</li>
-		<li>
 			<a href="/tag/pcb">#pcb [1]]</a>
 		</li>
 		<li>
@@ -293,9 +290,6 @@ redirect_from:
 			<a href="/tag/eeprom">#eeprom [1]]</a>
 		</li>
 		<li>
-			<a href="/tag/mega">#mega [1]]</a>
-		</li>
-		<li>
 			<a href="/tag/inskcape">#inskcape [1]]</a>
 		</li>
 		<li>
@@ -309,18 +303,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/controlacelularpc">#controlacelularpc [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/teclado">#teclado [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/mouse">#mouse [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/barrier">#barrier [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/deskreen">#deskreen [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/terminal">#terminal [1]]</a>
@@ -354,9 +336,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/mac">#mac [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/random">#random [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/dotfile">#dotfile [1]]</a>
@@ -402,6 +381,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/electronicaycheves">#electronicaycheves [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/whatsapp">#whatsapp [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/arduinoday">#arduinoday [1]]</a>
