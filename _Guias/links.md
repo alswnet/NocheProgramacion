@@ -63,9 +63,9 @@ redirect_from:
            <h3>{{ Ultimo.title | xml_escape }}</h3>
 
             {% if Ultimo.date > site.time %}
-                <span class="video-date">{{ Ultimo.date | date: '%d %b %Y - %H:%M %Z' }}</span>
+                <span class="video-date">{{ Ultimo.date | date: '%d %b %Y - %H:%M %Z' }}</span>
             {% else %}
-                <span class="video-date">{{ Ultimo.date | date_to_string }}</span>
+                <span class="video-date">{{ Ultimo.date | date_to_string }}</span>
             {% endif %}
         </div>
     </a>
