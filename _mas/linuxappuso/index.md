@@ -33,9 +33,9 @@ faq:
         url: "https://code.visualstudio.com/download"
       - title: "Thema: Dracula Official"
         url: "https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula"
-      - title: "Plugin Language pack es: Code Español" 
+      - title: "Plugin Language pack es: Code Español"
         url: "https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-es"
-      - title: "Plugin Plattier: Auto Formato" 
+      - title: "Plugin Plattier: Auto Formato"
         url: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
       - title: "Plugin Better Comments: Comentarios"
         url: "https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments"
@@ -46,7 +46,7 @@ faq:
     answer: "El Entorno que uso por defecto para la mayoria de proyecto de programacion"
     links:
       - title: "Los mejores 5 Plugin para Atom"
-        url: Tutoriales/055_Los_5_Mejores_Plugins_para_Atom_Editor
+        url: Tutoriales/053_Los_5_Mejores_Plugins_para_Atom_Editor
       - title: "Pagina Atom IDE"
         url: "https://atom.io/"
       - title: "Plugins atom-beautify"
@@ -98,7 +98,7 @@ faq:
       - title: "Serie Git"
         url: git
       - title: "Tutorial de  Git y Github en Windos"
-        url: Tutoriales/058_Como_Usar_Git_y_Github_En_Windows_Facil
+        url: Tutoriales/056_Como_Usar_Git_y_Github_En_Windows_Facil
       - title: "Pagina Git"
         url: "https://git-scm.com/"
       - title: "Pagina GitHub"
@@ -231,8 +231,8 @@ faq:
   - question: "VirtualBox"
     section: "Heramientas"
     links:
-        - title: "Pagina VirtualBox"
-          url: "https://www.virtualbox.org/"
+      - title: "Pagina VirtualBox"
+        url: "https://www.virtualbox.org/"
   - question: "bpython"
     section: "Heramientas"
   - question: "Quake Terminal"
@@ -290,7 +290,7 @@ faq:
     answer: "Agrega macros a tus botones extra de tus raton o teclado"
     links:
       - title: "Tutorial xvkbd"
-        url: /Tutoriales/063_MACROS_a_Mouse_en_Linux
+        url: /Tutoriales/059_MACROS_a_Mouse_en_Linux
   - question: "Blender"
     section: "Edicion Video"
     answer: "Uso el Editor de video que viene en Blender, lo encuentro muy eficiente y me gustas las posilidad de programar mi editor de video en python y usar el modelado 3D"
@@ -300,7 +300,7 @@ faq:
       - title: "Pagina de Blender"
         url: "https://www.blender.org/"
       - title: "Plugin de Blender - Blender Power Sequencer"
-        url:  "https://github.com/GDQuest/blender-power-sequencer"
+        url: "https://github.com/GDQuest/blender-power-sequencer"
       - title: "Heramienta modo consola Blender Power Sequencer Render - BPSRender"
         url: "https://github.com/GDQuest/blender-sequencer-multithreaded-render"
       - title: "Heramienta modo consola Blender Power Sequencer Proxy"

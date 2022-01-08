@@ -12,7 +12,7 @@ tags:
 
 videos:
   - title: Tutorial de mDNS
-    url: Tutoriales/085_Que_es_mDNS
+    url: Tutoriales/072_Que_es_mDNS
   - title: ESP32 y ESP8266 con mDNS
     url: series/arduino_esp/008_mdns_esp
 

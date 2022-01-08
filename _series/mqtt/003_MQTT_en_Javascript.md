@@ -36,7 +36,7 @@ videos:
   - title: "Usar MQTT en Nodejs"
     url: "series/mqtt/002_MQTT_en_Nodejs"
   - title: "Plugin Aton Live-Server"
-    url: "Tutoriales/055_Los_5_Mejores_Plugins_para_Atom_Editor"
+    url: "Tutoriales/053_Los_5_Mejores_Plugins_para_Atom_Editor"
 
 actualizado: true
 ---

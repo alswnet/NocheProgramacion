@@ -43,7 +43,7 @@ topics:
 
 videos:
   - title: "Que es mDNS"
-    url: Tutoriales/085_Que_es_mDNS
+    url: Tutoriales/072_Que_es_mDNS
 
 piezas:
   - title: "ESP32"

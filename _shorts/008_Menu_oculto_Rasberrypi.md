@@ -2,7 +2,7 @@
 title: "Menu oculto para configurar Raspberry Pi"
 video_number: 8
 date: 2021-10-14
-video_id: ag-TpOdSp6k 
+video_id: ag-TpOdSp6k
 tags:
   - raspberrypi
   - arm
@@ -15,7 +15,7 @@ links:
 
 videos:
   - title: "Que es mDSN"
-    url: Tutoriales/085_Que_es_mDNS
+    url: Tutoriales/072_Que_es_mDNS
 
 piezas:
   - title: "Raspberry Pi"

@@ -108,6 +108,7 @@ exclude:
     "assets/template",
     "scripts",
     "_scripts",
+    "*fff*",
   ]
 
 # keep_files: ["Presentaciones"]

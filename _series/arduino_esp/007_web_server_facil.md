@@ -69,7 +69,7 @@ videos:
   - title: "Multi Wifi"
     url: series/arduino_esp/005_multi_wifi
   - title: "Github Page"
-    url: Tutoriales/066_GITHUB_PAGES
+    url: Tutoriales/060_GITHUB_PAGES
   - title: "IF comprimido en arduino"
     url: shorts/007_Operador_ternario
 
