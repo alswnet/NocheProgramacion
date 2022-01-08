@@ -1,3 +1,8 @@
+/*
+Generador de Descripcion para video de Youtube 
+Para sistema de NocheProgramacion
+*/
+
 const fs = require("fs");
 const path = require("path");
 const yaml = require("yaml-front-matter");
@@ -16,7 +21,7 @@ function ImprimirData(Titulo, CantidadLink, CantidadTotal) {
 function AgregarSeoMostar(descripcion, Cantidad, Actualizar) {
   let Lineas = descripcion.split(/\n/);
   let LongitudLinea = 90;
-  
+
   if (descripcion.length <= LongitudLinea) {
     descripcion += `\n`;
   }
@@ -92,6 +97,7 @@ async function CrearDescripciones(videos) {
     // TODO: Mejor Algorititmo
     // Siquiente Video / Playlist
     let SiquienteVideo;
+    let NombreSiquienteVideo;
     if (i !== videos.length - 1) {
       if (
         pageURL.substring(0, pageURL.lastIndexOf("/")) ===
@@ -101,6 +107,7 @@ async function CrearDescripciones(videos) {
         )
       ) {
         SiquienteVideo = videos[i + 1].data.video_id;
+        NombreSiquienteVideo = videos[i + 1].data.title;
       } else {
         SiquienteVideo = false;
       }
@@ -110,7 +117,7 @@ async function CrearDescripciones(videos) {
 
     // Siquiente video
     if (SiquienteVideo) {
-      descripcion += `\n🎥 Siguiente video: https://youtu.be/${SiquienteVideo}\n`;
+      descripcion += `\n👉 Siguiente Video "${NombreSiquienteVideo}" : https://youtu.be/${SiquienteVideo} 👈\n`;
     }
 
     // Serie

@@ -29,12 +29,14 @@ function ObtenerDataVideo() {
     const data = yaml.loadFront(contenido);
     let url = Archivo.substring(1);
     url = url.substring(0, url.length - 3);
-    videos.push({
-      pageURL: url,
-      data: data,
-      playlist: ObtenerPlatlist(Archivo),
-      playlistName: ObtenerPlatlistNombre(Archivo),
-    });
+    if (!url.includes("fff")) {
+      videos.push({
+        pageURL: url,
+        data: data,
+        playlist: ObtenerPlatlist(Archivo),
+        playlistName: ObtenerPlatlistNombre(Archivo),
+      });
+    }
   }
 
   return videos;
