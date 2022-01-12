@@ -409,5 +409,8 @@ redirect_from:
 		<li>
 			<a href="/tag/pulse">#pulse [1]]</a>
 		</li>
+		<li>
+			<a href="/tag/tema">#tema [1]]</a>
+		</li>
 	</ul>
 </div>
