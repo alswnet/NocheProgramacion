@@ -1,5 +1,5 @@
 ---
-title: Que no te estafe - Edita Paginas dentro Navegador
+title: Que no te estafen - Edita Paginas dentro Navegador
 video_number: 15
 date: 2022-01-14
 video_id: _5435bOHGks
@@ -12,6 +12,11 @@ tags:
 colaboradores:
   - title: "Editor"
     colaborador: ingjuan
+
+miembros:
+  - Maker_Uno:
+      - title: Erebos Ubuntu
+        tiempo: 0.774194
 
 actualizado: true
 ---
