@@ -359,6 +359,18 @@ redirect_from:
 			<a href="/tag/json">#json [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/navegador">#navegador [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/web_editor">#web_editor [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/firefox">#firefox [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/chrome">#chrome [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/instagram">#instagram [1]]</a>
 		</li>
 		<li>
