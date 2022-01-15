@@ -50,10 +50,12 @@ async function CrearDescripciones(videos) {
   Cantidad.Colaboradores = 0;
   Cantidad.SeoMostar = 0;
   Cantidad.SeoMostarActivo = 0;
+  Cantidad.Miembros = 0;
   Cantidad.Links = 0;
   Cantidad.Codigo = 0;
   Cantidad.Indice = 0;
   Cantidad.Piezas = 0;
+  Cantidad.Remake = 0;
   Cantidad.Costun = 0;
   Cantidad.Ads = 0;
   Cantidad.Video = 0;
@@ -92,6 +94,13 @@ async function CrearDescripciones(videos) {
       for (let i = 0; i < data.ads.length; ++i) {
         descripcion += `\n${data.ads[i].title} ${data.ads[i].url}\n`;
       }
+    }
+
+    // Remake
+    if (data.remake) {
+      Cantidad.Remake++;
+      url = ObtenerURLYoutube(data.remake);
+      descripcion += `Existe una verción NUEVA 👀 o actualizada de este video: ${url}\n`;
     }
 
     // TODO: Mejor Algorititmo
@@ -215,42 +224,43 @@ async function CrearDescripciones(videos) {
       }
     }
 
+    // Links Generales
+    descripcion += "\nLinks:";
+    descripcion += `
+  👏🏽 Subscribe: https://www.youtube.com/alswnet?sub_confirmation=1
+  ☕ Donar un café: https://nocheprogramacion.com/cafe
+  💬 Discord: https://nocheprogramacion.com/discord
+  🚂 Sitio Web: http://nocheprogramacion.com
+  🐦 Redes Sociales: http://nocheprogramacion.com/links\n`;
+
     // Agradecer a colaboradores
     if (data.actualizado) {
       if (data.colaboradores) {
         Cantidad.Colaboradores++;
-        descripcion += "\nVideo gracias a los Colaboradores:\n";
+        descripcion += "\nCreado con los Aliados:\n";
         for (let i = 0; i < data.colaboradores.length; ++i) {
-          descripcion += `🧙🏼‍♂️ ${data.colaboradores[i].title} - ${data.colaboradores[i].colaborador}\n`;
+          descripcion += `  🧙🏼‍♂️ ${data.colaboradores[i].title} - ${data.colaboradores[i].colaborador}\n`;
         }
       }
     }
 
-    // TODO: Crear nuevo grupo de Telegram y Whatsapp ?
-
-    // Donar
-    descripcion += "\nApóyanos:";
-    descripcion += `
-💖 Membresía: https://www.youtube.com/alswnet/join
-☕ Donar un café: https://nocheprogramacion.com/cafe`;
-
-    // Links Generales
-    descripcion += "\n\nLinks:";
-    descripcion += `
-👏🏽 Subscribe: https://www.youtube.com/alswnet?sub_confirmation=1
-💬 Discord: https://nocheprogramacion.com/discord
-🚂 Sitio Web: http://nocheprogramacion.com
-👾 Comparte tu creación! https://nocheprogramacion.com/tucodigo
-🚩 Sugerir Temas: https://github.com/alswnet/NocheProgramacion/issues/new
-💡 GitHub: https://github.com/alswnet
-🌎 Noticias: https://programacion.news
-🐦 Twitter: https://twitter.com/alswnet
-📸 Instagram: https://www.instagram.com/alswnet
-👍 Facebook: https://www.facebook.com/alswnet
-👥 Grupo Facebook: https://www.facebook.com/groups/chepecarlosclub
-🔭 Telegram: https://t.me/alswnet
-🕹 Canal VideoJuegos: https://nocheprogramacion.com/alsw2game
-🎈 Twitch: https://www.twitch.tv/alswnet`;
+    //Miembros
+    if (data.miembros) {
+      Cantidad.Miembros++;
+      descripcion += "\n🦾 Creado gracias al Apóyo de:\n";
+      Maker_Uno = data.miembros[0]["Maker_Uno"];
+      for (let i = 0; i < Maker_Uno.length; ++i) {
+        descripcion += `${Maker_Uno[i].title}`;
+        if (i < Maker_Uno.length - 1) {
+          descripcion += `, `;
+        } else {
+          descripcion += `.`;
+        }
+      }
+      descripcion += `\n🔭 Agrega tu nombre, Unete tu tambien https://www.youtube.com/alswnet/join 🔭`;
+    } else {
+      descripcion += `\n🔭 Quieres apoyar, comviertete en Miembro https://www.youtube.com/alswnet/join 🔭`;
+    }
 
     // if (data.tags) {
     //   descripcion += `\n\n#ALSW`;
@@ -283,6 +293,7 @@ async function CrearDescripciones(videos) {
   }
 
   console.log(`Cantidad total videos: ${CantidadVideos}`);
+  ImprimirData("Miembros:", Cantidad.Miembros, CantidadVideos);
   ImprimirData("Colaboradores", Cantidad.Colaboradores, CantidadVideos);
   ImprimirData("Links", Cantidad.Links, CantidadVideos);
   ImprimirData("Indices", Cantidad.Indice, CantidadVideos);
@@ -290,6 +301,7 @@ async function CrearDescripciones(videos) {
   ImprimirData("Extras", Cantidad.Costun, CantidadVideos);
   ImprimirData("Videos", Cantidad.Video, CantidadVideos);
   ImprimirData("Codigo", Cantidad.Codigo, CantidadVideos);
+  ImprimirData("Remake", Cantidad.Remake, CantidadVideos);
   ImprimirData("Ads", Cantidad.Ads, CantidadVideos);
   ImprimirData("SeoMostar", Cantidad.SeoMostar, CantidadVideos);
   ImprimirData("SeoMostar Activos", Cantidad.SeoMostarActivo, CantidadVideos);
