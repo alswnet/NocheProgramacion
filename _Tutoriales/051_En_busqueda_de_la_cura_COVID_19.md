@@ -1,5 +1,5 @@
 ---
-title: "En busqueda de la cura #COVID-19"
+title: "En busqueda de la cura COVID-19"
 video_number: 51
 date: 2020-03-25
 video_id: 3gTbQP3vHHM
