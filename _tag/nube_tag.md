@@ -17,7 +17,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [17]]</a>
 		</li>
 		<li>
-			<a href="/tag/shorts">#shorts [15]]</a>
+			<a href="/tag/shorts">#shorts [16]]</a>
 		</li>
 		<li>
 			<a href="/tag/git">#git [12]]</a>
@@ -338,6 +338,9 @@ redirect_from:
 			<a href="/tag/mac">#mac [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/cliente">#cliente [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/dotfile">#dotfile [1]]</a>
 		</li>
 		<li>
@@ -393,6 +396,15 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/electronicaycheves">#electronicaycheves [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/entrevista">#entrevista [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/podcast">#podcast [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/spotify">#spotify [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/whatsapp">#whatsapp [1]]</a>
