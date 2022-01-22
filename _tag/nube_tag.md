@@ -436,5 +436,14 @@ redirect_from:
 		<li>
 			<a href="/tag/tema">#tema [1]]</a>
 		</li>
+		<li>
+			<a href="/tag/teclado">#teclado [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/mecanico">#mecanico [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/moonlander">#moonlander [1]]</a>
+		</li>
 	</ul>
 </div>
