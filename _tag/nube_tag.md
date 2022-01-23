@@ -20,7 +20,7 @@ redirect_from:
 			<a href="/tag/shorts">#shorts [16]]</a>
 		</li>
 		<li>
-			<a href="/tag/git">#git [12]]</a>
+			<a href="/tag/git">#git [13]]</a>
 		</li>
 		<li>
 			<a href="/tag/mqtt">#mqtt [12]]</a>
@@ -336,6 +336,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/mac">#mac [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/submodules">#submodules [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/cliente">#cliente [1]]</a>
