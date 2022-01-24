@@ -33,8 +33,13 @@ links:
     url: https://www.youtube.com/watch?v=NVGuFdX5guE
 
 colaboradores:
-  - title: "Editor"
+  - title: Editor
     colaborador: ingjuan
+
+miembros:
+  - Maker_Uno:
+      - title: Erebos Ubuntu
+        tiempo: 0.774194
 
 actualizado: true
 ---
