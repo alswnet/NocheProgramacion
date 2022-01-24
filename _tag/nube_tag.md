@@ -11,7 +11,7 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [68]]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [20]]</a>
+			<a href="/tag/linux">#linux [21]]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [17]]</a>
@@ -23,10 +23,10 @@ redirect_from:
 			<a href="/tag/git">#git [13]]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [12]]</a>
+			<a href="/tag/github">#github [13]]</a>
 		</li>
 		<li>
-			<a href="/tag/github">#github [11]]</a>
+			<a href="/tag/mqtt">#mqtt [12]]</a>
 		</li>
 		<li>
 			<a href="/tag/python">#python [10]]</a>
@@ -83,6 +83,9 @@ redirect_from:
 			<a href="/tag/webserver">#webserver [4]]</a>
 		</li>
 		<li>
+			<a href="/tag/comando">#comando [4]]</a>
+		</li>
+		<li>
 			<a href="/tag/obs">#obs [4]]</a>
 		</li>
 		<li>
@@ -105,9 +108,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/mdns">#mdns [3]]</a>
-		</li>
-		<li>
-			<a href="/tag/comando">#comando [3]]</a>
 		</li>
 		<li>
 			<a href="/tag/java">#java [3]]</a>
@@ -339,6 +339,15 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/submodules">#submodules [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/documentacion">#documentacion [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/copia">#copia [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/portafolio">#portafolio [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/cliente">#cliente [1]]</a>
