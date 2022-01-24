@@ -13,11 +13,6 @@ topics:
   - title: Como se ve Submodules en VS code
     time: "03:20"
 
-links:
-  - title:
-    url:
-  - title: serie de git
-
 videos:
   - title: Curso de Git
     url: series/git
