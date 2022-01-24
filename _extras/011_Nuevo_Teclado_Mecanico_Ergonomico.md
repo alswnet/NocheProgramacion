@@ -23,8 +23,10 @@ links:
     url: https://qmk.fm/
   - title: QKM Documentacion
     url: https://docs.qmk.fm/#/
-  - tille: Github QMK
+  - title: Github QMK
     url: https://github.com/qmk/qmk_firmware
+  - title: Dygma
+    url: https://dygma.com/
 
 miembros:
   - Maker_Uno:
