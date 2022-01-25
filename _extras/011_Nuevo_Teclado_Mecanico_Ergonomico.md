@@ -27,6 +27,8 @@ links:
     url: https://github.com/qmk/qmk_firmware
   - title: Dygma
     url: https://dygma.com/
+  - title: KeyCups Regabales
+  - url: https://www.amazon.com/gp/product/B01M023NFK
 
 miembros:
   - Maker_Uno:
