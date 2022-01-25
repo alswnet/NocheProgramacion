@@ -28,7 +28,7 @@ links:
   - title: Dygma
     url: https://dygma.com/
   - title: KeyCups Regabales
-  - url: https://www.amazon.com/gp/product/B01M023NFK
+    url: https://www.amazon.com/gp/product/B01M023NFK
 
 miembros:
   - Maker_Uno:
