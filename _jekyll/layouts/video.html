@@ -26,10 +26,17 @@ layout: base
     #{% if series.series_number %}{{ series.series_number }}.{% endif %}{{ page.video_number }}
   </div>
 
+  {% if page.para_miembros %}
+    <div class="remake">
+      <div>Avances Exclusivo para Miembros.</div>
+      <div>Este Contenido, sera publico en el futuro, quieres tener acceso, ver que otro hay o mas info, <a href="{{ '/miembros' | relative_url }}">AQUI</a>.</div>
+    </div>
+  {% endif %}
+  
   {% if page.remake %}
-  <div class="remake">
-    This video has been remade or updated. You can find the new verción on <a href="{{ page.remake | relative_url }}">this webpage</a>.
-  </div>
+    <div class="remake">
+      Existe una versión nueva o actualizada de este video. La puede ver <a href="{{ page.remake | relative_url }}">AQUI</a>.
+    </div>
   {% endif %}
 
   <div class="player-and-topics">
@@ -40,9 +47,11 @@ layout: base
 
       {% comment %} Previous/Next buttons and 'Watch all' button. {% endcomment %}
       <div class="player-controls">
-        <a href="{{ out_previousVideo.url | relative_url | default: '#' }}" class="jump-control {% if out_previousVideo == null %}disabled{% endif %}" aria-label="Video Anterior">❰</a>
-        <a href="{{ series.url | default: page.collection | relative_url }}" class="watch-all-videos">Ver todos los videos</a>
-        <a href="{{ out_nextVideo.url | relative_url | default: '#' }}" class="jump-control {% if out_nextVideo == null %}disabled{% endif %}" aria-label="Video Siquiente">❱</a>
+        <a href="{{ out_previousVideo.url | relative_url | default: '#' }}"
+          class="jump-control {% if out_previousVideo == null %}disabled{% endif %}" aria-label="Video Anterior">❰</a>
+        <a href="{{ series.url | default: page.collection | relative_url }}" class="watch-all-videos">Serie Completa</a>
+        <a href="{{ out_nextVideo.url | relative_url | default: '#' }}"
+          class="jump-control {% if out_nextVideo == null %}disabled{% endif %}" aria-label="Video Siquiente">❱</a>
       </div>
     </div>
 
@@ -76,7 +85,7 @@ layout: base
         {% assign repositoryBasePath = '/' | append: page.collection | append: '/' | append: page.repository %}
         {% assign repositoryBaseURL = site.github.repository_url | append: '/tree/' | append: site.github.source.branch | append: repositoryBasePath %}
 
-        {% comment %} If page has defined it's own variations create pageVariations for code variation tool. {% endcomment %}
+        {% comment %} If page has defined it's own variations create pageVariations for code variation tool.{% endcomment %}
         {% if page.variations != null %}
           {% assign pageVariations = page.variations %}
         {% else %}
@@ -121,7 +130,8 @@ layout: base
         {% comment %} Generate a URL to edit this video's file directly on GitHub. {% endcomment %}
         {% assign addContributionURL = site.github.repository_url | append: '/edit/' | append: site.github.source.branch | append: '/' | append: contributionsVideo.path %}
 
-        {% comment %} Display a message depending on wether there have been made community contributions already. {% endcomment %}
+        {% comment %} Display a message depending on wether there have been made community contributions already.
+        {% endcomment %}
         {% if contributionsVideo.contributions %}
           <p>
             Tu tambien puedes agregar <a href="{{ addContributionURL }}" target="_blank">tu propia version</a>!
@@ -129,7 +139,8 @@ layout: base
           </p>
         {% else %}
           <p>
-            Al parecer, aun no se han hecho variaciones basadas en este {{ page.video_type_short | downcase }} por la comunidad. Se el primero en agregar <a href="{{ addContributionURL }}" target="_blank">tu propia version</a>!<br>
+            Al parecer, aun no se han hecho variaciones basadas en este {{ page.video_type_short | downcase }} por la
+            comunidad. Se el primero en agregar <a href="{{ addContributionURL }}" target="_blank">tu propia version</a>!<br>
             Si no sabes cómo, mira <a href="{% link _Guias/Guia_Contribucion_Comunitaria.md %}">esta guia</a>.
           </p>
         {% endif %}

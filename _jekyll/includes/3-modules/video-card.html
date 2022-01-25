@@ -46,10 +46,14 @@
       <h3>{{ include.video.title | xml_escape }}</h3>
 
       {% comment %} Release date. {% endcomment %}
-      {% if include.video.date > site.time %}
-        <span class="video-date">{{ include.video.date | date: '%d %b %Y - %H:%M %Z' }}</span>
+      {% if include.video.para_miembros %}
+        <span class="video-date">Para Miembros</span>
       {% else %}
-        <span class="video-date">{{ include.video.date | date_to_string }}</span>
+        {% if include.video.date > site.time %}
+          <span class="video-date">{{ include.video.date | date: '%d %b %Y - %H:%M %Z' }}</span>
+        {% else %}
+          <span class="video-date">{{ include.video.date | date_to_string }}</span>
+        {% endif %}
       {% endif %}
     </div>
   </a>
@@ -70,14 +74,12 @@
       </a>
     {% else %}
       <a href="https://youtu.be/{{ include.video.video_id }}"
-         aria-label="Mira en Youtube: {{ include.video.title | xml_escape }}"
-      >
-        Mira en YouTube<span class="sr-only">: {{ include.video.title | xml_escape }}</span>
+         aria-label="Youtube: {{ include.video.title | xml_escape }}">
+        YouTube<span class="sr-only">: {{ include.video.title | xml_escape }}</span>
       </a>
       <a href="{{ include.video.url | relative_url }}"
-         aria-label="To the {{ include.video.video_type_short | default: include.video.video_type }}: {{ include.video.title | xml_escape }}"
-      >
-        Ve al {{ include.video.video_type_short | default: include.video.video_type }}<span class="sr-only">: {{ include.video.title | xml_escape }}</span>
+         aria-label="Post {{ include.video.title | xml_escape }}" >
+        Post<span class="sr-only">: {{ include.video.title | xml_escape }}</span>
       </a>
     {% endif %}
   </div>
