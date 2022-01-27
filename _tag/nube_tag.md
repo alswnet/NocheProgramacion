@@ -11,7 +11,7 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [68]]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [21]]</a>
+			<a href="/tag/linux">#linux [22]]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [17]]</a>
@@ -165,6 +165,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/apple">#apple [2]]</a>
+		</li>
+		<li>
+			<a href="/tag/entrevista">#entrevista [2]]</a>
 		</li>
 		<li>
 			<a href="/tag/sorteo">#sorteo [2]]</a>
@@ -408,9 +411,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/electronicaycheves">#electronicaycheves [1]]</a>
-		</li>
-		<li>
-			<a href="/tag/entrevista">#entrevista [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/podcast">#podcast [1]]</a>
