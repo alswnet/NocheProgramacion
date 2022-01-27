@@ -4,6 +4,7 @@ video_number: 3
 date: 2015-06-20
 video_id: hJ6fE5jEQE0
 repository: 003_Bluetooth_HC-05_arduino
+remake: series/bluetooth_con_arduino/001_Como_conecar_bluetooth_a_arduino
 tags:
   - bluetooth
   - arduino
@@ -21,10 +22,6 @@ piezas:
   - title: "Led"
   - title: "Resistencia 330ohm"
   - title: "Modulo Bluetooth HC-05"
-
-videos:
-  - title: "Nueva Seria Bluetooth"
-    url: series/bluetooth_con_arduino
 
 actualizado: true
 ---
