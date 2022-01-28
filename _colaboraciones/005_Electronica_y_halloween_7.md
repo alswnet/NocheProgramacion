@@ -1,5 +1,5 @@
 ---
-title: "Electrónica y Halloween #7"
+title: "Electrónica y Halloween 7"
 video_number: 5
 date: 2021-10-29
 video_id: R_HryknnrQ0
@@ -38,7 +38,7 @@ custom_sections:
         url: https://www.instagram.com/welstheory/
       - title: tiktok
         url: https://www.tiktok.com/@wels.theory
-  - title:  MicroTutoriales DC
+  - title: MicroTutoriales DC
     items:
       - title: youtube
         url: https://www.youtube.com/c/MicroTutorialesDCareaga
@@ -50,13 +50,13 @@ custom_sections:
         url: https://www.youtube.com/channel/UCxg4TXCpaO0D-uDt0ksRbiA
       - title: instagram
         url: https://www.instagram.com/mecatronica.made
-  - title:  Curso de Robotica 
+  - title: Curso de Robotica
     items:
       - title: youtube
         url: https://www.youtube.com/c/etronikltda
       - title: instagram
         url: https://www.instagram.com/cursoderobotica/
-  - title: ElectroMatic 
+  - title: ElectroMatic
     items:
       - title: youtube
         url: https://www.youtube.com/channel/UCsdjjZK3OULlfIpTF7d9Vng

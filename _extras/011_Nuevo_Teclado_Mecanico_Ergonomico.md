@@ -30,6 +30,10 @@ links:
   - title: KeyCups Regabales
     url: https://www.amazon.com/gp/product/B01M023NFK
 
+colaboradores:
+  - title: Supervisora
+    colaborador: coinsoda
+
 miembros:
   - Maker_Uno:
       - title: Erebos Ubuntu
@@ -38,4 +42,4 @@ miembros:
 actualizado: true
 ---
 
-Quiero compartir mi nueva expewriencia en el nuevo mundo de los Teclado Mecanicos ergonomicos como el Moonlander Mark I, estoy muy emocioado de abirlo en vivo
+Quiero compartir mi nueva experiencia en el nuevo mundo de los Teclado Mecanicos ergonomicos como el Moonlander Mark I, estoy muy emocioado de abirlo en vivo
