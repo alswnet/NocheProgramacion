@@ -75,7 +75,7 @@
         {% if link.colaborador %}
           {% for colaborador in site.colaboradores %}
               {% if link.colaborador == colaborador.usuario %}
-                <a href="{{ colaborador.url |  relative_url }}">{{ colaborador.title }}</a>
+                - <a href="{{ colaborador.url |  relative_url }}">{{ colaborador.title }}</a>
               {% endif %}
           {% endfor %}
         {% endif %}
