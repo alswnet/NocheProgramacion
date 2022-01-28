@@ -1,7 +1,7 @@
 ---
 title: "CoinSoda"
 colaborador_id: 2
-usuario: CoinSoda
+usuario: coinsoda
 nombre: "Victoria Becerril"
 ---
 
