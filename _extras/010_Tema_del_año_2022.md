@@ -35,7 +35,9 @@ links:
 colaboradores:
   - title: Editor
     colaborador: ingjuan
-
+  - title: Supervisora
+    colaborador: coinsoda
+  
 miembros:
   - Maker_Uno:
       - title: Erebos Ubuntu
@@ -44,6 +46,6 @@ miembros:
 actualizado: true
 ---
 
-Nuevo año, deseos empezarlo mejor del año, pero los nuevos propositos seran abandonados en poco tiempo, si en en ves de proposito usamos algo mejor, Una Brujula para guiarnos.
+Nuevo año, ¿Deseas empezar lo mejor del año?, pero los nuevos propositos seran abandonados en poco tiempo, si en en ves de proposito usamos algo mejor, Una Brujula para guiarnos.
 
 Te presento una genial idea, tema del año. Espero que te ayude como me a ayudado a mi.
