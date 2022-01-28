@@ -1,7 +1,7 @@
 ---
 title:
 video_number:
-date: 2021-12-31
+date: 2022-12-31
 video_id:
 repository:
 tags:
@@ -39,6 +39,11 @@ parts:
   - title:
     url:
 
+creditos:
+  - title:
+    time: ""
+    url:
+
 colaboradores:
   - title:
     colaborador:
@@ -49,5 +54,11 @@ custom_sections:
       - title:
         url:
 
+miembros:
+  - Maker_Uno:
+      - title:
+        tiempo:
+
+para_miembros: false
 actualizado: false
 ---

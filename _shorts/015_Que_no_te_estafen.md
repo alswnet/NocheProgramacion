@@ -8,6 +8,7 @@ tags:
   - web_editor
   - firefox
   - chrome
+  - shorts
 
 colaboradores:
   - title: "Editor"
