@@ -74,7 +74,7 @@ async function CrearDescripciones(videos) {
 
     if (data.para_miembros) {
       Cantidad.ParaMiembros++;
-      descripcion += `🦾 Contenido Para Miembros del Canal ChepeCarlos 🦾
+      descripcion += `🦾 Avances Exclusivo para Miembros del Canal ChepeCarlos 🦾
 
 👉 Quieres verlo, unete aqui: https://www.youtube.com/alswnet/join 👈
 
