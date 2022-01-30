@@ -33,4 +33,4 @@ para_miembros: true
 actualizado: true
 ---
 
-Se que puede ser rato pero a tu cliente no le importa donde saquen tu codigo, te enseñamos un truco que te ayudara a encontra codigo que necesitas, aun mejot que google
+Sé que puede ser raro, pero a tu cliente no le importa de donde saques tu código; te enseñamos un truco que te ayudará a encontrar el código que necesitas, aún mejor que en google

@@ -45,4 +45,4 @@ para_miembros: true
 actualizado: true
 ---
 
-No hay mejor momento que el precente para empezar para crear un portafolio y con este genial truco te saldra gratis crearlo
+No hay mejor momento que el presente para empezar a crear un portafolio y con éste genial truco te saldrá gratis crearlo

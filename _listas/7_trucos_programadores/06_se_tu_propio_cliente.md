@@ -50,4 +50,4 @@ para_miembros: true
 actualizado: true
 ---
 
-Si tu tiempo es valioso y util para otro, por que no programarte para ti mismo y crear heramientas o proyectos que haga tu trabajo mas eficiente, se tu propio cliente
+Si tu tiempo es valioso y útil para otros, porqué no programas para ti mismo y creas heramientas o proyectos que hagan tu trabajo más eficiente, se tu propio cliente

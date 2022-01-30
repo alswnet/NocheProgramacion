@@ -22,12 +22,12 @@ Estos son algunos:
 - Avances exclusivos de Video
 - Comando exclusivos con el BOT_ALSW
 - Tu nombre en la descripcion de los videos
-- Insignia Especial justo a nombre en Canal de Youtube de ChepeCarlos
+- Insignia Especial junto al nombre en Canal de Youtube de ChepeCarlos
 - Emoji Extras en EnVivos de Canal de Youtube de ChepeCarlos
 - Acceso a Rol y Sala para miembros en Discord de ALSW
-- Voz y voto del runbo del contenido del Canal
+- Voz y voto del rumbo del contenido del Canal
 - Muchas cosas mas como avances de Proyectos
-- Mi agradecimiento y aprecio 😘
+- Mi agradecimiento y aprecio 😉
 
 <p style="display: flex; justify-content: center;"> 
   <a href="https://www.youtube.com/alswnet/join">
@@ -39,8 +39,8 @@ Estos son algunos:
 
 > **Nuevos video todas las semanas**
 > 
-> Se agregan los video cuando esten lintos, gracias por el apoyo.  
-> Seran publico en el futuro para toda la comunidad
+> Se agregaran los videos cuando esten listos.  
+> Serán públicos en el futuro para toda la comunidad
 
 {% assign video_miembros = '' | split: '' %}
 

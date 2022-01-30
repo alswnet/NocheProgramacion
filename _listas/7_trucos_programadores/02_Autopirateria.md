@@ -31,4 +31,4 @@ para_miembros: true
 actualizado: true
 ---
 
-Trabas en muchos proyectos, creas muchas librerias internas, por que no usarla en otro proyectos de una mera mas facil usando git Submodules
+Trabajas en muchos proyectos, creas muchas librerias internas, porqué no usarla en otros proyectos de una manera más fácil usando git Submodules

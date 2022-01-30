@@ -28,6 +28,6 @@ para_miembros: true
 actualizado: true
 ---
 
-Tiene que programar en un lugar sin internet, usa estre truco para que nunca te false la documentacion de tu proyecto por la documentacion en amiga
+Tienes que programar en un lugar sin internet, usa éste truco para que nunca te falte la documentacion de tu proyecto, porque la documentación es tu amiga
 
 wget -r -np -k URL
