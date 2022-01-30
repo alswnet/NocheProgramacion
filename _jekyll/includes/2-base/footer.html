@@ -2,18 +2,20 @@
 Este archivo que se incluye al final de la pagina.
 {% endcomment %}
 
-<div align="center">
-  <!-- 001_Anuncio_Pie_Pagina -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-6804269342161160"
-       data-ad-slot="4377075196"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
+{% unless page.nopublicidad %}
+  <div align="center">
+    <!-- 001_Anuncio_Pie_Pagina -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-6804269342161160"
+        data-ad-slot="4377075196"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+{% endunless %}
 
 <footer>
   <div class="links">
