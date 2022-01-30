@@ -19,9 +19,6 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
-  - Maker_Uno:
-      - title:
-        tiempo:
 
 para_miembros: true
 

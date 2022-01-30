@@ -204,6 +204,11 @@ layout: base
     {% for section in page.custom_sections %}
       {% include 3-modules/link-list.html links=section.items title=section.title class=section.class %}
     {% endfor %}
+ 
+    {% comment %} Listas de Miembros. {% endcomment %}
+    {% for section in page.miembros %}
+      {% include 3-modules/link-list.html links=section.items title=section.title class=section.class %}
+    {% endfor %}
   </div>
 
 </div>

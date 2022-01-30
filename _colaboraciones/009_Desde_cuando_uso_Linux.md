@@ -22,9 +22,9 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
-  - Maker_Uno:
+  - title: Maker_Uno
+    items:
       - title: Erebos Ubuntu
-        tiempo: 0.774194
 
 actualizado: true
 ---

@@ -255,17 +255,21 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         }
       }
 
-      //Miembros
+      // Miembros
       if (data.miembros) {
         Cantidad.Miembros++;
         descripcion += "\n🦾 Creado gracias al Apóyo de:\n";
-        Maker_Uno = data.miembros[0]["Maker_Uno"];
-        for (let i = 0; i < Maker_Uno.length; ++i) {
-          descripcion += `${Maker_Uno[i].title}`;
-          if (i < Maker_Uno.length - 1) {
-            descripcion += `, `;
-          } else {
-            descripcion += `.`;
+        if (data.miembros[0].title) {
+          let RandoMiembros = data.miembros[0];
+          let ListaMiembros = RandoMiembros.items;
+          descripcion += `${RandoMiembros.title}: `;
+          for (let i = 0; i < ListaMiembros.length; i++) {
+            descripcion += `${ListaMiembros[i].title}`;
+            if (i < ListaMiembros.length - 1) {
+              descripcion += `, `;
+            } else {
+              descripcion += `.`;
+            }
           }
         }
         descripcion += `\n🔭 Agrega tu nombre, Unete tu tambien https://www.youtube.com/alswnet/join 🔭`;

@@ -24,9 +24,9 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
-  - Maker_Uno:
-      - title:
-        tiempo:
+  - title: Maker_Uno
+    items:
+      - title: Erebos Ubuntu
 
 para_miembros: true
 
