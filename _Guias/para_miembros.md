@@ -31,7 +31,7 @@ Estos son algunos:
 
 <p style="display: flex; justify-content: center;"> 
   <a href="https://www.youtube.com/alswnet/join">
-    <img style="max-width: 25rem;" src="/assets/images/miembro_youtube.png">
+    <img style="max-width: 25rem;" alt="Miembro Youtube de ChepeCarlos" src="/assets/images/miembro_youtube.png">
   </a>
 </p>
 
@@ -65,13 +65,13 @@ Estos son algunos:
 
 <p style="display: flex; justify-content: center;"> 
   <a href="https://www.youtube.com/alswnet/join">
-    <img src="https://i3.ytimg.com/vi/nGAHSes_0Nk/mqdefault.jpg">
+    <img alt="Video Explicando Miembro Youtube de ChepeCarlos" src="https://i3.ytimg.com/vi/nGAHSes_0Nk/mqdefault.jpg">
   </a>
 </p>
 
 <p style="display: flex; justify-content: center;"> 
   <a href="https://www.youtube.com/alswnet/join">
-    <img style="max-width: 25rem;" src="/assets/images/miembro_youtube.png">
+    <img style="max-width: 25rem;"  alt="Miembro Youtube de ChepeCarlos" src="/assets/images/miembro_youtube.png">
   </a>
 </p>
 
