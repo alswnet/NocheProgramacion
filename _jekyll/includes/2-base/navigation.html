@@ -8,8 +8,6 @@
 
     <li><a class="top-link" href="{{ '/' | relative_url }}" id="home">Inicio</a></li>
 
-    <!-- <li><a href="{{ '/sorteo' | relative_url }}">Sorteo</a></li> -->
-
     <li><a href="{{ '/Tutoriales' | relative_url }}">Tutoriales</a></li>
 
     <li>
@@ -25,47 +23,31 @@
           <li><a href="{{ '/freecad' | relative_url }}">FreeCAD</a></li>
           <li><a href="{{ '/obs' | relative_url }}">OBS</a></li>
           <li><a href="{{ '/linux' | relative_url }}">Linux</a></li>
-          <li><a href="{{ '/python' | relative_url }}">Python</a></li>  
+          <li><a href="{{ '/python' | relative_url }}">Python</a></li>
           <li><a href="{{ '/herramientas' | relative_url }}">Herramientas</a></li>
-          <li><a href="{{ '/listas' | relative_url }}">Listas</a></li>
+          <li><a href="{{ '/listas' | relative_url }}">Extras</a></li>
         </ul>
       </div>
     </li>
 
-    <li>
-      <button class="submenu-button top-link" aria-haspopup="true" for="beginners-submenu"><span>Cursos</span></button>
-      <div class="submenu" id="beginners-submenu">
-        <ul class="links">
-          <li><a href="{{ '/Cursos/01_Arduino_ChatBot_Telegram' | relative_url }}">ChatBot con Arduino</a></li>
-          <li><a href="{{ '/Cursos/07_Inteligencia_Artificial_ML5' | relative_url }}">Inteligencia Artificial con ML5</a></li>
-          <li><a href="{{ '/Cursos/08_Processing_y_Arduino' | relative_url }}">Processing y Arduino</a></li>
-          <li><a href="{{ '/Cursos' | relative_url }}">Todos los Cursos</a></li>
-        </ul>
-      </div>
-    </li>
-
-
-
-    <li><a href="{{  '/shorts' | relative_url }}">Shorts</a></li>
-
-    <!--
-      <li><a href="{{ site.links.alsw }}" target="_blank">ALSW</a></li>
-    -->
+    <li><a href="{{  '/miembros' | relative_url }}">Miembros</a></li>
 
     <li>
-      <button class="submenu-button top-link" aria-haspopup="true" for="contribute-submenu"><span>Contribuye</span></button>
+      <button class="submenu-button top-link" aria-haspopup="true"
+        for="contribute-submenu"><span>Contribuye</span></button>
       <div class="submenu" id="contribute-submenu">
         <ul class="links">
           <li><a href="{{ '/tucodigo' | relative_url }}">Agrega tu codigo</a></li>
           <li><a href="{{ '/apoyar' | relative_url }}">Apoya</a></li>
           <li><a href="{{ '/donar' | relative_url }}">Donar</a></li>
-          <li><a href="{{ site.github.repository_url }}/issues/new" target="_blank">Reportar Problema o Sugerencia</a></li>
+          <li><a href="{{ site.github.repository_url }}/issues/new" target="_blank">Reportar Problema o Sugerencia</a>
+          </li>
           <li><a href="{{ '/Guias' | relative_url }}">Todas Guias</a></li>
         </ul>
       </div>
     </li>
 
-    <li><a href="{{  site.links.donar }}">Donar</a></li>
+    <li><a href="{{ site.links.donar }}">Donar</a></li>
 
     <li>
       <button class="submenu-button top-link" aria-haspopup="true" for="more-submenu"><span>Mas</span></button>
@@ -81,6 +63,7 @@
           <li><a href="{{ '/colaboraciones' | relative_url }}">Colaboraciones</a></li>
           <li><a href="{{ '/bodega' | relative_url }}">Bodega</a></li>
           <li><a href="{{ '/mas/faq' | relative_url }}">Preguntas Frecuentes</a></li>
+          <li><a href="{{ '/Cursos' | relative_url }}">Otros</a></li>
           <li><a href="{{ '/linuxappuso' | relative_url}}">Las Linux App que uso</a></li>
           <li><a href="{{ '/extras' | relative_url}}">Extras</a></li>
           <li><a href="{{ site.github.repository_url }}" target="_blank">Github</a></li>

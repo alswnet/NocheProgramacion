@@ -7,40 +7,9 @@ redirect_from:
 
 ### Ultimo Video
 
-{% include 1-tools/sort-videos.html videos=site.shorts %}
-{% assign TodosVideos = out_sortedVideos %}
+{% include 1-tools/all-tutorial.html %}
 
-{% include 1-tools/sort-videos.html videos=site.Tutoriales %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.listas %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.series %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.mas %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.invitados %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.extras %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=TodosVideos sortByDate=true reverse=true %}
+{% include 1-tools/sort-videos.html videos=all_Videos sortByDate=true reverse=true %}
 {% assign TodosVideos = out_sortedVideos %}
 
 {% assign Ultimo = TodosVideos | first %}
@@ -49,8 +18,7 @@ redirect_from:
     <a href="https://youtu.be/{{ Ultimo.video_id }}">
         <div class="video-header">
             <div class="thumb-container">
-                <div
-                class="video-thumbnail"
+                <div class="video-thumbnail"
                     {% if Ultimo.video_id %}
                     style="background-image: url(https://i.ytimg.com/vi/{{Ultimo.video_id}}/mqdefault.jpg)"
                     {% else %}
@@ -71,20 +39,12 @@ redirect_from:
     </a>
 
     <div class="buttons">
-        <a href="https://youtu.be/{{ Ultimo.video_id }}"
-            aria-label="Mira en Youtube:"
-        >
-            Mira en YouTube
+        <a href="https://youtu.be/{{ Ultimo.video_id }}" aria-label="Youtube">
+            YouTube
         </a>
     </div>
 </div>
 
-## Extra
-
-{% assign Extra = site.collections | first %}
-
- <h3>{{ Ultimo.title | xml_escape }}</h3>
- 
 ### Youtube
 
 [youtube.com/alswnet](https://www.youtube.com/alswnet?sub_confirmation=1)

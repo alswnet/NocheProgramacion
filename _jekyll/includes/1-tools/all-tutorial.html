@@ -1,0 +1,39 @@
+{% comment %}
+Devuelve la lista de todos video del canal
+
+Returns:
+all_Videos Video[] Array of videos.
+{% endcomment %}
+
+{% include 1-tools/sort-videos.html videos=site.shorts %}
+{% assign all_Videos = out_sortedVideos %}
+
+{% include 1-tools/sort-videos.html videos=site.Tutoriales %}
+{% for video in out_sortedVideos %}
+    {% assign all_Videos = all_Videos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.listas %}
+{% for video in out_sortedVideos %}
+    {% assign all_Videos = all_Videos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.series %}
+{% for video in out_sortedVideos %}
+    {% assign all_Videos = all_Videos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.mas %}
+{% for video in out_sortedVideos %}
+    {% assign all_Videos = all_Videos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.invitados %}
+{% for video in out_sortedVideos %}
+    {% assign all_Videos = all_Videos | push: video %}
+{% endfor %}
+
+{% include 1-tools/sort-videos.html videos=site.extras %}
+{% for video in out_sortedVideos %}
+    {% assign all_Videos = all_Videos | push: video %}
+{% endfor %}
