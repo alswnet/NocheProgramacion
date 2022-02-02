@@ -38,9 +38,8 @@ colaboradores:
 miembros:
   - title: Maker_Uno
     items:
+      - title: Victoria Becerril
       - title: Erebos Ubuntu
-
-para_miembros: true
 
 actualizado: true
 ---
