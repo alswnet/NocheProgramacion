@@ -65,10 +65,10 @@ redirect_from:
 			<a href="/tag/freecad">#freecad [7]]</a>
 		</li>
 		<li>
-			<a href="/tag/youtube">#youtube [5]]</a>
+			<a href="/tag/vscode">#vscode [6]]</a>
 		</li>
 		<li>
-			<a href="/tag/vscode">#vscode [5]]</a>
+			<a href="/tag/youtube">#youtube [5]]</a>
 		</li>
 		<li>
 			<a href="/tag/programacion">#programacion [4]]</a>
@@ -360,6 +360,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/bare">#bare [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/ortigrafia">#ortigrafia [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/code">#code [1]]</a>
