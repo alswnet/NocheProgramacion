@@ -14,7 +14,7 @@ redirect_from:
 			<a href="/tag/linux">#linux [22]]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [17]]</a>
+			<a href="/tag/iot">#iot [18]]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [16]]</a>
@@ -26,10 +26,10 @@ redirect_from:
 			<a href="/tag/github">#github [13]]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [12]]</a>
+			<a href="/tag/mqtt">#mqtt [13]]</a>
 		</li>
 		<li>
-			<a href="/tag/python">#python [10]]</a>
+			<a href="/tag/python">#python [11]]</a>
 		</li>
 		<li>
 			<a href="/tag/esp32">#esp32 [10]]</a>
@@ -65,7 +65,7 @@ redirect_from:
 			<a href="/tag/freecad">#freecad [7]]</a>
 		</li>
 		<li>
-			<a href="/tag/vscode">#vscode [6]]</a>
+			<a href="/tag/vscode">#vscode [7]]</a>
 		</li>
 		<li>
 			<a href="/tag/youtube">#youtube [5]]</a>

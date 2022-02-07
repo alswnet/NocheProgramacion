@@ -1,18 +1,18 @@
 ---
 title: "Ejemplo MQTT Python"
-video_number: 4
+video_number: 4.1
 date: 2021-04-05
 video_id: T362losqJys
-repository: mqtt/004_MQTT_en_python
+repository: mqtt/004_1_MQTT_en_python
 tags:
   - mqtt
   - python
   - iot
 
 topics:
-  - title: Introduccion
+  - title: Introducción
     time: "00:00"
-  - title: Libreria MQTT para Python
+  - title: Librería MQTT para Python
     time: "00:35"
   - title: Ejemplo Sub
     time: "01:14"
@@ -24,7 +24,7 @@ topics:
     time: "06:22"
 
 links:
-  - title: "Libreria MQTT Python"
+  - title: "Librería MQTT Python"
     url: "https://pypi.org/project/paho-mqtt"
   - title: "Broker de prueba Mosquitto"
     url: "https://test.mosquitto.org"

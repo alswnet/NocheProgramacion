@@ -55,9 +55,6 @@ custom_sections:
         url:
 
 miembros:
-  - Maker_Uno:
-      - title:
-        tiempo:
 
 para_miembros: false
 actualizado: false
