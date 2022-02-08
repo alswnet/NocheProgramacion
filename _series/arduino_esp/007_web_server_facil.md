@@ -1,5 +1,5 @@
 ---
-title: "Crea un servidor Web con ESP32 y ESP8266 Facil"
+title: "Crea un servidor Web con ESP32 y ESP8266 Fácil"
 video_number: 7
 date: 2021-10-06
 video_id: bEk0DuKv_aQ
@@ -25,9 +25,9 @@ topics:
     time: "00:51"
   - title: Comenzamos
     time: "00:59"
-  - title: Capitulos anteriores
+  - title: Capítulos anteriores
     time: "02:10"
-  - title: Codigo anterior
+  - title: Código anterior
     time: "02:48"
   - title: Como funciona un servidor Web
     time: "03:02"
@@ -39,21 +39,21 @@ topics:
     time: "07:43"
   - title: Como es el Flujo del Sistema
     time: "08:53"
-  - title: Codigo
+  - title: Código
     time: "13:40"
-  - title: Codigo base
+  - title: Código base
     time: "13:55"
   - title: Usando milis()
     time: "20:40"
   - title: Verificar el mensaje
     time: "25:46"
-  - title: Codigo HTML
+  - title: Código HTML
     time: "28:51"
-  - title: Vista rapida a todo
+  - title: Vista rápida a todo
     time: "33:13"
   - title: Despedida
     time: "35:17"
-  - title: Apoyanos
+  - title: Apóyanos
     time: "35:38"
 
 creditos:

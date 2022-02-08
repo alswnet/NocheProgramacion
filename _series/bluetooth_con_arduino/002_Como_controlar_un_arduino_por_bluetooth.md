@@ -10,19 +10,19 @@ tags:
   - android
 
 topics:
-  - title: "Introduccion"
+  - title: "Introducción"
     time: "00:00"
   - title: "Circuito"
     time: "00:42"
-  - title: "Velocidad Comunicacion"
+  - title: "Velocidad Comunicación"
     time: "01:56"
-  - title: "Mensaje comuncacion"
+  - title: "Mensaje comunicación"
     time: "02:32"
-  - title: "Funcion available()"
+  - title: "Función available()"
     time: "03:18"
-  - title: "Funcion read()"
+  - title: "Función read()"
     time: "04:04"
-  - title: "Depuracion de codigo"
+  - title: "Depuración de código"
     time: "05:10"
 
 links:
@@ -42,4 +42,4 @@ piezas:
 actualizado: true
 ---
 
-Los fundamentos de controlar un led desde nuestro celular con el sistema no perfecto pero mas clasico mandar un mensaje en forma de un carracter
+Los fundamentos de controlar un led desde nuestro celular con el sistema no perfecto pero mas clásico mandar un mensaje en forma de un carácter

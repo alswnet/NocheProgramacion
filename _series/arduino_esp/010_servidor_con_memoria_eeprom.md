@@ -18,7 +18,7 @@ topics:
     time: "00:48"
   - title: Como funciona la EEPROM ESP
     time: "01:27"
-  - title: Libreria EEPROM
+  - title: Librería EEPROM
     time: "01:44"
   - title: Comenzamos a programar
     time: "02:11"
@@ -34,15 +34,15 @@ topics:
     time: "07:22"
   - title: Despedida
     time: "08:25"
-  - title: Apoyanos
+  - title: Apóyanos
     time: "08:54"
 
 links:
-  - title: Documentacion Libreria EEPROM
+  - title: Documentación Librería EEPROM
     url: "https://www.arduino.cc/en/Reference/EEPROM"
-  - title: Libreria EEPROM ESP32 
+  - title: Librería EEPROM ESP32
     url: "https://github.com/espressif/arduino-esp32/tree/master/libraries/EEPROM"
-  - title: Libreria EEPROM ESP8266
+  - title: Librería EEPROM ESP8266
     url: "https://github.com/esp8266/Arduino/tree/master/libraries/EEPROM"
 
 videos:

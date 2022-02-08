@@ -12,33 +12,33 @@ tags:
   - wifi
 
 topics:
-  - title: Introduccion
+  - title: Introducción
     time: "00:00"
   - title: Que el ESP8266 o ESP32 Decida a cual red conectarse
     time: "00:50"
-  - title: Codigo Multi Hardware ESP8266 y ESP32
+  - title: Código Multi Hardware ESP8266 y ESP32
     time: "01:05"
   - title: Ejemplo Multi Wifi
     time: "01:38"
-  - title: Combinar ambos codigos
+  - title: Combinar ambos códigos
     time: "02:17"
   - title: Poner Multiples redes para el ESP
     time: "02:25"
   - title: Mis recomendaciones para redes con Multi Wifi
     time: "03:00"
-  - title: Codigo Multi Wifi y Multi Hardware
+  - title: Código Multi Wifi y Multi Hardware
     time: "03:31"
   - title: Diferencia entre ESP8266 y ESP32
     time: "03:45"
-  - title: setup del codigo
+  - title: setup del código
     time: "05:18"
   - title: Que es WL_CONNECTED
     time: "06:18"
-  - title: Mostar en Serial Info de IP y Red
+  - title: Mostrar en Serial Info de IP y Red
     time: "07:34"
-  - title: Codigo con Wifi y Sin Wifi
+  - title: Código con Wifi y Sin Wifi
     time: "07:45"
-  - title: Funcion Actualizar Wifi
+  - title: Función Actualizar Wifi
     time: "08:00"
   - title: Probando ESP8266 y ESP32
     time: "08:35"
@@ -46,7 +46,7 @@ topics:
 links:
   - title: "Modo Wifi ESP"
     url: "https://github.com/espressif/arduino-esp32/blob/371f382db7dd36c470bb2669b222adf0a497600d/libraries/WiFi/src/WiFiType.h"
-  - title: "Tiempo maximo MultiWifi"
+  - title: "Tiempo máximo MultiWifi"
     url: "https://github.com/espressif/arduino-esp32/blob/371f382db7dd36c470bb2669b222adf0a497600d/libraries/WiFi/src/WiFiMulti.h"
 
 videos:

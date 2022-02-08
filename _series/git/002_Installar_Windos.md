@@ -11,39 +11,39 @@ tags:
 
 topics:
   - title: Inicio
-    time: '00:00'
+    time: "00:00"
   - title: Git Modo Consola
-    time: '00:26'
+    time: "00:26"
   - title: Descargar Git
-    time: '01:29'
+    time: "01:29"
   - title: Descargar Meld
-    time: '02:02'
-  - title: Instalacion Muy Importante
-    time: '03:00 '
+    time: "02:02"
+  - title: Instalación Muy Importante
+    time: "03:00 "
   - title: Editor para Git
-    time: '03:35'
+    time: "03:35"
   - title: Compatibilidad con Linux
-    time: '05:52'
+    time: "05:52"
   - title: Terminal Tipo Linux
-    time: '06:14'
+    time: "06:14"
   - title: Que es Meld
-    time: '07:56'
+    time: "07:56"
   - title: Instalar Meld
-    time: '08:41'
+    time: "08:41"
   - title: Probando la Terminal con Git
-    time: '09:26 '
+    time: "09:26 "
   - title: PDF de Ayuda
-    time: '09:46'
-  - title: Configuar Git
-    time: '10:16'
+    time: "09:46"
+  - title: Configurar Git
+    time: "10:16"
   - title: Donde se Guardas las Configuraciones de Git
-    time: '11:32'
+    time: "11:32"
   - title: Configurar Meld
-    time: '13:06'
-  - title: Configuar Fuente terminal
-    time: '13:31'
-  - title: Abir Git Bash desde un Folder
-    time: '14:28'
+    time: "13:06"
+  - title: Configurar Fuente terminal
+    time: "13:31"
+  - title: Abrir Git Bash desde un Folder
+    time: "14:28"
 
 links:
   - title: "Descargar Git para Windows"
@@ -54,7 +54,7 @@ links:
     url: "https://training.github.com/"
 
 videos:
-  - title: "Tutorial Git Grafico en Atom"
+  - title: "Tutorial Git Gráfico en Atom"
     url: "https://www.youtube.com/watch?v=bdCKk2GgJ8E"
 
 actualizado: true

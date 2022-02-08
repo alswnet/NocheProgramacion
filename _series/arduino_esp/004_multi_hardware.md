@@ -1,5 +1,5 @@
 ---
-title: "Codigo Multi hardware para Arduino, ESP32 y ESP8266"
+title: "Código Multi hardware para Arduino, ESP32 y ESP8266"
 video_number: 4
 date: 2021-07-07
 video_id: QHdi4vpVWPU
@@ -10,7 +10,7 @@ tags:
   - esp8255
 
 topics:
-  - title: Introduccion
+  - title: Introducción
     time: "00:00"
   - title: Ejemplo MultiWifi
     time: "01:12"
@@ -18,7 +18,7 @@ topics:
     time: "01:57"
   - title: Como saber cual hardware usamos?
     time: "02:07"
-  - title: Ejemplo Básico de Escojer Multi Hardware
+  - title: Ejemplo Básico de Escoger Multi Hardware
     time: "02:25"
   - title: If especial
     time: "03:20"
@@ -28,7 +28,7 @@ topics:
     time: "04:24"
   - title: Ejemplo para ESP32
     time: "04:56"
-  - title: Unir Codigo para ESP8266 y ESP32
+  - title: Unir Código para ESP8266 y ESP32
     time: "05:26"
 
 links:

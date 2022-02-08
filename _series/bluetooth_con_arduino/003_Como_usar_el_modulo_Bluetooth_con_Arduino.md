@@ -10,7 +10,7 @@ tags:
   - android
 
 topics:
-  - title: "Introduccion"
+  - title: "Introducción"
     time: "00:00"
   - title: "Demo"
     time: "00:31"
@@ -18,19 +18,19 @@ topics:
     time: "02:30"
   - title: "Diagrama"
     time: "02:44"
-  - title: "Codigo Base"
+  - title: "Código Base"
     time: "03:10"
-  - title: "Funcion Decodificador Serial"
+  - title: "Función Decodificador Serial"
     time: "04:11"
   - title: "Formato de mensaje"
     time: "04:40"
-  - title: "Funcion readStringUntil"
+  - title: "Función readStringUntil"
     time: "05:43"
-  - title: "Funcion indexOf"
+  - title: "Función indexOf"
     time: "07:32"
-  - title: "Funcion substring"
+  - title: "Función substring"
     time: "09:14"
-  - title: "Funcion toInt"
+  - title: "Función toInt"
     time: "11:48"
   - title: "Guardar Data"
     time: "13:05"
@@ -54,4 +54,4 @@ piezas:
 actualizado: true
 ---
 
-Les comparto la mejor manera de controlar tu Arduino via Bluetooth usando una tecnica avanzada, pero que te ayuda a sacarle el máximo a tu modulo bluetooth.
+Les comparto la mejor manera de controlar tu Arduino via Bluetooth usando una técnica avanzada, pero que te ayuda a sacarle el máximo a tu modulo Bluetooth.

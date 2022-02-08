@@ -12,7 +12,7 @@ tags:
 topics:
   - title: Inicio
     time: "00:00"
-  - title: Bienvenid@s
+  - title: Bienvenidos
     time: "00:46"
   - title: Que es Machine Learning
     time: "01:16"
@@ -41,7 +41,7 @@ links:
     url: "https://ml5js.org/"
   - title: "p5js"
     url: "https://p5js.org/"
-  - title: "Guia Ml5 (ingles)"
+  - title: "Guiá Ml5 (ingles)"
     url: "https://learn.ml5js.org"
   - title: "Tutorial de ML5 (ingles)"
     url: "https://www.youtube.com/watch?v=jmznx0Q1fP0"
@@ -55,6 +55,6 @@ colaboradores:
 actualizado: true
 ---
 
-Machine Learning puede pare dificil y complicado... y lo es pero te enseñaremos paso a poco a como usarlo en esta que es nuestra seria de ML5 con Machine Learning
+Machine Learning puede pare difícil y complicado... y lo es pero te enseñaremos paso a poco a como usarlo en esta que es nuestra seria de ML5 con Machine Learning
 
-Si tienes preguntas o quiere que hablemos de un algoritmo en espeficifo ponlo en los comentarios
+Si tienes preguntas o quiere que hablemos de un algoritmo en especifico ponlo en los comentarios

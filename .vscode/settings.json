@@ -2,10 +2,33 @@
   "[html]": {
     "editor.formatOnSave": false
   },
-  "search.exclude": {
+  "files.exclude": {
+    "**/.git": true,
+    "**/_site": true,
     "**/node_modules": true
   },
-  "cSpell.words": ["alsw", "mqtt", "arduino", "esp", "esp32", "esp8266"],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**_site": true
+  },
+  "cSpell.words": [
+    "alsw",
+    "Apóyanos",
+    "arduino",
+    "Chepe",
+    "dotfile",
+    "EEPROM",
+    "esp",
+    "esp32",
+    "esp8266",
+    "Flujograma",
+    "ingjuan",
+    "jekyll",
+    "mdns",
+    "mqtt",
+    "versionamiento",
+    "versionar"
+  ],
   "python.linting.pylintArgs": [
     "--variable-naming=camelCase",
     "--module-naming-style=camelCase",

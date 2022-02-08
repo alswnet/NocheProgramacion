@@ -24,7 +24,7 @@ topics:
     time: "00:41"
   - title: Comenzamos
     time: "01:24"
-  - title: Librerias a usar
+  - title: Librerías a usar
     time: "01:41"
   - title: Para que sirve mDNS
     time: "02:10"
@@ -32,13 +32,13 @@ topics:
     time: "02:26"
   - title: Atención ESP8266
     time: "03:30"
-  - title: Probando codigo
+  - title: Probando código
     time: "04:34"
-  - title: Mejora al codigo
+  - title: Mejora al código
     time: "05:21"
   - title: Despedida
     time: "09:03"
-  - title: Apoyanos
+  - title: Apóyanos
     time: "09:10"
 
 videos:
@@ -58,4 +58,4 @@ colaboradores:
 actualizado: true
 ---
 
-Deja de usar la IP Dinamica en los proyecto de Web Server con ESP8266 y ESP32 en arduino usa mDNS, asi ya puede usar un nombre mas facil como esp.local en ves de esa fea ip
+Deja de usar la IP Dinámica en los proyecto de Web Server con ESP8266 y ESP32 en arduino usa mDNS, asi ya puede usar un nombre mas fácil como esp.local en ves de esa fea ip

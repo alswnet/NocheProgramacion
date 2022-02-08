@@ -10,31 +10,31 @@ tags:
 
 topics:
   - title: Inicio
-    time: '00:00'
-  - title: Introduccion
-    time: '00:41'
+    time: "00:00"
+  - title: Introducción
+    time: "00:41"
   - title: Crear Folder Proyecto de Git
-    time: '01:51'
+    time: "01:51"
   - title: Git init
-    time: '02:35'
+    time: "02:35"
   - title: Git status
-    time: '04:27'
+    time: "04:27"
   - title: Git add
-    time: '05:30'
+    time: "05:30"
   - title: Git commit
-    time: '07:08'
+    time: "07:08"
   - title: Segundo commit
-    time: '08:29'
+    time: "08:29"
   - title: Git log
-    time: '10:48'
+    time: "10:48"
   - title: Pregunta del Chat
-    time: '12:49'
-  - title: Segir multiples archivos
-    time: '13:34'
+    time: "12:49"
+  - title: Seguir multiples archivos
+    time: "13:34"
   - title: Repaso Flujo Trabajo
-    time: '15:20'
+    time: "15:20"
   - title: Despedida
-    time: '16:12'
+    time: "16:12"
 
 links:
   - title: "PDF de Git"

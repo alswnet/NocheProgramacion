@@ -19,7 +19,7 @@ topics:
     time: "00:00"
   - title: Contenido
     time: "00:07"
-  - title: Para que sirve una IP estatica
+  - title: Para que sirve una IP estática
     time: "00:25"
   - title: Identificar dispositivos en la Red
     time: "01:53"
@@ -27,7 +27,7 @@ topics:
     time: "02:13"
   - title: Identificar la IP en Linux
     time: "02:37"
-  - title: Codigo
+  - title: Código
     time: "03:59"
   - title: Probando IP Estática con ESP32
     time: "06:03"
@@ -35,7 +35,7 @@ topics:
     time: "07:19"
   - title: Despedida
     time: "08:10"
-  - title: Apoyanos
+  - title: Apóyanos
     time: "08:47"
 
 links:
@@ -59,4 +59,4 @@ colaboradores:
 actualizado: true
 ---
 
-Quiere que tu proyecto de Web Server no cambide de IP a cada rato, aprende a como poner una IP Fija dentro de tu red para el ESP32 y ESP8266 de manera muy facil
+Quiere que tu proyecto de Web Server no cambie de IP a cada rato, aprende a como poner una IP Fija dentro de tu red para el ESP32 y ESP8266 de manera muy fácil

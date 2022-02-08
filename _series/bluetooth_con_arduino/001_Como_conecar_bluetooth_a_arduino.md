@@ -10,7 +10,7 @@ tags:
   - android
 
 topics:
-  - title: "Introduccion"
+  - title: "Introducción"
     time: "00:00"
   - title: "Que necesitamos"
     time: "00:51"
@@ -18,9 +18,9 @@ topics:
     time: "02:09"
   - title: "Armar Circuito"
     time: "03:31"
-  - title: "Comunicacion Serial Emulada"
+  - title: "Comunicación Serial Emulada"
     time: "04:52"
-  - title: "Codigo de Prueba"
+  - title: "Código de Prueba"
     time: "06:10"
   - title: "Emparentar Bluetooth"
     time: "08:33"

@@ -10,29 +10,29 @@ tags:
   - github
 
 topics:
-  - title: Introduccion
-    time: '00:00'
+  - title: Introducción
+    time: "00:00"
   - title: Instalar Git en Linux
-    time: '00:57'
+    time: "00:57"
   - title: Instalar Gitg o Gitk
-    time: '01:18'
+    time: "01:18"
   - title: Instalar Meld
-    time: '02:09'
+    time: "02:09"
   - title: PDF Muy importante
-    time: '02:38'
+    time: "02:38"
   - title: Configurar Git
-    time: '03:13'
-  - title: Donde se guardas las configuracion de Git
-    time: '04:25'    
+    time: "03:13"
+  - title: Donde se guardas las configuración de Git
+    time: "04:25"
   - title: Configurar Meld
-    time: '05:05'
+    time: "05:05"
 
 links:
   - title: "PDF de Git"
     url: "https://training.github.com/"
 
 videos:
-  - title: "Tutorial Git Grafico en Atom"
+  - title: "Tutorial Git Gráfico en Atom"
     url: "https://www.youtube.com/watch?v=bdCKk2GgJ8E"
 
 actualizado: true

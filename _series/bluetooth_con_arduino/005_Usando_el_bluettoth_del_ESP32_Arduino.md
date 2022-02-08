@@ -10,15 +10,15 @@ tags:
   - android
 
 topics:
-  - title: "Introduccion"
+  - title: "Introducción"
     time: "00:00"
   - title: "Circuito"
     time: "00:48"
-  - title: "Codigo Base"
+  - title: "Código Base"
     time: "01:27"
-  - title: "Codigo Control Simple"
+  - title: "Código Control Simple"
     time: "03:42"
-  - title: "Codigo Control Avanzado"
+  - title: "Código Control Avanzado"
     time: "04:55"
 
 links:
@@ -31,4 +31,4 @@ piezas:
 actualizado: true
 ---
 
-Aprende a usar el modulo bluetooth que bien dentro del ESP32, usando arduino y con unos ejemplos de lo mas facil a lo mas complicado, para comunicarse con tu celular por medio de bluetooth :)
+Aprende a usar el modulo Bluetooth que bien dentro del ESP32, usando arduino y con unos ejemplos de lo mas fácil a lo mas complicado, para comunicarse con tu celular por medio de Bluetooth :)

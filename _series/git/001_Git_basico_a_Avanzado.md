@@ -8,22 +8,22 @@ tags:
   - github
 
 topics:
-  - title: Introduccion
-    time: '00:00'
-  - title: Concectos Basicos
-    time: '00:59'
+  - title: Introducción
+    time: "00:00"
+  - title: Conceptos Básicos
+    time: "00:59"
   - title: Problemas cuando se desarrolla
-    time: '01:21'
+    time: "01:21"
   - title: Que es Git
-    time: '04:41'
+    time: "04:41"
   - title: Github
-    time: '06:26'
+    time: "06:26"
   - title: Snapshots
-    time: '07:59'
+    time: "07:59"
   - title: flujo de trabajo de Git
-    time: '09:13'
+    time: "09:13"
   - title: Fin
-    time: '10:54'
+    time: "10:54"
 
 links:
   - title: "Git"
@@ -32,7 +32,7 @@ links:
     url: "https://github.com/"
   - title: "Gitlab"
     url: "https://about.gitlab.com/"
-  - title: "Tutorial Git Grafico en Atom"
+  - title: "Tutorial Git Gráfico en Atom"
     url: "https://www.youtube.com/watch?v=bdCKk2GgJ8E"
 
 actualizado: true
