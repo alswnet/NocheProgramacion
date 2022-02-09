@@ -12,15 +12,15 @@ tags:
 topics:
   - title: "Inicio"
     time: "00:00"
-  - title: "Codigo Base Arduino"
+  - title: "Código Base Arduino"
     time: "00:50"
   - title: "Broker MQTT"
     time: "01:29"
-  - title: "Codigo Arduino"
+  - title: "Código Arduino"
     time: "02:05"
   - title: "Visualizando Broker"
     time: "05:30"
-  - title: "Codigo Python"
+  - title: "Código Python"
     time: "06:10"
   - title: "Arduino a Python"
     time: "10:13"
@@ -30,12 +30,12 @@ topics:
 links:
   - title: "Librería MQTT Python"
     url: "https://pypi.org/project/paho-mqtt/"
-  - title: "Libreria MQTT Arduino"
+  - title: "Librería MQTT Arduino"
     url: "https://github.com/256dpi/arduino-mqtt"
 
 videos:
   - title: "Nuevo Video Python MQTT"
-    url: series/mqtt/004_MQTT_en_python
+    url: series/mqtt/004_1_MQTT_en_python
   - title: "Nueva Serie MQTT"
     url: series/mqtt
 
