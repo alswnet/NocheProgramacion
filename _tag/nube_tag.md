@@ -20,13 +20,13 @@ redirect_from:
 			<a href="/tag/shorts">#shorts [16]]</a>
 		</li>
 		<li>
+			<a href="/tag/mqtt">#mqtt [14]]</a>
+		</li>
+		<li>
 			<a href="/tag/git">#git [13]]</a>
 		</li>
 		<li>
 			<a href="/tag/github">#github [13]]</a>
-		</li>
-		<li>
-			<a href="/tag/mqtt">#mqtt [13]]</a>
 		</li>
 		<li>
 			<a href="/tag/python">#python [11]]</a>
@@ -68,7 +68,7 @@ redirect_from:
 			<a href="/tag/vscode">#vscode [7]]</a>
 		</li>
 		<li>
-			<a href="/tag/youtube">#youtube [5]]</a>
+			<a href="/tag/youtube">#youtube [6]]</a>
 		</li>
 		<li>
 			<a href="/tag/programacion">#programacion [4]]</a>
@@ -392,6 +392,12 @@ redirect_from:
 			<a href="/tag/chrome">#chrome [1]]</a>
 		</li>
 		<li>
+			<a href="/tag/esp">#esp [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/domotica">#domotica [1]]</a>
+		</li>
+		<li>
 			<a href="/tag/instagram">#instagram [1]]</a>
 		</li>
 		<li>
@@ -459,6 +465,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/moonlander">#moonlander [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/anuncio">#anuncio [1]]</a>
 		</li>
 	</ul>
 </div>
