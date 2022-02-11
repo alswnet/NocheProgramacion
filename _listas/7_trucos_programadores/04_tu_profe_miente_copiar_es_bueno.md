@@ -1,7 +1,7 @@
 ---
 title: Copia Avanzada con Github
 video_number: 4
-date: 2022-1-14
+date: 2022-2-11
 video_id: 7K041UQXw0c
 tags:
   - github
@@ -26,9 +26,9 @@ colaboradores:
 miembros:
   - title: Maker_Uno
     items:
+      - title: jose Santos
+      - title: Victoria Becerril
       - title: Erebos Ubuntu
-
-para_miembros: true
 
 actualizado: true
 ---
