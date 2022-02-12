@@ -11,7 +11,7 @@ tags:
   - truco
 
 ads:
-  - title: Unete a la comunidad de CodeSociety
+  - title: Únete a la comunidad de CodeSociety
     url: https://www.codesociety.dev/
 
 topics:
@@ -19,7 +19,7 @@ topics:
     time: "00:00"
   - title: 1.- Crea test !YA¡
     time: "00:23"
-  - title: ¿Qué es un tets?
+  - title: ¿Qué es un test?
     time: "00:37"
   - title: ¿Como hacer un test?
     time: "01:14"
@@ -33,7 +33,7 @@ topics:
     time: "09:18"
   - title: Testear con GitHub
     time: "10:40"
-  - title: 2.- Autopiratería
+  - title: 2.- AutoPiratería
     time: "13:03"
   - title: Git Submodules
     time: "14:45"
@@ -120,6 +120,6 @@ colaboradores:
 actualizado: true
 ---
 
-Unos trucos que haran mas placentera, tus noche de desarrollo de tus proyectos de programacion
+Unos trucos que harán mas placentera, tus noche de desarrollo de tus proyectos de programación
 
 Cada truco viene echo con mucho amor, te recomiendo unirte a la comunidad de CodeSociety

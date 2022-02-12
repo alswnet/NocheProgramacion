@@ -1,5 +1,5 @@
 ---
-title: Descarga cualquier documentacion con un comando
+title: Descarga cualquier documentación con un comando
 video_number: 3
 date: 2022-1-14
 video_id: RimjIQtme9U
@@ -7,6 +7,10 @@ tags:
   - linux
   - comando
   - documentacion
+
+ads:
+  - title: "Mira los 7 Trucos Programadores que necesitas aprender Ya"
+    url: https://youtu.be/aaqTqEzkXIo
 
 topics:
   - title: Inicio
@@ -25,6 +29,6 @@ para_miembros: true
 actualizado: true
 ---
 
-Tienes que programar en un lugar sin internet, usa éste truco para que nunca te falte la documentacion de tu proyecto, porque la documentación es tu amiga
+Tienes que programar en un lugar sin internet, usa éste truco para que nunca te falte la documentación de tu proyecto, porque la documentación es tu amiga
 
 wget -r -np -k URL

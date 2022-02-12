@@ -1,5 +1,5 @@
 ---
-title: "Truco: AutoPirateria - Copia tu propio Codigo"
+title: "Truco: AutoPiratería - Copia tu propio Código"
 video_number: 2
 date: 2022-1-14
 video_id: ZO3yQYKUddw
@@ -31,4 +31,4 @@ para_miembros: true
 actualizado: true
 ---
 
-Trabajas en muchos proyectos, creas muchas librerias internas, porqué no usarla en otros proyectos de una manera más fácil usando git Submodules
+Trabajas en muchos proyectos, creas muchas librerías internas, porqué no usarla en otros proyectos de una manera más fácil usando git Submodules
