@@ -53,6 +53,9 @@ redirect_from:
 			<a href="/tag/bluetooth">#bluetooth [8]]</a>
 		</li>
 		<li>
+			<a href="/tag/freecad">#freecad [8]]</a>
+		</li>
+		<li>
 			<a href="/tag/processing">#processing [8]]</a>
 		</li>
 		<li>
@@ -60,9 +63,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/android">#android [7]]</a>
-		</li>
-		<li>
-			<a href="/tag/freecad">#freecad [7]]</a>
 		</li>
 		<li>
 			<a href="/tag/vscode">#vscode [7]]</a>
@@ -267,6 +267,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/csv">#csv [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/llavero">#llavero [1]]</a>
+		</li>
+		<li>
+			<a href="/tag/modelo3d">#modelo3d [1]]</a>
 		</li>
 		<li>
 			<a href="/tag/chatbot">#chatbot [1]]</a>
