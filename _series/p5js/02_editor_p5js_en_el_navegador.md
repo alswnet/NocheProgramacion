@@ -1,0 +1,67 @@
+---
+title: Aprende a Programar dentro de tu navegador Editor p5.js
+video_number: 2
+date: 2022-2-16
+video_id: EOcLFm0NG60
+tags:
+  - p5js
+
+topics:
+  - title: Inicio
+    time: "00:00"
+  - title: Donde programaremos
+    time: "00:06"
+  - title: Editor p5
+    time: "00:54"
+  - title: Como usar p5
+    time: "02:23"
+  - title: Como cambiar el lenguaje de p5
+    time: "02:26"
+  - title: Como crear una cuenta en p5
+    time: "02:42"
+  - title: Interfaz de p5
+    time: "03:20"
+  - title: Auto-refrescable p5
+    time: "03:52"
+  - title: p5 en modo oscuro
+    time: "04:31"
+  - title: Configuraciones para p5
+    time: "04:58"
+  - title: Como abrir proyectos anteriores
+    time: "05:56"
+  - title: Agregar más códigos o archivos
+    time: "07:08"
+  - title: Renombrar archivos
+    time: "07:54"
+  - title: Autoformateado en p5
+    time: "08:03"
+  - title: Información de referencia
+    time: "08:44"
+  - title: Como compartir proyectos de p5
+    time: "08:58"
+  - title: Despedida
+    time: "10:31"
+
+links:
+  - title: Editor p5js
+    url: https://editor.p5js.org/
+  - title: Anuncio de p5js (ingles)
+    url: https://www.youtube.com/watch?v=dtHxDggkBYc
+  - title: Introducción a p5js con la creadora Cassie Tarakajian (ingles)
+    url: https://www.youtube.com/watch?v=x1rJJRVTpAI
+
+colaboradores:
+  - title: "Editor"
+    colaborador: ingjuan
+
+miembros:
+  - title: Maker_Uno
+    items:
+      - title: jose Santos
+      - title: Victoria Becerril
+      - title: Erebos Ubuntu
+
+actualizado: true
+---
+
+Quiere aprende programar pero no saben donde empezar, ni que programa instalar. Te recomiendo usar el editor de código de p5.js que lo puede usar desde tu navegador.

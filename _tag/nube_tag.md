@@ -32,10 +32,10 @@ redirect_from:
 			<a href="/tag/python">#python [11]]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [10]]</a>
+			<a href="/tag/p5js">#p5js [11]]</a>
 		</li>
 		<li>
-			<a href="/tag/p5js">#p5js [10]]</a>
+			<a href="/tag/esp32">#esp32 [10]]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [10]]</a>
