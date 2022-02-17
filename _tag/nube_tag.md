@@ -29,10 +29,10 @@ redirect_from:
 			<a href="/tag/github">#github [13]]</a>
 		</li>
 		<li>
-			<a href="/tag/python">#python [11]]</a>
+			<a href="/tag/p5js">#p5js [12]]</a>
 		</li>
 		<li>
-			<a href="/tag/p5js">#p5js [11]]</a>
+			<a href="/tag/python">#python [11]]</a>
 		</li>
 		<li>
 			<a href="/tag/esp32">#esp32 [10]]</a>
