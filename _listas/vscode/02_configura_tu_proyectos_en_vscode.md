@@ -15,7 +15,7 @@ topics:
     time: "01:41"
   - title: Ejemplo de una configuración
     time: "01:57"
-  - title: Elegir que conjuración usar
+  - title: Elegir que confuguración usar
     time: "02:10"
   - title: Como se ve desde GitHub
     time: "02:57"
@@ -25,12 +25,14 @@ topics:
     time: "05:00"
 
 videos:
-  - title: Seria de Git
+  - title: Serie de Git
     url: series/git
 
 colaboradores:
   - title: "Editor"
     colaborador: ingjuan
+  - title: Supervisora
+  colaborador: coinsoda
 
 miembros:
   - title: Maker_Uno
