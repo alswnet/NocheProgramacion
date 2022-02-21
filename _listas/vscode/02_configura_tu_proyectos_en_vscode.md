@@ -32,7 +32,7 @@ colaboradores:
   - title: "Editor"
     colaborador: ingjuan
   - title: Supervisora
-  colaborador: coinsoda
+    colaborador: coinsoda
 
 miembros:
   - title: Maker_Uno
