@@ -7,6 +7,7 @@ redirect_from:
 miembros:
   - title: Maker_Uno
     items:
+      - title: jose Santos
       - title: Victoria Becerril
       - title: Erebos Ubuntu
 
