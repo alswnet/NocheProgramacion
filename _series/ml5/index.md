@@ -7,4 +7,4 @@ redirect_from:
   - /ml5
 ---
 
-Guia para empezar con Machine Learning desde 0 en JavaScript
+Guiá para empezar con Machine Learning desde 0 en JavaScript

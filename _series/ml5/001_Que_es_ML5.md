@@ -34,7 +34,8 @@ topics:
     time: "10:50"
 
 videos:
-  - title: "Serie de p5.js (pronto)"
+  - title: "Serie de p5.js"
+    url: series/p5js
 
 links:
   - title: "Ml5"
