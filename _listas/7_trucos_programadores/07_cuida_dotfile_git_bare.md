@@ -10,7 +10,7 @@ tags:
   - truco
 
 ads:
-  - title: "Mira los 7 Trucos Programadores que neceistas aprender Ya"
+  - title: "Mira los 7 Trucos Programadores que necesitas aprender Ya"
     url: https://youtu.be/aaqTqEzkXIo
 
 topics:
