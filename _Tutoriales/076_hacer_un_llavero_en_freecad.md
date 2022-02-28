@@ -70,6 +70,8 @@ links:
 colaboradores:
   - title: "Editor"
     colaborador: ingjuan
+  - title: "Supervisora"
+    colaborador: coinsoda
 
 miembros:
   - title: Maker_Uno
@@ -81,4 +83,4 @@ miembros:
 actualizado: true
 ---
 
-Les quiero enseñar a crear llavero personalizados en 3D con un programa que me gusta mucho y es esta ocasión en una forma muy adorable
+Les quiero enseñar a crear llaveros personalizados en 3D con un programa que me gusta mucho y es esta ocasión en una forma muy adorable
