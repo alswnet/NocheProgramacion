@@ -17,10 +17,10 @@ redirect_from:
 			<a href="/tag/iot">#iot [18]</a>
 		</li>
 		<li>
-			<a href="/tag/shorts">#shorts [16]</a>
+			<a href="/tag/p5js">#p5js [16]</a>
 		</li>
 		<li>
-			<a href="/tag/p5js">#p5js [15]</a>
+			<a href="/tag/shorts">#shorts [16]</a>
 		</li>
 		<li>
 			<a href="/tag/mqtt">#mqtt [14]</a>
@@ -162,6 +162,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/robotica">#robotica [2]</a>
+		</li>
+		<li>
+			<a href="/tag/maker">#maker [2]</a>
+		</li>
+		<li>
+			<a href="/tag/youtubers">#youtubers [2]</a>
 		</li>
 		<li>
 			<a href="/tag/apple">#apple [2]</a>
@@ -416,12 +422,6 @@ redirect_from:
 			<a href="/tag/servidor">#servidor [1]</a>
 		</li>
 		<li>
-			<a href="/tag/maker">#maker [1]</a>
-		</li>
-		<li>
-			<a href="/tag/youtubers">#youtubers [1]</a>
-		</li>
-		<li>
 			<a href="/tag/halloween">#halloween [1]</a>
 		</li>
 		<li>
@@ -432,6 +432,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/spotify">#spotify [1]</a>
+		</li>
+		<li>
+			<a href="/tag/amor">#amor [1]</a>
 		</li>
 		<li>
 			<a href="/tag/whatsapp">#whatsapp [1]</a>
