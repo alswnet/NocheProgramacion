@@ -3,6 +3,8 @@ title: "Links de ALSW"
 redirect_from:
   - "/links"
   - "/link"
+
+nopublicidad: true
 ---
 
 ### Ultimo Video
@@ -43,6 +45,7 @@ redirect_from:
             YouTube
         </a>
     </div>
+
 </div>
 
 ### Youtube
