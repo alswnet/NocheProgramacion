@@ -16,21 +16,21 @@ custom_sections:
   - title: Antonio Raptors
     items:
       - title: youtube
-        url: https://www.youtube.com/channel/UCNYbiq6AH8AdYTKMokKaviQ
+        url: https://www.youtube.com/channel/UCNYbiq6AH8AdYTKMokKaviQ?sub_confirmation=1
       - title: instagram
-        url: https://www.instagram.com/antonio_raptors/
+        url: https://www.instagram.com/antonio_raptors
   - title: Kriss Electronics
     items:
       - title: youtube
-        url: https://www.youtube.com/c/KrissElectronics
+        url: https://www.youtube.com/c/KrissElectronics?sub_confirmation=1
       - title: instagram
-        url: https://www.instagram.com/krisselectronics/
+        url: https://www.instagram.com/krisselectronics
       - title: tiktok
         url: https://www.tiktok.com/@krisselectronics
   - title: Mundo Electronica
     items:
       - title: youtube
-        url: https://www.youtube.com/c/MundoElectr%C3%B3nica
+        url: https://www.youtube.com/c/MundoElectr%C3%B3nica?sub_confirmation=1
       - title: instagram
         url: https://www.instagram.com/mundo_electronica_oficial/
       - title: tiktok
@@ -38,7 +38,7 @@ custom_sections:
   - title: Wels
     items:
       - title: youtube
-        url: https://www.youtube.com/c/Wels_Theory
+        url: https://www.youtube.com/c/Wels_Theory?sub_confirmation=1
       - title: instagram
         url: https://www.instagram.com/welstheory/
       - title: tiktok
@@ -46,27 +46,33 @@ custom_sections:
   - title: MicroTutoriales DC
     items:
       - title: youtube
-        url: https://www.youtube.com/c/MicroTutorialesDCareaga
+        url: https://www.youtube.com/c/MicroTutorialesDCareaga?sub_confirmation=1
       - title: instagram
         url: https://www.instagram.com/micro.tutoriales
   - title: Mecatrónica MADE
     items:
       - title: youtube
-        url: https://www.youtube.com/channel/UCxg4TXCpaO0D-uDt0ksRbiA
+        url: https://www.youtube.com/channel/UCxg4TXCpaO0D-uDt0ksRbiA?sub_confirmation=1
       - title: instagram
         url: https://www.instagram.com/mecatronica.made
   - title: Curso de Robotica
     items:
       - title: youtube
-        url: https://www.youtube.com/c/etronikltda
+        url: https://www.youtube.com/c/etronikltda?sub_confirmation=1
       - title: instagram
         url: https://www.instagram.com/cursoderobotica/
   - title: ElectroMatic
     items:
       - title: youtube
-        url: https://www.youtube.com/channel/UCsdjjZK3OULlfIpTF7d9Vng
+        url: https://www.youtube.com/channel/UCsdjjZK3OULlfIpTF7d9Vng?sub_confirmation=1
       - title: instagram
         url: https://www.instagram.com/electro.matic/
+  - title: Aldelta Technologies
+    items:
+      - title: youtube
+        url: https://www.youtube.com/c/aldeltatechnologies?sub_confirmation=1
+      - title: facebook
+        url: https://www.facebook.com/aldeltalatam
   - title: ALSW
     items:
       - title: youtube
