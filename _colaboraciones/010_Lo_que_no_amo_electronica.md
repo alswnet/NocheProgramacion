@@ -73,6 +73,14 @@ custom_sections:
         url: https://www.youtube.com/c/aldeltatechnologies?sub_confirmation=1
       - title: facebook
         url: https://www.facebook.com/aldeltalatam
+  - title: dsp8bit
+    items:
+      - title: youtube
+        url: https://www.youtube.com/c/dsp8bit?sub_confirmation=1
+      - title: instagram
+        url: https://www.instagram.com/dsp8bit/
+      - title: twitter
+        url: https://twitter.com/dsp8bit
   - title: ALSW
     items:
       - title: youtube
