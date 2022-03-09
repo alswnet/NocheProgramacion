@@ -17,7 +17,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [18]</a>
 		</li>
 		<li>
-			<a href="/tag/p5js">#p5js [16]</a>
+			<a href="/tag/p5js">#p5js [17]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [16]</a>
@@ -345,6 +345,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/ndi">#ndi [1]</a>
+		</li>
+		<li>
+			<a href="/tag/consola">#consola [1]</a>
 		</li>
 		<li>
 			<a href="/tag/venv">#venv [1]</a>
