@@ -7,6 +7,12 @@ tags:
   - linux
 
 actualizado: true
+
+links:
+  - title: Evento ¡Fin de Semana Mecatrónico 2.0!
+    url: https://www.youtube.com/post/UgkxmfqbDLcBkhdHHzKKS_qpLULVo5CVWDLn
+  - title: Canal de youtube  Microsoft Learn Student Ambassadors Latam
+    url: https://www.youtube.com/channel/UCmbg8KGKWJpiyn2OHyq2iBg
 ---
 
 Veamos unos trucos que te ayudaran con la terminal de linux
