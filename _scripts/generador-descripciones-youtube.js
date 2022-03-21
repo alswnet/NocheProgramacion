@@ -1,5 +1,5 @@
 /*
-Generador de Descripcion para video de Youtube 
+Generador de Descripción para video de YouTube 
 Para sistema de NocheProgramacion
 */
 
@@ -60,6 +60,7 @@ async function CrearDescripciones(videos) {
   Cantidad.Costun = 0;
   Cantidad.Ads = 0;
   Cantidad.Video = 0;
+  Cantidad.playlist = 0;
   Cantidad.NuevoSistema = 0;
 
   await ReiniciarFolder("./descripciones");
@@ -76,13 +77,13 @@ async function CrearDescripciones(videos) {
       Cantidad.ParaMiembros++;
       descripcion += `🦾 Avances Exclusivo para Miembros del Canal ChepeCarlos 🦾
 
-👉 Quieres verlo, unete aqui: https://www.youtube.com/alswnet/join 👈
+👉 Quieres verlo, únete aquí: https://www.youtube.com/alswnet/join 👈
 
 Este Video sera publico y accesible por toda la comunidad en el futuro.
 
 🔭 Mira todos los video disponible para Miembros en: https://nocheprogramacion.com/miembros`;
     } else {
-      // Descripcion
+      // Descripción
       let content = data.__content.trim();
       descripcion += `${content}\n`;
 
@@ -111,13 +112,13 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       if (data.remake) {
         Cantidad.Remake++;
         url = ObtenerURLYoutube(data.remake);
-        descripcion += `Existe una verción NUEVA 👀 o actualizada de este video: ${url}\n`;
+        descripcion += `Existe una versión NUEVA 👀 o actualización de este video: ${url}\n`;
       }
 
-      // TODO: Mejor Algorititmo
-      // Siquiente Video / Playlist
-      let SiquienteVideo;
-      let NombreSiquienteVideo;
+      // TODO: Mejor Algoritmo
+      // Siguiente Video / Playlist
+      let siguienteVideo;
+      let NombreSiguienteVideo;
       if (i !== videos.length - 1) {
         if (
           pageURL.substring(0, pageURL.lastIndexOf("/")) ===
@@ -126,24 +127,57 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
             videos[i + 1].pageURL.lastIndexOf("/")
           )
         ) {
-          SiquienteVideo = videos[i + 1].data.video_id;
-          NombreSiquienteVideo = videos[i + 1].data.title;
+          siguienteVideo = videos[i + 1].data.video_id;
+          NombreSiguienteVideo = videos[i + 1].data.title;
         } else {
-          SiquienteVideo = false;
+          siguienteVideo = false;
         }
       } else {
-        SiquienteVideo = false;
+        siguienteVideo = false;
       }
 
-      // Siquiente video
-      if (SiquienteVideo) {
-        descripcion += `\n👉 Siguiente Video "${NombreSiquienteVideo}" : https://youtu.be/${SiquienteVideo} 👈\n`;
+      let anteriorVideo;
+      let tituloAnteriorVideo;
+      if (i !== 0) {
+        if (
+          pageURL.substring(0, pageURL.lastIndexOf("/")) ===
+          videos[i - 1].pageURL.substring(
+            0,
+            videos[i - 1].pageURL.lastIndexOf("/")
+          )
+        ) {
+          anteriorVideo = videos[i - 1].data.video_id;
+          tituloAnteriorVideo = videos[i - 1].data.title;
+        } else {
+          previousID = false;
+        }
+      } else {
+        previousID = false;
       }
 
-      // Serie
-      if (playlist) {
-        let NombrePlaylist = videos[i].playlistName;
-        descripcion += `\n🎥 Playlist(${NombrePlaylist}): https://www.youtube.com/playlist?list=${playlist}\n`;
+      if (playlist && (siguienteVideo || anteriorVideo)) {
+        Cantidad.playlist++;
+        descripcion += "\n";
+
+        // Anterior video
+        if (anteriorVideo && playlist) {
+          descripcion += `👈 Anterior Video "${tituloAnteriorVideo}": https://youtu.be/${anteriorVideo}?list=${playlist}\n`;
+        } else if (anteriorVideo) {
+          descripcion += `👈 Anterior Video "${tituloAnteriorVideo}": https://youtu.be/${anteriorVideo}\n`;
+        }
+
+        // Siguiente video
+        if (siguienteVideo && playlist) {
+          descripcion += `👉 Siguiente Video "${NombreSiguienteVideo}" : https://youtu.be/${siguienteVideo}?list=${playlist}\n`;
+        } else if (siguienteVideo) {
+          descripcion += `👉 Siguiente Video "${NombreSiguienteVideo}" : https://youtu.be/${siguienteVideo}\n`;
+        }
+
+        // Serie
+        if (playlist) {
+          let NombrePlaylist = videos[i].playlistName;
+          descripcion += `🎥 Playlist(${NombrePlaylist}): https://www.youtube.com/playlist?list=${playlist}\n`;
+        }
       }
 
       // Videos
@@ -165,7 +199,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         }
       }
 
-      // Codigo
+      // Código
       if (data.repository || data.web_editor) {
         Cantidad.Codigo++;
         descripcion += `\n💻 Código: https://nocheprogramacion.com/${pageURL}.html\n`;
@@ -176,7 +210,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       // Links
       if (data.links) {
         Cantidad.Links++;
-        descripcion += "\nLink referencie:\n";
+        descripcion += "\nLink referencia:\n";
         for (let i = 0; i < data.links.length; ++i) {
           const url = data.links[i].url;
           if (/https?:\/\/.*/.test(url)) {
@@ -258,11 +292,12 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       // Miembros
       if (data.miembros) {
         Cantidad.Miembros++;
-        descripcion += "\n🦾 Creado gracias al Apóyo de:\n";
-        if (data.miembros[0].title) {
-          let RandoMiembros = data.miembros[0];
-          let ListaMiembros = RandoMiembros.items;
-          descripcion += `${RandoMiembros.title}: `;
+        descripcion += "\n🦾 Creado gracias al Apoyo de:\n";
+        for (let i = 0; i < data.miembros.length; ++i) {
+          let nivelActual = data.miembros[i];
+          descripcion += `${nivelActual.title}: `;
+          let ListaMiembros = nivelActual.items;
+
           for (let i = 0; i < ListaMiembros.length; i++) {
             descripcion += `${ListaMiembros[i].title}`;
             if (i < ListaMiembros.length - 1) {
@@ -271,12 +306,17 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
               descripcion += `.`;
             }
           }
+          descripcion += `\n`;
         }
-        descripcion += `\n🔭 Agrega tu nombre, Unete tu tambien https://www.youtube.com/alswnet/join 🔭`;
+
+        descripcion += `\n🔭 Agrega tu nombre, Únete tu también https://www.youtube.com/alswnet/join 🔭`;
+        descripcion += `\n👊 Avances Exclusivo para Miembros: https://nocheprogramacion.com/miembros 👊`;
       } else {
-        descripcion += `\n🔭 Quieres apoyar, comviertete en Miembro https://www.youtube.com/alswnet/join 🔭`;
+        descripcion += `\n👊 Avances Exclusivo para Miembros: https://nocheprogramacion.com/miembros 👊`;
+        descripcion += `\n🔭 Quieres apoyar, conviértete en Miembro: https://www.youtube.com/alswnet/join 🔭`;
       }
     }
+
     // if (data.tags) {
     //   descripcion += `\n\n#ALSW`;
     //   for (let i = 0; i < data.tags.length; ++i) {
@@ -310,13 +350,14 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
   console.log(`Cantidad total videos: ${CantidadVideos}`);
   ImprimirData("Miembros", Cantidad.Miembros, CantidadVideos);
   ImprimirData("Para Miembros", Cantidad.ParaMiembros, CantidadVideos);
+  ImprimirData("Playlist", Cantidad.playlist, CantidadVideos);
   ImprimirData("Colaboradores", Cantidad.Colaboradores, CantidadVideos);
   ImprimirData("Links", Cantidad.Links, CantidadVideos);
   ImprimirData("Indices", Cantidad.Indice, CantidadVideos);
   ImprimirData("Piezas", Cantidad.Piezas, CantidadVideos);
   ImprimirData("Extras", Cantidad.Costun, CantidadVideos);
   ImprimirData("Videos", Cantidad.Video, CantidadVideos);
-  ImprimirData("Codigo", Cantidad.Codigo, CantidadVideos);
+  ImprimirData("Código", Cantidad.Codigo, CantidadVideos);
   ImprimirData("Remake", Cantidad.Remake, CantidadVideos);
   ImprimirData("Ads", Cantidad.Ads, CantidadVideos);
   ImprimirData("SeoMostar", Cantidad.SeoMostar, CantidadVideos);
@@ -327,7 +368,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
 
 (() => {
   console.log(
-    "💫 Generador de descripcion de NocheProgramacion para Youtube 💫"
+    "💫 Generador de descripcion de NocheProgramacion para YouTube 💫"
   );
   CrearDescripciones(ObtenerDataVideo());
 })();
