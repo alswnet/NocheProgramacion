@@ -30,9 +30,9 @@ topics:
     time: "03:54"
   - title: Comando l. solo ocultos
     time: "04:15"
-  - title: Comando li innora gitinore
+  - title: Comando li usar gitignored
     time: "04:23"
-  - title: Comando lg mostar esta de git
+  - title: Comando lg mostear esta de git
     time: "04:54"
   - title: comando lp octal
     time: "05:34"

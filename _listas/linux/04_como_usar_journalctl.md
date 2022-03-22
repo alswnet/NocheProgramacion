@@ -53,12 +53,12 @@ topics:
     time: "15:35"
 
 links:
-  - title: "Pagina Documentacion journalctl"
+  - title: "Pagina Documentación journalctl"
     url: "https://man7.org/linux/man-pages//man1/journalctl.1.html"
 
 videos:
   - title: "Como usar Systemctl"
-    url: "series/linux/03_como_usar_systemctl"
+    url: "listas/linux/03_como_usar_systemctl"
 
 colaboradores:
   - title: "Editor"

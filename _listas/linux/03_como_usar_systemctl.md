@@ -11,7 +11,7 @@ tags:
   - comandos
 
 topics:
-  - title: Introduccion
+  - title: Introducción
     time: "00:00"
   - title: Que es systemctl
     time: "01:56"
@@ -23,7 +23,7 @@ topics:
     time: "04:12"
   - title: AutoCompletado
     time: "05:15"
-  - title: Comando Pararar systemctl stop
+  - title: Comando Parara systemctl stop
     time: "05:39"
   - title: Comando Encender systemctl start
     time: "06:05"
@@ -43,14 +43,14 @@ topics:
     time: "11:11"
 
 links:
-  - title: "Pagina de documentacion de systemctl"
+  - title: "Pagina de documentación de systemctl"
     url: "https://man7.org/linux/man-pages//man1/systemctl.1.html"
 
 videos:
-  - title: "Comandos de Basico de Linux"
-    url: series/linux/01_comandos_basicos_linux
+  - title: "Comandos de Básico de Linux"
+    url: listas/linux/01_comandos_basicos_linux
 
 actualizado: true
 ---
 
-Aprende a administrar los servidores en linux usando la heramienta systemctl que te permite controlar el sistema y sus servicos: encender, parando, habilitando y muchas cosas mas
+Aprende a administrar los servidores en linux usando la herramienta systemctl que te permite controlar el sistema y sus servicios: encender, parando, habilitando y muchas cosas mas

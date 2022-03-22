@@ -1,5 +1,5 @@
 ---
-title: "Comandos Basicos de Linux"
+title: "Comandos Básicos de Linux"
 video_number: 1
 date: 2021-02-18
 video_id: Ksx3Yr6u86o
@@ -9,7 +9,7 @@ tags:
   - comandos
 
 topics:
-  - title: Introduccion
+  - title: Introducción
     time: "00:00"
   - title: "Que es Terminal"
     time: "00:32"
@@ -17,7 +17,7 @@ topics:
     time: "01:29"
   - title: "Terminal Quake"
     time: "01:58"
-  - title: "Git Bash para Windos"
+  - title: "Git Bash para Windows"
     time: "02:05"
   - title: "Prompt terminal"
     time: "03:04"
@@ -61,7 +61,7 @@ links:
     url: "http://guake-project.org/"
 
 videos:
-  - title: "Git Bash para Windos"
+  - title: "Git Bash para Windows"
     url: "https://www.youtube.com/watch?v=jChUn5oaSW8"
   - title: "exa el nuevo ls"
     url: "https://youtu.be/lsozcDjzkuY"
