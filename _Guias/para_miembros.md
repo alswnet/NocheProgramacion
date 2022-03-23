@@ -5,11 +5,14 @@ redirect_from:
   - "/miembros"
 
 miembros:
-  - title: Maker_Uno
+  - title: Maker ESP
     items:
+      - title: Ramonet Pascualet
+  - title: Maker Uno
+    items:
+      - title: jose Santos
       - title: Manuel Alegría
       - title: Lolailo Aviles Arroyo
-      - title: jose Santos
       - title: Victoria Becerril
       - title: Erebos Ubuntu
 
