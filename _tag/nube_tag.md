@@ -11,7 +11,7 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [68]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [24]</a>
+			<a href="/tag/linux">#linux [26]</a>
 		</li>
 		<li>
 			<a href="/tag/p5js">#p5js [20]</a>
@@ -113,6 +113,12 @@ redirect_from:
 			<a href="/tag/java">#java [3]</a>
 		</li>
 		<li>
+			<a href="/tag/terminal">#terminal [3]</a>
+		</li>
+		<li>
+			<a href="/tag/comandos">#comandos [3]</a>
+		</li>
+		<li>
 			<a href="/tag/ide">#ide [3]</a>
 		</li>
 		<li>
@@ -153,12 +159,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/machinelearning">#machinelearning [2]</a>
-		</li>
-		<li>
-			<a href="/tag/terminal">#terminal [2]</a>
-		</li>
-		<li>
-			<a href="/tag/comandos">#comandos [2]</a>
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]</a>
@@ -282,6 +282,18 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/modelo3d">#modelo3d [1]</a>
+		</li>
+		<li>
+			<a href="/tag/kde">#kde [1]</a>
+		</li>
+		<li>
+			<a href="/tag/software">#software [1]</a>
+		</li>
+		<li>
+			<a href="/tag/compras">#compras [1]</a>
+		</li>
+		<li>
+			<a href="/tag/heramientas">#heramientas [1]</a>
 		</li>
 		<li>
 			<a href="/tag/chatbot">#chatbot [1]</a>
