@@ -3,15 +3,15 @@
 // Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
 
 var mqtt = require("mqtt");
-// var client = mqtt.connect("mqtt://test.mosquitto.org");
+var client = mqtt.connect("mqtt://test.mosquitto.org");
 
-var Opciones = {
-  host: "localhost",
-  port: 1883,
-  protocol: "mqtt",
-  clientId: "YoCodigo1",
-};
-var client = mqtt.connect(Opciones);
+// var Opciones = {
+//   host: "localhost",
+//   port: 1883,
+//   protocol: "mqtt",
+//   clientId: "YoCodigo1",
+// };
+// var client = mqtt.connect(Opciones);
 
 function EventoConectar() {
   client.subscribe("ALSW/#", function (err) {
