@@ -383,13 +383,13 @@ redirect_from:
 			<a href="/tag/bare">#bare [1]</a>
 		</li>
 		<li>
+			<a href="/tag/ortigrafia">#ortigrafia [1]</a>
+		</li>
+		<li>
 			<a href="/tag/servidores">#servidores [1]</a>
 		</li>
 		<li>
 			<a href="/tag/admin">#admin [1]</a>
-		</li>
-		<li>
-			<a href="/tag/ortigrafia">#ortigrafia [1]</a>
 		</li>
 		<li>
 			<a href="/tag/code">#code [1]</a>

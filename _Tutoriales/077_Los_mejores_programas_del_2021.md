@@ -89,7 +89,7 @@ videos:
   - title: Mira los mejores Herramientas del 2021
     url: Tutoriales/078_Las_mejores_herramientas_del_2021
   - title: Serie de VsCode
-    url: listas/vscode
+    url: listas/02_vscode
   - title: Serie de p5.js
     url: series/p5js
 
@@ -106,8 +106,17 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
+  - title: Maker ESP
+    items:
+      - title: Ramonet Pascualet
+  - title: Maker Uno
+    items:
+      - title: jose Santos
+      - title: Manuel Alegría
+      - title: Lolailo Aviles Arroyo
+      - title: Victoria Becerril
+      - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 
