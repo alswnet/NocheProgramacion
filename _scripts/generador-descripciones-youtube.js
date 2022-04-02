@@ -297,7 +297,6 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
           let nivelActual = data.miembros[i];
           descripcion += `${nivelActual.title}: `;
           let ListaMiembros = nivelActual.items;
-
           for (let i = 0; i < ListaMiembros.length; i++) {
             descripcion += `${ListaMiembros[i].title}`;
             if (i < ListaMiembros.length - 1) {

@@ -31,7 +31,7 @@ function CrearNubeTags(ListaTags) {
 
   ListaTags.forEach((tag) => {
     descripcion += `\t\t<li>\n`;
-    descripcion += `\t\t\t<a href="/tag/${tag.nombre}">#${tag.nombre} [${tag.cantidad}]]</a>\n`;
+    descripcion += `\t\t\t<a href="/tag/${tag.nombre}">#${tag.nombre} [${tag.cantidad}]</a>\n`;
     descripcion += `\t\t</li>\n`;
   });
 
