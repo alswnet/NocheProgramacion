@@ -32,7 +32,7 @@
     "yt-generar-descripcion": "node ./_scripts/generador-descripciones-youtube.js",
     "fb-generar-descripcion": "node ./_scripts/generador-descripciones-facebook.js",
     "yt-actualizar-descripcion": "tooltube -d -r --folder actualizado --canal alswnet",
-    "tags-generate": "node ./_scripts/generador-tags.js",
+    "tags-generate": "node ./_scripts/generador-tags.js && git add _tag",
     "generador-noche-programacion": "bundle exec jekyll serve"
   },
   "repository": {
