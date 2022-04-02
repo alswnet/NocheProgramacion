@@ -59,7 +59,7 @@ links:
 
 videos:
   - title: Trucos para Terminal de linux
-    url: listas/linux/11_Trucos_terminal_Linux
+    url: listas/03_linux/11_Trucos_terminal_Linux
 
 colaboradores:
   - title: "Editor"

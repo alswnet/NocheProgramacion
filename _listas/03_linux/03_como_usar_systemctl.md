@@ -48,7 +48,7 @@ links:
 
 videos:
   - title: "Comandos de Básico de Linux"
-    url: listas/linux/01_comandos_basicos_linux
+    url: listas/03_linux/01_comandos_basicos_linux
 
 actualizado: true
 ---

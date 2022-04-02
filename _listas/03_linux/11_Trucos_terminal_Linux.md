@@ -52,9 +52,9 @@ topics:
 
 videos:
   - title: Mi Terminal Favorita Guake
-    url: listas/linux/10_mi_terminal
+    url: listas/03_linux/10_mi_terminal
   - title: como usar Journalctl
-    url: listas/linux/04_como_usar_journalctl
+    url: listas/03_linux/04_como_usar_journalctl
 
 colaboradores:
   - title: "Editor"

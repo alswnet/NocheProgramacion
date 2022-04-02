@@ -58,7 +58,7 @@ links:
 
 videos:
   - title: "Como usar Systemctl"
-    url: "listas/linux/03_como_usar_systemctl"
+    url: "listas/03_linux/03_como_usar_systemctl"
 
 colaboradores:
   - title: "Editor"
