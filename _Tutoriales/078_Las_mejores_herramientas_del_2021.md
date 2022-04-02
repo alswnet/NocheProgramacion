@@ -1,6 +1,6 @@
 ---
-title: las mejores herramientas del 2001
-video_number: 76
+title: Esto cambio mi vida - Lo mejor Gadget del 2021
+video_number: 78
 date: 2022-03-22
 video_id: RkGrGLzCyMA
 tags:
@@ -61,7 +61,7 @@ links:
     url: https://www.amazon.com/dp/B06VXJMMQ3
   - title: Base de Celular Mano
     url: https://www.amazon.com/dp/B08NYLSB1H
-  - tile: Teclado de Una Mano
+  - title: Teclado de Una Mano
     url: https://www.amazon.com/gp/product/B07Q2MDF57
   - title: KeyCups Remarcables
     url: https://www.amazon.com/gp/product/B01M023NFK
