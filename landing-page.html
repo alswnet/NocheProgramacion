@@ -3,54 +3,16 @@ layout: base
 permalink: /
 ---
 {% comment %} Get the next stream. {% endcomment %}
+
 {% include 1-tools/sort-videos.html videos=site.Grabaciones future=true reverse=true %}
 {% assign nextStream = out_sortedVideos | where_exp: 'stream', 'stream.date >= site.time' | first %}
 
 {% assign tag_post = '' | split: '' %}
 
-{% include 1-tools/sort-videos.html videos=site.shorts %}
+{% include 1-tools/all-tutorial.html %}
+
+{% include 1-tools/sort-videos.html videos=all_Videos sortByDate=true reverse=true %}
 {% assign TodosVideos = out_sortedVideos %}
-
-{% include 1-tools/sort-videos.html videos=site.listas %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.series %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.ponencias %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.colaboraciones %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.Tutoriales %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.invitados %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-{% include 1-tools/sort-videos.html videos=site.extras %}
-{% for video in out_sortedVideos %}
-    {% assign TodosVideos = TodosVideos | push: video %}
-{% endfor %}
-
-<!-- TODO: Error se agrega doble algunos videos -->
-
-{% include 1-tools/sort-videos.html videos=TodosVideos sortByDate=true reverse=true %}
-{% assign TodosVideos = out_sortedVideos %}
-
 
 {% comment %} Use the latest coding challenge if a stream hasn't been scheduled yet. {% endcomment %}
 {% if nextStream == null %}
