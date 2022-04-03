@@ -6,7 +6,7 @@ video_id: STnZT9YnyZI
 
 links:
   - title: "Video Editaro de Chat Youtube y Python"
-    url: Tutoriales/068_Youtube_Chat_y_python
+    url: tutoriales/068_Youtube_Chat_y_python
 
 actualizado: true
 ---

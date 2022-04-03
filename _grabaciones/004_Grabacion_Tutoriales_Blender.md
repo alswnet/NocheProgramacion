@@ -1,5 +1,5 @@
 ---
-title: "Grabacion de Tutoriales: Curso Blender"
+title: "Grabacion de tutoriales: Curso Blender"
 video_number: 4
 date: 2020-11-24T20:00:00-06:00
 video_id: UfCHv3RU9_A
