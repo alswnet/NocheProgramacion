@@ -29,14 +29,23 @@ layout: base
         
 </div>
 
-<div>
-    <h3>Lista video Colaborados</h3>
-    <p>
-        Muy pronto (En Desarrollo)
-    </p>
-</div>
-
-<h3>Biografia</h3>
+<h3>Biografiá</h3>
 <div class="description">{{ content }}</div>
+
+{% include 1-tools/all-tutorial.html %}
+{% assign TodosVideos = all_Videos %}
+
+{% assign video_colaborador = '' | split: ''  %}
+{% for video in all_Videos %}
+    {% for miembros in video.colaboradores %}
+        {% if miembros.colaborador == page.usuario %}
+            {% assign video_colaborador = video_colaborador | push: video %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+<h3>Lista video Colaborados #{{ video_colaborador.size }}°</h3>
+{% include 1-tools/sort-videos.html videos=video_colaborador sortByDate=true reverse=true %}
+{% include 3-modules/video-list.html sortedVideos=out_sortedVideos nopublicidad=true %}
 
 Pagina de otro colaboradores <a href="{{ '/colaboradores' | relative_url }}">Link</a>
