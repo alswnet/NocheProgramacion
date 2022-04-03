@@ -4,7 +4,7 @@ const yaml = require("yaml-front-matter");
 
 function ObtenerDataVideo() {
   const Directorios = [
-    "_Tutoriales",
+    "_tutoriales",
     "_Cursos",
     "_series",
     "_listas",

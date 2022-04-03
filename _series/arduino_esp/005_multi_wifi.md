@@ -53,7 +53,7 @@ videos:
   - title: "Multi Hardware para ESP8266 y ESP32"
     url: series/arduino_esp/004_multi_hardware
   - title: "Problemas comunes con el ESP32 y ESP8266"
-    url: Tutoriales/047_Solventar_Problemas_ESP8266_y_ESP32
+    url: tutoriales/047_Solventar_Problemas_ESP8266_y_ESP32
 
 actualizado: true
 ---

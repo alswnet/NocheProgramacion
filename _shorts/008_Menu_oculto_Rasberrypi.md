@@ -15,7 +15,7 @@ links:
 
 videos:
   - title: "Que es mDSN"
-    url: Tutoriales/072_Que_es_mDNS
+    url: tutoriales/072_Que_es_mDNS
 
 piezas:
   - title: "Raspberry Pi"

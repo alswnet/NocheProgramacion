@@ -87,7 +87,7 @@ links:
 
 videos:
   - title: Mira los mejores Herramientas del 2021
-    url: Tutoriales/078_Las_mejores_herramientas_del_2021
+    url: tutoriales/078_Las_mejores_herramientas_del_2021
   - title: Serie de VsCode
     url: listas/02_vscode
   - title: Serie de p5.js

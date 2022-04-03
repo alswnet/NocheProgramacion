@@ -25,7 +25,7 @@ Te recomendamos seguir los siquientes pasos:
 Para poder agregar tu código es necesario:
 
 1. Una cuenta de Github es gratis, es como una red social pero de código.
-2. Un lugar donde este subido tu código puede ser también en un repositorio de Github [(Como usar Github con Atom)]({{ site.baseurl }}{% link _Tutoriales/056_Como_Usar_Git_y_Github_En_Windows_Facil.md %})
+2. Un lugar donde este subido tu código puede ser también en un repositorio de Github [(Como usar Github con Atom)]({{ site.baseurl }}{% link _tutoriales/056_Como_Usar_Git_y_Github_En_Windows_Facil.md %})
 3. (Opcional) Una demostración del proyecto puede ser Video/Gif/OnLine/Articulo/Foto/post
 
 ## 1. Localizar

@@ -46,7 +46,7 @@ videos:
   - title: "Curso de Git"
     url: "series/git"
   - title: "Plugins para Atom"
-    url: "Tutoriales/053_Los_5_Mejores_Plugins_para_Atom_Editor"
+    url: "tutoriales/053_Los_5_Mejores_Plugins_para_Atom_Editor"
 
 actualizado: true
 ---

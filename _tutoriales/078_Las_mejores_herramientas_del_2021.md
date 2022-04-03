@@ -94,7 +94,7 @@ links:
 
 videos:
   - title: Mira los mejores Software del 2021
-    url: Tutoriales/077_Los_mejores_programas_del_2021
+    url: tutoriales/077_Los_mejores_programas_del_2021
 
 custom_sections:
   - title: Andres Niño - Curso de Robotica

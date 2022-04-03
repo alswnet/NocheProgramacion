@@ -39,7 +39,7 @@ layout: base
   {% endif %}
 {% endfor %}
 
-{% for post in site.Tutoriales %}
+{% for post in site.tutoriales %}
   {% if post.tags contains page.tag-name %}
     {% assign tag_post = tag_post | push: post %}
   {% endif %}

@@ -8,7 +8,7 @@
 # --- Site Settings ---
 
 # Titulo de pagina Web
-title: Noche Programacion // ALSW
+title: NocheProgramacion // ChepeCarlos
 
 # Location from where the site will be served (repository name for GitHub Pages).
 baseurl: /
@@ -141,7 +141,7 @@ collections:
   Cursos: { output: true }
   series: { output: true }
   listas: { output: true }
-  Tutoriales: { output: true }
+  tutoriales: { output: true }
   Guias: { output: true }
   Presentaciones: { output: true }
   mas: { output: true }
@@ -185,7 +185,7 @@ defaults:
       video_type_short: "lista"
       can_contribute: true
 
-  - scope: { path: "", type: "Tutoriales" }
+  - scope: { path: "", type: "tutoriales" }
     values:
       layout: "video"
       video_type: "tutoriales"

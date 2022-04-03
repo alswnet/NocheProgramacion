@@ -9,7 +9,7 @@ redirect_from:
 sections:
   - title: "OS"
   - title: "Programacion"
-  - title: "Tutoriales"
+  - title: "tutoriales"
   - title: "Navegador"
   - title: "Edicion Imagenes"
   - title: "Edicion Audio"
@@ -46,7 +46,7 @@ faq:
     answer: "El Entorno que uso por defecto para la mayoria de proyecto de programacion"
     links:
       - title: "Los mejores 5 Plugin para Atom"
-        url: Tutoriales/053_Los_5_Mejores_Plugins_para_Atom_Editor
+        url: tutoriales/053_Los_5_Mejores_Plugins_para_Atom_Editor
       - title: "Pagina Atom IDE"
         url: "https://atom.io/"
       - title: "Plugins atom-beautify"
@@ -98,7 +98,7 @@ faq:
       - title: "Serie Git"
         url: git
       - title: "Tutorial de  Git y Github en Windos"
-        url: Tutoriales/056_Como_Usar_Git_y_Github_En_Windows_Facil
+        url: tutoriales/056_Como_Usar_Git_y_Github_En_Windows_Facil
       - title: "Pagina Git"
         url: "https://git-scm.com/"
       - title: "Pagina GitHub"
@@ -162,21 +162,21 @@ faq:
       - title: "Pagina de Discord"
         url: "https://discord.com/"
   - question: "Gromit-MPX"
-    section: "Tutoriales"
+    section: "tutoriales"
     answer: "Dibuja en la pantalla"
     links:
       - title: "Pagina Gromit-mpx"
         url: "https://github.com/bk138/gromit-mpx"
   - question: "Shutter"
-    section: "Tutoriales"
+    section: "tutoriales"
     answer: "Programa de captura de compantalla o ventanas"
     links:
       - title: "Pagina de Shutter"
         url: "https://shutter-project.org/"
   - question: "Imagenary Teleprompter"
-    section: "Tutoriales"
+    section: "tutoriales"
   - question: "Scrcpy"
-    section: "Tutoriales"
+    section: "tutoriales"
     answer: "Permite controlar y hacer espejo de tu celular Android en tu pc"
     links:
       - title: "Tutorial de Scrcpy"
@@ -184,7 +184,7 @@ faq:
       - title: "Pagina Scrcpy"
         url: "https://github.com/Genymobile/scrcpy"
   - question: "Barrier"
-    section: "Tutoriales"
+    section: "tutoriales"
     answer: "Una un teclado y raton en dos pc por medio de Red"
     links:
       - title: "Tutorial de Barrier"
@@ -290,7 +290,7 @@ faq:
     answer: "Agrega macros a tus botones extra de tus raton o teclado"
     links:
       - title: "Tutorial xvkbd"
-        url: /Tutoriales/059_MACROS_a_Mouse_en_Linux
+        url: /tutoriales/059_MACROS_a_Mouse_en_Linux
   - question: "Blender"
     section: "Edicion Video"
     answer: "Uso el Editor de video que viene en Blender, lo encuentro muy eficiente y me gustas las posilidad de programar mi editor de video en python y usar el modelado 3D"

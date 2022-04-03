@@ -29,7 +29,7 @@ links:
 
 videos:
   - title: Tutorial de Github Page
-    url: Tutoriales/060_GITHUB_PAGES
+    url: tutoriales/060_GITHUB_PAGES
 
 colaboradores:
   - title: "Editor"
