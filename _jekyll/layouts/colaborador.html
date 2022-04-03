@@ -45,7 +45,9 @@ layout: base
 {% endfor %}
 
 <h3>Lista video Colaborados #{{ video_colaborador.size }}°</h3>
-{% include 1-tools/sort-videos.html videos=video_colaborador sortByDate=true reverse=true %}
-{% include 3-modules/video-list.html sortedVideos=out_sortedVideos nopublicidad=true %}
+{% if video_colaborador.size > 0 %}
+    {% include 1-tools/sort-videos.html videos=video_colaborador sortByDate=true reverse=true %}
+    {% include 3-modules/video-list.html sortedVideos=out_sortedVideos nopublicidad=true %}
+{% endif %}
 
 Pagina de otro colaboradores <a href="{{ '/colaboradores' | relative_url }}">Link</a>
