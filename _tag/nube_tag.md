@@ -92,9 +92,6 @@ redirect_from:
 			<a href="/tag/comando">#comando [4]</a>
 		</li>
 		<li>
-			<a href="/tag/electronica">#electronica [4]</a>
-		</li>
-		<li>
 			<a href="/tag/lcd">#lcd [3]</a>
 		</li>
 		<li>
