@@ -1,6 +1,6 @@
 ---
 title: Oculta tus contraseñas en Arduino
-video_number: 13
+video_number: 6
 date: 2021-11-25
 video_id: n3vlOnvG47w
 tags:
