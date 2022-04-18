@@ -1,7 +1,7 @@
 ---
 title: La mejor Terminal para Linux - Guake
 video_number: 10
-date: 2022-03-22
+date: 2022-04-18
 video_id: geDfwHKRdOI
 tags:
   - linux
@@ -66,8 +66,20 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
+  - title: Maker ESP
+    items:
+      - title: Ramonet Pascualet
+  - title: Maker Mega
+    items:
+      - title: Francisco Acevedo
+  - title: Maker Uno
+    items:
+      - title: Victoria Becerril
+      - title: jose Santos
+      - title: Manuel Alegría
+      - title: Lolailo Aviles Arroyo
+      - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 
