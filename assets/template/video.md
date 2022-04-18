@@ -8,6 +8,12 @@ repository:
 tags:
   -
 
+variations:
+  - name: 
+    lang: 
+    folder: 
+    web_editor: 
+
 ads:
   - title:
     url:

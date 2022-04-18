@@ -9,6 +9,14 @@ tags:
   - esp32
   - esp8255
 
+variations:
+  - name: "Codigo Base"
+    lang: "Arduino"
+    folder: Ejemplo_Base
+  - name: "Codigo Wifi"
+    lang: "Arduino"
+    folder: Ejemplo_Wifi
+
 topics:
   - title: Introducción
     time: "00:00"
