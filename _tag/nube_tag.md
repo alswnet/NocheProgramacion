@@ -80,13 +80,13 @@ redirect_from:
 			<a href="/tag/editarvideo">#editarvideo [4]</a>
 		</li>
 		<li>
+			<a href="/tag/truco">#truco [4]</a>
+		</li>
+		<li>
 			<a href="/tag/webserver">#webserver [4]</a>
 		</li>
 		<li>
 			<a href="/tag/obs">#obs [4]</a>
-		</li>
-		<li>
-			<a href="/tag/truco">#truco [4]</a>
 		</li>
 		<li>
 			<a href="/tag/comando">#comando [4]</a>
@@ -308,6 +308,9 @@ redirect_from:
 			<a href="/tag/bucle">#bucle [1]</a>
 		</li>
 		<li>
+			<a href="/tag/seguridad">#seguridad [1]</a>
+		</li>
+		<li>
 			<a href="/tag/ipestatica">#ipestatica [1]</a>
 		</li>
 		<li>
@@ -396,9 +399,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/secreto">#secreto [1]</a>
-		</li>
-		<li>
-			<a href="/tag/seguridad">#seguridad [1]</a>
 		</li>
 		<li>
 			<a href="/tag/json">#json [1]</a>
