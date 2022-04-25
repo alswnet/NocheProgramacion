@@ -1,7 +1,7 @@
 ---
 title: Descubre 15 Trucos para Terminal en Linux
 video_number: 11
-date: 2022-03-22
+date: 2022-04-25
 video_id: sLMo7FELw7Q
 tags:
   - linux
@@ -61,8 +61,17 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
+  - title: Maker Mega
+    items:
+      - title: Francisco Acevedo
+  - title: Maker Uno
+    items:
+      - title: Victoria Becerril
+      - title: jose Santos
+      - title: Manuel Alegría
+      - title: Lolailo Aviles Arroyo
+      - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 
