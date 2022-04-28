@@ -44,16 +44,19 @@ class ejemplo_snprintf(Scene):
         mensaje = VGroup()
         crearEntero = Text("int entero = 7;", font="Comic Code Ligatures").scale(0.45) 
         crearDecimal =  Text("float decimal = 12.12;", font="Comic Code Ligatures").scale(0.45)
-        entero = Text("7", font="Comic Code Ligatures").scale(0.45)
-        decimal = Text("12.12", font="Comic Code Ligatures").scale(0.45)
+        entero = Text("7", font="Comic Code Ligatures Bold").scale(0.45)
+        decimal = Text("12.12", font="Comic Code Ligatures Bold").scale(0.45)
         for texto in Textos:
             textoTemporal = Text(texto, font="Comic Code Ligatures")
             mensaje.add(textoTemporal)
         mensaje.arrange(buff=0.5)
-        mensaje.scale(0.49)
-        # print(mensaje.height, mensaje.width)
-        crearDecimal.next_to(mensaje, UP * 1.5)
-        crearEntero.next_to(crearDecimal, UP * 1.5)
+        mensaje.scale(0.49)        
+        # print(mensaje.height, mensaje.width)        
+        #                
+        crearDecimal.move_to(mensaje[0].get_center()+1*UP)
+        crearDecimal.shift(LEFT*0.2)
+        crearEntero.move_to(mensaje[0].get_center()+2*UP)
+        crearEntero.shift(LEFT*0.8)
 
         self.play(Write(mensaje), Write(crearEntero), Write(crearDecimal))
         self.play(mensaje[1:6].animate.shift(DOWN * 1.5))
@@ -61,6 +64,7 @@ class ejemplo_snprintf(Scene):
         entero.set_x(mensaje[7].get_x())
         decimal.set_x(mensaje[9].get_x())
         self.play(Transform(mensaje[7], entero), Transform(mensaje[9], decimal))
+        self.play(mensaje[7].animate.set_color(YELLOW), mensaje[9].animate.set_color(YELLOW))
         self.play(
             FadeOut(mensaje[2]),
             FadeOut(mensaje[4]),
