@@ -28,3 +28,7 @@ token.h
 
 # python virtual
 .venv
+__pycache__
+
+# carpetar de animacion
+media

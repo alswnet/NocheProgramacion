@@ -111,7 +111,8 @@ exclude:
     "scripts",
     "_scripts",
     "*fff*",
-    ".venv"
+    ".venv",
+    "media"
   ]
 
 # keep_files: ["Presentaciones"]
