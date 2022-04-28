@@ -53,7 +53,9 @@ class ejemplo_snprintf(Scene):
         mensaje.scale(0.49)
         # print(mensaje.height, mensaje.width)
         crearDecimal.next_to(mensaje, UP * 1.5)
+        crearDecimal.align_to(mensaje, LEFT)
         crearEntero.next_to(crearDecimal, UP * 1.5)
+        crearEntero.align_to(crearDecimal, LEFT)
 
         self.play(Write(mensaje), Write(crearEntero), Write(crearDecimal))
         self.play(mensaje[1:6].animate.shift(DOWN * 1.5))
