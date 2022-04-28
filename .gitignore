@@ -22,3 +22,9 @@ actualizado
 ## Archivos temporales ##
 *ads.txt
 fff*
+
+# Token de arduino
+token.h
+
+# python virtual
+.venv
