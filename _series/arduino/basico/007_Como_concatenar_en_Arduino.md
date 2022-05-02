@@ -1,7 +1,7 @@
 ---
 title: Como concatenar en Arduino
 video_number: 7
-date: 2022-04-28
+date: 2022-05-02
 video_id: IMoIIKjr49E
 repository: arduino/basico/007_Como_concatenar_en_Arduino
 tags:
@@ -62,7 +62,6 @@ miembros:
       - title: Lolailo Aviles Arroyo
       - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 
