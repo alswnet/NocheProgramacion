@@ -20,7 +20,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [18]</a>
 		</li>
 		<li>
-			<a href="/tag/shorts">#shorts [17]</a>
+			<a href="/tag/shorts">#shorts [18]</a>
 		</li>
 		<li>
 			<a href="/tag/mqtt">#mqtt [14]</a>
@@ -71,10 +71,10 @@ redirect_from:
 			<a href="/tag/youtube">#youtube [6]</a>
 		</li>
 		<li>
-			<a href="/tag/truco">#truco [5]</a>
+			<a href="/tag/programacion">#programacion [5]</a>
 		</li>
 		<li>
-			<a href="/tag/programacion">#programacion [4]</a>
+			<a href="/tag/truco">#truco [5]</a>
 		</li>
 		<li>
 			<a href="/tag/blender">#blender [4]</a>
