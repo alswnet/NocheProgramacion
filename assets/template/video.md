@@ -55,6 +55,9 @@ colaboradores:
   - title:
     colaborador:
 
+asistencia:
+  - title:
+
 custom_sections:
   - title:
     items:
