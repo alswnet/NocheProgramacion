@@ -209,6 +209,13 @@ layout: base
     {% for section in page.miembros %}
       {% include 3-modules/link-list.html links=section.items title=section.title class=section.class %}
     {% endfor %}
+
+    {% comment %} Asistencia del EnVivo. {% endcomment %}
+    {% if page.asistencia %}
+      {% capture tituloAsistencia %}Asistentes al {{ page.video_type_short | downcase }}{% endcapture %}
+      {% include 3-modules/link-list.html links=page.asistencia title=tituloAsistencia %}
+    {% endif %}
+   
   </div>
 
 </div>
