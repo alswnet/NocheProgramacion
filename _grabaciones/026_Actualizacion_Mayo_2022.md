@@ -42,6 +42,20 @@ miembros:
       - title: Lolailo Aviles Arroyo
       - title: Erebos Ubuntu
 
+asistencia:
+  - title: ian fleurs
+    canal: UCJgjwuFmbYILnN_6IUypiWg
+  - title: Ing Juan Z
+    canal: UCsrmEGZF41M-yrtv6LpVh8A
+  - title: Marcelo Ortíz
+    canal: UC5QRyQ5Ps4e1mJU2sHQaXEw
+  - title: Delmy Figueroa
+    canal: UCUPhw-cFbOr2iyV2A11klXg
+  - title: Uziel
+    canal: UC32wSXDXa8dMWDEXYJn-B1g
+  - title: Linux en Casa
+    canal: UCFnFYB2mWAdVwA7Q94AaLPA
+
 actualizado: true
 ---
 
