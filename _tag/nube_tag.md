@@ -62,10 +62,10 @@ redirect_from:
 			<a href="/tag/processing">#processing [8]</a>
 		</li>
 		<li>
-			<a href="/tag/cli">#cli [7]</a>
+			<a href="/tag/vscode">#vscode [8]</a>
 		</li>
 		<li>
-			<a href="/tag/vscode">#vscode [7]</a>
+			<a href="/tag/cli">#cli [7]</a>
 		</li>
 		<li>
 			<a href="/tag/youtube">#youtube [6]</a>
