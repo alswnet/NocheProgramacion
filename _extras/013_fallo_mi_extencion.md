@@ -1,7 +1,7 @@
 ---
 title: Mi extension fallo - Como reparar Extensiones en VsCode
 video_number: 13
-date: 2022-05-22
+date: 2022-05-23
 video_id: 5ixZPkHYTd4
 tags:
   - vscode
@@ -41,8 +41,16 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
+  - title: Maker Mega
+    items:
+      - title: Francisco Acevedo
+  - title: Maker Uno
+    items:
+      - title: Manuel Alegría
+      - title: Lolailo Aviles Arroyo
+      - title: Erebos Ubuntu
 
-para_miembros: true
+para_miembros: false
 actualizado: true
 ---
 
