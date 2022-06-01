@@ -9,38 +9,38 @@ tags:
 
 topics:
   - title: Inicio
-    time: '00:00'
+    time: "00:00"
   - title: Lo que no me gusta de Serial.print
-    time: '00:42'
+    time: "00:42"
   - title: Concatenar en Arduino
-    time: '01:29'
+    time: "01:29"
   - title: Concatenar todo parte de cout en C++
-    time: '02:03'
+    time: "02:03"
   - title: Concatenar en Arduino
-    time: '03:00'
+    time: "03:00"
   - title: Resumen
-    time: '04:18'
+    time: "04:18"
   - title: Como funciona el código
-    time: '04:50'
+    time: "04:50"
   - title: Sobrecarga de operadores
-    time: '09:02'
+    time: "09:02"
   - title: Templates
-    time: '10:46'
+    time: "10:46"
   - title: Inline
-    time: '11:47'
+    time: "11:47"
   - title: Repaso
-    time: '12:26'
+    time: "12:26"
   - title: Más simplificado
-    time: '13:21'  
+    time: "13:21"
 
 links:
-  - title: Codigo base
+  - title: Código base
     url: https://github.com/echeverrifm/Arduino-Wiegand-Interface/blob/master/rfid_bitshift2_keypad_support.pde
-  - title: Documentacion sobre carga de operadores
+  - title: Documentación sobre carga de operadores
     url: https://www.cplusplus.com/doc/oldtutorial/classes2/
-  - title: Documentacion de templates
+  - title: Documentación de templates
     url: https://www.cplusplus.com/doc/oldtutorial/templates/
-  - title: Documentacion de inline
+  - title: Documentación de inline
     url: https://www.cplusplus.com/articles/2LywvCM9/
 
 piezas:
