@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [71]</a>
+			<a href="/tag/arduino">#arduino [72]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>
@@ -17,7 +17,7 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [18]</a>
+			<a href="/tag/iot">#iot [19]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [18]</a>
@@ -32,22 +32,22 @@ redirect_from:
 			<a href="/tag/github">#github [13]</a>
 		</li>
 		<li>
+			<a href="/tag/esp32">#esp32 [12]</a>
+		</li>
+		<li>
+			<a href="/tag/esp8266">#esp8266 [11]</a>
+		</li>
+		<li>
 			<a href="/tag/python">#python [11]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [10]</a>
+			<a href="/tag/telegram">#telegram [11]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
 		</li>
 		<li>
 			<a href="/tag/bluetooth">#bluetooth [9]</a>
-		</li>
-		<li>
-			<a href="/tag/esp8266">#esp8266 [9]</a>
-		</li>
-		<li>
-			<a href="/tag/telegram">#telegram [9]</a>
 		</li>
 		<li>
 			<a href="/tag/nodejs">#nodejs [9]</a>
@@ -360,6 +360,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/mac">#mac [1]</a>
+		</li>
+		<li>
+			<a href="/tag/bot">#bot [1]</a>
 		</li>
 		<li>
 			<a href="/tag/submodules">#submodules [1]</a>

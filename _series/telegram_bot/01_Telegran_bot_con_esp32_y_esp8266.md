@@ -10,6 +10,7 @@ tags:
   - esp8266
   - arduino
   - iot
+  - bot
 
 variations:
   - name: Demo Control
