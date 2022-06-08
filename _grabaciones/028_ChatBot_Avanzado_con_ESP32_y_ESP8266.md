@@ -1,7 +1,7 @@
 ---
 title: ChatBot telegram Avanzado con ESP32 y ESP8266
 video_number: 28
-date: 2022-12-31
+date: 2022-06-08
 video_id: ZWdYOWGjT0w
 
 miembros:
