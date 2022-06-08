@@ -23,13 +23,13 @@ redirect_from:
 			<a href="/tag/shorts">#shorts [18]</a>
 		</li>
 		<li>
+			<a href="/tag/git">#git [14]</a>
+		</li>
+		<li>
+			<a href="/tag/github">#github [14]</a>
+		</li>
+		<li>
 			<a href="/tag/mqtt">#mqtt [14]</a>
-		</li>
-		<li>
-			<a href="/tag/git">#git [13]</a>
-		</li>
-		<li>
-			<a href="/tag/github">#github [13]</a>
 		</li>
 		<li>
 			<a href="/tag/esp32">#esp32 [12]</a>
