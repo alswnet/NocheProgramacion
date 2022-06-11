@@ -13,7 +13,7 @@ videos:
     url: series/arduino/basico/007_Como_concatenar_en_Arduino
 
 piezas:
-  - title: Arduino uno o compatible 
+  - title: Arduino uno o compatible
 
 colaboradores:
   - title: "Editor"
@@ -35,4 +35,4 @@ para_miembro: true
 actualizado: true
 ---
 
-concatenar o escribir un mensajes en una linea con print no es posible, pero con este truco avanzado para Arduino lo podrás hacer 
+concatenar o escribir un mensajes en una linea con print no es posible, pero con este truco avanzado para Arduino lo podrás hacer
