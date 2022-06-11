@@ -7,6 +7,10 @@ tags:
   - shorts
   - atom
 
+links:
+  - title: Post de Muerte de Atom
+    url: https://github.blog/2022-06-08-sunsetting-atom/
+
 colaboradores:
   - title: "editora"
     colaborador: paty
