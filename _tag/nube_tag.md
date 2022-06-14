@@ -20,7 +20,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [20]</a>
 		</li>
 		<li>
-			<a href="/tag/shorts">#shorts [18]</a>
+			<a href="/tag/shorts">#shorts [19]</a>
 		</li>
 		<li>
 			<a href="/tag/git">#git [14]</a>
@@ -101,6 +101,9 @@ redirect_from:
 			<a href="/tag/esp8255">#esp8255 [3]</a>
 		</li>
 		<li>
+			<a href="/tag/atom">#atom [3]</a>
+		</li>
+		<li>
 			<a href="/tag/windows">#windows [3]</a>
 		</li>
 		<li>
@@ -132,9 +135,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/arduinoide">#arduinoide [2]</a>
-		</li>
-		<li>
-			<a href="/tag/atom">#atom [2]</a>
 		</li>
 		<li>
 			<a href="/tag/rasberrypi">#rasberrypi [2]</a>
