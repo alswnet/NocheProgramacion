@@ -1,5 +1,5 @@
 ---
-title: JavaScript con P5js
+title: Dos TelegramBot en un ESP se puede
 video_number: 29
 date: 2022-06-15
 video_id: G3QVhKEWWGs
@@ -20,4 +20,4 @@ cmiembros:
 actualizado: True
 ---
 
-Hoy veremos como usar unas funciones especiales de map con P5js
+Se puede usar dos telegram bot en un solo esp32 o esp8266
