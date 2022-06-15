@@ -1,7 +1,7 @@
 ---
 title: Cuando descargas programa de Google
 video_number: 14
-date: 2022-06-07
+date: 2022-06-10
 video_id: jpaiIqLPZwY
 
 topics:
@@ -15,8 +15,15 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
+  - title: Maker Mega
+    items:
+      - title: Francisco Acevedo
+  - title: Maker Uno
+    items:
+      - title: Manuel Alegría
+      - title: Lolailo Aviles Arroyo
+      - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 
