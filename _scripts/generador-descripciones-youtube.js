@@ -18,7 +18,7 @@ function ImprimirData(Titulo, CantidadLink, CantidadTotal) {
   console.log(`${Titulo}: ${CantidadLink} ${Porcentaje}%`);
 }
 
-function AgregarSeoMostar(descripcion, Cantidad, Actualizar) {
+function AgregarSeoMostar(descripcion, Cantidad, Actualizar, Publicidad) {
   let Lineas = descripcion.split(/\n/);
   let LongitudLinea = 90;
 
@@ -27,11 +27,15 @@ function AgregarSeoMostar(descripcion, Cantidad, Actualizar) {
   }
 
   if (descripcion.length <= LongitudLinea * 2 && Lineas.length <= 2) {
+    // descripcion = AgregarADS(descripcion, Publicidad);
+    descripcion += `${Publicidad}`;
     descripcion += `👇 👇 HAZ CLICK 👇 👇\n`;
     if (Actualizar) Cantidad.SeoMostarActivo++;
     Cantidad.SeoMostar++;
   } else if (Lineas[0].length <= LongitudLinea * 2) {
     let D = Lineas[0];
+    descripcion += `${Publicidad}`;
+    // descripcion = AgregarADS(descripcion, Publicidad);
     D += `\n👇 👇 HAZ CLICK 👇 👇`;
     for (var i = 1; i < Lineas.length; i++) {
       D += `\n` + Lineas[i];
@@ -66,6 +70,19 @@ async function CrearDescripciones(videos) {
   await ReiniciarFolder("./descripciones");
   await ReiniciarFolder("./actualizado");
 
+  const ArchivoAds = path.join(__dirname, "ads.txt");
+  let AdsGlobal = "";
+  try {
+    if (fs.existsSync(ArchivoAds)) {
+      ActivadoAdsGlobal = true;
+      data = await fs.readFileSync(ArchivoAds);
+      AdsGlobal = data.toString();
+      console.log(`Ads Global: '${AdsGlobal}'`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
+
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
     const pageURL = videos[i].pageURL;
@@ -87,18 +104,12 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       let content = data.__content.trim();
       descripcion += `${content}\n`;
 
-      descripcion = AgregarSeoMostar(descripcion, Cantidad, data.actualizado);
-
-      const AdsGlobal = path.join(__dirname, "ads.txt");
-      try {
-        if (fs.existsSync(AdsGlobal)) {
-          ActivadoAdsGlobal = true;
-          let ADS = fs.readFileSync(AdsGlobal);
-          descripcion += `\n${ADS}`;
-        }
-      } catch (err) {
-        console.error(err);
-      }
+      descripcion = AgregarSeoMostar(
+        descripcion,
+        Cantidad,
+        data.actualizado,
+        AdsGlobal
+      );
 
       // ADS
       if (data.ads) {
@@ -289,10 +300,21 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         }
       }
 
+      descripcion += `\n#ChepeCarlos`;
+      if (data.tags) {
+        for (let i = 0; i < data.tags.length; ++i) {
+          if (data.tags[i] == "shorts") {
+            descripcion += ` #` + data.tags[i];
+          }
+        }
+      }
+      descripcion += `\n`;
+
       // Miembros
       if (data.miembros) {
         Cantidad.Miembros++;
-        descripcion += "\n🦾 Creado gracias al Apoyo de:\n";
+        descripcion +=
+          "\n🦾 Creado gracias al Apoyo de Miembros(Patrocinadores):\n";
         for (let i = 0; i < data.miembros.length; ++i) {
           let nivelActual = data.miembros[i];
           descripcion += `${nivelActual.title}: `;
@@ -315,14 +337,6 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         descripcion += `\n🔭 Quieres apoyar, conviértete en Miembro: https://www.youtube.com/alswnet/join 🔭`;
       }
     }
-
-    // if (data.tags) {
-    //   descripcion += `\n\n#ALSW`;
-    //   for (let i = 0; i < data.tags.length; ++i) {
-    //     descripcion += ` #` + data.tags[i];
-    //   }
-    //   // descripcion += `\n`;
-    // }
 
     // descripcion += `\nEsta descripción fue auto-generada. Si ves algún problema, por favor reportarlo en https://github.com/alswnet/NocheProgramacion/issues/new`;
 
