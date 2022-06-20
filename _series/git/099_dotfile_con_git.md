@@ -1,7 +1,7 @@
 ---
 title: Respalda tus configuraciones con Git
 video_number: 99
-date: 2022-06-07
+date: 2022-06-20
 video_id: KcH711Lu1bw
 tags:
   - git
@@ -10,8 +10,6 @@ tags:
 topics:
   - title: Inicio
     time: "00:00"
-  - title: F_571
-    time: "00:09"
   - title: Que son los dotfiles
     time: "00:35"
   - title: Intalar git
@@ -54,8 +52,16 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
+  - title: Maker Mega
+    items:
+      - title: Francisco Acevedo
+  - title: Maker Uno
+    items:
+      - title: David Estrella
+      - title: Manuel Alegría
+      - title: Lolailo Aviles Arroyo
+      - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 
