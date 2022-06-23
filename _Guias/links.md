@@ -52,6 +52,10 @@ nopublicidad: true
 
 [youtube.com/alswnet](https://www.youtube.com/alswnet?sub_confirmation=1)
 
+### Tiktok
+
+[tiktok.com/@chepecarlosyt](https://www.tiktok.com/@chepecarlosyt)
+
 ### Instagram
 
 [instagram.com/alswnet](https://www.instagram.com/alswnet/)
