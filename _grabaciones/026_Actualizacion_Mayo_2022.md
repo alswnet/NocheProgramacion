@@ -6,27 +6,27 @@ video_id: kaYvdJaon-I
 
 topics:
   - title: Introducción
-    time: '00:00'
+    time: "00:00"
   - title: Entrevista con Antonio Raptors
-    time: '07:50'
+    time: "07:50"
   - title: Mejoras en el FondoOBS y AlertaOBS
-    time: '10:06'
+    time: "10:06"
   - title: Video pendientes para miembros
-    time: '12:41'
+    time: "12:41"
   - title: Nueva Impresora 3D
-    time: '16:17'
+    time: "16:17"
   - title: Terminamos Crecetube y después Proyect24
-    time: '20:35'
+    time: "20:35"
   - title: Nuevo Canal Creacion de contenido
-    time: '29:10'
+    time: "29:10"
   - title: Animaciones para video en Python
-    time: '34:33'
+    time: "34:33"
   - title: Tiktok
-    time: '43:50'
+    time: "43:50"
   - title: Necesitamos ayuda? (IDEAS)
-    time: '46:34'
+    time: "46:34"
   - title: Seguimos con el Curso
-    time: '51:14'
+    time: "51:14"
 
 links:
   - title: Instagran de Antonio Raptors

@@ -20,4 +20,3 @@ actualizado: True
 ---
 
 Vamos a conoces como funcionan estos increíbles sensores note lo pierdas
-
