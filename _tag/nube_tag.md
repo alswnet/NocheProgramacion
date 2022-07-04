@@ -8,19 +8,19 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [74]</a>
+			<a href="/tag/arduino">#arduino [75]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>
 		</li>
 		<li>
+			<a href="/tag/iot">#iot [22]</a>
+		</li>
+		<li>
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [21]</a>
-		</li>
-		<li>
-			<a href="/tag/shorts">#shorts [20]</a>
+			<a href="/tag/shorts">#shorts [21]</a>
 		</li>
 		<li>
 			<a href="/tag/git">#git [14]</a>
@@ -29,16 +29,16 @@ redirect_from:
 			<a href="/tag/github">#github [14]</a>
 		</li>
 		<li>
+			<a href="/tag/esp8266">#esp8266 [14]</a>
+		</li>
+		<li>
+			<a href="/tag/esp32">#esp32 [14]</a>
+		</li>
+		<li>
 			<a href="/tag/mqtt">#mqtt [14]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [13]</a>
-		</li>
-		<li>
-			<a href="/tag/esp32">#esp32 [13]</a>
-		</li>
-		<li>
-			<a href="/tag/telegram">#telegram [13]</a>
+			<a href="/tag/telegram">#telegram [14]</a>
 		</li>
 		<li>
 			<a href="/tag/python">#python [11]</a>
@@ -53,7 +53,7 @@ redirect_from:
 			<a href="/tag/nodejs">#nodejs [9]</a>
 		</li>
 		<li>
-			<a href="/tag/freecad">#freecad [8]</a>
+			<a href="/tag/freecad">#freecad [9]</a>
 		</li>
 		<li>
 			<a href="/tag/android">#android [8]</a>
@@ -113,6 +113,9 @@ redirect_from:
 			<a href="/tag/java">#java [3]</a>
 		</li>
 		<li>
+			<a href="/tag/bot">#bot [3]</a>
+		</li>
+		<li>
 			<a href="/tag/terminal">#terminal [3]</a>
 		</li>
 		<li>
@@ -156,9 +159,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/machinelearning">#machinelearning [2]</a>
-		</li>
-		<li>
-			<a href="/tag/bot">#bot [2]</a>
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]</a>
@@ -417,6 +417,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/chrome">#chrome [1]</a>
+		</li>
+		<li>
+			<a href="/tag/modelado3d">#modelado3d [1]</a>
 		</li>
 		<li>
 			<a href="/tag/esp">#esp [1]</a>
