@@ -1,7 +1,7 @@
 ---
 title: Un truco de git (dotfile)
 video_number: 23
-date: 2022-12-31
+date: 2022-05-31
 video_id: Cqet-8kq6YI
 
 miembros:
