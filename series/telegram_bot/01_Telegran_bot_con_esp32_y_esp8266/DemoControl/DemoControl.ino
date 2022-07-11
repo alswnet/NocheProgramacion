@@ -40,12 +40,12 @@ void loop() {
 
     if (msg.text.equalsIgnoreCase("encender")) {
       Serial.println("Encender Led");
-      digitalWrite(Led, LOW);
+      digitalWrite(Led, HIGH);
       miBot.sendMessage(msg.sender.id, "Led Enendido");
     }
     else if (msg.text.equalsIgnoreCase("apagar")) {
       Serial.println("Apagar Led");
-      digitalWrite(Led, HIGH);
+      digitalWrite(Led, LOW);
       miBot.sendMessage(msg.sender.id, "Led Apagado");
     }
     else {

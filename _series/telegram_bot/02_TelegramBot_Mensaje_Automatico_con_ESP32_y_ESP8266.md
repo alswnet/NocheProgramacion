@@ -56,7 +56,6 @@ videos:
   - title: Serie de ESP32 y ESP8266
     url: series/arduino_esp
 
-
 piezas:
   - title: esp32
   - title: esp8266

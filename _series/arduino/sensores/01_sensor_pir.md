@@ -6,6 +6,7 @@ video_id: AiuGPwe_qZQ
 repository: arduino/sensor/01_sensor_pir
 tags:
   - arduino
+  - sensor
 
 topics:
   - title: Inicio

@@ -8,13 +8,13 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [75]</a>
+			<a href="/tag/arduino">#arduino [77]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [22]</a>
+			<a href="/tag/iot">#iot [23]</a>
 		</li>
 		<li>
 			<a href="/tag/p5js">#p5js [22]</a>
@@ -23,22 +23,22 @@ redirect_from:
 			<a href="/tag/shorts">#shorts [22]</a>
 		</li>
 		<li>
+			<a href="/tag/esp8266">#esp8266 [15]</a>
+		</li>
+		<li>
+			<a href="/tag/esp32">#esp32 [15]</a>
+		</li>
+		<li>
+			<a href="/tag/telegram">#telegram [15]</a>
+		</li>
+		<li>
 			<a href="/tag/git">#git [14]</a>
 		</li>
 		<li>
 			<a href="/tag/github">#github [14]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [14]</a>
-		</li>
-		<li>
-			<a href="/tag/esp32">#esp32 [14]</a>
-		</li>
-		<li>
 			<a href="/tag/mqtt">#mqtt [14]</a>
-		</li>
-		<li>
-			<a href="/tag/telegram">#telegram [14]</a>
 		</li>
 		<li>
 			<a href="/tag/python">#python [11]</a>
@@ -77,6 +77,9 @@ redirect_from:
 			<a href="/tag/truco">#truco [5]</a>
 		</li>
 		<li>
+			<a href="/tag/sensor">#sensor [4]</a>
+		</li>
+		<li>
 			<a href="/tag/blender">#blender [4]</a>
 		</li>
 		<li>
@@ -89,13 +92,13 @@ redirect_from:
 			<a href="/tag/obs">#obs [4]</a>
 		</li>
 		<li>
+			<a href="/tag/bot">#bot [4]</a>
+		</li>
+		<li>
 			<a href="/tag/comando">#comando [4]</a>
 		</li>
 		<li>
 			<a href="/tag/lcd">#lcd [3]</a>
-		</li>
-		<li>
-			<a href="/tag/sensor">#sensor [3]</a>
 		</li>
 		<li>
 			<a href="/tag/esp8255">#esp8255 [3]</a>
@@ -111,9 +114,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/java">#java [3]</a>
-		</li>
-		<li>
-			<a href="/tag/bot">#bot [3]</a>
 		</li>
 		<li>
 			<a href="/tag/terminal">#terminal [3]</a>
