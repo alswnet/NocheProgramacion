@@ -1,0 +1,8 @@
+{
+    "nombre": "xxxx",
+    "broker": "xxxx",
+    "usuario": "xxxx",
+    "contrasenna": "xxxx",
+    "puerto": 1883,
+    "topic": "xxxx"
+}

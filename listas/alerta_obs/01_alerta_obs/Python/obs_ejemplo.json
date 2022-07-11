@@ -1,0 +1,5 @@
+{
+    "servidor": "localhost",
+    "puerto": 4444,
+    "topic": "xxx"
+}
