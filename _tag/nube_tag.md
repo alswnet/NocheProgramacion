@@ -20,7 +20,7 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
-			<a href="/tag/shorts">#shorts [21]</a>
+			<a href="/tag/shorts">#shorts [22]</a>
 		</li>
 		<li>
 			<a href="/tag/git">#git [14]</a>
@@ -65,10 +65,10 @@ redirect_from:
 			<a href="/tag/vscode">#vscode [8]</a>
 		</li>
 		<li>
-			<a href="/tag/cli">#cli [7]</a>
+			<a href="/tag/youtube">#youtube [7]</a>
 		</li>
 		<li>
-			<a href="/tag/youtube">#youtube [6]</a>
+			<a href="/tag/cli">#cli [7]</a>
 		</li>
 		<li>
 			<a href="/tag/programacion">#programacion [5]</a>
@@ -150,6 +150,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/red">#red [2]</a>
+		</li>
+		<li>
+			<a href="/tag/seguridad">#seguridad [2]</a>
 		</li>
 		<li>
 			<a href="/tag/meld">#meld [2]</a>
@@ -311,9 +314,6 @@ redirect_from:
 			<a href="/tag/bucle">#bucle [1]</a>
 		</li>
 		<li>
-			<a href="/tag/seguridad">#seguridad [1]</a>
-		</li>
-		<li>
 			<a href="/tag/ipestatica">#ipestatica [1]</a>
 		</li>
 		<li>
@@ -420,6 +420,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/modelado3d">#modelado3d [1]</a>
+		</li>
+		<li>
+			<a href="/tag/impresora3d">#impresora3d [1]</a>
+		</li>
+		<li>
+			<a href="/tag/3dprinting">#3dprinting [1]</a>
 		</li>
 		<li>
 			<a href="/tag/esp">#esp [1]</a>
