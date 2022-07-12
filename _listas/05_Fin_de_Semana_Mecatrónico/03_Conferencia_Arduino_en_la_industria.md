@@ -6,6 +6,7 @@ video_id: 3v-yZyA1ZUk
 tags:
   - conferencia
   - arduino
+  - industria
 
 topics:
   - title: Inicio
