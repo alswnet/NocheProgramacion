@@ -398,6 +398,9 @@ redirect_from:
 			<a href="/tag/admin">#admin [1]</a>
 		</li>
 		<li>
+			<a href="/tag/industria">#industria [1]</a>
+		</li>
+		<li>
 			<a href="/tag/code">#code [1]</a>
 		</li>
 		<li>
