@@ -11,7 +11,6 @@ links:
     url: https://www.youtube.com/c/AntonioRaptors
 
 asistencia:
-  asistencia:
   - title: Ing Juan Z
     canal: UCsrmEGZF41M-yrtv6LpVh8A
   - title: Johnx02
