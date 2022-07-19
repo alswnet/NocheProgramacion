@@ -41,8 +41,15 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
+  - title: Maker Mega
+    items:
+      - title: Otmaro Miguel
+  - title: Maker Uno
+    items:
+      - title: Manuel Alegría
+      - title: Lolailo Aviles Arroyo
+      - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 
