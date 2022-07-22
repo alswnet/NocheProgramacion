@@ -1,11 +1,12 @@
 ---
 title: Otra conferencia de MQTT 
 video_number: 1
-date: 2022-07-11
+date: 2022-07-22
 video_id: h5igeUjQGRw 
 tags:
   - conferencia
   - mqtt
+  - iot
 
 topics:
   - title: Inicio
@@ -44,8 +45,15 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
+  - title: Maker Mega
+    items:
+      - title: Otmaro Miguel
+  - title: Maker Uno
+    items:
+      - title: Manuel Alegría
+      - title: Lolailo Aviles Arroyo
+      - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 
