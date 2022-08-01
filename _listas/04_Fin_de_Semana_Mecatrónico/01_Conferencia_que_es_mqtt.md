@@ -1,7 +1,7 @@
 ---
-title: Otra conferencia de MQTT 
+title: Conferencia de IOT con MQTT 
 video_number: 1
-date: 2022-07-22
+date: 2022-08-01
 video_id: h5igeUjQGRw 
 tags:
   - conferencia
