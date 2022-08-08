@@ -4,7 +4,7 @@ video_number: 21
 date: 2022-07-07
 video_id: WJgjWkWM4WI
 tags:
-  -shorts
+  - shorts
   - impresora3d
   - 3dprinting
 

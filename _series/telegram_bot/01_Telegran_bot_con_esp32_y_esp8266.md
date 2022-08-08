@@ -64,7 +64,7 @@ videos:
   - title: Truco de concatenar en arduino
     url: series/arduino/basico/007_Como_concatenar_en_Arduino
   - title: Función snprintf
-    url: series/arduino/funciones_array/02_como_usar_snprintf_con_esp8266_y_esp32
+    url: series/arduino/extras/01_como_usar_snprintf_con_esp8266_y_esp32
   - title: Serie de ESP32 y ESP8266
     url: series/arduino_esp
 

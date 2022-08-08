@@ -1,7 +1,7 @@
 ---
 title: Entrevista con Antonio Raptors
 video_number: 31
-date: 2022-07-6
+date: 2022-07-06
 video_id: pq2T5PVUaao
 
 links:
