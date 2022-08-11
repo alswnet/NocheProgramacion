@@ -1,5 +1,5 @@
 ---
-title: Guardando archivos dentro el ESP sin MemoriaSD
+title: Creando un bot para YouTube
 video_number: 36
 date: 2022-09-8
 video_id: To82IyUKS5U
@@ -22,7 +22,7 @@ asistencia:
 miembros:
   - title: Maker Mega
     items:
-      - title: Otmaro Miguel      
+      - title: Otmaro Miguel
   - title: Maker Uno
     items:
       - title: Manuel Alegría
