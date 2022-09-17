@@ -1,7 +1,7 @@
 ---
 title: Mejorando sistema internos
 video_number: 37
-date: 2022-17-8
+date: 2022-08-17
 video_id: XfDHDxHacVs
 
 asistencia:
