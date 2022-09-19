@@ -57,6 +57,8 @@ videos:
     url: series/arduino/basico/007_Como_concatenar_en_Arduino
   - title: Sensor PIR con Arduino
     url: series/arduino/modulos/01_sensor_pir
+  - title: Tutorial de Millis
+    url: series/arduino/avanzado/008_millis_arduino
 
 colaboradores:
   - title: Editor
