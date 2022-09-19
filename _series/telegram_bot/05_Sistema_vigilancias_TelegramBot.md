@@ -83,5 +83,5 @@ miembros:
 actualizado: true
 ---
 
-Hoy aremos un proyecto completo un sistema de vigilancia que te envía mensajes de inmediato a tu telegram cada ves que detecta movimiento.
+Hoy haremos un proyecto completo un sistema de vigilancia que te envía mensajes de inmediato a tu telegram cada ves que detecta movimiento.
 Para esto usaremos un sensor pir, Arduino ESP32 o ESP8266, Buzzer y un led que puede conseguir en muchas tienda de electronica, espero que te diviertas armándolo.
