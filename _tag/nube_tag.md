@@ -17,7 +17,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [25]</a>
 		</li>
 		<li>
-			<a href="/tag/shorts">#shorts [23]</a>
+			<a href="/tag/shorts">#shorts [25]</a>
 		</li>
 		<li>
 			<a href="/tag/p5js">#p5js [22]</a>
@@ -98,6 +98,12 @@ redirect_from:
 			<a href="/tag/comando">#comando [4]</a>
 		</li>
 		<li>
+			<a href="/tag/impresora3d">#impresora3d [4]</a>
+		</li>
+		<li>
+			<a href="/tag/3dprinting">#3dprinting [4]</a>
+		</li>
+		<li>
 			<a href="/tag/lcd">#lcd [3]</a>
 		</li>
 		<li>
@@ -168,12 +174,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]</a>
-		</li>
-		<li>
-			<a href="/tag/impresora3d">#impresora3d [2]</a>
-		</li>
-		<li>
-			<a href="/tag/3dprinting">#3dprinting [2]</a>
 		</li>
 		<li>
 			<a href="/tag/robotica">#robotica [2]</a>
@@ -444,6 +444,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/modelado3d">#modelado3d [1]</a>
+		</li>
+		<li>
+			<a href="/tag/prusaslicer">#prusaslicer [1]</a>
 		</li>
 		<li>
 			<a href="/tag/esp">#esp [1]</a>
