@@ -71,8 +71,8 @@ layout: base
   </div>
 
   {% comment %} Show links for live example and code download. {% endcomment %}
+  <div class="code-actions">
   {% if page.repository != null or page.web_editor != null %}
-    <div class="code-actions">
 
       {% comment %} Detect code variations. {% endcomment %}
       {% comment %} If repository is (probably) an external link. {% endcomment %}
@@ -103,9 +103,9 @@ layout: base
         {% endfor %}
 
       {% endif %}
-
-    </div>
-  {% endif %}
+    {% endif %}
+    {% include 3-modules/boton-donar.html %}
+  </div>
 
   <div class="links-and-books">
     {% comment %} List of community contributions (only visible if can_contribute is true). {% endcomment %}
