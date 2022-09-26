@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [82]</a>
+			<a href="/tag/arduino">#arduino [83]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>
@@ -23,10 +23,10 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [17]</a>
+			<a href="/tag/esp8266">#esp8266 [18]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [17]</a>
+			<a href="/tag/esp32">#esp32 [18]</a>
 		</li>
 		<li>
 			<a href="/tag/telegram">#telegram [16]</a>
@@ -159,6 +159,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/red">#red [2]</a>
+		</li>
+		<li>
+			<a href="/tag/oled">#oled [2]</a>
+		</li>
+		<li>
+			<a href="/tag/pantalla">#pantalla [2]</a>
 		</li>
 		<li>
 			<a href="/tag/seguridad">#seguridad [2]</a>
@@ -326,13 +332,7 @@ redirect_from:
 			<a href="/tag/array">#array [1]</a>
 		</li>
 		<li>
-			<a href="/tag/pantalla">#pantalla [1]</a>
-		</li>
-		<li>
 			<a href="/tag/i2c">#i2c [1]</a>
-		</li>
-		<li>
-			<a href="/tag/oled">#oled [1]</a>
 		</li>
 		<li>
 			<a href="/tag/ipestatica">#ipestatica [1]</a>
