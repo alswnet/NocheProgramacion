@@ -1,9 +1,9 @@
 ---
 title: Dos Telegram Bot en un ESP32 y ESP8266
-video_number: 04
+video_number: 05
 date: 2022-07-10
 video_id: e8MAOgswt4g
-repository: telegram_bot/04_Dos_TelegramBot_en_un_ESP
+repository: telegram_bot/05_Dos_TelegramBot_en_un_ESP
 tags:
   - telegram
   - esp32
@@ -13,7 +13,7 @@ tags:
   - bot
 
 topics:
-  - title: inicio
+  - title: Inicio
     time: "00:00"
   - title: Hoy resolveremos una duda
     time: "00:16"

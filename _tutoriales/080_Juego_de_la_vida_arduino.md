@@ -54,7 +54,6 @@ piezas:
   - title: Pantalla OLED
   - title: ESP32 (Arduino Compatible)
 
-
 colaboradores:
   - title: Editor
     colaborador: ingjuan
