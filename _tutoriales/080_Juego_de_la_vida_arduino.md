@@ -48,7 +48,7 @@ links:
 videos:
   - title: Pantalla OLED con Arduino (Pronto)    
   - title: Concatenar en Arduino
-    url: arduino/basico/007_Como_concatenar_en_Arduino
+    url: series/arduino/basico/007_Como_concatenar_en_Arduino
 
 piezas:
   - title: Pantalla OLED
