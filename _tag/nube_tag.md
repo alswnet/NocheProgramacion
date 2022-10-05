@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [84]</a>
+			<a href="/tag/arduino">#arduino [85]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [26]</a>
@@ -17,7 +17,7 @@ redirect_from:
 			<a href="/tag/linux">#linux [26]</a>
 		</li>
 		<li>
-			<a href="/tag/shorts">#shorts [25]</a>
+			<a href="/tag/shorts">#shorts [26]</a>
 		</li>
 		<li>
 			<a href="/tag/p5js">#p5js [22]</a>
@@ -44,7 +44,7 @@ redirect_from:
 			<a href="/tag/python">#python [11]</a>
 		</li>
 		<li>
-			<a href="/tag/freecad">#freecad [10]</a>
+			<a href="/tag/freecad">#freecad [11]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
@@ -80,6 +80,12 @@ redirect_from:
 			<a href="/tag/truco">#truco [5]</a>
 		</li>
 		<li>
+			<a href="/tag/impresora3d">#impresora3d [5]</a>
+		</li>
+		<li>
+			<a href="/tag/3dprinting">#3dprinting [5]</a>
+		</li>
+		<li>
 			<a href="/tag/sensor">#sensor [4]</a>
 		</li>
 		<li>
@@ -98,12 +104,6 @@ redirect_from:
 			<a href="/tag/comando">#comando [4]</a>
 		</li>
 		<li>
-			<a href="/tag/impresora3d">#impresora3d [4]</a>
-		</li>
-		<li>
-			<a href="/tag/3dprinting">#3dprinting [4]</a>
-		</li>
-		<li>
 			<a href="/tag/lcd">#lcd [3]</a>
 		</li>
 		<li>
@@ -117,6 +117,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/mdns">#mdns [3]</a>
+		</li>
+		<li>
+			<a href="/tag/oled">#oled [3]</a>
+		</li>
+		<li>
+			<a href="/tag/pantalla">#pantalla [3]</a>
 		</li>
 		<li>
 			<a href="/tag/java">#java [3]</a>
@@ -161,13 +167,10 @@ redirect_from:
 			<a href="/tag/red">#red [2]</a>
 		</li>
 		<li>
-			<a href="/tag/oled">#oled [2]</a>
-		</li>
-		<li>
-			<a href="/tag/pantalla">#pantalla [2]</a>
-		</li>
-		<li>
 			<a href="/tag/seguridad">#seguridad [2]</a>
+		</li>
+		<li>
+			<a href="/tag/i2c">#i2c [2]</a>
 		</li>
 		<li>
 			<a href="/tag/meld">#meld [2]</a>
@@ -330,9 +333,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/array">#array [1]</a>
-		</li>
-		<li>
-			<a href="/tag/i2c">#i2c [1]</a>
 		</li>
 		<li>
 			<a href="/tag/ipestatica">#ipestatica [1]</a>
