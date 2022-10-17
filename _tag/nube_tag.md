@@ -41,7 +41,7 @@ redirect_from:
 			<a href="/tag/github">#github [14]</a>
 		</li>
 		<li>
-			<a href="/tag/python">#python [11]</a>
+			<a href="/tag/python">#python [13]</a>
 		</li>
 		<li>
 			<a href="/tag/freecad">#freecad [11]</a>
@@ -51,6 +51,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/bluetooth">#bluetooth [9]</a>
+		</li>
+		<li>
+			<a href="/tag/youtube">#youtube [9]</a>
 		</li>
 		<li>
 			<a href="/tag/nodejs">#nodejs [9]</a>
@@ -65,13 +68,10 @@ redirect_from:
 			<a href="/tag/vscode">#vscode [8]</a>
 		</li>
 		<li>
-			<a href="/tag/youtube">#youtube [7]</a>
-		</li>
-		<li>
 			<a href="/tag/cli">#cli [7]</a>
 		</li>
 		<li>
-			<a href="/tag/bot">#bot [6]</a>
+			<a href="/tag/bot">#bot [7]</a>
 		</li>
 		<li>
 			<a href="/tag/programacion">#programacion [5]</a>
@@ -165,6 +165,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/red">#red [2]</a>
+		</li>
+		<li>
+			<a href="/tag/streaming">#streaming [2]</a>
 		</li>
 		<li>
 			<a href="/tag/seguridad">#seguridad [2]</a>
