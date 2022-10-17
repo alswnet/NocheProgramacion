@@ -1,23 +1,13 @@
 ---
-title:
+title: Creando YoutubeBot para Jugar Pokemon con Python
 video_number: 82
 date: 2022-10-17
 video_id: GHf3iDmI308
-repository:
+repository: 082_AutoPlay_con_Youtube_con_Python
 tags:
   - youtube
   - python
   - streaming
-
-variations:
-  - name:
-    lang:
-    folder:
-    web_editor:
-
-ads:
-  - title:
-    url:
 
 topics:
   - title: inicio
@@ -65,4 +55,4 @@ para_miembros: true
 actualizado: true
 ---
 
-Aprendamos a crear un Bot para jugar pokemon o otro juego desde el chat de youtube y comparte con tu comunidad :)
+Aprendamos a crear un Bot para jugar pokemon o otro juego desde el chat de YouTube y comparte con tu comunidad :)
