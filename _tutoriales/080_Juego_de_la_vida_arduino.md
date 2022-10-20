@@ -47,6 +47,7 @@ links:
 
 videos:
   - title: Pantalla OLED con Arduino (Pronto)    
+    url: series/arduino/modulos/pantalla_oled/02.1_display_OLED_SSD1306
   - title: Concatenar en Arduino
     url: series/arduino/basico/007_Como_concatenar_en_Arduino
 
