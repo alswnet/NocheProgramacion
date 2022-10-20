@@ -22,7 +22,7 @@ miembros:
       - title: Lolailo Aviles Arroyo
       - title: Erebos Ubuntu
 
-actualizado: true
+actualizado: false
 ---
 
 Me realizan una entrevista de ¿Cómo inicie en la electrónica? No te la pierdas
