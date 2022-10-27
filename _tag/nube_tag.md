@@ -188,6 +188,12 @@ redirect_from:
 			<a href="/tag/programar">#programar [2]</a>
 		</li>
 		<li>
+			<a href="/tag/nvidia">#nvidia [2]</a>
+		</li>
+		<li>
+			<a href="/tag/gpu">#gpu [2]</a>
+		</li>
+		<li>
 			<a href="/tag/robotica">#robotica [2]</a>
 		</li>
 		<li>

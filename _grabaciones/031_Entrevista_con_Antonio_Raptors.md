@@ -9,6 +9,8 @@ links:
     url: https://www.instagram.com/antonio_raptors/
   - title: Youtube de Antonio Raptors
     url: https://www.youtube.com/c/AntonioRaptors
+  - title: Instagram de ChepeCarlos
+    url: https://www.instagram.com/ALSWNET/
 
 asistencia:
   - title: Ing Juan Z
