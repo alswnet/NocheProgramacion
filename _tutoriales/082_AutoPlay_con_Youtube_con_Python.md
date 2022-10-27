@@ -50,8 +50,17 @@ colaboradores:
     colaborador: ingjuan
 
 miembros:
+  - title: Maker ESP
+    items:
+      - title: Carlos Olivares Santis
+  - title: Maker Uno
+    items:
+      - title: Claudio Bloise
+      - title: EDUARDO MARCELO PALACIOS
+      - title: Manuel Alegría
+      - title: Lolailo Aviles Arroyo
+      - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 

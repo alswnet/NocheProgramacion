@@ -1,0 +1,12 @@
+const char* ssid     = "red_1";
+const char* password = "contra_1";
+const char* BrokerMQTT = "test.mosquitto.org";
+const int PuertoMQTT = 1883;
+const char* usuario = "xxx";
+const char* pass = "xxx";
+const char* NombreESP = "xxx";
+const char* Topic = "xxx";
+const char* TopicSolisitud = "xxx";
+const char* MensajeEstado = "xxx";
+const char* MensajeGrabacion = "xxx";
+const char* MensajeEnvivo = "xxx";

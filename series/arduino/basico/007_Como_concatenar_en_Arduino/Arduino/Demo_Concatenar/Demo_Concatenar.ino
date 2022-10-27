@@ -1,6 +1,6 @@
 // Creado ChepeCarlos de ALSW
 // Tutorial Completo en https://nocheprogramacion.com
-// Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
+// Canal YouTube https://youtube.com/alswnet?sub_confirmation=1
 
 template<class T> inline Print &operator <<(Print &obj, T arg) {
   obj.print(arg);
