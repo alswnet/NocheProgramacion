@@ -64,11 +64,15 @@ function BuscarVideoRecursivamente(dir, arrayOfFiles) {
 }
 
 async function ReiniciarFolder(dir) {
-  fs.readdirSync(dir).forEach((file) => {
-    fs.unlinkSync(path.join(dir, file), (err) => {
-      if (err) throw err;
-    });
-  });
+  fs.rmSync(dir, { recursive: true, force: true });
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
+  // fs.readdirSync(dir).forEach((file) => {
+  //   fs.unlinkSync(path.join(dir, file), (err) => {
+  //     if (err) throw err;
+  //   });
+  // });
 }
 
 function ObtenerPlatlist(file) {

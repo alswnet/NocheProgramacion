@@ -83,6 +83,18 @@ async function CrearDescripciones(videos) {
     console.error(err);
   }
 
+  const ArchivoRedes = path.join(__dirname, "redes.txt");
+  let RedesGlobal = "";
+  try {
+    if (fs.existsSync(ArchivoRedes)) {
+      data = await fs.readFileSync(ArchivoRedes);
+      RedesGlobal = data.toString();
+      console.log("Link y Redes: True");
+    }
+  } catch (err) {
+    console.error(err);
+  }
+
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
     const pageURL = videos[i].pageURL;
@@ -123,7 +135,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       if (data.remake) {
         Cantidad.Remake++;
         url = ObtenerURLYoutube(data.remake);
-        descripcion += `Existe una versión NUEVA 👀 o actualización de este video: ${url}\n`;
+        descripcion = `Existe una versión NUEVA 👀 o actualización de este video: ${url}\n` + descripcion;
       }
 
       // TODO: Mejor Algoritmo
@@ -194,7 +206,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       // Videos
       if (data.videos) {
         Cantidad.Video++;
-        descripcion += "\nVideo mencionados:\n";
+        descripcion += "\nVideos mencionados:\n";
         for (let i = 0; i < data.videos.length; ++i) {
           if (data.videos[i].video_id) {
             descripcion += `🎞 ${data.videos[i].title}: https://youtu.be/${data.videos[i].video_id}\n`;
@@ -232,7 +244,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         }
       }
 
-      // Link de piesas
+      // Link de piezas
       if (data.piezas) {
         Cantidad.Piezas++;
         descripcion += "\nComponentes electrónicos:\n";
@@ -240,12 +252,12 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
           const url = data.piezas[i].url;
           if (url) {
             if (/https?:\/\/.*/.test(url)) {
-              descripcion += `🤖 ${data.piezas[i].title}: ${url}\n`;
+              descripcion += `  🤖 ${data.piezas[i].title}: ${url}\n`;
             } else {
-              descripcion += `🤖 ${data.piezas[i].title}: https://nocheprogramacion.com${url}\n`;
+              descripcion += `  🤖 ${data.piezas[i].title}: https://nocheprogramacion.com${url}\n`;
             }
           } else {
-            descripcion += `🤖 ${data.piezas[i].title}\n`;
+            descripcion += `  🤖 ${data.piezas[i].title}\n`;
           }
         }
       }
@@ -274,20 +286,14 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       // Indice del video
       if (data.topics) {
         Cantidad.Indice++;
-        descripcion += "\n🕓 Indice:\n";
+        descripcion += "\n🕓 Índice:\n";
         for (let i = 0; i < data.topics.length; ++i) {
           descripcion += `${data.topics[i].time} ${data.topics[i].title}\n`;
         }
       }
 
       // Links Generales
-      descripcion += "\nLinks:";
-      descripcion += `
-    👏🏽 Subscribe: https://www.youtube.com/alswnet?sub_confirmation=1
-    ☕ Donar un café: https://nocheprogramacion.com/cafe
-    💬 Discord: https://nocheprogramacion.com/discord
-    🚂 Sitio Web: http://nocheprogramacion.com
-    🐦 Redes Sociales: http://nocheprogramacion.com/links\n`;
+      descripcion += `\n${RedesGlobal}`;
 
       // Agradecer a colaboradores
       if (data.actualizado) {
@@ -330,7 +336,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
           descripcion += `\n`;
         }
 
-        descripcion += `\n🔭 Agrega tu nombre, Únete tu también https://www.youtube.com/alswnet/join 🔭`;
+        descripcion += `\n🔭 Agrega tu nombre, Únete tú también https://www.youtube.com/alswnet/join 🔭`;
         descripcion += `\n👊 Avances Exclusivo para Miembros: https://nocheprogramacion.com/miembros 👊`;
       } else {
         descripcion += `\n👊 Avances Exclusivo para Miembros: https://nocheprogramacion.com/miembros 👊`;
@@ -350,14 +356,34 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
 
     if (data.actualizado) {
       Cantidad.NuevoSistema++;
-      fs.writeFileSync(`actualizado/${data.video_id}.txt`, descripcion);
+      // TODO: Quitar cuando generador use meses y años
+      let FechaArticulo = new Date(data.date);
+      let mes = FechaArticulo.getMonth() + 1;
+      let anno = FechaArticulo.getFullYear();
+      let Folder = `actualizado/${anno}`;
+
+      // console.log(`fecha ${anno}/${mes} ${FechaArticulo.getMonth()} --${data.date}- ${data.title}`)
+
+      if (!fs.existsSync(Folder)) {
+        await fs.mkdirSync(Folder);
+      }
+      if (mes < 10) {
+        Folder += `/0${mes}`;
+      } else {
+        Folder += `/${mes}`;
+      }
+      if (!fs.existsSync(Folder)) {
+        // console.log(Folder);
+        await fs.mkdirSync(Folder);
+      }
+      fs.writeFileSync(`${Folder}/${data.video_id}.txt`, descripcion);
     }
 
-    let tipo = videos[i].pageURL.split("/")[0];
-    NombreArchivo = `${tipo}_${NombreArchivo}`;
+    // let tipo = videos[i].pageURL.split("/")[0];
+    // NombreArchivo = `${tipo}_${NombreArchivo}`;
 
-    fs.writeFileSync(`descripciones/${NombreArchivo}.txt`, descripcion);
-    fs.writeFileSync(`descripciones/Zen_${data.video_id}.txt`, descripcion);
+    // fs.writeFileSync(`descripciones/${NombreArchivo}.txt`, descripcion);
+    // fs.writeFileSync(`descripciones/Zen_${data.video_id}.txt`, descripcion);
   }
 
   console.log(`Cantidad total videos: ${CantidadVideos}`);
@@ -381,7 +407,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
 
 (() => {
   console.log(
-    "💫 Generador de descripcion de NocheProgramacion para YouTube 💫"
+    "💫 Generador de descripcion de NocheProgramación para YouTube 💫"
   );
   CrearDescripciones(ObtenerDataVideo());
 })();
