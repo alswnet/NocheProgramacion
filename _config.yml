@@ -31,30 +31,32 @@ web_editor_fullscreen_prefix: https://editor.p5js.org/chepecarlos/full/
 #                       The first match is used. If the video has the `web_editor`
 #                       property, a link to the P5 Web Editor will be used instead.
 code_variations:
-  - lang: "p5js"
-    folder: "P5"
-  - lang: "Processing"
-    folder: "Processing"
-  - lang: "JavaScript"
-    folder: "JavaScript"
-  - lang: "Node.js"
-    folder: "Node"
-  - lang: "Arduino"
-    folder: "Arduino"
-  - lang: "Python"
-    folder: "Python"
-  - lang: "Diagrama"
-    folder: "Diagrama"
-  - lang: "HTML"
-    folder: "HTML"
-  - lang: "presentacion"
-    folder: "presentacion"
-  - lang: "Script"
-    folder: "Script"
-  - lang: "PDF"
-    folder: "PDF"
-  - lang: "animacion"
-    folder: "animacion" 
+  - lang: p5js
+    folder: p5
+  - lang: Processing
+    folder: Processing
+  - lang: JavaScript
+    folder: JavaScript
+  - lang: Node.js
+    folder: Node
+  - lang: Arduino
+    folder: Arduino
+  - lang: Python
+    folder: Python
+  - lang: Diagrama
+    folder: Diagrama
+  - lang: HTML
+    folder: HTML
+  - lang: presentacion
+    folder: presentacion
+  - lang: Script
+    folder: Script
+  - lang: PDF
+    folder: PDF
+  - lang: animacion
+    folder: animacion
+  - lang: blender
+    folder: blender
 
 # Link a otro plataformas.
 links:
