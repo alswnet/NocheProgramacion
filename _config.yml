@@ -33,26 +33,26 @@ web_editor_fullscreen_prefix: https://editor.p5js.org/chepecarlos/full/
 code_variations:
   - lang: p5js
     folder: p5
-  - lang: Processing
-    folder: Processing
-  - lang: JavaScript
-    folder: JavaScript
-  - lang: Node.js
-    folder: Node
-  - lang: Arduino
-    folder: Arduino
-  - lang: Python
-    folder: Python
-  - lang: Diagrama
-    folder: Diagrama
-  - lang: HTML
-    folder: HTML
+  - lang: processing
+    folder: processing
+  - lang: javascript
+    folder: javascript
+  - lang: nodejs
+    folder: node
+  - lang: arduino
+    folder: arduino
+  - lang: python
+    folder: python
+  - lang: diagrama
+    folder: diagrama
+  - lang: html
+    folder: html
   - lang: presentacion
     folder: presentacion
-  - lang: Script
-    folder: Script
-  - lang: PDF
-    folder: PDF
+  - lang: script
+    folder: script
+  - lang: pdf
+    folder: pdf
   - lang: animacion
     folder: animacion
   - lang: blender
