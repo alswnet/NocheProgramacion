@@ -40,7 +40,7 @@ links:
     url: "https://ms7m.github.io/notify-py/"
   - title: "Github de notify-py"
     url: "https://github.com/ms7m/notify-py"
-  - title: "Pagina Pip de notiyy.py"
+  - title: "Pagina Pip de notify.py"
     url: "https://pypi.org/project/notify-py/"
   - title: "Generar mp3 desde texto"
     url: "http://texttospeechrobot.com/tts/es/texto-a-voz/"

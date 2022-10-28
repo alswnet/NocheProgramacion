@@ -6,11 +6,11 @@ video_id: IYnxx5BUk5A
 tags:
   - brainjs
   - ia
-  - javascrip
+  - javascript
 
 links:
   - title: "Pagina de Brain.js"
     url: "https://brain.js.org"
 ---
 
-Utilicemos una libreria muy amigable para contruir neuronas de inteligencia artificial en JavaScrip llamada brain.js
+Utilicemos una librería muy amigable para contruir neuronas de inteligencia artificial en JavaScript llamada brain.js

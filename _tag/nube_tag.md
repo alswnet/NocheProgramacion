@@ -152,6 +152,9 @@ redirect_from:
 			<a href="/tag/ia">#ia [2]</a>
 		</li>
 		<li>
+			<a href="/tag/javascript">#javascript [2]</a>
+		</li>
+		<li>
 			<a href="/tag/arduinoide">#arduinoide [2]</a>
 		</li>
 		<li>
@@ -246,9 +249,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/brainjs">#brainjs [1]</a>
-		</li>
-		<li>
-			<a href="/tag/javascrip">#javascrip [1]</a>
 		</li>
 		<li>
 			<a href="/tag/debian">#debian [1]</a>
@@ -366,9 +366,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/controlacelularpc">#controlacelularpc [1]</a>
-		</li>
-		<li>
-			<a href="/tag/javascript">#javascript [1]</a>
 		</li>
 		<li>
 			<a href="/tag/mosquitto">#mosquitto [1]</a>
