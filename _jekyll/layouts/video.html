@@ -98,6 +98,7 @@ layout: base
 
         {% assign downloadBaseURL = site.github_download_prefix | append: repositoryBaseURL %}
 
+        <h3 style="text-align: center">Descargables</h3>
         {% for variation in codeVariations %}
           {% include 3-modules/code-variation.html baseURL=repositoryBaseURL downloadURL=downloadBaseURL variation=variation %}
         {% endfor %}
