@@ -74,13 +74,13 @@ redirect_from:
 			<a href="/tag/bot">#bot [7]</a>
 		</li>
 		<li>
-			<a href="/tag/impresora3d">#impresora3d [6]</a>
+			<a href="/tag/impresora3d">#impresora3d [7]</a>
+		</li>
+		<li>
+			<a href="/tag/blender">#blender [6]</a>
 		</li>
 		<li>
 			<a href="/tag/programacion">#programacion [5]</a>
-		</li>
-		<li>
-			<a href="/tag/blender">#blender [5]</a>
 		</li>
 		<li>
 			<a href="/tag/truco">#truco [5]</a>
