@@ -1,19 +1,13 @@
 ---
-title: Quieres a Aprende a modelar Fantasma
-video_number: 27
-date: 2022-10-01
-video_id: IwF4ksrGCS4
+title: Probando Displays Giantes
+video_number: 28
+date: 2022-11-07
+video_id: BOYC2-988-0
 tags:
-  - blender
-  - impresora3d
-
-videos:
-  - title: Tutorial de Fantasma 
-    url: tutoriales/083_Creando_Fantasma_Blender
+  - arduino
+  - display
 
 colaboradores:
-  - title: "Editor"
-    colaborador: ingjuan
   - title: camarógrafa
     colaborador: paty
 
@@ -33,4 +27,4 @@ miembros:
 actualizado: true
 ---
 
-Nuestro especial de Halloween de este año, espero que te guste :)
+Probando unos Display 7 segmentos muy grande para un proyectos que esta moss emociono en terminar.
