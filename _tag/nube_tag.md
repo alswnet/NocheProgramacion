@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [85]</a>
+			<a href="/tag/arduino">#arduino [86]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [26]</a>
@@ -23,10 +23,10 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [19]</a>
+			<a href="/tag/esp8266">#esp8266 [20]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [19]</a>
+			<a href="/tag/esp32">#esp32 [20]</a>
 		</li>
 		<li>
 			<a href="/tag/telegram">#telegram [17]</a>
@@ -86,6 +86,9 @@ redirect_from:
 			<a href="/tag/truco">#truco [5]</a>
 		</li>
 		<li>
+			<a href="/tag/webserver">#webserver [5]</a>
+		</li>
+		<li>
 			<a href="/tag/3dprinting">#3dprinting [5]</a>
 		</li>
 		<li>
@@ -93,9 +96,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/editarvideo">#editarvideo [4]</a>
-		</li>
-		<li>
-			<a href="/tag/webserver">#webserver [4]</a>
 		</li>
 		<li>
 			<a href="/tag/obs">#obs [4]</a>
@@ -156,6 +156,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/arduinoide">#arduinoide [2]</a>
+		</li>
+		<li>
+			<a href="/tag/css">#css [2]</a>
 		</li>
 		<li>
 			<a href="/tag/rasberrypi">#rasberrypi [2]</a>
@@ -273,9 +276,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/materialize">#materialize [1]</a>
-		</li>
-		<li>
-			<a href="/tag/css">#css [1]</a>
 		</li>
 		<li>
 			<a href="/tag/macro">#macro [1]</a>
@@ -453,6 +453,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/prusaslicer">#prusaslicer [1]</a>
+		</li>
+		<li>
+			<a href="/tag/display">#display [1]</a>
 		</li>
 		<li>
 			<a href="/tag/esp">#esp [1]</a>
