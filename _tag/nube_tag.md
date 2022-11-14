@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [86]</a>
+			<a href="/tag/arduino">#arduino [87]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [26]</a>
@@ -41,7 +41,7 @@ redirect_from:
 			<a href="/tag/github">#github [14]</a>
 		</li>
 		<li>
-			<a href="/tag/python">#python [13]</a>
+			<a href="/tag/python">#python [14]</a>
 		</li>
 		<li>
 			<a href="/tag/freecad">#freecad [11]</a>
@@ -456,6 +456,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/display">#display [1]</a>
+		</li>
+		<li>
+			<a href="/tag/micropython">#micropython [1]</a>
 		</li>
 		<li>
 			<a href="/tag/esp">#esp [1]</a>
