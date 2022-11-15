@@ -14,10 +14,10 @@ tags:
 
 variations:
   - name: Demo Control
-    lang: Arduino
+    lang: arduino
     folder: DemoControl
   - name: Demo Echo
-    lang: Arduino
+    lang: arduino
     folder: DemoEcho
 
 topics:

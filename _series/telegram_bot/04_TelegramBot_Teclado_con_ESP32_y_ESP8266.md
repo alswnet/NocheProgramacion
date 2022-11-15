@@ -14,7 +14,7 @@ tags:
 
 variations:
   - name: Demo Teclado
-    lang: Arduino
+    lang: arduino
     folder: DemoTeclado
 
 topics:
