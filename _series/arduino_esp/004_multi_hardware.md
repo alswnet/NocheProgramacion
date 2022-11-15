@@ -11,10 +11,10 @@ tags:
 
 variations:
   - name: "Codigo Base"
-    lang: "Arduino"
+    lang: arduino
     folder: Ejemplo_Base
   - name: "Codigo Wifi"
-    lang: "Arduino"
+    lang: arduino
     folder: Ejemplo_Wifi
 
 topics:
