@@ -11,8 +11,6 @@ tags:
 topics:
   - title: inicio
     time: "00:00"
-  - title: Que veremos hoy
-    time: "00:01"
   - title: Que es Octoprint
     time: "00:34"
   - title: Descargar Software
