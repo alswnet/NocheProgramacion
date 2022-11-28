@@ -59,7 +59,7 @@ redirect_from:
 			<a href="/tag/nodejs">#nodejs [9]</a>
 		</li>
 		<li>
-			<a href="/tag/impresora3d">#impresora3d [8]</a>
+			<a href="/tag/impresora3d">#impresora3d [9]</a>
 		</li>
 		<li>
 			<a href="/tag/android">#android [8]</a>
@@ -189,6 +189,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/machinelearning">#machinelearning [2]</a>
+		</li>
+		<li>
+			<a href="/tag/octoprint">#octoprint [2]</a>
+		</li>
+		<li>
+			<a href="/tag/3dprinter">#3dprinter [2]</a>
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]</a>
@@ -381,12 +387,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/ndi">#ndi [1]</a>
-		</li>
-		<li>
-			<a href="/tag/octoprint">#octoprint [1]</a>
-		</li>
-		<li>
-			<a href="/tag/3dprinter">#3dprinter [1]</a>
 		</li>
 		<li>
 			<a href="/tag/consola">#consola [1]</a>
