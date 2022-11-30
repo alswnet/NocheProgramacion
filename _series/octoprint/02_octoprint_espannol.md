@@ -35,4 +35,3 @@ actualizado: true
 ---
 
 Les quiero enseñar algo que encontré por casualidad como poner octoprint en español, que puede  ser muy util para entender mejor el programa espero les ayude.
-
