@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP con JavaScript</title>
+</head>
+<body>
+    <h1>Botones</h1>
+    <input type="button" id="botonEncender" onclick="botonEncender()" value="Encender">
+    <input type="button" id="botonApagar" value="Apagar">
+    <script>
+        function botonEncender(){
+            console.log("Encender LED");
+            consultaGET("encender");
+        }
+
+        function botonApagar(){
+            console.log("Apagar LED");
+            consultaGET("apagar");
+        }
+
+        function consultaGET(consulta){
+            const Http = new XMLHttpRequest();
+            console.log(`Consultando  ${consulta}`)
+            Http.open("GET", consulta);
+            Http.send();
+
+            Http.onreadystatechange = (e) => {
+            console.log(Http.status );
+            console.log(Http.responseText);
+            };
+        }
+
+        const elementoApagado = document.getElementById("botonApagar");
+
+        elementoApagado.addEventListener("click", botonApagar);
+
+    </script>
+</body>
+</html>

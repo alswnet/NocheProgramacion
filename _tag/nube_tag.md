@@ -20,13 +20,13 @@ redirect_from:
 			<a href="/tag/shorts">#shorts [26]</a>
 		</li>
 		<li>
+			<a href="/tag/esp8266">#esp8266 [22]</a>
+		</li>
+		<li>
+			<a href="/tag/esp32">#esp32 [22]</a>
+		</li>
+		<li>
 			<a href="/tag/p5js">#p5js [22]</a>
-		</li>
-		<li>
-			<a href="/tag/esp8266">#esp8266 [21]</a>
-		</li>
-		<li>
-			<a href="/tag/esp32">#esp32 [21]</a>
 		</li>
 		<li>
 			<a href="/tag/telegram">#telegram [17]</a>
@@ -89,13 +89,13 @@ redirect_from:
 			<a href="/tag/i2c">#i2c [6]</a>
 		</li>
 		<li>
+			<a href="/tag/webserver">#webserver [6]</a>
+		</li>
+		<li>
 			<a href="/tag/programacion">#programacion [5]</a>
 		</li>
 		<li>
 			<a href="/tag/truco">#truco [5]</a>
-		</li>
-		<li>
-			<a href="/tag/webserver">#webserver [5]</a>
 		</li>
 		<li>
 			<a href="/tag/3dprinting">#3dprinting [5]</a>
@@ -123,6 +123,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/windows">#windows [3]</a>
+		</li>
+		<li>
+			<a href="/tag/css">#css [3]</a>
 		</li>
 		<li>
 			<a href="/tag/mdns">#mdns [3]</a>
@@ -159,9 +162,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/arduinoide">#arduinoide [2]</a>
-		</li>
-		<li>
-			<a href="/tag/css">#css [2]</a>
 		</li>
 		<li>
 			<a href="/tag/rasberrypi">#rasberrypi [2]</a>
