@@ -78,3 +78,5 @@ actualizado: true
 ---
 
 Te quiero enseñar una librería te puede ayudara dejar de usar delay; hacer proyectos mas fácil de hacer y entender, empieza a usar ticker Ya
+
+Ejemplo con cambiadores 5 a 8 corregido en código en NocheProgramacion

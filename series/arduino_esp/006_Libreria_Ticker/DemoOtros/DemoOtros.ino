@@ -9,6 +9,10 @@ Ticker cambiador1;
 Ticker cambiador2;
 Ticker cambiador3;
 Ticker cambiador4;
+Ticker cambiador5;
+Ticker cambiador6;
+Ticker cambiador7;
+Ticker cambiador8;
 
 int contador1 = 0;
 int contador2 = 0;
@@ -27,7 +31,11 @@ void Funcion3(int n) {
   Serial << "El numero " << n << "\n";
 }
 
-void Funcion4(String *numero) {
+void Funcion4(int numero) {
+  Serial << "Solo 1 vez -" << numero << "\n";
+}
+
+void Funcion5() {
   Serial << "Solo 1 vez" << "\n";
 }
 
@@ -39,10 +47,10 @@ void setup() {
   cambiador3.attach(2.1, Funcion3, 5);
   cambiador4.attach_ms(250, Funcion3, 20);
 
-  cambiador5.once(5, Funcion4);
-  cambiador6.once_ms(300, Funcion4);
-  cambiador7.once(20, Funcion3, 30);
-  cambiador8.once_ms(40, Funcion5, 10);
+  cambiador5.once(5, Funcion5);
+  cambiador6.once_ms(300, Funcion5);
+  cambiador7.once(20, Funcion4, 30);
+  cambiador8.once_ms(40, Funcion4, 10);
 }
 
 void loop() {
