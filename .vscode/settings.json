@@ -11,6 +11,7 @@
     "**/node_modules": true,
     "**_site": true
   },
+  "cSpell.language": "en,es",
   "cSpell.words": [
     "alsw",
     "Apóyanos",
