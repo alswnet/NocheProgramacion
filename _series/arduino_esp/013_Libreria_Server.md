@@ -12,7 +12,7 @@ tags:
   - webserver
 
 variations:
-  - name: Demo Basicos
+  - name: Demo Básicos
     lang: arduino
     folder: DemoBasico
   - name: Dame Error
@@ -73,8 +73,7 @@ miembros:
       - title: Lolailo Aviles Arroyo
       - title: Erebos Ubuntu
 
-para_miembros: true
 actualizado: true
 ---
 
-La mejor libreria para crear servidores Web con Nuestro ESP8266 o ESP32, que nos permite crear pagina web que podemos usan desde nuestro pc, tables o movil.
+La mejor librería para crear servidores Web con Nuestro ESP8266 o ESP32, que nos permite crear pagina web que podemos usan desde nuestro pc, tables o Movil.
