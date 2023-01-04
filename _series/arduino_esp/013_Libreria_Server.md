@@ -18,7 +18,7 @@ variations:
   - name: Dame Error
     lang: arduino
     folder: arduino/DemoError
-  - name: DemoArgumentos
+  - name: Demo Argumentos
     lang: arduino
     folder: arduino/DemoArgumentos
 
