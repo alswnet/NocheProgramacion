@@ -2,11 +2,6 @@
 // Tutorial Completo en https://nocheprogramacion.com
 // Canal Youtube https://youtube.com/alswnet?sub_confirmation=1
 
-template<class T> inline Print &operator <<(Print &obj, T arg) {
-  obj.print(arg);
-  return obj;
-}
-
 #if defined(ESP32)
 
 #include <WiFi.h>
@@ -32,100 +27,39 @@ ESP8266WebServer server(80);
 #include "data.h"
 const uint32_t TiempoEsperaWifi = 5000;
 
-#include <Adafruit_NeoPixel.h>
+void mensajeArgumento() {
+  String mensaje = "Valores Recividos\n\n";
+  mensaje += "URI: ";
+  mensaje += server.uri();
+  mensaje += "\nMetodo: ";
+  mensaje += (server.method() == HTTP_GET) ? "GET" : "POST";
+  mensaje += "\nArgumentos: ";
+  mensaje += server.args();
+  mensaje += "\n";
 
-#ifdef __AVR__
-#include <avr/power.h>
-#endif
-
-#define Pin 4
-#define CantidadLed 24
-
-Adafruit_NeoPixel tira = Adafruit_NeoPixel(CantidadLed, Pin, NEO_GRB + NEO_KHZ800);
-
-
-
-String Valor = "";
-boolean Estado = true;
-int Nivel = 50;
-int Rojo = 255;
-int Verde = 0;
-int Azul = 0;
-boolean Arcoiris = false;
-long NivelHue = 0;
-
-void funcionEncendido() {
-  Serial.println("Encendiendo");
-  Estado = true;
-  server.sendHeader("Access-Control-Allow-Origin", "*");
-  server.send(200, "text/plain", "Encender Led");
-
-}
-
-void funcionApagado() {
-  Serial.println("Apagando");
-  Estado = false;
-  server.sendHeader("Access-Control-Allow-Origin", "*");
-  server.send(200, "text/plain", "Apagar Led");
-}
-
-void funcionNivel() {
-  if (server.hasArg("valor")) {
-    Valor = server.arg("valor");
-    Nivel = atoi(Valor.c_str());
+  for (int i = 0; i < server.args() ; i++) {
+    mensaje += " " + server.argName(i) + ": " + server.arg(i) + "\n";
   }
 
-  Serial << "Cambiando nivel " << Nivel << "\n";
-  server.sendHeader("Access-Control-Allow-Origin", "*");
-  server.send(200, "text/plain", "Cambian Nivel");
-  tira.setBrightness(Nivel);
-}
+  mensaje += "\n";
 
-void funcionColor() {
-  if (server.hasArg("r")) {
-    Valor = server.arg("r");
-    Rojo = atoi(Valor.c_str());
-    Serial << "Rojo " << Rojo << "\n";
-  }
-  if (server.hasArg("g")) {
-    Valor = server.arg("g");
-    Verde = atoi(Valor.c_str());
-    Serial << "Verde " << Verde << "\n";
-  }
-  if (server.hasArg("b")) {
-    Valor = server.arg("b");
-    Azul = atoi(Valor.c_str());
-    Serial << "Azul " << Azul << "\n";
+  if (server.hasArg("pollo")) {
+    mensaje += "El Pollo dice " + server.arg("pollo");
+  } else {
+    mensaje += "No hay pollo";
   }
 
-  server.sendHeader("Access-Control-Allow-Origin", "*");
-  server.send(200, "text/plain", "Cambian Color");
-}
-
-void funcionArcoiris() {
-  if (server.hasArg("estado")) {
-    Valor = server.arg("estado");
-    if (Valor == "vivo") {
-      Arcoiris = true;
-    } else {
-      Arcoiris = false;
-    }
-  }
-
-  Serial << "Arcoiris " << Arcoiris << "\n";
-  server.sendHeader("Access-Control-Allow-Origin", "*");
-  server.send(200, "text/plain", "Cambiando Arcoiris");
+  server.send(200, "text/plain", mensaje);
 }
 
 void mensajeBase() {
-  server.send(200, "text/html", Pagina);
+  server.send(200, "text/plain", "Hola desde el ESP");
 }
 
 void mensajeError() {
   String mensaje = "<h1>404</h1>";
   mensaje += "Pagina No encontrada</br>";
   mensaje += "Intenta otra pagina</br>";
-  server.sendHeader("Access-Control-Allow-Origin", "*");
   server.send(404, "text/html", mensaje);
 }
 
@@ -154,29 +88,16 @@ void setup() {
     }
   }
 
+  MDNS.addService("http", "tcp", 80);
+
   server.on("/", mensajeBase);
 
-  server.on("/vivo", funcionEncendido);
-  server.on("/muerto", funcionApagado);
-
-  server.on("/nivel", funcionNivel);
-  server.on("/color", funcionColor);
-  server.on("/arcoiris", funcionArcoiris);
+  server.on("/valor", mensajeArgumento);
 
   server.onNotFound(mensajeError);
 
   server.begin();
   Serial.println("Servidor HTTP iniciado");
-
-#if defined (__AVR_ATtiny85__)
-  if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
-#endif
-
-  tira.begin();
-  tira.setBrightness(Nivel);
-  tira.show();
-
-  Pagina.replace("%ip", WiFi.localIP().toString());
 }
 
 void loop() {
@@ -186,32 +107,4 @@ void loop() {
   MDNS.update();
 #endif
 
-  if (Estado) {
-    if (Arcoiris) {
-      ColorArcoiris();
-    } else {
-      ColorSimple(tira.Color(Rojo, Verde, Azul));
-    }
-  } else {
-    tira.clear();
-    tira.show();
-  }
-  delay(10);
-
-}
-
-void ColorArcoiris() {
-  tira.rainbow(NivelHue);
-  NivelHue += 256;
-  if (NivelHue > 65536) {
-    NivelHue = 0;
-  }
-  tira.show();
-}
-
-void ColorSimple(uint32_t ColorActual) {
-  for (int i = 0; i < tira.numPixels(); i++) {
-    tira.setPixelColor(i, ColorActual);
-  }
-  tira.show();
 }
