@@ -14,13 +14,13 @@ tags:
 variations:
   - name: Demo Básicos
     lang: arduino
-    folder: DemoBasico
+    folder: arduino/DemoBasico
   - name: Dame Error
     lang: arduino
-    folder: DemoError
+    folder: arduino/DemoError
   - name: DemoArgumentos
     lang: arduino
-    folder: DemoArgumentos
+    folder: arduino/DemoArgumentos
 
 topics:
   - title: incio
