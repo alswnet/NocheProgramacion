@@ -1,7 +1,7 @@
 ---
 title: Forma oculta de como programar tu ESP32 y ESP8266
 video_number: 16
-date: 2023-01-30
+date: 2023-01-25
 video_id: CMglsVCi2t8
 repository: arduino_esp/016_update
 tags:
