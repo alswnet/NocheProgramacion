@@ -8,19 +8,19 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [95]</a>
+			<a href="/tag/arduino">#arduino [96]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [28]</a>
+			<a href="/tag/esp8266">#esp8266 [29]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [28]</a>
+			<a href="/tag/iot">#iot [29]</a>
+		</li>
+		<li>
+			<a href="/tag/esp32">#esp32 [27]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>
-		</li>
-		<li>
-			<a href="/tag/esp32">#esp32 [26]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [26]</a>
@@ -363,6 +363,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/eeprom">#eeprom [1]</a>
+		</li>
+		<li>
+			<a href="/tag/ota">#ota [1]</a>
 		</li>
 		<li>
 			<a href="/tag/inskcape">#inskcape [1]</a>
