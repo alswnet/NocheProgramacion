@@ -9,7 +9,7 @@ jobs:
       - name: Configurar Ruby 2.7
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.7.x
+          ruby-version: '3.0'
       - uses: actions/cache@v1
         with:
           path: vendor/bundle
