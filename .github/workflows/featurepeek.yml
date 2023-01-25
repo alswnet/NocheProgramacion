@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Configurar Ruby 2.7
+      - name: Configurar Ruby
         uses: actions/setup-ruby@v1
-        with:
-          ruby-version: '3.0'
+        #with:
+        #  ruby-version: '3.0'
       - uses: actions/cache@v1
         with:
           path: vendor/bundle
