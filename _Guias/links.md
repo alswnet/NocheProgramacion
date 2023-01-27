@@ -54,7 +54,7 @@ nopublicidad: true
 
 ### Tiktok
 
-[tiktok.com/@chepecarlosyt](https://www.tiktok.com/@chepecarlosyt)
+[tiktok.com/@chepecarlosyt](https://www.tiktok.com/@chepecarlo)
 
 ### Instagram
 
