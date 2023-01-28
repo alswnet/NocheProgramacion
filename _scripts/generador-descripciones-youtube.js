@@ -338,11 +338,11 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
           descripcion += `\n`;
         }
 
-        descripcion += `\n🔭 Agrega tu nombre, Únete tú también https://www.youtube.com/alswnet/join 🔭`;
+        descripcion += `\n🔭 Agrega tu nombre, Únete tú también https://www.youtube.com/@chepecarlo/join 🔭`;
         descripcion += `\n👊 Avances Exclusivo para Miembros: https://nocheprogramacion.com/miembros 👊`;
       } else {
         descripcion += `\n👊 Avances Exclusivo para Miembros: https://nocheprogramacion.com/miembros 👊`;
-        descripcion += `\n🔭 Quieres apoyar, conviértete en Miembro: https://www.youtube.com/alswnet/join 🔭`;
+        descripcion += `\n🔭 Quieres apoyar, conviértete en Miembro: https://www.youtube.com/@chepecarlo/join 🔭`;
       }
     }
 

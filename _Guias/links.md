@@ -50,7 +50,7 @@ nopublicidad: true
 
 ### Youtube
 
-[youtube.com/@chepecarlo](https://www.youtube.com/@chepecarlo?sub_confirmation=1)
+[youtube.com/@chepecarlo]({{ site.links.youtube }}?sub_confirmation=1)
 
 ### Tiktok
 
@@ -70,7 +70,7 @@ nopublicidad: true
 
 ### Membresia
 
-[youtube.com/alswnet/join](https://www.youtube.com/@chepecarlo/join)
+[youtube.com/@chepecarlo/join]({{ site.links.youtube }}/join)
 
 ### Discord
 
