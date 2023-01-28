@@ -50,11 +50,11 @@ nopublicidad: true
 
 ### Youtube
 
-[youtube.com/alswnet](https://www.youtube.com/alswnet?sub_confirmation=1)
+[youtube.com/@chepecarlo](https://www.youtube.com/@chepecarlo?sub_confirmation=1)
 
 ### Tiktok
 
-[tiktok.com/@chepecarlosyt](https://www.tiktok.com/@chepecarlo)
+[tiktok.com/@chepecarlo](https://www.tiktok.com/@chepecarlo)
 
 ### Instagram
 

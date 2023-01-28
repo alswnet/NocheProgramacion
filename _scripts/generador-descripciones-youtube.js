@@ -135,7 +135,9 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       if (data.remake) {
         Cantidad.Remake++;
         url = ObtenerURLYoutube(data.remake);
-        descripcion = `Existe una versión NUEVA 👀 o actualización de este video: ${url}\n` + descripcion;
+        descripcion =
+          `Existe una versión NUEVA 👀 o actualización de este video: ${url}\n` +
+          descripcion;
       }
 
       // TODO: Mejor Algoritmo
@@ -178,7 +180,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         previousID = false;
       }
 
-      if (playlist && (siguienteVideo || anteriorVideo)) {
+      if (playlist || siguienteVideo || anteriorVideo) {
         Cantidad.playlist++;
         descripcion += "\n";
 
