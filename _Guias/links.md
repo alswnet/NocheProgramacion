@@ -68,6 +68,10 @@ nopublicidad: true
 
 [nocheprogramacion.com](https://nocheprogramacion.com/)
 
+### Membresia
+
+[youtube.com/alswnet/join](https://www.youtube.com/@chepecarlo/join)
+
 ### Discord
 
 [nocheprogramacion.com/discord](https://nocheprogramacion.com/discord)
@@ -83,10 +87,6 @@ nopublicidad: true
 ### Canal Juegos
 
 [youtube.com/alsw2game](https://www.youtube.com/channel/UC-QPTA-oIQf59SVA8ckpMXA?sub_confirmation=1)
-
-### Membresia
-
-[youtube.com/alswnet/join](https://www.youtube.com/alswnet/join)
 
 ### Donacion
 
