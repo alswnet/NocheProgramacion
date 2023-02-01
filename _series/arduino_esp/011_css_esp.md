@@ -41,6 +41,8 @@ links:
 videos:
   - title: Operador Ternario
     url: shorts/007_Operador_ternario
+  - title: contraseña arduino 
+    url: series/arduino/basico/006_Contraseña_Arduino
 
 piezas:
   - title: ESP32

@@ -47,6 +47,9 @@ redirect_from:
 			<a href="/tag/freecad">#freecad [11]</a>
 		</li>
 		<li>
+			<a href="/tag/impresora3d">#impresora3d [10]</a>
+		</li>
+		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
 		</li>
 		<li>
@@ -57,9 +60,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/nodejs">#nodejs [9]</a>
-		</li>
-		<li>
-			<a href="/tag/impresora3d">#impresora3d [9]</a>
 		</li>
 		<li>
 			<a href="/tag/webserver">#webserver [9]</a>
@@ -116,6 +116,9 @@ redirect_from:
 			<a href="/tag/obs">#obs [4]</a>
 		</li>
 		<li>
+			<a href="/tag/octoprint">#octoprint [4]</a>
+		</li>
+		<li>
 			<a href="/tag/comando">#comando [4]</a>
 		</li>
 		<li>
@@ -134,7 +137,7 @@ redirect_from:
 			<a href="/tag/java">#java [3]</a>
 		</li>
 		<li>
-			<a href="/tag/octoprint">#octoprint [3]</a>
+			<a href="/tag/3dprinter">#3dprinter [3]</a>
 		</li>
 		<li>
 			<a href="/tag/terminal">#terminal [3]</a>
@@ -195,9 +198,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/machinelearning">#machinelearning [2]</a>
-		</li>
-		<li>
-			<a href="/tag/3dprinter">#3dprinter [2]</a>
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]</a>
