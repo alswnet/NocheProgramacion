@@ -1,7 +1,7 @@
 ---
 title: Aprende a Instalar ESP32 y ESP8266 en Arduino IDE
 video_number: 02
-date: 2023-02-20
+date: 2023-02-6
 video_id: TjvD6OBAuT4
 tags:
   - esp32
@@ -20,7 +20,7 @@ topics:
     time: "04:35"
 
 links:
-  - title: Paginna ESP32
+  - title: Pagina ESP32
     url: https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html
   - title: Pagina ESP8266
     url: https://github.com/esp8266/Arduino#installing-with-boards-manager
