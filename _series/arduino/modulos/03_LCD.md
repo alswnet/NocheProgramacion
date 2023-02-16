@@ -1,7 +1,7 @@
 ---
 title: Aprende a usar Pantalla LCD con Arduino
 video_number: 03
-date: 2023-02-05
+date: 2023-02-15
 video_id: T5l_3VWqfE4
 repository: arduino/modulos/03_LCD
 tags:
@@ -39,6 +39,11 @@ topics:
     time: "06:49"
   - title: Demo cinco
     time: "07:31"
+
+piezas:
+  - title: arduino uno
+  - title: lcd 16x2
+  - title: lcd 20x4
 
 links:
   - title: Guía LCD (Ingles)
