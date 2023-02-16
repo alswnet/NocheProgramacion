@@ -70,10 +70,10 @@ videos:
   - title: Buscador de I2C en Arduino (Pendiente)
 
 piezas:
-  - title: Arduino Uno o Campatible
+  - title: Arduino Uno
   - title: ESP32
   - title: ESp8266
-  - title: LCD
+  - title: LCD 16x2
   - title: Modulo i2c para LCD
 
 colaboradores:

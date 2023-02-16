@@ -13,7 +13,7 @@ links:
     url: https://github.com/alswnet/sintetizador-arduino
 
 piezas:
-  - title: "Arduino Uno"
+  - title: Arduino Uno
 
 actualizado: true
 ---

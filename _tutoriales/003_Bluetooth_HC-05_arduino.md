@@ -18,7 +18,7 @@ links:
   - title: "Codigo Demo 2"
     url: "https://gist.github.com/chepecarlos/fe6faa5be9685d5b9a99"
 piezas:
-  - title: "Arduino Uno R3"
+  - title: Arduino Uno
   - title: "Led"
   - title: "Resistencia 330ohm"
   - title: "Modulo Bluetooth HC-05"

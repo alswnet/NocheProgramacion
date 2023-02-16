@@ -8,7 +8,7 @@ tags:
   - arduino
 
 piezas:
-  - title: "Arduino UNO"
+  - title: Arduino Uno
   - title: "Modulo Rele"
   - title: "Modulo RTC"
   - title: "Led"

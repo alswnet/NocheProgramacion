@@ -13,7 +13,7 @@ videos:
     url: series/arduino/basico/007_Como_concatenar_en_Arduino
 
 piezas:
-  - title: Arduino uno o compatible
+  - title: Arduino uno
 
 colaboradores:
   - title: "Editor"

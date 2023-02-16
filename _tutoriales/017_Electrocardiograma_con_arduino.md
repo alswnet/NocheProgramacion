@@ -16,7 +16,7 @@ links:
 
 piezas:
   - title: "Arduino Microview"
-  - title: "Arduino Uno r3"
+  - title: Arduino Uno
   - title: "Redboard"
   - title: "Modulo Bluetooth HC-05"
   - title: "Sensor electrocardiograma"

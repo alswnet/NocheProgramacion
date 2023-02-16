@@ -95,6 +95,28 @@ async function CrearDescripciones(videos) {
     console.error(err);
   }
 
+  let AmazonNoEncontrado = 0;
+  const ArchivoAmazon = path.join(__dirname, "amazon-code.txt");
+  let CodigoAmazon = "";
+  try {
+    if (fs.existsSync(ArchivoAmazon)) {
+      data = await fs.readFileSync(ArchivoAmazon);
+      CodigoAmazon = data.toString();
+      console.log(`Codigo afilacion Amazon: ${CodigoAmazon}`);
+    }
+  } catch (err) {
+    console.error(err);
+  }
+
+  const ArchivoProductos = path.join(__dirname, "producto.md");
+  let ProductoAmazon;
+  try {
+    const contenido = fs.readFileSync(ArchivoProductos, "UTF8");
+    ProductoAmazon = yaml.loadFront(contenido);
+  } catch (err) {
+    console.error(err);
+  }
+
   for (let i = 0; i < videos.length; i++) {
     const data = videos[i].data;
     const pageURL = videos[i].pageURL;
@@ -249,8 +271,10 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       // Link de piezas
       if (data.piezas) {
         Cantidad.Piezas++;
+        let SiAmazon = false;
         descripcion += "\nComponentes electrónicos:\n";
-        for (let i = 0; i < data.piezas.length; ++i) {
+        for (let i = 0; i < data.piezas.length; i++) {
+
           const url = data.piezas[i].url;
           if (url) {
             if (/https?:\/\/.*/.test(url)) {
@@ -261,6 +285,32 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
           } else {
             descripcion += `  🤖 ${data.piezas[i].title}\n`;
           }
+
+          let EncontradoAmazon = false;
+          for (let j = 0; j < ProductoAmazon["productos"].length; j++) {
+            if(data.piezas[i].title){
+              if (ProductoAmazon["productos"][j]["name"] == data.piezas[i].title.toLowerCase() ) {
+                EncontradoAmazon = true;
+                SiAmazon = true;
+                if("string" == typeof ProductoAmazon["productos"][j]['usa']){
+                  descripcion += `    Amazon-USA: http://www.amazon.com/dp/${ProductoAmazon["productos"][j]['usa']}/ref=nosim?tag=${CodigoAmazon}\n`;
+                } else {
+                  descripcion += `    Amazon-USA:\n`;
+                  for (let z = 0; z < ProductoAmazon["productos"][j]['usa'].length; z++) {
+                    descripcion += `      http://www.amazon.com/dp/${ProductoAmazon["productos"][j]['usa'][z]}/ref=nosim?tag=${CodigoAmazon}\n`;
+                  }
+                }
+              }
+            }
+          }
+        
+          if(!EncontradoAmazon){
+            AmazonNoEncontrado++;
+            console.log('\x1b[33m%s\x1b[0m', `No encontrado ${AmazonNoEncontrado} - ${data.piezas[i].title} - ${data.video_id} - ${data.title}`)
+          }
+        }
+        if(SiAmazon){
+          descripcion += `Link de Afilaron de amazon, ganamos una comisión si los usas\n`
         }
       }
 

@@ -43,7 +43,7 @@ links:
     url: "https://github.com/arduino/Arduino/blob/57a931c9c4c084057417837239ad8136f8a7b1aa/build/shared/ArduinoSerialPlotterProtocol.md"
 
 piezas:
-  - title: "Arduino Uno Compatible"
+  - title: Arduino Uno
   - title: "Potenciometro 10K ohms"
   - title: "Boton"
   - title: "Resistencia 10K ohms"

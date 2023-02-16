@@ -12,7 +12,7 @@ links:
     url: "https://playground.arduino.cc/Main/CapacitiveSensor/"
 
 piezas:
-  - title: "Arduino Uno R3"
+  - title: Arduino Uno
   - title: "Resistencia 10M"
   - title: "Jumper Macho-Macho"
   - title: "Led"

@@ -53,6 +53,8 @@ videos:
     url: series/arduino_esp/005_multi_wifi
   - title: Que es MDns
     url: series/arduino_esp/008_mdns_esp
+  - title: contraseña arduino 
+    url: series/arduino/basico/006_Contraseña_Arduino
 
 colaboradores:
   - title: Editor

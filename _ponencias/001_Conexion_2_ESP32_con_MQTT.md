@@ -22,8 +22,9 @@ links:
     url: mqtt
 
 piezas:
-  - title: "ESP32 o ESP8266 Arduino o compatible"
-  - title: "Led"
+  - title: esp32
+  - title: esp8266
+  - title: Led
   - title: "Resistencia 330ohm"
   - title: "Boton"
   - title: "Resistencia 10K"

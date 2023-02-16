@@ -52,7 +52,7 @@ links:
     url: "https://play.google.com/store/apps/details?id=ptah.apps.bluetoothterminal"
 
 piezas:
-  - title: "Arduino Uno R3 o Compatible"
+  - title: Arduino Uno
   - title: "Modulo Bluetooth HC-05"
   - title: "Jumper Macho-Macho"
   - title: "Breadboard"

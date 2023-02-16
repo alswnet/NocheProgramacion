@@ -44,7 +44,7 @@ links:
     url: https://www.cplusplus.com/articles/2LywvCM9/
 
 piezas:
-  - title: Arduino uno o compatible
+  - title: Arduino uno
 
 colaboradores:
   - title: "Editor"

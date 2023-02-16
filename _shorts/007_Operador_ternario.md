@@ -15,7 +15,7 @@ links:
     url: https://www.w3schools.com/cpp/cpp_conditions_shorthand.asp
 
 piezas:
-  - title: "Arduino Uno"
+  - title: Arduino Uno
 
 colaboradores:
   - title: "Editor"

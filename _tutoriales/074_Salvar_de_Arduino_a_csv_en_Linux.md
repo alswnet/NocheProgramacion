@@ -46,7 +46,7 @@ videos:
     url: series/arduino/avanzado/008_millis_arduino
 
 piezas:
-  - title: Arduino Uno Compatible
+  - title: Arduino Uno
   - title: Potenciometro 10K ohms
   - title: Boton
   - title: Resistencia 10K ohms
