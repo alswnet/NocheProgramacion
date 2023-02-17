@@ -96,6 +96,7 @@ async function CrearDescripciones(videos) {
   }
 
   let AmazonNoEncontrado = 0;
+  let AmazonEncontrado = 0;
   const ArchivoAmazon = path.join(__dirname, "amazon-code.txt");
   let CodigoAmazon = "";
   try {
@@ -307,6 +308,8 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
           if(!EncontradoAmazon){
             AmazonNoEncontrado++;
             console.log('\x1b[33m%s\x1b[0m', `No encontrado ${AmazonNoEncontrado} - ${data.piezas[i].title} - ${data.video_id} - ${data.title}`)
+          } else {
+            AmazonEncontrado++;
           }
         }
         if(SiAmazon){
@@ -454,6 +457,9 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
   ImprimirData("SeoMostar", Cantidad.SeoMostar, CantidadVideos);
   ImprimirData("SeoMostar Activos", Cantidad.SeoMostarActivo, CantidadVideos);
   ImprimirData("Nuevo Sistema", Cantidad.NuevoSistema, CantidadVideos);
+  console.log('\x1b[33m%s\x1b[0m', `Amazon No encontrado: ${AmazonNoEncontrado}`);
+  console.log(`Amazon encontrado: ${AmazonEncontrado}`);
+
   console.log(`Ads Global: ${ActivadoAdsGlobal}`);
 }
 
