@@ -16,7 +16,7 @@ piezas:
   - title: "Resistencia 10M"
   - title: "Jumper Macho-Macho"
   - title: "Led"
-  - title: "Resistencia 330ohm"
+  - title: "Resistencia 330 ohms"
 
 actualizado: true
 ---

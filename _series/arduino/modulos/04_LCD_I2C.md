@@ -74,7 +74,7 @@ piezas:
   - title: ESP32
   - title: ESp8266
   - title: LCD 16x2
-  - title: Modulo i2c para LCD
+  - title: LCD i2c 16x2
 
 colaboradores:
   - title: "Editor"

@@ -8,10 +8,6 @@ tags:
   - esp32
   - esp8266
   - css
-  - webserver  
-  - esp32
-  - esp8266
-  - css
   - webserver
 
 ads:

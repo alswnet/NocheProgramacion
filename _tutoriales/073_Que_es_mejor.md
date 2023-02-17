@@ -45,7 +45,7 @@ links:
     url: "https://www.arduino.cc/reference/en/language/functions/time/micros/"
 
 piezas:
-  - title: "ESP 32 Generico"
+  - title: ESP32
 
 colaboradores:
   - title: "Editor"

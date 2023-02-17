@@ -17,10 +17,9 @@ links:
 piezas:
   - title: "Arduino Microview"
   - title: Arduino Uno
-  - title: "Redboard"
   - title: "Modulo Bluetooth HC-05"
   - title: "Sensor electrocardiograma"
-  - title: "botones"
+  - title: boton
   - title: "Li-power(convertidor elevador bateria litio)"
   - title: "Batería Litio de 1000mAh"
   - title: "Capacitor de 100 microfaradios"

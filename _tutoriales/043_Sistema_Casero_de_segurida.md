@@ -21,12 +21,10 @@ links:
     url: "https://telegram.org/"
 
 piezas:
-  - title: "SparkFun ESP8266"
-    pieza: "thing-esp826"
+  - title: ESP8266
   - title: "Led"
     pieza: "led-rojo-5mm"
-  - title: "Resistencia 330"
-    pieza: "resistencia-de-330-ohm-0-25w"
+  - title: "Resistencia 330 ohms"
   - title: "Breadboard"
     pieza: "breadboard-transparente"
   - title: "Cable de prototipado"

@@ -26,7 +26,7 @@ links:
     url: "https://play.google.com/store/apps/details?id=ptah.apps.bluetoothterminal"
 
 piezas:
-  - title: "ESP32 o Compatible"
+  - title: ESP32
 
 actualizado: true
 ---

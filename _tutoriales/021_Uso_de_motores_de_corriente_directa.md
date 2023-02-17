@@ -15,7 +15,7 @@ pieza:
   - title: Motor DC con reductor - DAGU
   - title: Ruedas de Hule
   - title: Chassis Negro  para Arduino
-  - title: Arduino/Genuino Uno o Compatible
+  - title: Arduino Uno
   - title: Breadboard
   - title: Jumper M/M
   - title: Porta Bateria 4xAA

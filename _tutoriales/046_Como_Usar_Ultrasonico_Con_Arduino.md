@@ -14,8 +14,6 @@ links:
 
 piezas:
   - title: Arduino Uno
-  - title: "Redboard"
-    pieza: "RedBoard"
   - title: "Sensor Ultrasonico HC-SR04"
     pieza: "sensor-ultrasonico-hc-sr04"   
 ---

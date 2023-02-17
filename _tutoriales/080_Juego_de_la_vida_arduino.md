@@ -52,8 +52,8 @@ videos:
     url: series/arduino/basico/007_Como_concatenar_en_Arduino
 
 piezas:
-  - title: Pantalla OLED
-  - title: ESP32 (Arduino Compatible)
+  - title: Pantalla OLED i2c
+  - title: ESP32
 
 colaboradores:
   - title: Editor

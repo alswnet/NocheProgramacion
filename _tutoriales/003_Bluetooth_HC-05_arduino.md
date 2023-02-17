@@ -20,7 +20,7 @@ links:
 piezas:
   - title: Arduino Uno
   - title: "Led"
-  - title: "Resistencia 330ohm"
+  - title: "Resistencia 330 ohms"
   - title: "Modulo Bluetooth HC-05"
 
 actualizado: true

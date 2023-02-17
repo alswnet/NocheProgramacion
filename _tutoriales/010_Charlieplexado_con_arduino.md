@@ -7,7 +7,7 @@ tags:
   - arduino
 
 piezas:
-  - title: arduino
+  - title: arduino uno
   - title: led
   - title: resistencia
 

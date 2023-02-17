@@ -49,7 +49,7 @@ piezas:
   - title: Arduino Uno
   - title: Potenciometro 10K ohms
   - title: Boton
-  - title: Resistencia 10K ohms
+  - title: Resistencia 10K
 
 colaboradores:
   - title: "Editor"

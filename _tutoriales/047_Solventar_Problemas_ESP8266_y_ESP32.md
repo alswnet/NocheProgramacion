@@ -33,8 +33,8 @@ topics:
     time: "08:31"
 
 piezas:
-  - title: "Arduino ESP8266"
-  - title: "Arduino ESP32"
+  - title: ESP8266
+  - title: ESP32
 
 videos:
   - title: "nueva Seria ESP32 y ESP8266"

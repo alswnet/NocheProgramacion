@@ -12,7 +12,7 @@ piezas:
   - title: "Modulo Rele"
   - title: "Modulo RTC"
   - title: "Led"
-  - title: "Resistencia 330ohm"
+  - title: Resistencia 330 ohms
   - title: "Boton"
   - title: "Resistencia 10k"
 
