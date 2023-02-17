@@ -11,7 +11,7 @@ links:
       url: "https://github.com/bogde/HX711"
 
 piezas:
-    - title: "Sparkfun ESP8266 Thing Dev"
+    - title: "ESP8266"
       url: "https://www.sparkfun.com/products/13711"
     - title: "Barra de Carga - TAL220"
       url: "https://www.sparkfun.com/products/13329"

@@ -12,4 +12,30 @@ productos:
         - B01EWOE0UU
     - name: led
       usa: B073QMYKDM
+    - name: lcd 16x2
+      usa: B00HJ6AFW6
+    - name: lcd i2c 16x2
+      usa: B07S7PJYM6
+    - name: lcd 20x4
+      usa: B0BFDDZ49T
+    - name: arduino mega
+      usa:
+        - B0046AMGW0
+        - B01H4ZLZLQ
+    - name: breadboard
+      usa: B07DL13RZH
+    - name: pantalla oled i2c
+      usa: B09C5K91H7
+    - name: resistencia 330 ohms
+      usa: B07QH5PFG3
+    - name: resistencia 10k
+      usa: B07QJB31M7
+    - name: resistencia 1k
+      usa: B07QG1V4YL
+    - name: modulo bluetooth hc-05
+      usa: B07VL725T8
+    - name: boton
+      usa: B09R41C991
+    - name: sensor pir
+      usa: B07KZW86YR
 ---

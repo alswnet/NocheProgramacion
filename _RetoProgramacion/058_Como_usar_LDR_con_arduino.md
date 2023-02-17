@@ -10,11 +10,11 @@ links:
     url: "https://www.arduino.cc/en/Tutorial/EEPROMWrite"
 
 piezas:
-  - title: "RedBoard (Arduino Uno Compatible)"
+  - title: Arduino Uno
   - title: "Sensor LDR"
-  - title: "Led (Rojo)"
-  - title: "Resistencia 330ohm"
-  - title: "Resistencia 1K"
+  - title: Led
+  - title: Resistencia 330 ohms
+  - title: Resistencia 1K
 
 actualizado: true
 ---

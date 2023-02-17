@@ -27,14 +27,11 @@ videos:
     url: "series/mqtt"
 
 piezas:
-  - title: "Sparkfun ESP8266 Thing Dev"
+  - title: ESP8266
   - title: "Boton"
-  - title: "Led (Rojo)"
-    pieza: "led-rojo-5mm"
-  - title: "Resistencia 330ohm"
-    pieza: "resistencia-de-330-ohm-0-25w"
-  - title: "Resistencia 1K"
-    pieza: "resistencia-de-1k-ohm-0-25w"
+  - title: Led
+  - title: Resistencia 330 ohms
+  - title: Resistencia 1K
 
 actualizado: true
 ---

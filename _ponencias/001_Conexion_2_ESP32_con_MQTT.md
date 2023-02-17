@@ -25,7 +25,7 @@ piezas:
   - title: esp32
   - title: esp8266
   - title: Led
-  - title: "Resistencia 330ohm"
+  - title: "Resistencia 330 ohms"
   - title: "Boton"
   - title: "Resistencia 10K"
   - title: "BreanBoard"

@@ -7,8 +7,8 @@ web_editor: EZAqGHI9V
 repository: 047_Minu_Curso_Internet_de_las_Cosas
 
 piezas:
-  - title: "ESP8266 Thing"
-  - title: "ESP32"
+  - title: ESP8266
+  - title: ESP32
 
 actualizado: false
 ---
