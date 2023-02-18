@@ -290,7 +290,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
           let EncontradoAmazon = false;
           for (let j = 0; j < ProductoAmazon["productos"].length; j++) {
             if(data.piezas[i].title){
-              if (ProductoAmazon["productos"][j]["name"] == data.piezas[i].title.toLowerCase() ) {
+              if (ProductoAmazon["productos"][j]["name"].toLowerCase() == data.piezas[i].title.toLowerCase() ) {
                 EncontradoAmazon = true;
                 SiAmazon = true;
                 if("string" == typeof ProductoAmazon["productos"][j]['usa']){
