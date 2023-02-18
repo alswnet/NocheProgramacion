@@ -28,7 +28,7 @@ piezas:
   - title: "Resistencia 330 ohms"
   - title: "Boton"
   - title: "Resistencia 10K"
-  - title: "BreanBoard"
+  - title: "BreadBoard"
 
 custom_sections:
   - title: "Contactos de Robotics Space NV"
