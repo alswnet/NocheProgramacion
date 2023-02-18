@@ -42,5 +42,8 @@ productos:
       usa: B01L5UJ36U
     - name: arduino yun 
       usa: B0112B0F3W
+    - name: Arduino Microview
+      usa: B01BHGY8WG
+
       
 ---
