@@ -9,7 +9,7 @@ tags:
 piezas:
   - title: arduino uno
   - title: led
-  - title: resistencia
+  - title: resistencia 330 ohms
 
 actualizado: true
 ---
