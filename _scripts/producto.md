@@ -38,4 +38,6 @@ productos:
       usa: B09R41C991
     - name: sensor pir
       usa: B07KZW86YR
+    - name: jumper macho-macho 
+      usa: B01L5UJ36U
 ---
