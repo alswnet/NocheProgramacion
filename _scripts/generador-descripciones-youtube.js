@@ -47,6 +47,25 @@ function AgregarSeoMostar(descripcion, Cantidad, Actualizar, Publicidad) {
   return descripcion;
 }
 
+function LinkAmazon(codigo, producto){
+  let texto = "";
+  for(let i = 0; i< codigo["amazon"].length; i++){
+    for (var key in producto) {
+      if(codigo["amazon"][i]["pais"].toLowerCase() == key.toLowerCase()){
+        if("string" == typeof producto[key]){
+          texto += `    Amazon-${key.toUpperCase()}: ${codigo["amazon"][i]["url"]}/dp/${producto[key]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
+        } else{
+          texto += `    Amazon-${key.toUpperCase()}:\n`;
+          for (let z = 0; z < producto[key].length; z++) {
+            texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto[key][z]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
+          }
+        }
+      }
+    }
+  }
+  return texto;
+}
+
 async function CrearDescripciones(videos) {
   let CantidadVideos = videos.length;
   let ActivadoAdsGlobal = false;
@@ -96,14 +115,17 @@ async function CrearDescripciones(videos) {
   }
 
   let AmazonNoEncontrado = 0;
+  const ArchivoAmazon = path.join(__dirname, "amazon-code.md");
   let AmazonEncontrado = 0;
-  const ArchivoAmazon = path.join(__dirname, "amazon-code.txt");
   let CodigoAmazon = "";
   try {
     if (fs.existsSync(ArchivoAmazon)) {
-      data = await fs.readFileSync(ArchivoAmazon);
-      CodigoAmazon = data.toString();
-      console.log(`Codigo afilacion Amazon: ${CodigoAmazon}`);
+      const contenido = fs.readFileSync(ArchivoAmazon, "UTF8");
+      CodigoAmazon = yaml.loadFront(contenido); data.toString();
+      console.log(`Codigo afilacion Amazon:`);
+      for(let i = 0; i< CodigoAmazon["amazon"].length; i++){
+        console.log("\t" + CodigoAmazon["amazon"][i]["pais"] + " - " + CodigoAmazon["amazon"][i]["codigo"])
+      }
     }
   } catch (err) {
     console.error(err);
@@ -293,14 +315,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
               if (ProductoAmazon["productos"][j]["name"].toLowerCase() == data.piezas[i].title.toLowerCase() ) {
                 EncontradoAmazon = true;
                 SiAmazon = true;
-                if("string" == typeof ProductoAmazon["productos"][j]['usa']){
-                  descripcion += `    Amazon-USA: http://www.amazon.com/dp/${ProductoAmazon["productos"][j]['usa']}/ref=nosim?tag=${CodigoAmazon}\n`;
-                } else {
-                  descripcion += `    Amazon-USA:\n`;
-                  for (let z = 0; z < ProductoAmazon["productos"][j]['usa'].length; z++) {
-                    descripcion += `      http://www.amazon.com/dp/${ProductoAmazon["productos"][j]['usa'][z]}/ref=nosim?tag=${CodigoAmazon}\n`;
-                  }
-                }
+                descripcion += LinkAmazon(CodigoAmazon, ProductoAmazon["productos"][j]);
               }
             }
           }
