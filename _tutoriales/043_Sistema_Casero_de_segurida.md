@@ -27,8 +27,7 @@ piezas:
   - title: "Resistencia 330 ohms"
   - title: "Breadboard"
     pieza: "breadboard-transparente"
-  - title: "Cable de prototipado"
-    pieza: "cable-prototipado-6-m-m-20-unidades"
+  - title: jumper macho-macho
   - title: "Cable USB A micro"
     pieza: "cable-usb-de-a-a-micro-6ft"
   - title: "Calabaza"
