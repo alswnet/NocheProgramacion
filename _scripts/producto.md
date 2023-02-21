@@ -36,7 +36,7 @@ productos:
       usa: B07VL725T8
     - name: boton
       usa: B09R41C991
-    - name: sensor pir=
+    - name: sensor pir
       usa: B07KZW86YR
     - name: jumper macho-macho 
       usa: B01L5UJ36U
