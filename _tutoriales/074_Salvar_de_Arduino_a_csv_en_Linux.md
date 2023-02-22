@@ -47,7 +47,7 @@ videos:
 
 piezas:
   - title: Arduino Uno
-  - title: Potenciometro 10K ohms
+  - title: Potenciometro 10K 
   - title: Boton
   - title: Resistencia 10K
 
