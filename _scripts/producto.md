@@ -48,4 +48,6 @@ productos:
       usa: B07D8XS511
     - name: Potenciometro 10K
       usa: B0819PJ33B
+    - name: Terminal con tornillo de 2 pines
+      usa: B07SZFGH4B
 ---
