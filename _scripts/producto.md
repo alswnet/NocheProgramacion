@@ -46,4 +46,6 @@ productos:
       usa: B01BHGY8WG
     - name: Escudo ProtoShield Kit
       usa: B07D8XS511
+    - name: Potenciometro 10K
+      usa: B0819PJ33B
 ---
