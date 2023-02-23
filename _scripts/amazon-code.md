@@ -4,6 +4,6 @@ amazon:
       codigo: chepecarlos-20
       url: http://www.amazon.com
     - pais: MX
-      codigo: chepecarlos-mx
-      url: https://www.amazon.com.mx/
+      codigo: chepecarlos05-20
+      url: http://www.amazon.com.mx
 ---
