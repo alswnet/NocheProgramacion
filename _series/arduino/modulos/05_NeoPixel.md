@@ -69,7 +69,7 @@ piezas:
   - title: arduino uno
   - title: esp32
   - title: esp8266
-  - title: LED RGB NeoPixel
+  - title: Led NeoPixel
 
 colaboradores:
   - title: Editor
