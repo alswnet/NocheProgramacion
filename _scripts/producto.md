@@ -52,4 +52,7 @@ productos:
       usa: B07SZFGH4B
     - name: Led NeoPixel
       usa: B01CDTEJBG
+    - name: Mini Servo
+      usa: B07Q6JGWNV
+
 ---
