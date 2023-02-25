@@ -86,5 +86,5 @@
       - B09P3WJT9J
       - B07M8GKBJM
   - name: Mini Servo
-      usa: B07Q6JGWNV
+    usa: B07Q6JGWNV
 ---
