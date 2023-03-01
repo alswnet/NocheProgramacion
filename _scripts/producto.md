@@ -1,4 +1,5 @@
 ---
+productos:
   - name: esp32
     usa: B0718T232Z
     mx: B07KTV2RRM
