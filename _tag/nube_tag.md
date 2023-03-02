@@ -8,16 +8,16 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [100]</a>
+			<a href="/tag/arduino">#arduino [102]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [31]</a>
+			<a href="/tag/esp8266">#esp8266 [30]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [30]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [29]</a>
+			<a href="/tag/esp32">#esp32 [28]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>
@@ -62,13 +62,13 @@ redirect_from:
 			<a href="/tag/nodejs">#nodejs [9]</a>
 		</li>
 		<li>
-			<a href="/tag/webserver">#webserver [9]</a>
-		</li>
-		<li>
 			<a href="/tag/android">#android [8]</a>
 		</li>
 		<li>
 			<a href="/tag/processing">#processing [8]</a>
+		</li>
+		<li>
+			<a href="/tag/webserver">#webserver [8]</a>
 		</li>
 		<li>
 			<a href="/tag/vscode">#vscode [8]</a>
@@ -98,9 +98,6 @@ redirect_from:
 			<a href="/tag/programacion">#programacion [5]</a>
 		</li>
 		<li>
-			<a href="/tag/css">#css [5]</a>
-		</li>
-		<li>
 			<a href="/tag/truco">#truco [5]</a>
 		</li>
 		<li>
@@ -111,6 +108,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/editarvideo">#editarvideo [4]</a>
+		</li>
+		<li>
+			<a href="/tag/css">#css [4]</a>
 		</li>
 		<li>
 			<a href="/tag/obs">#obs [4]</a>
@@ -230,10 +230,10 @@ redirect_from:
 			<a href="/tag/aniversario">#aniversario [2]</a>
 		</li>
 		<li>
-			<a href="/tag/hc05">#hc05 [1]</a>
+			<a href="/tag/anuncio">#anuncio [2]</a>
 		</li>
 		<li>
-			<a href="/tag/arduini">#arduini [1]</a>
+			<a href="/tag/hc05">#hc05 [1]</a>
 		</li>
 		<li>
 			<a href="/tag/mp3">#mp3 [1]</a>
@@ -357,6 +357,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/neopixel">#neopixel [1]</a>
+		</li>
+		<li>
+			<a href="/tag/rtc">#rtc [1]</a>
+		</li>
+		<li>
+			<a href="/tag/modulos">#modulos [1]</a>
 		</li>
 		<li>
 			<a href="/tag/ipestatica">#ipestatica [1]</a>
@@ -551,7 +557,7 @@ redirect_from:
 			<a href="/tag/moonlander">#moonlander [1]</a>
 		</li>
 		<li>
-			<a href="/tag/anuncio">#anuncio [1]</a>
+			<a href="/tag/amazon">#amazon [1]</a>
 		</li>
 	</ul>
 </div>
