@@ -47,14 +47,18 @@ function AgregarSeoMostar(descripcion, Cantidad, Actualizar, Publicidad) {
   return descripcion;
 }
 
-function LinkAmazon(codigo, producto){
+function LinkAmazon(codigo, producto) {
   let texto = "";
-  for(let i = 0; i< codigo["amazon"].length; i++){
+  for (let i = 0; i < codigo["amazon"].length; i++) {
     for (var key in producto) {
-      if(codigo["amazon"][i]["pais"].toLowerCase() == key.toLowerCase()){
-        if("string" == typeof producto[key]){
-          texto += `    Amazon-${key.toUpperCase()}: ${codigo["amazon"][i]["url"]}/dp/${producto[key]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
-        } else{
+      if (codigo["amazon"][i]["pais"].toLowerCase() == key.toLowerCase()) {
+        if ("string" == typeof producto[key]) {
+          texto += `    Amazon-${key.toUpperCase()}: ${
+            codigo["amazon"][i]["url"]
+          }/dp/${producto[key]}/ref=nosim?tag=${
+            codigo["amazon"][i]["codigo"]
+          }\n`;
+        } else {
           texto += `    Amazon-${key.toUpperCase()}:\n`;
           for (let z = 0; z < producto[key].length; z++) {
             texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto[key][z]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
@@ -121,10 +125,16 @@ async function CrearDescripciones(videos) {
   try {
     if (fs.existsSync(ArchivoAmazon)) {
       const contenido = fs.readFileSync(ArchivoAmazon, "UTF8");
-      CodigoAmazon = yaml.loadFront(contenido); data.toString();
+      CodigoAmazon = yaml.loadFront(contenido);
+      data.toString();
       console.log(`Codigo afilacion Amazon:`);
-      for(let i = 0; i< CodigoAmazon["amazon"].length; i++){
-        console.log("\t" + CodigoAmazon["amazon"][i]["pais"] + " - " + CodigoAmazon["amazon"][i]["codigo"])
+      for (let i = 0; i < CodigoAmazon["amazon"].length; i++) {
+        console.log(
+          "\t" +
+            CodigoAmazon["amazon"][i]["pais"] +
+            " - " +
+            CodigoAmazon["amazon"][i]["codigo"]
+        );
       }
     }
   } catch (err) {
@@ -297,7 +307,6 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         let SiAmazon = false;
         descripcion += "\nComponentes electrónicos:\n";
         for (let i = 0; i < data.piezas.length; i++) {
-
           const url = data.piezas[i].url;
           if (url) {
             if (/https?:\/\/.*/.test(url)) {
@@ -311,24 +320,37 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
 
           let EncontradoAmazon = false;
           for (let j = 0; j < ProductoAmazon["productos"].length; j++) {
-            if(data.piezas[i].title){
-              if (ProductoAmazon["productos"][j]["name"].toLowerCase() == data.piezas[i].title.toLowerCase() ) {
+            if (data.piezas[i].title) {
+              if (
+                ProductoAmazon["productos"][j]["name"].toLowerCase() ==
+                data.piezas[i].title.toLowerCase()
+              ) {
                 EncontradoAmazon = true;
                 SiAmazon = true;
-                descripcion += LinkAmazon(CodigoAmazon, ProductoAmazon["productos"][j]);
+                descripcion += LinkAmazon(
+                  CodigoAmazon,
+                  ProductoAmazon["productos"][j]
+                );
               }
             }
           }
-        
-          if(!EncontradoAmazon){
+
+          if (!EncontradoAmazon) {
+            if (data.piezas[i].title === null) {
+              console.log("error"); 
+              console.log(data)
+            }
             AmazonNoEncontrado++;
-            console.log('\x1b[33m%s\x1b[0m', `No encontrado ${AmazonNoEncontrado} - ${data.piezas[i].title} - ${data.video_id} - ${data.title}`)
+            console.log(
+              "\x1b[33m%s\x1b[0m",
+              `No encontrado ${AmazonNoEncontrado} - ${data.piezas[i].title} - ${data.video_id} - ${data.title}`
+            );
           } else {
             AmazonEncontrado++;
           }
         }
-        if(SiAmazon){
-          descripcion += `Link de Afilaron de amazon, ganamos una comisión si los usas\n`
+        if (SiAmazon) {
+          descripcion += `Link de Afilaron de amazon, ganamos una comisión si los usas\n`;
         }
       }
 
@@ -472,7 +494,10 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
   ImprimirData("SeoMostar", Cantidad.SeoMostar, CantidadVideos);
   ImprimirData("SeoMostar Activos", Cantidad.SeoMostarActivo, CantidadVideos);
   ImprimirData("Nuevo Sistema", Cantidad.NuevoSistema, CantidadVideos);
-  console.log('\x1b[33m%s\x1b[0m', `Amazon No encontrado: ${AmazonNoEncontrado}`);
+  console.log(
+    "\x1b[33m%s\x1b[0m",
+    `Amazon No encontrado: ${AmazonNoEncontrado}`
+  );
   console.log(`Amazon encontrado: ${AmazonEncontrado}`);
 
   console.log(`Ads Global: ${ActivadoAdsGlobal}`);
