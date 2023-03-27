@@ -9,9 +9,9 @@ tags:
   - esp8266
 
 piezas:
-  - esp8266
+  -title: esp8266
 
 actualizado: true
 ---
 
-Veamos que facil es poderle agregar wife a nuestros proyectos utilizando un ESP8266
+Veamos que fácil es poderle agregar wife a nuestros proyectos utilizando un ESP8266

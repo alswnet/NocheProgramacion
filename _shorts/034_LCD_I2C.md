@@ -1,15 +1,11 @@
 ---
-title: Instalando Amazon en mi YouTube Channel
-video_number: 16
-date: 2023-03-02
-video_id: y48Wc_7hZ80
+title: Pantalla LCD con I2C o sin I2C
+video_number: 34
+date: 2023-01-27
+video_id: UMb68SxKU5k
 tags:
-  - amazon
-  - anuncio
-
-piezas:
-  - title: esp32
-  - title: esp8266
+  - arduino
+  - lcd
 
 miembros:
   - title: Maker ESP
@@ -27,4 +23,4 @@ miembros:
 actualizado: true
 ---
 
-Hoy te quiero contar que después de muchos años por fin agrego link de amazon, para apoyar el crecimiento del canal
+Cual usuarias con I2C o sin I2C?
