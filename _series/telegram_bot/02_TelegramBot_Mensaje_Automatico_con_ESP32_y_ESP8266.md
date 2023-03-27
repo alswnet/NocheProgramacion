@@ -55,6 +55,8 @@ videos:
     url: series/arduino/extras/01_como_usar_snprintf_con_esp8266_y_esp32
   - title: Serie de ESP32 y ESP8266
     url: series/arduino_esp
+  - title: Archivo token.h
+    url: series/arduino/basico/006_Contraseña_Arduino
 
 piezas:
   - title: esp32

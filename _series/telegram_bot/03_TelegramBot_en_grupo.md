@@ -33,6 +33,8 @@ links:
 videos:
   - title: Truco de concatenar en arduino
     url: series/arduino/basico/007_Como_concatenar_en_Arduino
+  - title: Archivo token.h
+    url: series/arduino/basico/006_Contraseña_Arduino
 
 piezas:
   - title: esp32

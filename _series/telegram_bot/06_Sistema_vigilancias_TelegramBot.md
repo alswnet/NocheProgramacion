@@ -59,6 +59,8 @@ videos:
     url: series/arduino/modulos/01_sensor_pir
   - title: Tutorial de Millis
     url: series/arduino/avanzado/008_millis_arduino
+  - title: Archivo token.h
+    url: series/arduino/basico/006_Contraseña_Arduino
 
 colaboradores:
   - title: Editor

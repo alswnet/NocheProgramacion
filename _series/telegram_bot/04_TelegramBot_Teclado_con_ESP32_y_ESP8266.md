@@ -41,6 +41,10 @@ links:
   - title: Librería CTBot
     url: https://github.com/shurillu/CTBot
 
+video:
+  - title: Archivo token.h
+    url: series/arduino/basico/006_Contraseña_Arduino
+
 piezas:
   - title: esp32
   - title: esp8266
