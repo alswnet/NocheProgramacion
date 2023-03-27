@@ -157,6 +157,10 @@ async function CrearDescripciones(videos) {
 
     let descripcion = "";
 
+    if (!data.actualizado) {
+      continue;
+    }
+
     if (data.para_miembros) {
       Cantidad.ParaMiembros++;
       descripcion += `🦾 Avances Exclusivo para Miembros del Canal ChepeCarlos 🦾
@@ -301,7 +305,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         }
       }
 
-      // Link de piezas
+      // Link de piezas y amazon
       if (data.piezas) {
         Cantidad.Piezas++;
         let SiAmazon = false;
@@ -337,8 +341,9 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
 
           if (!EncontradoAmazon) {
             if (data.piezas[i].title === null) {
-              console.log("error"); 
-              console.log(data)
+              console.log("error");
+              // console.log(videos[i].pageURL);
+              console.log(pageURL);
             }
             AmazonNoEncontrado++;
             console.log(
