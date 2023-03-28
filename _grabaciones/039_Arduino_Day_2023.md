@@ -17,6 +17,10 @@ video:
   - title: Serie del ESP32 y ESP8266
     url: series/arduino_esp
 
+colaboradores:
+  - title: fotógrafa
+    colaborador: paty
+
 miembros:
   - title: Maker ESP
     items:
