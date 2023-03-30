@@ -1,7 +1,7 @@
 ---
 title: Necesitas un NAS
 video_number: 32
-date: 2023-12-31
+date: 2023-01-20
 video_id: DTOpmNtGy8s
 tags:
   - nas

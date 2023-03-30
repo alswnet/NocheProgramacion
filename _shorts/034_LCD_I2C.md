@@ -7,6 +7,10 @@ tags:
   - arduino
   - lcd
 
+colaboradores:
+  - title: fotografa
+    colaborador: paty
+
 miembros:
   - title: Maker ESP
     items:
