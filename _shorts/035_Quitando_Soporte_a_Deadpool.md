@@ -1,7 +1,7 @@
 ---
 title: Quitando Soporte a Deadpool
 video_number: 35
-date: 2023-09-30
+date: 2023-03-30
 video_id: jsyWnc7RzHQ
 tags:
   - impresora3d
