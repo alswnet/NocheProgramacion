@@ -62,6 +62,9 @@ videos:
   - title: Archivo token.h
     url: series/arduino/basico/006_Contraseña_Arduino
 
+log:
+  - title: Cambiando el tipo de variable IDchat de int a int64_t , porque el tamaño del id puede ser mas grande que int 
+
 colaboradores:
   - title: Editor
     colaborador: ingjuan

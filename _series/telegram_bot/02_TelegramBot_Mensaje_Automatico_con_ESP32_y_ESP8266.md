@@ -62,6 +62,9 @@ piezas:
   - title: esp32
   - title: esp8266
 
+log:
+  - title: Cambiando el tipo de variable IDchat de int a int64_t , porque el tamaño del id puede ser mas grande que int 
+
 colaboradores:
   - title: Editor
     colaborador: ingjuan
