@@ -70,6 +70,12 @@ layout: base
     </div>
   </div>
 
+  {% comment %} Log del video. {% endcomment %}
+  {% if page.log %}
+    {% capture LogTitle %} Correcciones {% endcapture %}
+    {% include 3-modules/link-list.html links=page.log title=LogTitle %}
+  {% endif %}
+
   {% comment %} Show links for live example and code download. {% endcomment %}
   <div class="code-actions">
   {% if page.repository != null or page.web_editor != null %}
