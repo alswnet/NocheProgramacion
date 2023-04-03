@@ -88,6 +88,7 @@ async function CrearDescripciones(videos) {
   Cantidad.Ads = 0;
   Cantidad.Video = 0;
   Cantidad.playlist = 0;
+  Cantidad.log = 0;
   Cantidad.NuevoSistema = 0;
 
   await ReiniciarFolder("./descripciones");
@@ -197,6 +198,17 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         descripcion =
           `Existe una versión NUEVA 👀 o actualización de este video: ${url}\n` +
           descripcion;
+      }
+
+      // Correcciones
+      if(data.log){
+        Cantidad.log++;
+        descripcion += `\n⚠️ Correcciones ⚠️:\n`;
+        for (let i = 0; i < data.log.length; ++i) {
+          const mejora = data.log[i].title;
+          console.log(mejora);
+          descripcion += ` ✦ ${mejora} \n`;
+        }
       }
 
       // TODO: Mejor Algoritmo
@@ -495,6 +507,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
   ImprimirData("Videos", Cantidad.Video, CantidadVideos);
   ImprimirData("Código", Cantidad.Codigo, CantidadVideos);
   ImprimirData("Remake", Cantidad.Remake, CantidadVideos);
+  ImprimirData("Log", Cantidad.log, CantidadVideos);
   ImprimirData("Ads", Cantidad.Ads, CantidadVideos);
   ImprimirData("SeoMostar", Cantidad.SeoMostar, CantidadVideos);
   ImprimirData("SeoMostar Activos", Cantidad.SeoMostarActivo, CantidadVideos);
