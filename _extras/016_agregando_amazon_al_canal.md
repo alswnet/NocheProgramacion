@@ -11,6 +11,10 @@ piezas:
   - title: esp32
   - title: esp8266
 
+colaboradores:
+  - title: Editor
+    colaborador: ingjuan
+
 miembros:
   - title: Maker ESP
     items:
