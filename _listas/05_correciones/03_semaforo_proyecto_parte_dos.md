@@ -1,14 +1,16 @@
 ---
-title: Proyecto semáforo con Bluetooth
-video_number: 2
-date: 2023-03-28
-video_id: YIGOWqr2cYU
+title: Proyecto terminado de semaforo con Ardunio y bluetooth HC-05
+video_number: 3
+date: 2023-04-04
+video_id: Xbjud9Czp-Q
 repository: 05_correciones/01_semaforo_proyecto_primera_parte
 tags:
   - arduino
   - bluetooth
 
 videos:
+  - title: Parte Uno
+    url: listas/05_correciones/02_semaforo_proyecto_primera_parte
   - title: Serie de bluetooth
     url: series/bluetooth_con_arduino
   - title: millis Arduino
@@ -40,7 +42,8 @@ miembros:
       - title: EDUARDO MARCELO PALACIOS
       - title: Lolailo Aviles Arroyo
 
+para_miembros: true
 actualizado: true
 ---
 
-Sin querer me puede hacer un proyecto con unos amigos en el discord
+Terminando el proyecto que empezamos hace poco con el arduino y el bluetooth, donde ayudamos a aun amigo en discord 
