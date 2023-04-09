@@ -44,13 +44,13 @@ redirect_from:
 			<a href="/tag/python">#python [14]</a>
 		</li>
 		<li>
+			<a href="/tag/impresora3d">#impresora3d [12]</a>
+		</li>
+		<li>
 			<a href="/tag/bluetooth">#bluetooth [11]</a>
 		</li>
 		<li>
 			<a href="/tag/freecad">#freecad [11]</a>
-		</li>
-		<li>
-			<a href="/tag/impresora3d">#impresora3d [11]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
