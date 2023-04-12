@@ -72,6 +72,9 @@ videos:
   - title: Archivo token.h
     url: series/arduino/basico/006_Contraseña_Arduino
 
+log:
+  - title: usar librería de ArduinoJson 6.19.4 por recomendación de librería CTBot
+
 piezas:
   - title: ESP32
   - title: ESP8266

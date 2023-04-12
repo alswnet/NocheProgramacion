@@ -8,6 +8,7 @@ template<class T> inline Print &operator <<(Print &obj, T arg) {
 }
 
 #include "CTBot.h"
+#include "Utilities.h"
 CTBot miBot;
 
 #include "token.h"
@@ -33,7 +34,7 @@ void loop() {
 
   if (CTBotMessageText == miBot.getNewMessage(msg)) {
     Serial << "Nombre: " << msg.sender.firstName << " - " <<  msg.sender.lastName << "\n";
-    Serial << "Usuario: " << msg.sender.username << " ID: " << msg.sender.id << "\n";
+    Serial << "Usuario: " << msg.sender.username << " ID: " << int64ToAscii(msg.sender.id) << "\n";
     miBot.sendMessage(msg.sender.id, "Analizando usuario");
   }
 

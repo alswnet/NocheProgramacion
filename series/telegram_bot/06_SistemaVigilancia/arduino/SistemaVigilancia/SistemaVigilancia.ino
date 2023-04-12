@@ -10,6 +10,7 @@ template<class T> inline Print &operator <<(Print &obj, T arg) {
 #define EEPROM_SIZE 12
 
 #include "CTBot.h"
+#include "Utilities.h"
 #include <EEPROM.h>
 
 CTBot miBot;
@@ -113,7 +114,7 @@ void SistemaConfiguracion() {
       }
     } else {
       Serial << "Hable con: " << msg.sender.firstName << " - " <<  msg.sender.lastName << "\n";
-      Serial << "Usuario: " << msg.sender.username << " ID: " << msg.sender.id << "\n";
+      Serial << "Usuario: " << msg.sender.username << " ID: " << int64ToAscii(msg.sender.id) << "\n";
       miBot.sendMessage(msg.sender.id, "Discula, no te conosco :( ");
     }
   }

@@ -8,6 +8,7 @@ template<class T> inline Print &operator <<(Print &obj, T arg) {
 }
 
 #include "CTBot.h"
+#include "Utilities.h"
 
 CTBot miBot;
 
@@ -35,7 +36,7 @@ void loop() {
   if (miBot.getNewMessage(msg)) {
     if (msg.messageType == CTBotMessageText) {
       Serial << "Mensaje: " << msg.sender.firstName << " - " <<  msg.text << "\n";
-      Serial << "Titulo: " << msg.group.title << " - " << msg.group.id << "\n";
+      Serial << "Titulo: " << msg.group.title << " - " << int64ToAscii(msg.group.id) << "\n";
       //      miBot.sendMessage(msg.sender.id, msg.text);
 
       if (msg.group.id < 0) {
