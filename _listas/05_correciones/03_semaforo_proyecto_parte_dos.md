@@ -42,8 +42,7 @@ miembros:
       - title: EDUARDO MARCELO PALACIOS
       - title: Lolailo Aviles Arroyo
 
-para_miembros: true
 actualizado: true
 ---
 
-Terminando el proyecto que empezamos hace poco con el arduino y el bluetooth, donde ayudamos a aun amigo en discord 
+Terminando el proyecto que empezamos hace poco con el arduino y el bluetooth, donde ayudamos a aun amigo en discord
