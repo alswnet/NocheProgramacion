@@ -1,7 +1,7 @@
 ---
 title: Proyecto terminado de semaforo con Ardunio y bluetooth HC-05
 video_number: 3
-date: 2023-04-04
+date: 2023-04-12
 video_id: Xbjud9Czp-Q
 repository: 05_correciones/01_semaforo_proyecto_primera_parte
 tags:
