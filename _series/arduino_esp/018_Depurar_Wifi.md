@@ -3,7 +3,7 @@ title: Depuración por WIFI con el ESP32 y ESP8266
 video_number: 18
 date: 2023-04-26
 video_id: a-YILV2ziKs
-repository: 018_Depurar_Wifi
+repository: arduino_esp/018_Depurar_Wifi
 tags:
   - arduino
   - iot
@@ -11,7 +11,7 @@ tags:
   - esp32
 
 topics:
-  - title: inico
+  - title: inicio
     time: "00:00"
   - title: Depuración por WiFi
     time: "01:09"
@@ -31,11 +31,11 @@ topics:
     time: "09:12"
   - title: Telnet en Windows
     time: "09:51"
-  - title: Probando el codigo en ESP8266
+  - title: Probando el código en ESP8266
     time: "09:54"
-  - title: Como nos contacmos por Telnet en Windwos
+  - title: Como nos conectamos por Telnet en Windwos
     time: "10:57"
-  - title: Demostracion de uso en un proyecto real
+  - title: Demostración de uso en un proyecto real
     time: "13:19"
 
 links:
