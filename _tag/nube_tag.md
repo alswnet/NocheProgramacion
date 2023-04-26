@@ -8,16 +8,16 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [106]</a>
+			<a href="/tag/arduino">#arduino [107]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [31]</a>
+			<a href="/tag/esp8266">#esp8266 [32]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [30]</a>
+			<a href="/tag/iot">#iot [31]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [29]</a>
+			<a href="/tag/esp32">#esp32 [30]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>

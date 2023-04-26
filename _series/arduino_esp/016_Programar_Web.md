@@ -46,6 +46,8 @@ topics:
 videos:
   - title: mDNS
     url: series/arduino_esp/008_mdns_esp
+  - title: Archivo token.h
+    url: series/arduino/basico/006_Contraseña_Arduino
 
 piezas:
   - title: esp32
