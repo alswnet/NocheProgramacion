@@ -11,13 +11,13 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [107]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [32]</a>
+			<a href="/tag/esp8266">#esp8266 [33]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [31]</a>
+			<a href="/tag/iot">#iot [32]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [30]</a>
+			<a href="/tag/esp32">#esp32 [31]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>
@@ -53,13 +53,16 @@ redirect_from:
 			<a href="/tag/freecad">#freecad [11]</a>
 		</li>
 		<li>
+			<a href="/tag/youtube">#youtube [10]</a>
+		</li>
+		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
 		</li>
 		<li>
-			<a href="/tag/youtube">#youtube [9]</a>
+			<a href="/tag/nodejs">#nodejs [9]</a>
 		</li>
 		<li>
-			<a href="/tag/nodejs">#nodejs [9]</a>
+			<a href="/tag/vscode">#vscode [9]</a>
 		</li>
 		<li>
 			<a href="/tag/android">#android [8]</a>
@@ -69,9 +72,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/webserver">#webserver [8]</a>
-		</li>
-		<li>
-			<a href="/tag/vscode">#vscode [8]</a>
 		</li>
 		<li>
 			<a href="/tag/cli">#cli [7]</a>
@@ -183,6 +183,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/streaming">#streaming [2]</a>
+		</li>
+		<li>
+			<a href="/tag/teclado">#teclado [2]</a>
 		</li>
 		<li>
 			<a href="/tag/seguridad">#seguridad [2]</a>
@@ -333,6 +336,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/heramientas">#heramientas [1]</a>
+		</li>
+		<li>
+			<a href="/tag/impresion3d">#impresion3d [1]</a>
 		</li>
 		<li>
 			<a href="/tag/chatbot">#chatbot [1]</a>
@@ -546,9 +552,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/tema">#tema [1]</a>
-		</li>
-		<li>
-			<a href="/tag/teclado">#teclado [1]</a>
 		</li>
 		<li>
 			<a href="/tag/mecanico">#mecanico [1]</a>
