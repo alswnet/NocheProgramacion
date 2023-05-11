@@ -54,7 +54,11 @@ function LinkAmazon(codigo, producto) {
       texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
     } else {
       for (var key in producto) {
-        if (codigo["amazon"][i]["pais"].toLowerCase() == key.toLowerCase()) {
+        if ("string" == typeof key) {
+          texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto[key]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
+        } else if (
+          codigo["amazon"][i]["pais"].toLowerCase() == key.toLowerCase()
+        ) {
           if ("string" == typeof producto[key]) {
             texto += `    Amazon-${key.toUpperCase()}: ${
               codigo["amazon"][i]["url"]
