@@ -341,6 +341,15 @@ redirect_from:
 			<a href="/tag/impresion3d">#impresion3d [1]</a>
 		</li>
 		<li>
+			<a href="/tag/luces">#luces [1]</a>
+		</li>
+		<li>
+			<a href="/tag/respaldo">#respaldo [1]</a>
+		</li>
+		<li>
+			<a href="/tag/camara">#camara [1]</a>
+		</li>
+		<li>
 			<a href="/tag/chatbot">#chatbot [1]</a>
 		</li>
 		<li>
