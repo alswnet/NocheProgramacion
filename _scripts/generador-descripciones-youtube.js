@@ -50,18 +50,22 @@ function AgregarSeoMostar(descripcion, Cantidad, Actualizar, Publicidad) {
 function LinkAmazon(codigo, producto) {
   let texto = "";
   for (let i = 0; i < codigo["amazon"].length; i++) {
-    for (var key in producto) {
-      if (codigo["amazon"][i]["pais"].toLowerCase() == key.toLowerCase()) {
-        if ("string" == typeof producto[key]) {
-          texto += `    Amazon-${key.toUpperCase()}: ${
-            codigo["amazon"][i]["url"]
-          }/dp/${producto[key]}/ref=nosim?tag=${
-            codigo["amazon"][i]["codigo"]
-          }\n`;
-        } else {
-          texto += `    Amazon-${key.toUpperCase()}:\n`;
-          for (let z = 0; z < producto[key].length; z++) {
-            texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto[key][z]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
+    if ("string" == typeof producto) {
+      texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
+    } else {
+      for (var key in producto) {
+        if (codigo["amazon"][i]["pais"].toLowerCase() == key.toLowerCase()) {
+          if ("string" == typeof producto[key]) {
+            texto += `    Amazon-${key.toUpperCase()}: ${
+              codigo["amazon"][i]["url"]
+            }/dp/${producto[key]}/ref=nosim?tag=${
+              codigo["amazon"][i]["codigo"]
+            }\n`;
+          } else {
+            texto += `    Amazon-${key.toUpperCase()}:\n`;
+            for (let z = 0; z < producto[key].length; z++) {
+              texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto[key][z]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
+            }
           }
         }
       }
@@ -201,13 +205,12 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       }
 
       // Correcciones
-      if(data.log){
+      if (data.log) {
         Cantidad.log++;
         descripcion += `\n⚠️ Correcciones ⚠️:\n`;
         for (let i = 0; i < data.log.length; ++i) {
           const mejora = data.log[i].title;
-          console.log(mejora);
-          descripcion += ` ✦ ${mejora} \n`;
+          descripcion += `  ♦️ ${mejora} \n`;
         }
       }
 
@@ -324,12 +327,18 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
         descripcion += "\nComponentes electrónicos:\n";
         for (let i = 0; i < data.piezas.length; i++) {
           const url = data.piezas[i].url;
+          const amazon = data.piezas[i].amazon;
           if (url) {
             if (/https?:\/\/.*/.test(url)) {
               descripcion += `  🤖 ${data.piezas[i].title}: ${url}\n`;
             } else {
               descripcion += `  🤖 ${data.piezas[i].title}: https://nocheprogramacion.com${url}\n`;
             }
+            continue;
+          } else if (amazon) {
+            descripcion += `  🤖 ${data.piezas[i].title}: \n`;
+            descripcion += LinkAmazon(CodigoAmazon, amazon);
+            continue;
           } else {
             descripcion += `  🤖 ${data.piezas[i].title}\n`;
           }
