@@ -56,6 +56,8 @@ custom_sections:
         url: https://www.youtube.com/@cursoderobotica
       - title: Tiktok
         url: https://www.tiktok.com/@cursoderobotica
+      - title: Sitio Web
+        url: https://www.cursoderobotica.com
 
 miembros:
   - title: Maker ESP
