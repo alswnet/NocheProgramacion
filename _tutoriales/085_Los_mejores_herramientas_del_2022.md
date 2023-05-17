@@ -19,7 +19,7 @@ topics:
     time: "02:41"
   - title: Lampara RGB portatil
     time: "03:26"
-  - title: Camara de Razer Kiyo Pro
+  - title: Cámara de Razer Kiyo Pro
     time: "03:58"
   - title: Destornillador eléctrico
     time: "04:43"
@@ -89,8 +89,21 @@ custom_sections:
         url: https://www.cursoderobotica.com
 
 miembros:
-
-para_miembros: true
+  - title: Maker ESP
+    items:
+      - title: ramiro gattas
+      - title: nery kastillo
+      - title: Carlos Olivares Santis
+  - title: Maker Uno
+    items:
+      - title: federicoymarta garcia garcia
+      - title: Manuel Alegría
+      - title: Dark alambrito
+      - title: Fernando Armada
+      - title: Waldo Ratti
+      - title: Claudio Bloise
+      - title: EDUARDO MARCELO PALACIOS
+      - title: Lolailo Aviles Arroyo
 actualizado: true
 ---
 
