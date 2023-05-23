@@ -17,7 +17,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [32]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [31]</a>
+			<a href="/tag/esp32">#esp32 [32]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>
@@ -387,9 +387,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/eeprom">#eeprom [1]</a>
-		</li>
-		<li>
-			<a href="/tag/esp36">#esp36 [1]</a>
 		</li>
 		<li>
 			<a href="/tag/memoria">#memoria [1]</a>
