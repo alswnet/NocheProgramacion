@@ -11,7 +11,7 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [107]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [33]</a>
+			<a href="/tag/esp8266">#esp8266 [34]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [32]</a>
@@ -387,6 +387,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/eeprom">#eeprom [1]</a>
+		</li>
+		<li>
+			<a href="/tag/esp36">#esp36 [1]</a>
+		</li>
+		<li>
+			<a href="/tag/memoria">#memoria [1]</a>
 		</li>
 		<li>
 			<a href="/tag/inskcape">#inskcape [1]</a>

@@ -6,7 +6,7 @@ video_id: qSlTv5OWQ54
 repository: arduino_esp/019_LittleFS
 tags:
   - esp8266
-  - esp35
+  - esp36
   - memoria
 
 variations:
