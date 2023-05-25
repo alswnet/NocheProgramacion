@@ -6,12 +6,7 @@ Para sistema de NocheProgramacion
 const fs = require("fs");
 const path = require("path");
 const yaml = require("yaml-front-matter");
-const {
-  ObtenerDataVideo,
-  BuscarVideoRecursivamente,
-  ReiniciarFolder,
-  ObtenerURLYoutube,
-} = require("./funciones");
+const { ObtenerDataVideo, BuscarVideoRecursivamente, ReiniciarFolder, ObtenerURLYoutube } = require("./funciones");
 
 function ImprimirData(Titulo, CantidadLink, CantidadTotal) {
   Porcentaje = parseFloat((100 * CantidadLink) / CantidadTotal).toFixed(2);
@@ -51,22 +46,18 @@ function LinkAmazon(codigo, producto) {
   let texto = "";
   for (let i = 0; i < codigo["amazon"].length; i++) {
     if ("string" == typeof producto) {
-      texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
+      texto += `     ${codigo["amazon"][i]["pais"].toUpperCase()}: ${codigo["amazon"][i]["url"]}/dp/${producto}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
+    } else if (Array.isArray(producto)) {
+      for (var key in producto) {
+        texto += `     ${codigo["amazon"][i]["pais"].toUpperCase()}: ${codigo["amazon"][i]["url"]}/dp/${producto[key]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
+      }
     } else {
       for (var key in producto) {
-        if ("string" == typeof key) {
-          texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto[key]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
-        } else if (
-          codigo["amazon"][i]["pais"].toLowerCase() == key.toLowerCase()
-        ) {
+        if (codigo["amazon"][i]["pais"].toLowerCase() == key.toLowerCase()) {
           if ("string" == typeof producto[key]) {
-            texto += `    Amazon-${key.toUpperCase()}: ${
-              codigo["amazon"][i]["url"]
-            }/dp/${producto[key]}/ref=nosim?tag=${
-              codigo["amazon"][i]["codigo"]
-            }\n`;
+            texto += `    ${key.toUpperCase()}: ${codigo["amazon"][i]["url"]}/dp/${producto[key]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
           } else {
-            texto += `    Amazon-${key.toUpperCase()}:\n`;
+            texto += `    ${key.toUpperCase()}:\n`;
             for (let z = 0; z < producto[key].length; z++) {
               texto += `      ${codigo["amazon"][i]["url"]}/dp/${producto[key][z]}/ref=nosim?tag=${codigo["amazon"][i]["codigo"]}\n`;
             }
@@ -136,14 +127,9 @@ async function CrearDescripciones(videos) {
       const contenido = fs.readFileSync(ArchivoAmazon, "UTF8");
       CodigoAmazon = yaml.loadFront(contenido);
       data.toString();
-      console.log(`Codigo afilacion Amazon:`);
+      console.log(`Código afiliación Amazon:`);
       for (let i = 0; i < CodigoAmazon["amazon"].length; i++) {
-        console.log(
-          "\t" +
-            CodigoAmazon["amazon"][i]["pais"] +
-            " - " +
-            CodigoAmazon["amazon"][i]["codigo"]
-        );
+        console.log("\t" + CodigoAmazon["amazon"][i]["pais"] + " - " + CodigoAmazon["amazon"][i]["codigo"]);
       }
     }
   } catch (err) {
@@ -184,12 +170,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       let content = data.__content.trim();
       descripcion += `${content}\n`;
 
-      descripcion = AgregarSeoMostar(
-        descripcion,
-        Cantidad,
-        data.actualizado,
-        AdsGlobal
-      );
+      descripcion = AgregarSeoMostar(descripcion, Cantidad, data.actualizado, AdsGlobal);
 
       // ADS
       if (data.ads) {
@@ -203,9 +184,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       if (data.remake) {
         Cantidad.Remake++;
         url = ObtenerURLYoutube(data.remake);
-        descripcion =
-          `Existe una versión NUEVA 👀 o actualización de este video: ${url}\n` +
-          descripcion;
+        descripcion = `Existe una versión NUEVA 👀 o actualización de este video: ${url}\n` + descripcion;
       }
 
       // Correcciones
@@ -223,13 +202,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       let siguienteVideo;
       let NombreSiguienteVideo;
       if (i !== videos.length - 1) {
-        if (
-          pageURL.substring(0, pageURL.lastIndexOf("/")) ===
-          videos[i + 1].pageURL.substring(
-            0,
-            videos[i + 1].pageURL.lastIndexOf("/")
-          )
-        ) {
+        if (pageURL.substring(0, pageURL.lastIndexOf("/")) === videos[i + 1].pageURL.substring(0, videos[i + 1].pageURL.lastIndexOf("/"))) {
           siguienteVideo = videos[i + 1].data.video_id;
           NombreSiguienteVideo = videos[i + 1].data.title;
         } else {
@@ -242,13 +215,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       let anteriorVideo;
       let tituloAnteriorVideo;
       if (i !== 0) {
-        if (
-          pageURL.substring(0, pageURL.lastIndexOf("/")) ===
-          videos[i - 1].pageURL.substring(
-            0,
-            videos[i - 1].pageURL.lastIndexOf("/")
-          )
-        ) {
+        if (pageURL.substring(0, pageURL.lastIndexOf("/")) === videos[i - 1].pageURL.substring(0, videos[i - 1].pageURL.lastIndexOf("/"))) {
           anteriorVideo = videos[i - 1].data.video_id;
           tituloAnteriorVideo = videos[i - 1].data.title;
         } else {
@@ -350,16 +317,10 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
           let EncontradoAmazon = false;
           for (let j = 0; j < ProductoAmazon["productos"].length; j++) {
             if (data.piezas[i].title) {
-              if (
-                ProductoAmazon["productos"][j]["name"].toLowerCase() ==
-                data.piezas[i].title.toLowerCase()
-              ) {
+              if (ProductoAmazon["productos"][j]["name"].toLowerCase() == data.piezas[i].title.toLowerCase()) {
                 EncontradoAmazon = true;
                 SiAmazon = true;
-                descripcion += LinkAmazon(
-                  CodigoAmazon,
-                  ProductoAmazon["productos"][j]
-                );
+                descripcion += LinkAmazon(CodigoAmazon, ProductoAmazon["productos"][j]);
               }
             }
           }
@@ -371,10 +332,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
               console.log(pageURL);
             }
             AmazonNoEncontrado++;
-            console.log(
-              "\x1b[33m%s\x1b[0m",
-              `No encontrado ${AmazonNoEncontrado} - ${data.piezas[i].title} - ${data.video_id} - ${data.title}`
-            );
+            console.log("\x1b[33m%s\x1b[0m", `No encontrado ${AmazonNoEncontrado} - ${data.piezas[i].title} - ${data.video_id} - ${data.title}`);
           } else {
             AmazonEncontrado++;
           }
@@ -441,8 +399,7 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
       // Miembros
       if (data.miembros) {
         Cantidad.Miembros++;
-        descripcion +=
-          "\n🦾 Creado gracias al Apoyo de Miembros(Patrocinadores):\n";
+        descripcion += "\n🦾 Creado gracias al Apoyo de Miembros(Patrocinadores):\n";
         for (let i = 0; i < data.miembros.length; ++i) {
           let nivelActual = data.miembros[i];
           descripcion += `${nivelActual.title}: `;
@@ -525,18 +482,13 @@ Este Video sera publico y accesible por toda la comunidad en el futuro.
   ImprimirData("SeoMostar", Cantidad.SeoMostar, CantidadVideos);
   ImprimirData("SeoMostar Activos", Cantidad.SeoMostarActivo, CantidadVideos);
   ImprimirData("Nuevo Sistema", Cantidad.NuevoSistema, CantidadVideos);
-  console.log(
-    "\x1b[33m%s\x1b[0m",
-    `Amazon No encontrado: ${AmazonNoEncontrado}`
-  );
+  console.log("\x1b[33m%s\x1b[0m", `Amazon No encontrado: ${AmazonNoEncontrado}`);
   console.log(`Amazon encontrado: ${AmazonEncontrado}`);
 
   console.log(`Ads Global: ${ActivadoAdsGlobal}`);
 }
 
 (() => {
-  console.log(
-    "💫 Generador de descripcion de NocheProgramación para YouTube 💫"
-  );
+  console.log("💫 Generador de descripcion de NocheProgramación para YouTube 💫");
   CrearDescripciones(ObtenerDataVideo());
 })();

@@ -5,7 +5,7 @@ productos:
     mx: B07KTV2RRM
   - name: esp8266
     usa:
-      - B09X389JFJ
+      - B08ZY7Q7TW
       - B07HF44GBT
     mx:
       - B07RBNJLK4
