@@ -374,12 +374,6 @@ redirect_from:
 			<a href="/tag/neopixel">#neopixel [1]</a>
 		</li>
 		<li>
-			<a href="/tag/rtc">#rtc [1]</a>
-		</li>
-		<li>
-			<a href="/tag/modulos">#modulos [1]</a>
-		</li>
-		<li>
 			<a href="/tag/ipestatica">#ipestatica [1]</a>
 		</li>
 		<li>
