@@ -1,36 +1,32 @@
 ---
-title: Que es OTA
+title: Mi nueva tecla especial
 video_number: 38
-date: 2023-05-03
-video_id: tZncImQ8Bd0
+date: 2023-06-08
+video_id: 93llJWWt8mg
 tags:
-  - esp8266
-  - esp32
-  - iot
-
-videos:
-  - title: Tutorial OTA
-    url: series/arduino_esp/015_OTA
-
-piezas:
-  - title: esp8266
-  - title: esp32
+  - teclado
 
 colaboradores:
   - title: fotografa
     colaborador: paty
 
+links:
+  - title: sitio web
+    url: https://s-craft.studio
+  - title: Instagram
+    url: https://www.instagram.com/scraft.studio.keycap/
+
 miembros:
   - title: Maker ESP
     items:
       - title: ramiro gattas
-      - title: Carlos Flores
       - title: nery kastillo
       - title: Carlos Olivares Santis
   - title: Maker Uno
     items:
+      - title: Jorge Xalambri
       - title: Manuel Alegría
-      - title: Dark alambrito
+      - title: federicoymarta garcia garcia
       - title: Fernando Armada
       - title: Waldo Ratti
       - title: Claudio Bloise
@@ -40,4 +36,4 @@ miembros:
 actualizado: true
 ---
 
-Programación por wifi es genial para un Arduino usando OTA
+Hoy les quiero compartir un paquete muy especial de mis dos nuevas teclas de Pokémon

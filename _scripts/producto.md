@@ -88,4 +88,8 @@ productos:
       - B07M8GKBJM
   - name: Mini Servo
     usa: B07Q6JGWNV
+  - name: RTC DS1307
+    usa: B07TVMVDDP
+  - name: RTC DS3231
+    usa: B09L4WWD42
 ---
