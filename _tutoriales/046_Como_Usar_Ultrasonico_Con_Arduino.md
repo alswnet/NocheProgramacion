@@ -13,9 +13,10 @@ links:
 
 
 piezas:
-  - title: Arduino Uno
+  - title: arduino uno
   - title: "Sensor Ultrasonico HC-SR04"
-    pieza: "sensor-ultrasonico-hc-sr04"   
+    
+actualizado: true
 ---
 
 Un tutorial rapido de como usar el sensor HC-SR04(Ultrasonico) con arduino para aquellos que están empezando en el mundo de la electrónica.
