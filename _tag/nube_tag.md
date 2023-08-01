@@ -503,6 +503,12 @@ redirect_from:
 			<a href="/tag/nas">#nas [1]</a>
 		</li>
 		<li>
+			<a href="/tag/tester">#tester [1]</a>
+		</li>
+		<li>
+			<a href="/tag/osciloscopio">#osciloscopio [1]</a>
+		</li>
+		<li>
 			<a href="/tag/esp">#esp [1]</a>
 		</li>
 		<li>
