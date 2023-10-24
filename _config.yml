@@ -57,6 +57,8 @@ code_variations:
     folder: animacion
   - lang: blender
     folder: blender
+  - lang: cad
+    folder: cad
 
 # Link a otro plataformas.
 links:
