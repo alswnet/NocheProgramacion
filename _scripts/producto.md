@@ -92,4 +92,12 @@ productos:
     usa: B07TVMVDDP
   - name: RTC DS3231
     usa: B09L4WWD42
+  - name: fuente buck
+    usa: B07FMPMYKG
+  - name: modulo relay 5v
+    usa: B07WQH63FB
+  - name: tuercas palanca
+    usa: B07SFCCPZ6
+  - name: tuercas torcidas
+    usa: B0BVB6SKT4
 ---

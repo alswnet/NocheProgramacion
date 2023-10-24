@@ -11,13 +11,13 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [112]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [37]</a>
+			<a href="/tag/esp8266">#esp8266 [38]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [36]</a>
+			<a href="/tag/esp32">#esp32 [37]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [33]</a>
+			<a href="/tag/iot">#iot [34]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [26]</a>
@@ -201,6 +201,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/machinelearning">#machinelearning [2]</a>
+		</li>
+		<li>
+			<a href="/tag/domotica">#domotica [2]</a>
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]</a>
@@ -513,9 +516,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/esp">#esp [1]</a>
-		</li>
-		<li>
-			<a href="/tag/domotica">#domotica [1]</a>
 		</li>
 		<li>
 			<a href="/tag/instagram">#instagram [1]</a>
