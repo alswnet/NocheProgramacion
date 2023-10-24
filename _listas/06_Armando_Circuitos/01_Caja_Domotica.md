@@ -10,6 +10,10 @@ tags:
   - iot
   - domotica
 
+links:
+  - title: Modelos STL Caja Domotica
+    url: https://www.printables.com/es/model/624197-domotic-power-strip
+
 videos:
   - title: Proyecto Telegran Domotica
     pendiente: true
