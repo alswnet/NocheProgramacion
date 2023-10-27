@@ -50,10 +50,10 @@ redirect_from:
 			<a href="/tag/bluetooth">#bluetooth [11]</a>
 		</li>
 		<li>
-			<a href="/tag/freecad">#freecad [11]</a>
+			<a href="/tag/youtube">#youtube [11]</a>
 		</li>
 		<li>
-			<a href="/tag/youtube">#youtube [10]</a>
+			<a href="/tag/freecad">#freecad [11]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
@@ -468,6 +468,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/industria">#industria [1]</a>
+		</li>
+		<li>
+			<a href="/tag/diario_maker">#diario_maker [1]</a>
 		</li>
 		<li>
 			<a href="/tag/code">#code [1]</a>
