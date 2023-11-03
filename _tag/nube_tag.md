@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [112]</a>
+			<a href="/tag/arduino">#arduino [113]</a>
 		</li>
 		<li>
 			<a href="/tag/esp8266">#esp8266 [38]</a>
@@ -44,6 +44,9 @@ redirect_from:
 			<a href="/tag/python">#python [14]</a>
 		</li>
 		<li>
+			<a href="/tag/freecad">#freecad [12]</a>
+		</li>
+		<li>
 			<a href="/tag/impresora3d">#impresora3d [12]</a>
 		</li>
 		<li>
@@ -51,9 +54,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/youtube">#youtube [11]</a>
-		</li>
-		<li>
-			<a href="/tag/freecad">#freecad [11]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
@@ -186,6 +186,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/streaming">#streaming [2]</a>
+		</li>
+		<li>
+			<a href="/tag/impresion3d">#impresion3d [2]</a>
+		</li>
+		<li>
+			<a href="/tag/array">#array [2]</a>
 		</li>
 		<li>
 			<a href="/tag/seguridad">#seguridad [2]</a>
@@ -341,9 +347,6 @@ redirect_from:
 			<a href="/tag/heramientas">#heramientas [1]</a>
 		</li>
 		<li>
-			<a href="/tag/impresion3d">#impresion3d [1]</a>
-		</li>
-		<li>
 			<a href="/tag/luces">#luces [1]</a>
 		</li>
 		<li>
@@ -359,6 +362,12 @@ redirect_from:
 			<a href="/tag/millis">#millis [1]</a>
 		</li>
 		<li>
+			<a href="/tag/int">#int [1]</a>
+		</li>
+		<li>
+			<a href="/tag/char">#char [1]</a>
+		</li>
+		<li>
 			<a href="/tag/serial">#serial [1]</a>
 		</li>
 		<li>
@@ -366,9 +375,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/bucle">#bucle [1]</a>
-		</li>
-		<li>
-			<a href="/tag/array">#array [1]</a>
 		</li>
 		<li>
 			<a href="/tag/rgb">#rgb [1]</a>

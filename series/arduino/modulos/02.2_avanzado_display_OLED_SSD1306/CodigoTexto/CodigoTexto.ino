@@ -76,5 +76,4 @@ void loop() {
     pantalla.display();
     delay(2000);
 
-
 }
