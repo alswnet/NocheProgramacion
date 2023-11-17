@@ -72,7 +72,8 @@ def buscarFolder(folder, nocheprogramacion):
     archivoIndex = folder.joinpath("index.md")
     if not procesarArchivo(archivoIndex):
         return
-    dataIndex = leerArchivo(archivoIndex)
+    dataIndex = leerArchivo(archivoIndex)[0]
+    idPlayList = dataIndex.get("playlist_id") 
     print("\n Buscar en Folder ", folder.name)
 
     listaVideos = []
@@ -88,17 +89,18 @@ def buscarFolder(folder, nocheprogramacion):
             listaVideos.append(rutaActual.name)
         
     listaVideos.sort()
+    print(listaVideos)
  
     for id in range(len(listaVideos)): 
         rutaVideo =  folder.joinpath(listaVideos[id])
         dataVideo = leerArchivo(rutaVideo)[0]
         descripcionVideo = leerArchivo(rutaVideo)[1]
         if id > 1:
-            dataVideoAnterior = leerArchivo(folder.joinpath(listaVideos[id-1]))
+            dataVideoAnterior = leerArchivo(folder.joinpath(listaVideos[id-1]))[0]
         else:
             dataVideoAnterior = None    
         if id < len(listaVideos) -1:
-            dataVideoSiquiente = leerArchivo(folder.joinpath(listaVideos[id+1]))
+            dataVideoSiquiente = leerArchivo(folder.joinpath(listaVideos[id+1]))[0]
         else:
             dataVideoSiquiente = None
 
@@ -112,11 +114,29 @@ def buscarFolder(folder, nocheprogramacion):
         print(mes, anno, url)
         print(nocheprogramacion.joinpath(url))
         
-        print(dataVideo)
+        # print(dataVideo)
 
         descripcion = ""
         descripcion += leerArchivo(rutaVideo)[1]
+        descripcion += "\n\n"
 
+        if dataVideoAnterior is not None:
+            if idPlayList is not None:
+                descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}?list={idPlayList}\n"
+            else:
+                descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}\n"
+        
+        if dataVideoSiquiente is not None:
+            if idPlayList is not None:
+                descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}?list={idPlayList}\n"
+            else:
+                descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}\n"
+
+        if idPlayList:
+          descripcion += f"🎥 Playlist({dataIndex.get('title')}): https://www.youtube.com/playlist?list={idPlayList}\n";
+    
+
+        print(descripcion)
         SalvarArchivo(nocheprogramacion.joinpath(url), descripcion)
         print()
     cantidadSeries += 1
