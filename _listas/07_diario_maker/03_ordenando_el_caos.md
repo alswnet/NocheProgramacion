@@ -23,4 +23,4 @@ miembros:
 actualizado: true
 ---
 
-Acompañame a reparar algo que llevo dias queriendo hacer 
+Acompáñame a reparar algo que llevo días queriendo hacer 

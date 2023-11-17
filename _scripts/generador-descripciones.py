@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import yaml
+import shutil 
 import pandas as pd
 from pathlib import Path, PosixPath
 
@@ -18,12 +19,15 @@ def main():
             raise Exception("No se encontro Folder de NocheProgramacion") 
 
     print("Folder NocheProgramacion; ", folderNoche.name)
+    shutil.rmtree(folderNoche.joinpath("_actualizado"), ignore_errors=True)
+
+    # TODO borrar videjos viejos
 
     archivoConfig = Path(folderNoche, "_scripts/config.md")
     print("Archivo Config", archivoConfig)
     config = leerArchivo(archivoConfig)[0]
-    for foldesActual in config.get("folder"):
-        buscarFolder(folderNoche.joinpath(foldesActual), folderNoche)
+    for folderActual in config.get("folder"):
+        buscarFolder(folderNoche.joinpath(folderActual), folderNoche)
     print("Configs: ", config)
 
     mostarEstadisticas()
@@ -35,7 +39,9 @@ def leerArchivo(nombre):
 
     with open(nombre) as archivo:
         if str(nombre).endswith(".md"):
-            return list(yaml.load_all(archivo, Loader=yaml.SafeLoader))
+            # TODO Capturar error en caso de carga
+            data = yaml.load_all(archivo, yaml.FullLoader)
+            return list(data)
         elif str(nombre).endswith(".txt"):
             return archivo.read()
         
@@ -67,7 +73,7 @@ def dataPendiente(data, video):
     global cantidadPendientes
     if data.get("pendiente") is not None:
             cantidadPendientes += 1
-            # todo agregar colors
+            # TODO agregar colors
             print(f"Video: {video.get('title')} - {data.get('title')}")
             print("Pendiente Alerta")
             print()
@@ -183,9 +189,11 @@ def buscarFolder(folder, nocheprogramacion):
         # Colabodores
 
         # Tags
+        descripcion += "\n#ChepeCarlos"
 
         # Miembros
 
+        # Salvar archivo
         SalvarArchivo(nocheprogramacion.joinpath(url), descripcion)
 
     cantidadSeries += 1

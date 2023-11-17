@@ -77,5 +77,5 @@ actualizado: true
 
 Vemos una manera especial de poder programar nuestro proyecto por wifi usando una pagina web o OTA, que puede muy util para proyecto con ESP32 y ESP8266
 
-Comando Automático:
+Comando Automático
 curl -F "image=@codigo.bin" esp-update.local/actualizar
