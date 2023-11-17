@@ -35,6 +35,8 @@ def leerArchivo(nombre):
     with open(nombre) as archivo:
         if str(nombre).endswith(".md"):
             return list(yaml.load_all(archivo, Loader=yaml.SafeLoader))
+        elif str(nombre).endswith(".txt"):
+            return archivo.read()
         
     return None
 
@@ -74,6 +76,10 @@ def buscarFolder(folder, nocheprogramacion):
         return
     dataIndex = leerArchivo(archivoIndex)[0]
     idPlayList = dataIndex.get("playlist_id") 
+    
+    archivoRedes = nocheprogramacion.joinpath("_scripts/redes.txt")
+    dataRedes = leerArchivo(archivoRedes)
+
     print("\n Buscar en Folder ", folder.name)
 
     listaVideos = []
@@ -117,26 +123,58 @@ def buscarFolder(folder, nocheprogramacion):
         # print(dataVideo)
 
         descripcion = ""
+
+        # Descripcions
         descripcion += leerArchivo(rutaVideo)[1]
         descripcion += "\n\n"
 
+        # Video Anterior
         if dataVideoAnterior is not None:
             if idPlayList is not None:
                 descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}?list={idPlayList}\n"
             else:
                 descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}\n"
         
+        # Video Siquiente
         if dataVideoSiquiente is not None:
             if idPlayList is not None:
                 descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}?list={idPlayList}\n"
             else:
                 descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}\n"
 
-        if idPlayList:
+        # Lista de Reproduccion
+        if idPlayList: 
           descripcion += f"🎥 Playlist({dataIndex.get('title')}): https://www.youtube.com/playlist?list={idPlayList}\n";
     
+        # Videos Relecionados
 
-        print(descripcion)
+        # NocheProgramacion y Adjuntos
+
+        # Links
+
+        # Compones
+
+        # Extra
+
+        # Indice
+        if dataVideo.get("topics"): 
+            descripcion += "\n🕓 Índice:\n"
+            for indice in dataVideo.get("topics"):
+                descripcion += f"{indice.get('time')} {indice.get('title')}\n"
+
+        # Redes Sosociales
+        if dataRedes is not None:
+            descripcion += "\n"
+            descripcion += dataRedes
+
+        # Colabodores
+
+        # Tags
+
+        # Miembros
+
+
+        # print(descripcion)
         SalvarArchivo(nocheprogramacion.joinpath(url), descripcion)
         print()
     cantidadSeries += 1
