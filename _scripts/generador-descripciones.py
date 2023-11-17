@@ -7,6 +7,7 @@ from pathlib import Path, PosixPath
 
 cantidadVideos = 0
 cantidadSeries = 0
+cantidadPendientes = 0
 
 def main():
     print("Iniciando Generador Descripciones")
@@ -62,6 +63,17 @@ def procesarArchivo(archivo):
 
     return data.__contains__("actualizado: true")
 
+def dataPendiente(data, video):
+    global cantidadPendientes
+    if data.get("pendiente") is not None:
+            cantidadPendientes += 1
+            # todo agregar colors
+            print(f"Video: {video.get('title')} - {data.get('title')}")
+            print("Pendiente Alerta")
+            print()
+            return True
+    return False
+
 def buscarFolder(folder, nocheprogramacion):
     global cantidadVideos
     global cantidadSeries
@@ -95,7 +107,6 @@ def buscarFolder(folder, nocheprogramacion):
             listaVideos.append(rutaActual.name)
         
     listaVideos.sort()
-    print(listaVideos)
  
     for id in range(len(listaVideos)): 
         rutaVideo =  folder.joinpath(listaVideos[id])
@@ -117,15 +128,11 @@ def buscarFolder(folder, nocheprogramacion):
         mes = fechaVideo.month
         url = f"_actualizado/{anno}/{mes}/{dataVideo.get('video_id')}.txt"
 
-        print(mes, anno, url)
-        print(nocheprogramacion.joinpath(url))
-        
-        # print(dataVideo)
-
         descripcion = ""
 
         # Descripcions
-        descripcion += leerArchivo(rutaVideo)[1]
+        # TODO agreegar separador de descripciones
+        descripcion += descripcionVideo
         descripcion += "\n\n"
 
         # Video Anterior
@@ -151,6 +158,12 @@ def buscarFolder(folder, nocheprogramacion):
         # NocheProgramacion y Adjuntos
 
         # Links
+        if dataVideo.get("links"):
+            descripcion += "\nLink referencia:\n"
+            for links in dataVideo.get("links"):
+                if dataPendiente(links, dataVideo):
+                    continue
+                descripcion += f" 🔗 {links.get('title')} {links.get('url')}\n"
 
         # Compones
 
@@ -163,7 +176,7 @@ def buscarFolder(folder, nocheprogramacion):
                 descripcion += f"{indice.get('time')} {indice.get('title')}\n"
 
         # Redes Sosociales
-        if dataRedes is not None:
+        if dataRedes:
             descripcion += "\n"
             descripcion += dataRedes
 
@@ -173,17 +186,18 @@ def buscarFolder(folder, nocheprogramacion):
 
         # Miembros
 
-
-        # print(descripcion)
         SalvarArchivo(nocheprogramacion.joinpath(url), descripcion)
-        print()
+
     cantidadSeries += 1
 
 def mostarEstadisticas():
     global cantidadVideos
     global cantidadSeries
-    print(f"Cantidad Video procesados {cantidadVideos}")
-    print(f"Series procesadas {cantidadSeries}")
+    global cantidadPendientes
+    print(f"Cantidad Totales Procesadas")
+    print(f"Video: {cantidadVideos}")
+    print(f"Series: {cantidadSeries}")
+    print(f"Pendientes: {cantidadPendientes}")
 
 if __name__ == "__main__":
     main()
