@@ -5,6 +5,7 @@ import yaml
 import shutil 
 import pandas as pd
 from pathlib import Path, PosixPath
+from urllib.parse import urlparse
 
 cantidadVideos = 0
 cantidadSeries = 0
@@ -34,14 +35,21 @@ def main():
 
 def leerArchivo(nombre):
     if not Path.exists(nombre):
-        print(f"No exite el Archivo {nombre}")
+        print()
+        print(nombre)
+        print(f"No exite el Archivo {nombre.name}")
+        # quit()
         return None
 
-    with open(nombre) as archivo:
+    with open(nombre, encoding="utf-8") as archivo:
         if str(nombre).endswith(".md"):
             # TODO Capturar error en caso de carga
-            data = yaml.load_all(archivo, yaml.FullLoader)
-            return list(data)
+            try:
+                data = yaml.load_all(archivo, Loader=yaml.SafeLoader)
+                return list(data)
+            except ValueError as ve:
+                print(f"Error con el Valor en {nombre.name}: {ve}")
+                quit()  
         elif str(nombre).endswith(".txt"):
             return archivo.read()
         
@@ -79,6 +87,25 @@ def dataPendiente(data, video):
             print()
             return True
     return False
+
+def esUrl(url):
+    try:
+        result = urlparse(url)
+        return all([result.scheme, result.netloc])
+    except ValueError:
+        return False
+    
+def buscaURLYoutube(url, nocheprogramacion):
+    urlVideo = nocheprogramacion.joinpath(f"_{url}.md")
+    if Path.exists(urlVideo):
+        dataVideo = leerArchivo(urlVideo)
+        return f"https://youtu.be/{dataVideo[0].get('video_id')}"
+    urlIndex = nocheprogramacion.joinpath(f"_{url}/index.md")
+    if Path.exists(urlIndex):
+        print("urlIndex ", urlVideo)
+        dataVideo = leerArchivo(urlVideo)
+        return f"https://www.youtube.com/playlist?list={dataVideo[0].get('playlist_id')}"
+    return "Muy Pronto"
 
 def buscarFolder(folder, nocheprogramacion):
     global cantidadVideos
@@ -141,25 +168,51 @@ def buscarFolder(folder, nocheprogramacion):
         descripcion += descripcionVideo
         descripcion += "\n\n"
 
-        # Video Anterior
-        if dataVideoAnterior is not None:
-            if idPlayList is not None:
-                descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}?list={idPlayList}\n"
-            else:
-                descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}\n"
-        
-        # Video Siquiente
-        if dataVideoSiquiente is not None:
-            if idPlayList is not None:
-                descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}?list={idPlayList}\n"
-            else:
-                descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}\n"
+        # ADS
 
-        # Lista de Reproduccion
-        if idPlayList: 
-          descripcion += f"🎥 Playlist({dataIndex.get('title')}): https://www.youtube.com/playlist?list={idPlayList}\n";
+        # Remake
+        if dataVideo.get("remake"):
+            urlRemake = dataVideo.get("remake")
+            urlRemake = buscaURLYoutube(urlRemake, nocheprogramacion)
+            descripcion = f"⚠️ Existe una NUEVA versión de este Video aqui 👉👉🏼👉🏾 {urlRemake} 👈🏾👈🏼👈\n\n" + descripcion
+
+        # Correciones
+        
+        if idPlayList:
+
+            # Video Anterior
+            if dataVideoAnterior is not None:
+                if idPlayList is not None:
+                    descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}?list={idPlayList}\n"
+                else:
+                    descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}\n"
+            
+            # Video Siquiente
+            if dataVideoSiquiente is not None:
+                if idPlayList is not None:
+                    descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}?list={idPlayList}\n"
+                else:
+                    descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}\n"
+
+            # Lista de Reproduccion
+            descripcion += f"🎥 Playlist({dataIndex.get('title')}): https://www.youtube.com/playlist?list={idPlayList}\n";
     
         # Videos Relecionados
+
+        if dataVideo.get("videos"):
+            descripcion += "\nVideos mencionados:\n"
+            for video in dataVideo.get("videos"):
+                if dataPendiente(video, dataVideo):
+                    continue
+                if video.get("video_id"):
+                    descripcion += f" 🎞 {video.get('title')}: https://youtu.be/{video.get('video_id')}\n"
+                elif video.get("url"):
+                    if esUrl(video.get("url")):
+                        descripcion += f" 🎞 ${video.get('title')}: {video.get('video_id')}\n"
+                    else:
+                        pass
+                        # TODO buscar video en referencia
+                        descripcion += f" 🎞  "
 
         # NocheProgramacion y Adjuntos
 
@@ -171,7 +224,7 @@ def buscarFolder(folder, nocheprogramacion):
                     continue
                 descripcion += f" 🔗 {links.get('title')} {links.get('url')}\n"
 
-        # Compones
+        # Compones y Links Amazon
 
         # Extra
 
@@ -187,12 +240,17 @@ def buscarFolder(folder, nocheprogramacion):
             descripcion += dataRedes
 
         # Colabodores
-
+        
         # Tags
         descripcion += "\n#ChepeCarlos"
 
         # Miembros
 
+        # CTA Miembros
+        descripcion += "\n"
+        descripcion += "\n🔭 Agrega tu nombre, Únete tú también https://www.youtube.com/@chepecarlo/join 🔭"
+        descripcion += "\n👊 Avances Exclusivo para Miembros: https://nocheprogramacion.com/miembros 👊"
+     
         # Salvar archivo
         SalvarArchivo(nocheprogramacion.joinpath(url), descripcion)
 
