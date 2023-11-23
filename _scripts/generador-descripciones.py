@@ -22,16 +22,32 @@ def main():
     print("Folder NocheProgramacion; ", folderNoche.name)
     shutil.rmtree(folderNoche.joinpath("_actualizado"), ignore_errors=True)
 
-    # TODO borrar videjos viejos
-
     archivoConfig = Path(folderNoche, "_scripts/config.md")
     print("Archivo Config", archivoConfig)
-    config = leerArchivo(archivoConfig)[0]
+    config = leerArchivo(archivoConfig)
     for folderActual in config.get("folder"):
         buscarFolder(folderNoche.joinpath(folderActual), folderNoche)
-    print("Configs: ", config)
-
     mostarEstadisticas()
+
+
+def leerDescripcion(nombre):
+    print()
+    print("Leer descripcion ", nombre.name)
+    print()
+    if not Path.exists(nombre):
+        print()
+        print(nombre)
+        print(f"No exite el Archivo {nombre.name}")
+        return None
+    
+    with open(nombre, encoding="utf-8") as archivo:
+        if str(nombre).endswith(".md"):
+            texto = archivo.read()
+            texto = texto.split("---")[2].strip()
+            return texto
+        
+    return None
+
 
 def leerArchivo(nombre):
     if not Path.exists(nombre):
@@ -40,13 +56,17 @@ def leerArchivo(nombre):
         print(f"No exite el Archivo {nombre.name}")
         # quit()
         return None
+    
+    # TODO revisas se se puede leer
+    # if not procesarArchivo(nombre):
+    #     return None
 
     with open(nombre, encoding="utf-8") as archivo:
         if str(nombre).endswith(".md"):
             # TODO Capturar error en caso de carga
             try:
                 data = yaml.load_all(archivo, Loader=yaml.SafeLoader)
-                return list(data)
+                return list(data)[0]
             except ValueError as ve:
                 print(f"Error con el Valor en {nombre.name}: {ve}")
                 quit()  
@@ -60,9 +80,7 @@ def SalvarArchivo(Archivo: str, data):
     if type(Archivo) not in [str, PosixPath]:
         raise TypeError("Los Path tiene que ser str o PosixPath")
 
-    # NombreArchivo = Path(Archivo).name
     RutaArchivo = Path(Archivo).parent
-    # SufijoArchivo = Path(Archivo).suffix
     RutaArchivo.mkdir(parents=True, exist_ok=True)
     with open(Archivo, "w+") as f:
         f.write(data)
@@ -99,12 +117,12 @@ def buscaURLYoutube(url, nocheprogramacion):
     urlVideo = nocheprogramacion.joinpath(f"_{url}.md")
     if Path.exists(urlVideo):
         dataVideo = leerArchivo(urlVideo)
-        return f"https://youtu.be/{dataVideo[0].get('video_id')}"
+        return f"https://youtu.be/{dataVideo.get('video_id')}"
     urlIndex = nocheprogramacion.joinpath(f"_{url}/index.md")
     if Path.exists(urlIndex):
         print("urlIndex ", urlVideo)
         dataVideo = leerArchivo(urlVideo)
-        return f"https://www.youtube.com/playlist?list={dataVideo[0].get('playlist_id')}"
+        return f"https://www.youtube.com/playlist?list={dataVideo.get('playlist_id')}"
     return "Muy Pronto"
 
 def buscarFolder(folder, nocheprogramacion):
@@ -119,7 +137,7 @@ def buscarFolder(folder, nocheprogramacion):
     archivoIndex = folder.joinpath("index.md")
     if not procesarArchivo(archivoIndex):
         return
-    dataIndex = leerArchivo(archivoIndex)[0]
+    dataIndex = leerArchivo(archivoIndex)
     idPlayList = dataIndex.get("playlist_id") 
     
     archivoRedes = nocheprogramacion.joinpath("_scripts/redes.txt")
@@ -143,14 +161,14 @@ def buscarFolder(folder, nocheprogramacion):
  
     for id in range(len(listaVideos)): 
         rutaVideo =  folder.joinpath(listaVideos[id])
-        dataVideo = leerArchivo(rutaVideo)[0]
-        descripcionVideo = leerArchivo(rutaVideo)[1]
+        dataVideo = leerArchivo(rutaVideo)
+        descripcionVideo = leerDescripcion(rutaVideo)
         if id > 1:
-            dataVideoAnterior = leerArchivo(folder.joinpath(listaVideos[id-1]))[0]
+            dataVideoAnterior = leerArchivo(folder.joinpath(listaVideos[id-1]))
         else:
             dataVideoAnterior = None    
         if id < len(listaVideos) -1:
-            dataVideoSiquiente = leerArchivo(folder.joinpath(listaVideos[id+1]))[0]
+            dataVideoSiquiente = leerArchivo(folder.joinpath(listaVideos[id+1]))
         else:
             dataVideoSiquiente = None
 
@@ -260,6 +278,7 @@ def mostarEstadisticas():
     global cantidadVideos
     global cantidadSeries
     global cantidadPendientes
+    print()
     print(f"Cantidad Totales Procesadas")
     print(f"Video: {cantidadVideos}")
     print(f"Series: {cantidadSeries}")
