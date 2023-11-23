@@ -14,8 +14,8 @@ links:
 actualizado: true
 ---
 
-Enseñar a los niños a programar; puede ser algo complicado, pero en Snap4Arduin podemos dar la oportunidad de los mas pequeños a usar Arduino
+Enseñar a los niños a programar puede ser algo complicado, pero en Snap4Arduin podemos dar la oportunidad de los mas pequeños a usar Arduino
 
-Recuerda programar el arduino para trabajar con Snap puede encontrar el codigo en Arduino IDE: File → Examples → Firmata → StandardFirmata
+Recuerda programar el arduino para trabajar con Snap puede encontrar el codigo en Arduino IDE File → Examples → Firmata → StandardFirmata
 
 ¿A quien le enseñarías a usar Snap?
