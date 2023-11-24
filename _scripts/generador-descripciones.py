@@ -7,6 +7,18 @@ import pandas as pd
 from pathlib import Path, PosixPath
 from urllib.parse import urlparse
 
+class color:
+    PURPLE = "\033[95m"
+    CYAN = "\033[96m"
+    DARKCYAN = "\033[36m"
+    BLUE = "\033[94m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    RED = "\033[91m"
+    BOLD = "\033[1m"
+    UNDERLINE = "\033[4m"
+    END = "\033[0m"
+
 cantidadVideos = 0
 cantidadSeries = 0
 cantidadPendientes = 0
@@ -31,9 +43,6 @@ def main():
 
 
 def leerDescripcion(nombre):
-    print()
-    print("Leer descripcion ", nombre.name)
-    print()
     if not Path.exists(nombre):
         print()
         print(nombre)
@@ -67,9 +76,13 @@ def leerArchivo(nombre):
             try:
                 data = yaml.load_all(archivo, Loader=yaml.SafeLoader)
                 return list(data)[0]
-            except ValueError as ve:
-                print(f"Error con el Valor en {nombre.name}: {ve}")
+            except ValueError as error:
+                print(f"Error con el Valor en {nombre.name}: {error}")
                 quit()  
+            except yaml.scanner.ScannerError as error:
+                print(f"Error con el formato {nombre.name}: {error}")
+                quit()
+                pass
         elif str(nombre).endswith(".txt"):
             return archivo.read()
         
@@ -95,13 +108,15 @@ def procesarArchivo(archivo):
 
     return data.__contains__("actualizado: true")
 
-def dataPendiente(data, video):
+def dataPendiente(data, video, ruta):
     global cantidadPendientes
     if data.get("pendiente") is not None:
             cantidadPendientes += 1
             # TODO agregar colors
-            print(f"Video: {video.get('title')} - {data.get('title')}")
-            print("Pendiente Alerta")
+            print(f"{color.RED}Data Pendiente Alerta{color.END}")
+            print(f"Video: {video.get('title')}")
+            print(f"Data: {data.get('title')}")
+            print(f"URL: {ruta.name}")
             print()
             return True
     return False
@@ -143,8 +158,6 @@ def buscarFolder(folder, nocheprogramacion):
     archivoRedes = nocheprogramacion.joinpath("_scripts/redes.txt")
     dataRedes = leerArchivo(archivoRedes)
 
-    print("\n Buscar en Folder ", folder.name)
-
     listaVideos = []
     for archivo in Path.iterdir(folder):
         rutaActual = folder.joinpath(archivo)
@@ -161,6 +174,7 @@ def buscarFolder(folder, nocheprogramacion):
  
     for id in range(len(listaVideos)): 
         rutaVideo =  folder.joinpath(listaVideos[id])
+        # print(rutaVideo.name)
         dataVideo = leerArchivo(rutaVideo)
         descripcionVideo = leerDescripcion(rutaVideo)
         if id > 1:
@@ -187,6 +201,11 @@ def buscarFolder(folder, nocheprogramacion):
         descripcion += "\n\n"
 
         # ADS
+        if dataVideo.get("ads"):
+            for ads in dataVideo.get("ads"):
+                if dataPendiente(ads, dataVideo, rutaVideo):
+                    continue
+                descripcion += f"\n{ads.get('ads')} {ads.get('url')}\n"
 
         # Remake
         if dataVideo.get("remake"):
@@ -195,9 +214,15 @@ def buscarFolder(folder, nocheprogramacion):
             descripcion = f"⚠️ Existe una NUEVA versión de este Video aqui 👉👉🏼👉🏾 {urlRemake} 👈🏾👈🏼👈\n\n" + descripcion
 
         # Correciones
-        
+        if dataVideo.get("log"):
+            descripcion += "\n⚠️ Correcciones ⚠️:\n"
+            for correcion in dataVideo.get("log"):
+                if dataPendiente(correcion, dataVideo, rutaVideo):
+                    continue
+                descripcion += f"  ♦️ {correcion.get('title')}\n"
+                
+        # Siquiente y Anterior Video
         if idPlayList:
-
             # Video Anterior
             if dataVideoAnterior is not None:
                 if idPlayList is not None:
@@ -216,11 +241,10 @@ def buscarFolder(folder, nocheprogramacion):
             descripcion += f"🎥 Playlist({dataIndex.get('title')}): https://www.youtube.com/playlist?list={idPlayList}\n";
     
         # Videos Relecionados
-
         if dataVideo.get("videos"):
             descripcion += "\nVideos mencionados:\n"
             for video in dataVideo.get("videos"):
-                if dataPendiente(video, dataVideo):
+                if dataPendiente(video, dataVideo, rutaVideo):
                     continue
                 if video.get("video_id"):
                     descripcion += f" 🎞 {video.get('title')}: https://youtu.be/{video.get('video_id')}\n"
@@ -238,13 +262,15 @@ def buscarFolder(folder, nocheprogramacion):
         if dataVideo.get("links"):
             descripcion += "\nLink referencia:\n"
             for links in dataVideo.get("links"):
-                if dataPendiente(links, dataVideo):
+                if dataPendiente(links, dataVideo, rutaVideo):
                     continue
                 descripcion += f" 🔗 {links.get('title')} {links.get('url')}\n"
 
         # Compones y Links Amazon
 
         # Extra
+        if dataVideo.get("custom_sections"): 
+            pass
 
         # Indice
         if dataVideo.get("topics"): 
@@ -280,9 +306,9 @@ def mostarEstadisticas():
     global cantidadPendientes
     print()
     print(f"Cantidad Totales Procesadas")
-    print(f"Video: {cantidadVideos}")
+    print(f"Video: {color.GREEN}{cantidadVideos}{color.END}")
     print(f"Series: {cantidadSeries}")
-    print(f"Pendientes: {cantidadPendientes}")
+    print(f"Pendientes: {color.RED}{cantidadPendientes}{color.END} Falta")
 
 if __name__ == "__main__":
     main()
