@@ -22,9 +22,15 @@ class color:
 cantidadVideos = 0
 cantidadSeries = 0
 cantidadPendientes = 0
+noProcesar = 0
+noAmazon = 0
+
+config = None
+producto = None
 
 def main():
     global config
+    global producto
     print("Iniciando Generador Descripciones")
     folderNoche = Path(Path().resolve())
     # TODO mejorar busqueda automatica con el nombre en config.md
@@ -36,6 +42,8 @@ def main():
     print(f"Folder NocheProgramacion {folderNoche.name}")
     archivoConfig = Path(folderNoche, "_scripts/config.md")
     config = leerArchivo(archivoConfig)
+    archivoProducto = Path(folderNoche, "_scripts/producto.md")
+    producto = leerArchivo(archivoProducto).get("productos")
 
     print("Borrando todas los Archivos Anteriores")
     shutil.rmtree(folderNoche.joinpath(config.get("folder_archivos")), ignore_errors=True)
@@ -102,6 +110,7 @@ def SalvarArchivo(Archivo: str, data):
         f.write(data)
 
 def procesarArchivo(archivo):
+    global noProcesar
 
     if not archivo.exists():
         return False
@@ -109,7 +118,11 @@ def procesarArchivo(archivo):
     with open(archivo) as f:
         data = f.read()
 
-    return data.__contains__("actualizado: true")
+    procesar = data.__contains__("actualizado: true")
+    if not procesar:
+        noProcesar += 1
+
+    return procesar
 
 def dataPendiente(data, video, ruta):
     global cantidadPendientes
@@ -142,6 +155,41 @@ def buscaURLYoutube(url, nocheprogramacion):
         return f"https://www.youtube.com/playlist?list={dataVideo.get('playlist_id')}"
     return "Muy Pronto"
 
+def linkAmazon(idAmazon):
+    global config
+    texto = ""
+    for codigoAmazon in config.get("amazon"):
+        pais = codigoAmazon.get("pais")
+        emoji = codigoAmazon.get("emoji")
+        if isinstance(idAmazon, str):
+            texto += f"  {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idAmazon}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+        elif isinstance(idAmazon, list):
+            for idActual in idAmazon:
+                texto += f"  {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+    return texto
+
+def buscarAmazon(nombreProducto):
+    global config
+    global producto
+    global noAmazon
+    texto = ""
+    for productoActual in producto:
+        if nombreProducto == productoActual.get("name"):
+            for codigoAmazon in config.get("amazon"):
+                pais = codigoAmazon.get("pais")
+                emoji = codigoAmazon.get("emoji")
+                codigos = productoActual.get(pais.lower())
+                if isinstance(codigos, str):
+                    texto += f"  {emoji} {pais}: {codigoAmazon.get('url')}/dp/{codigos}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+                elif isinstance(codigos, list):
+                    texto += f"  {emoji} {pais}:\n"
+                    for codigoActual in codigos:
+                        texto += f"   {codigoAmazon.get('url')}/dp/{codigoActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+                else: 
+                    noAmazon += 1
+                    print(f"Producto Faltante: {color.RED}{productoActual.get('name')} - {pais}{color.END} Falta\n")
+    return texto
+
 def buscarFolder(folder, nocheprogramacion):
     global cantidadVideos
     global cantidadSeries
@@ -163,7 +211,6 @@ def buscarFolder(folder, nocheprogramacion):
     listaVideos = []
     for archivo in Path.iterdir(folder):
         rutaActual = folder.joinpath(archivo)
-        
         
         if Path.is_dir(rutaActual):
             buscarFolder(rutaActual, nocheprogramacion)
@@ -197,7 +244,7 @@ def buscarFolder(folder, nocheprogramacion):
 
         descripcion = ""
 
-        # Descripcions
+        # Descripcion
         # TODO agreegar separador de descripciones
         descripcion += descripcionVideo
         descripcion += "\n\n"
@@ -276,6 +323,19 @@ def buscarFolder(folder, nocheprogramacion):
                 descripcion += f" 🔗 {links.get('title')} {links.get('url')}\n"
 
         # Compones y Links Amazon
+        if dataVideo.get("piezas"):
+            descripcion += "\nComponentes electrónicos:\n"
+            for pieza in dataVideo.get("piezas"):
+                if pieza.get("url"): 
+                    urlPieza = pieza.get("url")
+                    if esUrl(urlPieza):
+                        descripcion += f" 🤖 {pieza.get('title')}: {urlPieza}\n"
+                elif pieza.get("amazon"):
+                    descripcion += f" 🤖 {pieza.get('title')}: \n"
+                    descripcion += linkAmazon(pieza.get("amazon"))
+                else:
+                    descripcion += f" 🤖 {pieza.get('title')}: \n"
+                    descripcion += buscarAmazon(pieza.get('title'))
 
         # Extra
         if dataVideo.get("custom_sections"): 
@@ -340,11 +400,15 @@ def mostarEstadisticas():
     global cantidadVideos
     global cantidadSeries
     global cantidadPendientes
+    global noProcesar
+    global noAmazon
     print()
     print(f"Cantidad Totales Procesadas")
     print(f"Video: {color.GREEN}{cantidadVideos}{color.END}")
     print(f"Series: {cantidadSeries}")
     print(f"Pendientes: {color.RED}{cantidadPendientes}{color.END} Falta")
+    print(f"No procesados: {noProcesar}")
+    print(f"Producto no encontrado: {noAmazon}")
 
 if __name__ == "__main__":
     main()
