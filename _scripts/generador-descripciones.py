@@ -24,19 +24,22 @@ cantidadSeries = 0
 cantidadPendientes = 0
 
 def main():
+    global config
     print("Iniciando Generador Descripciones")
     folderNoche = Path(Path().resolve())
+    # TODO mejorar busqueda automatica con el nombre en config.md
     while folderNoche.name != "1.NocheProgramacion":
         folderNoche = folderNoche.parent
         if folderNoche.name == "":
             raise Exception("No se encontro Folder de NocheProgramacion") 
 
-    print("Folder NocheProgramacion; ", folderNoche.name)
-    shutil.rmtree(folderNoche.joinpath("_actualizado"), ignore_errors=True)
-
+    print(f"Folder NocheProgramacion {folderNoche.name}")
     archivoConfig = Path(folderNoche, "_scripts/config.md")
-    print("Archivo Config", archivoConfig)
     config = leerArchivo(archivoConfig)
+
+    print("Borrando todas los Archivos Anteriores")
+    shutil.rmtree(folderNoche.joinpath(config.get("folder_archivos")), ignore_errors=True)
+
     for folderActual in config.get("folder"):
         buscarFolder(folderNoche.joinpath(folderActual), folderNoche)
     mostarEstadisticas()
@@ -135,8 +138,7 @@ def buscaURLYoutube(url, nocheprogramacion):
         return f"https://youtu.be/{dataVideo.get('video_id')}"
     urlIndex = nocheprogramacion.joinpath(f"_{url}/index.md")
     if Path.exists(urlIndex):
-        print("urlIndex ", urlVideo)
-        dataVideo = leerArchivo(urlVideo)
+        dataVideo = leerArchivo(urlIndex)
         return f"https://www.youtube.com/playlist?list={dataVideo.get('playlist_id')}"
     return "Muy Pronto"
 
@@ -191,7 +193,7 @@ def buscarFolder(folder, nocheprogramacion):
         fechaVideo = pd.to_datetime(dataFecha)
         anno = fechaVideo.year
         mes = fechaVideo.month
-        url = f"_actualizado/{anno}/{mes}/{dataVideo.get('video_id')}.txt"
+        url = f"{config.get('folder_archivos')}/{anno}/{mes}/{dataVideo.get('video_id')}.txt"
 
         descripcion = ""
 
@@ -250,13 +252,20 @@ def buscarFolder(folder, nocheprogramacion):
                     descripcion += f" 🎞 {video.get('title')}: https://youtu.be/{video.get('video_id')}\n"
                 elif video.get("url"):
                     if esUrl(video.get("url")):
-                        descripcion += f" 🎞 ${video.get('title')}: {video.get('video_id')}\n"
+                        descripcion += f" 🎞 {video.get('title')}: {video.get('video_id')}\n"
                     else:
-                        pass
-                        # TODO buscar video en referencia
-                        descripcion += f" 🎞  "
+                        urlBuscada = buscaURLYoutube(video.get("url"), nocheprogramacion)
+                        descripcion += f" 🎞 {video.get('title')}: {urlBuscada}\n"
 
         # NocheProgramacion y Adjuntos
+        urlArticulo = str(rutaVideo).split("NocheProgramacion/_")
+        urlArticulo = urlArticulo[1].removesuffix(".md")
+        if dataVideo.get("repository"):
+            direccionDescargables = dataVideo.get("repository")
+            descripcion += f"{folder.name}/{direccionDescargables}"
+            descripcion += f"\n💻 Descarga(): https://nocheprogramacion.com/{urlArticulo}.html\n"
+        else:
+            descripcion += f"\n💻 Articulo: https://nocheprogramacion.com/{urlArticulo}.html\n"
 
         # Links
         if dataVideo.get("links"):
@@ -270,7 +279,18 @@ def buscarFolder(folder, nocheprogramacion):
 
         # Extra
         if dataVideo.get("custom_sections"): 
-            pass
+            descripcion += "\nLink Extras:\n"
+            for extras in dataVideo.get("custom_sections"):
+                if dataPendiente(extras, dataVideo, rutaVideo):
+                    continue
+                if extras.get("title"):
+                    descripcion += f" ✪ {extras.get('title')}:\n"
+                    for miniExtras in extras.get('items'):
+                        if dataPendiente(miniExtras, dataVideo, rutaVideo):
+                            continue
+                        urlMini = miniExtras.get('url')
+                        urlTitle = miniExtras.get("titule")
+                        descripcion += f"  ➤ {urlTitle}: {urlMini}\n"
 
         # Indice
         if dataVideo.get("topics"): 
@@ -284,11 +304,27 @@ def buscarFolder(folder, nocheprogramacion):
             descripcion += dataRedes
 
         # Colabodores
+        if dataVideo.get("colaboradores"): 
+            descripcion += "\nCreado con los Companeros:\n"
+            for Colaborador in dataVideo.get("colaboradores"):
+                descripcion += f" 🧙🏼‍♂️ {Colaborador.get('title')} - {Colaborador.get('colaborador')}\n"
         
         # Tags
         descripcion += "\n#ChepeCarlos"
+        if dataVideo.get("tags"):
+            for tags in dataVideo.get("tags"):
+                if tags == "shorts":
+                    descripcion += f" #{tags}"
+        descripcion += "\n"
 
         # Miembros
+        if dataVideo.get("miembros"): 
+            descripcion += "\n🦾 Creado gracias al Apoyo de Miembros(Patrocinadores):\n"
+            for nivel in dataVideo.get("miembros"):
+                descripcion += f" Nivel {nivel.get('title')}\n  "
+                for miembro in nivel.get("items"):
+                    descripcion += f"{miembro.get('title')}, "
+                descripcion += "\n"
 
         # CTA Miembros
         descripcion += "\n"
