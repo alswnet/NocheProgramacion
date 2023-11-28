@@ -162,10 +162,10 @@ def linkAmazon(idAmazon):
         pais = codigoAmazon.get("pais")
         emoji = codigoAmazon.get("emoji")
         if isinstance(idAmazon, str):
-            texto += f"  {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idAmazon}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+            texto += f"   {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idAmazon}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
         elif isinstance(idAmazon, list):
             for idActual in idAmazon:
-                texto += f"  {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+                texto += f"   {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
     return texto
 
 def buscarAmazon(nombreProducto):
@@ -180,9 +180,9 @@ def buscarAmazon(nombreProducto):
                 emoji = codigoAmazon.get("emoji")
                 codigos = productoActual.get(pais.lower())
                 if isinstance(codigos, str):
-                    texto += f"  {emoji} {pais}: {codigoAmazon.get('url')}/dp/{codigos}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+                    texto += f"   {emoji} {pais}: {codigoAmazon.get('url')}/dp/{codigos}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
                 elif isinstance(codigos, list):
-                    texto += f"  {emoji} {pais}:\n"
+                    texto += f"   {emoji} {pais}:\n"
                     for codigoActual in codigos:
                         texto += f"   {codigoAmazon.get('url')}/dp/{codigoActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
                 else: 
@@ -245,9 +245,24 @@ def buscarFolder(folder, nocheprogramacion):
         descripcion = ""
 
         # Descripcion
-        # TODO agreegar separador de descripciones
         descripcion += descripcionVideo
-        descripcion += "\n\n"
+
+        # SeoMostar
+        lineaMaxima = 90
+        lineas = descripcion.split('\n')
+        if len(descripcion) <= lineaMaxima:
+            descripcion += "\n"
+
+        if len(descripcion) <= lineaMaxima * 2:
+            if len(lineas) <= 2:
+                descripcion += "\n👇 👇 HAZ CLICK 👇 👇"
+            else:
+                nuevaDescripcion = lineas[0]
+                nuevaDescripcion += "\n👇 👇 HAZ CLICK 👇 👇"
+                for linea in lineas[1:]:
+                    nuevaDescripcion += f"\n{linea}"
+                descripcion = nuevaDescripcion
+        descripcion += "\n"
 
         # ADS
         if dataVideo.get("ads"):
@@ -310,6 +325,7 @@ def buscarFolder(folder, nocheprogramacion):
         if dataVideo.get("repository"):
             direccionDescargables = dataVideo.get("repository")
             descripcion += f"{folder.name}/{direccionDescargables}"
+            # TODO agregar tipos de descargables
             descripcion += f"\n💻 Descarga(): https://nocheprogramacion.com/{urlArticulo}.html\n"
         else:
             descripcion += f"\n💻 Articulo: https://nocheprogramacion.com/{urlArticulo}.html\n"
@@ -408,7 +424,7 @@ def mostarEstadisticas():
     print(f"Series: {cantidadSeries}")
     print(f"Pendientes: {color.RED}{cantidadPendientes}{color.END} Falta")
     print(f"No procesados: {noProcesar}")
-    print(f"Producto no encontrado: {noAmazon}")
+    print(f"Producto no encontrado: {color.RED}{noAmazon}{color.END}")
 
 if __name__ == "__main__":
     main()
