@@ -240,6 +240,8 @@ def buscarFolder(folder, nocheprogramacion):
         fechaVideo = pd.to_datetime(dataFecha)
         anno = fechaVideo.year
         mes = fechaVideo.month
+        if mes < 10:
+            mes = '0' + str(mes)
         url = f"{config.get('folder_archivos')}/{anno}/{mes}/{dataVideo.get('video_id')}.txt"
 
         descripcion = ""
