@@ -8,7 +8,7 @@ folder:
     - _RetoProgramacion
     - _grabaciones
     - _colaboraciones
-    - _mas/bodega
+    - _mas
     - _ponencias
     - _extras
 ads: true

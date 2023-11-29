@@ -49,7 +49,7 @@ def main():
     shutil.rmtree(folderNoche.joinpath(config.get("folder_archivos")), ignore_errors=True)
 
     for folderActual in config.get("folder"):
-        buscarFolder(folderNoche.joinpath(folderActual), folderNoche)
+        buscarFolder(folderNoche.joinpath(folderActual), folderNoche, folderActual)
     mostarEstadisticas()
 
 
@@ -188,7 +188,7 @@ def buscarAmazon(nombreProducto):
                     print(f"Producto Faltante: {color.RED}{productoActual.get('name')} - {pais}{color.END} Falta\n")
     return texto
 
-def buscarFolder(folder, nocheprogramacion):
+def buscarFolder(folder, nocheprogramacion, folderBusqueda):
     global cantidadVideos
     global cantidadSeries
 
@@ -211,7 +211,7 @@ def buscarFolder(folder, nocheprogramacion):
         rutaActual = folder.joinpath(archivo)
         
         if Path.is_dir(rutaActual):
-            buscarFolder(rutaActual, nocheprogramacion)
+            buscarFolder(rutaActual, nocheprogramacion, folderBusqueda)
         if Path.is_file(rutaActual):
             if not procesarArchivo(rutaActual) or rutaActual.name == "index.md":
                 continue
@@ -328,8 +328,23 @@ def buscarFolder(folder, nocheprogramacion):
         urlArticulo = urlArticulo[1].removesuffix(".md")
         if dataVideo.get("repository"):
             direccionDescargables = dataVideo.get("repository")
-            # TODO agregar tipos de descargables
-            descripcion += f"💻 Descarga(): https://nocheprogramacion.com/{urlArticulo}.html\n"
+            rutaDescargables = f"{nocheprogramacion}/{str(folderBusqueda).removeprefix('_')}/{direccionDescargables}" 
+            if Path(rutaDescargables).exists():
+                descripcionDescarga = f"💻 Descarga("
+                rutaBuscar = Path.iterdir(Path(rutaDescargables))
+                cantidadDescargables = len(list(Path.iterdir(Path(rutaDescargables))))
+
+                for i, folderDescargable in enumerate(rutaBuscar):
+                    if(cantidadDescargables -1 == i):
+                        descripcionDescarga += f"{folderDescargable.name.upper()}"
+                    else:
+                        descripcionDescarga += f"{folderDescargable.name.upper()}, "
+
+                descripcionDescarga += f"): https://nocheprogramacion.com/{urlArticulo}.html\n"
+                descripcion += descripcionDescarga
+            else:
+                print(f"No Existen descargables en {color.RED}{dataVideo.get('title')}{color.END}: {dataVideo.get('video_id')}")
+                descripcion += f"💻 Descarga(Pendiente): https://nocheprogramacion.com/{urlArticulo}.html\n"
         else:
             descripcion += f"💻 Articulo: https://nocheprogramacion.com/{urlArticulo}.html\n"
         descripcion += "\n"
