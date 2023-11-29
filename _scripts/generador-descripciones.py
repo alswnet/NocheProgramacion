@@ -83,7 +83,6 @@ def leerArchivo(nombre):
 
     with open(nombre, encoding="utf-8") as archivo:
         if str(nombre).endswith(".md"):
-            # TODO Capturar error en caso de carga
             try:
                 data = yaml.load_all(archivo, Loader=yaml.SafeLoader)
                 return list(data)[0]
@@ -128,7 +127,6 @@ def dataPendiente(data, video, ruta):
     global cantidadPendientes
     if data.get("pendiente") is not None:
             cantidadPendientes += 1
-            # TODO agregar colors
             print(f"{color.RED}Data Pendiente Alerta{color.END}")
             print(f"Video: {video.get('title')}")
             print(f"Data: {data.get('title')}")
@@ -162,10 +160,10 @@ def linkAmazon(idAmazon):
         pais = codigoAmazon.get("pais")
         emoji = codigoAmazon.get("emoji")
         if isinstance(idAmazon, str):
-            texto += f"   {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idAmazon}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+            texto += f"    {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idAmazon}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
         elif isinstance(idAmazon, list):
             for idActual in idAmazon:
-                texto += f"   {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+                texto += f"    {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
     return texto
 
 def buscarAmazon(nombreProducto):
@@ -180,11 +178,11 @@ def buscarAmazon(nombreProducto):
                 emoji = codigoAmazon.get("emoji")
                 codigos = productoActual.get(pais.lower())
                 if isinstance(codigos, str):
-                    texto += f"   {emoji} {pais}: {codigoAmazon.get('url')}/dp/{codigos}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+                    texto += f"    {emoji} {pais}: {codigoAmazon.get('url')}/dp/{codigos}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
                 elif isinstance(codigos, list):
-                    texto += f"   {emoji} {pais}:\n"
+                    texto += f"    {emoji} {pais}:\n"
                     for codigoActual in codigos:
-                        texto += f"   {codigoAmazon.get('url')}/dp/{codigoActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+                        texto += f"       {codigoAmazon.get('url')}/dp/{codigoActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
                 else: 
                     noAmazon += 1
                     print(f"Producto Faltante: {color.RED}{productoActual.get('name')} - {pais}{color.END} Falta\n")
@@ -257,7 +255,7 @@ def buscarFolder(folder, nocheprogramacion):
 
         if len(descripcion) <= lineaMaxima * 2:
             if len(lineas) <= 2:
-                descripcion += "\n👇 👇 HAZ CLICK 👇 👇"
+                descripcion += "\n👇 👇 HAZ CLICK 👇 👇\n"
             else:
                 nuevaDescripcion = lineas[0]
                 nuevaDescripcion += "\n👇 👇 HAZ CLICK 👇 👇"
@@ -281,9 +279,10 @@ def buscarFolder(folder, nocheprogramacion):
 
         # Correciones
         if dataVideo.get("log"):
-            descripcion += "\n⚠️ Correcciones ⚠️:\n"
+            descripcion += "⚠️ Correcciones ⚠️:\n"
             for correcion in dataVideo.get("log"):
                 if dataPendiente(correcion, dataVideo, rutaVideo):
+                    descripcion += f"  😱Pendiente😱"
                     continue
                 descripcion += f"  ♦️ {correcion.get('title')}\n"
                 
@@ -305,12 +304,14 @@ def buscarFolder(folder, nocheprogramacion):
 
             # Lista de Reproduccion
             descripcion += f"🎥 Playlist({dataIndex.get('title')}): https://www.youtube.com/playlist?list={idPlayList}\n";
+            descripcion += "\n"
     
         # Videos Relecionados
         if dataVideo.get("videos"):
-            descripcion += "\nVideos mencionados:\n"
+            descripcion += "Videos mencionados:\n"
             for video in dataVideo.get("videos"):
                 if dataPendiente(video, dataVideo, rutaVideo):
+                    descripcion += f" 🎞 {video.get('title')}: 😱Pendiente😱\n"
                     continue
                 if video.get("video_id"):
                     descripcion += f" 🎞 {video.get('title')}: https://youtu.be/{video.get('video_id')}\n"
@@ -320,29 +321,32 @@ def buscarFolder(folder, nocheprogramacion):
                     else:
                         urlBuscada = buscaURLYoutube(video.get("url"), nocheprogramacion)
                         descripcion += f" 🎞 {video.get('title')}: {urlBuscada}\n"
+            descripcion += "\n"
 
         # NocheProgramacion y Adjuntos
         urlArticulo = str(rutaVideo).split("NocheProgramacion/_")
         urlArticulo = urlArticulo[1].removesuffix(".md")
         if dataVideo.get("repository"):
             direccionDescargables = dataVideo.get("repository")
-            descripcion += f"{folder.name}/{direccionDescargables}"
             # TODO agregar tipos de descargables
-            descripcion += f"\n💻 Descarga(): https://nocheprogramacion.com/{urlArticulo}.html\n"
+            descripcion += f"💻 Descarga(): https://nocheprogramacion.com/{urlArticulo}.html\n"
         else:
-            descripcion += f"\n💻 Articulo: https://nocheprogramacion.com/{urlArticulo}.html\n"
+            descripcion += f"💻 Articulo: https://nocheprogramacion.com/{urlArticulo}.html\n"
+        descripcion += "\n"
 
         # Links
         if dataVideo.get("links"):
-            descripcion += "\nLink referencia:\n"
+            descripcion += "Link referencia:\n"
             for links in dataVideo.get("links"):
                 if dataPendiente(links, dataVideo, rutaVideo):
+                    descripcion += f"  🔗 {links.get('title')}: 😱Pendiente😱\n"
                     continue
-                descripcion += f" 🔗 {links.get('title')} {links.get('url')}\n"
+                descripcion += f"  🔗 {links.get('title')}: {links.get('url')}\n"
+            descripcion += "\n"
 
         # Compones y Links Amazon
         if dataVideo.get("piezas"):
-            descripcion += "\nComponentes electrónicos:\n"
+            descripcion += "Componentes electrónicos:\n"
             for pieza in dataVideo.get("piezas"):
                 if pieza.get("url"): 
                     urlPieza = pieza.get("url")
@@ -354,10 +358,11 @@ def buscarFolder(folder, nocheprogramacion):
                 else:
                     descripcion += f" 🤖 {pieza.get('title')}: \n"
                     descripcion += buscarAmazon(pieza.get('title'))
+            descripcion += "\n"
 
         # Extra
         if dataVideo.get("custom_sections"): 
-            descripcion += "\nLink Extras:\n"
+            descripcion += "Link Extras:\n"
             for extras in dataVideo.get("custom_sections"):
                 if dataPendiente(extras, dataVideo, rutaVideo):
                     continue
@@ -369,26 +374,29 @@ def buscarFolder(folder, nocheprogramacion):
                         urlMini = miniExtras.get('url')
                         urlTitle = miniExtras.get("titule")
                         descripcion += f"  ➤ {urlTitle}: {urlMini}\n"
+            descripcion += "\n"
 
         # Indice
         if dataVideo.get("topics"): 
-            descripcion += "\n🕓 Índice:\n"
+            descripcion += "🕓 Índice:\n"
             for indice in dataVideo.get("topics"):
                 descripcion += f"{indice.get('time')} {indice.get('title')}\n"
+            descripcion += "\n"
 
         # Redes Sosociales
         if dataRedes:
-            descripcion += "\n"
             descripcion += dataRedes
+            descripcion += "\n"
 
         # Colabodores
         if dataVideo.get("colaboradores"): 
-            descripcion += "\nCreado con los Companeros:\n"
+            descripcion += "Creado con los Companeros:\n"
             for Colaborador in dataVideo.get("colaboradores"):
                 descripcion += f" 🧙🏼‍♂️ {Colaborador.get('title')} - {Colaborador.get('colaborador')}\n"
+            descripcion += "\n"
         
         # Tags
-        descripcion += "\n#ChepeCarlos"
+        descripcion += "#ChepeCarlos"
         if dataVideo.get("tags"):
             for tags in dataVideo.get("tags"):
                 if tags == "shorts":
@@ -403,11 +411,11 @@ def buscarFolder(folder, nocheprogramacion):
                 for miembro in nivel.get("items"):
                     descripcion += f"{miembro.get('title')}, "
                 descripcion += "\n"
+            descripcion += "\n"
 
         # CTA Miembros
-        descripcion += "\n"
-        descripcion += "\n🔭 Agrega tu nombre, Únete tú también https://www.youtube.com/@chepecarlo/join 🔭"
-        descripcion += "\n👊 Avances Exclusivo para Miembros: https://nocheprogramacion.com/miembros 👊"
+        descripcion += "🔭 Agrega tu nombre, Únete tú también https://www.youtube.com/@chepecarlo/join 🔭\n"
+        descripcion += "👊 Avances Exclusivo para Miembros: https://nocheprogramacion.com/miembros 👊"
      
         # Salvar archivo
         SalvarArchivo(nocheprogramacion.joinpath(url), descripcion)
