@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpX9vkHdPgM0fS8DduDsOLRk
 redirect_from:
   - /ml5
+actualizado: true
 ---
 
 Guiá para empezar con Machine Learning desde 0 en JavaScript

@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpXOXA_3nCnXQr-DTUqDnext
 redirect_from:
   - /obs
+actualizado: true
 ---
 
 Aprende paso a paso para aprender todo lo necesario que necesitas para sacarle máximo a OBS

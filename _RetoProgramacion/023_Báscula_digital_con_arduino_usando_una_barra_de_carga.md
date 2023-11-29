@@ -21,6 +21,6 @@ piezas:
 actualizado: true
 ---
 
-Explicará cómo desarrollar una báscula electrónica con #arduino usando una barra de carga.
+Explicará cómo desarrollar una báscula electrónica con arduino usando una barra de carga.
 
 ¿Necesitas peso? Las celdas de carga pueden ayudarte a elaborar una báscula digital.

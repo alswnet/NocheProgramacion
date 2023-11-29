@@ -17,5 +17,5 @@ actualizado: true
 
 Un pequeño pero poderoso truco que te ayudara mucho en tu trabajo en Arduino IDE, recomiendo hacerlo cada ves que puedas, un hacer AutoFormato
 
-Atajo de Teclado de AutoFormato en Arduino:
+Atajo de Teclado de AutoFormato en Arduino
 ctrl + t

@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpVQILZdV1cLdVIBN-DEu7Qk
 redirect_from:
   - /bluetooth
+actualizado: true
 ---
 
 Existen muchos problemas y dudas al usar el modulo Bluetooth con arduino en esta seria veremos paso a paso como usarlo y sacarle máximo provecho

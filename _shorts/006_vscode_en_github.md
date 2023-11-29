@@ -25,7 +25,7 @@ actualizado: true
 
 Un truco muy util para poder segir programando en tu proyecto sin importa que parte del mundo estes y si aun no estas con tu pc de trabajo.
 
-Pasos:
+Pasos
 
 1. Usarlo necesitas una cuenta en Github que es gratuita
 2. Abir en editor presionando '.' en la pagina del depositorio en github

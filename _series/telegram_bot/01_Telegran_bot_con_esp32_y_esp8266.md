@@ -98,4 +98,4 @@ miembros:
 actualizado: true
 ---
 
-Hoy te enseño como crear telegram bot usando el ESP32 y ESP8266 dentro de Arduino, con dos demos muy fácil control: encender un led y echo: responder mensajes
+Hoy te enseño como crear telegram bot usando el ESP32 y ESP8266 dentro de Arduino, con dos demos muy fácil control: encender un led y echo responder mensajes

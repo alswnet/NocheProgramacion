@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpWg7VLOJ47b2mCNL4-zuphA
 redirect_from:
   - /octoprint
+actualizado: true
 ---
 
 
