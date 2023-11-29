@@ -291,16 +291,16 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
             # Video Anterior
             if dataVideoAnterior is not None:
                 if idPlayList is not None:
-                    descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}?list={idPlayList}\n"
+                    descripcion += f"👈 Anterior Video \"{dataVideoAnterior.get('title')}\": https://youtu.be/{dataVideoAnterior.get('video_id')}?list={idPlayList}\n"
                 else:
-                    descripcion += f"👈 Anterior Video {dataVideoAnterior.get('title')}: https://youtu.be/{dataVideoAnterior.get('video_id')}\n"
+                    descripcion += f"👈 Anterior Video \"{dataVideoAnterior.get('title')}\": https://youtu.be/{dataVideoAnterior.get('video_id')}\n"
             
             # Video Siquiente
             if dataVideoSiquiente is not None:
                 if idPlayList is not None:
-                    descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}?list={idPlayList}\n"
+                    descripcion += f"👉 Siguiente Video \"{dataVideoSiquiente.get('title')}\": https://youtu.be/{dataVideoSiquiente.get('video_id')}?list={idPlayList}\n"
                 else:
-                    descripcion += f"👉 Siguiente Video {dataVideoSiquiente.get('title')}: https://youtu.be/{dataVideoSiquiente.get('video_id')}\n"
+                    descripcion += f"👉 Siguiente Video \"{dataVideoSiquiente.get('title')}\": https://youtu.be/{dataVideoSiquiente.get('video_id')}\n"
 
             # Lista de Reproduccion
             descripcion += f"🎥 Playlist({dataIndex.get('title')}): https://www.youtube.com/playlist?list={idPlayList}\n";
