@@ -373,11 +373,12 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
                     if esUrl(urlPieza):
                         descripcion += f" 🤖 {pieza.get('title')}: {urlPieza}\n"
                 elif pieza.get("amazon"):
-                    descripcion += f" 🤖 {pieza.get('title')}: \n"
+                    descripcion += f" 🤖 {pieza.get('title')}:\n"
                     descripcion += linkAmazon(pieza.get("amazon"))
                 else:
-                    descripcion += f" 🤖 {pieza.get('title')}: \n"
+                    descripcion += f" 🤖 {pieza.get('title')}:\n"
                     descripcion += buscarAmazon(pieza.get('title'))
+            descripcion += "Link de Afilaron de amazon, ganamos una comisión si los usas\n"
             descripcion += "\n"
 
         # Extra
