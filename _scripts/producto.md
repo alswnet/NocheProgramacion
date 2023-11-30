@@ -100,4 +100,6 @@ productos:
     usa: B07SFCCPZ6
   - name: tuercas torcidas
     usa: B0BVB6SKT4
+  - name: convertidor nivel logico
+    usa: B07F7W91LC
 ---
