@@ -172,20 +172,27 @@ def buscarAmazon(nombreProducto):
     global noAmazon
     texto = ""
     for productoActual in producto:
-        if nombreProducto == productoActual.get("name"):
+        if nombreProducto.lower() == productoActual.get("name").lower():
             for codigoAmazon in config.get("amazon"):
                 pais = codigoAmazon.get("pais")
                 emoji = codigoAmazon.get("emoji")
                 codigos = productoActual.get(pais.lower())
                 if isinstance(codigos, str):
                     texto += f"    {emoji} {pais}: {codigoAmazon.get('url')}/dp/{codigos}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+                    return texto
                 elif isinstance(codigos, list):
                     texto += f"    {emoji} {pais}:\n"
                     for codigoActual in codigos:
                         texto += f"       {codigoAmazon.get('url')}/dp/{codigoActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+                    return texto
                 else: 
                     noAmazon += 1
+                    texto += f"       😱Pendiente😱\n"
                     print(f"Producto Faltante: {color.RED}{productoActual.get('name')} - {pais}{color.END} Falta\n")
+                    return texto
+    noAmazon += 1
+    print(f"Producto Faltante: {color.RED}{nombreProducto}{color.END} Falta\n")
+    texto += f"       😱Pendiente😱\n"
     return texto
 
 def buscarFolder(folder, nocheprogramacion, folderBusqueda):
@@ -343,7 +350,7 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
                 descripcionDescarga += f"): https://nocheprogramacion.com/{urlArticulo}.html\n"
                 descripcion += descripcionDescarga
             else:
-                print(f"No Existen descargables en {color.RED}{dataVideo.get('title')}{color.END}: {dataVideo.get('video_id')}")
+                print(f"No Existen descargables en {color.RED}{dataVideo.get('title')}{color.END}: {dataVideo.get('video_id')}\n")
                 descripcion += f"💻 Descarga(Pendiente): https://nocheprogramacion.com/{urlArticulo}.html\n"
         else:
             descripcion += f"💻 Articulo: https://nocheprogramacion.com/{urlArticulo}.html\n"
@@ -422,7 +429,7 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
         if dataVideo.get("miembros"): 
             descripcion += "\n🦾 Creado gracias al Apoyo de Miembros(Patrocinadores):\n"
             for nivel in dataVideo.get("miembros"):
-                descripcion += f" Nivel {nivel.get('title')}\n  "
+                descripcion += f"   🏆Nivel {nivel.get('title')}\n     "
                 for miembro in nivel.get("items"):
                     descripcion += f"{miembro.get('title')}, "
                 descripcion += "\n"
@@ -449,7 +456,7 @@ def mostarEstadisticas():
     print(f"Series: {cantidadSeries}")
     print(f"Pendientes: {color.RED}{cantidadPendientes}{color.END} Falta")
     print(f"No procesados: {noProcesar}")
-    print(f"Producto no encontrado: {color.RED}{noAmazon}{color.END}")
+    print(f"Producto no encontrado: {color.RED}{noAmazon}{color.END} Pendiente")
 
 if __name__ == "__main__":
     main()
