@@ -179,17 +179,15 @@ def buscarAmazon(nombreProducto):
                 codigos = productoActual.get(pais.lower())
                 if isinstance(codigos, str):
                     texto += f"    {emoji} {pais}: {codigoAmazon.get('url')}/dp/{codigos}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
-                    return texto
                 elif isinstance(codigos, list):
                     texto += f"    {emoji} {pais}:\n"
                     for codigoActual in codigos:
                         texto += f"       {codigoAmazon.get('url')}/dp/{codigoActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
-                    return texto
                 else: 
                     noAmazon += 1
                     texto += f"       😱Pendiente😱\n"
                     print(f"Producto Faltante: {color.RED}{productoActual.get('name')} - {pais}{color.END} Falta\n")
-                    return texto
+            return texto
     noAmazon += 1
     print(f"Producto Faltante: {color.RED}{nombreProducto}{color.END} Falta\n")
     texto += f"       😱Pendiente😱\n"
