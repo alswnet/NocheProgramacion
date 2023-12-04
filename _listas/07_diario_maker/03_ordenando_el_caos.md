@@ -3,7 +3,7 @@ title: Organizando mi Caos
 video_number: 3
 date: 2023-11-10
 video_id: f6oMAr1tVCo
-repository: 07_diario_maker03_ordenando_el_caos
+repository: 07_diario_maker/03_ordenando_el_caos
 tags:
   - impresion3d
   - orden
