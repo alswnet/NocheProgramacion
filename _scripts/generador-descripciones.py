@@ -317,6 +317,7 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
             for video in dataVideo.get("videos"):
                 if dataPendiente(video, dataVideo, rutaVideo):
                     descripcion += f" 🎞 {video.get('title')}: 😱Pendiente😱\n"
+                    print(f"Video pendiente {color.RED}{dataVideo.get('title')}{color.END}: {video.get('title')}\n")
                     continue
                 if video.get("video_id"):
                     descripcion += f" 🎞 {video.get('title')}: https://youtu.be/{video.get('video_id')}\n"
@@ -411,7 +412,7 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
 
         # Colabodores
         if dataVideo.get("colaboradores"): 
-            descripcion += "Creado con los Companeros:\n"
+            descripcion += "Creado con los Compañeros:\n"
             for Colaborador in dataVideo.get("colaboradores"):
                 descripcion += f" 🧙🏼‍♂️ {Colaborador.get('title')} - {Colaborador.get('colaborador')}\n"
             descripcion += "\n"
