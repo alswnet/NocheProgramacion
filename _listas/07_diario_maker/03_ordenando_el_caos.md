@@ -2,7 +2,8 @@
 title: Organizando mi Caos
 video_number: 3
 date: 2023-11-10
-video_id: SPeTr8LwvME
+video_id: f6oMAr1tVCo
+repository: 07_diario_maker03_ordenando_el_caos
 tags:
   - impresion3d
   - orden
@@ -19,6 +20,22 @@ colaboradores:
     colaborador: paty
 
 miembros:
+  - title: Maker ESP
+    items:
+      - title: nery kastillo
+  - title: Maker Mega
+    items:
+      - title: Mario Radich
+  - title: Maker Uno
+    items:
+      - title: Manuel Alegría
+      - title: Diego Arias
+      - title: Jorge Xalambri
+      - title: federicoymarta garcia garcia
+      - title: Fernando Armada
+      - title: Waldo Ratti
+      - title: Claudio Bloise
+      - title: Lolailo Aviles Arroyo
 
 actualizado: true
 ---
