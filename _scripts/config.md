@@ -14,6 +14,7 @@ folder:
 ads: true
 folder_raiz: NocheProgramacion
 folder_archivos: _actualizado
+folder_data: _data
 amazon:
     - pais: USA
       emoji: 🇺🇸
