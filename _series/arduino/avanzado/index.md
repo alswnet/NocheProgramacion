@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpXsFl-4swllhvGLgIQH1ECo
 redirect_from:
   - /arduino_avanzado
+actualizado: true
 ---
 
 Conceptos mas avanzado pero súper útiles para sacarle mayor provecho a Arduino y compatibles

@@ -9,6 +9,7 @@ tags:
   - debian
   - ubuntu
   - linuxmint
+remake: series/arduino/basico/02_instalar_arduino_linux
 
 topics:
   - title: "Inicio"

@@ -1,7 +1,7 @@
 ---
 title: "Como conectar Bluetooth a Arduino"
 video_number: 1
-date: 2020-06-31
+date: 2020-06-30
 video_id: Dg33caiaEzY
 repository: bluetooth_con_arduino/001_Como_conecar_bluetooth_a_arduino
 tags:
@@ -40,4 +40,4 @@ piezas:
 actualizado: true
 ---
 
-Empezamos un nuevo mini curso de Bluetooth con arduino donde enseñaremos como poder enviar señales individuales y múltiples a nuestro sistemas embestidor por medio comunicacional Serial por Bluetooth
+Empezamos un nuevo mini curso de Bluetooth con arduino donde enseñaremos como poder enviar señales individuales y múltiples a nuestro sistemas embebidos por medio comunicacional Serial por Bluetooth

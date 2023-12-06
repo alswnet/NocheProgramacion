@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpXb_D260uyv0f7b-in6Va6F
 redirect_from:
   - /arduino_basico
+actualizado: true
 ---
 
 Tutoriales conceptos y algoritmos necesarios para proyectos mas avanzados

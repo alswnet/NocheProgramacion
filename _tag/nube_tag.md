@@ -8,19 +8,19 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [114]</a>
+			<a href="/tag/arduino">#arduino [116]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [38]</a>
+			<a href="/tag/esp8266">#esp8266 [39]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [37]</a>
+			<a href="/tag/esp32">#esp32 [38]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [34]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [26]</a>
+			<a href="/tag/linux">#linux [27]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [26]</a>
@@ -137,6 +137,9 @@ redirect_from:
 			<a href="/tag/mdns">#mdns [3]</a>
 		</li>
 		<li>
+			<a href="/tag/impresion3d">#impresion3d [3]</a>
+		</li>
+		<li>
 			<a href="/tag/teclado">#teclado [3]</a>
 		</li>
 		<li>
@@ -186,9 +189,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/streaming">#streaming [2]</a>
-		</li>
-		<li>
-			<a href="/tag/impresion3d">#impresion3d [2]</a>
 		</li>
 		<li>
 			<a href="/tag/array">#array [2]</a>
@@ -477,6 +477,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/diario_maker">#diario_maker [1]</a>
+		</li>
+		<li>
+			<a href="/tag/orden">#orden [1]</a>
 		</li>
 		<li>
 			<a href="/tag/code">#code [1]</a>

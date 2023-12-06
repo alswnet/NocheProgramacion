@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpV2SDxSBJT2Fd07J4BVNipk
 redirect_from:
   - /linux
+actualizado: true
 ---
 
 Tutoriales de Linux

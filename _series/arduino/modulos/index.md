@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpXjnyMH1CIDBvIDt3aFxEk2
 redirect_from:
   - /modulos_arduino
+actualizado: true
 ---
 
 Los módulos que necesitan para los proyectos con arduino

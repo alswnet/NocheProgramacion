@@ -60,5 +60,5 @@ actualizado: true
 
 Es hora de aprender a instalar el addons del esp8266 y addons del esp32 para el arduino IDE nuevo y viejo. Para empezare con la aventura de programador
 
-URL a pegar(Articulo):
+URL a pegar(Articulo)
 https://espressif.github.io/arduino-esp32/package_esp32_index.json,https://arduino.esp8266.com/stable/package_esp8266com_index.json

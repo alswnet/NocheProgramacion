@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO
 redirect_from:
   - /mqtt
+actualizado: true
 ---
 
 MQTT es un protocolo especial maquina a maquina, para mandar y recibir datos y que sera tu major amigo para proyecto de "Internet de las cosas" (IOT)

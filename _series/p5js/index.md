@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpWW8KMg16i9BBaigTVeu4ba
 redirect_from:
   - /p5js
+actualizado: true
 ---
 
 Aprende a programar desde 0 con una herramienta visual que te ayudara a empezar en el mundo de programación

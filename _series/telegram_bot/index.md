@@ -5,6 +5,7 @@ layout: series-index
 playlist_id: PLWQQswW6kqpXuTWwCG79BZYfeZS-Kqp-i
 redirect_from:
   - /telegrambot
+actualizado: true
 ---
 
 Paso a paso como crear y controlar un bot de telegram desde Arduino usando el ESP32 o ESP8266

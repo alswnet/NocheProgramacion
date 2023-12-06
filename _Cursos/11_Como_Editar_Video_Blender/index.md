@@ -6,6 +6,7 @@ series_number: 11
 layout: series-index
 redirect_from:
   - /blender
+actualizado: true
 ---
 
 Serie de como editamos video en ALSW

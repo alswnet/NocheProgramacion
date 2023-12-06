@@ -8,6 +8,7 @@ redirect_from:
   - /esp32
   - /arduino_esp
   - /esp
+actualizado: true
 ---
 
 Tutoriales útil para Ambos ESP8266 y ESP32 desde los fundamentos a cosas mas avanzadas
