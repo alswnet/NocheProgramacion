@@ -1,71 +1,48 @@
 ---
 title: Problemas con puerto USB con Arduino IDE en Linuxs
 video_number: 3
-date: 2023-12-31
+date: 2023-11-20
 video_id: Ds_wsPz4UnE
-web_editor:
-repository:
 tags:
-  -
-
-variations:
-  - name: 
-    lang: 
-    folder: 
-    web_editor: 
-
-ads:
-  - title:
-    url:
-
-topics:
-  - title:
-    time: ""
+  - arduino
+  - linux
 
 links:
   - title: Scrip para Configurar Arduino IDE en Linux
     url: https://github.com/artynet/arduino-linux-setup
 
 videos:
-  - title:
-    url:
+  - title: Como instalar Arduino IDE con Flatpak
+    url: series/arduino/basico/02_instalar_arduino_linux
 
 piezas:
-  - title:
-    url:
-
-tools:
-  - title:
-    url:
-
-book:
-  - title:
-    url:
-
-parts:
-  - title:
-    url:
-
-creditos:
-  - title:
-    time: ""
-    url:
+  - title: arduino uno
 
 colaboradores:
-  - title:
-    colaborador:
-
-asistencia:
-  - title:
-
-custom_sections:
-  - title:
-    items:
-      - title:
-        url:
+  - title: Editor
+    colaborador: ingjuan
+  - title: Camarografa
+    colaborador: paty
 
 miembros:
+  - title: Maker ESP
+    items:
+      - title: nery kastillo
+  - title: Maker Mega
+    items:
+      - title: Mario Radich
+  - title: Maker Uno
+    items:
+      - title: Manuel Alegría
+      - title: Diego Arias
+      - title: Jorge Xalambri
+      - title: federicoymarta garcia garcia
+      - title: Fernando Armada
+      - title: Waldo Ratti
+      - title: Claudio Bloise
+      - title: Lolailo Aviles Arroyo
 
-para_miembros: false
-actualizado: false
+actualizado: true
 ---
+
+Tienes problemas con tu puertos en Linux, Ubuntu, Linux mint, Debian, Fedora, Arch Linux, etc

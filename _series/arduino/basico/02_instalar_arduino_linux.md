@@ -7,10 +7,6 @@ tags:
   - arduino
   - linux
 
-topics:
-  - title:
-    time: ""
-
 links:
   - title: Flathub de Arduino IDE 2
     url: https://flathub.org/es/apps/cc.arduino.IDE2
@@ -18,47 +14,37 @@ links:
     url: https://flathub.org/es/apps/cc.arduino.arduinoide
 
 videos:
-  - title:
-    url:
+  - title: Resolver Problemas con puerto en linux
+    url: series/arduino/basico/03_problemas_puerto_arduino
 
 piezas:
-  - title:
-    url:
-
-tools:
-  - title:
-    url:
-
-book:
-  - title:
-    url:
-
-parts:
-  - title:
-    url:
-
-creditos:
-  - title:
-    time: ""
-    url:
+  - title: arduino uno
 
 colaboradores:
-  - title:
-    colaborador:
-
-asistencia:
-  - title:
-
-custom_sections:
-  - title:
-    items:
-      - title:
-        url:
+  - title: Editor
+    colaborador: ingjuan
+  - title: Camarografa
+    colaborador: paty
 
 miembros:
+  - title: Maker ESP
+    items:
+      - title: nery kastillo
+  - title: Maker Mega
+    items:
+      - title: Mario Radich
+  - title: Maker Uno
+    items:
+      - title: Manuel Alegría
+      - title: Diego Arias
+      - title: Jorge Xalambri
+      - title: federicoymarta garcia garcia
+      - title: Fernando Armada
+      - title: Waldo Ratti
+      - title: Claudio Bloise
+      - title: Lolailo Aviles Arroyo
 
-para_miembros: false
-actualizado: false
+actualizado: true
 ---
 
 Veamos la mejor manera para instalar Arduino IDE 2 o 1 en Cualquier linux que tengas como Ubuntu, Linux mint, Debian, Fedora, Arch Linux 
