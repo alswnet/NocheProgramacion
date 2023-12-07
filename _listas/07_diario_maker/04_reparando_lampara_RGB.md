@@ -3,7 +3,7 @@ title: Reparando mi Lampara RGB
 video_number: 4
 date: 2023-11-24
 video_id: Gc920vxxr6Q
-repository: 07_diario_maker/05_reparando_lampara_RGB
+repository: 07_diario_maker/04_reparando_lampara_RGB
 tags:
   - impresion3d
   - lampara
