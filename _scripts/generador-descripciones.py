@@ -291,7 +291,8 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
             for ads in dataVideo.get("ads"):
                 if dataPendiente(ads, dataVideo, rutaVideo, "ads"):
                     continue
-                descripcion += f"💸 {ads.get('title')}: {ads.get('url')}\n\n"
+                descripcion += f"💸 {ads.get('title')}: {ads.get('url')}\n"
+            descripcion += "\n"
 
         # Remake
         if dataVideo.get("remake"):
