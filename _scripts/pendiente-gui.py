@@ -30,8 +30,17 @@ def obtenerArchivo(Archivo):
 class Caja(QLabel):
     def __init__(self, data):
         super().__init__()
-        self.setText(data.get("titulo"))
-        self.setStyleSheet(f"background-color:{'blue'}")
+         
+        texto = f"<b style=' font-size:15pt; font-weight:600; color:#D2FFF8;'>"
+        texto += f"[{data.get('tipo').upper()}]</b> - "
+        texto += f"{data.get('titulo')} - "
+        texto += f"{data.get('data')} - "
+        texto += f"{data.get('url')}"
+        
+
+        self.setText(texto)
+        self.setStyleSheet("border: 2px solid black;") 
+        # self.setStyleSheet(f"background-color:{'blue'}")
 
 
 class MainWindow(QMainWindow):
@@ -74,6 +83,7 @@ class MainWindow(QMainWindow):
 
        
         self.setMinimumSize(QSize(480, 320))
+        self.setWindowTitle('Pendientes NocheProgramacion')
 
 
 if __name__ == "__main__":
