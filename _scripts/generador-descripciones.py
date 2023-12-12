@@ -137,11 +137,6 @@ def dataPendiente(data, video, ruta, tipo):
     global cantidadPendientes
     if data.get("pendiente") is not None:
             cantidadPendientes += 1
-            # print(f"{color.RED}Data Pendiente Alerta{color.END}")
-            # print(f"Video: {video.get('title')}")
-            # print(f"Data: {data.get('title')}")
-            # print(f"URL: {ruta.name}")
-            # print()
             data = {
                 "titulo": video.get('title'),
                 "tipo": tipo,
@@ -183,7 +178,7 @@ def linkAmazon(idAmazon):
                 texto += f"    {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
     return texto
 
-def buscarAmazon(nombreProducto):
+def buscarAmazon(nombreProducto, titulo, ruta):
     global config
     global producto
     global noAmazon
@@ -204,9 +199,23 @@ def buscarAmazon(nombreProducto):
                     noAmazon += 1
                     texto += f"       😱Pendiente😱\n"
                     print(f"Producto Faltante: {color.RED}{productoActual.get('name')} - {pais}{color.END} Falta\n")
+                    data = {
+                        "titulo": titulo,
+                        "tipo": "producto",
+                        "data": f"{pais}-{productoActual.get('name')",
+                        "url": ruta
+                    }
+                    infoPendiente.append(data)
             return texto
     noAmazon += 1
     print(f"Producto Faltante: {color.RED}{nombreProducto}{color.END} Falta\n")
+    data = {
+        "titulo": titulo,
+        "tipo": "producto",
+        "data": productoActual.get('name'),
+        "url": ruta
+    }
+    infoPendiente.append(data)
     texto += f"       😱Pendiente😱\n"
     return texto
 
@@ -396,7 +405,7 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
                     descripcion += linkAmazon(pieza.get("amazon"))
                 else:
                     descripcion += f" 🤖 {pieza.get('title')}:\n"
-                    descripcion += buscarAmazon(pieza.get('title'))
+                    descripcion += buscarAmazon(pieza.get('title'), dataVideo.get('title'), rutaVideo.name)
             descripcion += "Link de Afilaron de amazon, ganamos una comisión si los usas\n"
             descripcion += "\n"
 
