@@ -396,6 +396,8 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
         if dataVideo.get("piezas"):
             descripcion += "Componentes electrónicos:\n"
             for pieza in dataVideo.get("piezas"):
+                if dataPendiente(pieza, dataVideo, rutaVideo, "productos"):
+                    continue
                 if pieza.get("url"): 
                     urlPieza = pieza.get("url")
                     if esUrl(urlPieza):
