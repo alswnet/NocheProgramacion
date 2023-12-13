@@ -198,17 +198,15 @@ def buscarAmazon(nombreProducto, titulo, ruta):
                 else: 
                     noAmazon += 1
                     texto += f"       😱Pendiente😱\n"
-                    print(f"Producto Faltante: {color.RED}{productoActual.get('name')} - {pais}{color.END} Falta\n")
                     data = {
                         "titulo": titulo,
                         "tipo": "producto",
-                        "data": f"{pais}-{productoActual.get('name')",
+                        "data": f"{pais}-{productoActual.get('name')}",
                         "url": ruta
                     }
                     infoPendiente.append(data)
             return texto
     noAmazon += 1
-    print(f"Producto Faltante: {color.RED}{nombreProducto}{color.END} Falta\n")
     data = {
         "titulo": titulo,
         "tipo": "producto",
@@ -252,7 +250,6 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
  
     for id in range(len(listaVideos)): 
         rutaVideo =  folder.joinpath(listaVideos[id])
-        # print(rutaVideo.name)
         dataVideo = leerArchivo(rutaVideo)
         descripcionVideo = leerDescripcion(rutaVideo)
         if id > 1:
@@ -344,7 +341,6 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
             for video in dataVideo.get("videos"):
                 if dataPendiente(video, dataVideo, rutaVideo, "videos"):
                     descripcion += f" 🎞 {video.get('title')}: 😱Pendiente😱\n"
-                    print(f"Video pendiente {color.RED}{dataVideo.get('title')}{color.END}: {video.get('title')}\n")
                     continue
                 if video.get("video_id"):
                     descripcion += f" 🎞 {video.get('title')}: https://youtu.be/{video.get('video_id')}\n"
@@ -376,7 +372,13 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
                 descripcionDescarga += f"): https://nocheprogramacion.com/{urlArticulo}.html\n"
                 descripcion += descripcionDescarga
             else:
-                print(f"No Existen descargables en {color.RED}{dataVideo.get('title')}{color.END}: {dataVideo.get('video_id')}\n")
+                data = {
+                    "titulo": dataVideo.get('title'),
+                    "tipo": "descargables",
+                    "data": urlArticulo,
+                    "url": rutaVideo.name
+                }
+                infoPendiente.append(data)
                 descripcion += f"💻 Descarga(Pendiente): https://nocheprogramacion.com/{urlArticulo}.html\n"
         else:
             descripcion += f"💻 Articulo: https://nocheprogramacion.com/{urlArticulo}.html\n"
