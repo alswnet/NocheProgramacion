@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 
 from PySide6.QtWidgets import (
-    QApplication, QMainWindow, QLabel, QTabWidget, QWidget, QVBoxLayout)
-from PySide6.QtCore import QSize
+    QApplication, QMainWindow, QLabel, QScrollArea, QTabWidget, QWidget, QVBoxLayout)
+from PySide6.QtCore import QSize, Qt
+
 import sys
 import os
 import json
@@ -40,12 +41,16 @@ class Caja(QLabel):
 
         self.setText(texto)
         self.setStyleSheet("border: 2px solid black;") 
-        # self.setStyleSheet(f"background-color:{'blue'}")
+        self.setAlignment(Qt.AlignCenter)
 
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        self.scroll = QScrollArea()
+        self.widget = QWidget()
+        self.vbox = QVBoxLayout()
 
         print("Iniciando Generador Descripciones")
         folderNoche = Path(Path().resolve())
@@ -60,29 +65,21 @@ class MainWindow(QMainWindow):
         config = obtenerArchivo(archivoConfig)
         archivoPendintes = folderNoche.joinpath(config.get("folder_data")).joinpath(config.get("archivo_pendiente"))
         dataPendiente = obtenerArchivo(archivoPendintes)
-        print(dataPendiente)
-
-        layout = QVBoxLayout()
 
         for pendiente in dataPendiente:
-            layout.addWidget(Caja(pendiente))
+            self.vbox.addWidget(Caja(pendiente))
 
-        layout.setContentsMargins(0, 0, 0, 0)
+        self.widget.setLayout(self.vbox)
 
-        # modificamos el espaciado
-        layout.setSpacing(0)
+        self.scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.scroll.setWidgetResizable(True)
+        self.scroll.setWidget(self.widget)
 
-        # creamos un dummy widget para hacer de contenedor
-        widget = QWidget()
+        self.setCentralWidget(self.scroll)
 
-        # le asignamos el layout
-        widget.setLayout(layout)
-
-        # establecemos el dummy widget como widget central
-        self.setCentralWidget(widget)
-
-       
         self.setMinimumSize(QSize(480, 320))
+        self.setGeometry(600, 100, 1000, 900)
         self.setWindowTitle('Pendientes NocheProgramacion')
 
 
