@@ -15,6 +15,7 @@ ads: true
 folder_raiz: NocheProgramacion
 folder_archivos: _actualizado
 folder_data: _data
+archivo_pendiente: pendiente.json
 amazon:
     - pais: USA
       emoji: 🇺🇸

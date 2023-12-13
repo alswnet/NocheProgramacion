@@ -1,6 +1,6 @@
 ---
 title: Abriendo nuevo Paquete - ZOTEK ZT-702S
-video_number: 41
+video_number: 42
 date: 2023-08-01
 video_id: 5ObOH-AkSBQ
 tags:

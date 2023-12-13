@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [116]</a>
+			<a href="/tag/arduino">#arduino [117]</a>
 		</li>
 		<li>
 			<a href="/tag/esp8266">#esp8266 [39]</a>
@@ -20,7 +20,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [34]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [27]</a>
+			<a href="/tag/linux">#linux [28]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [26]</a>
@@ -44,10 +44,10 @@ redirect_from:
 			<a href="/tag/python">#python [14]</a>
 		</li>
 		<li>
-			<a href="/tag/freecad">#freecad [12]</a>
+			<a href="/tag/impresora3d">#impresora3d [13]</a>
 		</li>
 		<li>
-			<a href="/tag/impresora3d">#impresora3d [12]</a>
+			<a href="/tag/freecad">#freecad [12]</a>
 		</li>
 		<li>
 			<a href="/tag/bluetooth">#bluetooth [11]</a>
@@ -482,6 +482,9 @@ redirect_from:
 			<a href="/tag/orden">#orden [1]</a>
 		</li>
 		<li>
+			<a href="/tag/ordenar">#ordenar [1]</a>
+		</li>
+		<li>
 			<a href="/tag/code">#code [1]</a>
 		</li>
 		<li>
@@ -525,6 +528,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/osciloscopio">#osciloscopio [1]</a>
+		</li>
+		<li>
+			<a href="/tag/mario">#mario [1]</a>
+		</li>
+		<li>
+			<a href="/tag/otaku">#otaku [1]</a>
 		</li>
 		<li>
 			<a href="/tag/esp">#esp [1]</a>
