@@ -29,8 +29,9 @@ links:
 
 videos:
   - title: Video de Driver de Windos
-  - title: Video de Puerto de Linux (Actualizar)
-    url: tutoriales/044_Como_installar_Arduino_IDE_en_Linux
+    pendiente: true
+  - title: Video de Abir Puerto de Linux
+    url: series/arduino/basico/03_problemas_puerto_arduino
 
 piezas:
   - title: esp32
