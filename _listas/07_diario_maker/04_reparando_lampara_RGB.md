@@ -13,6 +13,10 @@ links:
   - title: Modelo 3D del boton
     pendiente: true
 
+piezas:
+  - title: Lampara RGB
+    pendiente: true
+
 colaboradores:
   - title: Editor
     colaborador: ingjuan
