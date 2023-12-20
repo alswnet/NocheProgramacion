@@ -11,13 +11,13 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [117]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [39]</a>
+			<a href="/tag/esp8266">#esp8266 [40]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [38]</a>
+			<a href="/tag/esp32">#esp32 [39]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [34]</a>
+			<a href="/tag/iot">#iot [35]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [28]</a>
@@ -29,7 +29,7 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
-			<a href="/tag/telegram">#telegram [17]</a>
+			<a href="/tag/telegram">#telegram [18]</a>
 		</li>
 		<li>
 			<a href="/tag/mqtt">#mqtt [16]</a>
@@ -44,10 +44,10 @@ redirect_from:
 			<a href="/tag/python">#python [14]</a>
 		</li>
 		<li>
-			<a href="/tag/impresora3d">#impresora3d [13]</a>
+			<a href="/tag/freecad">#freecad [12]</a>
 		</li>
 		<li>
-			<a href="/tag/freecad">#freecad [12]</a>
+			<a href="/tag/impresora3d">#impresora3d [12]</a>
 		</li>
 		<li>
 			<a href="/tag/bluetooth">#bluetooth [11]</a>
@@ -116,6 +116,9 @@ redirect_from:
 			<a href="/tag/css">#css [4]</a>
 		</li>
 		<li>
+			<a href="/tag/impresion3d">#impresion3d [4]</a>
+		</li>
+		<li>
 			<a href="/tag/octoprint">#octoprint [4]</a>
 		</li>
 		<li>
@@ -137,9 +140,6 @@ redirect_from:
 			<a href="/tag/mdns">#mdns [3]</a>
 		</li>
 		<li>
-			<a href="/tag/impresion3d">#impresion3d [3]</a>
-		</li>
-		<li>
 			<a href="/tag/teclado">#teclado [3]</a>
 		</li>
 		<li>
@@ -147,6 +147,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/3dprinter">#3dprinter [3]</a>
+		</li>
+		<li>
+			<a href="/tag/domotica">#domotica [3]</a>
 		</li>
 		<li>
 			<a href="/tag/terminal">#terminal [3]</a>
@@ -209,7 +212,7 @@ redirect_from:
 			<a href="/tag/machinelearning">#machinelearning [2]</a>
 		</li>
 		<li>
-			<a href="/tag/domotica">#domotica [2]</a>
+			<a href="/tag/reparacion">#reparacion [2]</a>
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]</a>
@@ -482,7 +485,10 @@ redirect_from:
 			<a href="/tag/orden">#orden [1]</a>
 		</li>
 		<li>
-			<a href="/tag/ordenar">#ordenar [1]</a>
+			<a href="/tag/lampara">#lampara [1]</a>
+		</li>
+		<li>
+			<a href="/tag/grabacion">#grabacion [1]</a>
 		</li>
 		<li>
 			<a href="/tag/code">#code [1]</a>
@@ -582,9 +588,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/reaccion">#reaccion [1]</a>
-		</li>
-		<li>
-			<a href="/tag/reparacion">#reparacion [1]</a>
 		</li>
 		<li>
 			<a href="/tag/audio">#audio [1]</a>
