@@ -1,9 +1,9 @@
 ---
 title: Crea tu propia Alarma Vigilancia con TelegramBot
-video_number: 6
+video_number: 7
 date: 2022-09-19
 video_id: TDsN1eN5b7I
-repository: telegram_bot/06_SistemaVigilancia
+repository: telegram_bot/07_SistemaVigilancia
 tags:
   - telegram
   - esp32
