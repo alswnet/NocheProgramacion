@@ -16,7 +16,7 @@ links:
 
 videos:
   - title: Proyecto Telegran Domotica
-    pendiente: true
+    url: series/telegram_bot/08_Caja_Domotica
   - title: Proyecto Alexa Domotica
     pendiente: true
   - title: Proyecto WebServer Domotica
