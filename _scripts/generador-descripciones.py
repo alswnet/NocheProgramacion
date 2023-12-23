@@ -201,7 +201,7 @@ def buscarAmazon(nombreProducto, titulo, ruta):
                     data = {
                         "titulo": titulo,
                         "tipo": "producto",
-                        "data": f"{pais}-{productoActual.get('name')}",
+                        "data": f"{pais}-{nombreProducto}",
                         "url": ruta
                     }
                     infoPendiente.append(data)
@@ -210,7 +210,7 @@ def buscarAmazon(nombreProducto, titulo, ruta):
     data = {
         "titulo": titulo,
         "tipo": "producto",
-        "data": productoActual.get('name'),
+        "data": nombreProducto,
         "url": ruta
     }
     infoPendiente.append(data)
@@ -234,7 +234,6 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
     
     archivoRedes = nocheprogramacion.joinpath("_scripts/redes.txt")
     dataRedes = leerArchivo(archivoRedes)
-
     listaVideos = []
     for archivo in Path.iterdir(folder):
         rutaActual = folder.joinpath(archivo)
@@ -272,7 +271,7 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
 
         descripcion = ""
 
-        # Descripcion
+        # Descripción
         descripcion += descripcionVideo
 
         # SeoMostar
