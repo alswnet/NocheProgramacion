@@ -102,4 +102,9 @@ productos:
     usa: B0BVB6SKT4
   - name: convertidor nivel logico
     usa: B07F7W91LC
+  - name: display 7 segmentos grande
+    usa: B07JK321QX
+    url: https://www.sparkfun.com/products/8530
+  - name: driver display 7 segmentos grande
+    url: https://www.sparkfun.com/products/13279
 ---

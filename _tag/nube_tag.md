@@ -14,7 +14,7 @@ redirect_from:
 			<a href="/tag/esp8266">#esp8266 [40]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [39]</a>
+			<a href="/tag/esp32">#esp32 [40]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [35]</a>
@@ -32,7 +32,7 @@ redirect_from:
 			<a href="/tag/telegram">#telegram [18]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [16]</a>
+			<a href="/tag/mqtt">#mqtt [17]</a>
 		</li>
 		<li>
 			<a href="/tag/git">#git [14]</a>
@@ -44,6 +44,9 @@ redirect_from:
 			<a href="/tag/python">#python [14]</a>
 		</li>
 		<li>
+			<a href="/tag/youtube">#youtube [12]</a>
+		</li>
+		<li>
 			<a href="/tag/freecad">#freecad [12]</a>
 		</li>
 		<li>
@@ -51,9 +54,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/bluetooth">#bluetooth [11]</a>
-		</li>
-		<li>
-			<a href="/tag/youtube">#youtube [11]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
