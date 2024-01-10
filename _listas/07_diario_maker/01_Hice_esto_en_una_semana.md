@@ -3,6 +3,7 @@ title: Tuve una semana para crear esto
 video_number: 02
 date: 2023-11-02
 video_id: GsK6dFMPHic
+repository: 07_diario_maker/01_Hice_esto_en_una_semana
 tags:
   - impresion3d
   - freecad
