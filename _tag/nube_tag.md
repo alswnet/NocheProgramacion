@@ -56,13 +56,13 @@ redirect_from:
 			<a href="/tag/bluetooth">#bluetooth [11]</a>
 		</li>
 		<li>
+			<a href="/tag/vscode">#vscode [10]</a>
+		</li>
+		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
 		</li>
 		<li>
 			<a href="/tag/nodejs">#nodejs [9]</a>
-		</li>
-		<li>
-			<a href="/tag/vscode">#vscode [9]</a>
 		</li>
 		<li>
 			<a href="/tag/android">#android [8]</a>
@@ -98,6 +98,9 @@ redirect_from:
 			<a href="/tag/programacion">#programacion [5]</a>
 		</li>
 		<li>
+			<a href="/tag/impresion3d">#impresion3d [5]</a>
+		</li>
+		<li>
 			<a href="/tag/truco">#truco [5]</a>
 		</li>
 		<li>
@@ -114,9 +117,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/css">#css [4]</a>
-		</li>
-		<li>
-			<a href="/tag/impresion3d">#impresion3d [4]</a>
 		</li>
 		<li>
 			<a href="/tag/octoprint">#octoprint [4]</a>
@@ -540,6 +540,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/otaku">#otaku [1]</a>
+		</li>
+		<li>
+			<a href="/tag/stl">#stl [1]</a>
 		</li>
 		<li>
 			<a href="/tag/esp">#esp [1]</a>
