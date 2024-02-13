@@ -491,6 +491,12 @@ redirect_from:
 			<a href="/tag/grabacion">#grabacion [1]</a>
 		</li>
 		<li>
+			<a href="/tag/carrera">#carrera [1]</a>
+		</li>
+		<li>
+			<a href="/tag/libro">#libro [1]</a>
+		</li>
+		<li>
 			<a href="/tag/code">#code [1]</a>
 		</li>
 		<li>
