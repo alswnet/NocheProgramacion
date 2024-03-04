@@ -32,7 +32,7 @@ topics:
 
 videos:
   - title: Serie de esp32 y esp8266
-    url: series/arduino_esp/index
+    url: series/arduino_esp
 
 piezas:
   - title: esp32
