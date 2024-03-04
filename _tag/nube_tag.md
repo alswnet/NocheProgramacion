@@ -11,13 +11,13 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [117]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [40]</a>
+			<a href="/tag/esp8266">#esp8266 [42]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [40]</a>
+			<a href="/tag/esp32">#esp32 [42]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [35]</a>
+			<a href="/tag/iot">#iot [37]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [28]</a>
@@ -29,7 +29,7 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
-			<a href="/tag/telegram">#telegram [18]</a>
+			<a href="/tag/telegram">#telegram [19]</a>
 		</li>
 		<li>
 			<a href="/tag/mqtt">#mqtt [17]</a>
@@ -122,6 +122,9 @@ redirect_from:
 			<a href="/tag/octoprint">#octoprint [4]</a>
 		</li>
 		<li>
+			<a href="/tag/domotica">#domotica [4]</a>
+		</li>
+		<li>
 			<a href="/tag/comando">#comando [4]</a>
 		</li>
 		<li>
@@ -147,9 +150,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/3dprinter">#3dprinter [3]</a>
-		</li>
-		<li>
-			<a href="/tag/domotica">#domotica [3]</a>
 		</li>
 		<li>
 			<a href="/tag/terminal">#terminal [3]</a>
