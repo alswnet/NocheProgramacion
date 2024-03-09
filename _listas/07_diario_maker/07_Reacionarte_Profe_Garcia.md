@@ -50,7 +50,7 @@ topics:
     time: '25:01'
 
 links:
-  - title:  Youtube Profe Garcia
+  - title: Youtube Profe Garcia
     url: https://www.youtube.com/@ElProfeGarcia
   - title: Instagram Profe Garcia
     url: https://www.instagram.com/el_profe_garcia
@@ -58,6 +58,8 @@ links:
     url: https://www.tiktok.com/@elprofegarcia
 
 videos:
+  - title: Video Profe Garcia - Tú puedes controlar el mundo mundial desde Telegram o Whatsapp
+    url: https://www.youtube.com/watch?v=kr0BjCuejcA
   - title: Serie de TelegramBot 
     url: series/telegram_bot
   - title: Serie de ESP32 y ESP8266
