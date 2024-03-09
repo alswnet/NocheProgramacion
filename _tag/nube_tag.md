@@ -11,13 +11,13 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [117]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [42]</a>
+			<a href="/tag/esp8266">#esp8266 [43]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [42]</a>
+			<a href="/tag/esp32">#esp32 [43]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [37]</a>
+			<a href="/tag/iot">#iot [38]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [28]</a>
@@ -29,7 +29,7 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
-			<a href="/tag/telegram">#telegram [19]</a>
+			<a href="/tag/telegram">#telegram [20]</a>
 		</li>
 		<li>
 			<a href="/tag/mqtt">#mqtt [17]</a>
@@ -65,6 +65,9 @@ redirect_from:
 			<a href="/tag/nodejs">#nodejs [9]</a>
 		</li>
 		<li>
+			<a href="/tag/bot">#bot [8]</a>
+		</li>
+		<li>
 			<a href="/tag/android">#android [8]</a>
 		</li>
 		<li>
@@ -75,9 +78,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/cli">#cli [7]</a>
-		</li>
-		<li>
-			<a href="/tag/bot">#bot [7]</a>
 		</li>
 		<li>
 			<a href="/tag/i2c">#i2c [7]</a>
@@ -489,6 +489,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/grabacion">#grabacion [1]</a>
+		</li>
+		<li>
+			<a href="/tag/telegrambot">#telegrambot [1]</a>
 		</li>
 		<li>
 			<a href="/tag/carrera">#carrera [1]</a>
