@@ -1,0 +1,3 @@
+  🥇 Serie Completa con ESP32 y ESP8266: https://www.youtube.com/watch?v=xvIxSf2lTi8&list=PLWQQswW6kqpWqXFgH8NVwODmQS3SZXCMU&index=1
+  🥈 Serie Completa TelegramBot con ESP32 y ESP8266: https://www.youtube.com/watch?v=x5QZmkTUt8Q&list=PLWQQswW6kqpXuTWwCG79BZYfeZS-Kqp-i&index=1
+  🥉 Serie Completa Internet de las cosas con MQTT: https://www.youtube.com/watch?v=T1_w8-8Y5kc&list=PLWQQswW6kqpVBnzOSNGRZFZLXXxXHrXIO&index=1

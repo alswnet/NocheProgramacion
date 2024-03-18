@@ -176,6 +176,8 @@ def linkAmazon(idAmazon):
         elif isinstance(idAmazon, list):
             for idActual in idAmazon:
                 texto += f"    {emoji} {pais}: {codigoAmazon.get('url')}/dp/{idActual}/ref=nosim?tag={codigoAmazon.get('codigo')}\n"
+        else:
+            print(f"Error en formato de Producto {idAmazon}-{type(idAmazon)}")
     return texto
 
 def buscarAmazon(nombreProducto, titulo, ruta):
@@ -233,7 +235,10 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
     idPlayList = dataIndex.get("playlist_id") 
     
     archivoRedes = nocheprogramacion.joinpath("_scripts/redes.txt")
+    archivoMejores = nocheprogramacion.joinpath("_scripts/mejores.txt")
+
     dataRedes = leerArchivo(archivoRedes)
+    dataMejores = leerArchivo(archivoMejores)
     listaVideos = []
     for archivo in Path.iterdir(folder):
         rutaActual = folder.joinpath(archivo)
@@ -290,6 +295,10 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
                     nuevaDescripcion += f"\n{linea}"
                 descripcion = nuevaDescripcion
         descripcion += "\n"
+
+        # Todo buscar numero correcto para enter
+        if len(descripcion) >= 160:
+            descripcion += "\n"
 
         # ADS
         if dataVideo.get("ads"):
@@ -454,6 +463,13 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
                 if tags == "shorts":
                     descripcion += f" #{tags}"
         descripcion += "\n"
+
+        # Mejores Series
+        if dataMejores:
+            descripcion += "\n"
+            descripcion += "🎁 Lo mejor del Canal 🎁:\n"
+            descripcion += dataMejores
+            descripcion += "\n"
 
         # Miembros
         if dataVideo.get("miembros"): 
