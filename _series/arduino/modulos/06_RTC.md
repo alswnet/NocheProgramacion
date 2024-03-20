@@ -54,6 +54,7 @@ links:
 
 videos:
   - title: Operador Ternario
+    url: shorts/007_Operador_ternario
 
 piezas:
   - title: RTC DS1307
