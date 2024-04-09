@@ -2,7 +2,7 @@
 title: Torre de Dados Impresa 3D 
 video_number: 46
 date: 2024-04-09
-video_id: -bKXvPIMTz
+video_id: -bKXvPIMTzI
 tags:
   - impresion3d
   - juego
