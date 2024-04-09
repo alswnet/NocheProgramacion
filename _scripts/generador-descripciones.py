@@ -219,6 +219,26 @@ def buscarAmazon(nombreProducto, titulo, ruta):
     texto += f"       😱Pendiente😱\n"
     return texto
 
+def confirmarData(dataVideo, rutaVideo, nocheprogramacion, folderBusqueda):
+
+    idYoutube = dataVideo.get("video_id")
+
+    # Comprobar que Video ID es un enterró
+    idActual = dataVideo.get("video_number")
+    if idActual is None or (not isinstance(idActual, int) and not isinstance(idActual, float)):
+        print(f"{color.RED}Error[video_number]{color.END} {idActual} 'int' {idYoutube}")
+        print(f"Ruta {rutaVideo}")
+        exit()
+
+    # Comprobar que repository existe
+    descarga = dataVideo.get("repository")
+    if descarga is not None:
+        rutaDescargables = f"{nocheprogramacion}/{str(folderBusqueda).removeprefix('_')}/{descarga}" 
+        if not Path(rutaDescargables).exists():
+            print(f"{color.RED}Error[repository]{color.END} no existe {descarga} - {idYoutube}")
+            print(f"Ruta {rutaVideo}")
+            # exit()
+
 def buscarFolder(folder, nocheprogramacion, folderBusqueda):
     global cantidadVideos
     global cantidadSeries
@@ -256,6 +276,9 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
         rutaVideo =  folder.joinpath(listaVideos[id])
         dataVideo = leerArchivo(rutaVideo)
         descripcionVideo = leerDescripcion(rutaVideo)
+
+        confirmarData(dataVideo, rutaVideo, nocheprogramacion, folderBusqueda)
+
         if id > 1:
             dataVideoAnterior = leerArchivo(folder.joinpath(listaVideos[id-1]))
         else:

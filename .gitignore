@@ -5,14 +5,14 @@ config.js
 .env
 
 ### Jekyll ###
-_site/
-.sass-cache/
-.jekyll-cache/
+_site
+.sass-cache
+.jekyll-cache
 .jekyll-metadata
 
 ### YouTube Descriptions ###
-descripciones/
-descripciones-fb/
+descripciones
+descripciones-fb
 actualizado
 _actualizado
 _data
@@ -34,3 +34,5 @@ __pycache__
 
 # carpetar de animacion
 media
+
+vendor
