@@ -223,6 +223,13 @@ def confirmarData(dataVideo, rutaVideo, nocheprogramacion, folderBusqueda):
 
     idYoutube = dataVideo.get("video_id")
 
+    # Comprabar que el existo titulo
+    tituloActual = dataVideo.get("title")
+    if tituloActual is None:
+        print(f"{color.RED}Error[title]{color.END} '{tituloActual}' - {idYoutube}")
+        print(f"Ruta {rutaVideo}")
+        exit()
+
     # Comprobar que Video ID es un enterró
     idActual = dataVideo.get("video_number")
     if idActual is None or (not isinstance(idActual, int) and not isinstance(idActual, float)):
