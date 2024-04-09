@@ -1,6 +1,6 @@
 ---
 title: Aprende a usar Operador Ternario
-video_number: 09
+video_number: 9
 date: 2024-04-01
 video_id: 2hDbD7Cl6cQ
 repository: arduino/basico/09_Operador_Ternario
