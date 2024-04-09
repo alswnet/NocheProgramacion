@@ -95,10 +95,10 @@ redirect_from:
 			<a href="/tag/pantalla">#pantalla [6]</a>
 		</li>
 		<li>
-			<a href="/tag/programacion">#programacion [5]</a>
+			<a href="/tag/impresion3d">#impresion3d [6]</a>
 		</li>
 		<li>
-			<a href="/tag/impresion3d">#impresion3d [5]</a>
+			<a href="/tag/programacion">#programacion [5]</a>
 		</li>
 		<li>
 			<a href="/tag/truco">#truco [5]</a>
@@ -564,6 +564,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/stl">#stl [1]</a>
+		</li>
+		<li>
+			<a href="/tag/juego">#juego [1]</a>
+		</li>
+		<li>
+			<a href="/tag/pokemon">#pokemon [1]</a>
 		</li>
 		<li>
 			<a href="/tag/esp">#esp [1]</a>
