@@ -80,6 +80,9 @@ redirect_from:
 			<a href="/tag/cli">#cli [7]</a>
 		</li>
 		<li>
+			<a href="/tag/impresion3d">#impresion3d [7]</a>
+		</li>
+		<li>
 			<a href="/tag/i2c">#i2c [7]</a>
 		</li>
 		<li>
@@ -93,9 +96,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/pantalla">#pantalla [6]</a>
-		</li>
-		<li>
-			<a href="/tag/impresion3d">#impresion3d [6]</a>
 		</li>
 		<li>
 			<a href="/tag/programacion">#programacion [5]</a>
@@ -203,6 +203,9 @@ redirect_from:
 			<a href="/tag/ota">#ota [2]</a>
 		</li>
 		<li>
+			<a href="/tag/alexa">#alexa [2]</a>
+		</li>
+		<li>
 			<a href="/tag/meld">#meld [2]</a>
 		</li>
 		<li>
@@ -213,6 +216,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/reparacion">#reparacion [2]</a>
+		</li>
+		<li>
+			<a href="/tag/amazon">#amazon [2]</a>
 		</li>
 		<li>
 			<a href="/tag/programar">#programar [2]</a>
@@ -408,9 +414,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/memoria">#memoria [1]</a>
-		</li>
-		<li>
-			<a href="/tag/alexa">#alexa [1]</a>
 		</li>
 		<li>
 			<a href="/tag/inskcape">#inskcape [1]</a>
@@ -633,9 +636,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/moonlander">#moonlander [1]</a>
-		</li>
-		<li>
-			<a href="/tag/amazon">#amazon [1]</a>
 		</li>
 	</ul>
 </div>
