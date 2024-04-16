@@ -32,4 +32,4 @@ miembros:
 actualizado: true
 ---
 
-Agregamos unos imanes a nuestra impresión 3D para una carrera de Mcdonalds y quiero mostrase como se hace  
+Agregamos unos imanes a nuestra impresión 3D para una carrera de Mcdonalds y quiero mostrase como se hace
