@@ -46,10 +46,13 @@ def main():
     config = leerArchivo(archivoConfig)
     archivoProducto = Path(folderNoche, "_scripts/producto.md")
     producto = leerArchivo(archivoProducto).get("productos")
+    canales = config.get("canal_extra")
 
     print("Borrando todas los Archivos Anteriores")
     shutil.rmtree(folderNoche.joinpath(config.get("folder_archivos")), ignore_errors=True)
     shutil.rmtree(folderNoche.joinpath(config.get("folder_data")), ignore_errors=True)
+    for canal in canales:
+        shutil.rmtree(folderNoche.joinpath(f"{config.get('folder_archivos')}_{canal}"), ignore_errors=True)
 
     for folderActual in config.get("folder"):
         buscarFolder(folderNoche.joinpath(folderActual), folderNoche, folderActual)
@@ -219,11 +222,16 @@ def buscarAmazon(nombreProducto, titulo, ruta):
     texto += f"       😱Pendiente😱\n"
     return texto
 
-def confirmarData(dataVideo, rutaVideo, nocheprogramacion, folderBusqueda):
+def confirmarData(dataVideo, rutaVideo, descripcionVideo, nocheprogramacion, folderBusqueda):
 
+    # Comprobar que hay descripcion
     idYoutube = dataVideo.get("video_id")
+    if descripcionVideo is None or descripcionVideo == "":
+        print(f"{color.RED}Error[descripcion]{color.END} '{descripcionVideo}' - {idYoutube}")
+        print(f"Ruta {rutaVideo}")
+        exit()
 
-    # Comprabar que el existo titulo
+    # Comprobar que el existo titulo
     tituloActual = dataVideo.get("title")
     if tituloActual is None:
         print(f"{color.RED}Error[title]{color.END} '{tituloActual}' - {idYoutube}")
@@ -260,9 +268,14 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
         return
     dataIndex = leerArchivo(archivoIndex)
     idPlayList = dataIndex.get("playlist_id") 
+    canal = dataIndex.get("canal")
     
-    archivoRedes = nocheprogramacion.joinpath("_scripts/redes.txt")
-    archivoMejores = nocheprogramacion.joinpath("_scripts/mejores.txt")
+    if canal is not None and "ctrlz" in canal:
+        archivoRedes = nocheprogramacion.joinpath("_scripts/redes_ctrlz.txt")
+        archivoMejores = nocheprogramacion.joinpath("_scripts/mejores_ctrlz.txt")
+    else:
+        archivoRedes = nocheprogramacion.joinpath("_scripts/redes.txt")
+        archivoMejores = nocheprogramacion.joinpath("_scripts/mejores.txt")
 
     dataRedes = leerArchivo(archivoRedes)
     dataMejores = leerArchivo(archivoMejores)
@@ -284,7 +297,7 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
         dataVideo = leerArchivo(rutaVideo)
         descripcionVideo = leerDescripcion(rutaVideo)
 
-        confirmarData(dataVideo, rutaVideo, nocheprogramacion, folderBusqueda)
+        confirmarData(dataVideo, rutaVideo, descripcionVideo ,nocheprogramacion, folderBusqueda)
 
         if id > 1:
             dataVideoAnterior = leerArchivo(folder.joinpath(listaVideos[id-1]))
@@ -302,7 +315,12 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
         mes = fechaVideo.month
         if mes < 10:
             mes = '0' + str(mes)
-        url = f"{config.get('folder_archivos')}/{anno}/{mes}/{dataVideo.get('video_id')}.txt"
+
+        if canal is not None:
+            url = f"{config.get('folder_archivos')}_{canal}/{anno}/{mes}/{dataVideo.get('video_id')}.txt"
+            print(url)
+        else:        
+            url = f"{config.get('folder_archivos')}/{anno}/{mes}/{dataVideo.get('video_id')}.txt"
 
         descripcion = ""
 

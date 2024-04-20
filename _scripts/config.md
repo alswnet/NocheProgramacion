@@ -25,4 +25,6 @@ amazon:
       emoji: 🇲🇽
       codigo: chepecarlos05-20
       url: http://www.amazon.com.mx
+canal_extra:
+  - ctrlz
 ---
