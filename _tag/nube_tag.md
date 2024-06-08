@@ -35,7 +35,7 @@ redirect_from:
 			<a href="/tag/mqtt">#mqtt [17]</a>
 		</li>
 		<li>
-			<a href="/tag/git">#git [14]</a>
+			<a href="/tag/git">#git [15]</a>
 		</li>
 		<li>
 			<a href="/tag/github">#github [14]</a>
