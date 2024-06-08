@@ -1,7 +1,7 @@
 ---
 title: Trucos avanzado de Git
 video_number: 80
-date: 2024-6-9
+date: 2024-6-8
 video_id: rpiUbhvVcok
 tags:
   - git
