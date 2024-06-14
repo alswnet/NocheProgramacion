@@ -38,10 +38,10 @@ redirect_from:
 			<a href="/tag/git">#git [15]</a>
 		</li>
 		<li>
-			<a href="/tag/github">#github [14]</a>
+			<a href="/tag/python">#python [15]</a>
 		</li>
 		<li>
-			<a href="/tag/python">#python [14]</a>
+			<a href="/tag/github">#github [14]</a>
 		</li>
 		<li>
 			<a href="/tag/impresora3d">#impresora3d [13]</a>
@@ -363,6 +363,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/camara">#camara [1]</a>
+		</li>
+		<li>
+			<a href="/tag/notion">#notion [1]</a>
+		</li>
+		<li>
+			<a href="/tag/api">#api [1]</a>
 		</li>
 		<li>
 			<a href="/tag/chatbot">#chatbot [1]</a>
