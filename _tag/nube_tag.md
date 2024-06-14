@@ -35,10 +35,10 @@ redirect_from:
 			<a href="/tag/mqtt">#mqtt [17]</a>
 		</li>
 		<li>
-			<a href="/tag/git">#git [15]</a>
+			<a href="/tag/python">#python [16]</a>
 		</li>
 		<li>
-			<a href="/tag/python">#python [15]</a>
+			<a href="/tag/git">#git [15]</a>
 		</li>
 		<li>
 			<a href="/tag/github">#github [14]</a>
@@ -194,6 +194,12 @@ redirect_from:
 			<a href="/tag/streaming">#streaming [2]</a>
 		</li>
 		<li>
+			<a href="/tag/notion">#notion [2]</a>
+		</li>
+		<li>
+			<a href="/tag/api">#api [2]</a>
+		</li>
+		<li>
 			<a href="/tag/array">#array [2]</a>
 		</li>
 		<li>
@@ -204,6 +210,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/alexa">#alexa [2]</a>
+		</li>
+		<li>
+			<a href="/tag/contenido">#contenido [2]</a>
 		</li>
 		<li>
 			<a href="/tag/meld">#meld [2]</a>
@@ -365,12 +374,6 @@ redirect_from:
 			<a href="/tag/camara">#camara [1]</a>
 		</li>
 		<li>
-			<a href="/tag/notion">#notion [1]</a>
-		</li>
-		<li>
-			<a href="/tag/api">#api [1]</a>
-		</li>
-		<li>
 			<a href="/tag/chatbot">#chatbot [1]</a>
 		</li>
 		<li>
@@ -420,9 +423,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/memoria">#memoria [1]</a>
-		</li>
-		<li>
-			<a href="/tag/contenido">#contenido [1]</a>
 		</li>
 		<li>
 			<a href="/tag/inskcape">#inskcape [1]</a>

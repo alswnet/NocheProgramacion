@@ -19,7 +19,7 @@ links:
 
 videos:
   - title: como uso Notion y python para mi canal
-    pendiente: true
+    url: listas/07_diario_maker/10_Productividad_Notion_y_Python
   - title: Unir Notion con esp8266
     pendiente: true
   
