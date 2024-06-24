@@ -125,6 +125,14 @@ miembros:
       - title: Lolailo Aviles Arroyo
 
 actualizado: true
+
+contributions:
+  - title: "sitio estático o web app con compresión mDNS y OTA reducido utilizando OtaHelper"
+    author:
+      name: "Franco Barreto"
+      url: "https://github.com/francoBa"
+    url: "https://drive.google.com/file/d/1vg78Jt4mi2i3mUbGtyQ7wmoS1chAZMrc/view?usp=sharing"
+    source: "https://github.com/francoBa/ESPwebApp"
 ---
 
 Te quiero ensenar algo que te ayudara en muchos proyectos para salvar información dentro de la memoria interna del ESP32 o ESP8266
