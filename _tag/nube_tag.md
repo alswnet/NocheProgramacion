@@ -14,7 +14,7 @@ redirect_from:
 			<a href="/tag/esp8266">#esp8266 [45]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [44]</a>
+			<a href="/tag/esp32">#esp32 [45]</a>
 		</li>
 		<li>
 			<a href="/tag/iot">#iot [38]</a>
@@ -47,13 +47,13 @@ redirect_from:
 			<a href="/tag/impresora3d">#impresora3d [13]</a>
 		</li>
 		<li>
+			<a href="/tag/bluetooth">#bluetooth [12]</a>
+		</li>
+		<li>
 			<a href="/tag/youtube">#youtube [12]</a>
 		</li>
 		<li>
 			<a href="/tag/freecad">#freecad [12]</a>
-		</li>
-		<li>
-			<a href="/tag/bluetooth">#bluetooth [11]</a>
 		</li>
 		<li>
 			<a href="/tag/vscode">#vscode [10]</a>
@@ -423,6 +423,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/memoria">#memoria [1]</a>
+		</li>
+		<li>
+			<a href="/tag/ble">#ble [1]</a>
 		</li>
 		<li>
 			<a href="/tag/inskcape">#inskcape [1]</a>
