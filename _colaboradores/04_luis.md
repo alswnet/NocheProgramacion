@@ -1,11 +1,12 @@
 ---
 title: "Luis Parada"
 colaborador_id: 4
-usuario: luis
-nombre: ""
+usuario: Luis
+nombre: "Luis Andrès Parada"
 personal:
-  - title: "País - "
-  - title: "Ciudad - "
-  - title: "Cumpleaños - "
-  - title: "Educación - "
+  - title: "País - El Salvador"
+  - title: "Ciudad -  San Miguel"
+  - title: "Cumpleaños - 15 de mayo"
+  - title: "Educación - Ingenierìa"
 ---
+
