@@ -1,7 +1,7 @@
 ---
 title: Cómo usar IOT
 video_number: 6
-date: 2024-03-04
+date: 2024-3-4
 video_id: nVidZa_P_yI
 tags:
   - iot
@@ -42,7 +42,7 @@ colaboradores:
   - title: Editor
     colaborador: ingjuan
   - title: fotógrafa
-    colaborador: paty
+    colaborador: luis
 
 miembros:
   - title: Maker Uno
