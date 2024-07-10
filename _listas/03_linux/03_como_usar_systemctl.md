@@ -3,7 +3,7 @@ title: "Aprende a usar Systemctl"
 video_number: 3
 date: 2021-03-16
 video_id: 4xIsPJWf9l0
-repository: linux/02_como_usar_systemctl
+repository: 03_linux/02_como_usar_systemctl
 tags:
   - linux
   - cli
