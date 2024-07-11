@@ -167,6 +167,9 @@ redirect_from:
 			<a href="/tag/conferencia">#conferencia [3]</a>
 		</li>
 		<li>
+			<a href="/tag/maker">#maker [3]</a>
+		</li>
+		<li>
 			<a href="/tag/ide">#ide [3]</a>
 		</li>
 		<li>
@@ -246,9 +249,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/robotica">#robotica [2]</a>
-		</li>
-		<li>
-			<a href="/tag/maker">#maker [2]</a>
 		</li>
 		<li>
 			<a href="/tag/youtubers">#youtubers [2]</a>

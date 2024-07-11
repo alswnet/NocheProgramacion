@@ -36,7 +36,7 @@ def main():
     print("Iniciando Generador Descripciones")
     folderNoche = Path(Path().resolve())
     # TODO mejorar busqueda automatica con el nombre en config.md
-    while folderNoche.name != "1.NocheProgramacion":
+    while folderNoche.name != "01.NocheProgramacion":
         folderNoche = folderNoche.parent
         if folderNoche.name == "":
             raise Exception("No se encontro Folder de NocheProgramacion") 
@@ -310,7 +310,11 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
 
         cantidadVideos += 1
         dataFecha = dataVideo.get("date")
-        fechaVideo = pd.to_datetime(dataFecha)
+        try:
+            fechaVideo = pd.to_datetime(dataFecha)
+        except ValueError as error:
+            print(f"Error en Fecha en: {rutaVideo}: {error}")
+            quit()
         anno = fechaVideo.year
         mes = fechaVideo.month
         if mes < 10:
@@ -318,7 +322,6 @@ def buscarFolder(folder, nocheprogramacion, folderBusqueda):
 
         if canal is not None:
             url = f"{config.get('folder_archivos')}_{canal}/{anno}/{mes}/{dataVideo.get('video_id')}.txt"
-            print(url)
         else:        
             url = f"{config.get('folder_archivos')}/{anno}/{mes}/{dataVideo.get('video_id')}.txt"
 
