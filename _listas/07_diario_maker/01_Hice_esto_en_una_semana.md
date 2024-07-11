@@ -1,7 +1,7 @@
 ---
 title: Tuve una semana para crear esto
 video_number: 02
-date: 2023-11-02
+date: 2023-11-2
 video_id: GsK6dFMPHic
 repository: 07_diario_maker/01_Hice_esto_en_una_semana
 tags:
@@ -22,8 +22,6 @@ colaboradores:
     colaborador: ingjuan
   - title: fotógrafa
     colaborador: paty
-
-miembros:
 
 actualizado: true
 ---

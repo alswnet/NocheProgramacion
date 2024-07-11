@@ -1,7 +1,7 @@
 ---
 title: Conectando esp8266 a Impresora 3D
 video_number: 9
-date: 2024-05-12
+date: 2024-5-12
 video_id: P2udH8mHSQw
 tags:
   - impresora3d

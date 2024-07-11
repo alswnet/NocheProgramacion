@@ -1,7 +1,7 @@
 ---
 title: Qué opina el profe García de mi canal
 video_number: 7
-date: 2024-03-08
+date: 2024-3-8
 video_id: lj5XTplax2U
 tags:
   - telegrambot

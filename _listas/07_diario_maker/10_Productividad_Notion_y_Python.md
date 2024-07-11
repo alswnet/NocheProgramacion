@@ -1,7 +1,7 @@
 ---
 title: Descubri como ser mas Productivo con este Automatización
 video_number: 10
-date: 2024-06-14
+date: 2024-6-14
 video_id: G0gPcijuE0o
 tags:
   - python

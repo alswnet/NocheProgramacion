@@ -1,7 +1,7 @@
 ---
 title: Todo lo que me llegó de Amazon
 video_number: 8
-date: 2024-04-15
+date: 2024-4-15
 video_id: 7lZWRbwZ9g8
 tags:
   - amazon
