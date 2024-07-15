@@ -53,10 +53,10 @@ redirect_from:
 			<a href="/tag/youtube">#youtube [12]</a>
 		</li>
 		<li>
-			<a href="/tag/freecad">#freecad [12]</a>
+			<a href="/tag/blender">#blender [12]</a>
 		</li>
 		<li>
-			<a href="/tag/blender">#blender [11]</a>
+			<a href="/tag/freecad">#freecad [12]</a>
 		</li>
 		<li>
 			<a href="/tag/vscode">#vscode [10]</a>
@@ -66,6 +66,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/nodejs">#nodejs [9]</a>
+		</li>
+		<li>
+			<a href="/tag/contenido">#contenido [9]</a>
 		</li>
 		<li>
 			<a href="/tag/bot">#bot [8]</a>
@@ -81,9 +84,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/webserver">#webserver [8]</a>
-		</li>
-		<li>
-			<a href="/tag/contenido">#contenido [8]</a>
 		</li>
 		<li>
 			<a href="/tag/cli">#cli [7]</a>
@@ -107,6 +107,9 @@ redirect_from:
 			<a href="/tag/truco">#truco [5]</a>
 		</li>
 		<li>
+			<a href="/tag/editar">#editar [5]</a>
+		</li>
+		<li>
 			<a href="/tag/obs">#obs [5]</a>
 		</li>
 		<li>
@@ -123,9 +126,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/css">#css [4]</a>
-		</li>
-		<li>
-			<a href="/tag/editar">#editar [4]</a>
 		</li>
 		<li>
 			<a href="/tag/domotica">#domotica [4]</a>
