@@ -48,9 +48,14 @@ nopublicidad: true
 
 </div>
 
-### Youtube
+### Youtube ChepeCarlos
 
 [youtube.com/@chepecarlo]({{ site.links.youtube }}?sub_confirmation=1)
+
+
+### Youtube CtrlZ
+
+[youtube.com/@CtrlZ](https://www.youtube.com/@CtrlZ-dq5gc?sub_confirmation=1)
 
 ### Tiktok
 
