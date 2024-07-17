@@ -44,6 +44,9 @@ redirect_from:
 			<a href="/tag/github">#github [14]</a>
 		</li>
 		<li>
+			<a href="/tag/blender">#blender [13]</a>
+		</li>
+		<li>
 			<a href="/tag/impresora3d">#impresora3d [13]</a>
 		</li>
 		<li>
@@ -51,9 +54,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/youtube">#youtube [12]</a>
-		</li>
-		<li>
-			<a href="/tag/blender">#blender [12]</a>
 		</li>
 		<li>
 			<a href="/tag/freecad">#freecad [12]</a>
@@ -65,10 +65,10 @@ redirect_from:
 			<a href="/tag/ml5">#ml5 [10]</a>
 		</li>
 		<li>
-			<a href="/tag/nodejs">#nodejs [9]</a>
+			<a href="/tag/contenido">#contenido [10]</a>
 		</li>
 		<li>
-			<a href="/tag/contenido">#contenido [9]</a>
+			<a href="/tag/nodejs">#nodejs [9]</a>
 		</li>
 		<li>
 			<a href="/tag/bot">#bot [8]</a>
