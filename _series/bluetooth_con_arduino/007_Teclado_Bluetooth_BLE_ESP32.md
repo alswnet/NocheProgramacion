@@ -3,7 +3,7 @@ title: Convertir tu ESP32 a Teclado Bluetooth
 video_number: 7
 date: 2024-06-25
 video_id: Dm2orXfbHFo
-repository: bluetooth_con_arduino/006_Ejemplo_BT_01
+repository: bluetooth_con_arduino/007_Teclado_Bluetooth_BLE_ESP32
 tags:
   - ble
   - esp32
