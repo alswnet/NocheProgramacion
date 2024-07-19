@@ -6,6 +6,7 @@ video_id: B2vVddfFhoA
 tags:
   - blender
   - editarvideo
+remake: series/crear_contenido
 
 topics:
   - title: "Introduccion"
