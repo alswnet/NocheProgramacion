@@ -1,7 +1,7 @@
 ---
 title: Depuración por WIFI con el ESP32 y ESP8266
 video_number: 18
-date: 2023-04-26
+date: 2023-4-26
 video_id: a-YILV2ziKs
 repository: arduino_esp/018_Depurar_Wifi
 tags:
@@ -10,12 +10,15 @@ tags:
   - esp8266
   - esp32
 
+log:
+  - title: Problemas con la Librería en la Version 1.3.0 en Arduino IDE 2.x con Addons esp32 2.x
+
 topics:
   - title: inicio
     time: "00:00"
   - title: Depuración por WiFi
     time: "01:09"
-  - title: Instalar libreria Telnet
+  - title: Instalar librería Telnet
     time: "01:30"
   - title: Como funciona Telnet
     time: "03:21"
@@ -27,13 +30,13 @@ topics:
     time: "07:32"
   - title: Para que sirve telnet en esp
     time: "08:20"
-  - title: Usando mdns para depuraccion por wifi
+  - title: Usando mdns para depuración por wifi
     time: "09:12"
   - title: Telnet en Windows
     time: "09:51"
   - title: Probando el código en ESP8266
     time: "09:54"
-  - title: Como nos conectamos por Telnet en Windwos
+  - title: Como nos conectamos por Telnet en Windows
     time: "10:57"
   - title: Demostración de uso en un proyecto real
     time: "13:19"
