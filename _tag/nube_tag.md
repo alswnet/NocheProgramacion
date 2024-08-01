@@ -8,16 +8,16 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [119]</a>
+			<a href="/tag/arduino">#arduino [120]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [45]</a>
+			<a href="/tag/esp32">#esp32 [47]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [45]</a>
+			<a href="/tag/esp8266">#esp8266 [46]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [38]</a>
+			<a href="/tag/iot">#iot [39]</a>
 		</li>
 		<li>
 			<a href="/tag/linux">#linux [30]</a>
@@ -29,7 +29,7 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
-			<a href="/tag/telegram">#telegram [20]</a>
+			<a href="/tag/telegram">#telegram [21]</a>
 		</li>
 		<li>
 			<a href="/tag/mqtt">#mqtt [17]</a>
@@ -44,13 +44,13 @@ redirect_from:
 			<a href="/tag/github">#github [14]</a>
 		</li>
 		<li>
+			<a href="/tag/bluetooth">#bluetooth [13]</a>
+		</li>
+		<li>
 			<a href="/tag/blender">#blender [13]</a>
 		</li>
 		<li>
 			<a href="/tag/impresora3d">#impresora3d [13]</a>
-		</li>
-		<li>
-			<a href="/tag/bluetooth">#bluetooth [12]</a>
 		</li>
 		<li>
 			<a href="/tag/youtube">#youtube [12]</a>
@@ -71,7 +71,7 @@ redirect_from:
 			<a href="/tag/nodejs">#nodejs [9]</a>
 		</li>
 		<li>
-			<a href="/tag/bot">#bot [8]</a>
+			<a href="/tag/bot">#bot [9]</a>
 		</li>
 		<li>
 			<a href="/tag/impresion3d">#impresion3d [8]</a>
@@ -219,6 +219,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/alexa">#alexa [2]</a>
+		</li>
+		<li>
+			<a href="/tag/ble">#ble [2]</a>
 		</li>
 		<li>
 			<a href="/tag/audio">#audio [2]</a>
@@ -429,9 +432,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/memoria">#memoria [1]</a>
-		</li>
-		<li>
-			<a href="/tag/ble">#ble [1]</a>
 		</li>
 		<li>
 			<a href="/tag/audacity">#audacity [1]</a>
