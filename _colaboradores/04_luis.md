@@ -1,7 +1,7 @@
 ---
 title: "Luis Parada"
 colaborador_id: 4
-usuario: Luis
+usuario: luis
 nombre: "Luis Andrés Parada"
 personal:
   - title: "País - El Salvador"
