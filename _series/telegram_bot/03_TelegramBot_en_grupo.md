@@ -12,6 +12,11 @@ tags:
   - iot
   - bot
 
+log:
+  - title: usar librería de ArduinoJson 6.19.4 por recomendación de librería CTBot
+  - title: al imprimir int64_t se tiene que convertir a string con la función int64ToAscii, toca importar la librería "Utilities.h" que viene de CTbot
+  - title: usar librería de ArduinoJson 6.19.4 por recomendación de librería CTBot
+
 topics:
   - title: Inicio
     time: "00:00"
@@ -36,10 +41,6 @@ videos:
   - title: Archivo token.h
     url: series/arduino/basico/006_Contraseña_Arduino
 
-log:
-  - title: usar librería de ArduinoJson 6.19.4 por recomendación de librería CTBot
-  - title: al imprimir int64_t se tiene que convertir a string con la función int64ToAscii, toca importar la librería "Utilities.h" que viene de CTbot
-  - title: usar librería de ArduinoJson 6.19.4 por recomendación de librería CTBot
 
 piezas:
   - title: esp32

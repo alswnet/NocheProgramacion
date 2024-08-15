@@ -10,6 +10,9 @@ tags:
   - domotica
   - iot
 
+log:
+  - title: usar librería de ArduinoJson 6.19.4 por recomendación de librería CTBot
+
 topics:
   - title: Inicio
     time: '00:00'

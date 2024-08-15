@@ -12,6 +12,11 @@ tags:
   - iot
   - bot
 
+log:
+  - title: Cambiando el tipo de variable IDchat de int a int64_t , porque el tamaño del id puede ser mas grande que int
+  - title: al imprimir int64_t se tiene que convertir a string con la funcion int64ToAscii, toca importar la libreria "Utilities.h" que viene de CTbot
+  - title: usar librería de ArduinoJson 6.19.4 por recomendación de libreria CTBot
+
 topics:
   - title: Inicio
     time: "00:00"
@@ -61,11 +66,6 @@ videos:
     url: series/arduino/avanzado/008_millis_arduino
   - title: Archivo token.h
     url: series/arduino/basico/006_Contraseña_Arduino
-
-log:
-  - title: Cambiando el tipo de variable IDchat de int a int64_t , porque el tamaño del id puede ser mas grande que int 
-  - title: al imprimir int64_t se tiene que convertir a string con la funcion int64ToAscii, toca importar la libreria "Utilities.h" que viene de CTbot
-  - title: usar librería de ArduinoJson 6.19.4 por recomendación de libreria CTBot
 
 colaboradores:
   - title: Editor

@@ -11,79 +11,82 @@ tags:
   - domotica
   - iot
 
+log:
+  - title: usar librería de ArduinoJson 6.19.4 por recomendación de libreria CTBot
+
 topics:
   - title: Inicio
-    time: '00:00'
+    time: "00:00"
   - title: Saludo
-    time: '00:43'
+    time: "00:43"
   - title: Materiales
-    time: '01:39'
+    time: "01:39"
   - title: Vamos con el código
-    time: '02:40'
+    time: "02:40"
   - title: Estados del sistema
-    time: '03:06'
+    time: "03:06"
   - title: Estructuras
-    time: '04:42'
+    time: "04:42"
   - title: Agregando Relé
-    time: '05:51'
+    time: "05:51"
   - title: Código concatenar en serial
-    time: '06:51'
+    time: "06:51"
   - title: Archivo data.h
-    time: '07:02'
+    time: "07:02"
   - title: configuración Wifi
-    time: '07:32'
+    time: "07:32"
   - title: Token del bot
-    time: '07:39'
+    time: "07:39"
   - title: ID de usuarios
-    time: '07:46'
+    time: "07:46"
   - title: Nombre identificador
-    time: '08:05'
+    time: "08:05"
   - title: Como llamar cada Relé
-    time: '08:31'
+    time: "08:31"
   - title: Código para Wifi
-    time: '09:17'
+    time: "09:17"
   - title: Comunicación Serial
-    time: '12:27'
+    time: "12:27"
   - title: Telnet
-    time: '12:49'
+    time: "12:49"
   - title: OTA
-    time: '13:07'
+    time: "13:07"
   - title: EL poderoso LED
-    time: '13:27'
+    time: "13:27"
   - title: Ticker
-    time: '13:51'
-  - title: Estados del led 
-    time: '15:11'
+    time: "13:51"
+  - title: Estados del led
+    time: "15:11"
   - title: EL Bot
-    time: '15:54'
+    time: "15:54"
   - title: Primera prueba del código
-    time: '17:17'
+    time: "17:17"
   - title: Probando estado de LED
-    time: '18:00'
+    time: "18:00"
   - title: Permisos del Bot
-    time: '19:45'
-  - title: Comando Bot - Estado 
-    time: '20:05'
+    time: "19:45"
+  - title: Comando Bot - Estado
+    time: "20:05"
   - title: Comando Bot - Opciones
-    time: '20:35'
+    time: "20:35"
   - title: Bot - Teclado y opciones
-    time: '20:49'
+    time: "20:49"
   - title: Memoria
-    time: '24:32'
+    time: "24:32"
   - title: Memoria - Salvar Archivo
-    time: '24:54'
+    time: "24:54"
   - title: Memoria - Leer Archivo
-    time: '25:38'
+    time: "25:38"
   - title: Memoria - Formatear
-    time: '26:01'
+    time: "26:01"
   - title: Memoria - Formatear por el Bot
-    time: '26:33'
+    time: "26:33"
   - title: Memoria - Formatear por comunicación serial
-    time: '26:56'
+    time: "26:56"
   - title: Memoria - Formatear por Telnet
-    time: '27:29'
+    time: "27:29"
   - title: Prueba final
-    time: '27:58'
+    time: "27:58"
 
 links:
   - title: Modelo de la Caja Domótica
