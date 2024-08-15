@@ -11,7 +11,7 @@ tags:
   - esp32
 
 log:
-  - title: Problemas con la Librería en la Version 1.3.0 en Arduino IDE 2.x con Addons esp32 2.x
+  - title: Problemas con la Librería en la Version 1.3.0 en Arduino IDE 2.x con Addons esp32 2.x, necesario descargar desde github el repositorio en zip y ponerlo en librería
 
 topics:
   - title: inicio
