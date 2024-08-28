@@ -20,7 +20,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [39]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [30]</a>
+			<a href="/tag/linux">#linux [31]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [26]</a>
@@ -134,6 +134,9 @@ redirect_from:
 			<a href="/tag/comando">#comando [4]</a>
 		</li>
 		<li>
+			<a href="/tag/raspberrypi">#raspberrypi [3]</a>
+		</li>
+		<li>
 			<a href="/tag/esp8255">#esp8255 [3]</a>
 		</li>
 		<li>
@@ -171,9 +174,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/ide">#ide [3]</a>
-		</li>
-		<li>
-			<a href="/tag/raspberrypi">#raspberrypi [2]</a>
 		</li>
 		<li>
 			<a href="/tag/wifi">#wifi [2]</a>
@@ -540,6 +540,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/imanes">#imanes [1]</a>
+		</li>
+		<li>
+			<a href="/tag/gnu">#gnu [1]</a>
 		</li>
 		<li>
 			<a href="/tag/code">#code [1]</a>
