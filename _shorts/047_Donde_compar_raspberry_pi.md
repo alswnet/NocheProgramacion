@@ -1,8 +1,8 @@
 ---
-title: Donde compar Raspberry Pi
+title: Dónde comprar Raspberry Pi
 video_number: 47
 date: 2024-08-28
-video_id: "-fusI6Oick4"
+video_id: A7rJ4WpCB88
 tags:
   - raspberrypi
 
