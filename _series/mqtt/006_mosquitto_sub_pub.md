@@ -1,7 +1,7 @@
 ---
 title: "Como usar Mosquitto_Sub y Mosquitto_Pub para conectar con MQTT"
 video_number: 6
-date: 2021-07-29
+date: 2021-7-29
 video_id: O10JqPeC5SA
 tags:
   - mqtt

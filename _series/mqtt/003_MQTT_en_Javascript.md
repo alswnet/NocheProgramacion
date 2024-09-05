@@ -1,7 +1,7 @@
 ---
 title: "Ejemplo MQTT in Javascript"
 video_number: 3
-date: 2021-03-31
+date: 2021-3-31
 video_id: YR_1uoiSLFM
 web_editor: m5TSEXx40
 repository: mqtt/003_MQTT_en_Javascript

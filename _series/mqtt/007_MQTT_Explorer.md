@@ -1,7 +1,7 @@
 ---
 title: El Mejor Cliente Grafico para MQTT es MQTT Explorer
 video_number: 7
-date: 2021-08-02
+date: 2021-8-02
 video_id: eA7pdPB7C10
 tags:
   - mqtt

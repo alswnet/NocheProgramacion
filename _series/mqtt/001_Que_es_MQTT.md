@@ -1,7 +1,7 @@
 ---
 title: "Que es MQTT"
 video_number: 1
-date: 2021-03-23
+date: 2021-3-23
 video_id: T1_w8-8Y5kc
 tags:
   - mqtt

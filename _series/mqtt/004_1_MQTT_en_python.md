@@ -1,7 +1,7 @@
 ---
 title: "Ejemplo MQTT Python"
 video_number: 4.1
-date: 2021-04-05
+date: 2021-4-5
 video_id: T362losqJys
 repository: mqtt/004_1_MQTT_en_python
 tags:
