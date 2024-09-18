@@ -11,7 +11,7 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [121]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [47]</a>
+			<a href="/tag/esp32">#esp32 [48]</a>
 		</li>
 		<li>
 			<a href="/tag/esp8266">#esp8266 [46]</a>
@@ -20,7 +20,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [39]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [31]</a>
+			<a href="/tag/linux">#linux [32]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [26]</a>
@@ -32,7 +32,7 @@ redirect_from:
 			<a href="/tag/telegram">#telegram [21]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [17]</a>
+			<a href="/tag/mqtt">#mqtt [19]</a>
 		</li>
 		<li>
 			<a href="/tag/python">#python [16]</a>
@@ -41,10 +41,10 @@ redirect_from:
 			<a href="/tag/git">#git [15]</a>
 		</li>
 		<li>
-			<a href="/tag/github">#github [14]</a>
+			<a href="/tag/bluetooth">#bluetooth [14]</a>
 		</li>
 		<li>
-			<a href="/tag/bluetooth">#bluetooth [13]</a>
+			<a href="/tag/github">#github [14]</a>
 		</li>
 		<li>
 			<a href="/tag/blender">#blender [13]</a>
@@ -128,6 +128,9 @@ redirect_from:
 			<a href="/tag/css">#css [4]</a>
 		</li>
 		<li>
+			<a href="/tag/teclado">#teclado [4]</a>
+		</li>
+		<li>
 			<a href="/tag/domotica">#domotica [4]</a>
 		</li>
 		<li>
@@ -149,10 +152,13 @@ redirect_from:
 			<a href="/tag/windows">#windows [3]</a>
 		</li>
 		<li>
+			<a href="/tag/rasberrypi">#rasberrypi [3]</a>
+		</li>
+		<li>
 			<a href="/tag/mdns">#mdns [3]</a>
 		</li>
 		<li>
-			<a href="/tag/teclado">#teclado [3]</a>
+			<a href="/tag/ble">#ble [3]</a>
 		</li>
 		<li>
 			<a href="/tag/java">#java [3]</a>
@@ -188,9 +194,6 @@ redirect_from:
 			<a href="/tag/javascript">#javascript [2]</a>
 		</li>
 		<li>
-			<a href="/tag/rasberrypi">#rasberrypi [2]</a>
-		</li>
-		<li>
 			<a href="/tag/gui">#gui [2]</a>
 		</li>
 		<li>
@@ -221,9 +224,6 @@ redirect_from:
 			<a href="/tag/alexa">#alexa [2]</a>
 		</li>
 		<li>
-			<a href="/tag/ble">#ble [2]</a>
-		</li>
-		<li>
 			<a href="/tag/audio">#audio [2]</a>
 		</li>
 		<li>
@@ -234,6 +234,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/machinelearning">#machinelearning [2]</a>
+		</li>
+		<li>
+			<a href="/tag/mosquitto">#mosquitto [2]</a>
 		</li>
 		<li>
 			<a href="/tag/reparacion">#reparacion [2]</a>
@@ -450,9 +453,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/controlacelularpc">#controlacelularpc [1]</a>
-		</li>
-		<li>
-			<a href="/tag/mosquitto">#mosquitto [1]</a>
 		</li>
 		<li>
 			<a href="/tag/obsstudio">#obsstudio [1]</a>
