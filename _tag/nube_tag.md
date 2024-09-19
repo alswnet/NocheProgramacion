@@ -101,6 +101,9 @@ redirect_from:
 			<a href="/tag/pantalla">#pantalla [6]</a>
 		</li>
 		<li>
+			<a href="/tag/obs">#obs [6]</a>
+		</li>
+		<li>
 			<a href="/tag/programacion">#programacion [5]</a>
 		</li>
 		<li>
@@ -108,9 +111,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/editar">#editar [5]</a>
-		</li>
-		<li>
-			<a href="/tag/obs">#obs [5]</a>
 		</li>
 		<li>
 			<a href="/tag/octoprint">#octoprint [5]</a>
@@ -438,6 +438,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/audacity">#audacity [1]</a>
+		</li>
+		<li>
+			<a href="/tag/gimp">#gimp [1]</a>
 		</li>
 		<li>
 			<a href="/tag/inskcape">#inskcape [1]</a>
