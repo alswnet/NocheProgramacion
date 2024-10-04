@@ -11,10 +11,21 @@ tags:
   - sensor
 
 variations:
-  - name:
-    lang:
-    folder:
-    web_editor:
+  - name: Demo Arduino Uno KeyPad 3x4
+    lang: arduino
+    folder: arduino/Demo01_DTH11_PCB
+  - name: Demo Arduino ESP32 KeyPad 3x4
+    lang: arduino
+    folder: arduino/Demo02_DTH11_PCB_ESP32
+  - name: Demo Arduino ESP8266 KeyPad 3x4
+    lang: arduino
+    folder: arduino/Demo03_DTH11_PCB_ESP8266 
+  - name: Demo información KeyPad 3x4
+    lang: arduino
+    folder: arduino/Demo04_DTH11_PCB
+  - name: Demo Multi Boton KeyPad 3x4
+    lang: arduino
+    folder: arduino/Demo05_DTH11_PCB
 
 topics:
   - title: Inicio
