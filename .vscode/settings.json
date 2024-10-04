@@ -28,9 +28,12 @@
     "ingjuan",
     "jekyll",
     "mdns",
+    "mosquitto",
     "mqtt",
     "paty",
+    "Programacion",
     "Tiktok",
+    "updrade",
     "versionamiento",
     "versionar"
   ],
@@ -45,5 +48,20 @@
     "--variable-naming-style=camelCase",
     "--class-attribute-naming-style=camelCase",
     "--inlinevar-naming-style=camelCase"
-  ]
+  ],
+  // https://code.visualstudio.com/api/references/theme-color
+  "workbench.colorCustomizations": {
+    // Color Oscuro
+    "activityBar.background": "#3d0e61",
+    "tab.inactiveBackground": "#3d0e61",
+    "statusBar.background": "#3d0e61",
+    "breadcrumb.background": "#3d0e61",
+    "editorGroupHeader.tabsBackground": "#3d0e61",
+    // Color Claro
+    "activityBar.activeBackground": "#57148a",
+    "tab.activeBackground": "#57148a",
+    // Color Mas Oscuro
+    "minimap.background": "#160522",
+    "sideBar.background": "#160522",
+  }
 }
