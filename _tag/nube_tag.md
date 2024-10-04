@@ -8,7 +8,7 @@ redirect_from:
 <div class="link-list">
 	<ul>
 		<li>
-			<a href="/tag/arduino">#arduino [122]</a>
+			<a href="/tag/arduino">#arduino [123]</a>
 		</li>
 		<li>
 			<a href="/tag/esp32">#esp32 [48]</a>
@@ -74,7 +74,7 @@ redirect_from:
 			<a href="/tag/bot">#bot [9]</a>
 		</li>
 		<li>
-			<a href="/tag/impresion3d">#impresion3d [8]</a>
+			<a href="/tag/impresion3d">#impresion3d [9]</a>
 		</li>
 		<li>
 			<a href="/tag/android">#android [8]</a>
@@ -104,6 +104,9 @@ redirect_from:
 			<a href="/tag/obs">#obs [6]</a>
 		</li>
 		<li>
+			<a href="/tag/sensor">#sensor [5]</a>
+		</li>
+		<li>
 			<a href="/tag/programacion">#programacion [5]</a>
 		</li>
 		<li>
@@ -117,9 +120,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/3dprinting">#3dprinting [5]</a>
-		</li>
-		<li>
-			<a href="/tag/sensor">#sensor [4]</a>
 		</li>
 		<li>
 			<a href="/tag/editarvideo">#editarvideo [4]</a>
@@ -252,6 +252,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/gpu">#gpu [2]</a>
+		</li>
+		<li>
+			<a href="/tag/stl">#stl [2]</a>
 		</li>
 		<li>
 			<a href="/tag/robotica">#robotica [2]</a>
@@ -428,6 +431,12 @@ redirect_from:
 			<a href="/tag/keypad">#keypad [1]</a>
 		</li>
 		<li>
+			<a href="/tag/temperatura">#temperatura [1]</a>
+		</li>
+		<li>
+			<a href="/tag/humedad">#humedad [1]</a>
+		</li>
+		<li>
 			<a href="/tag/ipestatica">#ipestatica [1]</a>
 		</li>
 		<li>
@@ -600,9 +609,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/otaku">#otaku [1]</a>
-		</li>
-		<li>
-			<a href="/tag/stl">#stl [1]</a>
 		</li>
 		<li>
 			<a href="/tag/juego">#juego [1]</a>
