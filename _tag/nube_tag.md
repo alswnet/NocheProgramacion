@@ -194,6 +194,9 @@ redirect_from:
 			<a href="/tag/javascript">#javascript [2]</a>
 		</li>
 		<li>
+			<a href="/tag/pcb">#pcb [2]</a>
+		</li>
+		<li>
 			<a href="/tag/gui">#gui [2]</a>
 		</li>
 		<li>
@@ -339,9 +342,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/compilar">#compilar [1]</a>
-		</li>
-		<li>
-			<a href="/tag/pcb">#pcb [1]</a>
 		</li>
 		<li>
 			<a href="/tag/fritzing">#fritzing [1]</a>
