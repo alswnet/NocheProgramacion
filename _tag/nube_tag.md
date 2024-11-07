@@ -59,7 +59,7 @@ redirect_from:
 			<a href="/tag/freecad">#freecad [12]</a>
 		</li>
 		<li>
-			<a href="/tag/vscode">#vscode [10]</a>
+			<a href="/tag/vscode">#vscode [11]</a>
 		</li>
 		<li>
 			<a href="/tag/ml5">#ml5 [10]</a>
