@@ -455,6 +455,9 @@ redirect_from:
 			<a href="/tag/gimp">#gimp [1]</a>
 		</li>
 		<li>
+			<a href="/tag/inkscape">#inkscape [1]</a>
+		</li>
+		<li>
 			<a href="/tag/inskcape">#inskcape [1]</a>
 		</li>
 		<li>
