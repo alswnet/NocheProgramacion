@@ -35,7 +35,7 @@ redirect_from:
 			<a href="/tag/mqtt">#mqtt [19]</a>
 		</li>
 		<li>
-			<a href="/tag/python">#python [16]</a>
+			<a href="/tag/python">#python [17]</a>
 		</li>
 		<li>
 			<a href="/tag/git">#git [15]</a>
@@ -155,6 +155,9 @@ redirect_from:
 			<a href="/tag/rasberrypi">#rasberrypi [3]</a>
 		</li>
 		<li>
+			<a href="/tag/gui">#gui [3]</a>
+		</li>
+		<li>
 			<a href="/tag/mdns">#mdns [3]</a>
 		</li>
 		<li>
@@ -195,9 +198,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/pcb">#pcb [2]</a>
-		</li>
-		<li>
-			<a href="/tag/gui">#gui [2]</a>
 		</li>
 		<li>
 			<a href="/tag/dns">#dns [2]</a>
@@ -492,6 +492,9 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/mac">#mac [1]</a>
+		</li>
+		<li>
+			<a href="/tag/web">#web [1]</a>
 		</li>
 		<li>
 			<a href="/tag/submodules">#submodules [1]</a>
