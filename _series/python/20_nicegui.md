@@ -30,6 +30,8 @@ topics:
 links:
   - title: Pagina oficial de NiceGUI
     url: https://nicegui.io/
+  - title: Video de linkfydev de NiceGUI
+    url: https://www.tiktok.com/@linkfydev/video/7430916774457068833
 
 videos:
   - title: Crear entorno virtual en python
