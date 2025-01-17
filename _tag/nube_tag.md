@@ -20,7 +20,7 @@ redirect_from:
 			<a href="/tag/iot">#iot [39]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [32]</a>
+			<a href="/tag/linux">#linux [33]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [26]</a>
@@ -131,6 +131,9 @@ redirect_from:
 			<a href="/tag/teclado">#teclado [4]</a>
 		</li>
 		<li>
+			<a href="/tag/terminal">#terminal [4]</a>
+		</li>
+		<li>
 			<a href="/tag/domotica">#domotica [4]</a>
 		</li>
 		<li>
@@ -168,9 +171,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/3dprinter">#3dprinter [3]</a>
-		</li>
-		<li>
-			<a href="/tag/terminal">#terminal [3]</a>
 		</li>
 		<li>
 			<a href="/tag/comandos">#comandos [3]</a>
