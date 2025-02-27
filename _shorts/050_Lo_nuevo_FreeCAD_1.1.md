@@ -1,7 +1,7 @@
 ---
 title: Lo que viene en FreeCAD 1.1
 video_number: 50
-date: 2023-12-31
+date: 2025-2-27
 video_id: ZSvdUHY3ShE
 tags:
   - freecad
