@@ -3,6 +3,7 @@ title: Quitar contraseña OBS al activar WebCam en Linux
 video_number: 87 
 date: 2024-9-18
 video_id: G5T-Uz4Zof4
+canal: ctrlz
 tags:
   - obs
 
