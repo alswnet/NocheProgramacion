@@ -42,6 +42,8 @@ links:
     url: https://www.printables.com/model/1186285-snap-tab-box-autodesk-fusion-tutorial
   - title: Tutorial de Autodesk de la Caja de Referencia
     url: https://www.youtube.com/watch?v=Wh6lxgLE92o
+  - title: Caja hecha en FreeCAD en Printables
+    url: https://www.printables.com/model/1211072-caja-pestanas-tutorial-freecad
 
 videos:
   - title: Serie FreeCAD
