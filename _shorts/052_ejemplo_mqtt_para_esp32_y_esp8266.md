@@ -1,7 +1,7 @@
 ---
 title: Ejemplo de MQTt para esp32 y esp8266
 video_number: 52
-date: 2023-12-31
+date: 2025-3-9
 video_id: J6vj0_FoO5A
 tags:
   - mqtt
