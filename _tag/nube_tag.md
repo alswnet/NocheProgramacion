@@ -11,16 +11,16 @@ redirect_from:
 			<a href="/tag/arduino">#arduino [123]</a>
 		</li>
 		<li>
-			<a href="/tag/esp32">#esp32 [48]</a>
+			<a href="/tag/esp32">#esp32 [49]</a>
 		</li>
 		<li>
-			<a href="/tag/esp8266">#esp8266 [46]</a>
+			<a href="/tag/esp8266">#esp8266 [47]</a>
 		</li>
 		<li>
-			<a href="/tag/iot">#iot [39]</a>
+			<a href="/tag/iot">#iot [41]</a>
 		</li>
 		<li>
-			<a href="/tag/linux">#linux [33]</a>
+			<a href="/tag/linux">#linux [34]</a>
 		</li>
 		<li>
 			<a href="/tag/shorts">#shorts [26]</a>
@@ -29,16 +29,19 @@ redirect_from:
 			<a href="/tag/p5js">#p5js [22]</a>
 		</li>
 		<li>
+			<a href="/tag/mqtt">#mqtt [21]</a>
+		</li>
+		<li>
 			<a href="/tag/telegram">#telegram [21]</a>
 		</li>
 		<li>
-			<a href="/tag/mqtt">#mqtt [19]</a>
-		</li>
-		<li>
-			<a href="/tag/python">#python [17]</a>
+			<a href="/tag/python">#python [18]</a>
 		</li>
 		<li>
 			<a href="/tag/git">#git [15]</a>
+		</li>
+		<li>
+			<a href="/tag/freecad">#freecad [15]</a>
 		</li>
 		<li>
 			<a href="/tag/bluetooth">#bluetooth [14]</a>
@@ -50,13 +53,10 @@ redirect_from:
 			<a href="/tag/blender">#blender [14]</a>
 		</li>
 		<li>
+			<a href="/tag/youtube">#youtube [13]</a>
+		</li>
+		<li>
 			<a href="/tag/impresora3d">#impresora3d [13]</a>
-		</li>
-		<li>
-			<a href="/tag/youtube">#youtube [12]</a>
-		</li>
-		<li>
-			<a href="/tag/freecad">#freecad [12]</a>
 		</li>
 		<li>
 			<a href="/tag/vscode">#vscode [11]</a>
@@ -122,6 +122,9 @@ redirect_from:
 			<a href="/tag/3dprinting">#3dprinting [5]</a>
 		</li>
 		<li>
+			<a href="/tag/raspberrypi">#raspberrypi [4]</a>
+		</li>
+		<li>
 			<a href="/tag/editarvideo">#editarvideo [4]</a>
 		</li>
 		<li>
@@ -138,9 +141,6 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/comando">#comando [4]</a>
-		</li>
-		<li>
-			<a href="/tag/raspberrypi">#raspberrypi [3]</a>
 		</li>
 		<li>
 			<a href="/tag/esp8255">#esp8255 [3]</a>
@@ -387,6 +387,12 @@ redirect_from:
 		</li>
 		<li>
 			<a href="/tag/camara">#camara [1]</a>
+		</li>
+		<li>
+			<a href="/tag/cad">#cad [1]</a>
+		</li>
+		<li>
+			<a href="/tag/noticias">#noticias [1]</a>
 		</li>
 		<li>
 			<a href="/tag/chatbot">#chatbot [1]</a>
