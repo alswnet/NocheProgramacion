@@ -11,6 +11,21 @@ folder:
     - _mas
     - _ponencias
     - _extras
+descargabas:
+  - p5
+  - processing
+  - javascript
+  - node
+  - arduino
+  - python
+  - diagrama
+  - html
+  - presentacion
+  - script
+  - pdf
+  - animacion
+  - blender
+  - cad
 ads: true
 folder_raiz: NocheProgramacion
 folder_archivos: _actualizado
