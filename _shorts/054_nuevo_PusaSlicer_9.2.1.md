@@ -12,9 +12,8 @@ links:
     url: https://blog.prusa3d.com/prusaslicer-2-9-1-smarter-sequential-printing-stronger-multi-material-interlocking_111458/
 
 colaboradores:
-  - title:
-    colaborador: paty
-    colaborador: gerardo
+  - colaborador: paty
+  - colaborador: gerardo
 
 actualizado: true
 ---
