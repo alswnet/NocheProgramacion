@@ -15,7 +15,7 @@ colaboradores:
   - colaborador: gerardo
   - colaborador: ingjuan
 
-actualizado: false
+actualizado: true
 ---
 
 Aprende a como manejar Topic en MQTT en Arduino usando un ESP32 y un ESP8266
