@@ -1,5 +1,5 @@
 ---
-ttitle: Te enseño a como usar el GIT recursivo
+title: Te enseño a como usar el GIT recursivo
 video_number: 59
 date: 2025-3-27
 video_id: 3M00WspS0R0
